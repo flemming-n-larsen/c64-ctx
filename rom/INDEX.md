@@ -13,12 +13,13 @@ source: c64ref
 | ROM/RAM banking | [../concepts/memory-banking.md](../concepts/memory-banking.md) | ROM visibility depends on processor-port bits. |
 
 ## source-coverage
-| source | status | notes |
+| local coverage | status | notes |
 |---|---|---|
-| `C:\Code\c64ref\src\c64disasm\c64disasm_ms.txt` | planned | Microsoft BASIC source comments. |
-| `C:\Code\c64ref\src\c64disasm\c64disasm_cbm.txt` | planned | Commodore KERNAL source comments. |
-| `C:\Code\c64ref\src\c64disasm\c64disasm_en.txt` | planned | Lee Davison commented disassembly. |
-| `C:\Code\c64ref\src\c64disasm\generate.py` | observed | Cross-reference behavior and source grouping. |
+| [basic-disassembly.md](basic-disassembly.md) | planned | BASIC ROM route coverage. |
+| [kernal-disassembly.md](kernal-disassembly.md) | planned | KERNAL ROM route coverage. |
+| [../basic/routines.md](../basic/routines.md) | planned | BASIC routine routing companion. |
+| [../kernal/jump-table.md](../kernal/jump-table.md) | planned | Public KERNAL API route companion. |
+| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related
 | domain | read | why |

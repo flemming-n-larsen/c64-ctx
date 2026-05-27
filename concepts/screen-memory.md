@@ -29,6 +29,6 @@ granularity: concept
 - print task: [../tasks/print-to-screen.md](../tasks/print-to-screen.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt`
-- `C:\Code\c64ref\src\c64io\c64io_prg.txt`
-- `C:\Code\c64ref\src\charset\keyboard_c64.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- memory map: [../memory/map.md](../memory/map.md)
+- color RAM: [../io/color-ram.md](../io/color-ram.md)

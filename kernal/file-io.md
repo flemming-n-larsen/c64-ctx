@@ -30,7 +30,7 @@ granularity: api-family
 6. Call `READST` to inspect device status when the routine reports errors through the status word.
 
 ## constraints
-- Agents MUST verify exact register inputs and affected registers against `kernal_prg.txt` before emitting assembly.
+- Agents MUST verify exact register inputs and affected registers against the local KERNAL API pages before emitting assembly.
 - Keyboard/screen default I/O MAY use `CHRIN`, `GETIN`, and `CHROUT` without `OPEN` when the default channels are active.
 - File recipes SHOULD link to [../tasks/load-save-file.md](../tasks/load-save-file.md) instead of duplicating full examples here.
 
@@ -40,5 +40,6 @@ granularity: api-family
 - load/save task: [../tasks/load-save-file.md](../tasks/load-save-file.md)
 
 ## sources
-- `C:\Code\c64ref\src\kernal\kernal_prg.txt`
-- `C:\Code\c64ref\src\kernal\generate.py`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- KERNAL index: [INDEX.md](INDEX.md)
+- jump table: [jump-table.md](jump-table.md)

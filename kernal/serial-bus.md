@@ -28,5 +28,6 @@ granularity: api-family
 - CIA2 hardware: [../io/cia2.md](../io/cia2.md)
 
 ## sources
-- `C:\Code\c64ref\src\kernal\kernal_prg.txt`
-- `C:\Code\c64ref\src\kernal\generate.py`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- KERNAL index: [INDEX.md](INDEX.md)
+- jump table: [jump-table.md](jump-table.md)

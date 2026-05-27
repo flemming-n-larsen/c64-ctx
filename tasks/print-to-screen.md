@@ -31,7 +31,7 @@ granularity: recipe
 - palette: [../colors/palette.md](../colors/palette.md)
 
 ## sources
-- `C:\Code\c64ref\src\kernal\kernal_prg.txt`
-- `C:\Code\c64ref\src\charset\control_codes_c64.txt`
-- `C:\Code\c64ref\src\charset\C64IPRI.TXT`
-- `C:\Code\c64ref\src\c64io\c64io_prg.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- task index: [INDEX.md](INDEX.md)
+- KERNAL screen I/O: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
+- charset controls: [../charset/control-codes.md](../charset/control-codes.md)

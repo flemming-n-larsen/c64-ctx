@@ -6,7 +6,7 @@ granularity: code-space
 
 ## facts
 - PETSCII/control-code handling is distinct from screen-code bytes stored in screen memory.
-- `control_codes_c64.txt` names editor, function-key, cursor, case-switch, reverse-video, and color controls.
+- the local control-code page names editor, function-key, cursor, case-switch, reverse-video, and color controls.
 - KERNAL `CHROUT` expects character/control bytes for output, not direct screen-code memory bytes.
 
 ## lookup
@@ -38,6 +38,6 @@ granularity: code-space
 - KERNAL screen I/O: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
 
 ## sources
-- `C:\Code\c64ref\src\charset\control_codes_c64.txt`
-- `C:\Code\c64ref\src\charset\C64IPRI.TXT`
-- `C:\Code\c64ref\src\charset\C64IALT.TXT`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- charset index: [INDEX.md](INDEX.md)
+- control codes: [control-codes.md](control-codes.md)

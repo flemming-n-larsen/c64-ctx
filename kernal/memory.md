@@ -17,7 +17,7 @@ granularity: api-family
 ## constraints
 - Agents SHOULD use [../memory/map.md](../memory/map.md) for address ranges and this page for KERNAL API calls.
 - Code that changes vectors MUST understand whether it is changing CPU vectors, KERNAL RAM vectors, or device interrupt state.
-- Exact register contracts MUST be verified in `kernal_prg.txt` before use.
+- Exact register contracts MUST be verified in the local KERNAL API pages before use.
 
 ## links
 - memory map: [../memory/map.md](../memory/map.md)
@@ -25,6 +25,6 @@ granularity: api-family
 - jump table: [jump-table.md](jump-table.md)
 
 ## sources
-- `C:\Code\c64ref\src\kernal\kernal_prg.txt`
-- `C:\Code\c64ref\src\kernal\generate.py`
-- `C:\Code\c64ref\src\c64mem\symbols.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- KERNAL index: [INDEX.md](INDEX.md)
+- memory map: [../memory/map.md](../memory/map.md)

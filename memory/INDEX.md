@@ -15,12 +15,13 @@ source: c64ref
 | I/O and character ROM window | [io-area.md](io-area.md) | `$D000-$DFFF`; depends on `CHAREN` and ROM/RAM banking. |
 
 ## source-coverage
-| source | status | notes |
+| local coverage | status | notes |
 |---|---|---|
-| `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt` | planned | Main address descriptions from `Mapping the Commodore 64`. |
-| `C:\Code\c64ref\src\c64mem\symbols.txt` | planned | Canonical symbol seed and aliases. |
-| `C:\Code\c64ref\src\c64mem\c64mem_src.txt` | planned | Microsoft/Commodore source comments. |
-| `C:\Code\c64ref\src\c64mem\generate.py` | observed | Shows cross-reference behavior and source ordering. |
+| [map.md](map.md) | planned | Main address descriptions and banking-sensitive ranges. |
+| [symbols.md](symbols.md) | planned | Canonical symbol coverage and aliases. |
+| [zero-page.md](zero-page.md) | planned | Zero-page workspace and register-adjacent symbols. |
+| [basic-rom.md](basic-rom.md), [kernal-rom.md](kernal-rom.md), [io-area.md](io-area.md) | planned | ROM, RAM, I/O, and character-ROM visibility constraints. |
+| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related
 | domain | read | why |

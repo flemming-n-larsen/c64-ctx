@@ -11,7 +11,7 @@ granularity: route
 ## lookup
 | need | route | notes |
 |---|---|---|
-| Keyword token implementation | [../rom/basic-disassembly.md](../rom/basic-disassembly.md) | Use `c64disasm_ms.txt` and alternate commentaries. |
+| Keyword token implementation | [../rom/basic-disassembly.md](../rom/basic-disassembly.md) | Use the local BASIC ROM route and alternate commentaries. |
 | BASIC text pointer context | [vectors.md](vectors.md) | `TXTTAB`, `TXTPTR`, and related symbols. |
 | Character input/output context | [../charset/petscii.md](../charset/petscii.md) | Do not conflate tokens with PETSCII/control codes. |
 
@@ -25,5 +25,6 @@ granularity: route
 - character sets: [../concepts/character-sets.md](../concepts/character-sets.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64disasm\c64disasm_ms.txt`
-- `C:\Code\c64ref\src\c64mem\c64mem_src.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- BASIC index: [INDEX.md](INDEX.md)
+- BASIC routines: [routines.md](routines.md)

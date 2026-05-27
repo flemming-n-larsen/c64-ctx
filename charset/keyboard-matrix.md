@@ -5,7 +5,7 @@ granularity: lookup
 ---
 
 ## facts
-- `keyboard_c64.txt` contains layout rows, key captions, modifier scancodes, and regular/shift/CBM/control output tables.
+- the local keyboard matrix page contains layout rows, key captions, modifier scancodes, and regular/shift/CBM/control output tables.
 - Modifier entries include left shift `0F`, right shift `34`, `CTRL` `3A`, and Commodore key `3D`.
 - `RESTORE` is listed as a key that does not produce a normal scancode in the source.
 
@@ -32,5 +32,6 @@ granularity: lookup
 - PETSCII: [petscii.md](petscii.md)
 
 ## sources
-- `C:\Code\c64ref\src\charset\keyboard_c64.txt`
-- `C:\Code\c64ref\src\charset\control_codes_c64.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- charset index: [INDEX.md](INDEX.md)
+- CIA1: [../io/cia1.md](../io/cia1.md)

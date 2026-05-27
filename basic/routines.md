@@ -15,7 +15,7 @@ granularity: route
 ## constraints
 - This initial page MUST route to exact disassembly sources instead of copying long BASIC listings.
 - Agents SHOULD use KERNAL API pages when the user asks how to call OS routines from user code.
-- Routine address claims MUST be checked against `c64disasm` sources before use.
+- Routine address claims MUST be checked against the local ROM route pages before use.
 
 ## links
 - BASIC vectors: [vectors.md](vectors.md)
@@ -23,6 +23,6 @@ granularity: route
 - ROM route: [../rom/basic-disassembly.md](../rom/basic-disassembly.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64disasm\c64disasm_ms.txt`
-- `C:\Code\c64ref\src\c64disasm\c64disasm_en.txt`
-- `C:\Code\c64ref\src\c64mem\c64mem_src.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- BASIC index: [INDEX.md](INDEX.md)
+- ROM route: [../rom/basic-disassembly.md](../rom/basic-disassembly.md)

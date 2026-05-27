@@ -5,8 +5,8 @@ granularity: chip
 ---
 
 ## facts
-- `$DC00-$DCFF` is a `MOS 6526 Complex Interface Adapter` block in `c64io_prg.txt`.
-- `$DC00` is data port `A` for keyboard, joystick, and related I/O in `c64io_prg.txt`.
+- `$DC00-$DCFF` is a `MOS 6526 Complex Interface Adapter` block in the local I/O pages.
+- `$DC00` is data port `A` for keyboard, joystick, and related I/O in the local I/O pages.
 - CIA1 is the default route for keyboard matrix and joystick port facts in this index.
 
 ## lookup
@@ -29,5 +29,6 @@ granularity: chip
 - interrupts: [../concepts/interrupts.md](../concepts/interrupts.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64io\c64io_prg.txt`
-- `C:\Code\c64ref\src\charset\keyboard_c64.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- I/O index: [INDEX.md](INDEX.md)
+- keyboard matrix: [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md)

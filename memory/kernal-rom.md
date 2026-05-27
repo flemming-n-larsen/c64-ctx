@@ -27,6 +27,6 @@ granularity: address-range
 - ROM route: [../rom/kernal-disassembly.md](../rom/kernal-disassembly.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt`
-- `C:\Code\c64ref\src\kernal\kernal_prg.txt`
-- `C:\Code\c64ref\src\c64disasm\c64disasm_cbm.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- memory index: [INDEX.md](INDEX.md)
+- ROM route: [../rom/kernal-disassembly.md](../rom/kernal-disassembly.md)

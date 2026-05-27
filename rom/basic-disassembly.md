@@ -5,11 +5,11 @@ granularity: route
 ---
 
 ## lookup
-| range / topic | source route | local companion |
+| range / topic | local route | local companion |
 |---|---|---|
-| `$A000-$BFFF` | `c64disasm_ms.txt`, `c64disasm_en.txt`, `c64disasm_de.txt`, `c64disasm_mm.txt` | [../memory/basic-rom.md](../memory/basic-rom.md) |
-| BASIC interpreter workspace | `c64mem_src.txt`, `symbols.txt` | [../basic/vectors.md](../basic/vectors.md) |
-| BASIC routines | `c64disasm_ms.txt` plus alternate commentaries | [../basic/routines.md](../basic/routines.md) |
+| `$A000-$BFFF` | [../memory/basic-rom.md](../memory/basic-rom.md) | [../memory/basic-rom.md](../memory/basic-rom.md) |
+| BASIC interpreter workspace | [../basic/vectors.md](../basic/vectors.md) | [../basic/vectors.md](../basic/vectors.md) |
+| BASIC routines | [../basic/routines.md](../basic/routines.md) | [../basic/routines.md](../basic/routines.md) |
 | Tokenized BASIC context | BASIC ROM/source and memory symbols | [../basic/tokens.md](../basic/tokens.md) |
 
 ## constraints
@@ -23,7 +23,6 @@ granularity: route
 - banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64disasm\c64disasm_ms.txt`
-- `C:\Code\c64ref\src\c64disasm\c64disasm_en.txt`
-- `C:\Code\c64ref\src\c64disasm\generate.py`
-- `C:\Code\c64ref\src\c64mem\c64mem_src.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- ROM index: [INDEX.md](INDEX.md)
+- BASIC routines: [../basic/routines.md](../basic/routines.md)

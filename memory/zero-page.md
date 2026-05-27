@@ -15,7 +15,7 @@ granularity: address-range
 | `$0000-$0001` | 6510 port | `D6510`, `R6510` |
 | `$0002-$008A` | BASIC interpreter workspace | `TXTTAB`, `VARTAB`, `CHRGET`, `TXTPTR` |
 | `$0090-$00BF` | KERNAL I/O and tape/serial workspace | `STATUS`, `FNLEN`, `LA`, `SA`, `FA`, `FNADR` |
-| `$00C0-$00FF` | System/editor/vector workspace | Use `symbols.txt` for exact labels. |
+| `$00C0-$00FF` | System/editor/vector workspace | Use the local symbol pages for exact labels. |
 
 ## constraints
 - Machine-language routines MUST avoid clobbering zero-page locations owned by BASIC/KERNAL unless they save and restore or intentionally take over the system.
@@ -28,5 +28,6 @@ granularity: address-range
 - CPU registers: [../cpu/6502/registers-flags.md](../cpu/6502/registers-flags.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64mem\symbols.txt`
-- `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- memory symbols: [symbols.md](symbols.md)
+- concept: [../concepts/zero-page.md](../concepts/zero-page.md)

@@ -6,7 +6,7 @@ granularity: code-space
 
 ## facts
 - Screen codes are bytes stored in the screen matrix; they are not the same thing as PETSCII input/output bytes.
-- `C64IPRI.TXT` maps C64 primary character-set code points to Unicode names such as `SPACE`, `LATIN CAPITAL LETTER A`, arrows, suits, and box-drawing symbols.
+- the local primary character-set coverage maps C64 primary character-set code points to Unicode names such as `SPACE`, `LATIN CAPITAL LETTER A`, arrows, suits, and box-drawing symbols.
 - Screen display also depends on selected character set, VIC-II `$D018`, and memory banking.
 
 ## lookup
@@ -32,6 +32,6 @@ granularity: code-space
 - VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
-- `C:\Code\c64ref\src\charset\C64IPRI.TXT`
-- `C:\Code\c64ref\src\charset\C64IALT.TXT`
-- `C:\Code\c64ref\src\c64io\c64io_prg.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- charset index: [INDEX.md](INDEX.md)
+- character-set concept: [../concepts/character-sets.md](../concepts/character-sets.md)

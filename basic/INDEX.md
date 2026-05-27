@@ -12,12 +12,13 @@ source: c64ref
 | BASIC ROM routines | [routines.md](routines.md) | Use with ROM disassembly route pages. |
 
 ## source-coverage
-| source | status | notes |
+| local coverage | status | notes |
 |---|---|---|
-| `C:\Code\c64ref\src\c64disasm\c64disasm_ms.txt` | planned | Microsoft BASIC source/disassembly route material. |
-| `C:\Code\c64ref\src\c64disasm\c64disasm_en.txt` | optional | Lee Davison comments for BASIC/KERNAL routines. |
-| `C:\Code\c64ref\src\c64mem\c64mem_src.txt` | planned | BASIC workspace labels and comments. |
-| `C:\Code\c64ref\src\c64mem\symbols.txt` | planned | BASIC-related symbols and zero-page aliases. |
+| [tokens.md](tokens.md) | planned | BASIC token values and keyword routing. |
+| [vectors.md](vectors.md) | planned | BASIC workspace labels, pointers, and aliases. |
+| [routines.md](routines.md) | planned | BASIC ROM routine route coverage. |
+| [../rom/basic-disassembly.md](../rom/basic-disassembly.md) | planned | BASIC ROM route companion. |
+| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related
 | domain | read | why |

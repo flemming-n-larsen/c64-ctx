@@ -5,7 +5,7 @@ granularity: atomic
 ---
 
 ## facts
-- `cpu_6502.txt` states the baseline 6502 has `151` documented opcodes and `105` remaining opcodes with undocumented behavior.
+- Local 6502 CPU pages state the baseline 6502 has `151` documented opcodes and `105` remaining opcodes with undocumented behavior.
 - Undocumented opcode behavior MAY differ across CPU variants, revisions, emulators, and clones.
 
 ## constraints
@@ -19,5 +19,6 @@ granularity: atomic
 - CPU index: [INDEX.md](INDEX.md)
 
 ## sources
-- `C:\Code\c64ref\src\6502\cpu_6502.txt`
-- `C:\Code\c64ref\src\6502\cpu_65c02.txt`
+- local route: [../../sources/INDEX.md](../../sources/INDEX.md)
+- CPU index: [INDEX.md](INDEX.md)
+- instruction set: [instruction-set.md](instruction-set.md)

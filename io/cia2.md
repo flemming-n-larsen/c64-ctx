@@ -5,8 +5,8 @@ granularity: chip
 ---
 
 ## facts
-- `$DD00-$DDFF` is a `MOS 6526 Complex Interface Adapter` block in `c64io_prg.txt`.
-- `$DD00` is data port `A` for serial bus, RS-232, and VIC bank-related signals in `c64io_prg.txt`.
+- `$DD00-$DDFF` is a `MOS 6526 Complex Interface Adapter` block in the local I/O pages.
+- `$DD00` is data port `A` for serial bus, RS-232, and VIC bank-related signals in the local I/O pages.
 - CIA2 is the default route for serial bus hardware and VIC bank selection context in this index.
 
 ## lookup
@@ -28,5 +28,6 @@ granularity: chip
 - VIC-II: [vic-ii.md](vic-ii.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64io\c64io_prg.txt`
-- `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- I/O index: [INDEX.md](INDEX.md)
+- memory I/O area: [../memory/io-area.md](../memory/io-area.md)

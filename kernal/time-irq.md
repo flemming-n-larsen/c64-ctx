@@ -26,5 +26,6 @@ granularity: api-family
 - CIA2: [../io/cia2.md](../io/cia2.md)
 
 ## sources
-- `C:\Code\c64ref\src\kernal\kernal_prg.txt`
-- `C:\Code\c64ref\src\kernal\generate.py`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- KERNAL index: [INDEX.md](INDEX.md)
+- interrupts: [../concepts/interrupts.md](../concepts/interrupts.md)

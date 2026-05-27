@@ -11,7 +11,7 @@ granularity: lookup
 | `$0001` | `R6510` | 6510 on-chip I/O port; controls banking and cassette lines. |
 | `$0003` | `ADRAY1` | BASIC workspace pointer. |
 | `$0005` | `ADRAY2` | BASIC workspace pointer. |
-| `$0007` | `CHARAC` | Also `INTEGR` in `symbols.txt`. |
+| `$0007` | `CHARAC` | Also `INTEGR` in the local symbol pages. |
 | `$0013` | `CHANNL` | Source notes unnamed in Programmer's Reference Manual. |
 | `$002B` | `TXTTAB` | Start of BASIC text. |
 | `$002D` | `VARTAB` | Start of BASIC variables. |
@@ -31,9 +31,9 @@ granularity: lookup
 | `$00BB` | `FNADR` | Current filename address pointer. |
 
 ## constraints
-- Agents MUST preserve aliases when `symbols.txt` lists multiple names for one address.
+- Agents MUST preserve aliases when the local symbol pages list multiple names for one address.
 - Agents SHOULD treat source comments such as `unnamed in Programmer's Reference Manual` as provenance caveats.
-- Agents MUST NOT use this seed table as a complete symbol list; inspect `symbols.txt` for exhaustive lookup.
+- Agents MUST NOT use this seed table as a complete symbol list; inspect the local symbol pages for exhaustive lookup.
 
 ## links
 - zero page: [zero-page.md](zero-page.md)
@@ -41,4 +41,6 @@ granularity: lookup
 - BASIC vectors: [../basic/vectors.md](../basic/vectors.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64mem\symbols.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- memory index: [INDEX.md](INDEX.md)
+- zero page: [zero-page.md](zero-page.md)

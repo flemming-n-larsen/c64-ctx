@@ -6,8 +6,8 @@ granularity: concept
 
 ## facts
 - Zero page is `$0000-$00FF`; many 6502 instructions have shorter/faster zero-page addressing forms.
-- On the C64, zero page contains hardware registers at `$0000-$0001`, BASIC workspace, KERNAL I/O state, and aliases from `symbols.txt`.
-- `CHRGET`, `CHRGOT`, and `TXTPTR` are BASIC-related zero-page entries in `symbols.txt`.
+- On the C64, zero page contains hardware registers at `$0000-$0001`, BASIC workspace, KERNAL I/O state, and aliases from the local symbol pages.
+- `CHRGET`, `CHRGOT`, and `TXTPTR` are BASIC-related zero-page entries in the local symbol pages.
 
 ## constraints
 - Agents MUST NOT describe C64 zero page as freely available scratch RAM.
@@ -20,6 +20,6 @@ granularity: concept
 - CPU addressing: [../cpu/6502/addressing-modes.md](../cpu/6502/addressing-modes.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64mem\symbols.txt`
-- `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt`
-- `C:\Code\c64ref\src\6502\cpu_6502.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- memory zero page: [../memory/zero-page.md](../memory/zero-page.md)
+- memory symbols: [../memory/symbols.md](../memory/symbols.md)

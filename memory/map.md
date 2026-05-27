@@ -28,6 +28,6 @@ granularity: overview
 - ROM routes: [../rom/INDEX.md](../rom/INDEX.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt`
-- `C:\Code\c64ref\src\c64mem\symbols.txt`
-- `C:\Code\c64ref\src\c64io\c64io_prg.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- memory index: [INDEX.md](INDEX.md)
+- I/O context: [../io/INDEX.md](../io/INDEX.md)

@@ -21,7 +21,7 @@ granularity: recipe
 | Filename/device setup | [../kernal/file-io.md](../kernal/file-io.md) | [../memory/zero-page.md](../memory/zero-page.md) |
 
 ## constraints
-- Agents MUST verify exact register contracts in `kernal_prg.txt` before emitting runnable assembly.
+- Agents MUST verify exact register contracts in the local KERNAL API pages before emitting runnable assembly.
 - Recipes SHOULD prefer KERNAL file I/O over direct serial/CIA manipulation unless direct hardware access is requested.
 - Code SHOULD restore default channels with `CLRCHN` after redirected I/O.
 
@@ -32,6 +32,6 @@ granularity: recipe
 - CPU flags/registers: [../cpu/6502/registers-flags.md](../cpu/6502/registers-flags.md)
 
 ## sources
-- `C:\Code\c64ref\src\kernal\kernal_prg.txt`
-- `C:\Code\c64ref\src\kernal\generate.py`
-- `C:\Code\c64ref\src\c64mem\symbols.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- task index: [INDEX.md](INDEX.md)
+- KERNAL file I/O: [../kernal/file-io.md](../kernal/file-io.md)

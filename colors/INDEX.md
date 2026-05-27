@@ -12,11 +12,13 @@ source: c64ref
 | Color RAM | [../io/color-ram.md](../io/color-ram.md) | `$D800-$DBFF`; stores color nibbles for screen cells. |
 
 ## source-coverage
-| source | status | notes |
+| local coverage | status | notes |
 |---|---|---|
-| `C:\Code\c64ref\src\charset\palette_c64.txt` | planned | Compact palette source. |
-| `C:\Code\c64ref\src\colors\index.html` | planned | Color reference UI source. |
-| `C:\Code\c64ref\src\colors\script.js` | planned | UI data or transformation logic if needed. |
+| [palette.md](palette.md) | planned | Compact color index and RGB approximation coverage. |
+| [../io/vic-ii.md](../io/vic-ii.md) | planned | VIC-II color register context. |
+| [../io/color-ram.md](../io/color-ram.md) | planned | Color RAM nibble context. |
+| [../charset/control-codes.md](../charset/control-codes.md) | planned | Color control-code context. |
+| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related
 | domain | read | why |

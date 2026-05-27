@@ -20,7 +20,7 @@ granularity: chip
 ## constraints
 - Raster IRQ code MUST acknowledge VIC-II interrupt flags, typically by writing the relevant flag bit back to `$D019`.
 - Agents MUST treat `$D011` bit `7` plus `$D012` as the raster compare value when discussing lines beyond `255`.
-- Code SHOULD keep `$D016` bit `5` clear because `c64io_prg.txt` explicitly warns it is always set to `0`.
+- Code SHOULD keep `$D016` bit `5` clear because the local I/O pages preserve the warning that it is always set to `0`.
 - VIC memory-base calculations MUST account for the selected VIC bank, not only CPU addresses.
 
 ## links
@@ -30,5 +30,6 @@ granularity: chip
 - colors: [../colors/palette.md](../colors/palette.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64io\c64io_prg.txt`
-- `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- I/O index: [INDEX.md](INDEX.md)
+- memory I/O area: [../memory/io-area.md](../memory/io-area.md)

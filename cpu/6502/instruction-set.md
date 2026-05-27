@@ -30,7 +30,7 @@ CLI
 ```
 
 ## constraints
-- Agents MUST cite exact mnemonic behavior from `cpu_6502.txt` when explaining flag updates.
+- Agents MUST cite exact mnemonic behavior from the local 6502 CPU pages when explaining flag updates.
 - Agents MUST NOT use 65C02-only opcodes as baseline C64 6502-family instructions.
 - Code that uses decimal mode SHOULD explicitly `CLD` when returning to code that expects binary arithmetic.
 
@@ -40,4 +40,5 @@ CLI
 - illegal opcodes: [illegal-opcodes.md](illegal-opcodes.md)
 
 ## sources
-- `C:\Code\c64ref\src\6502\cpu_6502.txt`
+- local route: [../../sources/INDEX.md](../../sources/INDEX.md)
+- CPU index: [INDEX.md](INDEX.md)

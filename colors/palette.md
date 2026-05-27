@@ -26,7 +26,7 @@ granularity: lookup
 
 ## constraints
 - Color RAM values MUST be treated as 4-bit color indices `$0-$F`.
-- RGB values SHOULD be treated as palette approximations from `palette_c64.txt` (`Colodore`), not universal analog output truth.
+- RGB values SHOULD be treated as palette approximations from the local palette page (`Colodore`), not universal analog output truth.
 - Color control-code examples SHOULD cite [../charset/control-codes.md](../charset/control-codes.md).
 
 ## links
@@ -35,6 +35,6 @@ granularity: lookup
 - control codes: [../charset/control-codes.md](../charset/control-codes.md)
 
 ## sources
-- `C:\Code\c64ref\src\charset\palette_c64.txt`
-- `C:\Code\c64ref\src\colors\index.html`
-- `C:\Code\c64ref\src\colors\script.js`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- colors index: [INDEX.md](INDEX.md)
+- charset controls: [../charset/control-codes.md](../charset/control-codes.md)

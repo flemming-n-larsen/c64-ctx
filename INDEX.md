@@ -8,7 +8,7 @@ source: c64ref
 | need | read first | then read | notes |
 |---|---|---|---|
 | Memory map, zero page, ROM/RAM areas | [memory/INDEX.md](memory/INDEX.md) | [concepts/memory-banking.md](concepts/memory-banking.md) | Agents MUST prefer focused memory pages over broad source files. |
-| KERNAL calls, jump table, file I/O | [kernal/INDEX.md](kernal/INDEX.md) | [tasks/load-save-file.md](tasks/load-save-file.md) | Agents SHOULD verify call contracts against cited `kernal_prg.txt` entries. |
+| KERNAL calls, jump table, file I/O | [kernal/INDEX.md](kernal/INDEX.md) | [tasks/load-save-file.md](tasks/load-save-file.md) | Agents SHOULD cite local KERNAL pages and route upstream provenance through [sources/INDEX.md](sources/INDEX.md). |
 | CPU registers, flags, opcodes | [cpu/6502/INDEX.md](cpu/6502/INDEX.md) | [cpu/6502/instruction-set.md](cpu/6502/instruction-set.md) | `6502` data SHOULD be treated as CPU-family scoped, not C64-only. |
 | VIC-II, SID, CIA, I/O registers | [io/INDEX.md](io/INDEX.md) | [memory/io-area.md](memory/io-area.md) | Agents MUST account for banking at `$D000-$DFFF`. |
 | BASIC or KERNAL ROM routine locations | [rom/INDEX.md](rom/INDEX.md) | [basic/INDEX.md](basic/INDEX.md) | ROM pages are compact routing aids, not full disassemblies. |
@@ -17,30 +17,31 @@ source: c64ref
 | Practical programming recipe | [tasks/INDEX.md](tasks/INDEX.md) | Matching domain pages | Task pages MUST link to supporting facts rather than duplicate long tables. |
 
 ## domains
-| domain | read | contains | primary source area |
+| domain | read | contains | provenance route |
 |---|---|---|---|
-| `concepts` | [concepts/INDEX.md](concepts/INDEX.md) | Cross-domain constraints: banking, interrupts, screen memory, zero page, character sets | Derived from multiple `c64ref` categories |
-| `cpu` | [cpu/INDEX.md](cpu/INDEX.md) | CPU-family route plus `6502` subdomain | `C:\Code\c64ref\src\6502` |
-| `memory` | [memory/INDEX.md](memory/INDEX.md) | C64 address map, symbols, zero page, ROM/RAM/I/O regions | `C:\Code\c64ref\src\c64mem` |
-| `io` | [io/INDEX.md](io/INDEX.md) | Processor port, VIC-II, SID, CIA1, CIA2, color RAM | `C:\Code\c64ref\src\c64io` |
-| `kernal` | [kernal/INDEX.md](kernal/INDEX.md) | KERNAL jump table and API families | `C:\Code\c64ref\src\kernal` |
-| `basic` | [basic/INDEX.md](basic/INDEX.md) | BASIC tokens, vectors, routine routes | `C:\Code\c64ref\src\c64disasm`, `C:\Code\c64ref\src\c64mem` |
-| `rom` | [rom/INDEX.md](rom/INDEX.md) | BASIC/KERNAL ROM disassembly routes | `C:\Code\c64ref\src\c64disasm` |
-| `charset` | [charset/INDEX.md](charset/INDEX.md) | PETSCII, screen codes, controls, keyboard matrix | `C:\Code\c64ref\src\charset` |
-| `colors` | [colors/INDEX.md](colors/INDEX.md) | C64 color lookup and palette routes | `C:\Code\c64ref\src\colors`, `C:\Code\c64ref\src\charset` |
+| `concepts` | [concepts/INDEX.md](concepts/INDEX.md) | Cross-domain constraints: banking, interrupts, screen memory, zero page, character sets | [sources/INDEX.md](sources/INDEX.md) |
+| `cpu` | [cpu/INDEX.md](cpu/INDEX.md) | CPU-family route plus `6502` subdomain | [sources/INDEX.md](sources/INDEX.md) |
+| `memory` | [memory/INDEX.md](memory/INDEX.md) | C64 address map, symbols, zero page, ROM/RAM/I/O regions | [sources/INDEX.md](sources/INDEX.md) |
+| `io` | [io/INDEX.md](io/INDEX.md) | Processor port, VIC-II, SID, CIA1, CIA2, color RAM | [sources/INDEX.md](sources/INDEX.md) |
+| `kernal` | [kernal/INDEX.md](kernal/INDEX.md) | KERNAL jump table and API families | [sources/INDEX.md](sources/INDEX.md) |
+| `basic` | [basic/INDEX.md](basic/INDEX.md) | BASIC tokens, vectors, routine routes | [sources/INDEX.md](sources/INDEX.md) |
+| `rom` | [rom/INDEX.md](rom/INDEX.md) | BASIC/KERNAL ROM disassembly routes | [sources/INDEX.md](sources/INDEX.md) |
+| `charset` | [charset/INDEX.md](charset/INDEX.md) | PETSCII, screen codes, controls, keyboard matrix | [sources/INDEX.md](sources/INDEX.md) |
+| `colors` | [colors/INDEX.md](colors/INDEX.md) | C64 color lookup and palette routes | [sources/INDEX.md](sources/INDEX.md) |
 | `tasks` | [tasks/INDEX.md](tasks/INDEX.md) | Agent recipes for common programming goals | Cross-domain derived pages |
-| `sources` | [sources/INDEX.md](sources/INDEX.md) | Source corpus map and provenance policy | `C:\Code\c64ref` |
+| `sources` | [sources/INDEX.md](sources/INDEX.md) | Source corpus map and provenance policy | Upstream GitHub fallback links |
 
 ## source-map
-| `c64ref` source | local domains | status | notes |
+| coverage route | local domains | status | notes |
 |---|---|---|---|
-| `C:\Code\c64ref\src\6502` | `cpu/6502` | planned seed | Structured CPU description files use sections such as `[registers]`, `[flags]`, `[mnemos]`, `[operations]`. |
-| `C:\Code\c64ref\src\c64mem` | `memory`, `concepts`, `basic`, `rom`, `io` | planned seed | Memory text files and `symbols.txt` supply address ranges, symbols, and ROM/RAM constraints. |
-| `C:\Code\c64ref\src\c64io` | `io`, `tasks` | planned seed | I/O maps supply register ranges and bit-level hardware fields. |
-| `C:\Code\c64ref\src\kernal` | `kernal`, `tasks` | planned seed | KERNAL API files supply jump addresses, call preparation, returns, and affected registers. |
-| `C:\Code\c64ref\src\c64disasm` | `rom`, `basic`, `kernal` | planned seed | Disassembly sources SHOULD be used as route/provenance material, not copied wholesale. |
-| `C:\Code\c64ref\src\charset` | `charset`, `colors`, `tasks` | planned seed | Keyboard, PETSCII/control, chargen, and palette files back character facts. |
-| `C:\Code\c64ref\src\colors` | `colors` | planned seed | Color UI assets MAY clarify palette names and display intent. |
+| [cpu/6502/INDEX.md](cpu/6502/INDEX.md) | `cpu/6502` | planned seed | Local CPU pages cover registers, flags, mnemonics, operations, and undocumented caveats. |
+| [memory/INDEX.md](memory/INDEX.md) | `memory`, `concepts`, `basic`, `rom`, `io` | planned seed | Local memory pages cover address ranges, symbols, aliases, and ROM/RAM constraints. |
+| [io/INDEX.md](io/INDEX.md) | `io`, `tasks` | planned seed | Local I/O pages cover register ranges and bit-level hardware fields. |
+| [kernal/INDEX.md](kernal/INDEX.md) | `kernal`, `tasks` | planned seed | Local KERNAL pages cover jump addresses, call preparation, returns, and affected registers. |
+| [rom/INDEX.md](rom/INDEX.md) | `rom`, `basic`, `kernal` | planned seed | Local ROM pages provide route/provenance material, not full copied listings. |
+| [charset/INDEX.md](charset/INDEX.md) | `charset`, `colors`, `tasks` | planned seed | Local charset pages cover keyboard, PETSCII/control, chargen, and palette facts. |
+| [colors/INDEX.md](colors/INDEX.md) | `colors` | planned seed | Local color pages cover color names, indices, and palette intent. |
+| [sources/INDEX.md](sources/INDEX.md) | all domains | provenance | Central upstream fallback route for `mist64/c64ref`. |
 
 ## rules
 - Agents MUST start here when no narrower entry point is supplied.
@@ -48,7 +49,7 @@ source: c64ref
 - Agents SHOULD follow `sources` links when facts conflict, are surprising, or require exact wording.
 - Agents MUST NOT assume undocumented behavior without a cited source.
 - Agents MUST distinguish `facts`, `constraints`, `aliases`, and unresolved source differences.
-- Generated or derived pages MUST preserve provenance to exact `C:\Code\c64ref` files.
+- Generated or derived pages MUST preserve local Markdown provenance and route upstream fallback through [sources/INDEX.md](sources/INDEX.md).
 
 ## links
 - agent rules: [AGENTS.md](AGENTS.md)

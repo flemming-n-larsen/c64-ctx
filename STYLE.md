@@ -21,7 +21,7 @@ source: c64ref
 | C64 symbols in content | MAY preserve source uppercase | `ACPTR`, `CHRIN`, `D6510`, `VIC-II` |
 | Addresses | MUST use `$`-prefixed hexadecimal | `$0001`, `$D000-$DFFF` |
 | Internal links | MUST use relative Markdown links | `../memory/map.md` |
-| Source citations | MUST use exact Windows paths | `C:\Code\c64ref\src\kernal\kernal_prg.txt` |
+| Source citations | MUST use relative local Markdown links | `../sources/INDEX.md` |
 
 ## index-template
 ```md
@@ -37,9 +37,10 @@ source: c64ref
 | Zero page symbols | ./zero-page.md | Fast variable/register lookup |
 
 ## source-coverage
-| source | status | notes |
+| local coverage | status | notes |
 |---|---|---|
-| `C:\Code\c64ref\src\c64mem\symbols.txt` | used | Symbol seed |
+| [symbols.md](symbols.md) | used | Symbol coverage |
+| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Upstream fallback route |
 
 ## related
 | domain | read | why |
@@ -70,7 +71,8 @@ granularity: atomic
 - memory: [memory/map.md](memory/map.md)
 
 ## sources
-- `C:\Code\c64ref\src\kernal\kernal_prg.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- supporting page: [jump-table.md](jump-table.md)
 ```
 
 ## allowed-sections
@@ -84,7 +86,7 @@ granularity: atomic
 | `sequence` | Ordered operational steps for calls or tasks. |
 | `examples` | Minimal code or data examples only. |
 | `links` | Internal cross-domain references. |
-| `sources` | Exact source files used. |
+| `sources` | Local Markdown pages and centralized provenance routes used. |
 
 ## compactness
 - Atomic files SHOULD fit one concept, address range, chip, API family, or table.
@@ -94,6 +96,6 @@ granularity: atomic
 
 ## provenance
 - Every non-index factual file MUST include `## sources`.
-- A fact derived from multiple source files SHOULD list all source files that support or constrain it.
+- A fact derived from multiple local pages SHOULD list all local pages that support or constrain it.
 - When two source files disagree, the local page MUST include a compact conflict note and SHOULD not silently choose one source.
-- Source paths MUST reference `C:\Code\c64ref`, not generated output under `out`.
+- Source sections MUST cite relative local Markdown links and route upstream fallback provenance through [sources/INDEX.md](sources/INDEX.md).

@@ -30,4 +30,5 @@ granularity: atomic
 - memory map: [../../memory/map.md](../../memory/map.md)
 
 ## sources
-- `C:\Code\c64ref\src\6502\cpu_6502.txt`
+- local route: [../../sources/INDEX.md](../../sources/INDEX.md)
+- CPU index: [INDEX.md](INDEX.md)

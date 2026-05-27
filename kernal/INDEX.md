@@ -15,12 +15,13 @@ source: c64ref
 | Time, IRQ, stop-key calls | [time-irq.md](time-irq.md) | Use for timers, IRQ restoration, and `STOP`. |
 
 ## source-coverage
-| source | status | notes |
+| local coverage | status | notes |
 |---|---|---|
-| `C:\Code\c64ref\src\kernal\kernal_prg.txt` | planned | Primary API call contracts. |
-| `C:\Code\c64ref\src\kernal\kernal_sta.txt` | planned | Compact standard KERNAL function cross-check. |
-| `C:\Code\c64ref\src\kernal\generate.py` | observed | Category mapping for jump addresses. |
-| `C:\Code\c64ref\src\c64disasm\c64disasm_cbm.txt` | optional | ROM implementation route when API docs are insufficient. |
+| [jump-table.md](jump-table.md) | planned | KERNAL jump addresses and categories. |
+| [file-io.md](file-io.md), [serial-bus.md](serial-bus.md), [keyboard-screen.md](keyboard-screen.md) | planned | API family contracts and call setup. |
+| [memory.md](memory.md), [time-irq.md](time-irq.md) | planned | Memory, timer, IRQ, and stop-key API coverage. |
+| [../rom/kernal-disassembly.md](../rom/kernal-disassembly.md) | optional | ROM implementation routing when API summaries are insufficient. |
+| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related
 | domain | read | why |

@@ -5,8 +5,8 @@ granularity: chip
 ---
 
 ## facts
-- `$D400-$D7FF` is the SID (`MOS 81 SOUND INTERFACE DEVICE`) range in `c64io_prg.txt`.
-- `$D400` starts voice `1` frequency control low byte in `c64io_prg.txt`.
+- `$D400-$D7FF` is the SID (`MOS 81 SOUND INTERFACE DEVICE`) range in the local I/O pages.
+- `$D400` starts voice `1` frequency control low byte in the local I/O pages.
 - SID register mirrors may appear across the `$D400-$D7FF` block; agents SHOULD cite exact source/register rows for detailed programming.
 
 ## lookup
@@ -27,5 +27,5 @@ granularity: chip
 - processor port: [processor-port.md](processor-port.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64io\c64io_prg.txt`
-- `C:\Code\c64ref\src\c64io\c64io_mapc64.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- I/O index: [INDEX.md](INDEX.md)

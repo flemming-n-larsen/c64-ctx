@@ -33,6 +33,7 @@ granularity: recipe
 - KERNAL ROM: [../memory/kernal-rom.md](../memory/kernal-rom.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt`
-- `C:\Code\c64ref\src\c64io\c64io_prg.txt`
-- `C:\Code\c64ref\src\6502\cpu_6502.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- task index: [INDEX.md](INDEX.md)
+- banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
+- processor port: [../io/processor-port.md](../io/processor-port.md)

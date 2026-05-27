@@ -48,7 +48,7 @@ granularity: lookup
 | `$FFF3` | `IOBASE` | `MEM` | Return I/O base address. |
 
 ## constraints
-- Callers MUST follow each routine's register contract from `kernal_prg.txt`; this table is only a route table.
+- Callers MUST follow each routine's register contract from the local KERNAL API pages; this table is only a route table.
 - Agents SHOULD use category labels from `kernal/generate.py` for grouping.
 - Agents MUST NOT infer clobbers from the compact purpose column.
 
@@ -60,6 +60,5 @@ granularity: lookup
 - time/IRQ: [time-irq.md](time-irq.md)
 
 ## sources
-- `C:\Code\c64ref\src\kernal\kernal_prg.txt`
-- `C:\Code\c64ref\src\kernal\generate.py`
-- `C:\Code\c64ref\src\kernal\kernal_sta.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- KERNAL index: [INDEX.md](INDEX.md)

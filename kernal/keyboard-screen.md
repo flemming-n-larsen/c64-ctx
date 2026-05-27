@@ -28,5 +28,6 @@ granularity: api-family
 - screen memory: [../concepts/screen-memory.md](../concepts/screen-memory.md)
 
 ## sources
-- `C:\Code\c64ref\src\kernal\kernal_prg.txt`
-- `C:\Code\c64ref\src\kernal\generate.py`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- KERNAL index: [INDEX.md](INDEX.md)
+- charset controls: [../charset/control-codes.md](../charset/control-codes.md)

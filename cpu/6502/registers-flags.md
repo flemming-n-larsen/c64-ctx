@@ -27,7 +27,7 @@ granularity: atomic
 | `0` | `C` | Carry | Carry/borrow, shifts, rotates, comparisons. |
 
 ## constraints
-- Agents MUST use `A`, `X`, `Y`, `S`, `P`, and `PC` as the canonical register names from `cpu_6502.txt`.
+- Agents MUST use `A`, `X`, `Y`, `S`, `P`, and `PC` as the canonical register names from the local 6502 CPU pages.
 - Interrupt code SHOULD reason about the `I` flag before changing IRQ vectors or device interrupt masks.
 - Arithmetic explanations MUST distinguish `C` carry/borrow from `V` signed overflow.
 
@@ -37,4 +37,5 @@ granularity: atomic
 - interrupts: [../../concepts/interrupts.md](../../concepts/interrupts.md)
 
 ## sources
-- `C:\Code\c64ref\src\6502\cpu_6502.txt`
+- local route: [../../sources/INDEX.md](../../sources/INDEX.md)
+- CPU index: [INDEX.md](INDEX.md)

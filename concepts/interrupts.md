@@ -5,7 +5,7 @@ granularity: concept
 ---
 
 ## facts
-- The 6502 `I` status flag is the interrupt-disable flag in `cpu_6502.txt`.
+- The 6502 `I` status flag is the interrupt-disable flag in the local 6502 CPU pages.
 - VIC-II raster interrupts use VIC-II raster compare/control and interrupt flag registers in the `$D000` I/O block.
 - CIA1 and CIA2 interrupt behavior MUST be distinguished: CIA1 is routed as IRQ context here, CIA2 as NMI context here.
 - KERNAL time/IRQ services are routed through [../kernal/time-irq.md](../kernal/time-irq.md).
@@ -31,7 +31,6 @@ granularity: concept
 - KERNAL time/IRQ: [../kernal/time-irq.md](../kernal/time-irq.md)
 
 ## sources
-- `C:\Code\c64ref\src\6502\cpu_6502.txt`
-- `C:\Code\c64ref\src\c64io\c64io_prg.txt`
-- `C:\Code\c64ref\src\kernal\kernal_prg.txt`
-- `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- KERNAL IRQ calls: [../kernal/time-irq.md](../kernal/time-irq.md)
+- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)

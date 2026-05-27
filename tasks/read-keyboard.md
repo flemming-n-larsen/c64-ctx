@@ -30,6 +30,7 @@ granularity: recipe
 - character-set concept: [../concepts/character-sets.md](../concepts/character-sets.md)
 
 ## sources
-- `C:\Code\c64ref\src\kernal\kernal_prg.txt`
-- `C:\Code\c64ref\src\charset\keyboard_c64.txt`
-- `C:\Code\c64ref\src\c64io\c64io_prg.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- task index: [INDEX.md](INDEX.md)
+- KERNAL keyboard/screen: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
+- keyboard matrix: [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md)

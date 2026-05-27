@@ -26,5 +26,6 @@ granularity: address-range
 - BASIC domain: [../basic/INDEX.md](../basic/INDEX.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt`
-- `C:\Code\c64ref\src\c64disasm\c64disasm_ms.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- memory index: [INDEX.md](INDEX.md)
+- ROM route: [../rom/basic-disassembly.md](../rom/basic-disassembly.md)

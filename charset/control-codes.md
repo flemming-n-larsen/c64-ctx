@@ -43,5 +43,6 @@ granularity: lookup
 - KERNAL screen I/O: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
 
 ## sources
-- `C:\Code\c64ref\src\charset\control_codes_c64.txt`
-- `C:\Code\c64ref\src\charset\palette_c64.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- charset index: [INDEX.md](INDEX.md)
+- palette: [../colors/palette.md](../colors/palette.md)

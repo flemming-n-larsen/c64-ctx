@@ -5,7 +5,7 @@ granularity: address-range
 ---
 
 ## facts
-- `$D800-$DBFF` is `Color RAM (Nybbles)` in `c64io_prg.txt`.
+- `$D800-$DBFF` is `Color RAM (Nybbles)` in the local I/O pages.
 - Color RAM corresponds to text screen cells when standard text display conventions are used.
 - Only the low `4` bits carry the color value for each cell.
 
@@ -26,5 +26,6 @@ granularity: address-range
 - palette: [../colors/palette.md](../colors/palette.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64io\c64io_prg.txt`
-- `C:\Code\c64ref\src\charset\palette_c64.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- I/O index: [INDEX.md](INDEX.md)
+- palette: [../colors/palette.md](../colors/palette.md)

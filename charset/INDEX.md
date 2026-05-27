@@ -13,13 +13,14 @@ source: c64ref
 | Keyboard matrix and scan values | [keyboard-matrix.md](keyboard-matrix.md) | Use for key scanning and modifiers. |
 
 ## source-coverage
-| source | status | notes |
+| local coverage | status | notes |
 |---|---|---|
-| `C:\Code\c64ref\src\charset\keyboard_c64.txt` | planned | Keyboard layout, matrix, regular/shift/CBM/control values. |
-| `C:\Code\c64ref\src\charset\control_codes_c64.txt` | planned | PETSCII control-code facts. |
-| `C:\Code\c64ref\src\charset\C64IPRI.TXT` | planned | Primary character set data. |
-| `C:\Code\c64ref\src\charset\C64IALT.TXT` | planned | Alternate character set data. |
-| `C:\Code\c64ref\src\charset\palette_c64.txt` | planned | Color names and values when used by character/control pages. |
+| [petscii.md](petscii.md) | planned | PETSCII values and aliases. |
+| [screen-codes.md](screen-codes.md) | planned | Screen-code values and matrix byte distinctions. |
+| [control-codes.md](control-codes.md) | planned | PETSCII control-code facts. |
+| [keyboard-matrix.md](keyboard-matrix.md) | planned | Keyboard layout, matrix, and modifier values. |
+| [../colors/palette.md](../colors/palette.md) | planned | Color names and values when used by character/control pages. |
+| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related
 | domain | read | why |

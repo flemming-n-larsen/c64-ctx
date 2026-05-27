@@ -15,11 +15,13 @@ source: c64ref
 | Color RAM | [color-ram.md](color-ram.md) | `$D800-$DBFF`; 4-bit color storage. |
 
 ## source-coverage
-| source | status | notes |
+| local coverage | status | notes |
 |---|---|---|
-| `C:\Code\c64ref\src\c64io\c64io_prg.txt` | planned | Programmer's Reference Guide I/O map. |
-| `C:\Code\c64ref\src\c64io\c64io_mapc64.txt` | planned | Mapping-style I/O detail. |
-| `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt` | planned | Banking and memory window context. |
+| [processor-port.md](processor-port.md) | planned | 6510 port and memory-configuration bits. |
+| [vic-ii.md](vic-ii.md), [sid.md](sid.md) | planned | Video and sound register coverage. |
+| [cia1.md](cia1.md), [cia2.md](cia2.md) | planned | CIA timers, keyboard/joystick, serial bus, IRQ/NMI coverage. |
+| [color-ram.md](color-ram.md), [../memory/io-area.md](../memory/io-area.md) | planned | Color RAM plus `$D000-$DFFF` banking context. |
+| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related
 | domain | read | why |

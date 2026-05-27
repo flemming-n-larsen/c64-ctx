@@ -14,12 +14,13 @@ source: c64ref
 | PETSCII vs screen code vs keyboard matrix | [character-sets.md](character-sets.md) | Agents MUST NOT conflate code spaces. |
 
 ## source-coverage
-| source | status | notes |
+| local coverage | status | notes |
 |---|---|---|
-| `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt` | planned | Banking, zero-page, screen memory, vectors. |
-| `C:\Code\c64ref\src\c64io\c64io_prg.txt` | planned | Hardware interrupt and I/O register context. |
-| `C:\Code\c64ref\src\charset\keyboard_c64.txt` | planned | Keyboard matrix and character input context. |
-| `C:\Code\c64ref\src\charset\control_codes_c64.txt` | planned | PETSCII/control code distinctions. |
+| [memory-banking.md](memory-banking.md) | planned | Banking, ROM/RAM/I/O visibility, and processor-port context. |
+| [zero-page.md](zero-page.md), [screen-memory.md](screen-memory.md) | planned | Workspace, vectors, screen matrix, and color RAM context. |
+| [interrupts.md](interrupts.md) | planned | Hardware interrupt, vector, and register context. |
+| [character-sets.md](character-sets.md) | planned | PETSCII, screen-code, and keyboard-matrix distinctions. |
+| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related
 | domain | read | why |

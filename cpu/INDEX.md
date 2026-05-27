@@ -14,11 +14,11 @@ source: c64ref
 | Undocumented opcodes | [6502/illegal-opcodes.md](6502/illegal-opcodes.md) | Agents SHOULD treat illegal opcodes as compatibility-sensitive. |
 
 ## source-coverage
-| source | status | notes |
+| local coverage | status | notes |
 |---|---|---|
-| `C:\Code\c64ref\src\6502\cpu_6502.txt` | planned | Registers, flags, mnemonics, operations, opcode table. |
-| `C:\Code\c64ref\src\6502\cpu_65c02.txt` | referenced | Variant contrast only; MUST NOT be treated as C64 baseline. |
-| `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt` | planned | 6510 processor-port C64-specific behavior. |
+| [6502/INDEX.md](6502/INDEX.md) | planned | Registers, flags, mnemonics, operations, opcode tables, and variant caveats. |
+| [../io/processor-port.md](../io/processor-port.md) | planned | 6510 processor-port C64-specific behavior. |
+| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related
 | domain | read | why |

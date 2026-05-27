@@ -32,6 +32,6 @@ granularity: register-pair
 - bank-switch task: [../tasks/bank-switch-rom-ram.md](../tasks/bank-switch-rom-ram.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt`
-- `C:\Code\c64ref\src\c64io\c64io_prg.txt`
-- `C:\Code\c64ref\src\c64mem\symbols.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- I/O index: [INDEX.md](INDEX.md)
+- banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)

@@ -7,7 +7,7 @@ granularity: address-range
 ## lookup
 | range | visible when I/O selected | primary page | notes |
 |---|---|---|---|
-| `$D000-$D02E` | `VIC-II` registers | [../io/vic-ii.md](../io/vic-ii.md) | `c64io_prg.txt` labels this as MOS `6566` video interface controller. |
+| `$D000-$D02E` | `VIC-II` registers | [../io/vic-ii.md](../io/vic-ii.md) | the local I/O pages labels this as MOS `6566` video interface controller. |
 | `$D400-$D7FF` | `SID` registers | [../io/sid.md](../io/sid.md) | Sound interface device. |
 | `$D800-$DBFF` | Color RAM nybbles | [../io/color-ram.md](../io/color-ram.md) | Stores 4-bit color values. |
 | `$DC00-$DCFF` | `CIA1` registers | [../io/cia1.md](../io/cia1.md) | Keyboard, joystick, timers, IRQ. |
@@ -25,5 +25,6 @@ granularity: address-range
 - I/O index: [../io/INDEX.md](../io/INDEX.md)
 
 ## sources
-- `C:\Code\c64ref\src\c64io\c64io_prg.txt`
-- `C:\Code\c64ref\src\c64mem\c64mem_mapc64.txt`
+- local route: [../sources/INDEX.md](../sources/INDEX.md)
+- memory index: [INDEX.md](INDEX.md)
+- I/O index: [../io/INDEX.md](../io/INDEX.md)
