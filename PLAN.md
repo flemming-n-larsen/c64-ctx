@@ -149,16 +149,16 @@ New directory: `toolchains/`
 
 | done | file | change | key content |
 |---|---|---|---|
-| [ ] | `toolchains/INDEX.md` | **new** | Routes for emulator, assembler, and project workflows; quick route for "build/run this in VICE" prompts |
-| [ ] | `toolchains/vice.md` | **new** | Editor-neutral `.prg` run/autostart/debug loop; command-line launch examples; monitor route; note when emulator behavior is outside source corpus and must cite VICE docs |
-| [ ] | `toolchains/kickassembler-workflow.md` | **new** | Minimal source → `.prg` → `VICE` loop; JVM/tool invocation assumptions; links to `asm/kickassembler.md` and `asm/common-patterns.md` |
-| [ ] | `toolchains/acme-workflow.md` | **new** | Minimal source → `.prg` → `VICE` loop; output directive expectations; links to `asm/acme.md` |
-| [ ] | `toolchains/ca65-workflow.md` | **new** | `ca65`/`ld65` C64 build patterns; when `ld65 -t c64` is enough vs custom linker config; links to `asm/ca65.md` |
-| [ ] | `toolchains/64tass-workflow.md` | **new** | `.prg` output workflow; `--cbm-prg`, flat output distinction, and `VICE` run loop; links to `asm/64tass.md` |
-| [ ] | `toolchains/cbm-studio.md` | **new** | CBM Studio project/workflow assumptions and source-reference routes; do not duplicate assembler reference tables |
-| [ ] | `INDEX.md` | update | Add `toolchains` row to domains table; add quick-route row for PC build/run workflows |
-| [ ] | `sources/INDEX.md` | update | Add local provenance routes for `VICE`, assembler tool docs, and `CBM Studio` documentation |
-| [ ] | `ATTRIBUTION.md` | verify/update | Add or verify attribution/source notes for `VICE`, `CBM Studio`, and assembler workflow documentation |
+| [x] | `toolchains/INDEX.md` | **new** | Routes for emulator, assembler, and project workflows; quick route for "build/run this in VICE" prompts |
+| [x] | `toolchains/vice.md` | **new** | Editor-neutral `.prg` run/autostart/debug loop; command-line launch examples; monitor route; note when emulator behavior is outside source corpus and must cite VICE docs |
+| [x] | `toolchains/kickassembler-workflow.md` | **new** | Minimal source → `.prg` → `VICE` loop; JVM/tool invocation assumptions; links to `asm/kickassembler.md` and `asm/common-patterns.md` |
+| [x] | `toolchains/acme-workflow.md` | **new** | Minimal source → `.prg` → `VICE` loop; output directive expectations; links to `asm/acme.md` |
+| [x] | `toolchains/ca65-workflow.md` | **new** | `ca65`/`ld65` C64 build patterns; when `ld65 -t c64` is enough vs custom linker config; links to `asm/ca65.md` |
+| [x] | `toolchains/64tass-workflow.md` | **new** | `.prg` output workflow; `--cbm-prg`, flat output distinction, and `VICE` run loop; links to `asm/64tass.md` |
+| [x] | `toolchains/cbm-studio.md` | **new** | CBM Studio project/workflow assumptions and source-reference routes; do not duplicate assembler reference tables |
+| [x] | `INDEX.md` | update | Add `toolchains` row to domains table; add quick-route row for PC build/run workflows |
+| [x] | `sources/INDEX.md` | update | Add local provenance routes for `VICE`, assembler tool docs, and `CBM Studio` documentation |
+| [x] | `ATTRIBUTION.md` | verify/update | Add or verify attribution/source notes for `VICE`, `CBM Studio`, and assembler workflow documentation |
 
 ---
 

@@ -16,6 +16,7 @@ source: c64ref
 | C64 color numbers and palette | [colors/INDEX.md](colors/INDEX.md) | [io/vic-ii.md](io/vic-ii.md) | Color references SHOULD cite both charset palette and colors UI sources when applicable. |
 | Practical programming recipe | [tasks/INDEX.md](tasks/INDEX.md) | Matching domain pages | Task pages MUST link to supporting facts rather than duplicate long tables. |
 | Assembler syntax, directives, build patterns | [asm/INDEX.md](asm/INDEX.md) | [asm/rosetta.md](asm/rosetta.md) | Covers ACME, KickAssembler, CA65 (cc65), 64tass. |
+| Build/run `.prg` on PC (VICE, assembler workflows) | [toolchains/INDEX.md](toolchains/INDEX.md) | [toolchains/vice.md](toolchains/vice.md) | Editor-neutral workflows for ACME, KickAssembler, CA65, 64tass, CBM prg Studio. |
 
 ## domains
 | domain | read | contains | provenance route |
@@ -31,6 +32,7 @@ source: c64ref
 | `colors` | [colors/INDEX.md](colors/INDEX.md) | C64 color lookup and palette routes | [sources/INDEX.md](sources/INDEX.md) |
 | `tasks` | [tasks/INDEX.md](tasks/INDEX.md) | Agent recipes for common programming goals | Cross-domain derived pages |
 | `asm` | [asm/INDEX.md](asm/INDEX.md) | Assembler-specific syntax for ACME, KickAssembler, CA65, 64tass; cross-assembler rosetta; common patterns | Assembler-specific upstream docs |
+| `toolchains` | [toolchains/INDEX.md](toolchains/INDEX.md) | VICE emulator workflow and per-assembler source-to-`.prg` build workflows; CBM prg Studio | Tool-specific upstream docs |
 | `sources` | [sources/INDEX.md](sources/INDEX.md) | Source corpus map and provenance policy | Upstream GitHub fallback links |
 
 ## source-map

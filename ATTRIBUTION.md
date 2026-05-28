@@ -114,3 +114,26 @@ AI-first syntax summaries. Respective upstream sources:
 - **KickAssembler** — Mads Nielsen; http://theweb.dk/KickAssembler/
 - **CA65 / cc65** — cc65 contributors; https://cc65.github.io/ (zlib license)
 - **64tass** — Soci/Singular; https://sourceforge.net/projects/tass64/
+
+## Toolchain documentation
+
+The `toolchains/` domain pages cite each tool's own documentation as their
+upstream source. No code or text is copied from these projects; pages contain
+AI-first workflow summaries. Respective upstream sources:
+
+- **VICE** — VICE team; https://vice-emu.sourceforge.io/ (GPL-2.0).
+  Workflow and CLI conventions in `toolchains/vice.md` are derived from the
+  VICE manual (`vice.pdf`) distributed with each release.
+- **ACME workflow** — see ACME entry above; CLI behavior in
+  `toolchains/acme-workflow.md` is derived from the ACME user manual.
+- **KickAssembler workflow** — see KickAssembler entry above; CLI behavior
+  in `toolchains/kickassembler-workflow.md` is derived from the
+  KickAssembler reference manual.
+- **CA65 workflow** — see CA65 / cc65 entry above; `ca65`/`ld65` CLI behavior
+  in `toolchains/ca65-workflow.md` is derived from `ca65.html` and `ld65.html`
+  in the cc65 documentation.
+- **64tass workflow** — see 64tass entry above; CLI behavior in
+  `toolchains/64tass-workflow.md` is derived from the 64tass manual.
+- **CBM prg Studio** — Arthur Jordison; https://www.ajordison.co.uk/.
+  Project / IDE conventions in `toolchains/cbm-studio.md` are derived from
+  the CBM prg Studio documentation distributed with the installer.
