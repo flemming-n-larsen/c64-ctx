@@ -129,16 +129,16 @@ New directory: `asm/`
 
 | done | file | change | key content |
 |---|---|---|---|
-| [ ] | `asm/INDEX.md` | **new** | Routes to all 4 assembler pages; related: `cpu/6502`, `memory`, `tasks` |
-| [ ] | `asm/acme.md` | **new** | Version 0.97+; `## directives` table (`*=`, `!byte`, `!word`, `!text`, `!scr`, `!fill`, `!align`, `!to`, `!cpu`, `!zone`, `!src`, `!binary`); `## macros` (`!macro`/`+name`); `## expressions` (`<`/`>` byte operators, anonymous `+`/`-` labels); output formats |
-| [ ] | `asm/kickassembler.md` | **new** | Version 5.x, JVM-required; `## directives` (`.pc`, `.byte`, `.word`, `.text`, `.fill`, `.align`, `.import`, `.var`, `.const`, `.enum`); `## macros` (`.macro name(args)`); `## scripting` (`.eval`, `:` prefix, list/hashtable literals) |
-| [ ] | `asm/ca65.md` | **new** | cc65 v2.19+; `## directives` (`.org`/`.segment`, `.byte`, `.word`, `.res`, `.asciiz`, `.include`, `.incbin`, `.macro`/`.endmacro`, `.scope`, `.proc`, `.export`, `.import`); `## segments` (CODE/RODATA/DATA/BSS/ZEROPAGE); `## linker-config` (`ld65 -t c64`, custom `.cfg` MEMORY+SEGMENTS) |
-| [ ] | `asm/64tass.md` | **new** | v1.58+; `## directives` (`*=`, `.byte`, `.word`, `.text`, `.fill`, `.align`, `.include`, `.binclude`, `.cpu`, `.enc`, `.namespace`, `.proc`, `.macro`/`.endm`, `.struct`); `## output-options` (`--cbm-prg`, `--flat`, `--format=`); `## labels` (local `_`, scoped `.`, anonymous `+`/`-`) |
-| [ ] | `asm/rosetta.md` | **new** | Cross-assembler equivalence table: set PC, emit byte/word/text, include source/binary, reserve/fill/align data, macros, local labels, anonymous labels, low/high byte expressions, PETSCII/screen text, output `.prg` |
-| [ ] | `asm/common-patterns.md` | **new** | BASIC `SYS` stub pattern, standalone `.prg` layout, safe code placement choices, KERNAL-call setup pattern, zero-page scratch cautions, minimal "hello" shape per assembler |
-| [ ] | `INDEX.md` | update | Add `asm` row to domains table and quick-route table |
-| [ ] | `sources/INDEX.md` | update | Add `asm` row to corpus-map (no mist64 upstream — cite each assembler's own versioned docs) |
-| [ ] | `ATTRIBUTION.md` | verify/update | Verify note that assembler pages cite assembler-specific upstream docs, not mist64/c64ref; list ACME, KickAssembler, ca65, 64tass doc sources |
+| [x] | `asm/INDEX.md` | **new** | Routes to all 4 assembler pages; related: `cpu/6502`, `memory`, `tasks` |
+| [x] | `asm/acme.md` | **new** | Version 0.97+; `## directives` table (`*=`, `!byte`, `!word`, `!text`, `!scr`, `!fill`, `!align`, `!to`, `!cpu`, `!zone`, `!src`, `!binary`); `## macros` (`!macro`/`+name`); `## expressions` (`<`/`>` byte operators, anonymous `+`/`-` labels); output formats |
+| [x] | `asm/kickassembler.md` | **new** | Version 5.x, JVM-required; `## directives` (`.pc`, `.byte`, `.word`, `.text`, `.fill`, `.align`, `.import`, `.var`, `.const`, `.enum`); `## macros` (`.macro name(args)`); `## scripting` (`.eval`, `:` prefix, list/hashtable literals) |
+| [x] | `asm/ca65.md` | **new** | cc65 v2.19+; `## directives` (`.org`/`.segment`, `.byte`, `.word`, `.res`, `.asciiz`, `.include`, `.incbin`, `.macro`/`.endmacro`, `.scope`, `.proc`, `.export`, `.import`); `## segments` (CODE/RODATA/DATA/BSS/ZEROPAGE); `## linker-config` (`ld65 -t c64`, custom `.cfg` MEMORY+SEGMENTS) |
+| [x] | `asm/64tass.md` | **new** | v1.58+; `## directives` (`*=`, `.byte`, `.word`, `.text`, `.fill`, `.align`, `.include`, `.binclude`, `.cpu`, `.enc`, `.namespace`, `.proc`, `.macro`/`.endm`, `.struct`); `## output-options` (`--cbm-prg`, `--flat`, `--format=`); `## labels` (local `_`, scoped `.`, anonymous `+`/`-`) |
+| [x] | `asm/rosetta.md` | **new** | Cross-assembler equivalence table: set PC, emit byte/word/text, include source/binary, reserve/fill/align data, macros, local labels, anonymous labels, low/high byte expressions, PETSCII/screen text, output `.prg` |
+| [x] | `asm/common-patterns.md` | **new** | BASIC `SYS` stub pattern, standalone `.prg` layout, safe code placement choices, KERNAL-call setup pattern, zero-page scratch cautions, minimal "hello" shape per assembler |
+| [x] | `INDEX.md` | update | Add `asm` row to domains table and quick-route table |
+| [x] | `sources/INDEX.md` | update | Add `asm` row to corpus-map (no mist64 upstream — cite each assembler's own versioned docs) |
+| [x] | `ATTRIBUTION.md` | verify/update | Verify note that assembler pages cite assembler-specific upstream docs, not mist64/c64ref; list ACME, KickAssembler, ca65, 64tass doc sources |
 
 ---
 

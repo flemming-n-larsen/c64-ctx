@@ -17,6 +17,7 @@ source: c64ref
 | `charset` | [../charset/INDEX.md](../charset/INDEX.md) | [mist64/c64ref character category](https://github.com/mist64/c64ref/tree/master/src/charset) | Extract keyboard matrix, PETSCII/control-code facts, screen-code distinctions, and character-set variants. |
 | `colors` | [../colors/INDEX.md](../colors/INDEX.md) | [mist64/c64ref colors category](https://github.com/mist64/c64ref/tree/master/src/colors) | Extract compact color number and palette tables. |
 | `tasks` | [../tasks/INDEX.md](../tasks/INDEX.md) | [mist64/c64ref repository](https://github.com/mist64/c64ref) | Link practical recipes to cited memory, I/O, KERNAL, CPU, charset, and color pages. |
+| `asm` | [../asm/INDEX.md](../asm/INDEX.md) | Assembler-specific upstream docs — no mist64/c64ref route | Cite ACME, KickAssembler, ca65/cc65, and 64tass documentation directly; see [../ATTRIBUTION.md](../ATTRIBUTION.md). |
 
 ## source-authority
 | source type | authority | rules |
