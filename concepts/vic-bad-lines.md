@@ -10,7 +10,8 @@ granularity: atomic
 - Remaining CPU cycles per raster line: ~23 (PAL, 63 total) or ~25 (NTSC, 65 total) on bad lines vs. ~63/~65 on normal lines.
 - Display window: raster lines 48-247 (200 lines). With YSCROLL=3 (default), bad lines fall at 51, 59, 67, … one per character row = 25 bad lines per frame.
 - Sprite DMA steals additional cycles (independent of bad lines) on every raster line a sprite occupies; cycles stolen scale with the number of enabled sprites.
-- Setting DEN=0 (`$D011` bit 4 = 0) suppresses all bad lines for that frame; the entire display shows border color.
+- Setting DEN=0 (`$D011` bit 4 = 0) suppresses all bad lines; the display window shows border color, but sprites remain visible.
+- PAL border lines (0-47, 248-311) are never bad lines; full ~63 cycles are always available there.
 
 ## lookup
 
@@ -29,6 +30,28 @@ granularity: atomic
 - YSCROLL changes between bad lines shift character row alignment; unintended changes produce visible glitches.
 - Sprite DMA costs are additive: a line with both a bad line steal and active sprite fetches loses more than 40 cycles.
 - PAL frame budget (text mode, no sprites): 312 lines × 63 cycles − 25 bad lines × 40 stolen = ~18,656 cycles available per frame.
+
+## techniques — avoiding or working around bad lines
+
+### 1. YSCROLL suppression (per-line)
+Fire a raster IRQ on line N−1. Write `$D011` with YSCROLL bits 2-0 set to any value ≠ `(N AND $07)`. Line N is no longer a bad line — the CPU gets the full ~63 cycles. Restore YSCROLL afterward to prevent permanent display shift. Requires cycle-exact IRQ placement (see stable raster below).
+
+### 2. FLD — Flexible Line Distance
+Apply YSCROLL suppression to multiple consecutive bad lines via a raster IRQ per line. With each suppressed bad line the character row is not advanced, stretching vertical row spacing. Used in vertical-scroller effects and row-distance manipulation. Restoring YSCROLL on a later line resumes normal character advancement.
+
+### 3. DEN=0 — sprite-only display
+Clear `$D011` bit 4 (DEN=0) for the entire frame or a region. No bad lines occur; the display window shows border color. Sprites are unaffected and remain visible. Gives full ~63 cycles on every line and is the standard strategy for effects that only use sprites, raster bars, or a plain background.
+
+### 4. Border area scheduling
+PAL lines 0-47 (top border) and 248-311 (bottom border): no display window active, no bad lines, full ~63 cycles each. ~64 lines × 63 cycles ≈ 4,000 free cycles per frame. Schedule bulk computation, table updates, or effect setup in these regions to leave display-area cycles for timing-sensitive work.
+
+### 5. Stable raster IRQ (prerequisite for techniques 1-2)
+A standard raster IRQ does not land at a known cycle within the line. The **double-IRQ** technique resolves this:
+1. First IRQ fires on the target line (rough alignment).
+2. Handler immediately re-arms the raster compare for the same or next line and returns.
+3. Second IRQ fires within a predictable narrow window.
+4. NOP padding after the second entry point aligns execution to the exact cycle.
+Without a stable raster, YSCROLL writes may land after VIC-II has already evaluated the bad line condition, making suppression unreliable.
 
 ## links
 
