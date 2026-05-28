@@ -7,7 +7,8 @@ source: c64ref
 ## routes
 | need | read | notes |
 |---|---|---|
-| C64 CPU baseline | [6502/INDEX.md](6502/INDEX.md) | The C64 uses a 6510 CPU with a 6502-family core plus on-chip I/O port. |
+| C64 CPU chip identity, 6510 vs 6502 differences, I/O port, clock speed | [6510.md](6510.md) | Read first when the question is C64-specific CPU behavior. |
+| 6502-family instruction set, registers, opcodes | [6502/INDEX.md](6502/INDEX.md) | Instruction set is family-scoped; applies to all 6502 derivatives including the 6510. |
 | Registers and status flags | [6502/registers-flags.md](6502/registers-flags.md) | Use before reasoning about clobbers or branch conditions. |
 | Addressing syntax and modes | [6502/addressing-modes.md](6502/addressing-modes.md) | Use for opcode forms and operand interpretation. |
 | Instruction behavior | [6502/instruction-set.md](6502/instruction-set.md) | Compact documented opcode semantics. |
@@ -16,8 +17,9 @@ source: c64ref
 ## source-coverage
 | local coverage | status | notes |
 |---|---|---|
+| [6510.md](6510.md) | used | 6510 chip identity, 6502 differences, I/O port defaults, constraints. |
 | [6502/INDEX.md](6502/INDEX.md) | planned | Registers, flags, mnemonics, operations, opcode tables, and variant caveats. |
-| [../io/processor-port.md](../io/processor-port.md) | planned | 6510 processor-port C64-specific behavior. |
+| [../io/processor-port.md](../io/processor-port.md) | used | 6510 processor-port register detail (`$0000`/`$0001` bit fields). |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related
