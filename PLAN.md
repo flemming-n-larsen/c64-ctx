@@ -6,6 +6,8 @@ The index has solid governance (AGENTS.md, STYLE.md, sources/INDEX.md) and routi
 
 This plan prioritizes the reference layers needed before demo effects and demo-scene-specific material: BASIC V2, common assembler syntax, task recipes, runnable program shapes, and PC toolchain workflows for `VICE`, `KickAssembler`, `ACME`, `CA65`, `64tass`, and `CBM Studio`.
 
+**Working rule:** Each task row MUST have its checkbox updated to `[x]` as soon as that task is completed — do not batch checkbox updates at the end of a phase.
+
 **User decisions recorded here:**
 - BASIC V2 source: C64 Programmer's Reference Guide (1982) — AI-first summaries, no verbatim copy
 - cbmbasic (mist64) is NOT a source — it is a portable C implementation, not documentation
@@ -35,10 +37,10 @@ Phases 3 + 5 + 6 + 7 ───────────────────�
 
 | done | file | change | key content |
 |---|---|---|---|
-| [ ] | `cpu/6502/registers-flags.md` | status only | Already complete — update INDEX status from `planned` → `used` |
-| [ ] | `cpu/6502/addressing-modes.md` | expand | Add byte-count column; add ZP,Y row; note page-crossing penalty rule |
-| [ ] | `cpu/6502/instruction-set.md` | major expand | Replace class-groups stub with full per-mnemonic table: `mnemonic \| mode(s) \| opcode \| bytes \| cycles \| cycle-notes \| flags` — all 56 documented mnemonics; keep existing class-groups as summary above table |
-| [ ] | `ATTRIBUTION.md` | update | Add entry for mist64/c64ref `src/6502` as source for CPU timing and opcode data |
+| [x] | `cpu/6502/registers-flags.md` | status only | Already complete — update INDEX status from `planned` → `used` |
+| [x] | `cpu/6502/addressing-modes.md` | expand | Add byte-count column; add ZP,Y row; note page-crossing penalty rule |
+| [x] | `cpu/6502/instruction-set.md` | major expand | Replace class-groups stub with full per-mnemonic table: `mnemonic \| mode(s) \| opcode \| bytes \| cycles \| cycle-notes \| flags` — all 56 documented mnemonics; keep existing class-groups as summary above table |
+| [x] | `ATTRIBUTION.md` | update | Add entry for mist64/c64ref `src/6502` as source for CPU timing and opcode data |
 
 Source: mist64/c64ref `src/6502`
 

@@ -15,9 +15,9 @@ source: c64ref
 ## source-coverage
 | local coverage | status | notes |
 |---|---|---|
-| [registers-flags.md](registers-flags.md) | planned | Baseline 6502 register and flag facts. |
-| [addressing-modes.md](addressing-modes.md) | planned | Operand forms and effective-address behavior. |
-| [instruction-set.md](instruction-set.md) | planned | Documented mnemonic, operation, and flag-effect coverage. |
+| [registers-flags.md](registers-flags.md) | used | Baseline 6502 register and flag facts. |
+| [addressing-modes.md](addressing-modes.md) | used | Operand forms and effective-address behavior. |
+| [instruction-set.md](instruction-set.md) | used | Documented mnemonic, operation, and flag-effect coverage. |
 | [illegal-opcodes.md](illegal-opcodes.md) | used | All 19 illegal mnemonics with opcode bytes, stability, demo-use notes, NOP variants, quirks, examples. |
 | [../../sources/INDEX.md](../../sources/INDEX.md) | provenance | Central upstream fallback route. |
 

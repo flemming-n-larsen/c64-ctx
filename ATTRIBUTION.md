@@ -12,6 +12,10 @@ The CPU reference, memory map, I/O register data, KERNAL API, BASIC/KERNAL ROM
 disassembly routes, character set data, and color palette in this repository are
 extracted or derived from mist64/c64ref.
 
+CPU instruction timing (cycle counts), opcode bytes, and addressing-mode data in
+`cpu/6502/instruction-set.md` and `cpu/6502/addressing-modes.md` are derived from
+`src/6502` in this repository.
+
 Full license text (reproduced as required by BSD 2-Clause):
 
 ```
