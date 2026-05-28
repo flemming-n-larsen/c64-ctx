@@ -8,7 +8,7 @@ granularity: concept
 - C64 character work commonly involves at least four distinct code spaces: keyboard matrix positions, PETSCII/control bytes, screen codes, and character ROM glyph data.
 - the local keyboard matrix page includes keyboard layout/modifier/output tables.
 - the local control-code page includes named PETSCII/editor/color controls.
-- the local primary character-set coverage and the local alternate character-set coverage map C64 character-set values to Unicode glyph names.
+- [chargen-primary.md](../charset/chargen-primary.md) and [chargen-alternate.md](../charset/chargen-alternate.md) contain the ROM glyph bytes (8 bytes per screen code) with Unicode name mappings.
 
 ## lookup
 | code space | local route | MUST distinguish from |
@@ -16,7 +16,7 @@ granularity: concept
 | Keyboard matrix | [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md) | PETSCII bytes and screen codes. |
 | PETSCII/control | [../charset/petscii.md](../charset/petscii.md), [../charset/control-codes.md](../charset/control-codes.md) | Screen-code bytes in screen RAM. |
 | Screen codes | [../charset/screen-codes.md](../charset/screen-codes.md) | PETSCII/KERNAL I/O bytes. |
-| Character glyph maps | the local primary character-set coverage, the local alternate character-set coverage | Keyboard scan and PETSCII control values. |
+| Character glyph maps | [../charset/chargen-primary.md](../charset/chargen-primary.md), [../charset/chargen-alternate.md](../charset/chargen-alternate.md) | Keyboard scan and PETSCII control values. |
 
 ## constraints
 - Agents MUST name the code space when answering character-code questions.

@@ -11,6 +11,8 @@ source: c64ref
 | Screen-code values | [screen-codes.md](screen-codes.md) | Use for bytes stored in screen matrix. |
 | Control codes | [control-codes.md](control-codes.md) | Use for cursor movement, colors, reverse mode, and editor behavior. |
 | Keyboard matrix and scan values | [keyboard-matrix.md](keyboard-matrix.md) | Use for key scanning and modifiers. |
+| Chargen ROM glyph bytes — primary set (uppercase) | [chargen-primary.md](chargen-primary.md) | 8 bytes per screen code, ROM-sourced. |
+| Chargen ROM glyph bytes — alternate set (lowercase) | [chargen-alternate.md](chargen-alternate.md) | 8 bytes per screen code, ROM-sourced. |
 
 ## source-coverage
 | local coverage | status | notes |
@@ -19,6 +21,8 @@ source: c64ref
 | [screen-codes.md](screen-codes.md) | planned | Screen-code values and matrix byte distinctions. |
 | [control-codes.md](control-codes.md) | planned | PETSCII control-code facts. |
 | [keyboard-matrix.md](keyboard-matrix.md) | planned | Keyboard layout, matrix, and modifier values. |
+| [chargen-primary.md](chargen-primary.md) | used | Primary charset glyph bytes (screen codes `$00-$FF`), ROM-sourced. |
+| [chargen-alternate.md](chargen-alternate.md) | used | Alternate charset glyph bytes (screen codes `$00-$FF`), ROM-sourced. |
 | [../colors/palette.md](../colors/palette.md) | planned | Color names and values when used by character/control pages. |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
