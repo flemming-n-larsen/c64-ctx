@@ -66,19 +66,19 @@ Source: mist64/c64ref `src/c64io`
 
 | done | file | change | key content |
 |---|---|---|---|
-| [ ] | `basic/tokens.md` | fill | Full token table `$80-$CB` (keyword → byte); `$FF` prefix tokens; source: mist64/c64ref `src/c64disasm` |
-| [ ] | `basic/keywords.md` | **new** | All BASIC V2 statements/commands; columns: `keyword \| token \| syntax \| type \| parameters \| notes \| example`; type = statement/command/operator; one-line example per row |
-| [ ] | `basic/functions.md` | **new** | All built-in functions; columns: `function \| syntax \| return type \| argument constraints \| notes`; numeric (ABS, ATN, COS, EXP, FRE, INT, LOG, PEEK, POS, RND, SGN, SIN, SQR, TAN, USR, VAL) and string (ASC, CHR$, LEFT$, LEN, MID$, RIGHT$, STR$) |
-| [ ] | `basic/errors.md` | **new** | All 29 error messages; columns: `code \| message \| conditions` |
-| [ ] | `basic/program-structure.md` | **new** | Line-numbered program shape; immediate mode vs program mode; statement separators; `REM`; `RUN`, `LIST`, `NEW`; compact runnable examples |
-| [ ] | `basic/variables.md` | **new** | Numeric, string, and integer variables; arrays; naming limits; type suffixes; common interpreter pitfalls |
-| [ ] | `basic/io.md` | **new** | `PRINT`, `INPUT`, `GET`, `OPEN`, `CLOSE`, `CMD`, `PRINT#`, `INPUT#`, `GET#`; device/file concepts at BASIC level; links to KERNAL file task pages |
-| [ ] | `basic/graphics-sound.md` | **new** | Practical `POKE`/`PEEK` routes for border/background colors, screen RAM, color RAM, sprite registers, and SID registers; link to `io/`, `colors/`, and `tasks/` instead of duplicating hardware tables |
-| [ ] | `basic/machine-code-bridge.md` | **new** | `SYS`, `USR`, `PEEK`, `POKE`, `DATA`/`READ` loaders, and BASIC-to-machine-language launch patterns; link to `memory/map.md` and `asm/common-patterns.md` |
-| [ ] | `basic/examples.md` | **new** | Tiny complete programs: print text, set border/background, read key, play simple tone, load/call machine code; each example links back to cited reference pages |
-| [ ] | `basic/INDEX.md` | update | Add routes for all new BASIC pages; update tokens.md status → `used`; route "write BASIC program" prompts to program-structure/examples first |
-| [ ] | `sources/INDEX.md` | update | Split BASIC provenance: token bytes and ROM routes from mist64/c64ref `src/c64disasm`; language semantics from C64 Programmer's Reference Guide |
-| [ ] | `ATTRIBUTION.md` | verify/update | Verify entries for C64 Programmer's Reference Guide (CBM, 1982) and mist64/c64ref `src/c64disasm` as BASIC sources |
+| [x] | `basic/tokens.md` | fill | Full token table `$80-$CB` (keyword → byte); `$FF` prefix tokens; source: mist64/c64ref `src/c64disasm` |
+| [x] | `basic/keywords.md` | **new** | All BASIC V2 statements/commands; columns: `keyword \| token \| syntax \| type \| parameters \| notes \| example`; type = statement/command/operator; one-line example per row |
+| [x] | `basic/functions.md` | **new** | All built-in functions; columns: `function \| syntax \| return type \| argument constraints \| notes`; numeric (ABS, ATN, COS, EXP, FRE, INT, LOG, PEEK, POS, RND, SGN, SIN, SQR, TAN, USR, VAL) and string (ASC, CHR$, LEFT$, LEN, MID$, RIGHT$, STR$) |
+| [x] | `basic/errors.md` | **new** | All 29 error messages; columns: `code \| message \| conditions` |
+| [x] | `basic/program-structure.md` | **new** | Line-numbered program shape; immediate mode vs program mode; statement separators; `REM`; `RUN`, `LIST`, `NEW`; compact runnable examples |
+| [x] | `basic/variables.md` | **new** | Numeric, string, and integer variables; arrays; naming limits; type suffixes; common interpreter pitfalls |
+| [x] | `basic/io.md` | **new** | `PRINT`, `INPUT`, `GET`, `OPEN`, `CLOSE`, `CMD`, `PRINT#`, `INPUT#`, `GET#`; device/file concepts at BASIC level; links to KERNAL file task pages |
+| [x] | `basic/graphics-sound.md` | **new** | Practical `POKE`/`PEEK` routes for border/background colors, screen RAM, color RAM, sprite registers, and SID registers; link to `io/`, `colors/`, and `tasks/` instead of duplicating hardware tables |
+| [x] | `basic/machine-code-bridge.md` | **new** | `SYS`, `USR`, `PEEK`, `POKE`, `DATA`/`READ` loaders, and BASIC-to-machine-language launch patterns; link to `memory/map.md` and `asm/common-patterns.md` |
+| [x] | `basic/examples.md` | **new** | Tiny complete programs: print text, set border/background, read key, play simple tone, load/call machine code; each example links back to cited reference pages |
+| [x] | `basic/INDEX.md` | update | Add routes for all new BASIC pages; update tokens.md status → `used`; route "write BASIC program" prompts to program-structure/examples first |
+| [x] | `sources/INDEX.md` | update | Split BASIC provenance: token bytes and ROM routes from mist64/c64ref `src/c64disasm`; language semantics from C64 Programmer's Reference Guide |
+| [x] | `ATTRIBUTION.md` | verify/update | Verify entries for C64 Programmer's Reference Guide (CBM, 1982) and mist64/c64ref `src/c64disasm` as BASIC sources |
 
 Source: C64 Programmer's Reference Guide (CBM, 1982) — AI-summarized; cite as `C64 Programmer's Reference Guide (Commodore Business Machines, 1982)` in `## sources` of each file. Token bytes from mist64/c64ref.
 

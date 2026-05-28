@@ -20,6 +20,10 @@ I/O register data for VIC-II (`io/vic-ii.md`), SID (`io/sid.md`), CIA1 (`io/cia1
 and CIA2 (`io/cia2.md`) — including register addresses, bit fields, and timing notes —
 is derived from `src/c64io` in this repository.
 
+BASIC token byte values in `basic/tokens.md`, `basic/keywords.md`, and `basic/functions.md`,
+along with BASIC ROM routine routing in `basic/routines.md` and `rom/basic-disassembly.md`,
+are derived from `src/c64disasm` in this repository.
+
 Full license text (reproduced as required by BSD 2-Clause):
 
 ```
@@ -82,10 +86,13 @@ formal license; they are referenced as established factual sources.
 - Year: 1982
 - Copyright: Commodore Business Machines, Inc.
 
-The `basic/` domain pages (`keywords.md`, `functions.md`, `errors.md`) contain
-AI-first summaries derived from this manual. No verbatim text is reproduced.
-The manual is out of print and widely available as a public reference document
-in the C64 community.
+The `basic/` domain pages (`keywords.md`, `functions.md`, `errors.md`,
+`program-structure.md`, `variables.md`, `io.md`, `graphics-sound.md`,
+`machine-code-bridge.md`, `examples.md`) contain AI-first summaries derived
+from this manual covering BASIC V2 language semantics, syntax, error
+conditions, variable rules, file I/O concepts, and runnable program shapes.
+No verbatim text is reproduced. The manual is out of print and widely
+available as a public reference document in the C64 community.
 
 ## Assembler documentation
 
