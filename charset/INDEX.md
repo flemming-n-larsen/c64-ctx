@@ -17,10 +17,10 @@ source: c64ref
 ## source-coverage
 | local coverage | status | notes |
 |---|---|---|
-| [petscii.md](petscii.md) | planned | PETSCII values and aliases. |
-| [screen-codes.md](screen-codes.md) | planned | Screen-code values and matrix byte distinctions. |
-| [control-codes.md](control-codes.md) | planned | PETSCII control-code facts. |
-| [keyboard-matrix.md](keyboard-matrix.md) | planned | Keyboard layout, matrix, and modifier values. |
+| [petscii.md](petscii.md) | used | PETSCII byte ranges, control codes, printable ranges, case-mode behavior. |
+| [screen-codes.md](screen-codes.md) | used | Screen-code byte ranges and PETSCII conversion rules. |
+| [control-codes.md](control-codes.md) | used | Full PETSCII control-code table including `$95-$9F` colors and `$85-$8C` function keys. |
+| [keyboard-matrix.md](keyboard-matrix.md) | used | 8×8 matrix with row/col, scancodes, modifiers, and `GETIN` PETSCII outputs. |
 | [chargen-primary.md](chargen-primary.md) | used | Primary charset glyph bytes (screen codes `$00-$FF`), ROM-sourced. |
 | [chargen-alternate.md](chargen-alternate.md) | used | Alternate charset glyph bytes (screen codes `$00-$FF`), ROM-sourced. |
 | [../colors/palette.md](../colors/palette.md) | planned | Color names and values when used by character/control pages. |

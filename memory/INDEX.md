@@ -17,9 +17,9 @@ source: c64ref
 ## source-coverage
 | local coverage | status | notes |
 |---|---|---|
-| [map.md](map.md) | planned | Main address descriptions and banking-sensitive ranges. |
-| [symbols.md](symbols.md) | planned | Canonical symbol coverage and aliases. |
-| [zero-page.md](zero-page.md) | planned | Zero-page workspace and register-adjacent symbols. |
+| [map.md](map.md) | used | Whole-machine sub-region map including I/O sub-ranges and CPU vectors `$FFFA-$FFFF`. |
+| [symbols.md](symbols.md) | used | Processor port, BASIC workspace, KERNAL workspace `$0090-$00FF`, page-3 vectors, CPU vectors. |
+| [zero-page.md](zero-page.md) | used | Zero-page broad allocation plus KERNAL workspace `$0090-$00FF` detail. |
 | [basic-rom.md](basic-rom.md), [kernal-rom.md](kernal-rom.md), [io-area.md](io-area.md) | planned | ROM, RAM, I/O, and character-ROM visibility constraints. |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 

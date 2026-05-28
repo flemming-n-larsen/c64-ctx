@@ -24,6 +24,16 @@ BASIC token byte values in `basic/tokens.md`, `basic/keywords.md`, and `basic/fu
 along with BASIC ROM routine routing in `basic/routines.md` and `rom/basic-disassembly.md`,
 are derived from `src/c64disasm` in this repository.
 
+Charset facts in `charset/petscii.md`, `charset/screen-codes.md`,
+`charset/control-codes.md`, and `charset/keyboard-matrix.md` — including PETSCII
+byte ranges, control-code names, screen-code conversion rules, and 8×8 keyboard
+matrix positions — are derived from `src/charset` in this repository.
+
+Memory facts in `memory/map.md`, `memory/symbols.md`, and `memory/zero-page.md` —
+including sub-region ranges, KERNAL/BASIC workspace symbols, page-3 indirect
+vectors, and CPU hardware vectors at `$FFFA-$FFFF` — are derived from `src/c64mem`
+in this repository.
+
 Full license text (reproduced as required by BSD 2-Clause):
 
 ```

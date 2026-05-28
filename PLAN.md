@@ -89,14 +89,14 @@ Source: C64 Programmer's Reference Guide (CBM, 1982) — AI-summarized; cite as 
 
 | done | file | change | key content |
 |---|---|---|---|
-| [ ] | `charset/petscii.md` | major expand | Full 256-entry table `$00-$FF`; columns: `code \| name \| printable \| shifted name \| notes`; KERNAL CHROUT range note |
-| [ ] | `charset/screen-codes.md` | major expand | Full 256-entry table; columns: `code \| Unicode name (primary) \| PETSCII equiv \| notes`; not-relationship for `$80-$FF` |
-| [ ] | `charset/control-codes.md` | verify + expand | Verify completeness; expand `$95-$9F` color range to individual rows if missing; add CHROUT-only vs keyboard-only note |
-| [ ] | `charset/keyboard-matrix.md` | major expand | Full 8×8 matrix; columns: `row \| col \| key \| unshifted PETSCII \| shifted \| CBM \| CTRL`; joystick note |
-| [ ] | `memory/map.md` | expand | ~20 sub-regions `$0000-$FFFF`; columns: `range \| default content \| banking-sensitive \| size \| read first`; include CPU vectors `$FFFA-$FFFE` |
-| [ ] | `memory/symbols.md` | expand | Add KERNAL workspace symbols `$90-$FF`; add key vectors `$0314` (IRQ), `$0316` (BRK), `$0318` (NMI); columns: `address \| symbol \| owner \| aliases/notes` |
-| [ ] | `memory/zero-page.md` | expand | Add secondary table for KERNAL workspace `$0090-$00FF` with cross-links to symbols.md |
-| [ ] | `ATTRIBUTION.md` | update | Add entries for mist64/c64ref `src/charset` and `src/c64mem` as sources for charset and memory pages |
+| [x] | `charset/petscii.md` | major expand | Full 256-entry table `$00-$FF`; columns: `code \| name \| printable \| shifted name \| notes`; KERNAL CHROUT range note |
+| [x] | `charset/screen-codes.md` | major expand | Full 256-entry table; columns: `code \| Unicode name (primary) \| PETSCII equiv \| notes`; not-relationship for `$80-$FF` |
+| [x] | `charset/control-codes.md` | verify + expand | Verify completeness; expand `$95-$9F` color range to individual rows if missing; add CHROUT-only vs keyboard-only note |
+| [x] | `charset/keyboard-matrix.md` | major expand | Full 8×8 matrix; columns: `row \| col \| key \| unshifted PETSCII \| shifted \| CBM \| CTRL`; joystick note |
+| [x] | `memory/map.md` | expand | ~20 sub-regions `$0000-$FFFF`; columns: `range \| default content \| banking-sensitive \| size \| read first`; include CPU vectors `$FFFA-$FFFE` |
+| [x] | `memory/symbols.md` | expand | Add KERNAL workspace symbols `$90-$FF`; add key vectors `$0314` (IRQ), `$0316` (BRK), `$0318` (NMI); columns: `address \| symbol \| owner \| aliases/notes` |
+| [x] | `memory/zero-page.md` | expand | Add secondary table for KERNAL workspace `$0090-$00FF` with cross-links to symbols.md |
+| [x] | `ATTRIBUTION.md` | update | Add entries for mist64/c64ref `src/charset` and `src/c64mem` as sources for charset and memory pages |
 
 Source: mist64/c64ref `src/charset`, `src/c64mem`
 
