@@ -208,13 +208,13 @@ After each phase:
 
 End-to-end validation matrix:
 
-| prompt | expected local route |
-|---|---|
-| "Write a BASIC V2 program that changes border/background colors." | `basic/program-structure.md` → `basic/graphics-sound.md` → `colors/INDEX.md` → `io/vic-ii.md` |
-| "Write a KickAssembler sprite display program runnable in VICE." | `toolchains/kickassembler-workflow.md` → `asm/kickassembler.md` → `tasks/sprite-display.md` → `io/vic-ii.md` → `memory/map.md` |
-| "Write a CA65 program using ld65 -t c64." | `toolchains/ca65-workflow.md` → `asm/ca65.md` → `asm/common-patterns.md` → `memory/map.md` |
-| "Convert this ACME snippet to 64tass." | `asm/rosetta.md` → `asm/acme.md` → `asm/64tass.md` |
-| "Write a BASIC loader that calls machine code." | `basic/machine-code-bridge.md` → `tasks/program-entrypoints.md` → `memory/map.md` → selected `asm/` page |
-| "Build and run this `.prg` on a PC." | `toolchains/INDEX.md` → `toolchains/vice.md` → selected assembler workflow |
+| done | prompt | expected local route |
+|---|---|---|
+| [x] | "Write a BASIC V2 program that changes border/background colors." | `basic/program-structure.md` → `basic/graphics-sound.md` → `colors/INDEX.md` → `io/vic-ii.md` |
+| [x] | "Write a KickAssembler sprite display program runnable in VICE." | `toolchains/kickassembler-workflow.md` → `asm/kickassembler.md` → `tasks/sprite-display.md` → `io/vic-ii.md` → `memory/map.md` |
+| [x] | "Write a CA65 program using ld65 -t c64." | `toolchains/ca65-workflow.md` → `asm/ca65.md` → `asm/common-patterns.md` → `memory/map.md` |
+| [x] | "Convert this ACME snippet to 64tass." | `asm/rosetta.md` → `asm/acme.md` → `asm/64tass.md` |
+| [x] | "Write a BASIC loader that calls machine code." | `basic/machine-code-bridge.md` → `tasks/program-entrypoints.md` → `memory/map.md` → selected `asm/` page |
+| [x] | "Build and run this `.prg` on a PC." | `toolchains/INDEX.md` → `toolchains/vice.md` → selected assembler workflow |
 
 The plan is complete for the repo goal when these prompts can be answered without hitting `planned` stubs in the selected route.
