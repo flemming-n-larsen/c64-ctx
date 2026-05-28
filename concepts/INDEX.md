@@ -7,6 +7,7 @@ source: c64ref
 ## routes
 | need | read | notes |
 |---|---|---|
+| PAL screen dimensions, raster ranges, border heights, sprite Y offset | [screen-geometry.md](screen-geometry.md) | Use when writing border effects or placing sprites in the border area. |
 | Banking ROM, RAM, I/O, character ROM | [memory-banking.md](memory-banking.md) | Agents MUST combine this with `$0001` processor-port facts. |
 | Zero-page roles and aliases | [zero-page.md](zero-page.md) | Use when memory symbols need behavioral context. |
 | IRQ/NMI vectors and interrupt constraints | [interrupts.md](interrupts.md) | Use before writing raster or CIA interrupt code. |
@@ -21,6 +22,7 @@ source: c64ref
 | [zero-page.md](zero-page.md), [screen-memory.md](screen-memory.md) | planned | Workspace, vectors, screen matrix, and color RAM context. |
 | [interrupts.md](interrupts.md) | planned | Hardware interrupt, vector, and register context. |
 | [character-sets.md](character-sets.md) | planned | PETSCII, screen-code, and keyboard-matrix distinctions. |
+| [screen-geometry.md](screen-geometry.md) | used | PAL visible area, raster ranges, border heights, sprite Y offset. |
 | [vic-bad-lines.md](vic-bad-lines.md) | used | Bad line condition, cycle cost, YSCROLL trick, frame budget. |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 

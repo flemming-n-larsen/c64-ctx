@@ -15,6 +15,7 @@ source: c64ref
 | PETSCII, screen codes, keyboard matrix | [charset/INDEX.md](charset/INDEX.md) | [concepts/character-sets.md](concepts/character-sets.md) | Agents MUST distinguish PETSCII from screen codes. |
 | C64 color numbers and palette | [colors/INDEX.md](colors/INDEX.md) | [io/vic-ii.md](io/vic-ii.md) | Color references SHOULD cite both charset palette and colors UI sources when applicable. |
 | Practical programming recipe | [tasks/INDEX.md](tasks/INDEX.md) | Matching domain pages | Task pages MUST link to supporting facts rather than duplicate long tables. |
+| Demo/game effect technique | [effects/INDEX.md](effects/INDEX.md) | [tasks/INDEX.md](tasks/INDEX.md) | Effect pages combine task recipes and I/O facts into named effect patterns. |
 | Assembler syntax, directives, build patterns | [asm/INDEX.md](asm/INDEX.md) | [asm/rosetta.md](asm/rosetta.md) | Covers ACME, KickAssembler, CA65 (cc65), 64tass. |
 | Build/run `.prg` on PC (VICE, assembler workflows) | [toolchains/INDEX.md](toolchains/INDEX.md) | [toolchains/vice.md](toolchains/vice.md) | Editor-neutral workflows for ACME, KickAssembler, CA65, 64tass, CBM prg Studio. |
 | Complete runnable program examples | [examples/INDEX.md](examples/INDEX.md) | Matching `basic/`, `asm/`, `toolchains/` pages | BASIC listings + per-assembler buildable `.prg` examples; each cites its reference pages. |
@@ -34,6 +35,7 @@ source: c64ref
 | `tasks` | [tasks/INDEX.md](tasks/INDEX.md) | Agent recipes for common programming goals | Cross-domain derived pages |
 | `asm` | [asm/INDEX.md](asm/INDEX.md) | Assembler-specific syntax for ACME, KickAssembler, CA65, 64tass; cross-assembler rosetta; common patterns | Assembler-specific upstream docs |
 | `toolchains` | [toolchains/INDEX.md](toolchains/INDEX.md) | VICE emulator workflow and per-assembler source-to-`.prg` build workflows; CBM prg Studio | Tool-specific upstream docs |
+| `effects` | [effects/INDEX.md](effects/INDEX.md) | Demo/game effect technique recipes: border tricks, rasterbars, scrollers, FLD, DYCP, DYSP, sprite multiplexer, fire, starfield, plasma, RNG | codebase64.net — CC BY-NC-SA 4.0 |
 | `examples` | [examples/INDEX.md](examples/INDEX.md) | Complete runnable BASIC and per-assembler programs with build/run invocations | Cross-domain derived pages |
 | `sources` | [sources/INDEX.md](sources/INDEX.md) | Source corpus map and provenance policy | Upstream GitHub fallback links |
 

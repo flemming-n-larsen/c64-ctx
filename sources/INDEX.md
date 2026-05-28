@@ -20,6 +20,7 @@ source: c64ref
 | `asm` | [../asm/INDEX.md](../asm/INDEX.md) | Assembler-specific upstream docs — no mist64/c64ref route | Cite ACME, KickAssembler, ca65/cc65, and 64tass documentation directly; see [../ATTRIBUTION.md](../ATTRIBUTION.md). |
 | `toolchains` | [../toolchains/INDEX.md](../toolchains/INDEX.md) | Tool-specific upstream docs — no mist64/c64ref route | Cite VICE manual, each assembler's manual, and CBM prg Studio docs directly; see [../ATTRIBUTION.md](../ATTRIBUTION.md). |
 | `examples` | [../examples/INDEX.md](../examples/INDEX.md) | Cross-domain derived pages — no direct upstream route | Each example cites local `basic/`, `asm/`, `tasks/`, `io/`, `memory/`, `charset/`, `colors/`, and `toolchains/` pages rather than upstream directly. |
+| `effects` | [../effects/INDEX.md](../effects/INDEX.md) | [codebase64.net](https://codebase64.net/) — CC BY-NC-SA 4.0 | Distill technique-level demo/game effect recipes; each page cites the specific codebase64.net article URL and author (where named) in its `## sources` section. |
 
 ## source-authority
 | source type | authority | rules |

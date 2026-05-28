@@ -36,6 +36,7 @@ source: c64ref
 ## related
 | domain | read | why |
 |---|---|---|
+| Effects | [../effects/INDEX.md](../effects/INDEX.md) | Advanced technique recipes built on top of task primitives (border tricks, rasterbars, plasma, etc.). |
 | BASIC | [../basic/INDEX.md](../basic/INDEX.md) | Loader/SYS patterns, runnable program shapes. |
 | KERNAL | [../kernal/INDEX.md](../kernal/INDEX.md) | API calls for file, input, output, time. |
 | Memory | [../memory/INDEX.md](../memory/INDEX.md) | Address ranges and vectors. |
