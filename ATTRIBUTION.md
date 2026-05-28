@@ -51,3 +51,41 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 The Unicode name mappings used in `charset/chargen-primary.md` and
 `charset/chargen-alternate.md` are derived from these files, distributed as
 part of mist64/c64ref under the BSD 2-Clause license above.
+
+## Illegal / undocumented opcode behavior
+
+Opcode bytes and mnemonic assignments in `cpu/6502/illegal-opcodes.md` are
+sourced from mist64/c64ref (see above). Stability classifications, behavioral
+notes, and quirks are derived from the following community reference documents:
+
+- **"NMOS 6510 Unintended Opcodes"** — No More Secrets (2010).
+  The definitive community reference for undocumented 6510 opcode behavior,
+  stability, and flag effects.
+- **"64doc"** — John West and Marko Makela.
+  Early community documentation of undocumented 6502/6510 opcodes; basis for
+  the VICE mnemonic convention used by mist64/c64ref.
+
+These documents are widely redistributed in the C64 community and carry no
+formal license; they are referenced as established factual sources.
+
+## Commodore 64 Programmer's Reference Guide
+
+- Publisher: Commodore Business Machines, Inc.
+- Year: 1982
+- Copyright: Commodore Business Machines, Inc.
+
+The `basic/` domain pages (`keywords.md`, `functions.md`, `errors.md`) contain
+AI-first summaries derived from this manual. No verbatim text is reproduced.
+The manual is out of print and widely available as a public reference document
+in the C64 community.
+
+## Assembler documentation
+
+The `asm/` domain pages cite each assembler's own documentation as their
+upstream source. No code or text is copied from these projects; pages contain
+AI-first syntax summaries. Respective upstream sources:
+
+- **ACME** — Marco Baye; https://sourceforge.net/projects/acme-crossass/
+- **KickAssembler** — Mads Nielsen; http://theweb.dk/KickAssembler/
+- **CA65 / cc65** — cc65 contributors; https://cc65.github.io/ (zlib license)
+- **64tass** — Soci/Singular; https://sourceforge.net/projects/tass64/

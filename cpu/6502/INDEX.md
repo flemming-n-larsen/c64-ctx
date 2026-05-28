@@ -10,7 +10,7 @@ source: c64ref
 | Register sizes and status bits | [registers-flags.md](registers-flags.md) | `P` flags MUST be interpreted bitwise. |
 | Addressing modes | [addressing-modes.md](addressing-modes.md) | Use to parse operands and effective addresses. |
 | Documented instruction effects | [instruction-set.md](instruction-set.md) | Use for mnemonic class, flags, and symbolic operation. |
-| Illegal or undocumented behavior | [illegal-opcodes.md](illegal-opcodes.md) | Agents MUST mark behavior as undocumented when using these opcodes. |
+| Illegal / undocumented opcodes for demo/game use | [illegal-opcodes.md](illegal-opcodes.md) | Opcode bytes, stability, demo-use notes, quirks, examples. |
 
 ## source-coverage
 | local coverage | status | notes |
@@ -18,7 +18,7 @@ source: c64ref
 | [registers-flags.md](registers-flags.md) | planned | Baseline 6502 register and flag facts. |
 | [addressing-modes.md](addressing-modes.md) | planned | Operand forms and effective-address behavior. |
 | [instruction-set.md](instruction-set.md) | planned | Documented mnemonic, operation, and flag-effect coverage. |
-| [illegal-opcodes.md](illegal-opcodes.md) | optional | Undocumented opcode caveats and compatibility notes. |
+| [illegal-opcodes.md](illegal-opcodes.md) | used | All 19 illegal mnemonics with opcode bytes, stability, demo-use notes, NOP variants, quirks, examples. |
 | [../../sources/INDEX.md](../../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related
