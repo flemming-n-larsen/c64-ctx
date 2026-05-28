@@ -12,6 +12,7 @@ source: c64ref
 | IRQ/NMI vectors and interrupt constraints | [interrupts.md](interrupts.md) | Use before writing raster or CIA interrupt code. |
 | Screen matrix and color RAM relationship | [screen-memory.md](screen-memory.md) | Use with VIC-II and color RAM pages. |
 | PETSCII vs screen code vs keyboard matrix | [character-sets.md](character-sets.md) | Agents MUST NOT conflate code spaces. |
+| VIC-II bad lines and CPU cycle theft | [vic-bad-lines.md](vic-bad-lines.md) | Use before writing cycle-exact or raster-timed code. |
 
 ## source-coverage
 | local coverage | status | notes |
@@ -20,6 +21,7 @@ source: c64ref
 | [zero-page.md](zero-page.md), [screen-memory.md](screen-memory.md) | planned | Workspace, vectors, screen matrix, and color RAM context. |
 | [interrupts.md](interrupts.md) | planned | Hardware interrupt, vector, and register context. |
 | [character-sets.md](character-sets.md) | planned | PETSCII, screen-code, and keyboard-matrix distinctions. |
+| [vic-bad-lines.md](vic-bad-lines.md) | used | Bad line condition, cycle cost, YSCROLL trick, frame budget. |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related
