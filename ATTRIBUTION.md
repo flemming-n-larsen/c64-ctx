@@ -16,6 +16,10 @@ CPU instruction timing (cycle counts), opcode bytes, and addressing-mode data in
 `cpu/6502/instruction-set.md` and `cpu/6502/addressing-modes.md` are derived from
 `src/6502` in this repository.
 
+I/O register data for VIC-II (`io/vic-ii.md`), SID (`io/sid.md`), CIA1 (`io/cia1.md`),
+and CIA2 (`io/cia2.md`) — including register addresses, bit fields, and timing notes —
+is derived from `src/c64io` in this repository.
+
 Full license text (reproduced as required by BSD 2-Clause):
 
 ```
