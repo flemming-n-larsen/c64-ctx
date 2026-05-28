@@ -9,33 +9,33 @@ granularity: atomic
 - Illegal opcodes work by activating multiple internal decode lines simultaneously; effects are the union of both operations.
 - Stability varies: `stable` = consistent across all NMOS 6510 revisions; `unstable` = chip-revision or even power-supply dependent.
 - `JAM` locks the CPU until reset; it cannot be recovered from in software.
-- Illegal `NOP` variants (`$80`, `$0C`, `$1C`…) consume bytes and cycles without side effects — useful for patching without relocating code.
+- Illegal `NOP` variants consume bytes and cycles without side effects — useful for patching without relocating code.
 - Flag column uses mist64/c64ref notation: `*` = affected, `0`/`1` = forced, `-` = unaffected.
 
 ## lookup
 | mnemonic | stability | opcodes | operation | flags `NV-BDIZC` | alt names |
 |---|---|---|---|---|---|
-| `ANC` | stable | `$0B` (#$nn), `$2B` (#$nn) | A ∧ M → A, N → C | `*-----**` |  |
-| `ARR` | stable | `$6B` (#$nn) | (A ∧ M) / 2 → A | `**----**` |  |
-| `ASR` | stable | `$4B` (#$nn) | (A ∧ M) / 2 → A | `0-----**` | Ormston, groepaz: ALR |
-| `DCP` | stable | `$C3` (($nn,X)), `$C7` ($nn), `$CF` ($nnnn), `$D3` (($nn),Y), `$D7` ($nn,X), `$DB` ($nnnn,Y), `$DF` ($nnnn,X) | M - 1 → M, A - M | `*-----**` | Ormston: DCM |
-| `ISC` | stable | `$E3` (($nn,X)), `$E7` ($nn), `$EF` ($nnnn), `$F3` (($nn),Y), `$F7` ($nn,X), `$FB` ($nnnn,Y), `$FF` ($nnnn,X) | M + 1 → M, A - M → A | `**----**` | Ormston: INS; VICE: ISB |
+| `ANC` | stable | `$0B #$nn`, `$2B #$nn` | A ∧ M → A, N → C | `*-----**` |  |
+| `ARR` | stable | `$6B #$nn` | (A ∧ M) / 2 → A | `**----**` |  |
+| `ASR` | stable | `$4B #$nn` | (A ∧ M) / 2 → A | `0-----**` | Ormston, groepaz: ALR |
+| `DCP` | stable | `$C3 ($nn,X)`, `$C7 $nn`, `$CF $nnnn`, `$D3 ($nn),Y`, `$D7 $nn,X`, `$DB $nnnn,Y`, `$DF $nnnn,X` | M - 1 → M, A - M | `*-----**` | Ormston: DCM |
+| `ISC` | stable | `$E3 ($nn,X)`, `$E7 $nn`, `$EF $nnnn`, `$F3 ($nn),Y`, `$F7 $nn,X`, `$FB $nnnn,Y`, `$FF $nnnn,X` | M + 1 → M, A - M → A | `**----**` | Ormston: INS; VICE: ISB |
 | `JAM` | halts | `$02`, `$12`, `$22`, `$32`, `$42`, `$52`, `$62`, `$72`, `$92`, `$B2`, `$D2`, `$F2` | Stop execution | `none` | Ormston: HLT; Graham: KIL |
-| `LAS` | stable | `$BB` ($nnnn,Y) | M ∧ S → A, X, S | `*-----*-` |  |
-| `LAX` | stable | `$A3` (($nn,X)), `$A7` ($nn), `$AB` (#$nn), `$AF` ($nnnn), `$B3` (($nn),Y), `$B7` ($nn,Y), `$BF` ($nnnn,Y) | M → A, X | `*-----*-` |  |
-| `NOP` | stable | `$04` ($nn), `$0C` ($nnnn), `$14` ($nn,X), `$1A`, `$1C` ($nnnn,X), `$34` ($nn,X), `$3A`, `$3C` ($nnnn,X), `$44` ($nn), `$54` ($nn,X), `$5A`, `$5C` ($nnnn,X), `$64` ($nn), `$74` ($nn,X), `$7A`, `$7C` ($nnnn,X), `$80` (#$nn), `$82` (#$nn), `$89` (#$nn), `$C2` (#$nn), `$D4` ($nn,X), `$DA`, `$DC` ($nnnn,X), `$E2` (#$nn), `$F4` ($nn,X), `$FA`, `$FC` ($nnnn,X) |  | `none` |  |
-| `RLA` | stable | `$23` (($nn,X)), `$27` ($nn), `$2F` ($nnnn), `$33` (($nn),Y), `$37` ($nn,X), `$3B` ($nnnn,Y), `$3F` ($nnnn,X) | C ← /M7...M0/ ← C, A ∧ M → A | `*-----**` |  |
-| `RRA` | stable | `$63` (($nn,X)), `$67` ($nn), `$6F` ($nnnn), `$73` (($nn),Y), `$77` ($nn,X), `$7B` ($nnnn,Y), `$7F` ($nnnn,X) | C → /M7...M0/ → C, A + M + C → A | `**----**` |  |
-| `SAX` | stable | `$83` (($nn,X)), `$87` ($nn), `$8F` ($nnnn), `$97` ($nn,Y) | A ∧ X → M | `none` |  |
-| `SBC` | stable | `$EB` (#$nn) |  | `none` |  |
-| `SBX` | stable | `$CB` (#$nn) | (A ∧ X) - M → X | `*-----**` | Graham: AXS |
-| `SHA` | unstable | `$93` (($nn),Y), `$9F` ($nnnn,Y) | A ∧ X ∧ V → M | `none` | Graham: AHX |
-| `SHS` | unstable | `$9B` ($nnnn,Y) | A ∧ X → S, S ∧ (H + 1) → M | `none` | Graham, groepaz: TAS |
-| `SHX` | unstable | `$9E` ($nnnn,Y) | X ∧ (H + 1) → M | `none` |  |
-| `SHY` | unstable | `$9C` ($nnnn,X) | Y ∧ (H + 1) → M | `none` |  |
-| `SLO` | stable | `$03` (($nn,X)), `$07` ($nn), `$0F` ($nnnn), `$13` (($nn),Y), `$17` ($nn,X), `$1B` ($nnnn,Y), `$1F` ($nnnn,X) | M * 2 → M, A ∨ M → A | `*-----**` | Ormston: ASO |
-| `SRE` | stable | `$43` (($nn,X)), `$47` ($nn), `$4F` ($nnnn), `$53` (($nn),Y), `$57` ($nn,X), `$5B` ($nnnn,Y), `$5F` ($nnnn,X) | M / 2 → M, A ⊻ M → A | `*-----**` | Ormston: LSE |
-| `XAA` | unstable | `$8B` (#$nn) | (A ∨ V) ∧ X ∧ M → A | `*-----*-` | VICE, groepaz: ANE |
+| `LAS` | stable | `$BB $nnnn,Y` | M ∧ S → A, X, S | `*-----*-` |  |
+| `LAX` | stable | `$A3 ($nn,X)`, `$A7 $nn`, `$AB #$nn`, `$AF $nnnn`, `$B3 ($nn),Y`, `$B7 $nn,Y`, `$BF $nnnn,Y` | M → A, X | `*-----*-` |  |
+| `NOP` | stable | `$04 $nn`, `$0C $nnnn`, `$14 $nn,X`, `$1A`, `$1C $nnnn,X`, `$34 $nn,X`, `$3A`, `$3C $nnnn,X`, `$44 $nn`, `$54 $nn,X`, `$5A`, `$5C $nnnn,X`, `$64 $nn`, `$74 $nn,X`, `$7A`, `$7C $nnnn,X`, `$80 #$nn`, `$82 #$nn`, `$89 #$nn`, `$C2 #$nn`, `$D4 $nn,X`, `$DA`, `$DC $nnnn,X`, `$E2 #$nn`, `$F4 $nn,X`, `$FA`, `$FC $nnnn,X` |  | `none` |  |
+| `RLA` | stable | `$23 ($nn,X)`, `$27 $nn`, `$2F $nnnn`, `$33 ($nn),Y`, `$37 $nn,X`, `$3B $nnnn,Y`, `$3F $nnnn,X` | C ← /M7...M0/ ← C, A ∧ M → A | `*-----**` |  |
+| `RRA` | stable | `$63 ($nn,X)`, `$67 $nn`, `$6F $nnnn`, `$73 ($nn),Y`, `$77 $nn,X`, `$7B $nnnn,Y`, `$7F $nnnn,X` | C → /M7...M0/ → C, A + M + C → A | `**----**` |  |
+| `SAX` | stable | `$83 ($nn,X)`, `$87 $nn`, `$8F $nnnn`, `$97 $nn,Y` | A ∧ X → M | `none` |  |
+| `SBC` | stable | `$EB #$nn` |  | `none` |  |
+| `SBX` | stable | `$CB #$nn` | (A ∧ X) - M → X | `*-----**` | Graham: AXS |
+| `SHA` | unstable | `$93 ($nn),Y`, `$9F $nnnn,Y` | A ∧ X ∧ V → M | `none` | Graham: AHX |
+| `SHS` | unstable | `$9B $nnnn,Y` | A ∧ X → S, S ∧ (H + 1) → M | `none` | Graham, groepaz: TAS |
+| `SHX` | unstable | `$9E $nnnn,Y` | X ∧ (H + 1) → M | `none` |  |
+| `SHY` | unstable | `$9C $nnnn,X` | Y ∧ (H + 1) → M | `none` |  |
+| `SLO` | stable | `$03 ($nn,X)`, `$07 $nn`, `$0F $nnnn`, `$13 ($nn),Y`, `$17 $nn,X`, `$1B $nnnn,Y`, `$1F $nnnn,X` | M * 2 → M, A ∨ M → A | `*-----**` | Ormston: ASO |
+| `SRE` | stable | `$43 ($nn,X)`, `$47 $nn`, `$4F $nnnn`, `$53 ($nn),Y`, `$57 $nn,X`, `$5B $nnnn,Y`, `$5F $nnnn,X` | M / 2 → M, A ⊻ M → A | `*-----**` | Ormston: LSE |
+| `XAA` | unstable | `$8B #$nn` | (A ∨ V) ∧ X ∧ M → A | `*-----*-` | VICE, groepaz: ANE |
 
 ## nop-variants
 - Illegal `NOP` opcodes consume the instruction bytes without visible side effects.
@@ -88,12 +88,14 @@ Common uses of illegal opcodes in C64 demo and game programming.
 | `ASR` | AND immediate then LSR A. Arithmetic right shift with mask. Compact divide-by-2 with masking. |
 | `ARR` | AND immediate then ROR A. C64 demos use this in fast crypto / hash-like routines. V and C behavior is complex. |
 | `SBX` | A AND X minus immediate into X, sets flags. Fast masked subtraction into X for index arithmetic. |
-| `LAS` | M AND S → A, X, S. Loads all three from a memory-AND-stack-pointer result. Rare; useful for restoring a known stack pointer. |
-| `XAA` | Unstable: (A OR magic) AND X AND immediate → A. Behavior is chip-revision dependent; avoid in production code. Documented for completeness only. |
+| `LAS` | M AND S to A, X, S. Loads all three from a memory-AND-stack-pointer result. Rare; useful for restoring a known stack pointer. |
+| `NOP` | Illegal NOP variants consume bytes and cycles without side effects. Use for in-place patching without relocating code. |
+| `SBC` | Duplicate of documented SBC ($E9). Identical behavior; only exists at $EB. |
+| `XAA` | Unstable: (A OR magic) AND X AND immediate to A. Behavior is chip-revision dependent; avoid in production code. |
 | `SHA` | Store A AND X AND (addr_high+1). Address-dependent result; used in some C64 copy-protection schemes. |
 | `SHX` | Store X AND (addr_high+1). Same quirk as SHA. Used in certain demo effects that exploit address-dependent writes. |
 | `SHY` | Store Y AND (addr_high+1). Same quirk. Used similarly to SHX. |
-| `SHS` | A AND X → S, then store S AND (addr_high+1). Clobbers stack pointer — dangerous outside deliberate SP tricks. |
+| `SHS` | A AND X to S, then store S AND (addr_high+1). Clobbers stack pointer — dangerous outside deliberate SP tricks. |
 | `JAM` | Halts the CPU. In demos: sometimes used as a hard crash sentinel at end of a one-shot effect to catch runaway code. |
 
 ## examples
@@ -108,7 +110,7 @@ Common uses of illegal opcodes in C64 demo and game programming.
   SAX $FB           ; $FB = A & X = masked pointer, flags intact
 
 ; DCP: decrement counter and compare in one instruction
-  DCP counter       ; counter-- then CMP A, counter
+  DCP counter       ; counter-- then CMP A against counter
   BNE loop          ; branch if A != counter (after decrement)
 
 ; ANC: AND immediate, copy N into C (fast signed bit extract)
@@ -119,23 +121,23 @@ Common uses of illegal opcodes in C64 demo and game programming.
   SLO flags         ; flags <<= 1; A |= flags (new value)
 
 ; Illegal NOP to skip 2 bytes (patch without relocation)
-  !byte $89         ; NOP #imm -- consumes next byte as dummy immediate
-  !byte $EA         ; this byte is skipped (NOP operand)
+  !byte $89         ; NOP imm -- consumes next byte as dummy operand
+  !byte $EA         ; this byte is skipped (treated as NOP operand)
 ; execution continues here
 ```
 
 ## quirks
 - `ARR`: V flag = bit6 XOR bit5 of result; C = bit6. This differs from a plain ROR.
-- `XAA`: the "magic constant" ORed into A before the AND varies by chip revision ($00, $EE, $FF are the common values). Do not rely on it.
+- `XAA`: the "magic constant" ORed into A before the AND varies by chip revision ($00, $EE, $FF are common). Do not rely on it.
 - `SHA`/`SHX`/`SHY`/`SHS`: when a page boundary is crossed, the high byte of the effective address is AND-ed with the stored value. The write may go to an unexpected address on page-crossing.
-- `SHS` clobbers S (stack pointer). This is safe only if the stack is not used between the instruction and the next restore of S.
-- `JAM` freezes the CPU permanently until hardware RESET. The IRQ/NMI lines are ignored after a JAM.
-- Cycle counts for illegal opcodes with `absolute,X` addressing include the +1 page-crossing penalty.
+- `SHS` clobbers S (stack pointer). Safe only if the stack is not used between this instruction and the next restore of S.
+- `JAM` freezes the CPU permanently until hardware RESET. IRQ/NMI lines are ignored after a JAM.
+- Cycle counts for `absolute,X` illegal opcodes include the +1 page-crossing penalty.
 
 ## constraints
 - Agents MUST label these as illegal/undocumented when generating code for a general audience.
 - Agents SHOULD note the assembler directive needed: ACME requires `!byte $xx` for opcodes the assembler does not recognise by mnemonic.
-- `unstable` opcodes MUST NOT be used in code that targets multiple revisions or emulators without a compatibility note.
+- `unstable` opcodes MUST NOT be used in code targeting multiple revisions or emulators without a compatibility note.
 - `JAM` MUST only be used as a deliberate crash sentinel, never in a code path that should return.
 
 ## links
@@ -147,4 +149,3 @@ Common uses of illegal opcodes in C64 demo and game programming.
 - local route: [../../sources/INDEX.md](../../sources/INDEX.md)
 - opcode bytes and operations: mist64/c64ref src/6502/cpu_6502.txt (VICE mnemonic convention)
 - stability and behavior: "NMOS 6510 Unintended Opcodes" (No More Secrets, 2010); "64doc" by John West and Marko Makela
-- NOP variant cycle counts: consistent across documented sources; +1 on page cross for absolute,X modes
