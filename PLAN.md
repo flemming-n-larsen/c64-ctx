@@ -51,7 +51,7 @@ Source: mist64/c64ref `src/6502`
 
 | done | file | change | key content |
 |---|---|---|---|
-| [ ] | `io/vic-ii.md` | major expand | All 47 registers `$D000-$D02E`; columns: `address \| name \| bits/fields \| R/W \| notes`; full bit breakdowns for `$D011`, `$D016`, `$D018`, `$D019`, `$D01A`, `$D020-$D02E`; add VIC bank note (CIA2 `$DD00` bits 0-1, inverted) |
+| [x] | `io/vic-ii.md` | major expand | All 47 registers `$D000-$D02E`; columns: `address \| name \| bits/fields \| R/W \| notes`; full bit breakdowns for `$D011`, `$D016`, `$D018`, `$D019`, `$D01A`, `$D020-$D02E`; add VIC bank note (CIA2 `$DD00` bits 0-1, inverted) |
 | [ ] | `io/sid.md` | major expand | All 25 registers `$D400-$D418`; per-voice grouping; CR bit fields (GATE, SYNC, RING, TEST, TRI, SAW, PUL, NOI); ATDCY/SUREL nybble layout; read-only OSC3/ENV3 note |
 | [ ] | `io/cia1.md` | expand | All 16 registers `$DC00-$DC0F`; columns: `address \| register \| role \| bits/fields \| R/W`; keyboard scan pattern note (drive col via PRA, read row from PRB) |
 | [ ] | `io/cia2.md` | expand | All 16 registers `$DD00-$DD0F`; VIC bank select bits 0-1 in `$DD00` (inverted); NMI vs IRQ source distinction |
