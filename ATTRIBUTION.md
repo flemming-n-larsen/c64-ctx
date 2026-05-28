@@ -1,5 +1,9 @@
 # Attribution
 
+This repository is licensed under **CC BY-NC-SA 4.0**
+(Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International).
+Full license text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
 This repository derives facts, data, and structure from the following upstream sources.
 
 ## mist64/c64ref
@@ -114,6 +118,18 @@ AI-first syntax summaries. Respective upstream sources:
 - **KickAssembler** — Mads Nielsen; http://theweb.dk/KickAssembler/
 - **CA65 / cc65** — cc65 contributors; https://cc65.github.io/ (zlib license)
 - **64tass** — Soci/Singular; https://sourceforge.net/projects/tass64/
+
+## Codebase64 Wiki
+
+- Site: https://codebase64.net/
+- License: CC Attribution-NonCommercial-Share Alike 4.0 International
+  (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Contributors: community-authored wiki
+
+Pages in this repository that extract or summarize content from Codebase64
+carry the same CC BY-NC-SA 4.0 license as the source. Each such page notes
+the origin in its `## sources` section. No verbatim text is reproduced;
+content is distilled into compact tables and bullets per AGENTS.md rules.
 
 ## Toolchain documentation
 
