@@ -109,7 +109,7 @@ Task pages route practical workflows to cited reference pages. They MUST NOT bec
 
 | done | file | change | key content |
 |---|---|---|---|
-| [ ] | `tasks/sprite-display.md` | **new** | 6-step sequence: sprite pointer `$07F8+n`, data block, X/Y at `$D000-$D00F`, MSB in `$D010`, enable `$D015`, color `$D027+n` |
+| [x] | `tasks/sprite-display.md` | **new** | 6-step sequence: sprite pointer `$07F8+n`, data block, X/Y at `$D000-$D00F`, MSB in `$D010`, enable `$D015`, color `$D027+n` |
 | [ ] | `tasks/play-sid.md` | **new** | 7-step sequence: FREQLO/HI, PWLO/HI, ATDCY, SUREL, CR gate on/off; vol init `$D418=$0F` first |
 | [ ] | `tasks/custom-charset.md` | **new** | 4-step sequence: bank in char ROM (`$0001` CHAREN=0), copy `$D000-$DFFF` to RAM, modify bytes (base + sc×8), point VIC-II `$D018` |
 | [ ] | `tasks/game-loop.md` | **new** | Pattern recipe: init → read input → update state → draw (screen codes + sprites) → sync (raster poll or IRQ) → loop |

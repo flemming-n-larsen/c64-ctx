@@ -7,6 +7,7 @@ source: c64ref
 ## routes
 | need | read | notes |
 |---|---|---|
+| Display a sprite | [sprite-display.md](sprite-display.md) | Sprite pointer, data block, X/Y position, enable, color. |
 | Load or save a file | [load-save-file.md](load-save-file.md) | Uses KERNAL file I/O and device setup calls. |
 | Print text or characters | [print-to-screen.md](print-to-screen.md) | Uses `CHROUT`, screen memory, PETSCII, colors. |
 | Read keyboard input | [read-keyboard.md](read-keyboard.md) | Uses KERNAL input and keyboard matrix routes. |
@@ -16,6 +17,7 @@ source: c64ref
 ## source-coverage
 | local coverage | status | notes |
 |---|---|---|
+| [sprite-display.md](sprite-display.md) | used | 6-step sprite setup: pointer, data, position, color, enable. |
 | [load-save-file.md](load-save-file.md) | planned | KERNAL file call sequences and contracts. |
 | [print-to-screen.md](print-to-screen.md), [read-keyboard.md](read-keyboard.md) | planned | Screen, character, and keyboard workflows. |
 | [raster-interrupt.md](raster-interrupt.md) | planned | VIC-II, IRQ vector, and CPU flag workflow. |
