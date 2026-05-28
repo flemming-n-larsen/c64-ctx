@@ -110,15 +110,15 @@ Task pages route practical workflows to cited reference pages. They MUST NOT bec
 | done | file | change | key content |
 |---|---|---|---|
 | [x] | `tasks/sprite-display.md` | **new** | 6-step sequence: sprite pointer `$07F8+n`, data block, X/Y at `$D000-$D00F`, MSB in `$D010`, enable `$D015`, color `$D027+n` |
-| [ ] | `tasks/play-sid.md` | **new** | 7-step sequence: FREQLO/HI, PWLO/HI, ATDCY, SUREL, CR gate on/off; vol init `$D418=$0F` first |
-| [ ] | `tasks/custom-charset.md` | **new** | 4-step sequence: bank in char ROM (`$0001` CHAREN=0), copy `$D000-$DFFF` to RAM, modify bytes (base + sc×8), point VIC-II `$D018` |
-| [ ] | `tasks/game-loop.md` | **new** | Pattern recipe: init → read input → update state → draw (screen codes + sprites) → sync (raster poll or IRQ) → loop |
-| [ ] | `tasks/program-entrypoints.md` | **new** | Choosing BASIC-only, BASIC loader + `SYS`, standalone `.prg`, KERNAL-using ML, and cartridge/ROM-style entry assumptions; route to BASIC, ASM, memory, and toolchains pages |
-| [ ] | `tasks/raster-interrupt.md` | verify status | Check if content exists; update status → `used` if complete |
-| [ ] | `tasks/read-keyboard.md` | verify status | Check if content exists; update status → `used` if complete |
-| [ ] | `tasks/bank-switch-rom-ram.md` | verify status | Check if content exists; update status → `used` if complete |
-| [ ] | `tasks/load-save-file.md` | verify status | Check if content exists; update status → `used` if complete |
-| [ ] | `tasks/INDEX.md` | update | Add routes for new pages; update statuses |
+| [x] | `tasks/play-sid.md` | **new** | 7-step sequence: FREQLO/HI, PWLO/HI, ATDCY, SUREL, CR gate on/off; vol init `$D418=$0F` first |
+| [x] | `tasks/custom-charset.md` | **new** | 4-step sequence: bank in char ROM (`$0001` CHAREN=0), copy `$D000-$DFFF` to RAM, modify bytes (base + sc×8), point VIC-II `$D018` |
+| [x] | `tasks/game-loop.md` | **new** | Pattern recipe: init → read input → update state → draw (screen codes + sprites) → sync (raster poll or IRQ) → loop |
+| [x] | `tasks/program-entrypoints.md` | **new** | Choosing BASIC-only, BASIC loader + `SYS`, standalone `.prg`, KERNAL-using ML, and cartridge/ROM-style entry assumptions; route to BASIC, ASM, memory, and toolchains pages |
+| [x] | `tasks/raster-interrupt.md` | verify status | Existing content covers `SEI`/vector/`$D012`/`$D019`/`CLI`/`RTI` flow; status → `used` |
+| [x] | `tasks/read-keyboard.md` | verify status | Existing content covers `GETIN`/`CHRIN`/`SCNKEY`/matrix-scan routes; status → `used` |
+| [x] | `tasks/bank-switch-rom-ram.md` | verify status | Existing content covers `$0001` `LORAM`/`HIRAM`/`CHAREN` with RMW safety; status → `used` |
+| [x] | `tasks/load-save-file.md` | verify status | Existing content covers `SETLFS`/`SETNAM`/`LOAD`/`SAVE`/`OPEN`/`CHRIN`/`CHROUT`/`READST`/`CLRCHN`/`CLOSE`; status → `used` |
+| [x] | `tasks/INDEX.md` | update | Add routes for new pages; update statuses |
 
 ---
 
