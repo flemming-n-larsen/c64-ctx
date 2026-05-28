@@ -19,6 +19,7 @@ source: c64ref
 | `tasks` | [../tasks/INDEX.md](../tasks/INDEX.md) | [mist64/c64ref repository](https://github.com/mist64/c64ref) | Link practical recipes to cited memory, I/O, KERNAL, CPU, charset, and color pages. |
 | `asm` | [../asm/INDEX.md](../asm/INDEX.md) | Assembler-specific upstream docs — no mist64/c64ref route | Cite ACME, KickAssembler, ca65/cc65, and 64tass documentation directly; see [../ATTRIBUTION.md](../ATTRIBUTION.md). |
 | `toolchains` | [../toolchains/INDEX.md](../toolchains/INDEX.md) | Tool-specific upstream docs — no mist64/c64ref route | Cite VICE manual, each assembler's manual, and CBM prg Studio docs directly; see [../ATTRIBUTION.md](../ATTRIBUTION.md). |
+| `examples` | [../examples/INDEX.md](../examples/INDEX.md) | Cross-domain derived pages — no direct upstream route | Each example cites local `basic/`, `asm/`, `tasks/`, `io/`, `memory/`, `charset/`, `colors/`, and `toolchains/` pages rather than upstream directly. |
 
 ## source-authority
 | source type | authority | rules |

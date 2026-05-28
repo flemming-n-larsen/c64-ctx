@@ -169,16 +169,16 @@ New directory: `examples/`
 
 | done | file | change | key content |
 |---|---|---|---|
-| [ ] | `examples/INDEX.md` | **new** | Route complete runnable examples by language/toolchain/task; each route links to BASIC, ASM, task, memory, I/O, charset/color, and toolchain pages |
-| [ ] | `examples/basic-border-background.md` | **new** | Complete BASIC V2 program changing border/background colors; cite `basic/graphics-sound.md`, `colors/INDEX.md`, and `io/vic-ii.md` |
-| [ ] | `examples/basic-read-key.md` | **new** | Complete BASIC V2 keyboard example; cite `basic/io.md`, `tasks/read-keyboard.md`, and charset/keyboard pages |
-| [ ] | `examples/basic-sys-loader.md` | **new** | BASIC loader using `DATA`, `POKE`, and `SYS` to call machine code; cite `basic/machine-code-bridge.md`, `tasks/program-entrypoints.md`, and `memory/map.md` |
-| [ ] | `examples/acme-hello.md` | **new** | Minimal buildable ACME program with BASIC start or documented entrypoint; cite `asm/acme.md`, `asm/common-patterns.md`, and `toolchains/acme-workflow.md` |
-| [ ] | `examples/kickassembler-sprite.md` | **new** | Minimal buildable KickAssembler sprite example; cite `asm/kickassembler.md`, `tasks/sprite-display.md`, and `toolchains/kickassembler-workflow.md` |
-| [ ] | `examples/ca65-minimal-prg.md` | **new** | Minimal `ca65`/`ld65` C64 `.prg`; cite `asm/ca65.md`, `asm/common-patterns.md`, and `toolchains/ca65-workflow.md` |
-| [ ] | `examples/64tass-hello.md` | **new** | Minimal `64tass` `.prg`; cite `asm/64tass.md`, `asm/common-patterns.md`, and `toolchains/64tass-workflow.md` |
-| [ ] | `INDEX.md` | update | Add optional `examples` row to domains table and quick-route table for complete runnable programs |
-| [ ] | `sources/INDEX.md` | update | Add `examples` row as cross-domain derived pages; examples cite local reference pages rather than upstream sources directly unless needed |
+| [x] | `examples/INDEX.md` | **new** | Route complete runnable examples by language/toolchain/task; each route links to BASIC, ASM, task, memory, I/O, charset/color, and toolchain pages |
+| [x] | `examples/basic-border-background.md` | **new** | Complete BASIC V2 program changing border/background colors; cite `basic/graphics-sound.md`, `colors/INDEX.md`, and `io/vic-ii.md` |
+| [x] | `examples/basic-read-key.md` | **new** | Complete BASIC V2 keyboard example; cite `basic/io.md`, `tasks/read-keyboard.md`, and charset/keyboard pages |
+| [x] | `examples/basic-sys-loader.md` | **new** | BASIC loader using `DATA`, `POKE`, and `SYS` to call machine code; cite `basic/machine-code-bridge.md`, `tasks/program-entrypoints.md`, and `memory/map.md` |
+| [x] | `examples/acme-hello.md` | **new** | Minimal buildable ACME program with BASIC start or documented entrypoint; cite `asm/acme.md`, `asm/common-patterns.md`, and `toolchains/acme-workflow.md` |
+| [x] | `examples/kickassembler-sprite.md` | **new** | Minimal buildable KickAssembler sprite example; cite `asm/kickassembler.md`, `tasks/sprite-display.md`, and `toolchains/kickassembler-workflow.md` |
+| [x] | `examples/ca65-minimal-prg.md` | **new** | Minimal `ca65`/`ld65` C64 `.prg`; cite `asm/ca65.md`, `asm/common-patterns.md`, and `toolchains/ca65-workflow.md` |
+| [x] | `examples/64tass-hello.md` | **new** | Minimal `64tass` `.prg`; cite `asm/64tass.md`, `asm/common-patterns.md`, and `toolchains/64tass-workflow.md` |
+| [x] | `INDEX.md` | update | Add optional `examples` row to domains table and quick-route table for complete runnable programs |
+| [x] | `sources/INDEX.md` | update | Add `examples` row as cross-domain derived pages; examples cite local reference pages rather than upstream sources directly unless needed |
 
 ---
 
