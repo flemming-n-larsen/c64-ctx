@@ -55,6 +55,8 @@ Without a stable raster, YSCROLL writes may land after VIC-II has already evalua
 
 ## links
 
+- VIC hub: [../vic/INDEX.md](../vic/INDEX.md)
+- VIC timing: [../vic/timing.md](../vic/timing.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - raster interrupt: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
 - CPU instruction cycles: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)

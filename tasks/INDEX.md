@@ -7,6 +7,7 @@ source: c64ref
 ## routes
 | need | read | notes |
 |---|---|---|
+| Sprite discovery hub | [../sprites/INDEX.md](../sprites/INDEX.md) | VIC-II sprite routes for registers, display setup, and advanced techniques. |
 | Display a sprite | [sprite-display.md](sprite-display.md) | Sprite pointer, data block, X/Y position, enable, color. |
 | SID chip sound (play notes, freq table, filter, digis) | [../sid/INDEX.md](../sid/INDEX.md) | Hardware-facing SID domain: registers, waveforms, tables, effects, chip detection. |
 | Music playback / tune integration | [../music/INDEX.md](../music/INDEX.md) | IRQ players, banking/load-address constraints, music patterns, hard restart. |
@@ -51,6 +52,7 @@ source: c64ref
 | domain | read | why |
 |---|---|---|
 | Effects | [../effects/INDEX.md](../effects/INDEX.md) | Advanced technique recipes built on top of task primitives (border tricks, rasterbars, plasma, etc.). |
+| sprites | [../sprites/INDEX.md](../sprites/INDEX.md) | Sprite-specific route that connects the basic task to advanced effects and examples. |
 | Music | [../music/INDEX.md](../music/INDEX.md) | Player-level audio workflows built on top of IRQ and banking tasks. |
 | BASIC | [../basic/INDEX.md](../basic/INDEX.md) | Loader/SYS patterns, runnable program shapes. |
 | KERNAL | [../kernal/INDEX.md](../kernal/INDEX.md) | API calls for file, input, output, time. |

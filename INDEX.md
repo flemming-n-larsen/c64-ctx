@@ -10,6 +10,8 @@ source: c64ref
 | Memory map, zero page, ROM/RAM areas | [memory/INDEX.md](memory/INDEX.md) | [concepts/memory-banking.md](concepts/memory-banking.md) | Agents MUST prefer focused memory pages over broad source files. |
 | KERNAL calls, jump table, file I/O | [kernal/INDEX.md](kernal/INDEX.md) | [tasks/load-save-file.md](tasks/load-save-file.md) | Agents SHOULD cite local KERNAL pages and route upstream provenance through [sources/INDEX.md](sources/INDEX.md). |
 | CPU registers, flags, opcodes | [cpu/6502/INDEX.md](cpu/6502/INDEX.md) | [cpu/6502/instruction-set.md](cpu/6502/instruction-set.md) | `6502` data SHOULD be treated as CPU-family scoped, not C64-only. |
+| VIC-II overview: registers, banks, timing, modes | [vic/INDEX.md](vic/INDEX.md) | [io/vic-ii.md](io/vic-ii.md) | VIC discovery hub that routes to hardware, timing, memory, color, and mode pages. |
+| Sprite setup, sprite registers, DYSP, multiplexers | [sprites/INDEX.md](sprites/INDEX.md) | [tasks/sprite-display.md](tasks/sprite-display.md) | Sprite discovery hub that routes to setup, behavior, effects, and examples. |
 | VIC-II, CIA, I/O registers | [io/INDEX.md](io/INDEX.md) | [memory/io-area.md](memory/io-area.md) | Agents MUST account for banking at `$D000-$DFFF`. |
 | SID chip programming | [sid/INDEX.md](sid/INDEX.md) | [io/INDEX.md](io/INDEX.md) | Registers, waveforms, note recipes, freq tables, filter, chip detection. |
 | Music players, tune integration, tracker formats | [music/INDEX.md](music/INDEX.md) | [sid/INDEX.md](sid/INDEX.md) | IRQ players, banking/load-address concerns, PAL/NTSC playback, music-layer formats. |
@@ -37,6 +39,8 @@ source: c64ref
 | `cpu` | [cpu/INDEX.md](cpu/INDEX.md) | CPU-family route plus `6502` subdomain | [sources/INDEX.md](sources/INDEX.md) |
 | `memory` | [memory/INDEX.md](memory/INDEX.md) | C64 address map, symbols, zero page, ROM/RAM/I/O regions | [sources/INDEX.md](sources/INDEX.md) |
 | `io` | [io/INDEX.md](io/INDEX.md) | Processor port, VIC-II, CIA1, CIA2, color RAM | [sources/INDEX.md](sources/INDEX.md) |
+| `vic` | [vic/INDEX.md](vic/INDEX.md) | Curated VIC-II discovery hub: hardware, banking, timing, modes, color context, sprite handoff | [sources/INDEX.md](sources/INDEX.md) |
+| `sprites` | [sprites/INDEX.md](sprites/INDEX.md) | Curated sprite hub: registers, display setup, collisions, border usage, advanced effects, examples | [sources/INDEX.md](sources/INDEX.md) |
 | `sid` | [sid/INDEX.md](sid/INDEX.md) | SID registers, waveforms, frequency calculation/tables, filter, chip detection, digi samples, hardware issues | codebase64.net — CC BY-NC-SA 4.0 |
 | `music` | [music/INDEX.md](music/INDEX.md) | IRQ players, tune integration, banking/load-address constraints, playback timing, music patterns, tracker/player formats | codebase64.net — CC BY-NC-SA 4.0 |
 | `kernal` | [kernal/INDEX.md](kernal/INDEX.md) | KERNAL jump table and API families | [sources/INDEX.md](sources/INDEX.md) |
@@ -62,6 +66,8 @@ source: c64ref
 | [cpu/6502/INDEX.md](cpu/6502/INDEX.md) | `cpu/6502` | planned seed | Local CPU pages cover registers, flags, mnemonics, operations, and undocumented caveats. |
 | [memory/INDEX.md](memory/INDEX.md) | `memory`, `concepts`, `basic`, `rom`, `io` | planned seed | Local memory pages cover address ranges, symbols, aliases, and ROM/RAM constraints. |
 | [io/INDEX.md](io/INDEX.md) | `io`, `tasks` | planned seed | Local I/O pages cover register ranges and bit-level hardware fields. |
+| [vic/INDEX.md](vic/INDEX.md) | `vic`, `io`, `graphics`, `concepts`, `tasks`, `colors`, `display-modes` | planned seed | Local VIC routing gathers the main hardware, timing, banking, and screen-mode entry points. |
+| [sprites/INDEX.md](sprites/INDEX.md) | `sprites`, `io`, `tasks`, `effects`, `display-modes`, `examples` | planned seed | Local sprite routing gathers hardware setup, placement, advanced runtime techniques, and runnable examples. |
 | [kernal/INDEX.md](kernal/INDEX.md) | `kernal`, `tasks` | planned seed | Local KERNAL pages cover jump addresses, call preparation, returns, and affected registers. |
 | [rom/INDEX.md](rom/INDEX.md) | `rom`, `basic`, `kernal` | planned seed | Local ROM pages provide route/provenance material, not full copied listings. |
 | [charset/INDEX.md](charset/INDEX.md) | `charset`, `colors`, `tasks` | planned seed | Local charset pages cover keyboard, PETSCII/control, chargen, and palette facts. |

@@ -22,7 +22,9 @@ CPU instruction timing (cycle counts), opcode bytes, and addressing-mode data in
 
 I/O register data for VIC-II (`io/vic-ii.md`), SID (`sid/registers.md`), CIA1 (`io/cia1.md`),
 and CIA2 (`io/cia2.md`) — including register addresses, bit fields, and timing notes —
-is derived from `src/c64io` in this repository.
+is derived from `src/c64io` in this repository. The curated `vic/` pages and the
+sprite hardware summaries in `sprites/registers.md` and `sprites/display.md` route
+these same local facts without replacing the underlying register references.
 
 BASIC token byte values in `basic/tokens.md`, `basic/keywords.md`, and `basic/functions.md`,
 along with BASIC ROM routine routing in `basic/routines.md` and `rom/basic-disassembly.md`,
@@ -130,6 +132,11 @@ Pages in this repository that extract or summarize content from Codebase64
 carry the same CC BY-NC-SA 4.0 license as the source. Each such page notes
 the origin in its `## sources` section. No verbatim text is reproduced;
 content is distilled into compact tables and bullets per AGENTS.md rules.
+
+The `sprites/advanced.md` hub and linked effect/display-mode pages surface
+Codebase64-derived sprite techniques such as DYSP, sprite multiplexers,
+open-border interactions, starfields, and sprite-underlay display modes via
+their cited local summaries.
 
 ## Toolchain documentation
 

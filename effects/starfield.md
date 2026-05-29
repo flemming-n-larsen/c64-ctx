@@ -45,6 +45,9 @@ granularity: atomic
 - For sprite X ≥ 256, bit in `$D010` MUST be set; clear it when X < 256.
 
 ## links
+- sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
+- sprite techniques: [../sprites/advanced.md](../sprites/advanced.md)
+- sprite display: [../sprites/display.md](../sprites/display.md)
 - effects: [sprite-multiplexer.md](sprite-multiplexer.md)
 - effects: [rng.md](rng.md)
 - tasks: [../tasks/sprite-display.md](../tasks/sprite-display.md)

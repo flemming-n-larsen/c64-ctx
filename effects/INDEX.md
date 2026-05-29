@@ -7,6 +7,7 @@ source: codebase64
 ## routes
 | need | read | notes |
 |---|---|---|
+| Sprite-heavy effect route | [../sprites/advanced.md](../sprites/advanced.md) | Curated entry for DYSP, multiplexers, border usage, starfields, and underlay modes. |
 | Open top/bottom or side borders | [open-borders.md](open-borders.md) | Double-IRQ `$D011` / `$D016` trick; sprites-in-border notes included |
 | Stable raster synchronization | [stable-raster.md](stable-raster.md) | Double-IRQ cycle compensation; prerequisite for precise effects |
 | Music playback, tune integration, player timing | [../music/INDEX.md](../music/INDEX.md) | IRQ player, music patterns, hard restart, PAL/NTSC timing, tune placement. |
@@ -67,6 +68,7 @@ For FLI, IFLI, NUFLI, UFLI, ECI and all other display mode technique specs → s
 | domain | read | why |
 |---|---|---|
 | Display modes | [../display-modes/INDEX.md](../display-modes/INDEX.md) | FLI/IFLI/NUFLI and all unofficial display mode technique specs |
+| sprites | [../sprites/INDEX.md](../sprites/INDEX.md) | Sprite-specific discovery path for the subset of effects built on hardware sprites. |
 | Tasks | [../tasks/INDEX.md](../tasks/INDEX.md) | Prerequisite recipes: raster IRQ setup, sprite display, SID gate |
 | I/O | [../io/INDEX.md](../io/INDEX.md) | VIC-II and SID hardware registers used by effects |
 | Concepts | [../concepts/INDEX.md](../concepts/INDEX.md) | Timing constraints: bad lines, screen geometry, banking |

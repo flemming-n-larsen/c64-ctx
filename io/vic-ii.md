@@ -138,6 +138,15 @@ All color registers share the same bit layout:
 - Sprite X coordinate > 255 requires setting the corresponding bit in `$D010` AND writing the low byte to `$D000+n×2`.
 
 ## links
+- VIC hub: [../vic/INDEX.md](../vic/INDEX.md)
+- VIC register summary: [../vic/registers.md](../vic/registers.md)
+- VIC memory and banking: [../vic/memory-and-banking.md](../vic/memory-and-banking.md)
+- VIC timing: [../vic/timing.md](../vic/timing.md)
+- VIC screen modes: [../vic/screen-modes.md](../vic/screen-modes.md)
+- sprite hub: [../sprites/INDEX.md](../sprites/INDEX.md)
+- sprite registers: [../sprites/registers.md](../sprites/registers.md)
+- sprite display: [../sprites/display.md](../sprites/display.md)
+- sprite techniques: [../sprites/advanced.md](../sprites/advanced.md)
 - screen modes: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 - VIC bank select: [cia2.md](cia2.md)
 - I/O area: [../memory/io-area.md](../memory/io-area.md)

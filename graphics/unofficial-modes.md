@@ -71,6 +71,8 @@ granularity: atomic
 - FLI bug region (leftmost ~3 character columns) SHOULD be treated as a design constraint, not an error to suppress.
 
 ## links
+- VIC hub: [../vic/INDEX.md](../vic/INDEX.md)
+- VIC screen modes: [../vic/screen-modes.md](../vic/screen-modes.md)
 - display-modes index: [../display-modes/INDEX.md](../display-modes/INDEX.md)
 - color-mixing concept: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - official screen modes: [screen-modes.md](screen-modes.md)

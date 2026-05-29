@@ -77,6 +77,8 @@ Type `RUN`; a solid white sprite appears near the top-left of the screen and sta
 - `java -jar KickAss.jar` requires a Java runtime (JRE 8+) on PATH; substitute `KickAss5.jar` or local install path as needed.
 
 ## links
+- sprite hub: [../sprites/INDEX.md](../sprites/INDEX.md)
+- sprite display summary: [../sprites/display.md](../sprites/display.md)
 - KickAssembler reference: [../asm/kickassembler.md](../asm/kickassembler.md)
 - common ASM patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - KickAssembler workflow: [../toolchains/kickassembler-workflow.md](../toolchains/kickassembler-workflow.md)

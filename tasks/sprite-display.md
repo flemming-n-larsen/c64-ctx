@@ -37,6 +37,9 @@ granularity: recipe
 
 ## links
 
+- sprite hub: [../sprites/INDEX.md](../sprites/INDEX.md)
+- sprite registers: [../sprites/registers.md](../sprites/registers.md)
+- sprite display summary: [../sprites/display.md](../sprites/display.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - CIA2 / VIC bank: [../io/cia2.md](../io/cia2.md)
 - memory map: [../memory/map.md](../memory/map.md)

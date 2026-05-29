@@ -27,6 +27,8 @@ granularity: recipe
 - Agents SHOULD state whether the recipe chains to the normal KERNAL IRQ handler or replaces it.
 
 ## links
+- VIC hub: [../vic/INDEX.md](../vic/INDEX.md)
+- VIC timing: [../vic/timing.md](../vic/timing.md)
 - interrupts concept: [../concepts/interrupts.md](../concepts/interrupts.md)
 - VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
 - CPU instruction set: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)

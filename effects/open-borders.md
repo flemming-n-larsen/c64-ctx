@@ -59,6 +59,9 @@ NUFLI and UFLI use sprite underlay across the full display width; the 6 NUFLI un
 - These are PAL-measured values; verify on NTSC hardware or emulator with correct chip model.
 
 ## links
+- sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
+- sprite display: [../sprites/display.md](../sprites/display.md)
+- sprite techniques: [../sprites/advanced.md](../sprites/advanced.md)
 - tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [rasterbars.md](rasterbars.md)

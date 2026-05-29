@@ -7,6 +7,7 @@ source: cross-domain
 ## routes
 | need | read | notes |
 |---|---|---|
+| Sprite reference + runnable sprite example | [../sprites/INDEX.md](../sprites/INDEX.md) | Curated sprite hub plus the linked KickAssembler example. |
 | BASIC program changing border + background colors | [basic-border-background.md](basic-border-background.md) | Cites [../basic/graphics-sound.md](../basic/graphics-sound.md), [../colors/INDEX.md](../colors/INDEX.md), [../io/vic-ii.md](../io/vic-ii.md). |
 | BASIC program reading a keypress | [basic-read-key.md](basic-read-key.md) | Cites [../basic/io.md](../basic/io.md), [../tasks/read-keyboard.md](../tasks/read-keyboard.md), [../charset/petscii.md](../charset/petscii.md). |
 | BASIC `DATA`+`POKE`+`SYS` loader for ML | [basic-sys-loader.md](basic-sys-loader.md) | Cites [../basic/machine-code-bridge.md](../basic/machine-code-bridge.md), [../tasks/program-entrypoints.md](../tasks/program-entrypoints.md), [../memory/map.md](../memory/map.md). |
@@ -33,6 +34,7 @@ source: cross-domain
 | BASIC | [../basic/INDEX.md](../basic/INDEX.md) | Language reference for BASIC examples. |
 | Assemblers | [../asm/INDEX.md](../asm/INDEX.md) | Per-assembler syntax for ASM examples. |
 | Toolchains | [../toolchains/INDEX.md](../toolchains/INDEX.md) | Source → `.prg` → VICE workflows. |
+| sprites | [../sprites/INDEX.md](../sprites/INDEX.md) | Sprite-specific reference path tied to the KickAssembler example. |
 | Tasks | [../tasks/INDEX.md](../tasks/INDEX.md) | Recipe pages underlying example listings. |
 | I/O | [../io/INDEX.md](../io/INDEX.md) | Register facts cited by examples. |
 | Memory | [../memory/map.md](../memory/map.md) | Load addresses and safe code/data zones. |

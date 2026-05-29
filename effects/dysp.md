@@ -52,6 +52,9 @@ granularity: atomic
 - For more than 8 simultaneous sprites, combine with [sprite-multiplexer.md](sprite-multiplexer.md).
 
 ## links
+- sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
+- sprite techniques: [../sprites/advanced.md](../sprites/advanced.md)
+- sprite setup: [../sprites/display.md](../sprites/display.md)
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [sprite-multiplexer.md](sprite-multiplexer.md)
 - tasks: [../tasks/sprite-display.md](../tasks/sprite-display.md)

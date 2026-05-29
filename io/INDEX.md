@@ -7,6 +7,8 @@ source: c64ref
 ## routes
 | need | read | notes |
 |---|---|---|
+| VIC-II discovery route | [../vic/INDEX.md](../vic/INDEX.md) | Curated hub for VIC timing, banking, modes, and cross-domain routes. |
+| Sprite discovery route | [../sprites/INDEX.md](../sprites/INDEX.md) | Curated hub for sprite setup, collisions, border usage, and advanced techniques. |
 | 6510 port and banking bits | [processor-port.md](processor-port.md) | `$0000-$0001`; MUST be considered before `$A000`, `$D000`, `$E000` facts. |
 | VIC-II registers | [vic-ii.md](vic-ii.md) | Raster, screen, sprites, interrupts, video control. |
 | SID registers | [../sid/registers.md](../sid/registers.md) | Sound chip register route — full SID domain at [../sid/INDEX.md](../sid/INDEX.md). |
@@ -28,6 +30,8 @@ source: c64ref
 | domain | read | why |
 |---|---|---|
 | Memory | [../memory/io-area.md](../memory/io-area.md) | `$D000-$DFFF` memory window. |
+| VIC | [../vic/INDEX.md](../vic/INDEX.md) | Curated VIC-II routes over the raw register pages. |
+| sprites | [../sprites/INDEX.md](../sprites/INDEX.md) | Sprite-specific route for the VIC-II sprite subset and related effects. |
 | Concepts | [../concepts/interrupts.md](../concepts/interrupts.md) | IRQ/NMI constraints. |
 | Colors | [../colors/INDEX.md](../colors/INDEX.md) | VIC-II color values. |
 | Tasks | [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md) | Practical VIC-II IRQ recipe. |

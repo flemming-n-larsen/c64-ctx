@@ -45,6 +45,9 @@ granularity: atomic
 - Combine with [dysp.md](dysp.md) for moving sprites between frames.
 
 ## links
+- sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
+- sprite techniques: [../sprites/advanced.md](../sprites/advanced.md)
+- sprite setup: [../sprites/display.md](../sprites/display.md)
 - effects: [dysp.md](dysp.md)
 - effects: [stable-raster.md](stable-raster.md)
 - tasks: [../tasks/sprite-display.md](../tasks/sprite-display.md)
