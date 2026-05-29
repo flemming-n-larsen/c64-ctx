@@ -20,7 +20,7 @@ granularity: route
 ## links
 - KERNAL domain: [../kernal/INDEX.md](../kernal/INDEX.md)
 - KERNAL ROM memory: [../memory/kernal-rom.md](../memory/kernal-rom.md)
-- interrupts: [../concepts/interrupts.md](../concepts/interrupts.md)
+- interrupts: [../irq/overview.md](../irq/overview.md)
 
 ## sources
 - local route: [../sources/INDEX.md](../sources/INDEX.md)

@@ -11,7 +11,7 @@ granularity: atomic
 
 ## sequence
 
-1. Set up raster IRQ at the first line of the bar region; see [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md).
+1. Set up raster IRQ at the first line of the bar region; see [../irq/raster-interrupt.md](../irq/raster-interrupt.md).
 2. Inside the IRQ handler, load a pointer into the color table (index = current raster line − bar start line).
 3. Write `color_table,X` to `$D020` and/or `$D021`.
 4. Acknowledge `$D019`, increment line counter, set next `$D012` compare to current line + 1.
@@ -42,7 +42,7 @@ granularity: atomic
 ## links
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [open-borders.md](open-borders.md)
-- tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - colors: [../colors/INDEX.md](../colors/INDEX.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)

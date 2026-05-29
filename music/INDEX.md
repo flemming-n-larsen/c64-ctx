@@ -35,4 +35,4 @@ source: codebase64
 | Tasks | [../tasks/INDEX.md](../tasks/INDEX.md) | Raster IRQ setup and other prerequisite runtime patterns |
 | Effects | [../effects/INDEX.md](../effects/INDEX.md) | Demo/game contexts that schedule music alongside visuals |
 | Memory | [../memory/INDEX.md](../memory/INDEX.md) | `$A000-$FFFF` and `$D000-$DFFF` placement constraints |
-| Concepts | [../concepts/interrupts.md](../concepts/interrupts.md) | IRQ timing and frame-driven update model |
+| IRQ | [../irq/INDEX.md](../irq/INDEX.md) | Canonical interrupt timing, setup, and frame-driven update routes |

@@ -8,7 +8,7 @@ granularity: atomic
 - The C64 border is drawn by the VIC-II whenever the display enable bit or column/row mode forces it.
 - Top and bottom borders are removed by switching between 25-line and 24-line mode at precise raster positions using `$D011`.
 - Side borders are removed by switching between 40-column and 38-column mode at precise horizontal positions using `$D016`.
-- Both tricks require raster interrupt precision; see [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md) for IRQ setup.
+- Both tricks require raster interrupt precision; see [../irq/raster-interrupt.md](../irq/raster-interrupt.md) for IRQ setup.
 
 ## sequence — top/bottom border removal
 
@@ -62,7 +62,7 @@ NUFLI and UFLI use sprite underlay across the full display width; the 6 NUFLI un
 - sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
 - sprite display: [../sprites/display.md](../sprites/display.md)
 - sprite techniques: [../sprites/advanced.md](../sprites/advanced.md)
-- tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [rasterbars.md](rasterbars.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)

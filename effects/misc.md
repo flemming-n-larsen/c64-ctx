@@ -53,7 +53,7 @@ EBC mode (`$D011` bit 6 set) provides four background registers (`$D021`–`$D02
 ## links
 - effects: [plasma.md](plasma.md)
 - effects: [blending.md](blending.md)
-- tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - tasks: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - colors: [../colors/INDEX.md](../colors/INDEX.md)

@@ -4,33 +4,20 @@ domain: concepts
 granularity: concept
 ---
 
-## facts
-- The 6502 `I` status flag is the interrupt-disable flag in the local 6502 CPU pages.
-- VIC-II raster interrupts use VIC-II raster compare/control and interrupt flag registers in the `$D000` I/O block.
-- CIA1 and CIA2 interrupt behavior MUST be distinguished: CIA1 is routed as IRQ context here, CIA2 as NMI context here.
-- KERNAL time/IRQ services are routed through [../kernal/time-irq.md](../kernal/time-irq.md).
+## route
+- Canonical interrupt overview: [../irq/overview.md](../irq/overview.md)
+- Canonical raster IRQ recipe: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
+- Interrupt hub: [../irq/INDEX.md](../irq/INDEX.md)
 
-## lookup
-| source | common use | local route |
-|---|---|---|
-| CPU `I` flag | Mask IRQ while installing vectors or handlers | [../cpu/6502/registers-flags.md](../cpu/6502/registers-flags.md) |
-| VIC-II `$D011/$D012/$D019` | Raster compare and IRQ acknowledge | [../io/vic-ii.md](../io/vic-ii.md) |
-| CIA1 `$DC00-$DCFF` | Keyboard/joystick/timer IRQ context | [../io/cia1.md](../io/cia1.md) |
-| CIA2 `$DD00-$DDFF` | Serial/VIC-bank/timer NMI context | [../io/cia2.md](../io/cia2.md) |
-| KERNAL IRQ/time calls | ROM-managed timing and stop key | [../kernal/time-irq.md](../kernal/time-irq.md) |
-
-## constraints
-- Interrupt setup code SHOULD use `SEI` before changing vectors and `CLI` only after vectors/registers are consistent.
-- Raster IRQ handlers MUST acknowledge the VIC-II interrupt source to avoid repeated interrupts.
-- Handlers MUST preserve registers they clobber unless the caller/system contract is intentionally replaced.
-- Agents MUST distinguish CPU vectors, KERNAL vectors, VIC-II IRQ flags, and CIA interrupt registers.
+## notes
+- This legacy path remains as a backlink target for older `concepts/` links.
+- Interrupt-generic content now lives in `irq/` so there is a single authoritative local route.
 
 ## links
-- raster task: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
-- VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
-- KERNAL time/IRQ: [../kernal/time-irq.md](../kernal/time-irq.md)
+- interrupt hub: [../irq/INDEX.md](../irq/INDEX.md)
+- interrupt overview: [../irq/overview.md](../irq/overview.md)
+- raster recipe: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 
 ## sources
 - local route: [../sources/INDEX.md](../sources/INDEX.md)
-- KERNAL IRQ calls: [../kernal/time-irq.md](../kernal/time-irq.md)
-- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
+- canonical route: [../irq/overview.md](../irq/overview.md)

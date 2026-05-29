@@ -17,7 +17,7 @@ granularity: atomic
 | Raster compare and IRQ acknowledge | [../io/vic-ii.md](../io/vic-ii.md) | `$D011`, `$D012`, `$D019`, `$D01A`. |
 | Bad-line condition and cycle budget | [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md) | Includes the `(Y AND $07) == YSCROLL` rule and PAL cycle estimates. |
 | Visible-area and border coordinates | [../concepts/screen-geometry.md](../concepts/screen-geometry.md) | PAL-specific visible-area and text-area geometry. |
-| Raster IRQ installation sequence | [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md) | Practical handler setup and acknowledge flow. |
+| Raster IRQ installation sequence | [../irq/raster-interrupt.md](../irq/raster-interrupt.md) | Practical handler setup and acknowledge flow. |
 | Cycle-count budgeting inside handlers | [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md) | Use when a routine must fit before the next raster deadline. |
 
 ## constraints
@@ -34,12 +34,12 @@ granularity: atomic
 - screen modes: [screen-modes.md](screen-modes.md)
 - bad lines: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 - screen geometry: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
-- raster IRQ task: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- raster IRQ task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 
 ## sources
 - VIC hub: [INDEX.md](INDEX.md)
 - VIC bad lines: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 - screen geometry: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
-- raster IRQ task: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- raster IRQ task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - VIC-II register reference: [../io/vic-ii.md](../io/vic-ii.md)
 - provenance: [../sources/INDEX.md](../sources/INDEX.md)

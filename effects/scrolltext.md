@@ -48,7 +48,7 @@ granularity: atomic
 - For stable scroll on every raster line, combine with [stable-raster.md](stable-raster.md).
 
 ## links
-- tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - tasks: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - tasks: [../tasks/sprite-display.md](../tasks/sprite-display.md)
 - effects: [stable-raster.md](stable-raster.md)

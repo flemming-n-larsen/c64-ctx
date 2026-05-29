@@ -28,7 +28,7 @@ granularity: atomic
 - SID frequency calculation: [../sid/frequency-calculation.md](../sid/frequency-calculation.md)
 - PAL frequency table: [../sid/frequency-table.md](../sid/frequency-table.md)
 - NTSC frequency table: [../sid/ntsc-frequency-table.md](../sid/ntsc-frequency-table.md)
-- raster interrupt task: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- raster interrupt task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - music index: [INDEX.md](INDEX.md)
 
 ## sources

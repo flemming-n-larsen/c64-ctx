@@ -30,7 +30,7 @@ A standard demo part follows this flow:
 | Bottom border | `$D8`–`$FF` | rasterbars, open border |
 
 ## prerequisites
-- Raster IRQ setup: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- Raster IRQ setup: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - Stable raster (jitter-free): [stable-raster.md](stable-raster.md)
 - Open borders: [open-borders.md](open-borders.md)
 - music player integration: [../music/INDEX.md](../music/INDEX.md)
@@ -50,7 +50,7 @@ A standard demo part follows this flow:
 - effects: [plasma.md](plasma.md)
 - music: [../music/INDEX.md](../music/INDEX.md)
 - sid: [../sid/INDEX.md](../sid/INDEX.md)
-- tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 - concepts: [../concepts/optimization.md](../concepts/optimization.md)
 - concepts: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)

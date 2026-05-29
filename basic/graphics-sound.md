@@ -27,7 +27,7 @@ granularity: route
 | Sprite 0 Y | `53249` | `$D001` | `0-255` | [../tasks/sprite-display.md](../tasks/sprite-display.md) |
 | Sprite 0 color | `53287` | `$D027` | `0-15` | [../tasks/sprite-display.md](../tasks/sprite-display.md) |
 | VIC memory pointers (screen/charset bank) | `53272` | `$D018` | bit-packed | [../io/vic-ii.md](../io/vic-ii.md), `../tasks/custom-charset.md` (planned) |
-| Raster line (read/compare) | `53266` | `$D012` | `0-255` (+ MSB in `$D011` bit 7) | [../io/vic-ii.md](../io/vic-ii.md), [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md) |
+| Raster line (read/compare) | `53266` | `$D012` | `0-255` (+ MSB in `$D011` bit 7) | [../io/vic-ii.md](../io/vic-ii.md), [../irq/raster-interrupt.md](../irq/raster-interrupt.md) |
 | SID volume + filter mode | `54296` | `$D418` | low nybble = volume `0-15` | [../sid/registers.md](../sid/registers.md), [../sid/play-note.md](../sid/play-note.md) |
 | SID voice 1 freq lo | `54272` | `$D400` | `0-255` | [../sid/registers.md](../sid/registers.md) |
 | SID voice 1 freq hi | `54273` | `$D401` | `0-255` | [../sid/registers.md](../sid/registers.md) |
@@ -74,7 +74,7 @@ Beep voice 1 (triangle, gate on, then off):
 - palette: [../colors/palette.md](../colors/palette.md)
 - screen codes: [../charset/screen-codes.md](../charset/screen-codes.md)
 - sprite task: [../tasks/sprite-display.md](../tasks/sprite-display.md)
-- raster IRQ task: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- raster IRQ task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - memory map: [../memory/map.md](../memory/map.md)
 
 ## sources

@@ -11,6 +11,7 @@ source: c64ref
 | KERNAL calls, jump table, file I/O | [kernal/INDEX.md](kernal/INDEX.md) | [tasks/load-save-file.md](tasks/load-save-file.md) | Agents SHOULD cite local KERNAL pages and route upstream provenance through [sources/INDEX.md](sources/INDEX.md). |
 | CPU registers, flags, opcodes | [cpu/6502/INDEX.md](cpu/6502/INDEX.md) | [cpu/6502/instruction-set.md](cpu/6502/instruction-set.md) | `6502` data SHOULD be treated as CPU-family scoped, not C64-only. |
 | VIC-II overview: registers, banks, timing, modes | [vic/INDEX.md](vic/INDEX.md) | [io/vic-ii.md](io/vic-ii.md) | VIC discovery hub that routes to hardware, timing, memory, color, and mode pages. |
+| Interrupts, raster timing, stable sync, IRQ-driven flow | [irq/INDEX.md](irq/INDEX.md) | [io/INDEX.md](io/INDEX.md) | Canonical route for interrupt-generic guidance; consumer pages in music/effects/kernal link here. |
 | Sprite setup, sprite registers, DYSP, multiplexers | [sprites/INDEX.md](sprites/INDEX.md) | [tasks/sprite-display.md](tasks/sprite-display.md) | Sprite discovery hub that routes to setup, behavior, effects, and examples. |
 | VIC-II, CIA, I/O registers | [io/INDEX.md](io/INDEX.md) | [memory/io-area.md](memory/io-area.md) | Agents MUST account for banking at `$D000-$DFFF`. |
 | SID chip programming | [sid/INDEX.md](sid/INDEX.md) | [io/INDEX.md](io/INDEX.md) | Registers, waveforms, note recipes, freq tables, filter, chip detection. |
@@ -35,7 +36,8 @@ source: c64ref
 ## domains
 | domain | read | contains | provenance route |
 |---|---|---|---|
-| `concepts` | [concepts/INDEX.md](concepts/INDEX.md) | Cross-domain constraints: banking, interrupts, screen memory, zero page, character sets | [sources/INDEX.md](sources/INDEX.md) |
+| `concepts` | [concepts/INDEX.md](concepts/INDEX.md) | Cross-domain constraints: banking, screen memory, zero page, character sets, bad lines, optimization | [sources/INDEX.md](sources/INDEX.md) |
+| `irq` | [irq/INDEX.md](irq/INDEX.md) | Canonical interrupt domain: IRQ/NMI overview, raster setup, stable timing, cooperative IRQ-driven flow | [sources/INDEX.md](sources/INDEX.md) |
 | `cpu` | [cpu/INDEX.md](cpu/INDEX.md) | CPU-family route plus `6502` subdomain | [sources/INDEX.md](sources/INDEX.md) |
 | `memory` | [memory/INDEX.md](memory/INDEX.md) | C64 address map, symbols, zero page, ROM/RAM/I/O regions | [sources/INDEX.md](sources/INDEX.md) |
 | `io` | [io/INDEX.md](io/INDEX.md) | Processor port, VIC-II, CIA1, CIA2, color RAM | [sources/INDEX.md](sources/INDEX.md) |
@@ -65,7 +67,8 @@ source: c64ref
 |---|---|---|---|
 | [cpu/6502/INDEX.md](cpu/6502/INDEX.md) | `cpu/6502` | planned seed | Local CPU pages cover registers, flags, mnemonics, operations, and undocumented caveats. |
 | [memory/INDEX.md](memory/INDEX.md) | `memory`, `concepts`, `basic`, `rom`, `io` | planned seed | Local memory pages cover address ranges, symbols, aliases, and ROM/RAM constraints. |
-| [io/INDEX.md](io/INDEX.md) | `io`, `tasks` | planned seed | Local I/O pages cover register ranges and bit-level hardware fields. |
+| [io/INDEX.md](io/INDEX.md) | `io`, `tasks`, `irq` | planned seed | Local I/O pages cover register ranges and bit-level hardware fields. |
+| [irq/INDEX.md](irq/INDEX.md) | `irq`, `effects`, `music`, `kernal`, `tasks` | planned seed | Local interrupt pages centralize generic IRQ/NMI concepts, timing, and flow before consumer-specific routes. |
 | [vic/INDEX.md](vic/INDEX.md) | `vic`, `io`, `graphics`, `concepts`, `tasks`, `colors`, `display-modes` | planned seed | Local VIC routing gathers the main hardware, timing, banking, and screen-mode entry points. |
 | [sprites/INDEX.md](sprites/INDEX.md) | `sprites`, `io`, `tasks`, `effects`, `display-modes`, `examples` | planned seed | Local sprite routing gathers hardware setup, placement, advanced runtime techniques, and runnable examples. |
 | [kernal/INDEX.md](kernal/INDEX.md) | `kernal`, `tasks` | planned seed | Local KERNAL pages cover jump addresses, call preparation, returns, and affected registers. |

@@ -90,7 +90,7 @@ loop
 - loop-unrolling detail: [loop-unrolling.md](loop-unrolling.md)
 - runtime code generation: [speedcode.md](speedcode.md)
 - advanced tricks: [advanced.md](advanced.md)
-- raster interrupt setup: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- raster interrupt setup: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - ROM/RAM banking: [../tasks/bank-switch-rom-ram.md](../tasks/bank-switch-rom-ram.md)
 
 ## sources

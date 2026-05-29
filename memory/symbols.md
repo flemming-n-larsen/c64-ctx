@@ -91,7 +91,7 @@ granularity: lookup
 - map: [map.md](map.md)
 - KERNAL file I/O: [../kernal/file-io.md](../kernal/file-io.md)
 - BASIC vectors: [../basic/vectors.md](../basic/vectors.md)
-- IRQ task: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- IRQ task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 
 ## sources
 - local route: [../sources/INDEX.md](../sources/INDEX.md)

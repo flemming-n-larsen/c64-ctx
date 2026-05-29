@@ -57,7 +57,7 @@ granularity: atomic
 - play-SID task: [../sid/play-note.md](../sid/play-note.md)
 - music patterns: [music-patterns.md](music-patterns.md)
 - filter sweep: [../sid/filter-sweep.md](../sid/filter-sweep.md)
-- raster interrupt task: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- raster interrupt task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - stable raster effect: [../effects/stable-raster.md](../effects/stable-raster.md)
 - SID registers: [../sid/registers.md](../sid/registers.md)
 - VIC-II: [../io/vic-ii.md](../io/vic-ii.md)

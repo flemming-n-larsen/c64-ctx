@@ -14,7 +14,7 @@ granularity: address-range
 |---|---|---|
 | `$E000-$FFFF` | KERNAL ROM or underlying RAM | [../rom/kernal-disassembly.md](../rom/kernal-disassembly.md) |
 | `$FF81-$FFF3` | KERNAL jump table | [../kernal/jump-table.md](../kernal/jump-table.md) |
-| `$FFFA-$FFFF` | CPU vector area | [../concepts/interrupts.md](../concepts/interrupts.md) |
+| `$FFFA-$FFFF` | CPU vector area | [../irq/overview.md](../irq/overview.md) |
 
 ## constraints
 - Agents MUST check processor-port state before saying CPU reads at `$E000-$FFFF` see KERNAL ROM.

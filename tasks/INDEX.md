@@ -17,12 +17,12 @@ source: c64ref
 | Load or save a file | [load-save-file.md](load-save-file.md) | Uses KERNAL file I/O and device setup calls. |
 | Print text or characters | [print-to-screen.md](print-to-screen.md) | Uses `CHROUT`, screen memory, PETSCII, colors. |
 | Read keyboard input | [read-keyboard.md](read-keyboard.md) | Uses KERNAL input and keyboard matrix routes. |
-| Create raster interrupt | [raster-interrupt.md](raster-interrupt.md) | Uses VIC-II raster registers, IRQ vectors, CPU flags. |
+| Create raster interrupt | [../irq/raster-interrupt.md](../irq/raster-interrupt.md) | Canonical IRQ recipe with VIC-II raster registers, vectors, and coexistence rules. |
 | Switch ROM/RAM/I/O banks | [bank-switch-rom-ram.md](bank-switch-rom-ram.md) | Uses processor port and memory banking constraints. |
 | Move a block of memory | [memory-move.md](memory-move.md) | MOVEDOWN (to higher) and MOVEUP (to lower) with overlap handling. |
 | Clear / zero a memory region | [memory-clear.md](memory-clear.md) | Index-loop and optimized Y-only variants; up to 256 bytes per call. |
 | Decimal digit counter with screen display | [counter.md](counter.md) | Digit table, carry propagation, PETSCII conversion. |
-| Cooperative multitasking / multiple threads | [cooperative-threads.md](cooperative-threads.md) | Stack-split technique; context switch via IRQ. |
+| Cooperative multitasking / multiple threads | [../irq/cooperative-threads.md](../irq/cooperative-threads.md) | Canonical IRQ-driven threading/scheduler route. |
 | Dispatch to handler based on a byte value | [dispatch.md](dispatch.md) | Jump table, stack dispatch, self-mod variants; cycle comparison table. |
 | Decode variable-length bitfields from a byte stream | [bitstream.md](bitstream.md) | Sentinel shifter pattern; decision-tree decoder for Huffman/LZ. |
 
@@ -38,12 +38,12 @@ source: c64ref
 | [load-save-file.md](load-save-file.md) | used | KERNAL file call sequences and contracts. |
 | [print-to-screen.md](print-to-screen.md) | used | Screen-RAM, color-RAM, and KERNAL `CHROUT` routes. |
 | [read-keyboard.md](read-keyboard.md) | used | KERNAL and direct-matrix keyboard input. |
-| [raster-interrupt.md](raster-interrupt.md) | used | VIC-II raster + IRQ vector handler workflow. |
+| [../irq/raster-interrupt.md](../irq/raster-interrupt.md) | routed | Canonical VIC-II raster + IRQ vector workflow now lives in `/irq`. |
 | [bank-switch-rom-ram.md](bank-switch-rom-ram.md) | used | `$0001` banking via processor port. |
 | [memory-move.md](memory-move.md) | used | MOVEDOWN/MOVEUP routines for overlapping and non-overlapping block copies. |
 | [memory-clear.md](memory-clear.md) | used | Zero-fill up to 256 bytes per call; two variants (X counter, Y countdown). |
 | [counter.md](counter.md) | used | 6-digit decimal counter with PETSCII screen output; carry cascade. |
-| [cooperative-threads.md](cooperative-threads.md) | used | Stack-split threading; IRQ-driven round-robin context switch. |
+| [../irq/cooperative-threads.md](../irq/cooperative-threads.md) | routed | Canonical stack-split threading and IRQ-driven context-switch route. |
 | [dispatch.md](dispatch.md) | used | Five dispatch techniques; cycle and constraint table. |
 | [bitstream.md](bitstream.md) | used | Sentinel-based bit/field extractor; decision-tree variant. |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
@@ -59,3 +59,4 @@ source: c64ref
 | Memory | [../memory/INDEX.md](../memory/INDEX.md) | Address ranges and vectors. |
 | I/O | [../io/INDEX.md](../io/INDEX.md) | Hardware registers. |
 | Concepts | [../concepts/INDEX.md](../concepts/INDEX.md) | Constraints used by recipes. |
+| IRQ | [../irq/INDEX.md](../irq/INDEX.md) | Canonical interrupt-generic setup, timing, and flow routes. |

@@ -78,7 +78,7 @@ Enter a tight loop at line `$33`; poll `$D012`; on each new line write `$D018` a
 - effects: [stable-raster.md](../effects/stable-raster.md)
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 - graphics: [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md)
-- tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 

@@ -22,7 +22,7 @@ granularity: recipe
 | Joystick / direct keyboard matrix | [../io/cia1.md](../io/cia1.md) | Active-low; port 2 = `$DC00`, port 1 = `$DC01` |
 | Sprite setup | [sprite-display.md](sprite-display.md) | Pointer, X/Y, MSB, color, enable |
 | Screen codes for tiles/text | [../charset/screen-codes.md](../charset/screen-codes.md) | Screen RAM stores screen codes, not PETSCII |
-| Raster interrupt setup | [raster-interrupt.md](raster-interrupt.md) | Required for jitter-sensitive timing or multi-split frames |
+| Raster interrupt setup | [../irq/raster-interrupt.md](../irq/raster-interrupt.md) | Required for jitter-sensitive timing or multi-split frames |
 | BASIC equivalent for prototyping | [../basic/examples.md](../basic/examples.md) | BASIC `WAIT 53266,128` waits for raster ≥ 256; useful sync primitive |
 
 ## constraints
@@ -64,7 +64,7 @@ wait_vbl_out:
 - CIA1 ports / joystick: [../io/cia1.md](../io/cia1.md)
 - KERNAL keyboard/screen: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
 - sprite display: [sprite-display.md](sprite-display.md)
-- raster interrupt: [raster-interrupt.md](raster-interrupt.md)
+- raster interrupt: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - read keyboard: [read-keyboard.md](read-keyboard.md)
 - play SID: [../sid/play-note.md](../sid/play-note.md)
 - task index: [INDEX.md](INDEX.md)
@@ -74,5 +74,5 @@ wait_vbl_out:
 - local route: [../sources/INDEX.md](../sources/INDEX.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - CIA1: [../io/cia1.md](../io/cia1.md)
-- raster interrupt task: [raster-interrupt.md](raster-interrupt.md)
+- raster interrupt task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - task index: [INDEX.md](INDEX.md)

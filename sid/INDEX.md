@@ -44,5 +44,5 @@ source: codebase64
 | Colors | [../colors/INDEX.md](../colors/INDEX.md) | Screen blanking/dark display choices affect noise-mitigation recipes |
 | Tasks | [../tasks/INDEX.md](../tasks/INDEX.md) | Prerequisite recipes: raster interrupt setup |
 | Effects | [../effects/INDEX.md](../effects/INDEX.md) | Other demo/game effects (border, sprites, plasma, etc.) |
-| Concepts | [../concepts/interrupts.md](../concepts/interrupts.md) | IRQ/NMI timing for music players |
+| IRQ | [../irq/INDEX.md](../irq/INDEX.md) | IRQ/NMI timing and raster/timer setup for music players |
 | BASIC | [../basic/graphics-sound.md](../basic/graphics-sound.md) | POKE-based SID access from BASIC |

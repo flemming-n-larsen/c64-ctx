@@ -150,11 +150,11 @@ All color registers share the same bit layout:
 - screen modes: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 - VIC bank select: [cia2.md](cia2.md)
 - I/O area: [../memory/io-area.md](../memory/io-area.md)
-- interrupts: [../concepts/interrupts.md](../concepts/interrupts.md)
+- interrupts: [../irq/overview.md](../irq/overview.md)
 - screen memory: [../concepts/screen-memory.md](../concepts/screen-memory.md)
 - colors: [../colors/palette.md](../colors/palette.md)
 - sprite task: [../tasks/sprite-display.md](../tasks/sprite-display.md)
-- raster IRQ task: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- raster IRQ task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 
 ## sources
 - local route: [../sources/INDEX.md](../sources/INDEX.md)

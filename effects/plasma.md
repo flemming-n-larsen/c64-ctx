@@ -22,7 +22,7 @@ granularity: atomic
 
 ## sequence — rasterbar plasma (color RAM + $D020)
 
-1. Use a raster IRQ per line across the display area; see [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md).
+1. Use a raster IRQ per line across the display area; see [../irq/raster-interrupt.md](../irq/raster-interrupt.md).
 2. Each line: write `sine[(phase + line * freq) & 0xFF]` to `$D020` (border) and/or `$D021` (background).
 3. Also write the computed color to color RAM for the cells on that line.
 4. Increment phase each frame.
@@ -53,7 +53,7 @@ granularity: atomic
 - effects: [rasterbars.md](rasterbars.md)
 - effects: [fld.md](fld.md)
 - effects: [rng.md](rng.md)
-- tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - colors: [../colors/INDEX.md](../colors/INDEX.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)

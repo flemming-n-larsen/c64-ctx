@@ -16,16 +16,16 @@ granularity: api-family
 
 ## constraints
 - Agents MUST distinguish KERNAL time services from CIA timer hardware.
-- IRQ examples SHOULD link to [../concepts/interrupts.md](../concepts/interrupts.md) and device pages for acknowledge rules.
+- IRQ examples SHOULD link to [../irq/overview.md](../irq/overview.md) and device pages for acknowledge rules.
 - Code that replaces IRQ handling SHOULD preserve or deliberately replace KERNAL time/keyboard behavior.
 
 ## links
-- interrupts: [../concepts/interrupts.md](../concepts/interrupts.md)
-- raster task: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- interrupts: [../irq/overview.md](../irq/overview.md)
+- raster task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - CIA1: [../io/cia1.md](../io/cia1.md)
 - CIA2: [../io/cia2.md](../io/cia2.md)
 
 ## sources
 - local route: [../sources/INDEX.md](../sources/INDEX.md)
 - KERNAL index: [INDEX.md](INDEX.md)
-- interrupts: [../concepts/interrupts.md](../concepts/interrupts.md)
+- interrupts: [../irq/overview.md](../irq/overview.md)

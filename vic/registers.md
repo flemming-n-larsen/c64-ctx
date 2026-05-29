@@ -34,7 +34,7 @@ granularity: atomic
 - memory and banking: [memory-and-banking.md](memory-and-banking.md)
 - timing: [timing.md](timing.md)
 - screen modes: [screen-modes.md](screen-modes.md)
-- raster IRQ recipe: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- raster IRQ recipe: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - sprite setup: [../tasks/sprite-display.md](../tasks/sprite-display.md)
 
 ## sources

@@ -48,13 +48,13 @@ granularity: atomic
 - The blend loop processes all 64 characters per pixel step; at ~6 cycles/character × 64 = ~384 cycles per bit position per frame — well within budget.
 - Source charset must be copied from ROM before the effect begins; ROM is not writable.
 - VIC-II must point to the destination charset in RAM throughout the effect (`$D018` charset bits); ensure VIC bank alignment.
-- For color RAM fading, writes must occur outside the display area or use raster IRQ to avoid tearing; see [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md).
+- For color RAM fading, writes must occur outside the display area or use raster IRQ to avoid tearing; see [../irq/raster-interrupt.md](../irq/raster-interrupt.md).
 
 ## links
 - effects: [rng.md](rng.md)
 - effects: [plasma.md](plasma.md)
 - tasks: [../tasks/custom-charset.md](../tasks/custom-charset.md)
-- tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - colors: [../colors/INDEX.md](../colors/INDEX.md)
 

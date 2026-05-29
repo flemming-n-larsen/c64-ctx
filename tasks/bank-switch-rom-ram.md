@@ -24,7 +24,7 @@ granularity: recipe
 - Code MUST treat `$0000` as data direction and `$0001` as port data; they are not interchangeable.
 - Code SHOULD use read-modify-write on `$0001` to avoid unintended cassette side effects.
 - Agents MUST explain banking state when naming `$A000`, `$D000`, or `$E000` targets.
-- Interrupt-sensitive code SHOULD use `SEI`/`CLI` and vector safety rules from [raster-interrupt.md](raster-interrupt.md) and [../concepts/interrupts.md](../concepts/interrupts.md).
+- Interrupt-sensitive code SHOULD use `SEI`/`CLI` and vector safety rules from [../irq/raster-interrupt.md](../irq/raster-interrupt.md) and [../irq/overview.md](../irq/overview.md).
 
 ## links
 - processor port: [../io/processor-port.md](../io/processor-port.md)

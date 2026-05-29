@@ -34,7 +34,7 @@ granularity: atomic
 ## links
 - instruction set: [instruction-set.md](instruction-set.md)
 - addressing modes: [addressing-modes.md](addressing-modes.md)
-- interrupts: [../../concepts/interrupts.md](../../concepts/interrupts.md)
+- interrupts: [../../irq/overview.md](../../irq/overview.md)
 
 ## sources
 - local route: [../../sources/INDEX.md](../../sources/INDEX.md)

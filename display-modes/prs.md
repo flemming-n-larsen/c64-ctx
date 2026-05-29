@@ -49,7 +49,7 @@ granularity: atomic
 ## links
 - effects: [stable-raster.md](../effects/stable-raster.md)
 - effects: [rasterbars.md](../effects/rasterbars.md)
-- tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 

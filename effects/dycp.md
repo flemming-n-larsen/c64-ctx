@@ -43,7 +43,7 @@ granularity: atomic
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [scrolltext.md](scrolltext.md)
 - effects: [rasterbars.md](rasterbars.md)
-- tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 - colors: [../colors/INDEX.md](../colors/INDEX.md)

@@ -88,7 +88,7 @@ Same bit layout as CIA1 ICR (`$DC0D`); CIA2 generates **NMI**, not IRQ.
 - CIA1: [cia1.md](cia1.md)
 - serial KERNAL: [../kernal/serial-bus.md](../kernal/serial-bus.md)
 - screen memory: [../concepts/screen-memory.md](../concepts/screen-memory.md)
-- interrupts: [../concepts/interrupts.md](../concepts/interrupts.md)
+- interrupts: [../irq/overview.md](../irq/overview.md)
 - I/O index: [INDEX.md](INDEX.md)
 
 ## sources

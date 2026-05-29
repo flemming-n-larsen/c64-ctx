@@ -48,7 +48,7 @@ granularity: atomic
 ## links
 - effects: [rng.md](rng.md)
 - concepts: [../concepts/optimization.md](../concepts/optimization.md)
-- tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources

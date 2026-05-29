@@ -20,7 +20,7 @@ granularity: atomic
 | `$D011` YSCROLL (bits 2-0) and DEN (bit 4) | [../io/vic-ii.md](../io/vic-ii.md) | YSCROLL sets which sub-line within a character row triggers a bad line |
 | Raster line position (`$D011` bit 7 + `$D012`) | [../io/vic-ii.md](../io/vic-ii.md) | Use to time YSCROLL changes between lines |
 | CPU cycle counts per instruction | [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md) | Only ~23 (PAL) cycles available on bad lines for tight loops |
-| Raster interrupt setup | [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md) | Fire IRQ before the bad line to change YSCROLL in time |
+| Raster interrupt setup | [../irq/raster-interrupt.md](../irq/raster-interrupt.md) | Fire IRQ before the bad line to change YSCROLL in time |
 
 ## constraints
 
@@ -58,7 +58,7 @@ Without a stable raster, YSCROLL writes may land after VIC-II has already evalua
 - VIC hub: [../vic/INDEX.md](../vic/INDEX.md)
 - VIC timing: [../vic/timing.md](../vic/timing.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- raster interrupt: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- raster interrupt: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - CPU instruction cycles: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
 - concepts index: [INDEX.md](INDEX.md)
 

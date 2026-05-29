@@ -95,7 +95,7 @@ Joystick port 2 shares `$DC00` bits 0-4 with keyboard column outputs; DDRA bits 
 - keyboard matrix: [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md)
 - read-key task: [../tasks/read-keyboard.md](../tasks/read-keyboard.md)
 - CIA2: [cia2.md](cia2.md)
-- interrupts: [../concepts/interrupts.md](../concepts/interrupts.md)
+- interrupts: [../irq/overview.md](../irq/overview.md)
 - I/O index: [INDEX.md](INDEX.md)
 
 ## sources

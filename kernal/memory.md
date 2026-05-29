@@ -21,7 +21,7 @@ granularity: api-family
 
 ## links
 - memory map: [../memory/map.md](../memory/map.md)
-- interrupts: [../concepts/interrupts.md](../concepts/interrupts.md)
+- interrupts: [../irq/overview.md](../irq/overview.md)
 - jump table: [jump-table.md](jump-table.md)
 
 ## sources

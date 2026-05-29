@@ -43,7 +43,7 @@ granularity: recipe
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - CIA2 / VIC bank: [../io/cia2.md](../io/cia2.md)
 - memory map: [../memory/map.md](../memory/map.md)
-- raster interrupt: [raster-interrupt.md](raster-interrupt.md)
+- raster interrupt: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - task index: [INDEX.md](INDEX.md)
 
 ## sources

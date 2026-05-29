@@ -10,6 +10,7 @@ source: c64ref
 | `cpu/6502` | [../cpu/6502/INDEX.md](../cpu/6502/INDEX.md) | [mist64/c64ref CPU category](https://github.com/mist64/c64ref/tree/master/src/6502) | Extract registers, flags, addressing modes, documented operations, and illegal-opcode caveats. |
 | `memory` | [../memory/INDEX.md](../memory/INDEX.md) | [mist64/c64ref memory category](https://github.com/mist64/c64ref/tree/master/src/c64mem) | Extract map ranges, aliases, ROM/RAM regions, zero-page symbols, and cross-links. |
 | `io` | [../io/INDEX.md](../io/INDEX.md) | [mist64/c64ref I/O category](https://github.com/mist64/c64ref/tree/master/src/c64io) | Extract processor port, VIC-II, SID, CIA, color RAM, and banking-relevant register facts. |
+| `irq` | [../irq/INDEX.md](../irq/INDEX.md) | [mist64/c64ref memory category](https://github.com/mist64/c64ref/tree/master/src/c64mem) + [mist64/c64ref I/O category](https://github.com/mist64/c64ref/tree/master/src/c64io) + [codebase64.net base:interrupts](https://codebase64.net/doku.php?id=base%3Ainterrupts) — CC BY-NC-SA 4.0 | Centralize interrupt-generic vectors, device sources, raster setup, stable timing, and advanced IRQ-driven flow. |
 | `vic` | [../vic/INDEX.md](../vic/INDEX.md) | [mist64/c64ref I/O category](https://github.com/mist64/c64ref/tree/master/src/c64io) | Curated VIC-II hub over local `io`, `concepts`, `graphics`, `tasks`, `colors`, and `display-modes` pages; preserves register provenance through the cited local routes. |
 | `sprites` | [../sprites/INDEX.md](../sprites/INDEX.md) | [mist64/c64ref I/O category](https://github.com/mist64/c64ref/tree/master/src/c64io) + codebase64.net VIC wiki routes | Curated sprite hub over local `io`, `tasks`, `concepts`, `effects`, `display-modes`, and `examples` pages; keeps raw register facts and Codebase64-derived technique routes visible through cited local pages. |
 | `kernal` | [../kernal/INDEX.md](../kernal/INDEX.md) | [mist64/c64ref KERNAL category](https://github.com/mist64/c64ref/tree/master/src/kernal) | Extract KERNAL jump table entries, categories, calling conventions, error returns, and clobbers. |
@@ -41,8 +42,8 @@ source: c64ref
 | `6502` | `6502 Family CPU Reference` | `cpu/6502` | CPU-family data is not exclusively C64-specific. |
 | `kernal` | `C64 KERNAL API` | `kernal` | API calls are organized by jump address and category. |
 | `c64disasm` | `C64 BASIC & KERNAL ROM Disassembly` | `rom`, `basic`, `kernal` | Large source files SHOULD be summarized as route tables. |
-| `c64mem` | `C64 Memory Map` | `memory`, `concepts` | Multiple source editions MAY differ; keep provenance visible. |
-| `c64io` | `C64 I/O Map` | `io` | Marked WIP in upstream generator; facts SHOULD be cross-checked. |
+| `c64mem` | `C64 Memory Map` | `memory`, `concepts`, `irq` | Multiple source editions MAY differ; keep provenance visible. |
+| `c64io` | `C64 I/O Map` | `io`, `irq` | Marked WIP in upstream generator; facts SHOULD be cross-checked. |
 | `charset` | `Character Set · PETSCII · Keyboard` | `charset` | Includes keyboard and character-code data. |
 | `colors` | `C64 Colors` | `colors` | Color data overlaps with the character-set palette category. |
 

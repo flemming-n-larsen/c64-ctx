@@ -55,7 +55,7 @@ The freed even-line cycles allow real-time calculation of which charset segment 
 - effects: [swing.md](swing.md)
 - effects: [fpp.md](fpp.md)
 - display-modes: [../display-modes/fli.md](../display-modes/fli.md)
-- tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 

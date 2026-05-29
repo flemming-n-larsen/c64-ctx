@@ -51,7 +51,7 @@ granularity: atomic
 - effects: [dysp.md](dysp.md)
 - effects: [stable-raster.md](stable-raster.md)
 - tasks: [../tasks/sprite-display.md](../tasks/sprite-display.md)
-- tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - memory: [../memory/map.md](../memory/map.md)
 

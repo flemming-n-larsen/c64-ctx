@@ -32,6 +32,6 @@ source: c64ref
 | Memory | [../memory/io-area.md](../memory/io-area.md) | `$D000-$DFFF` memory window. |
 | VIC | [../vic/INDEX.md](../vic/INDEX.md) | Curated VIC-II routes over the raw register pages. |
 | sprites | [../sprites/INDEX.md](../sprites/INDEX.md) | Sprite-specific route for the VIC-II sprite subset and related effects. |
-| Concepts | [../concepts/interrupts.md](../concepts/interrupts.md) | IRQ/NMI constraints. |
+| IRQ | [../irq/overview.md](../irq/overview.md) | IRQ/NMI constraints and vector overview. |
 | Colors | [../colors/INDEX.md](../colors/INDEX.md) | VIC-II color values. |
-| Tasks | [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md) | Practical VIC-II IRQ recipe. |
+| Tasks | [../irq/raster-interrupt.md](../irq/raster-interrupt.md) | Canonical practical VIC-II IRQ recipe. |

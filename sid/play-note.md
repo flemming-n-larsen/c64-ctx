@@ -70,7 +70,7 @@ BASIC `POKE` form of the same first writes:
 - hard restart: [../music/hard-restart.md](../music/hard-restart.md)
 - BASIC graphics/sound bridge: [../basic/graphics-sound.md](../basic/graphics-sound.md)
 - I/O area memory: [../memory/io-area.md](../memory/io-area.md)
-- raster interrupt: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- raster interrupt: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - SID index: [INDEX.md](INDEX.md)
 
 ## sources

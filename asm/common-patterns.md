@@ -43,7 +43,7 @@ granularity: patterns
 | KERNAL jump-table call addresses | [../kernal/INDEX.md](../kernal/INDEX.md) |
 | Memory map and safe code/data zones | [../memory/map.md](../memory/map.md) |
 | Zero-page user-safe range | [../memory/zero-page.md](../memory/zero-page.md) |
-| Raster IRQ pattern (`SEI`/vector/`$D012`/`CLI`/`RTI`) | [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md) |
+| Raster IRQ pattern (`SEI`/vector/`$D012`/`CLI`/`RTI`) | [../irq/raster-interrupt.md](../irq/raster-interrupt.md) |
 | Choosing program shape (BASIC, SYS, `.prg`, cartridge) | [../tasks/program-entrypoints.md](../tasks/program-entrypoints.md) |
 
 ## constraints

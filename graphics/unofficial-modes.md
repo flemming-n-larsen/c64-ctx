@@ -78,7 +78,7 @@ granularity: atomic
 - official screen modes: [screen-modes.md](screen-modes.md)
 - open borders: [../effects/open-borders.md](../effects/open-borders.md)
 - sprite display: [../tasks/sprite-display.md](../tasks/sprite-display.md)
-- raster IRQ: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- raster IRQ: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - stable raster: [../effects/stable-raster.md](../effects/stable-raster.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - VIC bad lines: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)

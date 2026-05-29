@@ -58,6 +58,6 @@ source: c64ref
 | Graphics | [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md) | Full name/abbreviation table with links back to these spec pages |
 | Concepts | [../concepts/color-mixing.md](../concepts/color-mixing.md) | The 5 underlying color-expansion techniques |
 | Effects | [../effects/INDEX.md](../effects/INDEX.md) | Runtime demo/game visual effects (rasterbars, fire, plasma, etc.) |
-| Tasks | [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md) | IRQ setup required by most display modes |
+| Tasks | [../irq/raster-interrupt.md](../irq/raster-interrupt.md) | IRQ setup required by most display modes |
 | Effects | [../effects/stable-raster.md](../effects/stable-raster.md) | Prerequisite for cycle-exact display mode work |
 | Effects | [../effects/open-borders.md](../effects/open-borders.md) | Border opening trick used by SHIFXL and similar |
