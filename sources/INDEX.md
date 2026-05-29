@@ -23,6 +23,7 @@ source: c64ref
 | `effects` | [../effects/INDEX.md](../effects/INDEX.md) | [codebase64.net](https://codebase64.net/) — CC BY-NC-SA 4.0 | Distill technique-level demo/game effect recipes; each page cites the specific codebase64.net article URL and author (where named) in its `## sources` section. |
 | `math` | [../math/INDEX.md](../math/INDEX.md) | [codebase64.net base:6502_6510_maths](https://codebase64.net/doku.php?id=base:6502_6510_maths) — CC BY-NC-SA 4.0 | Arithmetic operation recipes grouped by type (compare, add/sub, multiply, divide, sqrt, trig, fixed-point, float, log, exp); each page cites the specific sub-page URL. |
 | `algorithms` | [../algorithms/INDEX.md](../algorithms/INDEX.md) | [codebase64.net base:6502_6510_maths](https://codebase64.net/doku.php?id=base:6502_6510_maths) — CC BY-NC-SA 4.0 | General-purpose algorithm recipes (sort, RNG, number conversion, compression, 3D math); each page cites specific codebase64.net sub-page URLs. |
+| `optimization` | [../optimization/INDEX.md](../optimization/INDEX.md) | [codebase64.net base:6502_6510_coding](https://codebase64.net/doku.php?id=base:6502_6510_coding) — CC BY-NC-SA 4.0 | Speed and size optimization recipes (cycle reduction, loop unrolling, speedcode, sizecoding, advanced tricks); each page cites the specific sub-page URL. |
 
 ## source-authority
 | source type | authority | rules |

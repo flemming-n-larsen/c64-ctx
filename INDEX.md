@@ -22,6 +22,10 @@ source: c64ref
 | 6502 math: multiply, divide, trig, fixed-point, float | [math/INDEX.md](math/INDEX.md) | [math/multiply.md](math/multiply.md) | Arithmetic operations — no native multiply/divide on 6502. |
 | Algorithms: sort, RNG, number conversion, compression, 3D | [algorithms/INDEX.md](algorithms/INDEX.md) | Matching algorithm page | PRNG, sorting, hex/decimal conversion, LZ/RLE compression, 3D math. |
 | Assembler syntax, directives, build patterns | [asm/INDEX.md](asm/INDEX.md) | [asm/rosetta.md](asm/rosetta.md) | Covers ACME, KickAssembler, CA65 (cc65), 64tass. |
+| Speed optimization: rastertime, cycle counting, loop unrolling, illegal opcodes | [optimization/INDEX.md](optimization/INDEX.md) | [optimization/speed.md](optimization/speed.md) | KERNAL avoidance, opcode cycle table, advanced tricks, speedcode, sizecoding. |
+| Common 6502 coding pitfalls | [cpu/pitfalls.md](cpu/pitfalls.md) | — | DOKE byte order, addressing mode `#` omission, self-mod label offsets. |
+| Detect CPU type at runtime (NMOS 6502 / 65C02 / 65816) | [cpu/detect-cpu.md](cpu/detect-cpu.md) | — | Uses `$1A`/`XBA`/`$3A` opcode behavior differences. |
+| Hidden RAM beneath `$00`/`$01` | [memory/hidden-ram.md](memory/hidden-ram.md) | — | Read via VIC sprite; write via bus residue timing. |
 | Build/run `.prg` on PC (VICE, assembler workflows) | [toolchains/INDEX.md](toolchains/INDEX.md) | [toolchains/vice.md](toolchains/vice.md) | Editor-neutral workflows for ACME, KickAssembler, CA65, 64tass, CBM prg Studio. |
 | Complete runnable program examples | [examples/INDEX.md](examples/INDEX.md) | Matching `basic/`, `asm/`, `toolchains/` pages | BASIC listings + per-assembler buildable `.prg` examples; each cites its reference pages. |
 
@@ -46,6 +50,7 @@ source: c64ref
 | `effects` | [effects/INDEX.md](effects/INDEX.md) | Demo/game effect technique recipes: border tricks, rasterbars, scrollers, FLD, DYCP, DYSP, sprite multiplexer, fire, starfield, plasma, RNG | codebase64.net — CC BY-NC-SA 4.0 |
 | `math` | [math/INDEX.md](math/INDEX.md) | 6502 arithmetic: compare, add/sub, multiply, divide, sqrt, trig, fixed-point, float, logarithm, exponentiation | codebase64.net — CC BY-NC-SA 4.0 |
 | `algorithms` | [algorithms/INDEX.md](algorithms/INDEX.md) | General-purpose algorithms: sorting, PRNG, number conversion, compression, 3D math | codebase64.net — CC BY-NC-SA 4.0 |
+| `optimization` | [optimization/INDEX.md](optimization/INDEX.md) | Speed and size optimization: cycle reduction, loop unrolling, runtime code generation, KERNAL sizecoding tricks | codebase64.net — CC BY-NC-SA 4.0 |
 | `examples` | [examples/INDEX.md](examples/INDEX.md) | Complete runnable BASIC and per-assembler programs with build/run invocations | Cross-domain derived pages |
 | `sources` | [sources/INDEX.md](sources/INDEX.md) | Source corpus map and provenance policy | Upstream GitHub fallback links |
 
