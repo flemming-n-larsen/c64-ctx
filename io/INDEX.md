@@ -7,6 +7,7 @@ source: c64ref
 ## routes
 | need | read | notes |
 |---|---|---|
+| I/O programming topic hub | [io-programming.md](io-programming.md) | Curated route for disk/tape, keyboard/text, controllers, MIDI, and transfer protocols. |
 | VIC-II discovery route | [../vic/INDEX.md](../vic/INDEX.md) | Curated hub for VIC timing, banking, modes, and cross-domain routes. |
 | Sprite discovery route | [../sprites/INDEX.md](../sprites/INDEX.md) | Curated hub for sprite setup, collisions, border usage, and advanced techniques. |
 | 6510 port and banking bits | [processor-port.md](processor-port.md) | `$0000-$0001`; MUST be considered before `$A000`, `$D000`, `$E000` facts. |
@@ -19,6 +20,7 @@ source: c64ref
 ## source-coverage
 | local coverage | status | notes |
 |---|---|---|
+| [io-programming.md](io-programming.md) | planned | Codebase64-derived topical hub for practical I/O routes across existing local domains. |
 | [processor-port.md](processor-port.md) | planned | 6510 port and memory-configuration bits. |
 | [vic-ii.md](vic-ii.md) | planned | Video register coverage. |
 | [../sid/registers.md](../sid/registers.md) | used | Sound register coverage — SID domain. |
