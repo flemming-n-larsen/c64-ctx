@@ -13,6 +13,7 @@ source: c64ref
 | Practical raster interrupt setup | [timing.md](timing.md) | Routes onward to [../irq/raster-interrupt.md](../irq/raster-interrupt.md) once the timing model is clear. |
 | Official VIC-II screen modes and enable-bit combinations | [screen-modes.md](screen-modes.md) | VIC-side mode bridge into graphics and display-technique pages. |
 | Unofficial mode families and deeper display specs | [screen-modes.md](screen-modes.md) | Routes onward to [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md) and [../display-modes/INDEX.md](../display-modes/INDEX.md). |
+| VIC-II chip variants: NTSC vs PAL, raster lines, cycles, C64 model mapping | [variants.md](variants.md) | 6567R56A, 6567R8, 6569, 6572, 8562, 8565, 8566 — timing differences and palette notes. |
 | Color values and palette naming | [../colors/palette.md](../colors/palette.md) | Pair with `io/vic-ii.md` when a register stores a color index. |
 | Sprite setup and sprite-specific behavior | [../sprites/INDEX.md](../sprites/INDEX.md) | Dedicated sprite hub for setup, visibility, collisions, and advanced techniques. |
 
@@ -23,6 +24,7 @@ source: c64ref
 | [memory-and-banking.md](memory-and-banking.md), [../io/cia2.md](../io/cia2.md), [../concepts/screen-memory.md](../concepts/screen-memory.md) | used | Bank selection, screen matrix placement, and `$D018` routing. |
 | [timing.md](timing.md), [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md), [../irq/raster-interrupt.md](../irq/raster-interrupt.md) | used | Timing constraints, geometry, and raster IRQ practice. |
 | [screen-modes.md](screen-modes.md), [../graphics/screen-modes.md](../graphics/screen-modes.md), [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md), [../display-modes/INDEX.md](../display-modes/INDEX.md) | used | Mode and technique routing. |
+| [variants.md](variants.md) | used | VIC-II chip variant hardware reference: NTSC/PAL timing, raster geometry, palette differences. |
 | [../colors/palette.md](../colors/palette.md), [../sprites/INDEX.md](../sprites/INDEX.md), [../tasks/sprite-display.md](../tasks/sprite-display.md) | used | Color and sprite-adjacent context. |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 

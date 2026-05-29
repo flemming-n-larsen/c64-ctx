@@ -16,6 +16,7 @@ source: c64ref
 | CIA1 registers | [cia1.md](cia1.md) | Keyboard, joystick, timers, IRQ. |
 | CIA2 registers | [cia2.md](cia2.md) | Serial bus, VIC bank select, NMI. |
 | Color RAM | [color-ram.md](color-ram.md) | `$D800-$DBFF`; 4-bit color storage. |
+| D64/D71/D81 disk image format structure | [disk-formats.md](disk-formats.md) | Track/sector layout, BAM, directory entries; 1541/1571/1581. |
 
 ## source-coverage
 | local coverage | status | notes |
@@ -26,6 +27,7 @@ source: c64ref
 | [../sid/registers.md](../sid/registers.md) | used | Sound register coverage — SID domain. |
 | [cia1.md](cia1.md), [cia2.md](cia2.md) | planned | CIA timers, keyboard/joystick, serial bus, IRQ/NMI coverage. |
 | [color-ram.md](color-ram.md), [../memory/io-area.md](../memory/io-area.md) | planned | Color RAM plus `$D000-$DFFF` banking context. |
+| [disk-formats.md](disk-formats.md) | used | D64/D71/D81 disk image format structure (track/sector layout, BAM, directory). |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related

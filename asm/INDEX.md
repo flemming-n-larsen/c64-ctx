@@ -11,6 +11,8 @@ source: assembler-docs
 | KickAssembler directives, macros, scripting | [kickassembler.md](kickassembler.md) | Targeted version: KickAssembler 5.x. Requires JVM. |
 | CA65 directives, segments, linker config | [ca65.md](ca65.md) | Targeted version: cc65 2.19+. Linked with `ld65`. |
 | 64tass directives, output options, labels | [64tass.md](64tass.md) | Targeted version: 64tass 1.58+. |
+| Buddy Assembler directives, native C64 resident assembler | [buddy.md](buddy.md) | On-machine assembler; no macros, 6-char label limit. |
+| MADS directives, macros, invocation | [mads.md](mads.md) | Cross-assembler (Windows/Linux/macOS); Atari-origin, 6502 output usable on C64. |
 | Translate between assemblers | [rosetta.md](rosetta.md) | Side-by-side equivalence table. |
 | BASIC SYS stub, `.prg` layout, KERNAL calls | [common-patterns.md](common-patterns.md) | Assembler-agnostic minimal patterns. |
 
@@ -21,6 +23,8 @@ source: assembler-docs
 | [kickassembler.md](kickassembler.md) | used | Cites KickAssembler reference manual (Mads Nielsen). |
 | [ca65.md](ca65.md) | used | Cites cc65 docs (`ca65`, `ld65`). |
 | [64tass.md](64tass.md) | used | Cites 64tass manual (Soci/Singular). |
+| [buddy.md](buddy.md) | used | Cites c64-wiki.com Buddy Assembler article. |
+| [mads.md](mads.md) | used | Cites MADS documentation (Tomasz Biela / github.com/tebe6502/Mad-Assembler). |
 | [rosetta.md](rosetta.md) | used | Cross-assembler equivalence; cites the four assembler pages. |
 | [common-patterns.md](common-patterns.md) | used | Assembler-neutral patterns; cites BASIC, memory, tasks. |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | No mist64/c64ref upstream — each page cites its own assembler docs. |
