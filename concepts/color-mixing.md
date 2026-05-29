@@ -11,7 +11,7 @@ granularity: atomic
 
 ## lookup
 
-### The 5 fundamental techniques
+### The 7 fundamental techniques
 
 | # | technique | key mechanism | effective colors | flicker |
 |:---:|---|---|:---:|:---:|
@@ -20,6 +20,8 @@ granularity: atomic
 | 3 | Frame interlacing | Alternate 2–3 complete frames; eye blends colors between frames | ~128 (IFLI), ~200–300 (TRIFLI) | yes |
 | 4 | Sprite underlay | Hires or multicolor sprites behind bitmap add independent color planes | +2–4 colors/area (UFLI/NUFLI) | no |
 | 5 | Spatial dithering | Checkerboard/stripe bitmap patterns perceived as blended color | ~120 intermediate shades | no |
+| 6 | ALM (Alternate Line Method) | Even raster lines use Color A, odd lines Color B — same luma cluster only | ~7 pairs (common VIC-II), more on first revision | no |
+| 7 | DCM (Dynamic Chequerboard Method) | Single-pixel chequerboard swapped A↔B every frame via raster IRQ | ~120 perceived blends, spatially localised | yes (subtle) |
 
 ### Effective color count comparison
 
@@ -76,6 +78,29 @@ granularity: atomic
 - Effective for smooth gradients in artwork; approximately 120 perceived shades from 16 palette colors.
 - Combined with FLI: dithered bitmap pixels with per-line FLI color changes give very dense apparent color ranges.
 
+### Technique 6 — ALM (Alternate Line Method)
+
+- Fill even horizontal raster lines with Color A and odd lines with Color B; both colors MUST be from the same VIC-II luma cluster.
+- The eye blends the two hues at normal viewing distance, producing an intermediate perceived color — analogous to spatial dithering but oriented horizontally.
+- No raster timing is required; static bitmap data in alternating rows is sufficient.
+- Constraint: cross-cluster pairs produce visible horizontal banding on real hardware and PAL-accurate emulators; see [../colors/luma-clusters.md](../colors/luma-clusters.md) for valid pairs.
+- The first-revision VIC-II's 5 coarser luma steps allow more valid ALM pairs than the common 9-step revision.
+
+### Technique 7 — DCM (Dynamic Chequerboard Method)
+
+- A single-pixel chequerboard pattern places Color A on even pixels and Color B on odd pixels; the pattern swaps A↔B every frame via a raster IRQ handler.
+- Frame-rate temporal blending partially masks luma mismatches, so DCM can mix colors from **different** luma clusters more successfully than ALM — though same-cluster pairs still produce cleaner results.
+- Example swap kernel (two adjacent color RAM or bitmap bytes):
+  ```asm
+  LDY $7DB0      ; load even-pixel color
+  LDX $7DB0+1   ; load odd-pixel color
+  STY $7DB0+1   ; write even → odd position
+  STX $7DB0     ; write odd → even position
+  ; repeat for further pairs in the row
+  ```
+- Effective color range is similar to frame interlacing (~C(16,2) perceived blends) but spatially localised per pixel rather than screen-wide.
+- See [../colors/luma-clusters.md](../colors/luma-clusters.md).
+
 ### Sprites in border regions
 
 - **Top/bottom border**: set sprite Y position into border raster range (`< $33` or `> $FA`); sprites display naturally since they always render over the border color.
@@ -90,6 +115,7 @@ granularity: atomic
 - Spatial dithering effectiveness degrades at close viewing distance; intended for artwork viewed at ~0.5–1 m on CRT.
 
 ## links
+- luma clusters: [../colors/luma-clusters.md](../colors/luma-clusters.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - official modes: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 - unofficial modes: [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md)
@@ -104,4 +130,6 @@ granularity: atomic
 - codebase64.net: [FLI](https://codebase64.net/doku.php?id=base:fli) — CC BY-NC-SA 4.0
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - c64-wiki.com: [NUFLI](https://www.c64-wiki.com/wiki/NUFLI) — GFDL
+- kodiak64.co.uk: [Luma-driven graphics on C64](https://kodiak64.co.uk/blog/luma-driven-graphics-on-c64) — ALM and DCM techniques
+- aaronbell.com: [Secret colours of the Commodore 64](https://www.aaronbell.com/secret-colours-of-the-commodore-64/) — equal-brightness constraint for frame-alternation mixing
 - provenance: [../sources/INDEX.md](../sources/INDEX.md)
