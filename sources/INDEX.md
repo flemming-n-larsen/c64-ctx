@@ -21,6 +21,8 @@ source: c64ref
 | `toolchains` | [../toolchains/INDEX.md](../toolchains/INDEX.md) | Tool-specific upstream docs — no mist64/c64ref route | Cite VICE manual, each assembler's manual, and CBM prg Studio docs directly; see [../ATTRIBUTION.md](../ATTRIBUTION.md). |
 | `examples` | [../examples/INDEX.md](../examples/INDEX.md) | Cross-domain derived pages — no direct upstream route | Each example cites local `basic/`, `asm/`, `tasks/`, `io/`, `memory/`, `charset/`, `colors/`, and `toolchains/` pages rather than upstream directly. |
 | `effects` | [../effects/INDEX.md](../effects/INDEX.md) | [codebase64.net](https://codebase64.net/) — CC BY-NC-SA 4.0 | Distill technique-level demo/game effect recipes; each page cites the specific codebase64.net article URL and author (where named) in its `## sources` section. |
+| `math` | [../math/INDEX.md](../math/INDEX.md) | [codebase64.net base:6502_6510_maths](https://codebase64.net/doku.php?id=base:6502_6510_maths) — CC BY-NC-SA 4.0 | Arithmetic operation recipes grouped by type (compare, add/sub, multiply, divide, sqrt, trig, fixed-point, float, log, exp); each page cites the specific sub-page URL. |
+| `algorithms` | [../algorithms/INDEX.md](../algorithms/INDEX.md) | [codebase64.net base:6502_6510_maths](https://codebase64.net/doku.php?id=base:6502_6510_maths) — CC BY-NC-SA 4.0 | General-purpose algorithm recipes (sort, RNG, number conversion, compression, 3D math); each page cites specific codebase64.net sub-page URLs. |
 
 ## source-authority
 | source type | authority | rules |

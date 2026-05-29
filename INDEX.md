@@ -19,6 +19,8 @@ source: c64ref
 | VIC-II screen/graphics modes, enable bits, color sources | [graphics/INDEX.md](graphics/INDEX.md) | [io/vic-ii.md](io/vic-ii.md) | All 8 ECM/BMM/MCM mode combinations; memory layout and color sources per mode. |
 | Display mode technique spec (FLI, IFLI, NUFLI, ECI, PRS, etc.) | [display-modes/INDEX.md](display-modes/INDEX.md) | [graphics/unofficial-modes.md](graphics/unofficial-modes.md) | 18 software picture-format specs; how to encode and play each mode. |
 | Demo/game effect technique | [effects/INDEX.md](effects/INDEX.md) | [tasks/INDEX.md](tasks/INDEX.md) | Effect pages combine task recipes and I/O facts into named effect patterns. |
+| 6502 math: multiply, divide, trig, fixed-point, float | [math/INDEX.md](math/INDEX.md) | [math/multiply.md](math/multiply.md) | Arithmetic operations — no native multiply/divide on 6502. |
+| Algorithms: sort, RNG, number conversion, compression, 3D | [algorithms/INDEX.md](algorithms/INDEX.md) | Matching algorithm page | PRNG, sorting, hex/decimal conversion, LZ/RLE compression, 3D math. |
 | Assembler syntax, directives, build patterns | [asm/INDEX.md](asm/INDEX.md) | [asm/rosetta.md](asm/rosetta.md) | Covers ACME, KickAssembler, CA65 (cc65), 64tass. |
 | Build/run `.prg` on PC (VICE, assembler workflows) | [toolchains/INDEX.md](toolchains/INDEX.md) | [toolchains/vice.md](toolchains/vice.md) | Editor-neutral workflows for ACME, KickAssembler, CA65, 64tass, CBM prg Studio. |
 | Complete runnable program examples | [examples/INDEX.md](examples/INDEX.md) | Matching `basic/`, `asm/`, `toolchains/` pages | BASIC listings + per-assembler buildable `.prg` examples; each cites its reference pages. |
@@ -42,6 +44,8 @@ source: c64ref
 | `graphics` | [graphics/INDEX.md](graphics/INDEX.md) | VIC-II screen mode reference: all 8 ECM/BMM/MCM combinations, memory layout, color sources | c64-wiki.com |
 | `display-modes` | [display-modes/INDEX.md](display-modes/INDEX.md) | Software display mode technique specs: FLI, IFLI, NUFLI, UFLI, ECI, HCB, PRS, and 12 more | c64-wiki.com (GFDL) + codebase64.net (CC BY-NC-SA 4.0) |
 | `effects` | [effects/INDEX.md](effects/INDEX.md) | Demo/game effect technique recipes: border tricks, rasterbars, scrollers, FLD, DYCP, DYSP, sprite multiplexer, fire, starfield, plasma, RNG | codebase64.net — CC BY-NC-SA 4.0 |
+| `math` | [math/INDEX.md](math/INDEX.md) | 6502 arithmetic: compare, add/sub, multiply, divide, sqrt, trig, fixed-point, float, logarithm, exponentiation | codebase64.net — CC BY-NC-SA 4.0 |
+| `algorithms` | [algorithms/INDEX.md](algorithms/INDEX.md) | General-purpose algorithms: sorting, PRNG, number conversion, compression, 3D math | codebase64.net — CC BY-NC-SA 4.0 |
 | `examples` | [examples/INDEX.md](examples/INDEX.md) | Complete runnable BASIC and per-assembler programs with build/run invocations | Cross-domain derived pages |
 | `sources` | [sources/INDEX.md](sources/INDEX.md) | Source corpus map and provenance policy | Upstream GitHub fallback links |
 

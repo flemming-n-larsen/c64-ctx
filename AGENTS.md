@@ -23,6 +23,8 @@ source: c64ref
 | ROM routine location | [rom/INDEX.md](rom/INDEX.md) | [sources/INDEX.md](sources/INDEX.md) | ROM pages MUST route to local Markdown summaries rather than reproduce full listings. |
 | PETSCII, screen code, keyboard | [charset/INDEX.md](charset/INDEX.md) | [sources/INDEX.md](sources/INDEX.md) | Character facts MUST distinguish code spaces. |
 | Color value or palette | [colors/INDEX.md](colors/INDEX.md) | [sources/INDEX.md](sources/INDEX.md) | Palette facts SHOULD cite local source-difference notes if visible. |
+| 6502 arithmetic operation (multiply, divide, trig, float) | [math/INDEX.md](math/INDEX.md) | [sources/INDEX.md](sources/INDEX.md) | All math is software-implemented; no native multiply/divide on 6502. |
+| Algorithm pattern (sort, RNG, compression, 3D, conversion) | [algorithms/INDEX.md](algorithms/INDEX.md) | [sources/INDEX.md](sources/INDEX.md) | Route to specific algorithm file; cross-reference effects/ for RNG/3D usage. |
 
 ## normative-language
 | term | agent interpretation |
