@@ -35,6 +35,21 @@ granularity: atomic
 | `$D012` | `$00` | Raster line trigger for first IRQ |
 | `$D012` | `$FA` | Raster line trigger for second IRQ (restore display) |
 
+## sprites in border regions
+
+Sprites always render over the border color regardless of the `$D01B` priority bit — no open-border trick is required to show sprites in border areas. The open-border trick is needed only to show display-area content (bitmap/text pixels) in the border.
+
+| border region | what to do | notes |
+|---|---|---|
+| Top border | Set sprite Y < `$33` | Sprites visible above display area naturally |
+| Bottom border | Set sprite Y > `$FA` | Sprites visible below display area naturally |
+| Left border | Set sprite X < `$18` | Low X positions place sprite in left border column |
+| Right border | Set sprite X > `$157` (9-bit) | Set MSB in `$D010`; sprite appears in right border |
+
+For side border sprite placement: `$D010` bit n = 1 when sprite n X coordinate ≥ 256; combine low byte in `$D000+n×2`. See [../tasks/sprite-display.md](../tasks/sprite-display.md) for full sprite X setup.
+
+NUFLI and UFLI use sprite underlay across the full display width; the 6 NUFLI underlay sprites naturally extend near the left border (starting at ~X=56) but the FLI bug columns (0–3) remain uncovered. To extend sprites into the very left edge of the side border while simultaneously opening it: apply the side-border trick on the same raster lines as the sprite positions.
+
 ## constraints
 - Timing MUST be cycle-exact for side border removal; imprecise timing produces artifacts.
 - Top/bottom trick requires two chained raster IRQs per frame.

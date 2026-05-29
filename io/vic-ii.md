@@ -138,6 +138,7 @@ All color registers share the same bit layout:
 - Sprite X coordinate > 255 requires setting the corresponding bit in `$D010` AND writing the low byte to `$D000+n×2`.
 
 ## links
+- screen modes: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 - VIC bank select: [cia2.md](cia2.md)
 - I/O area: [../memory/io-area.md](../memory/io-area.md)
 - interrupts: [../concepts/interrupts.md](../concepts/interrupts.md)

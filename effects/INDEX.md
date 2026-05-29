@@ -7,7 +7,7 @@ source: codebase64
 ## routes
 | need | read | notes |
 |---|---|---|
-| Open top/bottom or side borders | [open-borders.md](open-borders.md) | Double-IRQ `$D011` / `$D016` trick |
+| Open top/bottom or side borders | [open-borders.md](open-borders.md) | Double-IRQ `$D011` / `$D016` trick; sprites-in-border notes included |
 | Stable raster synchronization | [stable-raster.md](stable-raster.md) | Double-IRQ cycle compensation; prerequisite for precise effects |
 | IRQ-driven SID music player | [irq-music-player.md](irq-music-player.md) | Raster IRQ wrapper for SID playback routines |
 | Rasterbars (color bars in border/display) | [rasterbars.md](rasterbars.md) | `$D020`/`$D021` writes in raster IRQ |
@@ -21,10 +21,12 @@ source: codebase64
 | Plasma | [plasma.md](plasma.md) | Sine-sum color cycling; FLI plasma variant |
 | Pseudo-random number generator | [rng.md](rng.md) | X-ABC PRNG; 38 cycles; 8/16-bit output |
 
+For FLI, IFLI, NUFLI, UFLI, ECI and all other display mode technique specs → see [../display-modes/INDEX.md](../display-modes/INDEX.md).
+
 ## source-coverage
 | local coverage | status | notes |
 |---|---|---|
-| [open-borders.md](open-borders.md) | used | Double-IRQ border removal |
+| [open-borders.md](open-borders.md) | used | Double-IRQ border removal + sprites in border |
 | [stable-raster.md](stable-raster.md) | used | Cycle-level raster sync |
 | [irq-music-player.md](irq-music-player.md) | used | IRQ SID player pattern |
 | [rasterbars.md](rasterbars.md) | used | Color bar raster effect |
@@ -42,6 +44,7 @@ source: codebase64
 ## related
 | domain | read | why |
 |---|---|---|
+| Display modes | [../display-modes/INDEX.md](../display-modes/INDEX.md) | FLI/IFLI/NUFLI and all unofficial display mode technique specs |
 | Tasks | [../tasks/INDEX.md](../tasks/INDEX.md) | Prerequisite recipes: raster IRQ setup, sprite display, SID gate |
 | I/O | [../io/INDEX.md](../io/INDEX.md) | VIC-II and SID hardware registers used by effects |
 | Concepts | [../concepts/INDEX.md](../concepts/INDEX.md) | Timing constraints: bad lines, screen geometry, banking |
