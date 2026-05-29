@@ -28,10 +28,10 @@ granularity: route
 | Sprite 0 color | `53287` | `$D027` | `0-15` | [../tasks/sprite-display.md](../tasks/sprite-display.md) |
 | VIC memory pointers (screen/charset bank) | `53272` | `$D018` | bit-packed | [../io/vic-ii.md](../io/vic-ii.md), `../tasks/custom-charset.md` (planned) |
 | Raster line (read/compare) | `53266` | `$D012` | `0-255` (+ MSB in `$D011` bit 7) | [../io/vic-ii.md](../io/vic-ii.md), [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md) |
-| SID volume + filter mode | `54296` | `$D418` | low nybble = volume `0-15` | [../io/sid.md](../io/sid.md), `../tasks/play-sid.md` (planned) |
-| SID voice 1 freq lo | `54272` | `$D400` | `0-255` | [../io/sid.md](../io/sid.md) |
-| SID voice 1 freq hi | `54273` | `$D401` | `0-255` | [../io/sid.md](../io/sid.md) |
-| SID voice 1 control | `54276` | `$D404` | gate + waveform bits | [../io/sid.md](../io/sid.md) |
+| SID volume + filter mode | `54296` | `$D418` | low nybble = volume `0-15` | [../sid/registers.md](../sid/registers.md), [../sid/play-note.md](../sid/play-note.md) |
+| SID voice 1 freq lo | `54272` | `$D400` | `0-255` | [../sid/registers.md](../sid/registers.md) |
+| SID voice 1 freq hi | `54273` | `$D401` | `0-255` | [../sid/registers.md](../sid/registers.md) |
+| SID voice 1 control | `54276` | `$D404` | gate + waveform bits | [../sid/registers.md](../sid/registers.md) |
 
 ## constraints
 - VIC-II registers MUST use values `0-255`; bit operations require composing with `PEEK` first when changing single bits.
@@ -69,7 +69,7 @@ Beep voice 1 (triangle, gate on, then off):
 - functions: [functions.md](functions.md)
 - examples: [examples.md](examples.md)
 - VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
-- SID: [../io/sid.md](../io/sid.md)
+- SID: [../sid/registers.md](../sid/registers.md)
 - color RAM: [../io/color-ram.md](../io/color-ram.md)
 - palette: [../colors/palette.md](../colors/palette.md)
 - screen codes: [../charset/screen-codes.md](../charset/screen-codes.md)
@@ -80,5 +80,5 @@ Beep voice 1 (triangle, gate on, then off):
 ## sources
 - local route: [../sources/INDEX.md](../sources/INDEX.md) (PRG 1982 for BASIC `POKE` recipes; mist64/c64ref `src/c64io` for register addresses)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- SID registers: [../io/sid.md](../io/sid.md)
+- SID registers: [../sid/registers.md](../sid/registers.md)
 - BASIC index: [INDEX.md](INDEX.md)

@@ -8,7 +8,7 @@ source: c64ref
 | need | read | notes |
 |---|---|---|
 | Display a sprite | [sprite-display.md](sprite-display.md) | Sprite pointer, data block, X/Y position, enable, color. |
-| Play a SID note | [play-sid.md](play-sid.md) | Master volume, freq, ATDCY/SUREL, GATE on/off. |
+| SID sound (play notes, freq table, filter, music patterns, digis) | [../sid/INDEX.md](../sid/INDEX.md) | Full SID domain: register ref, recipes, effects, chip detection. |
 | Install a custom character set | [custom-charset.md](custom-charset.md) | Bank in char ROM, copy, modify, point VIC-II `$D018`. |
 | Game-loop skeleton | [game-loop.md](game-loop.md) | init → input → update → draw → sync → loop. |
 | Choose program entrypoint shape | [program-entrypoints.md](program-entrypoints.md) | BASIC, SYS loader, standalone `.prg`, cartridge. |
@@ -22,7 +22,7 @@ source: c64ref
 | local coverage | status | notes |
 |---|---|---|
 | [sprite-display.md](sprite-display.md) | used | 6-step sprite setup: pointer, data, position, color, enable. |
-| [play-sid.md](play-sid.md) | used | 7-step SID note: volume, freq, PW, ATDCY, SUREL, gate on/off. |
+| [../sid/INDEX.md](../sid/INDEX.md) | used | SID domain: registers, play-note, freq table, hard-restart, model-detect, digis. |
 | [custom-charset.md](custom-charset.md) | used | 6-step charset relocation: bank, copy, modify, point `$D018`. |
 | [game-loop.md](game-loop.md) | used | Init/input/update/draw/sync pattern with raster sync. |
 | [program-entrypoints.md](program-entrypoints.md) | used | Five delivery shapes: BASIC, SYS loader, `.prg`, absolute-load ML, cartridge. |

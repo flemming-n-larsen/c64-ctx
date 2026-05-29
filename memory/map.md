@@ -20,7 +20,7 @@ granularity: overview
 | `$A000-$BFFF` | 8K | BASIC ROM (default) or underlying RAM | yes | [basic-rom.md](basic-rom.md) |
 | `$C000-$CFFF` | 4K | RAM commonly used for machine-language programs | no | [symbols.md](symbols.md) |
 | `$D000-$D3FF` | 1K | VIC-II registers (mirrored every 64 bytes) | yes | [../io/vic-ii.md](../io/vic-ii.md) |
-| `$D400-$D7FF` | 1K | SID registers (mirrored every 32 bytes) | yes | [../io/sid.md](../io/sid.md) |
+| `$D400-$D7FF` | 1K | SID registers (mirrored every 32 bytes) | yes | [../sid/registers.md](../sid/registers.md) |
 | `$D800-$DBFF` | 1K | Color RAM (low nybble used; 1000 visible cells) | yes | [../io/color-ram.md](../io/color-ram.md) |
 | `$DC00-$DCFF` | 256 | CIA1 (keyboard, joystick, timer A IRQ) | yes | [../io/cia1.md](../io/cia1.md) |
 | `$DD00-$DDFF` | 256 | CIA2 (VIC bank select, serial, user port, NMI) | yes | [../io/cia2.md](../io/cia2.md) |

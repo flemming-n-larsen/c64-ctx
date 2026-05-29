@@ -1,6 +1,6 @@
 ---
 type: reference
-domain: effects
+domain: sid
 granularity: atomic
 ---
 
@@ -50,12 +50,15 @@ granularity: atomic
 - This pattern calls the player at raster line 0; players that expect 50/60 Hz calls work correctly on PAL/NTSC respectively.
 
 ## links
-- tasks: [../tasks/play-sid.md](../tasks/play-sid.md)
-- tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
-- effects: [stable-raster.md](stable-raster.md)
-- io: [../io/sid.md](../io/sid.md)
-- io: [../io/vic-ii.md](../io/vic-ii.md)
-- memory: [../memory/symbols.md](../memory/symbols.md)
+- SID index: [INDEX.md](INDEX.md)
+- play-SID task: [play-note.md](play-note.md)
+- music patterns: [music-patterns.md](music-patterns.md)
+- filter sweep: [filter-sweep.md](filter-sweep.md)
+- raster interrupt task: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- stable raster effect: [../effects/stable-raster.md](../effects/stable-raster.md)
+- SID registers: [registers.md](registers.md)
+- VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
+- memory symbols: [../memory/symbols.md](../memory/symbols.md)
 
 ## sources
 - codebase64.net: [Simple IRQ Music Player](https://codebase64.net/doku.php?id=sid:simple_irq_music_player) — Richard Bayliss — CC BY-NC-SA 4.0

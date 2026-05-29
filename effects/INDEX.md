@@ -9,7 +9,7 @@ source: codebase64
 |---|---|---|
 | Open top/bottom or side borders | [open-borders.md](open-borders.md) | Double-IRQ `$D011` / `$D016` trick; sprites-in-border notes included |
 | Stable raster synchronization | [stable-raster.md](stable-raster.md) | Double-IRQ cycle compensation; prerequisite for precise effects |
-| IRQ-driven SID music player | [irq-music-player.md](irq-music-player.md) | Raster IRQ wrapper for SID playback routines |
+| SID music player, patterns, filter sweep | [../sid/INDEX.md](../sid/INDEX.md) | IRQ player, arpeggio/vibrato/portamento, filter sweep — full SID domain. |
 | Rasterbars (color bars in border/display) | [rasterbars.md](rasterbars.md) | `$D020`/`$D021` writes in raster IRQ |
 | Scrolling text | [scrolltext.md](scrolltext.md) | `$D016` fine-scroll + char shift; sprite scroller variant |
 | Flexible Line Distance (vertical smooth scroll) | [fld.md](fld.md) | Bad-line suppression via `$D011` YSCROLL trick |
@@ -28,7 +28,7 @@ For FLI, IFLI, NUFLI, UFLI, ECI and all other display mode technique specs → s
 |---|---|---|
 | [open-borders.md](open-borders.md) | used | Double-IRQ border removal + sprites in border |
 | [stable-raster.md](stable-raster.md) | used | Cycle-level raster sync |
-| [irq-music-player.md](irq-music-player.md) | used | IRQ SID player pattern |
+| [../sid/INDEX.md](../sid/INDEX.md) | used | SID domain: IRQ player, music patterns, filter sweep. |
 | [rasterbars.md](rasterbars.md) | used | Color bar raster effect |
 | [scrolltext.md](scrolltext.md) | used | Fine-scroll and char-copy patterns |
 | [fld.md](fld.md) | used | FLD vertical scroll trick |

@@ -8,7 +8,7 @@ granularity: address-range
 | range | visible when I/O selected | primary page | notes |
 |---|---|---|---|
 | `$D000-$D02E` | `VIC-II` registers | [../io/vic-ii.md](../io/vic-ii.md) | the local I/O pages labels this as MOS `6566` video interface controller. |
-| `$D400-$D7FF` | `SID` registers | [../io/sid.md](../io/sid.md) | Sound interface device. |
+| `$D400-$D7FF` | `SID` registers | [../sid/registers.md](../sid/registers.md) | Sound interface device. |
 | `$D800-$DBFF` | Color RAM nybbles | [../io/color-ram.md](../io/color-ram.md) | Stores 4-bit color values. |
 | `$DC00-$DCFF` | `CIA1` registers | [../io/cia1.md](../io/cia1.md) | Keyboard, joystick, timers, IRQ. |
 | `$DD00-$DDFF` | `CIA2` registers | [../io/cia2.md](../io/cia2.md) | Serial bus, RS-232, VIC bank select, NMI. |

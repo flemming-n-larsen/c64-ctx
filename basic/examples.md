@@ -16,7 +16,7 @@ granularity: examples
 | print text | [#print-text](#print-text) | [program-structure.md](program-structure.md), [io.md](io.md) |
 | border/background colors | [#border-background-colors](#border-background-colors) | [graphics-sound.md](graphics-sound.md), [../io/vic-ii.md](../io/vic-ii.md), [../colors/palette.md](../colors/palette.md) |
 | read key | [#read-key](#read-key) | [io.md](io.md), [../charset/petscii.md](../charset/petscii.md), [../tasks/read-keyboard.md](../tasks/read-keyboard.md) |
-| simple tone | [#simple-tone](#simple-tone) | [graphics-sound.md](graphics-sound.md), [../io/sid.md](../io/sid.md) |
+| simple tone | [#simple-tone](#simple-tone) | [graphics-sound.md](graphics-sound.md), [../sid/registers.md](../sid/registers.md) |
 | DATA + SYS loader | [#data-sys-loader](#data-sys-loader) | [machine-code-bridge.md](machine-code-bridge.md), [../memory/map.md](../memory/map.md) |
 
 ## examples
@@ -58,7 +58,7 @@ Notes: `GET` reads the keyboard buffer non-blockingly and returns an empty strin
 60 FOR T=1 TO 600 : NEXT
 70 POKE S+4,16
 ```
-route: [graphics-sound.md](graphics-sound.md), [../io/sid.md](../io/sid.md)
+route: [graphics-sound.md](graphics-sound.md), [../sid/registers.md](../sid/registers.md)
 
 Notes: `S = 54272` is `$D400`, the SID base. `S+24` (`$D418`) sets master volume to `15`. `S+5`/`S+6` are voice 1 ATDCY/SUREL; values `9,0` give a short attack/decay with zero sustain/release. `S`/`S+1` are voice 1 frequency lo/hi; `30,0` sets a mid-range pitch. `S+4` is voice 1 control: `17` = `%00010001` (triangle waveform `bit 4` + gate `bit 0` on); `16` clears the gate to start the release phase.
 
@@ -90,7 +90,7 @@ Notes: `49152` = `$C000`, a 4 KiB RAM block outside BASIC's working area, safe a
 - [variables.md](variables.md)
 - [errors.md](errors.md)
 - [../io/vic-ii.md](../io/vic-ii.md)
-- [../io/sid.md](../io/sid.md)
+- [../sid/registers.md](../sid/registers.md)
 - [../colors/palette.md](../colors/palette.md)
 - [../charset/petscii.md](../charset/petscii.md)
 - [../charset/screen-codes.md](../charset/screen-codes.md)
@@ -104,5 +104,5 @@ Notes: `49152` = `$C000`, a 4 KiB RAM block outside BASIC's working area, safe a
 - program structure: [program-structure.md](program-structure.md)
 - machine-code bridge: [machine-code-bridge.md](machine-code-bridge.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- SID registers: [../io/sid.md](../io/sid.md)
+- SID registers: [../sid/registers.md](../sid/registers.md)
 - Upstream: C64 Programmer's Reference Guide (Commodore Business Machines, 1982) — adapted, not copied; register addresses cross-checked against mist64/c64ref `src/c64io`. AI-summarized; each example is an original short program.

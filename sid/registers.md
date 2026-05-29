@@ -1,6 +1,6 @@
 ---
 type: reference
-domain: io
+domain: sid
 granularity: chip
 ---
 
@@ -124,13 +124,17 @@ granularity: chip
 - Frequency formula (PAL): Hz = FREQ_reg × 985248 ÷ 16777216 ≈ FREQ_reg × 0.0587.
 
 ## links
-- play-SID task: [../tasks/play-sid.md](../tasks/play-sid.md)
+- play-SID task: [play-note.md](play-note.md)
+- frequency table (PAL A440): [frequency-table.md](frequency-table.md)
+- hard restart: [hard-restart.md](hard-restart.md)
+- SID model detection: [model-detect.md](model-detect.md)
+- digi samples: [digi-samples.md](digi-samples.md)
+- filter sweep effect: [filter-sweep.md](filter-sweep.md)
 - I/O area: [../memory/io-area.md](../memory/io-area.md)
-- processor port: [processor-port.md](processor-port.md)
-- I/O index: [INDEX.md](INDEX.md)
+- processor port: [../io/processor-port.md](../io/processor-port.md)
+- SID index: [INDEX.md](INDEX.md)
 
 ## sources
 - local route: [../sources/INDEX.md](../sources/INDEX.md)
 - upstream: [mist64/c64ref src/c64io](https://github.com/mist64/c64ref/tree/master/src/c64io)
-- I/O index: [INDEX.md](INDEX.md)
 - memory I/O area: [../memory/io-area.md](../memory/io-area.md)

@@ -1,6 +1,6 @@
 ---
 type: reference
-domain: tasks
+domain: sid
 granularity: recipe
 ---
 
@@ -18,11 +18,11 @@ granularity: recipe
 
 | need | read | notes |
 |---|---|---|
-| All SID registers `$D400-$D418`, R/W, CR bits, ATDCY rate table | [../io/sid.md](../io/sid.md) | Frequency formula, PW range, OSC3/ENV3 read-only |
-| Voice 1 vs 2 vs 3 register offsets | [../io/sid.md](../io/sid.md) | Same 7-byte layout repeats; RING/SYNC source rotates 3→1→2 |
-| Filter cutoff/resonance/routing `$D415-$D417` | [../io/sid.md](../io/sid.md) | Cutoff is 11-bit, split low/high; route per voice via `$D417` bits 0-2 |
+| All SID registers `$D400-$D418`, R/W, CR bits, ATDCY rate table | [registers.md](registers.md) | Frequency formula, PW range, OSC3/ENV3 read-only |
+| Voice 1 vs 2 vs 3 register offsets | [registers.md](registers.md) | Same 7-byte layout repeats; RING/SYNC source rotates 3→1→2 |
+| Filter cutoff/resonance/routing `$D415-$D417` | [registers.md](registers.md) | Cutoff is 11-bit, split low/high; route per voice via `$D417` bits 0-2 |
 | BASIC `POKE` equivalents for SID | [../basic/graphics-sound.md](../basic/graphics-sound.md) | Same registers as `54272+offset` |
-| Frequency tables and note values | [../io/sid.md](../io/sid.md) | Compute per-note from formula; PAL vs NTSC differs |
+| Frequency tables and note values | [frequency-table.md](frequency-table.md) | PAL A440 16-bit register values; 8 octaves |
 
 ## constraints
 
@@ -63,15 +63,17 @@ BASIC `POKE` form of the same first writes:
 
 ## links
 
-- SID registers: [../io/sid.md](../io/sid.md)
+- SID registers: [registers.md](registers.md)
+- frequency table (PAL A440): [frequency-table.md](frequency-table.md)
+- hard restart: [hard-restart.md](hard-restart.md)
 - BASIC graphics/sound bridge: [../basic/graphics-sound.md](../basic/graphics-sound.md)
 - I/O area memory: [../memory/io-area.md](../memory/io-area.md)
-- raster interrupt: [raster-interrupt.md](raster-interrupt.md)
-- task index: [INDEX.md](INDEX.md)
+- raster interrupt: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
+- SID index: [INDEX.md](INDEX.md)
 
 ## sources
 
 - local route: [../sources/INDEX.md](../sources/INDEX.md)
-- SID registers: [../io/sid.md](../io/sid.md)
+- SID registers: [registers.md](registers.md)
 - BASIC graphics/sound: [../basic/graphics-sound.md](../basic/graphics-sound.md)
-- task index: [INDEX.md](INDEX.md)
+- SID index: [INDEX.md](INDEX.md)

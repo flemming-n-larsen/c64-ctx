@@ -66,7 +66,7 @@ wait_vbl_out:
 - sprite display: [sprite-display.md](sprite-display.md)
 - raster interrupt: [raster-interrupt.md](raster-interrupt.md)
 - read keyboard: [read-keyboard.md](read-keyboard.md)
-- play SID: [play-sid.md](play-sid.md)
+- play SID: [../sid/play-note.md](../sid/play-note.md)
 - task index: [INDEX.md](INDEX.md)
 
 ## sources
