@@ -33,7 +33,8 @@ A standard demo part follows this flow:
 - Raster IRQ setup: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
 - Stable raster (jitter-free): [stable-raster.md](stable-raster.md)
 - Open borders: [open-borders.md](open-borders.md)
-- SID music integration: [../sid/INDEX.md](../sid/INDEX.md)
+- music player integration: [../music/INDEX.md](../music/INDEX.md)
+- SID chip reference: [../sid/INDEX.md](../sid/INDEX.md)
 
 ## constraints
 - Bad lines steal 40 cycles per line; account for them in any cycle-exact timing; see [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md).
@@ -47,6 +48,7 @@ A standard demo part follows this flow:
 - effects: [rasterbars.md](rasterbars.md)
 - effects: [scrolltext.md](scrolltext.md)
 - effects: [plasma.md](plasma.md)
+- music: [../music/INDEX.md](../music/INDEX.md)
 - sid: [../sid/INDEX.md](../sid/INDEX.md)
 - tasks: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)

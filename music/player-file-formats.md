@@ -1,0 +1,44 @@
+---
+type: reference
+domain: music
+granularity: atomic
+---
+
+## facts
+- Tracker/editor output formats are music-layer concerns: they describe how patterns, instruments, tables, and sequence pointers are packed before a player interprets them.
+- Codebase64's `JCH 20.G4` note documents fixed table locations followed by three per-voice sequence lists and sequence data blocks.
+- Sequence rows are stored as byte pairs `AA`/`BB`: `AA` carries instrument/tie/supertable control, while `BB` carries note or gate-hold meaning.
+- The article is explicitly incomplete, so treat it as a compact routing aid rather than a full converter specification.
+
+## JCH 20.G4 layout highlights
+| data | base address | notes |
+|---|---|---|
+| Arpeggio tables | `$18CB` / `$19CB` | Two columns |
+| Filter table | `$1ACB` | Shared modulation data |
+| Pulse table | `$1BCB` | Pulse-width modulation data |
+| Instrument table | `$1CCB` | Instrument definitions |
+| Sequence pointer tables | `$1DCB` / `$1ECB` | Low/high bytes |
+| Sequence lists for voices 0-2 | `$20CB`, `$24CB`, `$28CB` | Per-voice song order |
+| Sequence data | `$2CCB` onward | Actual step data starts `+3` bytes into each block |
+
+## sequence byte meanings
+| field | value | meaning |
+|---|---|---|
+| `AA` | `$7F` | End of sequence |
+| `AA` | `$90` | Tie note (`***`) |
+| `AA` | `$A0-$BF` | Instrument `$00-$1F` |
+| `AA` | `$C0-$DF` | Pointer into super table |
+| `AA` | `$80` | No control change |
+| `BB` | `$00` | No note / gate off |
+| `BB` | `$01-...` | Note value using current instrument |
+| `BB` | `$7E` | Gate-on hold (`+++`) |
+
+## links
+- music patterns: [music-patterns.md](music-patterns.md)
+- hard restart: [hard-restart.md](hard-restart.md)
+- SID registers: [../sid/registers.md](../sid/registers.md)
+- music index: [INDEX.md](INDEX.md)
+
+## sources
+- codebase64.net: [JCH 20.G4 Player File Format](https://codebase64.net/doku.php?id=base:jch_20.g4_player_file_format) — CC BY-NC-SA 4.0
+- provenance: [../sources/INDEX.md](../sources/INDEX.md)

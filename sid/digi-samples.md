@@ -56,6 +56,7 @@ Alternative using voice 3 pulse width for higher resolution:
 
 ## links
 - SID registers: [registers.md](registers.md)
+- noise reduction: [noise-reduction.md](noise-reduction.md)
 - SID model detection: [model-detect.md](model-detect.md)
 - SID index: [INDEX.md](INDEX.md)
 

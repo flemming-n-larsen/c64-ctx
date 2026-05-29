@@ -6,7 +6,7 @@ granularity: reference
 
 ## facts
 - SID frequency registers are 16-bit (FREQHI:FREQLO); value ≈ Hz × 16777216 ÷ clock.
-- PAL clock: 985248 Hz. NTSC clock: 1022730 Hz. Same register value produces a slightly lower pitch on NTSC.
+- PAL clock: 985248 Hz. NTSC (`6567R8`) clock: 1022727 Hz. Same register value produces a slightly higher pitch on NTSC.
 - Table below is calibrated to A4 = 440 Hz standard tuning on PAL C64.
 - Each octave is exactly 2× the register value of the previous octave.
 - Octave 4 is the middle octave: C4 (middle C) ≈ 261 Hz = `$1160`.
@@ -39,7 +39,7 @@ LDA #$40 : STA $D400   ; FREQLO
 LDA #$1D : STA $D401   ; FREQHI
 ```
 
-NTSC formula: `freq_reg = Hz × 16777216 ÷ 1022730`. Multiply PAL values by `≈ 0.9636` as a fast approximation.
+NTSC formula: `freq_reg = Hz × 16777216 ÷ 1022727`. Multiply PAL values by `≈ 1.037` as a fast approximation when retuning from PAL values.
 
 ## constraints
 - B in octave 7 (`$8380 × 2 = $10700`) overflows 16 bits — do not use.
@@ -48,8 +48,10 @@ NTSC formula: `freq_reg = Hz × 16777216 ÷ 1022730`. Multiply PAL values by `�
 
 ## links
 - SID registers: [registers.md](registers.md)
+- frequency calculation: [frequency-calculation.md](frequency-calculation.md)
+- NTSC frequency table: [ntsc-frequency-table.md](ntsc-frequency-table.md)
 - play-SID task: [play-note.md](play-note.md)
-- hard restart: [hard-restart.md](hard-restart.md)
+- hard restart: [../music/hard-restart.md](../music/hard-restart.md)
 - SID index: [INDEX.md](INDEX.md)
 
 ## sources

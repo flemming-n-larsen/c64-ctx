@@ -1,6 +1,6 @@
 ---
 type: reference
-domain: sid
+domain: music
 granularity: recipe
 ---
 
@@ -43,10 +43,11 @@ For 1-frame implementations: omit frame N+1 and accept a slightly elevated risk 
 - Voice 3: `$D413`/`$D414` for ATDCY/SUREL; apply same pattern with offset +14.
 
 ## links
-- SID registers: [registers.md](registers.md)
-- play-SID task: [play-note.md](play-note.md)
-- frequency table: [frequency-table.md](frequency-table.md)
-- SID index: [INDEX.md](INDEX.md)
+- music index: [INDEX.md](INDEX.md)
+- SID index: [../sid/INDEX.md](../sid/INDEX.md)
+- SID registers: [../sid/registers.md](../sid/registers.md)
+- play-SID task: [../sid/play-note.md](../sid/play-note.md)
+- frequency table: [../sid/frequency-table.md](../sid/frequency-table.md)
 
 ## sources
 - codebase64.net: [Classic Hard-Restart and About ADSR in Generally](https://codebase64.net/doku.php?id=base:classic_hard-restart_and_about_adsr_in_generally) — CC BY-NC-SA 4.0

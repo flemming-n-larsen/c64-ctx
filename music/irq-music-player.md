@@ -1,6 +1,6 @@
 ---
 type: reference
-domain: sid
+domain: music
 granularity: atomic
 ---
 
@@ -50,13 +50,16 @@ granularity: atomic
 - This pattern calls the player at raster line 0; players that expect 50/60 Hz calls work correctly on PAL/NTSC respectively.
 
 ## links
-- SID index: [INDEX.md](INDEX.md)
-- play-SID task: [play-note.md](play-note.md)
+- music index: [INDEX.md](INDEX.md)
+- SID index: [../sid/INDEX.md](../sid/INDEX.md)
+- tune integration: [tune-integration.md](tune-integration.md)
+- PAL/NTSC playback: [pal-ntsc-playback.md](pal-ntsc-playback.md)
+- play-SID task: [../sid/play-note.md](../sid/play-note.md)
 - music patterns: [music-patterns.md](music-patterns.md)
-- filter sweep: [filter-sweep.md](filter-sweep.md)
+- filter sweep: [../sid/filter-sweep.md](../sid/filter-sweep.md)
 - raster interrupt task: [../tasks/raster-interrupt.md](../tasks/raster-interrupt.md)
 - stable raster effect: [../effects/stable-raster.md](../effects/stable-raster.md)
-- SID registers: [registers.md](registers.md)
+- SID registers: [../sid/registers.md](../sid/registers.md)
 - VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
 - memory symbols: [../memory/symbols.md](../memory/symbols.md)
 

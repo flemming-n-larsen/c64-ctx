@@ -11,7 +11,8 @@ source: c64ref
 | KERNAL calls, jump table, file I/O | [kernal/INDEX.md](kernal/INDEX.md) | [tasks/load-save-file.md](tasks/load-save-file.md) | Agents SHOULD cite local KERNAL pages and route upstream provenance through [sources/INDEX.md](sources/INDEX.md). |
 | CPU registers, flags, opcodes | [cpu/6502/INDEX.md](cpu/6502/INDEX.md) | [cpu/6502/instruction-set.md](cpu/6502/instruction-set.md) | `6502` data SHOULD be treated as CPU-family scoped, not C64-only. |
 | VIC-II, CIA, I/O registers | [io/INDEX.md](io/INDEX.md) | [memory/io-area.md](memory/io-area.md) | Agents MUST account for banking at `$D000-$DFFF`. |
-| SID sound programming | [sid/INDEX.md](sid/INDEX.md) | [io/INDEX.md](io/INDEX.md) | Registers, note recipes, freq table, IRQ player, effects, chip detection. |
+| SID chip programming | [sid/INDEX.md](sid/INDEX.md) | [io/INDEX.md](io/INDEX.md) | Registers, waveforms, note recipes, freq tables, filter, chip detection. |
+| Music players, tune integration, tracker formats | [music/INDEX.md](music/INDEX.md) | [sid/INDEX.md](sid/INDEX.md) | IRQ players, banking/load-address concerns, PAL/NTSC playback, music-layer formats. |
 | BASIC or KERNAL ROM routine locations | [rom/INDEX.md](rom/INDEX.md) | [basic/INDEX.md](basic/INDEX.md) | ROM pages are compact routing aids, not full disassemblies. |
 | PETSCII, screen codes, keyboard matrix | [charset/INDEX.md](charset/INDEX.md) | [concepts/character-sets.md](concepts/character-sets.md) | Agents MUST distinguish PETSCII from screen codes. |
 | C64 color numbers and palette | [colors/INDEX.md](colors/INDEX.md) | [io/vic-ii.md](io/vic-ii.md) | Color references SHOULD cite both charset palette and colors UI sources when applicable. |
@@ -36,7 +37,8 @@ source: c64ref
 | `cpu` | [cpu/INDEX.md](cpu/INDEX.md) | CPU-family route plus `6502` subdomain | [sources/INDEX.md](sources/INDEX.md) |
 | `memory` | [memory/INDEX.md](memory/INDEX.md) | C64 address map, symbols, zero page, ROM/RAM/I/O regions | [sources/INDEX.md](sources/INDEX.md) |
 | `io` | [io/INDEX.md](io/INDEX.md) | Processor port, VIC-II, CIA1, CIA2, color RAM | [sources/INDEX.md](sources/INDEX.md) |
-| `sid` | [sid/INDEX.md](sid/INDEX.md) | SID registers, note recipes, frequency table, IRQ player, music patterns, filter, chip detection, digi samples | codebase64.net — CC BY-NC-SA 4.0 |
+| `sid` | [sid/INDEX.md](sid/INDEX.md) | SID registers, waveforms, frequency calculation/tables, filter, chip detection, digi samples, hardware issues | codebase64.net — CC BY-NC-SA 4.0 |
+| `music` | [music/INDEX.md](music/INDEX.md) | IRQ players, tune integration, banking/load-address constraints, playback timing, music patterns, tracker/player formats | codebase64.net — CC BY-NC-SA 4.0 |
 | `kernal` | [kernal/INDEX.md](kernal/INDEX.md) | KERNAL jump table and API families | [sources/INDEX.md](sources/INDEX.md) |
 | `basic` | [basic/INDEX.md](basic/INDEX.md) | BASIC tokens, vectors, routine routes | [sources/INDEX.md](sources/INDEX.md) |
 | `rom` | [rom/INDEX.md](rom/INDEX.md) | BASIC/KERNAL ROM disassembly routes | [sources/INDEX.md](sources/INDEX.md) |

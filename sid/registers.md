@@ -125,10 +125,14 @@ granularity: chip
 
 ## links
 - play-SID task: [play-note.md](play-note.md)
+- waveforms: [waveforms.md](waveforms.md)
 - frequency table (PAL A440): [frequency-table.md](frequency-table.md)
-- hard restart: [hard-restart.md](hard-restart.md)
+- NTSC frequency table: [ntsc-frequency-table.md](ntsc-frequency-table.md)
+- frequency calculation: [frequency-calculation.md](frequency-calculation.md)
+- hard restart: [../music/hard-restart.md](../music/hard-restart.md)
 - SID model detection: [model-detect.md](model-detect.md)
 - digi samples: [digi-samples.md](digi-samples.md)
+- noise reduction: [noise-reduction.md](noise-reduction.md)
 - filter sweep effect: [filter-sweep.md](filter-sweep.md)
 - I/O area: [../memory/io-area.md](../memory/io-area.md)
 - processor port: [../io/processor-port.md](../io/processor-port.md)

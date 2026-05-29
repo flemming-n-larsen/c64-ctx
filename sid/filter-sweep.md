@@ -61,8 +61,8 @@ granularity: atomic
 
 ## links
 - SID registers: [registers.md](registers.md)
-- SID music patterns: [music-patterns.md](music-patterns.md)
-- IRQ music player: [irq-music-player.md](irq-music-player.md)
+- music patterns: [../music/music-patterns.md](../music/music-patterns.md)
+- IRQ music player: [../music/irq-music-player.md](../music/irq-music-player.md)
 - SID index: [INDEX.md](INDEX.md)
 
 ## sources

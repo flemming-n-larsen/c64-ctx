@@ -1,6 +1,6 @@
 ---
 type: reference
-domain: sid
+domain: music
 granularity: atomic
 ---
 
@@ -107,11 +107,12 @@ write:
 - Call these routines only from inside the raster IRQ (once per frame) to maintain consistent timing.
 
 ## links
-- SID registers: [registers.md](registers.md)
-- frequency table: [frequency-table.md](frequency-table.md)
+- SID registers: [../sid/registers.md](../sid/registers.md)
+- frequency table: [../sid/frequency-table.md](../sid/frequency-table.md)
 - IRQ music player: [irq-music-player.md](irq-music-player.md)
-- filter sweep: [filter-sweep.md](filter-sweep.md)
-- SID index: [INDEX.md](INDEX.md)
+- filter sweep: [../sid/filter-sweep.md](../sid/filter-sweep.md)
+- music index: [INDEX.md](INDEX.md)
+- SID index: [../sid/INDEX.md](../sid/INDEX.md)
 
 ## sources
 - codebase64.net: [SID Programming](https://codebase64.net/doku.php?id=base:sid_programming) — CC BY-NC-SA 4.0

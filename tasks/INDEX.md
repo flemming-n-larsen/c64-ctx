@@ -8,7 +8,8 @@ source: c64ref
 | need | read | notes |
 |---|---|---|
 | Display a sprite | [sprite-display.md](sprite-display.md) | Sprite pointer, data block, X/Y position, enable, color. |
-| SID sound (play notes, freq table, filter, music patterns, digis) | [../sid/INDEX.md](../sid/INDEX.md) | Full SID domain: register ref, recipes, effects, chip detection. |
+| SID chip sound (play notes, freq table, filter, digis) | [../sid/INDEX.md](../sid/INDEX.md) | Hardware-facing SID domain: registers, waveforms, tables, effects, chip detection. |
+| Music playback / tune integration | [../music/INDEX.md](../music/INDEX.md) | IRQ players, banking/load-address constraints, music patterns, hard restart. |
 | Install a custom character set | [custom-charset.md](custom-charset.md) | Bank in char ROM, copy, modify, point VIC-II `$D018`. |
 | Game-loop skeleton | [game-loop.md](game-loop.md) | init → input → update → draw → sync → loop. |
 | Choose program entrypoint shape | [program-entrypoints.md](program-entrypoints.md) | BASIC, SYS loader, standalone `.prg`, cartridge. |
@@ -28,7 +29,8 @@ source: c64ref
 | local coverage | status | notes |
 |---|---|---|
 | [sprite-display.md](sprite-display.md) | used | 6-step sprite setup: pointer, data, position, color, enable. |
-| [../sid/INDEX.md](../sid/INDEX.md) | used | SID domain: registers, play-note, freq table, hard-restart, model-detect, digis. |
+| [../sid/INDEX.md](../sid/INDEX.md) | used | SID domain: hardware registers, waveform/tuning references, filter, digis. |
+| [../music/INDEX.md](../music/INDEX.md) | used | Music domain: player/update-loop integration, banking, timing, formats. |
 | [custom-charset.md](custom-charset.md) | used | 6-step charset relocation: bank, copy, modify, point `$D018`. |
 | [game-loop.md](game-loop.md) | used | Init/input/update/draw/sync pattern with raster sync. |
 | [program-entrypoints.md](program-entrypoints.md) | used | Five delivery shapes: BASIC, SYS loader, `.prg`, absolute-load ML, cartridge. |
@@ -49,6 +51,7 @@ source: c64ref
 | domain | read | why |
 |---|---|---|
 | Effects | [../effects/INDEX.md](../effects/INDEX.md) | Advanced technique recipes built on top of task primitives (border tricks, rasterbars, plasma, etc.). |
+| Music | [../music/INDEX.md](../music/INDEX.md) | Player-level audio workflows built on top of IRQ and banking tasks. |
 | BASIC | [../basic/INDEX.md](../basic/INDEX.md) | Loader/SYS patterns, runnable program shapes. |
 | KERNAL | [../kernal/INDEX.md](../kernal/INDEX.md) | API calls for file, input, output, time. |
 | Memory | [../memory/INDEX.md](../memory/INDEX.md) | Address ranges and vectors. |
