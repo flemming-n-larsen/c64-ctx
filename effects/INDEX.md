@@ -20,6 +20,16 @@ source: codebase64
 | Starfield | [starfield.md](starfield.md) | ROL-based or sprite-based; speed tiers |
 | Plasma | [plasma.md](plasma.md) | Sine-sum color cycling; FLI plasma variant |
 | Pseudo-random number generator | [rng.md](rng.md) | X-ABC PRNG; 38 cycles; 8/16-bit output |
+| Demo coding introduction and structure | [demo-intro.md](demo-intro.md) | IRQ chain structure; frame anatomy; prerequisites overview |
+| Swinging / Tech-Tech (wide horizontal sine) | [swing.md](swing.md) | Per-line `$D018` bank switch + `$D016` XSCROLL; requires FLI-style bad-line forcing |
+| 3D Dot Scroll | [dot-scroll.md](dot-scroll.md) | Perspective trajectory table; runtime speedcode generation; raster-synchronized |
+| FPP Stretcher (per-line horizontal warp) | [fpp.md](fpp.md) | Sine-driven `chartab`; `$D018` update per line; FLI timing |
+| Graphics Distortion (DYPP + tech-tech) | [distortion.md](distortion.md) | Y-axis (DYPP) + X-axis sine warp on FLI logo; per-row bank switching |
+| Fractals (Julia / Mandelbrot) | [fractals.md](fractals.md) | Fixed-point iteration; square/log/exp tables; 72×56 framebuffer; multi-frame render |
+| Vectors (3D wireframe / filled polygons) | [vectors.md](vectors.md) | Scanline fill; painter's algorithm; speedcode clear; sprite-based variant |
+| Blending / Fading | [blending.md](blending.md) | Randomized pixel-by-pixel charset blend; CIA timer PRNG seed; color RAM fade |
+| 2nd-line FLI (twisters, rotators, waving carpets) | [2nd-line-fli.md](2nd-line-fli.md) | Forced bad line on alternate lines; Bresenham segment selection; 63 free cycles/even line |
+| Misc (colour flashing, frame animation) | [misc.md](misc.md) | EBC mode color register cycling; charset page flipping for animation |
 
 For FLI, IFLI, NUFLI, UFLI, ECI and all other display mode technique specs → see [../display-modes/INDEX.md](../display-modes/INDEX.md).
 
@@ -39,6 +49,16 @@ For FLI, IFLI, NUFLI, UFLI, ECI and all other display mode technique specs → s
 | [starfield.md](starfield.md) | used | Starfield rendering |
 | [plasma.md](plasma.md) | used | Sine-based plasma |
 | [rng.md](rng.md) | used | X-ABC pseudo-random number generator |
+| [demo-intro.md](demo-intro.md) | used | Demo structure, IRQ chain anatomy, prerequisites |
+| [swing.md](swing.md) | used | Wide sine horizontal oscillation (tech-tech) |
+| [dot-scroll.md](dot-scroll.md) | used | Perspective 3D dot field with trajectory table |
+| [fpp.md](fpp.md) | used | Per-line FPP stretcher via `$D018` chartab |
+| [distortion.md](distortion.md) | used | DYPP + tech-tech combined FLI logo distortion |
+| [fractals.md](fractals.md) | used | Julia/Mandelbrot iterative fractal renderer |
+| [vectors.md](vectors.md) | used | 3D polygon wireframe/filled rendering |
+| [blending.md](blending.md) | used | Randomized charset pixel blend-in |
+| [2nd-line-fli.md](2nd-line-fli.md) | used | Twisters, rotators, waving carpets via 2nd-line FLI |
+| [misc.md](misc.md) | used | EBC colour flashing, frame animation |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | codebase64.net upstream route |
 
 ## related

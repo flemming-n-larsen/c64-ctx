@@ -15,6 +15,7 @@ source: c64ref
 | PETSCII vs screen code vs keyboard matrix | [character-sets.md](character-sets.md) | Agents MUST NOT conflate code spaces. |
 | VIC-II bad lines and CPU cycle theft | [vic-bad-lines.md](vic-bad-lines.md) | Use before writing cycle-exact or raster-timed code. |
 | Color mixing — raster tricks, FLI, interlacing, sprite underlay, dithering | [color-mixing.md](color-mixing.md) | The 5 fundamental techniques for expanding beyond 16 hardware colors. |
+| Optimization — speedcoding, tables, zero-page, self-modifying code | [optimization.md](optimization.md) | Cycle-exact technique reference; loop unrolling, runtime speedcode generation, page alignment. |
 
 ## source-coverage
 | local coverage | status | notes |
@@ -26,6 +27,7 @@ source: c64ref
 | [screen-geometry.md](screen-geometry.md) | used | PAL visible area, raster ranges, border heights, sprite Y offset. |
 | [vic-bad-lines.md](vic-bad-lines.md) | used | Bad line condition, cycle cost, YSCROLL trick, frame budget. |
 | [color-mixing.md](color-mixing.md) | used | Raster color tricks, FLI, interlacing, sprite underlay, dithering. |
+| [optimization.md](optimization.md) | used | Speedcoding, loop unrolling, runtime code generation, table lookups. |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related

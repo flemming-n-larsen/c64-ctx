@@ -25,6 +25,7 @@ source: c64ref
 | TRIFLI — tri-interlaced FLI | [trifli.md](trifli.md) | 3-frame rotation; ~200–300 perceived colors |
 | ASSLACE — alternating sprite sieve interlace | [asslace.md](asslace.md) | Sprite grid sieve toggled between frames |
 | Megatext — oversized bitmap text | [megatext.md](megatext.md) | Large glyphs rendered into bitmap; no special VIC trick |
+| Software screen modes (16×16 char matrix) | [software-screen-modes.md](software-screen-modes.md) | Custom pixel grid via charset design; no VIC register trick; includes scroll variant |
 
 ## source-coverage
 | local coverage | status | notes |
@@ -47,6 +48,7 @@ source: c64ref
 | [trifli.md](trifli.md) | used | Tri-interlaced FLI |
 | [asslace.md](asslace.md) | used | Alternating sprite sieve interlace |
 | [megatext.md](megatext.md) | used | Oversized bitmap text |
+| [software-screen-modes.md](software-screen-modes.md) | used | 16×16 char matrix software screen mode |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Upstream fallback route |
 
 ## related
