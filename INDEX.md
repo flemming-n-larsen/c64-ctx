@@ -32,6 +32,7 @@ source: c64ref
 | Detect CPU type at runtime (NMOS 6502 / 65C02 / 65816) | [cpu/detect-cpu.md](cpu/detect-cpu.md) | — | Uses `$1A`/`XBA`/`$3A` opcode behavior differences. |
 | Hidden RAM beneath `$00`/`$01` | [memory/hidden-ram.md](memory/hidden-ram.md) | — | Read via VIC sprite; write via bus residue timing. |
 | Build/run `.prg` on PC (VICE, assembler workflows) | [toolchains/INDEX.md](toolchains/INDEX.md) | [toolchains/vice.md](toolchains/vice.md) | Editor-neutral workflows for ACME, KickAssembler, CA65, 64tass, CBM prg Studio. |
+| Tools: crunchers, graphics editors, music editors, emulators, transfer | [tools/INDEX.md](tools/INDEX.md) | Matching tool page | Cross-platform and native C64 development tools; most-used list from codebase64.net. |
 | Complete runnable program examples | [examples/INDEX.md](examples/INDEX.md) | Matching `basic/`, `asm/`, `toolchains/` pages | BASIC listings + per-assembler buildable `.prg` examples; each cites its reference pages. |
 
 ## domains
@@ -63,6 +64,7 @@ source: c64ref
 | `optimization` | [optimization/INDEX.md](optimization/INDEX.md) | Speed and size optimization: cycle reduction, loop unrolling, runtime code generation, KERNAL sizecoding tricks | codebase64.net — CC BY-NC-SA 4.0 |
 | `examples` | [examples/INDEX.md](examples/INDEX.md) | Complete runnable BASIC and per-assembler programs with build/run invocations | Cross-domain derived pages |
 | `sources` | [sources/INDEX.md](sources/INDEX.md) | Source corpus map and provenance policy | Upstream GitHub fallback links |
+| `tools` | [tools/INDEX.md](tools/INDEX.md) | Most-used C64 development tools: crunchers, graphics editors, music editors, emulators, native tools, transfer | codebase64.net — CC BY-NC-SA 4.0 |
 
 ## source-map
 | coverage route | local domains | status | notes |

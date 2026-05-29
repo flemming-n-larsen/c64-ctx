@@ -1,0 +1,41 @@
+---
+type: index
+domain: tools
+source: codebase64.net
+---
+
+## routes
+| need | read | notes |
+|---|---|---|
+| Compress/crunch a `.prg` for distribution | [crunchers.md](crunchers.md) | Exomizer, Pucrunch, ByteBoozer (cross + native). |
+| Pixel/sprite/charset graphics editor | [graphics-editors.md](graphics-editors.md) | CharPad, SpritePad Pro, Pixcen, and others. |
+| SID music composition and export | [music-editors.md](music-editors.md) | GoatTracker, CheeseCutter, JCH, DMC, NinjaTracker. |
+| Disassemble or analyze a C64 binary | [disassemblers.md](disassemblers.md) | IDA Pro, Regenerator. |
+| Transfer files to/from real C64 hardware | [transfer.md](transfer.md) | Final Replay, Codenet, TMPView. |
+| Emulate a C64 on PC | [emulators.md](emulators.md) | VICE, HOXS64, CCS64; VICE workflow in toolchains. |
+| Native assemblers (run on the C64 itself) | [native-tools.md](native-tools.md) | Turbo Assembler, Ass Blaster, TMPx; native packers/linkers. |
+| Cross-assembler syntax and features | [../asm/INDEX.md](../asm/INDEX.md) | ACME, KickAssembler, CA65, 64tass. |
+| Cross-assembler build workflows | [../toolchains/INDEX.md](../toolchains/INDEX.md) | Source → `.prg` → VICE per assembler. |
+| Run/debug on VICE emulator | [../toolchains/vice.md](../toolchains/vice.md) | Autostart, monitor, command-line flags. |
+
+## source-coverage
+| local coverage | status | notes |
+|---|---|---|
+| [crunchers.md](crunchers.md) | used | Cites codebase64.net tools page (CC BY-NC-SA 4.0). |
+| [graphics-editors.md](graphics-editors.md) | used | Cites codebase64.net tools page (CC BY-NC-SA 4.0). |
+| [music-editors.md](music-editors.md) | used | Cites codebase64.net tools page (CC BY-NC-SA 4.0). |
+| [disassemblers.md](disassemblers.md) | used | Cites codebase64.net tools page (CC BY-NC-SA 4.0). |
+| [transfer.md](transfer.md) | used | Cites codebase64.net tools page (CC BY-NC-SA 4.0). |
+| [emulators.md](emulators.md) | used | Cites codebase64.net tools page; VICE detail in toolchains. |
+| [native-tools.md](native-tools.md) | used | Cites codebase64.net tools page (CC BY-NC-SA 4.0). |
+| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Tool-specific upstream docs and CSDB release pages. |
+
+## related
+| domain | read | why |
+|---|---|---|
+| Assemblers (syntax) | [../asm/INDEX.md](../asm/INDEX.md) | Language reference for cross-assemblers. |
+| Toolchains (build/run) | [../toolchains/INDEX.md](../toolchains/INDEX.md) | Editor-neutral build and emulator workflows. |
+| Music integration | [../music/INDEX.md](../music/INDEX.md) | IRQ players, banking, tune loading. |
+| Graphics display modes | [../display-modes/INDEX.md](../display-modes/INDEX.md) | Target format specs that graphics editors produce. |
+| Sprites | [../sprites/INDEX.md](../sprites/INDEX.md) | Hardware context for SpritePad Pro output. |
+| Optimization | [../optimization/INDEX.md](../optimization/INDEX.md) | Context for why crunching improves load times. |
