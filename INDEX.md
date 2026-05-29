@@ -21,7 +21,7 @@ source: c64ref
 | C64 color numbers and palette | [colors/INDEX.md](colors/INDEX.md) | [io/vic-ii.md](io/vic-ii.md) | Color references SHOULD cite both charset palette and colors UI sources when applicable. |
 | Practical programming recipe | [tasks/INDEX.md](tasks/INDEX.md) | Matching domain pages | Task pages MUST link to supporting facts rather than duplicate long tables. |
 | VIC-II screen/graphics modes, enable bits, color sources | [graphics/INDEX.md](graphics/INDEX.md) | [io/vic-ii.md](io/vic-ii.md) | All 8 ECM/BMM/MCM mode combinations; memory layout and color sources per mode. |
-| Display mode technique spec (FLI, IFLI, NUFLI, ECI, PRS, etc.) | [display-modes/INDEX.md](display-modes/INDEX.md) | [graphics/unofficial-modes.md](graphics/unofficial-modes.md) | 18 software picture-format specs; how to encode and play each mode. |
+| Display mode technique spec (ECM, FLI, IFLI, NUFLI, ECI, PRS, etc.) | [display-modes/INDEX.md](display-modes/INDEX.md) | [vic/screen-modes.md](vic/screen-modes.md) | Per-mode specs for unofficial picture formats plus a standalone ECM deep dive. |
 | Demo/game effect technique | [effects/INDEX.md](effects/INDEX.md) | [tasks/INDEX.md](tasks/INDEX.md) | Effect pages combine task recipes and I/O facts into named effect patterns. |
 | 6502 math: multiply, divide, trig, fixed-point, float | [math/INDEX.md](math/INDEX.md) | [math/multiply.md](math/multiply.md) | Arithmetic operations — no native multiply/divide on 6502. |
 | Algorithms: sort, RNG, number conversion, compression, 3D | [algorithms/INDEX.md](algorithms/INDEX.md) | Matching algorithm page | PRNG, sorting, hex/decimal conversion, LZ/RLE compression, 3D math. |
@@ -54,7 +54,7 @@ source: c64ref
 | `asm` | [asm/INDEX.md](asm/INDEX.md) | Assembler-specific syntax for ACME, KickAssembler, CA65, 64tass; cross-assembler rosetta; common patterns | Assembler-specific upstream docs |
 | `toolchains` | [toolchains/INDEX.md](toolchains/INDEX.md) | VICE emulator workflow and per-assembler source-to-`.prg` build workflows; CBM prg Studio | Tool-specific upstream docs |
 | `graphics` | [graphics/INDEX.md](graphics/INDEX.md) | VIC-II screen mode reference: all 8 ECM/BMM/MCM combinations, memory layout, color sources | c64-wiki.com |
-| `display-modes` | [display-modes/INDEX.md](display-modes/INDEX.md) | Software display mode technique specs: FLI, IFLI, NUFLI, UFLI, ECI, HCB, PRS, and 12 more | c64-wiki.com (GFDL) + codebase64.net (CC BY-NC-SA 4.0) |
+| `display-modes` | [display-modes/INDEX.md](display-modes/INDEX.md) | Display mode technique specs plus standalone ECM routing: FLI, IFLI, NUFLI, UFLI, ECI, HCB, PRS, and more | c64-wiki.com (GFDL) + codebase64.net (CC BY-NC-SA 4.0) + kodiak64.co.uk |
 | `effects` | [effects/INDEX.md](effects/INDEX.md) | Demo/game effect technique recipes: border tricks, rasterbars, scrollers, FLD, DYCP, DYSP, sprite multiplexer, fire, starfield, plasma, RNG | codebase64.net — CC BY-NC-SA 4.0 |
 | `math` | [math/INDEX.md](math/INDEX.md) | 6502 arithmetic: compare, add/sub, multiply, divide, sqrt, trig, fixed-point, float, logarithm, exponentiation | codebase64.net — CC BY-NC-SA 4.0 |
 | `algorithms` | [algorithms/INDEX.md](algorithms/INDEX.md) | General-purpose algorithms: sorting, PRNG, number conversion, compression, 3D math | codebase64.net — CC BY-NC-SA 4.0 |

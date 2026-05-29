@@ -14,6 +14,7 @@ granularity: atomic
 | family | route | notes |
 |---|---|---|
 | Official hardware modes | [../graphics/screen-modes.md](../graphics/screen-modes.md) | ECM/BMM/MCM combinations, memory layout, and color sources. |
+| ECM deep dive | [../display-modes/ecm.md](../display-modes/ecm.md) | Dedicated route for the official extended color mode and its charset trade-offs. |
 | Unofficial mode families | [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md) | Names, abbreviations, and the core technique behind each family. |
 | Per-technique specs | [../display-modes/INDEX.md](../display-modes/INDEX.md) | Detailed pages for FLI, IFLI, NUFLI, UFLI, MUFLI, PRS, and others. |
 | Color-expansion ideas | [../concepts/color-mixing.md](../concepts/color-mixing.md) | FLI, interlace, sprite underlay, and dithering as reusable ideas. |
@@ -24,7 +25,7 @@ granularity: atomic
 | Standard character | ECM=0, BMM=0, MCM=0 | [../graphics/screen-modes.md](../graphics/screen-modes.md) | Default text/character display. |
 | Multicolor character | ECM=0, BMM=0, MCM=1 | [../graphics/screen-modes.md](../graphics/screen-modes.md) | Per-cell mix of hires and multicolor via color RAM bit `3`. |
 | Standard / multicolor bitmap | BMM=1 with MCM `0` or `1` | [../graphics/screen-modes.md](../graphics/screen-modes.md) | Bitmap base depends on `$D018` bit `3`. |
-| Extended color mode | ECM=1, BMM=0, MCM=0 | [../graphics/screen-modes.md](../graphics/screen-modes.md) | 64 glyphs, 4 background colors. |
+| Extended color mode | ECM=1, BMM=0, MCM=0 | [../display-modes/ecm.md](../display-modes/ecm.md) | `64` glyphs, 4 background colors, dedicated ECM route. |
 | FLI / interlace / underlay families | raster-timed software technique | [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md) | Built on top of the official modes plus raster precision. |
 
 ## constraints
@@ -39,12 +40,14 @@ granularity: atomic
 - memory and banking: [memory-and-banking.md](memory-and-banking.md)
 - timing: [timing.md](timing.md)
 - official mode table: [../graphics/screen-modes.md](../graphics/screen-modes.md)
+- ECM route: [../display-modes/ecm.md](../display-modes/ecm.md)
 - unofficial modes: [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md)
 - display-modes index: [../display-modes/INDEX.md](../display-modes/INDEX.md)
 
 ## sources
 - VIC hub: [INDEX.md](INDEX.md)
 - official screen modes: [../graphics/screen-modes.md](../graphics/screen-modes.md)
+- ECM route: [../display-modes/ecm.md](../display-modes/ecm.md)
 - unofficial modes: [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md)
 - color mixing: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - VIC-II register reference: [../io/vic-ii.md](../io/vic-ii.md)

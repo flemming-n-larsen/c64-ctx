@@ -7,6 +7,7 @@ source: c64ref
 ## routes
 | need | read | notes |
 |---|---|---|
+| ECM — extended color mode | [ecm.md](ecm.md) | Official VIC-II character mode: 4 BG registers, `64` glyphs, and modern game-facing context. |
 | FLI — per-line `$D018` color trick | [fli.md](fli.md) | Bad-line force every line; 8 screen RAM blocks; FLI bug |
 | IFLI — interlaced FLI | [ifli.md](ifli.md) | 2-frame XSCROLL toggle; ~128 perceived colors; flicker |
 | UFLI / UIFLI — sprite underlay FLI | [ufli.md](ufli.md) | Hires sprites behind bitmap; sprite stretch per line |
@@ -30,6 +31,7 @@ source: c64ref
 ## source-coverage
 | local coverage | status | notes |
 |---|---|---|
+| [ecm.md](ecm.md) | used | Standalone ECM route bridging official VIC mode facts and modern usage context. |
 | [fli.md](fli.md) | used | FLI per-line `$D018` technique |
 | [ifli.md](ifli.md) | used | Interlaced FLI |
 | [ufli.md](ufli.md) | used | Sprite underlay FLI |
@@ -55,6 +57,7 @@ source: c64ref
 | domain | read | why |
 |---|---|---|
 | Graphics | [../graphics/INDEX.md](../graphics/INDEX.md) | Hardware mode register reference (8 official modes) + unofficial modes index |
+| VIC | [../vic/screen-modes.md](../vic/screen-modes.md) | Official-mode route that now links to ECM as a dedicated page. |
 | Graphics | [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md) | Full name/abbreviation table with links back to these spec pages |
 | Concepts | [../concepts/color-mixing.md](../concepts/color-mixing.md) | The 5 underlying color-expansion techniques |
 | Effects | [../effects/INDEX.md](../effects/INDEX.md) | Runtime demo/game visual effects (rasterbars, fire, plasma, etc.) |

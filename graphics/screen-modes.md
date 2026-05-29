@@ -102,6 +102,7 @@ Screen code bits 7-6 → BG register: `00`=`$D021`, `01`=`$D022`, `10`=`$D023`, 
 ## links
 - VIC hub: [../vic/INDEX.md](../vic/INDEX.md)
 - VIC screen modes: [../vic/screen-modes.md](../vic/screen-modes.md)
+- standalone ECM route: [../display-modes/ecm.md](../display-modes/ecm.md)
 - unofficial modes: [unofficial-modes.md](unofficial-modes.md)
 - color mixing concept: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
