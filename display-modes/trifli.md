@@ -1,6 +1,6 @@
 ---
 type: reference
-domain: effects
+domain: display-modes
 granularity: atomic
 ---
 

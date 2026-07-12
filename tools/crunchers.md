@@ -38,7 +38,7 @@ granularity: crunchers
 ## sources
 - local route: [../sources/INDEX.md](../sources/INDEX.md)
 - Exomizer: https://bitbucket.org/magli143/exomizer/wiki/Home
-- Pucrunch: http://www.cs.tut.fi/~albert/Dev/pucrunch/
+- Pucrunch: [Pasi Ojala's current project page](https://a1bert.kapsi.fi/Dev/pucrunch/)
 - ByteBoozer (cross): https://csdb.dk/release/?id=33093
 - ByteBoozer 1.0 (native): https://csdb.dk/release/?id=15274
 - 2MHz Time Cruncher V5.0: https://csdb.dk/release/?id=30939

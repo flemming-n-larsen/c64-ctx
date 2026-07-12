@@ -110,6 +110,26 @@ conditions, variable rules, file I/O concepts, and runnable program shapes.
 No verbatim text is reproduced. The manual is out of print and widely
 available as a public reference document in the C64 community.
 
+## Original hardware and format manuals
+
+The following pages summarize factual interface contracts from original
+manuals or maintained format specifications. No manual text or listings are
+reproduced:
+
+- **Commodore 1351 Mouse User's Manual** — Commodore Business Machines, Inc.,
+  1986; used by `io/mouse-1351.md`.
+- **Passport MIDI Interface User's Manual** — Passport Designs, Inc.; used by
+  `io/midi.md` for the Passport/Syntech hardware map.
+- **Commodore VIC-1541 Floppy Drive User's Manual** — Commodore Business
+  Machines, Inc.; used by `io/fast-loaders.md` for drive and serial-bus
+  architecture.
+- **SID File Format Description** — HVSC format documentation by Michael
+  Schwendt, Simon White, Dag Lem, Wilfred Bos, and LaLa; used by
+  `music/sid-file-format.md`.
+
+Exact archive locations and local consumers are listed in
+`sources/INDEX.md` under `primary-manuals`.
+
 ## Assembler documentation
 
 The `asm/` domain pages cite each assembler's own documentation as their

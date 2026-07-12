@@ -11,7 +11,7 @@ granularity: atomic
 - Lower border: 49 raster lines; last visible raster = `$12C`.
 - Left border: 48 px (6 chars); right border: 36 px (4.5 chars).
 - Sprite Y-position `$07` places the sprite at the top of the visible area (not `$00`).
-- NTSC timings differ and are not covered by this page.
+- The common NTSC 6567R8/8562 frame has 263 raster lines at 65 cycles per line; PAL 6569/8565 has 312 lines at 63 cycles per line.
 
 ## lookup
 | region | raster start | raster end | height | notes |
@@ -29,17 +29,31 @@ granularity: atomic
 | Sprite Y top | `$07` | Maps to raster `$08` (first visible line) |
 | Sprite Y range | `$07`–`$07`+291 | To cover full visible height with sprites |
 
+### frame timing by VIC-II family
+
+| video family | common chips | total raster lines | cycles/line | cycles/frame | frame rate |
+|---|---|---:|---:|---:|---:|
+| NTSC-M | 6567R8, 8562 | 263 | 65 | 17,095 | ~59.8 Hz |
+| PAL-B | 6569, 8565 | 312 | 63 | 19,656 | ~50.1 Hz |
+
+- Early NTSC 6567R56A timing is different: 262 lines, normally 64 cycles per line, with 65 cycles on lines 0–7.
+- The 320 × 200 text matrix is common to PAL and NTSC, but border/overscan geometry and the available CPU time outside the display are not interchangeable.
+
 ## constraints
 - `$D012` holds raster bits 0–7; bit 8 of the raster counter is in `$D011` bit 7.
 - Raster line `$00` is at the top of the frame, before visible area begins.
 - Sprite Y=0 is above the visible screen; use Y=`$07` for the first visible row.
-- These values are PAL-specific; NTSC has fewer lines (263 total vs 312) and different border heights.
+- The 402 × 292 visible-area and border measurements above are PAL-specific; NTSC code MUST use the variant timing table instead of reusing PAL border limits.
+- Raster IRQs at line 263 or above are PAL-only on the common 6567R8/8562 NTSC chips.
 
 ## links
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - concepts: [vic-bad-lines.md](vic-bad-lines.md)
 - effects: [../effects/open-borders.md](../effects/open-borders.md)
+- VIC-II variants: [../vic/variants.md](../vic/variants.md)
 
 ## sources
 - codebase64.net: [Visible Area](https://codebase64.net/doku.php?id=vic:visible_area) — CC BY-NC-SA 4.0
+- VIC-II variant timing: [../vic/variants.md](../vic/variants.md)
+- original manual: [Commodore 64 Programmer's Reference Guide — Programming Graphics](https://www.commodore.ca/manuals/c64_programmers_reference/c64-programmers_reference_guide-03-programming_graphics.pdf)
 - provenance: [../sources/INDEX.md](../sources/INDEX.md)

@@ -1,0 +1,30 @@
+name: Documentation audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: '17 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  repository:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Markdown structure and local links
+        shell: pwsh
+        run: ./scripts/audit.ps1
+
+  external-sources:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate external source URLs
+        shell: pwsh
+        run: ./scripts/audit.ps1 -CheckExternal

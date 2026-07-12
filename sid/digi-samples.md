@@ -62,5 +62,5 @@ Alternative using voice 3 pulse width for higher resolution:
 
 ## sources
 - c64-wiki.com: [SID — Sample Playback](https://www.c64-wiki.com/wiki/SID) — CC BY-SA 3.0
-- codebase64.net: [Samples and Digis](https://codebase64.net/doku.php?id=base:samples_and_techniques) — CC BY-NC-SA 4.0
+- codebase64.net: [SID Programming — Samples aka Digis](https://codebase64.net/doku.php?id=base:sid_programming#samples_aka_digis) — CC BY-NC-SA 4.0
 - provenance: [../sources/INDEX.md](../sources/INDEX.md)

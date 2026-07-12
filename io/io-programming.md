@@ -15,9 +15,9 @@ granularity: atomic
 | Disk and tape I/O | [disk-tape-io.md](disk-tape-io.md) | Device/file workflows, IEC routing, and tape-vs-disk scope notes. |
 | Keyboard and text I/O | [keyboard-text-io.md](keyboard-text-io.md) | Separate keyboard matrix wiring, KERNAL console calls, and character-code domains. |
 | Joystick input | [joystick.md](joystick.md) | CIA1 port reads, active-low bits, and keyboard-sharing constraints. |
-| Pointing devices | [pointing-devices.md](pointing-devices.md) | Mice, paddles, KoalaPad, and lightgun routing across CIA and SID facts. |
-| MIDI I/O | [midi.md](midi.md) | Compact route for user-port and cartridge-oriented MIDI topics. |
-| Data transfer protocols | [data-transfer-protocols.md](data-transfer-protocols.md) | Protocol families and provenance for fast-loader or link-layer topics. |
+| Pointing devices | [pointing-devices.md](pointing-devices.md) | Mice, paddles, KoalaPad, and lightgun routing; includes a dedicated 1351 implementation page. |
+| MIDI I/O | [midi.md](midi.md) | Interface-specific ACIA routing, including the Passport/Syntech map and compatibility constraints. |
+| Data transfer protocols | [data-transfer-protocols.md](data-transfer-protocols.md) | Stock IEC routing plus dedicated fast-loader compatibility guidance. |
 
 ## constraints
 - Treat `$DC00/$DC01` controller reads as CIA1 hardware facts, not as KERNAL API behavior; use [cia1.md](cia1.md) when register ownership matters.

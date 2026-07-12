@@ -1,7 +1,7 @@
 ---
 type: index
 domain: music
-source: codebase64
+source: codebase64.net
 ---
 
 ## routes
@@ -14,6 +14,7 @@ source: codebase64
 | Arpeggio, vibrato, portamento patterns | [music-patterns.md](music-patterns.md) | Per-frame tune effects layered on SID frequency writes |
 | Clean ADSR retrigger inside a player | [hard-restart.md](hard-restart.md) | Two-frame hard-restart scheduling for fast notes |
 | Tracker/player file-layout notes | [player-file-formats.md](player-file-formats.md) | JCH 20.G4 structure and sequence byte meanings |
+| PSID/RSID `.sid` container format | [sid-file-format.md](sid-file-format.md) | Header fields, byte order, payload loading, flags, and strict RSID constraints |
 | Raw SID chip registers and waveform/filter setup | [../sid/INDEX.md](../sid/INDEX.md) | Hardware-facing route for direct SID programming |
 
 ## source-coverage
@@ -26,6 +27,7 @@ source: codebase64
 | [music-patterns.md](music-patterns.md) | used | Common per-frame music modulation patterns |
 | [hard-restart.md](hard-restart.md) | used | Player-scheduled ADSR retrigger technique |
 | [player-file-formats.md](player-file-formats.md) | used | Compact tracker/player file-format notes |
+| [sid-file-format.md](sid-file-format.md) | used | HVSC-specified PSID/RSID container structure and parsing constraints |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | codebase64.net upstream route |
 
 ## related

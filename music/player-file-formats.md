@@ -8,7 +8,8 @@ granularity: atomic
 - Tracker/editor output formats are music-layer concerns: they describe how patterns, instruments, tables, and sequence pointers are packed before a player interprets them.
 - Codebase64's `JCH 20.G4` note documents fixed table locations followed by three per-voice sequence lists and sequence data blocks.
 - Sequence rows are stored as byte pairs `AA`/`BB`: `AA` carries instrument/tie/supertable control, while `BB` carries note or gate-hold meaning.
-- The article is explicitly incomplete, so treat it as a compact routing aid rather than a full converter specification.
+- The JCH article is explicitly incomplete, so this page remains a format-specific note rather than a full converter specification.
+- For a documented interchange/container format, use the PSID/RSID header reference in [sid-file-format.md](sid-file-format.md).
 
 ## JCH 20.G4 layout highlights
 | data | base address | notes |
@@ -38,7 +39,9 @@ granularity: atomic
 - hard restart: [hard-restart.md](hard-restart.md)
 - SID registers: [../sid/registers.md](../sid/registers.md)
 - music index: [INDEX.md](INDEX.md)
+- PSID/RSID container: [sid-file-format.md](sid-file-format.md)
 
 ## sources
 - codebase64.net: [JCH 20.G4 Player File Format](https://codebase64.net/doku.php?id=base:jch_20.g4_player_file_format) — CC BY-NC-SA 4.0
+- PSID/RSID container: [sid-file-format.md](sid-file-format.md)
 - provenance: [../sources/INDEX.md](../sources/INDEX.md)

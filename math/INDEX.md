@@ -1,7 +1,7 @@
 ---
 type: index
 domain: math
-source: codebase64
+source: codebase64.net
 ---
 
 ## routes

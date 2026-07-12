@@ -42,9 +42,9 @@ granularity: music-editors
 
 ## sources
 - local route: [../sources/INDEX.md](../sources/INDEX.md)
-- GoatTracker: http://covertbitops.c64.org/
+- GoatTracker: [Covert Bitops tools page](https://cadaver.github.io/tools.html)
 - GoatTracker (Mac): http://www.sidmusic.org/goattracker/mac/
-- CheeseCutter: http://koti.kapsi.fi/~ttaipalus/ccutter/
+- CheeseCutter: [official GitHub repository](https://github.com/theyamo/CheeseCutter)
 - Music Studio 2.1.0.7: https://csdb.dk/release/?id=93693
 - JCH Editor: https://csdb.dk/release/?id=14037
 - SDI: https://csdb.dk/release/?id=84874

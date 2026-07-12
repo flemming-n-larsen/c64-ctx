@@ -52,6 +52,8 @@ Content is derived from:
 - **[codebase64.net](https://codebase64.net/)** (CC BY-NC-SA 4.0) — effects, game programming, math, algorithms, optimization, SID, music, tools
 - **[c64-wiki.com](https://www.c64-wiki.com/)** (GFDL) — graphics modes, display-mode technique specs
 - **C64 Programmer's Reference Guide** (Commodore, 1982) — BASIC V2 language semantics
+- **Original Commodore/peripheral manuals** — VIC-II geometry, 1351 mouse, Passport MIDI, and 1541 architecture
+- **HVSC SID File Format Description** — PSID/RSID container structure and constraints
 - Assembler manuals (ACME, KickAssembler, CA65/cc65, 64tass) — `asm/` and `toolchains/` pages
 
 See [ATTRIBUTION.md](ATTRIBUTION.md) for full attribution details.

@@ -2,6 +2,7 @@
 type: reference
 domain: tasks
 source: 6502.org
+granularity: recipe
 ---
 
 ## facts

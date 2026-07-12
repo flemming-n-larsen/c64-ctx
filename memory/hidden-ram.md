@@ -2,6 +2,7 @@
 type: reference
 domain: memory
 source: codebase64.net
+granularity: atomic
 ---
 
 ## facts

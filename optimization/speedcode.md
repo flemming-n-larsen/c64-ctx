@@ -2,6 +2,7 @@
 type: reference
 domain: optimization
 source: codebase64.net
+granularity: atomic
 ---
 
 ## facts

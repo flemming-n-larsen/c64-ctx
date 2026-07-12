@@ -2,6 +2,7 @@
 type: reference
 domain: tasks
 source: codebase64.net
+granularity: recipe
 ---
 
 ## facts

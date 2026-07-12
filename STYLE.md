@@ -23,6 +23,16 @@ source: c64ref
 | Internal links | MUST use relative Markdown links | `../memory/map.md` |
 | Source citations | MUST include local provenance; MAY include a direct upstream URL for directly derived pages | `../sources/INDEX.md` plus the specific upstream article |
 
+## front-matter
+| page type | required fields | notes |
+|---|---|---|
+| Root contract/style | `type`, `domain`, `source` | `domain` is `root`. |
+| Directory index | `type: index`, `domain`, `source` | `domain` MUST match its directory (`cpu/6502` for that nested domain). |
+| Factual reference | `type: reference`, `domain`, `granularity` | `granularity` SHOULD be `atomic`, `chip`, `device`, or `recipe`. |
+
+- `source` MAY be omitted from factual references when the `## sources` section is the more accurate mixed-source authority.
+- When present, `source` MUST use the canonical identifier already used by the repository: `c64ref`, `codebase64.net`, `commodore-manual`, `hvsc`, `6502.org`, `assembler-docs`, `tool-docs`, `cross-domain`, or `mixed`.
+
 ## index-template
 ```md
 ---
@@ -87,6 +97,12 @@ granularity: atomic
 | `examples` | Minimal code or data examples only. |
 | `links` | Internal cross-domain references. |
 | `sources` | Local Markdown pages and centralized provenance routes used. |
+
+## section-naming
+- The table above defines common base sections, not an exclusive vocabulary.
+- A page MAY use a more specific domain heading such as `directives`, `flags`, `formulas`, or `registers` when it is clearer than a generic base name.
+- Repeated sections SHOULD qualify a base with an em dash, for example `sequence — sprite repositioning` or `lookup — control codes`.
+- Section names MUST remain compact, factual, and useful for retrieval.
 
 ## compactness
 - Atomic files SHOULD fit one concept, address range, chip, API family, or table.
