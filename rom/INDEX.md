@@ -15,10 +15,10 @@ source: c64ref
 ## source-coverage
 | local coverage | status | notes |
 |---|---|---|
-| [basic-disassembly.md](basic-disassembly.md) | planned | BASIC ROM route coverage. |
-| [kernal-disassembly.md](kernal-disassembly.md) | planned | KERNAL ROM route coverage. |
-| [../basic/routines.md](../basic/routines.md) | planned | BASIC routine routing companion. |
-| [../kernal/jump-table.md](../kernal/jump-table.md) | planned | Public KERNAL API route companion. |
+| [basic-disassembly.md](basic-disassembly.md) | used | BASIC ROM route coverage. |
+| [kernal-disassembly.md](kernal-disassembly.md) | used | KERNAL ROM route coverage. |
+| [../basic/routines.md](../basic/routines.md) | used | BASIC routine routing companion. |
+| [../kernal/jump-table.md](../kernal/jump-table.md) | used | Public KERNAL API route companion. |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related

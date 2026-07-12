@@ -23,7 +23,7 @@ source: c64ref
 | [keyboard-matrix.md](keyboard-matrix.md) | used | 8×8 matrix with row/col, scancodes, modifiers, and `GETIN` PETSCII outputs. |
 | [chargen-primary.md](chargen-primary.md) | used | Primary charset glyph bytes (screen codes `$00-$FF`), ROM-sourced. |
 | [chargen-alternate.md](chargen-alternate.md) | used | Alternate charset glyph bytes (screen codes `$00-$FF`), ROM-sourced. |
-| [../colors/palette.md](../colors/palette.md) | planned | Color names and values when used by character/control pages. |
+| [../colors/palette.md](../colors/palette.md) | used | Color names and values when used by character/control pages. |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related

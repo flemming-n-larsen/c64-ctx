@@ -51,7 +51,9 @@ source: c64ref
 
 ## local-rules
 - Every derived factual page MUST list local Markdown pages or this provenance page in `## sources`.
-- Upstream fallback references MUST use GitHub category or repository links from this page, not local absolute paths.
+- Facts already represented locally MUST cite the supporting local Markdown pages.
+- Pages derived directly from an upstream article MAY cite its specific upstream URL and MUST also cite this provenance page.
+- General upstream fallback references MUST use the category or repository links from this page, not local absolute paths.
 - Internal navigation MUST use relative Markdown links to local compact files.
 - Agents SHOULD report unresolved source differences instead of suppressing them.
 

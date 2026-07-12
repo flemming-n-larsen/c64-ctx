@@ -71,16 +71,16 @@ source: c64ref
 ## source-map
 | coverage route | local domains | status | notes |
 |---|---|---|---|
-| [cpu/6502/INDEX.md](cpu/6502/INDEX.md) | `cpu/6502` | planned seed | Local CPU pages cover registers, flags, mnemonics, operations, and undocumented caveats. |
-| [memory/INDEX.md](memory/INDEX.md) | `memory`, `concepts`, `basic`, `rom`, `io` | planned seed | Local memory pages cover address ranges, symbols, aliases, and ROM/RAM constraints. |
-| [io/INDEX.md](io/INDEX.md) | `io`, `tasks`, `irq` | planned seed | Local I/O pages cover register ranges and bit-level hardware fields. |
-| [irq/INDEX.md](irq/INDEX.md) | `irq`, `effects`, `music`, `kernal`, `tasks` | planned seed | Local interrupt pages centralize generic IRQ/NMI concepts, timing, and flow before consumer-specific routes. |
-| [vic/INDEX.md](vic/INDEX.md) | `vic`, `io`, `graphics`, `concepts`, `tasks`, `colors`, `display-modes` | planned seed | Local VIC routing gathers the main hardware, timing, banking, and screen-mode entry points. |
-| [sprites/INDEX.md](sprites/INDEX.md) | `sprites`, `io`, `tasks`, `effects`, `display-modes`, `examples` | planned seed | Local sprite routing gathers hardware setup, placement, advanced runtime techniques, and runnable examples. |
-| [kernal/INDEX.md](kernal/INDEX.md) | `kernal`, `tasks` | planned seed | Local KERNAL pages cover jump addresses, call preparation, returns, and affected registers. |
-| [rom/INDEX.md](rom/INDEX.md) | `rom`, `basic`, `kernal` | planned seed | Local ROM pages provide route/provenance material, not full copied listings. |
-| [charset/INDEX.md](charset/INDEX.md) | `charset`, `colors`, `tasks` | planned seed | Local charset pages cover keyboard, PETSCII/control, chargen, and palette facts. |
-| [colors/INDEX.md](colors/INDEX.md) | `colors` | planned seed | Local color pages cover color names, indices, and palette intent. |
+| [cpu/6502/INDEX.md](cpu/6502/INDEX.md) | `cpu/6502` | used | Local CPU pages cover registers, flags, mnemonics, operations, and undocumented caveats. |
+| [memory/INDEX.md](memory/INDEX.md) | `memory`, `concepts`, `basic`, `rom`, `io` | used | Local memory pages cover address ranges, symbols, aliases, and ROM/RAM constraints. |
+| [io/INDEX.md](io/INDEX.md) | `io`, `tasks`, `irq` | used | Local I/O pages cover register ranges and bit-level hardware fields. |
+| [irq/INDEX.md](irq/INDEX.md) | `irq`, `effects`, `music`, `kernal`, `tasks` | used | Local interrupt pages centralize generic IRQ/NMI concepts, timing, and flow before consumer-specific routes. |
+| [vic/INDEX.md](vic/INDEX.md) | `vic`, `io`, `graphics`, `concepts`, `tasks`, `colors`, `display-modes` | used | Local VIC routing gathers the main hardware, timing, banking, and screen-mode entry points. |
+| [sprites/INDEX.md](sprites/INDEX.md) | `sprites`, `io`, `tasks`, `effects`, `display-modes`, `examples` | used | Local sprite routing gathers hardware setup, placement, advanced runtime techniques, and runnable examples. |
+| [kernal/INDEX.md](kernal/INDEX.md) | `kernal`, `tasks` | used | Local KERNAL pages cover jump addresses, call preparation, returns, and affected registers. |
+| [rom/INDEX.md](rom/INDEX.md) | `rom`, `basic`, `kernal` | used | Local ROM pages provide route/provenance material, not full copied listings. |
+| [charset/INDEX.md](charset/INDEX.md) | `charset`, `colors`, `tasks` | used | Local charset pages cover keyboard, PETSCII/control, chargen, and palette facts. |
+| [colors/INDEX.md](colors/INDEX.md) | `colors` | used | Local color pages cover color names, indices, and palette intent. |
 | [sources/INDEX.md](sources/INDEX.md) | all domains | provenance | Central upstream fallback route for `mist64/c64ref`. |
 
 ## rules

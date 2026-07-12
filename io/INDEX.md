@@ -21,12 +21,12 @@ source: c64ref
 ## source-coverage
 | local coverage | status | notes |
 |---|---|---|
-| [io-programming.md](io-programming.md) | planned | Codebase64-derived topical hub for practical I/O routes across existing local domains. |
-| [processor-port.md](processor-port.md) | planned | 6510 port and memory-configuration bits. |
-| [vic-ii.md](vic-ii.md) | planned | Video register coverage. |
+| [io-programming.md](io-programming.md) | used | Codebase64-derived topical hub for practical I/O routes across existing local domains. |
+| [processor-port.md](processor-port.md) | used | 6510 port and memory-configuration bits. |
+| [vic-ii.md](vic-ii.md) | used | Video register coverage. |
 | [../sid/registers.md](../sid/registers.md) | used | Sound register coverage — SID domain. |
-| [cia1.md](cia1.md), [cia2.md](cia2.md) | planned | CIA timers, keyboard/joystick, serial bus, IRQ/NMI coverage. |
-| [color-ram.md](color-ram.md), [../memory/io-area.md](../memory/io-area.md) | planned | Color RAM plus `$D000-$DFFF` banking context. |
+| [cia1.md](cia1.md), [cia2.md](cia2.md) | used | CIA timers, keyboard/joystick, serial bus, IRQ/NMI coverage. |
+| [color-ram.md](color-ram.md), [../memory/io-area.md](../memory/io-area.md) | used | Color RAM plus `$D000-$DFFF` banking context. |
 | [disk-formats.md](disk-formats.md) | used | D64/D71/D81 disk image format structure (track/sector layout, BAM, directory). |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 

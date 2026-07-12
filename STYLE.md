@@ -21,7 +21,7 @@ source: c64ref
 | C64 symbols in content | MAY preserve source uppercase | `ACPTR`, `CHRIN`, `D6510`, `VIC-II` |
 | Addresses | MUST use `$`-prefixed hexadecimal | `$0001`, `$D000-$DFFF` |
 | Internal links | MUST use relative Markdown links | `../memory/map.md` |
-| Source citations | MUST use relative local Markdown links | `../sources/INDEX.md` |
+| Source citations | MUST include local provenance; MAY include a direct upstream URL for directly derived pages | `../sources/INDEX.md` plus the specific upstream article |
 
 ## index-template
 ```md
@@ -98,4 +98,5 @@ granularity: atomic
 - Every non-index factual file MUST include `## sources`.
 - A fact derived from multiple local pages SHOULD list all local pages that support or constrain it.
 - When two source files disagree, the local page MUST include a compact conflict note and SHOULD not silently choose one source.
-- Source sections MUST cite relative local Markdown links and route upstream fallback provenance through [sources/INDEX.md](sources/INDEX.md).
+- Source sections MUST cite supporting local Markdown pages when the facts are already represented locally.
+- Pages derived directly from an upstream article MAY also cite that specific upstream URL and MUST include [sources/INDEX.md](sources/INDEX.md) as the local provenance route.

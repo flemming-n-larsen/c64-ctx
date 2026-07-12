@@ -21,7 +21,7 @@ source: c64ref
 | [map.md](map.md) | used | Whole-machine sub-region map including I/O sub-ranges and CPU vectors `$FFFA-$FFFF`. |
 | [symbols.md](symbols.md) | used | Processor port, BASIC workspace, KERNAL workspace `$0090-$00FF`, page-3 vectors, CPU vectors. |
 | [zero-page.md](zero-page.md) | used | Zero-page broad allocation plus KERNAL workspace `$0090-$00FF` detail. |
-| [basic-rom.md](basic-rom.md), [kernal-rom.md](kernal-rom.md), [io-area.md](io-area.md) | planned | ROM, RAM, I/O, and character-ROM visibility constraints. |
+| [basic-rom.md](basic-rom.md), [kernal-rom.md](kernal-rom.md), [io-area.md](io-area.md) | used | ROM, RAM, I/O, and character-ROM visibility constraints. |
 | [hidden-ram.md](hidden-ram.md) | used | Hidden RAM at `$00`/`$01`; read/write techniques and constraints. |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 

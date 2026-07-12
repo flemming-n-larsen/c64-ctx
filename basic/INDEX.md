@@ -33,9 +33,9 @@ source: c64ref
 | [machine-code-bridge.md](machine-code-bridge.md) | used | `SYS`, `USR`, loader patterns. |
 | [errors.md](errors.md) | used | All 29 numbered errors. |
 | [tokens.md](tokens.md) | used | Full BASIC V2 token table. |
-| [vectors.md](vectors.md) | planned | BASIC workspace labels, pointers, and aliases. |
-| [routines.md](routines.md) | planned | BASIC ROM routine route coverage. |
-| [../rom/basic-disassembly.md](../rom/basic-disassembly.md) | planned | BASIC ROM route companion. |
+| [vectors.md](vectors.md) | used | BASIC workspace labels, pointers, and aliases. |
+| [routines.md](routines.md) | used | BASIC ROM routine route coverage. |
+| [../rom/basic-disassembly.md](../rom/basic-disassembly.md) | used | BASIC ROM route companion. |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related

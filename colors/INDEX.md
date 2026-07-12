@@ -15,11 +15,11 @@ source: c64ref
 ## source-coverage
 | local coverage | status | notes |
 |---|---|---|
-| [palette.md](palette.md) | planned | Compact color index, luma levels, and RGB approximation coverage. |
-| [luma-clusters.md](luma-clusters.md) | planned | VIC-II luma cluster groupings for both chip revisions. |
-| [../io/vic-ii.md](../io/vic-ii.md) | planned | VIC-II color register context. |
-| [../io/color-ram.md](../io/color-ram.md) | planned | Color RAM nibble context. |
-| [../charset/control-codes.md](../charset/control-codes.md) | planned | Color control-code context. |
+| [palette.md](palette.md) | used | Compact color index, luma levels, and RGB approximation coverage. |
+| [luma-clusters.md](luma-clusters.md) | used | VIC-II luma cluster groupings for both chip revisions. |
+| [../io/vic-ii.md](../io/vic-ii.md) | used | VIC-II color register context. |
+| [../io/color-ram.md](../io/color-ram.md) | used | Color RAM nibble context. |
+| [../charset/control-codes.md](../charset/control-codes.md) | used | Color control-code context. |
 | [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
 
 ## related

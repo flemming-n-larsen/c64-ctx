@@ -45,5 +45,6 @@ source: c64ref
 - New factual pages MUST include a `sources` section.
 - New pages SHOULD be atomic enough for agent context use.
 - New links MUST be relative Markdown links when pointing inside this repo.
-- New source citations MUST point to local Markdown pages; upstream fallback provenance MUST be routed through [sources/INDEX.md](sources/INDEX.md).
+- New factual pages MUST cite supporting local Markdown pages when the facts are already represented locally.
+- Pages derived directly from an upstream article MAY also cite that specific upstream URL and MUST include [sources/INDEX.md](sources/INDEX.md) as the local provenance route.
 - Long prose copied from sources MUST NOT be added when compact tables or bullets are sufficient.

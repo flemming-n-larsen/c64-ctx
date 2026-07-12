@@ -9,6 +9,7 @@ source: c64ref
 |---|---|---|
 | VIC-II register overview, raster IRQ bits, sprite registers | [registers.md](registers.md) | Compact VIC-first register route; raw bitfield table remains in [../io/vic-ii.md](../io/vic-ii.md). |
 | VIC-visible memory, bank select, screen matrix, `$D018` | [memory-and-banking.md](memory-and-banking.md) | Bridges [../concepts/screen-memory.md](../concepts/screen-memory.md) and [../io/cia2.md](../io/cia2.md). |
+| Calculate `$DD00` and `$D018` from screen and graphics addresses | [quick-screen-setup.md](quick-screen-setup.md) | Compact assembler-time formula with alignment, bank, and bit-preservation constraints. |
 | Raster timing, bad lines, display-window constraints | [timing.md](timing.md) | Collects raster, bad-line, geometry, and IRQ timing routes. |
 | Practical raster interrupt setup | [timing.md](timing.md) | Routes onward to [../irq/raster-interrupt.md](../irq/raster-interrupt.md) once the timing model is clear. |
 | Official VIC-II screen modes and enable-bit combinations | [screen-modes.md](screen-modes.md) | VIC-side mode bridge into graphics and display-technique pages. |
@@ -22,6 +23,7 @@ source: c64ref
 |---|---|---|
 | [registers.md](registers.md), [../io/vic-ii.md](../io/vic-ii.md) | used | Compact register route plus authoritative raw register table. |
 | [memory-and-banking.md](memory-and-banking.md), [../io/cia2.md](../io/cia2.md), [../concepts/screen-memory.md](../concepts/screen-memory.md) | used | Bank selection, screen matrix placement, and `$D018` routing. |
+| [quick-screen-setup.md](quick-screen-setup.md) | used | Address-derived `$DD00` and `$D018` setup formula and constraints. |
 | [timing.md](timing.md), [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md), [../irq/raster-interrupt.md](../irq/raster-interrupt.md) | used | Timing constraints, geometry, and raster IRQ practice. |
 | [screen-modes.md](screen-modes.md), [../graphics/screen-modes.md](../graphics/screen-modes.md), [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md), [../display-modes/INDEX.md](../display-modes/INDEX.md) | used | Mode and technique routing. |
 | [variants.md](variants.md) | used | VIC-II chip variant hardware reference: NTSC/PAL timing, raster geometry, palette differences. |

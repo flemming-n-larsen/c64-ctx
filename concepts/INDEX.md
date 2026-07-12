@@ -20,10 +20,10 @@ source: c64ref
 ## source-coverage
 | local coverage | status | notes |
 |---|---|---|
-| [memory-banking.md](memory-banking.md) | planned | Banking, ROM/RAM/I/O visibility, and processor-port context. |
-| [zero-page.md](zero-page.md), [screen-memory.md](screen-memory.md) | planned | Workspace, vectors, screen matrix, and color RAM context. |
+| [memory-banking.md](memory-banking.md) | used | Banking, ROM/RAM/I/O visibility, and processor-port context. |
+| [zero-page.md](zero-page.md), [screen-memory.md](screen-memory.md) | used | Workspace, vectors, screen matrix, and color RAM context. |
 | [../irq/overview.md](../irq/overview.md) | routed | Canonical interrupt context now lives in `/irq`. |
-| [character-sets.md](character-sets.md) | planned | PETSCII, screen-code, and keyboard-matrix distinctions. |
+| [character-sets.md](character-sets.md) | used | PETSCII, screen-code, and keyboard-matrix distinctions. |
 | [screen-geometry.md](screen-geometry.md) | used | PAL visible area, raster ranges, border heights, sprite Y offset. |
 | [vic-bad-lines.md](vic-bad-lines.md) | used | Bad line condition, cycle cost, YSCROLL trick, frame budget. |
 | [color-mixing.md](color-mixing.md) | used | Raster color tricks, FLI, interlacing, sprite underlay, dithering. |
