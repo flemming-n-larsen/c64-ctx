@@ -132,6 +132,12 @@ if ($CheckExternal) {
                 $missingTopic = $response.Content -match '(?i)this topic does not exist|topic does not exist yet|page does not exist'
                 [pscustomobject]@{ Url = $url; Status = [int]$response.StatusCode; Error = $(if ($missingTopic) { 'DokuWiki topic does not exist' } else { '' }) }
             }
+            elseif ($url -match '^https://kodiak64\.co\.uk/') {
+                # Kodiak64 can be slow to answer HEAD requests from hosted runners.
+                # Check the page body directly with a timeout that accommodates it.
+                $response = Invoke-WebRequest -Uri $url -Method Get -MaximumRedirection 8 -TimeoutSec 60 -SkipHttpErrorCheck -UserAgent 'c64-ctx-source-audit'
+                [pscustomobject]@{ Url = $url; Status = [int]$response.StatusCode; Error = '' }
+            }
             else {
                 $response = Invoke-WebRequest -Uri $url -Method Head -MaximumRedirection 8 -TimeoutSec 20 -SkipHttpErrorCheck -UserAgent 'c64-ctx-source-audit'
                 if ([int]$response.StatusCode -eq 405) { throw 'HEAD not supported' }
