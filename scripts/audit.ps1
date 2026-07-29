@@ -126,33 +126,49 @@ if ($CheckExternal) {
     Write-Host "Checking $($externalUrls.Count) external URLs..."
     $urlResults = $externalUrls | ForEach-Object -Parallel {
         $url = $_
-        try {
-            if ($url -match '^https://codebase64\.net/') {
-                $response = Invoke-WebRequest -Uri $url -Method Get -MaximumRedirection 8 -TimeoutSec 20 -SkipHttpErrorCheck -UserAgent 'c64-ctx-source-audit'
-                $missingTopic = $response.Content -match '(?i)this topic does not exist|topic does not exist yet|page does not exist'
-                [pscustomobject]@{ Url = $url; Status = [int]$response.StatusCode; Error = $(if ($missingTopic) { 'DokuWiki topic does not exist' } else { '' }) }
-            }
-            elseif ($url -match '^https://kodiak64\.co\.uk/') {
-                # Kodiak64 can be slow to answer HEAD requests from hosted runners.
-                # Check the page body directly with a timeout that accommodates it.
-                $response = Invoke-WebRequest -Uri $url -Method Get -MaximumRedirection 8 -TimeoutSec 60 -SkipHttpErrorCheck -UserAgent 'c64-ctx-source-audit'
-                [pscustomobject]@{ Url = $url; Status = [int]$response.StatusCode; Error = '' }
-            }
-            else {
-                $response = Invoke-WebRequest -Uri $url -Method Head -MaximumRedirection 8 -TimeoutSec 20 -SkipHttpErrorCheck -UserAgent 'c64-ctx-source-audit'
-                if ([int]$response.StatusCode -eq 405) { throw 'HEAD not supported' }
-                [pscustomobject]@{ Url = $url; Status = [int]$response.StatusCode; Error = '' }
-            }
-        }
-        catch {
+
+        # Hosts that answer slowly or not at all to HEAD from hosted runners.
+        $slowHost = $url -match '^https://kodiak64\.co\.uk/'
+        $timeoutSec = if ($slowHost) { 60 } else { 20 }
+        $attempts = 3
+        $result = $null
+
+        for ($attempt = 1; $attempt -le $attempts; $attempt++) {
             try {
-                $response = Invoke-WebRequest -Uri $url -Method Get -MaximumRedirection 8 -TimeoutSec 20 -SkipHttpErrorCheck -UserAgent 'c64-ctx-source-audit'
-                [pscustomobject]@{ Url = $url; Status = [int]$response.StatusCode; Error = '' }
+                if ($url -match '^https://codebase64\.net/') {
+                    $response = Invoke-WebRequest -Uri $url -Method Get -MaximumRedirection 8 -TimeoutSec $timeoutSec -SkipHttpErrorCheck -UserAgent 'c64-ctx-source-audit'
+                    $missingTopic = $response.Content -match '(?i)this topic does not exist|topic does not exist yet|page does not exist'
+                    $result = [pscustomobject]@{ Url = $url; Status = [int]$response.StatusCode; Error = $(if ($missingTopic) { 'DokuWiki topic does not exist' } else { '' }) }
+                }
+                elseif ($slowHost) {
+                    # Check the page body directly with a timeout that accommodates it.
+                    $response = Invoke-WebRequest -Uri $url -Method Get -MaximumRedirection 8 -TimeoutSec $timeoutSec -SkipHttpErrorCheck -UserAgent 'c64-ctx-source-audit'
+                    $result = [pscustomobject]@{ Url = $url; Status = [int]$response.StatusCode; Error = '' }
+                }
+                else {
+                    $response = Invoke-WebRequest -Uri $url -Method Head -MaximumRedirection 8 -TimeoutSec $timeoutSec -SkipHttpErrorCheck -UserAgent 'c64-ctx-source-audit'
+                    if ([int]$response.StatusCode -eq 405) { throw 'HEAD not supported' }
+                    $result = [pscustomobject]@{ Url = $url; Status = [int]$response.StatusCode; Error = '' }
+                }
             }
             catch {
-                [pscustomobject]@{ Url = $url; Status = 0; Error = $_.Exception.Message }
+                try {
+                    $response = Invoke-WebRequest -Uri $url -Method Get -MaximumRedirection 8 -TimeoutSec $timeoutSec -SkipHttpErrorCheck -UserAgent 'c64-ctx-source-audit'
+                    $result = [pscustomobject]@{ Url = $url; Status = [int]$response.StatusCode; Error = '' }
+                }
+                catch {
+                    $result = [pscustomobject]@{ Url = $url; Status = 0; Error = $_.Exception.Message }
+                }
             }
+
+            # Transient failures (timeouts, resets, 5xx) are worth another try;
+            # a clean 4xx is a real broken link and should not be retried.
+            $transient = $result.Status -eq 0 -or $result.Status -ge 500
+            if (-not $transient) { break }
+            if ($attempt -lt $attempts) { Start-Sleep -Seconds (2 * $attempt) }
         }
+
+        $result
     } -ThrottleLimit 16
 
     foreach ($result in $urlResults) {
