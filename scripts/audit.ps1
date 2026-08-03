@@ -173,7 +173,20 @@ if ($CheckExternal) {
 
     foreach ($result in $urlResults) {
         if (-not [string]::IsNullOrWhiteSpace($result.Error)) {
-            Add-AuditError "external URL failed: $($result.Url) ($($result.Error))"
+            # A host that cannot be reached after retries makes availability
+            # unknowable; it is not evidence that the documented URL is broken.
+            # Preserve hard failures for responses that were actually received.
+            if ($result.Status -eq 0) {
+                $warnings.Add("external URL could not be reached: $($result.Url) ($($result.Error))")
+            }
+            else {
+                Add-AuditError "external URL failed: $($result.Url) ($($result.Error))"
+            }
+        }
+        elseif ($result.Status -ge 500) {
+            # A server-side failure is likewise an availability issue.  Keep it
+            # visible without treating a temporary upstream outage as a bad link.
+            $warnings.Add("external URL returned transient HTTP $($result.Status): $($result.Url)")
         }
         elseif ($result.Status -ge 400) {
             Add-AuditError "external URL returned HTTP $($result.Status): $($result.Url)"
