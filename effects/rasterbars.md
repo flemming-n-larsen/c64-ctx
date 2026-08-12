@@ -37,7 +37,7 @@ keywords: [rasterbars, color bars, raster splits, border color]
 
 ## constraints
 - Writing `$D020`/`$D021` late in the line (after the visible pixels are drawn) affects the next line — writes MUST happen in the first few cycles of the target line.
-- Bad lines steal 40 cycles; bars on bad lines may arrive late and produce a thin artifact; see [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md).
+- Bad lines take the bus for 40 cycles (with possible BA lead-in stall); bars on bad lines may arrive late and produce a thin artifact; see [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md).
 - For stable bar position, use [stable-raster.md](stable-raster.md) to eliminate ±1-line jitter.
 - Color values are 0–15; upper nibble is ignored.
 

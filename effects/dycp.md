@@ -37,7 +37,7 @@ keywords: [DYCP, dynamic color per char, color scroller, per-column color]
 ## constraints
 - Color RAM writes MUST complete before the bad line at the start of the next character row; otherwise VIC-II reads stale colors.
 - Writing 40 color bytes per row takes ~120–160 cycles; this is tight within 8 raster lines (504 cycles PAL) alongside IRQ overhead.
-- On bad lines, VIC-II steals 40 cycles; the 40-byte write loop SHOULD be placed after the bad line has finished.
+- On bad lines, VIC-II takes the bus for 40 cycles; the 40-byte write loop SHOULD be placed after the bad-line takeover has finished.
 - Color RAM only stores the lower 4 bits (color 0–15); upper nibble is ignored.
 - Combining with [scrolltext.md](scrolltext.md) sine scroll requires careful cycle-budget planning.
 

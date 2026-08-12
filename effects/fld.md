@@ -36,7 +36,7 @@ keywords: [FLD, flexible line distance, vertical scroll, bad line suppression]
 | 8+ | 8+ per frame | Multi-character scroll (rare; distorts display) |
 
 ## constraints
-- Each suppressed bad line costs 40 cycles of CPU time that would have been stolen — cycle budget is temporarily restored for those lines.
+- Each suppressed bad line removes a 40-cycle VIC bus takeover (and its possible BA lead-in stall), temporarily restoring the cycle budget for that line.
 - FLD MUST be applied at the correct raster position; applying it too late produces a torn line.
 - Combining FLD with [scrolltext.md](scrolltext.md) character coarse-scroll allows pixel-perfect vertical scrolling.
 - FLD below the display area (in the bottom border) requires the open-borders trick; see [open-borders.md](open-borders.md).

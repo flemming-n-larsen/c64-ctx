@@ -10,7 +10,7 @@ keywords: [print text, CHROUT, screen writes, cursor position]
 1. For KERNAL output, load the PETSCII/control byte into `A`.
 2. Call `CHROUT` at `$FFD2`.
 3. For colors through KERNAL/editor output, use PETSCII color control codes from [../charset/control-codes.md](../charset/control-codes.md).
-4. For direct screen writes, write screen codes to the screen matrix and color indices to `$D800-$DBFF` color RAM.
+4. For direct screen writes, write screen codes to the screen matrix and color indices to the 1000 screen-cell Color RAM entries at `$D800-$DBE7`.
 5. Use `PLOT` at `$FFF0` or `SCREEN` at `$FFED` when cursor/screen-size KERNAL behavior is needed.
 
 ## lookup

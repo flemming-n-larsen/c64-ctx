@@ -43,7 +43,7 @@ keywords: [starfield, stars, parallax, depth illusion, ROL starfield]
 ## constraints
 - ROL-based stars are constrained to single-character rows and 1-bit precision; combined with color cycling they can appear richer.
 - Sprite-based starfields consume sprite slots; combine with [sprite-multiplexer.md](sprite-multiplexer.md) for >8 stars using sprites.
-- X position wrapping MUST account for the border region: sprite X=0 is in the left border; display area starts at X≈24.
+- X position wrapping MUST account for edge clipping: X=`$00` is fully covered by the standard border, X=`$01-$17` is partially visible, and the display area starts at X=`$18`.
 - For sprite X ≥ 256, bit in `$D010` MUST be set; clear it when X < 256.
 
 ## links

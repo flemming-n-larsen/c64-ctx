@@ -39,7 +39,7 @@ keywords: [MRFLI, multi resolution, mixed resolution, per-line MCM]
 
 ## constraints
 - MCM toggle must align with the raster line being rendered; late writes produce a mixed hires/multicolor artifact.
-- Same 23-cycle-per-line budget (PAL bad line); one extra `$D016` write reduces available cycles by ~6.
+- Same nominal 23-cycle bus-free budget applies on a PAL bad line, with possible BA lead-in stall; one extra `$D016` write reduces available cycles by ~6.
 - Bitmap pixel patterns must be designed for the intended mode of each row; a multicolor bit pattern displayed in hires mode (or vice versa) produces incorrect colors.
 
 ## links

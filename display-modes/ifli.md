@@ -58,7 +58,7 @@ The C64 16-color palette has uneven luminance steps; blending produces best resu
 - Total memory requirement (24 KB display data) requires a VIC bank with no char-ROM holes; bank 1 (`$4000`) or bank 3 (`$C000`) recommended.
 - XSCROLL toggle MUST happen before the first display line of the frame; any late write shifts only part of the screen.
 - Flicker is inherent and cannot be eliminated — NUFLI was developed specifically to solve this; see [nufli.md](nufli.md).
-- Same per-line CPU budget applies as FLI: 23 free cycles per bad line (PAL).
+- Same per-line CPU budget applies as FLI: 23 nominal bus-free cycles per PAL bad line, with possible BA lead-in stall.
 - Encoding two-frame color pairs for artwork requires specialized conversion tools; direct viewing of single frames looks incorrect.
 
 ## links

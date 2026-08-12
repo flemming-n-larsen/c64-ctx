@@ -62,8 +62,8 @@ Full 320 px coverage needs 14 sprites (not possible with 8); typical UFLI covers
 ## constraints
 - Only 8 hardware sprites; they cannot cover the full 320 px without tricks; the FLI bug columns (leftmost ~12 px) typically have no sprite coverage.
 - Sprite data MUST be 64-byte aligned in the VIC bank; pointer = sprite_base / 64 written to `$07F8+n`.
-- Per-line `$D017` and pointer writes consume additional CPU cycles on top of the FLI per-line budget; only ~23 free cycles per bad line (PAL) — extremely tight.
-- Sprites with `$D01B` bit set are behind the display area but still in front of the border; see [open-borders.md](../effects/open-borders.md) for border extension.
+- Per-line `$D017` and pointer writes consume additional CPU cycles on top of the FLI budget; PAL has only 23 nominal bus-free cycles per bad line, with possible BA lead-in stall — extremely tight.
+- Sprites with `$D01B` bit set are behind display foreground pixels; an active screen border still has priority, so border extension requires [open-borders.md](../effects/open-borders.md).
 - UIFLI requires two full UFLI datasets: 2 × (8000 screen + 8000 sprite) bytes; plan VIC bank layout carefully.
 
 ## links

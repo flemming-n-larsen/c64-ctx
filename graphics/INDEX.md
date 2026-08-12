@@ -12,7 +12,7 @@ source: c64ref
 | Extended color mode deep dive | [../display-modes/ecm.md](../display-modes/ecm.md) | Standalone ECM page with charset limits, background selection, and ECI handoff. |
 | All unofficial/advanced display techniques (names, abbreviations) | [unofficial-modes.md](unofficial-modes.md) | 31 software techniques; FLI, IFLI, NUFLI, UFLI families, etc. |
 | Sprite-underlay display techniques | [../sprites/advanced.md](../sprites/advanced.md) | Routes to UFLI/NUFLI/MUFLI and other sprite-heavy techniques. |
-| How to create more than 16 colors (FLI, interlacing, sprites, dithering) | [../concepts/color-mixing.md](../concepts/color-mixing.md) | The 5 fundamental color-expansion techniques |
+| How to create more than 16 colors (FLI, interlacing, sprites, dithering) | [../concepts/color-mixing.md](../concepts/color-mixing.md) | Fundamental color-expansion techniques |
 
 ## pages
 <!-- GENERATED:routes -->

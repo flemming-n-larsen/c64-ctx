@@ -2,7 +2,7 @@
 type: reference
 domain: concepts
 granularity: atomic
-summary: "PAL display dimensions, raster line ranges, border extents and the sprite Y offset."
+summary: "PAL display dimensions, raster line ranges, border extents, and sprite placement."
 keywords: [screen geometry, border extents, raster ranges, visible area, display window]
 ---
 
@@ -12,7 +12,7 @@ keywords: [screen geometry, border extents, raster ranges, visible area, display
 - Upper border: 43 raster lines; first visible raster = `$08`.
 - Lower border: 49 raster lines; last visible raster = `$12C`.
 - Left border: 48 px (6 chars); right border: 36 px (4.5 chars).
-- Sprite Y-position `$07` places the sprite at the top of the visible area (not `$00`).
+- Sprite Y coordinates are not raster-line numbers: for a normal-height sprite, Y=`$1E` (30 decimal) is the first partially visible position and Y=`$32` (50 decimal) is the first position where all 21 rows fit in the standard display area.
 - The common NTSC 6567R8/8562 frame has 263 raster lines at 65 cycles per line; PAL 6569/8565 has 312 lines at 63 cycles per line.
 
 ## lookup
@@ -28,8 +28,9 @@ keywords: [screen geometry, border extents, raster ranges, visible area, display
 | Visible height | 292 px | Including top+bottom borders |
 | Text width | 320 px | 40 columns × 8 px |
 | Text height | 200 px | 25 rows × 8 px |
-| Sprite Y top | `$07` | Maps to raster `$08` (first visible line) |
-| Sprite Y range | `$07`–`$07`+291 | To cover full visible height with sprites |
+| PAL opened-top-border sprite Y | `$07` | Aligns the sprite's first row with visible raster `$08`; this does not apply while the normal top border masks sprites |
+| First partially visible normal sprite | `$1E` | 30 decimal; upper border still covers part of the sprite |
+| First fully visible normal sprite | `$32` | 50 decimal; all 21 rows fit in the standard display area |
 
 ### frame timing by VIC-II family
 
@@ -44,7 +45,7 @@ keywords: [screen geometry, border extents, raster ranges, visible area, display
 ## constraints
 - `$D012` holds raster bits 0–7; bit 8 of the raster counter is in `$D011` bit 7.
 - Raster line `$00` is at the top of the frame, before visible area begins.
-- Sprite Y=0 is above the visible screen; use Y=`$07` for the first visible row.
+- Sprite Y=0 is above the standard display area. With the normal border active, a normal-height sprite first appears partially at Y=`$1E` and fits fully at Y=`$32`; vertically expanded sprites begin partial visibility at Y=`$09`. With the PAL top border opened, Y=`$07` aligns the sprite's first row with visible raster `$08`.
 - The 402 × 292 visible-area and border measurements above are PAL-specific; NTSC code MUST use the variant timing table instead of reusing PAL border limits.
 - Raster IRQs at line 263 or above are PAL-only on the common 6567R8/8562 NTSC chips.
 

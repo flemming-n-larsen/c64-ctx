@@ -70,7 +70,7 @@ keywords: [NUFLI, NUIFLI, flicker free, double-wide sprites]
 | Background | `$D021` (color `00`) |
 
 ## constraints
-- Sprite-stretching writes (`$D017` + pointer) must occur within each 2-line window; CPU budget is still ~46 free cycles per 2-line pair (2 × 23).
+- Sprite-stretching writes (`$D017` + pointer) must occur within each 2-line window; the nominal PAL budget is 46 bus-free cycles per pair (`2 × 23`), with possible BA lead-in stall on each line.
 - The FLI bug columns (0–3, leftmost ~24 px) have no sprite coverage; this region is typically handled as a decorative border strip or left as the FLI bug artifact.
 - `$D01C` MUST be `$00` for NUFLI; setting multicolor on the underlay sprites changes the color model significantly (see [mufli.md](mufli.md)).
 - Sprite data requires 200 ÷ 2 = 100 "rows" of 6 × 3 bytes each per 8-px-wide sprite block — approximately 1800 bytes of sprite data total.

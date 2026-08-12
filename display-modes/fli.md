@@ -30,7 +30,7 @@ keywords: [FLI, flexible line interpretation, FLI bug, forced bad line]
 6. At line `$FB` (below display area): restore `$D011` to normal YSCROLL value.
 
 **Tight polling alternative (preferred for cycle accuracy):**
-Enter a tight loop at line `$33`; poll `$D012`; on each new line write `$D018` and `$D011` directly, then spin until the next line. This avoids IRQ entry/exit overhead on lines where every CPU cycle counts (23 free cycles per bad line on PAL).
+Enter a tight loop at line `$33`; poll `$D012`; on each new line write `$D018` and `$D011` directly, then spin until the next line. This avoids IRQ entry/exit overhead on lines where every CPU cycle counts (23 nominal bus-free cycles per bad line on PAL; instruction-boundary stalls can reduce usable time).
 
 ## lookup
 
@@ -65,7 +65,7 @@ Enter a tight loop at line `$33`; poll `$D012`; on each new line write `$D018` a
 | Color RAM | 1000 bytes | `$D800–$DBE7` (fixed, not in VIC bank) |
 
 ## constraints
-- Every display line becomes a bad line; CPU has only 23 free cycles per line (PAL 63 − 40 stolen = 23).
+- Every display line becomes a bad line; PAL has only 23 nominal bus-free cycles per line (`63 − 40`), and the BA lead-in can add up to 3 cycles of CPU stall.
 - The `$D018` write MUST complete before VIC starts the bad-line screen RAM fetch for that line; late writes produce color artifacts.
 - FLI bug (leftmost ~12 px) is unavoidable; design art to hide it or use it as a visual border strip.
 - Bank 0 and bank 2: screen RAM block 4 (offset `$1000`) MUST NOT be used — VIC reads char ROM there instead of RAM.

@@ -27,7 +27,7 @@ keywords: [sprite registers, collision, priority, expansion, X MSB]
 ## constraints
 - X positions above `255` MUST update both the low-byte register and the matching bit in `$D010`.
 - Collision latches in `$D01E` and `$D01F` MUST be saved immediately after reading, because the read clears them.
-- Priority in `$D01B` affects sprite-vs-bitmap/text ordering only; sprites still render over the border color.
+- Priority in `$D01B` affects sprite-vs-bitmap/text ordering only; it does not override the active screen border, which has higher priority.
 - Multicolor sprites require the sprite's `$D01C` bit plus the shared colors in `$D025/$D026`.
 - Enable bits in `$D015` SHOULD be written after pointer, position, and color setup to avoid one-frame garbage.
 
@@ -42,3 +42,4 @@ keywords: [sprite registers, collision, priority, expansion, X MSB]
 - sprite hub: [INDEX.md](INDEX.md)
 - VIC-II register reference: [../io/vic-ii.md](../io/vic-ii.md)
 - sprite display task: [../tasks/sprite-display.md](../tasks/sprite-display.md)
+- Codebase64: [Sprite Introduction](https://codebase.c64.org/doku.php?id=base:spriteintro)

@@ -9,7 +9,7 @@ keywords: [DYSP, multiplexer, sprite stretching, sprite underlay, border sprites
 ## facts
 - Advanced sprite work usually combines raster IRQ timing with dynamic register updates rather than introducing new sprite hardware.
 - DYSP changes sprite Y positions mid-frame; multiplexers recycle the 8 hardware sprites to cover more logical objects.
-- Sprites remain visible in the border without opening it, which makes them useful for border decoration and underlay techniques.
+- Active borders mask sprite pixels; border-opening timing is required when an effect needs sprite pixels to be visible in an opened border region.
 - Several display modes use sprites as a color-underlay layer behind bitmap content, especially `UFLI`, `NUFLI`, and `MUFLI` families.
 
 ## lookup
@@ -17,7 +17,7 @@ keywords: [DYSP, multiplexer, sprite stretching, sprite underlay, border sprites
 |---|---|---|
 | Dynamic Y-position sprites | [../effects/dysp.md](../effects/dysp.md) | Mid-frame Y updates and sprite stretching. |
 | Sprite multiplexer | [../effects/sprite-multiplexer.md](../effects/sprite-multiplexer.md) | Recycle hardware slots with raster IRQ handoffs. |
-| Border usage and border-opening interaction | [../effects/open-borders.md](../effects/open-borders.md) | Sprites already cross the border; opening is mainly for bitmap/text pixels. |
+| Border usage and border-opening interaction | [../effects/open-borders.md](../effects/open-borders.md) | Border timing and sprite coordinates both matter when an effect uses the opened region. |
 | Sprite-based starfields | [../effects/starfield.md](../effects/starfield.md) | Uses sprites as moving star objects; trades sprite slots for flexibility. |
 | Sprite underlay display modes | [../display-modes/ufli.md](../display-modes/ufli.md), [../display-modes/nufli.md](../display-modes/nufli.md), [../display-modes/mufli.md](../display-modes/mufli.md) | Sprite layers used for extra colors behind bitmap/FLI content. |
 

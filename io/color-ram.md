@@ -7,14 +7,14 @@ keywords: [color RAM, nibble, cell color, upper nibble garbage]
 ---
 
 ## facts
-- `$D800-$DBFF` is `Color RAM (Nybbles)` in the local I/O pages.
+- `$D800-$DBFF` is `Color RAM (Nybbles)` in the local I/O pages; the first 1000 screen-cell entries occupy `$D800-$DBE7`.
 - Color RAM corresponds to text screen cells when standard text display conventions are used.
 - Only the low `4` bits carry the color value for each cell.
 
 ## lookup
 | range | role | companion |
 |---|---|---|
-| `$D800-$DBFF` | Color RAM nybbles | Default screen matrix `$0400-$07E7`. |
+| `$D800-$DBFF` | Color RAM nybbles | The default 40×25 screen matrix uses `$D800-$DBE7`. |
 | color value `$0-$F` | Cell foreground color index | [../colors/palette.md](../colors/palette.md). |
 
 ## constraints

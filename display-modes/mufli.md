@@ -48,7 +48,7 @@ keywords: [MUFLI, MUIFLI, multicolor underlay, sprite underlay]
 ## constraints
 - Multicolor sprite resolution is 2× wider than hires; effective sprite pixel width = 2 screen pixels.
 - `$D025` and `$D026` are shared across ALL multicolor sprites; per-sprite differentiation comes only from `$D027+n`.
-- Same 23-cycle-per-line CPU budget applies as FLI.
+- Same nominal 23-cycle bus-free PAL budget applies as FLI, with possible BA lead-in stall.
 
 ## links
 

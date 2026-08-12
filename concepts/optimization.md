@@ -84,7 +84,7 @@ Use zero-page indirect `(ptr),Y` to address arbitrary memory. Store the destinat
 | `STA abs` | 4 | Absolute store |
 | `DEX` / `DEY` | 2 | |
 | `BNE rel` (taken) | 3 | Not taken = 2 |
-| Bad line cycle theft | 40 cycles/line | Wherever VIC fetches screen RAM |
+| Bad line bus takeover | 40 cycles/line | CPU delay can be 40–43 cycles; see `vic-bad-lines.md`. |
 
 ## constraints
 - Unrolled code grows quickly; a 40×25 unrolled loop is 1000 instructions × ~5 bytes = ~5 KB. Budget ROM space accordingly.

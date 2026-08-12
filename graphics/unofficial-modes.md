@@ -8,7 +8,7 @@ keywords: [unofficial modes, FLI family, technique names, mode abbreviations]
 
 ## facts
 - Unofficial modes are software techniques that exploit VIC-II timing behavior, not hardware register states.
-- All techniques require raster IRQ precision; most require cycle-exact timing.
+- Timing-sensitive techniques require raster IRQ precision; most of those require cycle-exact timing.
 - "FLI" in a name means the `$D018` per-line trick is used (color RAM re-read every raster line instead of every 8).
 - "I" / "Interlaced" in a name means two frames alternate per PAL field (25 fps each) to blend perceived colors.
 - "U" / "Underlay" in a name means sprites are placed behind the bitmap layer to add independent color planes.

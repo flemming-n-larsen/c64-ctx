@@ -42,14 +42,15 @@ keywords: [DYSP, sprite stretching, sprite repositioning, mid-frame update]
 
 | Y value | screen position |
 |---|---|
-| `$07` | Top of visible area (raster `$08`) |
-| `$FF` | Bottom of display area |
-| `$00`–`$06` | Above visible area |
+| `$07` | First sprite row aligns with PAL visible raster `$08` when the top border is opened |
+| `$1E` | First partially visible normal-height sprite position (30 decimal) |
+| `$32` | First fully visible normal-height sprite position (50 decimal) |
+| `$00`–`$1D` | Normal-height sprite is fully covered above the standard display area |
 
 ## constraints
 - Each sprite Y write MUST arrive within the correct raster line or the sprite jumps unexpectedly.
 - Stretching requires [stable-raster.md](stable-raster.md) — unstable raster causes stretch artifacts.
-- Cycle tables MUST account for bad lines (40 stolen cycles); pre-compute entries for bad-line and non-bad-line rasters separately.
+- Cycle tables MUST account for bad lines (40-cycle bus takeover, with possible BA lead-in stall); pre-compute entries for bad-line and non-bad-line rasters separately.
 - Sprite Y-expand (`$D017`) doubles vertical size using the hardware, complementing software stretch.
 - For more than 8 simultaneous sprites, combine with [sprite-multiplexer.md](sprite-multiplexer.md).
 

@@ -9,7 +9,7 @@ keywords: [sprite setup, sprite pointer, visible range, multicolor sprite]
 ## facts
 - Sprite data is 63 bytes plus 1 unused pad byte and MUST start on a 64-byte boundary inside the active VIC bank.
 - The sprite pointer for sprite `n` is stored in the last 8 bytes of screen RAM; with the default screen at `$0400`, the pointer block is `$07F8-$07FF`.
-- Visible placement is not anchored at coordinate zero: sprite Y=`$07` reaches the top of the PAL visible area, and the display area begins right of the left border.
+- Visible placement is not anchored at coordinate zero: for a normal-height sprite, Y=`$1E` (30 decimal) first appears partially and Y=`$32` (50 decimal) first fits fully in the standard display area; the display area begins right of the left border.
 - Multicolor sprites trade horizontal resolution for extra colors: the effective pixel width becomes 12×21, using one per-sprite color plus two shared multicolor values.
 
 ## sequence
@@ -34,9 +34,10 @@ keywords: [sprite setup, sprite pointer, visible range, multicolor sprite]
 |---|---|---|
 | Sprite pointer formula | `offset_in_VIC_bank / 64` | Pointer encodes VIC-bank bits `13-6` of the sprite-data offset. |
 | Default pointer block | `$07F8-$07FF` | Valid only while screen RAM is at `$0400`. |
-| PAL top-visible sprite Y | `$07` | Matches raster `$08` in the local geometry page. |
-| Left display edge | about X=`24` | Lower X values place the sprite in the left border. |
-| Right-border entry | X `> 255` may be needed | Set the matching `$D010` bit when crossing 255. |
+| First partially visible normal sprite Y | `$1E` | 30 decimal; the upper border still covers part of the sprite. |
+| First fully visible normal sprite Y | `$32` | 50 decimal; all 21 rows fit in the standard display area. |
+| Left display edge | X=`$18` | X=`$01-$17` is partially visible; X=`$00` is fully covered by the standard border. |
+| Right display edge | X=`$140` | X=`$141-$157` is partially visible; set `$D010` for these positions. |
 
 ## constraints
 - Sprite data MUST avoid the character-ROM holes at `$1000-$1FFF` in bank `0` and `$9000-$9FFF` in bank `2`.

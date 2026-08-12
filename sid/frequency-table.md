@@ -2,7 +2,7 @@
 type: reference
 domain: sid
 granularity: reference
-summary: "PAL A440 note-to-register values for 96 notes across eight octaves."
+summary: "PAL A440 note-to-register values across the octave range."
 keywords: [frequency table, PAL notes, note values, A440]
 ---
 

@@ -112,7 +112,7 @@ Eight queries resolved on this branch and on `main`, counting the bytes actually
 | root `INDEX.md` | 13,327 | 9,532 |
 | `AGENTS.md` | 4,195 | 3,146 |
 | index layer (29 files) | 106,585 | 80,963 |
-| leaf layer (210 pages) | 703,104 | 710.549 |
+| leaf layer (210 pages) | 703,104 | 710,549 |
 | generated layer | — | 87,004 |
 
 The search path beat the −70% estimate; the no-search path missed its −36% estimate at −32%, because `## quick-route` grew to 48 rows (9,532 B against a 6,700 B target) to name 60 leaf pages instead of 20. That is a deliberate trade: the extra rows remove a domain-index hop for those topics, which is worth more than the bytes it costs.

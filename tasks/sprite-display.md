@@ -33,7 +33,7 @@ keywords: [sprite setup, sprite pointer, 64-byte alignment, enable sprite]
 - The sprite pointer address `$07F8+n` is only correct when screen RAM sits at `$0400` (default); if screen RAM is relocated via `$D018`, the pointer block moves to the last 8 bytes of the new screen RAM page.
 - Bit `n` of `$D015` MUST be set after all other registers are written; enabling a sprite before its data and position are ready displays garbage for one frame.
 - Enabled sprites consume DMA cycles every raster line they are fetched, even when off-screen; clear `$D015` bit `n` when a sprite is not needed.
-- X coordinate 24 = leftmost visible pixel; Y coordinate ≈ 50 (PAL) / 51 (NTSC) = topmost visible row; X ≥ 256 requires bit `n` of `$D010` set.
+- X coordinate 24 = leftmost visible pixel. For a normal-height sprite, Y=30 is the first partially visible position and Y=50 is the first fully visible position in the standard display area; X ≥ 256 requires bit `n` of `$D010` set.
 - Multicolor sprites require bit `n` of `$D01C` set; effective resolution halves to 12×21; pixel pairs use `$D027+n` (color 1), `$D025` (color 2, shared), `$D026` (color 3, shared), and transparent for `%00`.
 - Sprite-background priority is controlled per sprite by `$D01B`; collision detection registers `$D01E` and `$D01F` clear on read.
 

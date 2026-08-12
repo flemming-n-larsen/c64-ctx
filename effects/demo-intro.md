@@ -39,7 +39,7 @@ A standard demo part follows this flow:
 - SID chip reference: [../sid/INDEX.md](../sid/INDEX.md)
 
 ## constraints
-- Bad lines steal 40 cycles per line; account for them in any cycle-exact timing; see [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md).
+- Bad lines take the bus for 40 cycles per line, with possible BA lead-in stall; account for them in any cycle-exact timing; see [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md).
 - Sprite data fetch steals 2 cycles per sprite per line; visible sprites reduce cycles available for raster effects.
 - PAL frame budget: ~19656 cycles total; a simple 40×25 effect loop costs ~10 000 cycles leaving ~50% for other work.
 - Optimization is mandatory for complex effects; see [../concepts/optimization.md](../concepts/optimization.md).

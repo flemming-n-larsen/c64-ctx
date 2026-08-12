@@ -44,7 +44,7 @@ keywords: [XFLI, XIFLI, extended FLI, per-line background]
 | `$D021` | bg color from table | any point within line before pixels |
 
 ## constraints
-- Each additional register write per line costs 4–6 CPU cycles on top of the base FLI budget (23 free cycles per bad line, PAL); XFLI is very tight.
+- Each additional register write per line costs 4–6 CPU cycles on top of the base FLI budget (23 nominal bus-free cycles per PAL bad line, with possible BA lead-in stall); XFLI is very tight.
 - `$D021` write can be placed anywhere in the visible portion of the raster line as it takes effect on the current line's background.
 - XIFLI requires two `$D021` tables (frame A and B), doubling the artwork color data.
 

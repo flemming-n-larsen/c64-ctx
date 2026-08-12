@@ -31,7 +31,7 @@ keywords: [stable raster, redirect, effect timing]
 
 ## constraints
 - Use [../irq/stable-timing.md](../irq/stable-timing.md) for the generic sync method; keep this page focused on why effects need that method.
-- Bad lines steal 40 cycles from the CPU on lines where `YSCROLL == raster & 7`; avoid placing critical writes on bad lines or use [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md) to plan around them.
+- Bad lines take the bus for 40 cycles on lines where `YSCROLL == raster & 7`; CPU delay can be 40–43 cycles, so use [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md) to plan critical writes.
 - NTSC routines MUST use 65 cycles/line in cycle tables, not 63.
 
 ## links

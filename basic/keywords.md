@@ -2,7 +2,7 @@
 type: reference
 domain: basic
 granularity: family
-summary: "All 76 BASIC V2 keywords and operators with token byte, syntax and example."
+summary: "Non-function BASIC V2 keywords and operators with token byte, syntax and example."
 keywords: [BASIC keywords, statements, commands, reserved words]
 ---
 

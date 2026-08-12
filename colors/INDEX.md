@@ -10,7 +10,7 @@ source: c64ref
 | C64 color numbers and names | [palette.md](palette.md) | Use for VIC-II colors, color RAM nibbles, and control-code color selection. |
 | Luma clusters and mixing-compatible color pairs | [luma-clusters.md](luma-clusters.md) | Use when selecting color pairs for ALM, DCM, or dithering. |
 | VIC-II color registers | [../io/vic-ii.md](../io/vic-ii.md) | Use for border/background/sprite registers. |
-| Color RAM | [../io/color-ram.md](../io/color-ram.md) | `$D800-$DBFF`; stores color nibbles for screen cells. |
+| Color RAM | [../io/color-ram.md](../io/color-ram.md) | Physical window `$D800-$DBFF`; screen cells use `$D800-$DBE7`. |
 
 ## pages
 <!-- GENERATED:routes -->

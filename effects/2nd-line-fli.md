@@ -47,7 +47,7 @@ The freed even-line cycles allow real-time calculation of which charset segment 
 | Free cycles per even line | ~63 PAL |
 
 ## constraints
-- Bad-line cycle theft still applies on forced odd lines (~40 cycles stolen); the net gain is that every 2nd line is free, rather than no lines free as in full FLI.
+- The 40-cycle bad-line bus takeover still applies on forced odd lines, with possible BA lead-in stall; the net gain is that every 2nd line is free, rather than no lines free as in full FLI.
 - Steeper Bresenham slopes (more X advance per Y step) produce straighter shapes; flatter slopes create more twisted/bent appearance.
 - Sprite register updates (outline, shadow, multicolor) must fit within the ~63 free cycles on even lines.
 - Bank size is 16 KB (`$0000`–`$3FFF`); charsets and screen pages must fit within one bank.

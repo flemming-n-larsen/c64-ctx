@@ -38,7 +38,7 @@ keywords: [swing, tech-tech, techtech, horizontal sine, wide scroll]
 | Sine table length | 256 bytes |
 
 ## constraints
-- Forcing a bad line every raster line steals 40 cycles per line; total effect timing is the same as FLI; see [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md).
+- Forcing a bad line every raster line takes the bus for 40 cycles per line; CPU delay can be 40–43 cycles, so total effect timing is the same as FLI; see [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md).
 - Each pre-shifted copy requires one full video RAM bank (4 KB for text, 8 KB for bitmap); 14 banks = 56–112 KB — more than available RAM; the effect typically targets a small graphic region, not the full screen.
 - `$D018` changes take effect at the following bad line; writing it exactly at the start of each bad line (YSCROLL manipulation) is required.
 - The FLI bug (first column artifact at the left side of the screen) applies; mask it with sprites or keep the logo away from column 0.

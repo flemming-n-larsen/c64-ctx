@@ -31,7 +31,7 @@ whole-file entry point use [INDEX.md](INDEX.md); for a `$`-address or KERNAL sym
 | [basic/functions.md](basic/functions.md) | BASIC V2 built-in functions with return types and argument constraints. | BASIC functions, string functions, numeric functions, return types, functions |
 | [basic/graphics-sound.md](basic/graphics-sound.md) | Graphics and sound from BASIC via POKE and PEEK; BASIC V2 has no native commands. | POKE graphics, POKE sound, BASIC graphics, BASIC sound, graphics sound |
 | [basic/io.md](basic/io.md) | BASIC-level screen, keyboard and file I/O and the KERNAL calls beneath them. | PRINT, INPUT, GET, OPEN, file handling, BASIC I/O, io |
-| [basic/keywords.md](basic/keywords.md) | All 76 BASIC V2 keywords and operators with token byte, syntax and example. | BASIC keywords, statements, commands, reserved words, keywords |
+| [basic/keywords.md](basic/keywords.md) | Non-function BASIC V2 keywords and operators with token byte, syntax and example. | BASIC keywords, statements, commands, reserved words, keywords |
 | [basic/machine-code-bridge.md](basic/machine-code-bridge.md) | Call machine code from BASIC with SYS, USR, and DATA/READ loaders. | SYS, USR, DATA loader, BASIC to ML, register passing, machine code bridge |
 | [basic/program-structure.md](basic/program-structure.md) | How tokenized BASIC lines are stored as a linked list, and where the program starts. | program structure, line links, TXTTAB, tokenized storage |
 | [basic/routines.md](basic/routines.md) | Route to BASIC ROM routine addresses rather than copied listings. | BASIC routines, ROM entry points, interpreter routines, routines |
@@ -48,13 +48,13 @@ whole-file entry point use [INDEX.md](INDEX.md); for a `$`-address or KERNAL sym
 | [colors/palette.md](colors/palette.md) | The 16 C64 color indices with names, luma level, and RGB approximation. | color numbers, palette, RGB values, color RAM nibble |
 | [concepts/cartridge-modes.md](concepts/cartridge-modes.md) | How the EXROM and GAME expansion-port lines combine with $0001 to pick a memory map. | cartridge, EXROM, GAME, PLA, expansion port, memory config, cartridge modes |
 | [concepts/character-sets.md](concepts/character-sets.md) | The four distinct character code spaces and why they must never be conflated. | code spaces, PETSCII vs screen code, character sets, conflation |
-| [concepts/color-mixing.md](concepts/color-mixing.md) | Five techniques for appearing to exceed the fixed 16-color palette. | color mixing, color expansion, interlacing, dithering, sprite underlay |
+| [concepts/color-mixing.md](concepts/color-mixing.md) | Techniques for appearing to exceed the fixed 16-color palette. | color mixing, color expansion, interlacing, dithering, sprite underlay |
 | [concepts/interrupts.md](concepts/interrupts.md) | Redirect stub: interrupt material now lives in the irq domain. | interrupts, redirect, moved page |
 | [concepts/memory-banking.md](concepts/memory-banking.md) | How $0001 processor-port bits decide which ROM, RAM, I/O or character ROM the CPU sees. | banking, LORAM, HIRAM, CHAREN, memory configuration, memory banking |
 | [concepts/optimization.md](concepts/optimization.md) | Cycle-exact technique reference: unrolling, tables, zero page, self-modifying code. | speedcoding, loop unrolling, self-modifying code, page alignment, tables, optimization |
-| [concepts/screen-geometry.md](concepts/screen-geometry.md) | PAL display dimensions, raster line ranges, border extents and the sprite Y offset. | screen geometry, border extents, raster ranges, visible area, display window |
+| [concepts/screen-geometry.md](concepts/screen-geometry.md) | PAL display dimensions, raster line ranges, border extents, and sprite placement. | screen geometry, border extents, raster ranges, visible area, display window |
 | [concepts/screen-memory.md](concepts/screen-memory.md) | How the screen matrix and color RAM relate, and where each lives. | screen memory, screen matrix, color RAM, cell layout |
-| [concepts/vic-bad-lines.md](concepts/vic-bad-lines.md) | What makes a raster line bad, the cycles it steals, and how to work around it. | bad lines, badline, cycle theft, DMA steal, YSCROLL, vic bad lines |
+| [concepts/vic-bad-lines.md](concepts/vic-bad-lines.md) | Bad-line condition, 40-cycle VIC bus takeover, and possible 40–43-cycle CPU delay. | bad lines, badline, cycle theft, DMA steal, YSCROLL, vic bad lines |
 | [concepts/zero-page.md](concepts/zero-page.md) | Why zero page matters: shorter, faster addressing and who already owns it. | zero page, fast addressing, byte savings, ownership |
 | [cpu/6502/addressing-modes.md](cpu/6502/addressing-modes.md) | Every 6502 addressing mode with its operand syntax and effective-address rule. | addressing modes, indirect indexed, zero page, operand syntax |
 | [cpu/6502/illegal-opcodes.md](cpu/6502/illegal-opcodes.md) | The 105 undocumented NMOS opcodes: bytes, stability, demo use, quirks. | illegal opcodes, undocumented, LAX, SAX, NOP variants, unstable |
@@ -95,7 +95,7 @@ whole-file entry point use [INDEX.md](INDEX.md); for a `$`-address or KERNAL sym
 | [effects/fpp.md](effects/fpp.md) | Per-line horizontal warp of a graphic by driving the memory pointers from a sine table. | FPP, stretcher, flexible pixel position, horizontal warp |
 | [effects/fractals.md](effects/fractals.md) | Render Julia and Mandelbrot sets with fixed-point iteration and lookup tables. | fractals, Julia set, Mandelbrot, fixed point iteration |
 | [effects/misc.md](effects/misc.md) | Colour flashing via background register cycling, and charset page-flip animation. | colour flashing, notewriter, cracktro, frame animation, page flipping, misc |
-| [effects/open-borders.md](effects/open-borders.md) | Remove the top, bottom or side borders, and put sprites out there. | open borders, border removal, side border, sprites in border |
+| [effects/open-borders.md](effects/open-borders.md) | Remove the top, bottom, or side borders, with timing and sprite-placement constraints. | open borders, border removal, side border, sprites in border |
 | [effects/plasma.md](effects/plasma.md) | Flowing color patterns from summed sine waves, in character mode or as rasterbars. | plasma, sine sum, color cycling, FLI plasma |
 | [effects/rasterbars.md](effects/rasterbars.md) | Colored bars drawn by rewriting the border and background color each raster line. | rasterbars, color bars, raster splits, border color |
 | [effects/rng.md](effects/rng.md) | The X-ABC pseudo-random generator: 38 cycles, 28 bytes, 8- or 16-bit output. | RNG, PRNG, X-ABC, random numbers, fast random |
@@ -179,7 +179,7 @@ whole-file entry point use [INDEX.md](INDEX.md); for a `$`-address or KERNAL sym
 | [sid/digi-samples.md](sid/digi-samples.md) | Play 4-bit PCM by hammering the master volume register; a 6581 side effect. | digi samples, PCM playback, sample player, volume trick, 8-bit PWM |
 | [sid/filter-sweep.md](sid/filter-sweep.md) | Sweep the 11-bit filter cutoff and choose low, band or high pass. | filter sweep, cutoff, resonance, low pass, band pass |
 | [sid/frequency-calculation.md](sid/frequency-calculation.md) | Convert a note to a SID frequency register value using equal temperament. | frequency calculation, equal temperament, pitch formula, clock constants |
-| [sid/frequency-table.md](sid/frequency-table.md) | PAL A440 note-to-register values for 96 notes across eight octaves. | frequency table, PAL notes, note values, A440 |
+| [sid/frequency-table.md](sid/frequency-table.md) | PAL A440 note-to-register values across the octave range. | frequency table, PAL notes, note values, A440 |
 | [sid/model-detect.md](sid/model-detect.md) | Tell a 6581 from an 8580 at runtime using oscillator 3 readback. | SID detection, 6581, 8580, chip revision, OSC3 readback, model detect |
 | [sid/noise-reduction.md](sid/noise-reduction.md) | Hardware and software mitigations for noise picked up on the SID audio input. | noise reduction, audio input, AIN, hum, interference |
 | [sid/ntsc-frequency-table.md](sid/ntsc-frequency-table.md) | NTSC A440 note-to-register values, calibrated for the common 6567R8. | NTSC frequency table, NTSC notes, 6567R8, A440 |

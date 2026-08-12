@@ -33,7 +33,7 @@ keywords: [play note, gate, ADSR, envelope, pulse width]
 - GATE bit MUST be cleared between consecutive notes on the same voice; re-gating without clearing keeps the envelope at sustain.
 - TEST bit (CR bit 3) MUST be cleared during normal play; leaving it set holds the oscillator at 0 and silences the voice.
 - Pulse waveform REQUIRES both PUL bit set in CR and a non-zero, non-`$FFF` PW value.
-- Frequency formula assumes PAL clock (`985248` Hz). NTSC uses `1022730` Hz — same FREQ value produces a slightly different pitch.
+- Frequency formula assumes PAL clock (`985248` Hz). NTSC uses `1022727` Hz — same FREQ value produces a slightly different pitch.
 - Multiple waveform bits MAY be combined, but the result is chip-revision-dependent (6581 vs 8580 differ); MIDI-style tunings tuned for one chip may not sound identical on the other.
 - Voice 3 may be silenced from the mixer via `$D418` bit 7 (3OFF) while still running its envelope/oscillator — useful for using ENV3/OSC3 as modulation sources.
 - Code SHOULD NOT touch SID during a raster interrupt that also services player ticks unless the player is re-entrant.

@@ -171,9 +171,9 @@ deliberately excluded; reach those through [ROUTE.md](ROUTE.md).
 | `$D41C` | [sid/registers.md](sid/registers.md) | sid/play-note.md, basic/graphics-sound.md |
 | `$D4E7` | [sid/ntsc-frequency-table.md](sid/ntsc-frequency-table.md) |  |
 | `$D7FF` | [memory/io-area.md](memory/io-area.md) | memory/map.md, sid/registers.md, tasks/custom-charset.md |
-| `$D800` | [charset/screen-codes.md](charset/screen-codes.md) | io/color-ram.md, charset/control-codes.md, memory/io-area.md, memory/map.md |
-| `$DBE7` | [charset/control-codes.md](charset/control-codes.md) | effects/dycp.md, effects/plasma.md, display-modes/fli.md, basic/graphics-sound.md |
-| `$DBFF` | [io/color-ram.md](io/color-ram.md) | memory/io-area.md, memory/map.md, concepts/screen-memory.md, tasks/print-to-screen.md |
+| `$D800` | [charset/screen-codes.md](charset/screen-codes.md) | charset/control-codes.md, io/color-ram.md, memory/io-area.md, memory/map.md |
+| `$DBE7` | [charset/control-codes.md](charset/control-codes.md) | io/color-ram.md, concepts/screen-memory.md, effects/dycp.md, effects/plasma.md |
+| `$DBFF` | [io/color-ram.md](io/color-ram.md) | memory/io-area.md, memory/map.md, concepts/screen-memory.md, vic/memory-and-banking.md |
 | `$DC00` | [io/cia1.md](io/cia1.md) | io/io-programming.md, io/joystick.md, io/keyboard-text-io.md, charset/keyboard-matrix.md |
 | `$DC01` | [io/cia1.md](io/cia1.md) | io/io-programming.md, io/joystick.md, charset/keyboard-matrix.md, tasks/game-loop.md |
 | `$DC02` | [io/cia1.md](io/cia1.md) | charset/keyboard-matrix.md |

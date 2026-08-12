@@ -2,7 +2,7 @@
 type: reference
 domain: effects
 granularity: atomic
-summary: "Remove the top, bottom or side borders, and put sprites out there."
+summary: "Remove the top, bottom, or side borders, with timing and sprite-placement constraints."
 keywords: [open borders, border removal, side border, sprites in border]
 ---
 
@@ -39,18 +39,26 @@ keywords: [open borders, border removal, side border, sprites in border]
 
 ## sprites in border regions
 
-Sprites always render over the border color regardless of the `$D01B` priority bit — no open-border trick is required to show sprites in border areas. The open-border trick is needed only to show display-area content (bitmap/text pixels) in the border.
+The active screen border has priority over sprites, and `$D01B` does not change that. Sprite pixels in a border region are masked while that border is closed. Opening the relevant border reveals those pixels only where the VIC-II is still producing visible video rather than horizontal or vertical blanking.
 
-| border region | what to do | notes |
+The following ranges assume the standard 40-column, 25-row display window: X=`$18-$157` and raster lines `$33-$FA`. For a normal-height sprite at X≤`$164`, the first sprite row is displayed on the raster line after the value in its Y register. A sprite positioned to the right of `$164` can start on the matching raster because its X position has not yet passed when sprite display is enabled; such far-right placement needs separate cycle-level treatment.
+
+| border region | normal-height sprite placement | relation to the standard display window |
 |---|---|---|
-| Top border | Set sprite Y < `$33` | Sprites visible above display area naturally |
-| Bottom border | Set sprite Y > `$FA` | Sprites visible below display area naturally |
-| Left border | Set sprite X < `$18` | Low X positions place sprite in left border column |
-| Right border | Set sprite X > `$157` (9-bit) | Set MSB in `$D010`; sprite appears in right border |
+| Top border | Y=`$1E-$31` | The sprite overlaps the top border and the display window; Y=`$00-$1D` is fully above the display window. |
+| Bottom border | Y=`$E6-$F9` | The sprite overlaps the display window and bottom border; Y=`$FA` is the first position fully below the display window. |
+| Left border | X=`$01-$17` | The sprite overlaps the left border and display window; X=`$00` is fully left of the display window. |
+| Right border | X=`$141-$157` | The sprite overlaps the display window and right border; X=`$158` is the first position fully right of the display window. Set the corresponding `$D010` bit. |
 
 For side border sprite placement: `$D010` bit n = 1 when sprite n X coordinate ≥ 256; combine low byte in `$D000+n×2`. See [../tasks/sprite-display.md](../tasks/sprite-display.md) for full sprite X setup.
 
-NUFLI and UFLI use sprite underlay across the full display width; the 6 NUFLI underlay sprites naturally extend near the left border (starting at ~X=56) but the FLI bug columns (0–3) remain uncovered. To extend sprites into the very left edge of the side border while simultaneously opening it: apply the side-border trick on the same raster lines as the sprite positions.
+### PAL and NTSC differences
+
+- The standard display-window coordinates above are common VIC-II coordinates; they do not by themselves describe how much opened border is visible in the output signal.
+- Codebase64's PAL monitor measurements call raster `$08` the earliest line known to be displayed by any monitor, which maps to sprite Y=`$07`. This is a best-case PAL extent, not a line guaranteed visible on every monitor or capture device.
+- PAL 6569/8565 has 312 raster lines. Because sprite Y is only 8 bits, Y=`$00-$37` can match once at the top of the frame and again on raster lines 256–311. A low-Y top-border sprite can therefore reappear near the bottom unless it is disabled or repositioned before the second match.
+- Common NTSC variants have only 262 or 263 raster lines, so only Y=`$00-$05` or `$00-$06` can match a second time. Conversely, a sprite beginning near Y=`$FA` reaches the end of an NTSC frame before all 21 rows can be generated; PAL has enough raster lines for the full normal-height sprite.
+- Horizontal and vertical blanking, and therefore the amount of an opened border that a monitor or capture device can show, differs by VIC-II variant. Border-opening code and claimed visible extents MUST be verified for the target chip; PAL timing is the normal baseline for scene demos in this repository.
 
 ## constraints
 - Timing MUST be cycle-exact for side border removal; imprecise timing produces artifacts.
@@ -71,8 +79,12 @@ NUFLI and UFLI use sprite underlay across the full display width; the 6 NUFLI un
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - concepts: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
+- VIC-II variants: [../vic/variants.md](../vic/variants.md)
 
 ## sources
 
 - codebase64.net: [Opening the Top and Bottom Borders](https://codebase64.net/doku.php?id=vic:opening_the_top_bottom_borders) — CC BY-NC-SA 4.0
 - codebase64.net: [Opening Up the Borders — A Further Explanation](https://codebase64.net/doku.php?id=vic:opening_up_the_borders_-_a_further_explanation) — CC BY-NC-SA 4.0
+- codebase64.net: [Visible Area](https://codebase64.net/doku.php?id=vic:visible_area) — PAL monitor-visible extent and sprite Y=`$07`
+- Codebase64: [Sprite Introduction](https://codebase.c64.org/doku.php?id=base:spriteintro) — priority and border layering
+- Christian Bauer: [The MOS 6567/6569 video controller (VIC-II) and its application in the Commodore 64](https://pc.sux.org/files/vic-article_html_engl_vic_article_1.pdf) — display-window coordinates, border priority, sprite Y timing, and VIC-II variant geometry

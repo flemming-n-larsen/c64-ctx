@@ -22,7 +22,7 @@ source: c64ref
 | Detect CPU type at runtime | [cpu/detect-cpu.md](cpu/detect-cpu.md) | — | Uses `$1A`/`XBA`/`$3A` opcode behavior differences. |
 | VIC-II registers and bit fields | [io/vic-ii.md](io/vic-ii.md) | [vic/INDEX.md](vic/INDEX.md) | Account for banking at `$D000-$DFFF`. |
 | VIC-II bank select, screen/charset placement | [vic/memory-and-banking.md](vic/memory-and-banking.md) | [io/cia2.md](io/cia2.md) | Bank via `$DD00`; layout via `$D018`. |
-| Raster timing, cycles per line, bad lines | [vic/timing.md](vic/timing.md) | [concepts/vic-bad-lines.md](concepts/vic-bad-lines.md) | Bad lines steal 40-43 cycles from the CPU. |
+| Raster timing, cycles per line, bad lines | [vic/timing.md](vic/timing.md) | [concepts/vic-bad-lines.md](concepts/vic-bad-lines.md) | VIC takes the bus for 40 cycles; CPU delay can be 40–43 cycles. |
 | VIC-II chip variant (NTSC vs PAL, 6567/6569/8562/8565) | [vic/variants.md](vic/variants.md) | [vic/timing.md](vic/timing.md) | Raster counts, cycles/line, fps, palette by revision. |
 | Interrupts, IRQ/NMI vectors | [irq/overview.md](irq/overview.md) | [irq/raster-interrupt.md](irq/raster-interrupt.md) | Canonical route for interrupt-generic guidance. |
 | Install a raster interrupt | [irq/raster-interrupt.md](irq/raster-interrupt.md) | [irq/stable-timing.md](irq/stable-timing.md) | Setup, acknowledge rules, KERNAL coexistence. |

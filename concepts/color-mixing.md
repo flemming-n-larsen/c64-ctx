@@ -2,18 +2,18 @@
 type: reference
 domain: concepts
 granularity: atomic
-summary: "Five techniques for appearing to exceed the fixed 16-color palette."
+summary: "Techniques for appearing to exceed the fixed 16-color palette."
 keywords: [color mixing, color expansion, interlacing, dithering, sprite underlay]
 ---
 
 ## facts
 - The VIC-II hardware palette is fixed at 16 colors; all color expansion techniques use software or timing tricks to create the perception of more colors.
-- Five fundamental techniques underlie all unofficial C64 display modes: raster color changes, the FLI per-line trick, frame interlacing, sprite underlay layers, and spatial dithering.
+- This page distinguishes raster color changes, the FLI per-line trick, frame interlacing, sprite underlay layers, spatial dithering, alternate-line mixing, and dynamic color mixing.
 - Techniques can be combined; names of unofficial modes encode their combination (e.g., NUIFLI = New Underlay + Interlaced + FLI).
 
 ## lookup
 
-### The 7 fundamental techniques
+### Fundamental techniques
 
 | # | technique | key mechanism | effective colors | flicker |
 |:---:|---|---|:---:|:---:|
@@ -70,7 +70,7 @@ keywords: [color mixing, color expansion, interlacing, dithering, sprite underla
 - Hires underlay sprites (UFLI): each sprite contributes 1 independent color from `$D027+n`.
 - Multicolor underlay sprites (MUFLI/NUFLI): sprites use 3 colors: `$D025` (shared A), `$D026` (shared B), `$D027+n` (per-sprite); pixels wider than hires.
 - NUFLI: 6 double-wide hires sprites with per-line pointer updates (sprite stretching) cover columns 4–39; flicker-free.
-- Sprites always draw over the BORDER color regardless of `$D01B`; no open-border trick needed for sprites in border regions (only needed to show display-area content there).
+- `$D01B` controls sprite priority against display graphics only; it does not override an active screen border.
 - See [../display-modes/ufli.md](../display-modes/ufli.md), [../display-modes/nufli.md](../display-modes/nufli.md).
 
 ### Technique 5 — Spatial dithering
@@ -105,15 +105,15 @@ keywords: [color mixing, color expansion, interlacing, dithering, sprite underla
 
 ### Sprites in border regions
 
-- **Top/bottom border**: set sprite Y position into border raster range (`< $33` or `> $FA`); sprites display naturally since they always render over the border color.
-- **Side borders**: set sprite X position < `$18` (left) or > `$157` (right, requires 9-bit X via `$D010` MSB); sprites draw over the side border color without any border trick.
-- **Display content in border**: to show bitmap/text content (not sprites) in the border requires the open-border trick; see [../effects/open-borders.md](../effects/open-borders.md).
+- **Top/bottom edge**: for normal-height sprites, Y=`$1E-$31` or `$E6-$F9` gives partial visibility at the standard display-area edge; sprite Y coordinates are not raster-line numbers.
+- **Side edge**: X=`$01-$17` (left) or `$141-$157` (right, with `$D010` MSB) gives partial visibility at the standard display-area edge.
+- **Opened border**: display content and sprite pixels require the relevant open-border timing; see [../effects/open-borders.md](../effects/open-borders.md).
 
 ## constraints
 - Raster color changes MUST happen within the active visible portion of the raster line; writes after the right edge affect the next line.
-- FLI bad-line forcing leaves only 23 CPU free cycles per line (PAL); per-line code MUST fit within this budget.
+- FLI bad-line forcing leaves 23 nominal bus-free cycles per PAL line; the BA lead-in can add CPU stall, so per-line code MUST be scheduled against the exact bad-line timing.
 - Frame interlacing flicker SHOULD be treated as a design constraint; artwork intended for IFLI must be evaluated on CRT or accurate emulator.
-- Sprite underlay `$D01B` affects sprite vs. display-area priority only; sprite vs. border priority is always "sprite in front."
+- Sprite underlay `$D01B` affects sprite vs. display-area priority only; an active screen border has higher priority.
 - Spatial dithering effectiveness degrades at close viewing distance; intended for artwork viewed at ~0.5–1 m on CRT.
 
 ## links
@@ -136,3 +136,4 @@ keywords: [color mixing, color expansion, interlacing, dithering, sprite underla
 - c64-wiki.com: [NUFLI](https://www.c64-wiki.com/wiki/NUFLI) — GFDL
 - kodiak64.co.uk: [Luma-driven graphics on C64](https://kodiak64.co.uk/blog/luma-driven-graphics-on-c64) — ALM and DCM techniques
 - aaronbell.com: [Secret colours of the Commodore 64](https://www.aaronbell.com/secret-colours-of-the-commodore-64/) — equal-brightness constraint for frame-alternation mixing
+- Codebase64: [Sprite Introduction](https://codebase.c64.org/doku.php?id=base:spriteintro) — sprite and border priority

@@ -8,14 +8,14 @@ keywords: [screen memory, screen matrix, color RAM, cell layout]
 
 ## facts
 - The default C64 text screen matrix is commonly routed at `$0400` in C64 memory references.
-- Color RAM is `$D800-$DBFF` and stores color nybbles corresponding to screen cells.
+- The physical Color RAM window is `$D800-$DBFF`; its 1000 screen-cell entries are `$D800-$DBE7`.
 - VIC-II register `$D018` selects video matrix base and character dot-data base inside the selected VIC memory bank.
 
 ## lookup
 | component | default / route | constraints |
 |---|---|---|
 | Screen matrix | `$0400-$07E7` default text cells | Stores screen codes, not PETSCII. |
-| Color RAM | `$D800-$DBFF` | Stores low-nybble color values. |
+| Screen-cell Color RAM | `$D800-$DBE7` | Stores 1000 low-nybble color values. |
 | Character data | selected by `$D018` and banking | MUST distinguish character ROM/RAM from screen matrix bytes. |
 | VIC bank | CIA2-related selection | CPU address and VIC-visible address MAY differ by bank configuration. |
 

@@ -11,7 +11,7 @@ source: codebase64.net
 | Waveform behavior and caveats | [waveforms.md](waveforms.md) | Triangle/noise behavior, pulse-width limits, combined-waveform cautions |
 | Play a SID note (sequence) | [play-note.md](play-note.md) | Volume, freq, PW, ATDCY, SUREL, GATE on/off |
 | Calculate your own SID frequency values | [frequency-calculation.md](frequency-calculation.md) | Equal-temperament formula plus machine clock constants |
-| Note frequency register values (PAL A440) | [frequency-table.md](frequency-table.md) | 96 notes × 8 octaves; 16-bit hex values |
+| Note frequency register values (PAL A440) | [frequency-table.md](frequency-table.md) | 16-bit hex values across the octave range |
 | Note frequency register values (NTSC A440) | [ntsc-frequency-table.md](ntsc-frequency-table.md) | Common 6567R8 NTSC table with R56A caveat |
 | Detect SID chip revision at runtime | [model-detect.md](model-detect.md) | OSC3 readback distinguishes 6581 from 8580 |
 | Play digitized samples (digi) | [digi-samples.md](digi-samples.md) | $D418 volume-register 4-bit PCM; 6581 only |
