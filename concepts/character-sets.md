@@ -2,6 +2,8 @@
 type: reference
 domain: concepts
 granularity: concept
+summary: "The four distinct character code spaces and why they must never be conflated."
+keywords: [code spaces, PETSCII vs screen code, character sets, conflation]
 ---
 
 ## facts

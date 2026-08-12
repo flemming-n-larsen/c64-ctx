@@ -2,6 +2,8 @@
 type: reference
 domain: vic
 granularity: atomic
+summary: "NTSC and PAL VIC-II revisions: raster lines, cycles, frame rate, palette differences."
+keywords: [chip variants, NTSC vs PAL, 6567, 6569, 8565, revision]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: cpu/6502
 granularity: atomic
+summary: "The A, X, Y, S, P, PC registers and every status flag bit in P."
+keywords: [registers, status flags, carry, overflow, decimal mode]
 ---
 
 ## registers

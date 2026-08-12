@@ -2,6 +2,8 @@
 type: reference
 domain: kernal
 granularity: api-family
+summary: "KERNAL calls that report or move the memory boundaries used by BASIC and the OS."
+keywords: [MEMBOT, MEMTOP, memory boundaries, KERNAL memory calls]
 ---
 
 ## lookup

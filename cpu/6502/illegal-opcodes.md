@@ -2,6 +2,8 @@
 type: reference
 domain: cpu/6502
 granularity: atomic
+summary: "The 105 undocumented NMOS opcodes: bytes, stability, demo use, quirks."
+keywords: [illegal opcodes, undocumented, LAX, SAX, NOP variants, unstable]
 ---
 
 ## facts

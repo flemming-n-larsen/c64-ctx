@@ -2,6 +2,8 @@
 type: reference
 domain: concepts
 granularity: atomic
+summary: "Five techniques for appearing to exceed the fixed 16-color palette."
+keywords: [color mixing, color expansion, interlacing, dithering, sprite underlay]
 ---
 
 ## facts

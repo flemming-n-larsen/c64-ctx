@@ -2,6 +2,8 @@
 type: reference
 domain: sprites
 granularity: atomic
+summary: "Runtime sprite techniques combining raster IRQ timing with per-line register updates."
+keywords: [DYSP, multiplexer, sprite stretching, sprite underlay, border sprites]
 ---
 
 ## facts

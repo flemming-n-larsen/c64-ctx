@@ -2,6 +2,8 @@
 type: reference
 domain: vic
 granularity: atomic
+summary: "What the VIC-II can see: 16 KB bank select, screen matrix and charset placement."
+keywords: [VIC bank, bank select, screen base, charset base, ROM holes]
 ---
 
 ## facts

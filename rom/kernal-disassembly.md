@@ -2,6 +2,8 @@
 type: reference
 domain: rom
 granularity: route
+summary: "Where KERNAL ROM routines live, as a route to the upstream disassemblies."
+keywords: [KERNAL ROM, disassembly, ROM listing, implementation detail]
 ---
 
 ## lookup

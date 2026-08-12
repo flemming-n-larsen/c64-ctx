@@ -2,6 +2,8 @@
 type: reference
 domain: charset
 granularity: code-space
+summary: "The byte values stored in screen matrix RAM, each indexing one glyph in the active set."
+keywords: [screen codes, screen matrix, reverse range, glyph index]
 ---
 
 ## facts

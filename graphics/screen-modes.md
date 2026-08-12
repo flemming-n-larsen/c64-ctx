@@ -2,6 +2,8 @@
 type: reference
 domain: graphics
 granularity: atomic
+summary: "All eight ECM/BMM/MCM bit combinations: enable bits, memory layout, color source per mode."
+keywords: [screen modes, bitmap mode, multicolor, hires, extended color mode]
 ---
 
 ## lookup

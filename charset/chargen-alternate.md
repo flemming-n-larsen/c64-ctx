@@ -2,6 +2,8 @@
 type: reference
 domain: charset
 granularity: atomic
+summary: "Glyph bytes for the alternate (lowercase) character ROM set, 8 bytes per screen code."
+keywords: [chargen ROM, lowercase set, glyph bytes, character bitmaps]
 ---
 
 ## facts

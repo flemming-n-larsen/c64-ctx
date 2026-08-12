@@ -2,6 +2,8 @@
 type: reference
 domain: concepts
 granularity: concept
+summary: "How the screen matrix and color RAM relate, and where each lives."
+keywords: [screen memory, screen matrix, color RAM, cell layout]
 ---
 
 ## facts

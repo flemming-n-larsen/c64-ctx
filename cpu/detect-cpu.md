@@ -3,6 +3,8 @@ type: reference
 domain: cpu
 source: codebase64.net
 granularity: atomic
+summary: "Identify NMOS 6502, 65C02, or 65816 at runtime from opcode behavior differences."
+keywords: [CPU detection, 65C02, 65816, NMOS, runtime probe]
 ---
 
 ## facts

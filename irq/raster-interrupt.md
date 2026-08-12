@@ -2,6 +2,8 @@
 type: reference
 domain: irq
 granularity: recipe
+summary: "Install a VIC-II raster IRQ: vectors, enable bits, acknowledge, KERNAL coexistence."
+keywords: [raster interrupt, raster IRQ, acknowledge, KERNAL coexistence]
 ---
 
 ## sequence

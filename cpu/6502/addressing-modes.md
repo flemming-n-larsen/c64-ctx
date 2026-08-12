@@ -2,6 +2,8 @@
 type: reference
 domain: cpu/6502
 granularity: atomic
+summary: "Every 6502 addressing mode with its operand syntax and effective-address rule."
+keywords: [addressing modes, indirect indexed, zero page, operand syntax]
 ---
 
 ## lookup

@@ -2,6 +2,8 @@
 type: reference
 domain: colors
 granularity: lookup
+summary: "Which VIC-II color pairs share a luma step and therefore mix without visible banding."
+keywords: [luma clusters, banding, dithering, ALM, DCM, color mixing]
 ---
 
 ## facts

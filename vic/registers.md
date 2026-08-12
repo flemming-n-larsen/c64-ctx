@@ -2,6 +2,8 @@
 type: reference
 domain: vic
 granularity: atomic
+summary: "VIC-first route through the register block: control, raster IRQ, sprites, colors."
+keywords: [VIC registers, register block, mirroring, control registers]
 ---
 
 ## facts

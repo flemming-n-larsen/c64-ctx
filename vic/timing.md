@@ -2,6 +2,8 @@
 type: reference
 domain: vic
 granularity: atomic
+summary: "The 9-bit raster counter, cycles per line, and the display-window timing model."
+keywords: [raster timing, raster counter, cycles per line, display window]
 ---
 
 ## facts

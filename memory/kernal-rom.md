@@ -2,6 +2,8 @@
 type: reference
 domain: memory
 granularity: address-range
+summary: "The KERNAL ROM window and the hardware vectors near the top of memory."
+keywords: [KERNAL ROM, hardware vectors, HIRAM, RAM under ROM]
 ---
 
 ## facts

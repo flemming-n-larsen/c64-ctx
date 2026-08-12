@@ -2,6 +2,8 @@
 type: reference
 domain: sprites
 granularity: atomic
+summary: "Getting a sprite on screen: 64-byte alignment, pointer, position, color, enable order."
+keywords: [sprite setup, sprite pointer, visible range, multicolor sprite]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: rom
 granularity: route
+summary: "Where BASIC ROM routines live, as a route to the upstream disassemblies."
+keywords: [BASIC ROM, interpreter routines, disassembly, ROM listing]
 ---
 
 ## lookup

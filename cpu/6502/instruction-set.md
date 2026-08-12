@@ -2,6 +2,8 @@
 type: reference
 domain: cpu/6502
 granularity: atomic
+summary: "Documented 6502 opcode semantics: operation class, flag effects, cycle counts."
+keywords: [instruction set, mnemonics, opcodes, flag effects, cycle counts]
 ---
 
 ## operation-classes

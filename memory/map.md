@@ -2,6 +2,8 @@
 type: reference
 domain: memory
 granularity: overview
+summary: "Whole-machine address map; start here when an address is unknown."
+keywords: [memory map, address ranges, ROM RAM overlay, unknown address]
 ---
 
 ## lookup

@@ -2,6 +2,8 @@
 type: reference
 domain: memory
 granularity: lookup
+summary: "Named addresses and their aliases: processor port, BASIC and KERNAL workspace, vectors."
+keywords: [symbols, aliases, labels, workspace, vector table]
 ---
 
 ## lookup — processor port and BASIC workspace

@@ -2,6 +2,8 @@
 type: reference
 domain: kernal
 granularity: lookup
+summary: "Every KERNAL jump table entry with address and category; a route table, not contracts."
+keywords: [jump table, KERNAL API, entry points, call addresses]
 ---
 
 ## lookup

@@ -3,6 +3,8 @@ type: reference
 domain: irq
 granularity: concept
 source: codebase64.net
+summary: "Remove IRQ entry jitter for cycle-exact raster effects using double-IRQ sync."
+keywords: [stable raster, jitter, double IRQ, cycle exact, raster sync]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: concepts
 granularity: atomic
+summary: "What makes a raster line bad, the cycles it steals, and how to work around it."
+keywords: [bad lines, badline, cycle theft, DMA steal, YSCROLL]
 ---
 
 ## facts

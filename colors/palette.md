@@ -2,6 +2,8 @@
 type: reference
 domain: colors
 granularity: lookup
+summary: "The 16 C64 color indices with names, luma level, and RGB approximation."
+keywords: [color numbers, palette, RGB values, color RAM nibble]
 ---
 
 ## lookup

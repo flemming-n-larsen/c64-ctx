@@ -2,6 +2,8 @@
 type: reference
 domain: concepts
 granularity: atomic
+summary: "PAL display dimensions, raster line ranges, border extents and the sprite Y offset."
+keywords: [screen geometry, border extents, raster ranges, visible area, display window]
 ---
 
 ## facts

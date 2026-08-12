@@ -2,6 +2,8 @@
 type: reference
 domain: kernal
 granularity: api-family
+summary: "Load, save, open, close and channel I/O through the KERNAL, in call order."
+keywords: [file I/O, SETLFS, SETNAM, LOAD, SAVE, channels]
 ---
 
 ## lookup

@@ -2,6 +2,8 @@
 type: reference
 domain: concepts
 granularity: concept
+summary: "How $0001 processor-port bits decide which ROM, RAM, I/O or character ROM the CPU sees."
+keywords: [banking, LORAM, HIRAM, CHAREN, memory configuration]
 ---
 
 ## facts

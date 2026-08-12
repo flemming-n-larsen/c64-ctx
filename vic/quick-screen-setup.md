@@ -3,6 +3,8 @@ type: reference
 domain: vic
 granularity: atomic
 source: codebase64.net
+summary: "Compute the bank and memory-pointer register values from one screen-address constant."
+keywords: [screen setup, bank calculation, bit arithmetic, alignment]
 ---
 
 ## facts

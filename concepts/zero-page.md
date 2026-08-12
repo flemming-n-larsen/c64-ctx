@@ -2,6 +2,8 @@
 type: reference
 domain: concepts
 granularity: concept
+summary: "Why zero page matters: shorter, faster addressing and who already owns it."
+keywords: [zero page, fast addressing, byte savings, ownership]
 ---
 
 ## facts

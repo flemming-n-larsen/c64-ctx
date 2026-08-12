@@ -3,6 +3,8 @@ type: reference
 domain: cpu
 source: codebase64.net
 granularity: atomic
+summary: "Silent 6502 coding mistakes: missing #, DOKE byte order, self-modifying label offsets."
+keywords: [pitfalls, DOKE, self-modifying code, silent bug, immediate mode]
 ---
 
 ## facts

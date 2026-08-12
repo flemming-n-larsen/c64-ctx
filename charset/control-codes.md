@@ -2,6 +2,8 @@
 type: reference
 domain: charset
 granularity: lookup
+summary: "PETSCII control bytes that move the cursor, change color, or toggle reverse and editor state."
+keywords: [control codes, cursor control, color codes, reverse mode, editor state]
 ---
 
 ## facts

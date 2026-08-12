@@ -2,6 +2,8 @@
 type: reference
 domain: memory
 granularity: address-range
+summary: "Who owns which zero-page bytes and which are safe for user code."
+keywords: [zero page, free bytes, KERNAL workspace, BASIC workspace]
 ---
 
 ## facts

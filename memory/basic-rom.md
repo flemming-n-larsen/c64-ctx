@@ -2,6 +2,8 @@
 type: reference
 domain: memory
 granularity: address-range
+summary: "The BASIC ROM window and what it hides when banked in."
+keywords: [BASIC ROM, banking, LORAM, RAM under ROM]
 ---
 
 ## facts

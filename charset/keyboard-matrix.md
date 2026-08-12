@@ -2,6 +2,8 @@
 type: reference
 domain: charset
 granularity: lookup
+summary: "The 8x8 keyboard matrix as scanned through CIA1, with modifiers and delivered PETSCII."
+keywords: [keyboard matrix, key scan, modifiers, SHIFT, matrix position]
 ---
 
 ## facts

@@ -3,6 +3,8 @@ type: reference
 domain: concepts
 granularity: concept
 source: codebase64.net
+summary: "How the EXROM and GAME expansion-port lines combine with $0001 to pick a memory map."
+keywords: [cartridge, EXROM, GAME, PLA, expansion port, memory config]
 ---
 
 ## facts

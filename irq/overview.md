@@ -2,6 +2,8 @@
 type: reference
 domain: irq
 granularity: concept
+summary: "IRQ and NMI sources, the I flag, and the KERNAL and page-3 interrupt vectors."
+keywords: [interrupts, NMI, IRQ vectors, I flag, page 3 vectors]
 ---
 
 ## facts

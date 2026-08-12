@@ -2,6 +2,8 @@
 type: reference
 domain: concepts
 granularity: atomic
+summary: "Cycle-exact technique reference: unrolling, tables, zero page, self-modifying code."
+keywords: [speedcoding, loop unrolling, self-modifying code, page alignment, tables]
 ---
 
 ## facts

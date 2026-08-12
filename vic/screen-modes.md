@@ -2,6 +2,8 @@
 type: reference
 domain: vic
 granularity: atomic
+summary: "Which ECM/BMM/MCM bit combination selects each hardware display mode."
+keywords: [screen modes, mode bits, bitmap mode, multicolor, hires]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: memory
 granularity: address-range
+summary: "The I/O and character ROM window, and how CHAREN/HIRAM/LORAM decide what appears there."
+keywords: [I/O area, CHAREN, character ROM, banking window]
 ---
 
 ## lookup

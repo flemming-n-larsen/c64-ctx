@@ -3,6 +3,8 @@ type: reference
 domain: memory
 source: codebase64.net
 granularity: atomic
+summary: "Reach the RAM cells beneath the processor port: read via VIC sprite, write via bus residue."
+keywords: [hidden RAM, RAM under I/O, bus residue, sprite read trick]
 ---
 
 ## facts

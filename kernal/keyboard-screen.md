@@ -2,6 +2,8 @@
 type: reference
 domain: kernal
 granularity: api-family
+summary: "KERNAL character I/O calls for keyboard and screen, versus direct screen writes."
+keywords: [GETIN, CHRIN, CHROUT, screen editor, character I/O]
 ---
 
 ## lookup

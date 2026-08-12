@@ -2,6 +2,8 @@
 type: reference
 domain: kernal
 granularity: api-family
+summary: "KERNAL jiffy clock, timer, IRQ restoration and stop-key services."
+keywords: [jiffy clock, RDTIM, SETTIM, stop key, IRQ restore]
 ---
 
 ## lookup

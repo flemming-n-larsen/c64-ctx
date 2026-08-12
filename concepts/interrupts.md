@@ -2,6 +2,8 @@
 type: reference
 domain: concepts
 granularity: concept
+summary: "Redirect stub: interrupt material now lives in the irq domain."
+keywords: [interrupts, redirect, moved page]
 ---
 
 ## route

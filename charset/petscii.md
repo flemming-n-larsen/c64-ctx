@@ -2,6 +2,8 @@
 type: reference
 domain: charset
 granularity: code-space
+summary: "The PETSCII encoding used by CHROUT and GETIN; not the screen-code encoding."
+keywords: [PETSCII, character encoding, printable range, code space]
 ---
 
 ## facts

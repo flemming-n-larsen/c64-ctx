@@ -2,6 +2,8 @@
 type: reference
 domain: kernal
 granularity: api-family
+summary: "Low-level IEC serial bus calls for talking to drives and printers directly."
+keywords: [serial bus, IEC, LISTEN, TALK, ACPTR, CIOUT]
 ---
 
 ## lookup

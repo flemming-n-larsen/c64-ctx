@@ -2,6 +2,8 @@
 type: reference
 domain: sprites
 granularity: atomic
+summary: "Sprite register families: position, enable, color, expand, priority, collision."
+keywords: [sprite registers, collision, priority, expansion, X MSB]
 ---
 
 ## facts

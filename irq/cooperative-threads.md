@@ -3,6 +3,8 @@ type: reference
 domain: irq
 granularity: concept
 source: codebase64.net
+summary: "Stack-slice context switching to run several bounded tasks from one interrupt."
+keywords: [cooperative threads, scheduler, context switch, stack slice]
 ---
 
 ## facts

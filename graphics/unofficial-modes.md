@@ -2,6 +2,8 @@
 type: reference
 domain: graphics
 granularity: atomic
+summary: "Names and abbreviations for 31 software display techniques that exploit VIC-II timing."
+keywords: [unofficial modes, FLI family, technique names, mode abbreviations]
 ---
 
 ## facts
