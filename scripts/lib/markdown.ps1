@@ -53,6 +53,28 @@ function Get-FrontMatterList([hashtable]$metadata, [string]$key) {
     return @($inner -split ',' | ForEach-Object { $_.Trim().Trim('"').Trim("'") } | Where-Object { $_ })
 }
 
+# Sort by a string key using ordinal comparison.
+#
+# Sort-Object is culture-sensitive, which makes generated output depend on the
+# machine's locale: Danish collation sorts "aa" as "å" after z, so $01AA and XAA
+# land in a different position than they do on a CI runner. Generated artifacts
+# MUST be byte-identical everywhere or the drift check fails on Linux while
+# passing on the author's machine.
+# Note: the two-array [Array]::Sort(keys, items, comparer) overload silently
+# sorts a copy when the arrays have different element types, leaving the input
+# untouched. Comparing through a Comparison delegate avoids that trap.
+function Get-SortedOrdinal([object[]]$Items, [scriptblock]$KeySelector) {
+    if (-not $Items -or $Items.Count -eq 0) { return @() }
+    $list = [System.Collections.Generic.List[object]]::new()
+    foreach ($item in $Items) { $list.Add($item) }
+    $comparison = [Comparison[object]] {
+        param($a, $b)
+        [string]::CompareOrdinal([string](& $KeySelector $a), [string](& $KeySelector $b))
+    }
+    $list.Sort($comparison)
+    return $list.ToArray()
+}
+
 function Get-CorpusMarkdownFiles([string]$repoRoot) {
     return Get-ChildItem -LiteralPath $repoRoot -Recurse -Filter '*.md' -File |
         Where-Object { $_.FullName -notmatch '[\\/](\.git|\.junie|\.idea)[\\/]' }

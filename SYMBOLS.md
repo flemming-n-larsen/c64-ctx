@@ -83,6 +83,7 @@ deliberately excluded; reach those through [ROUTE.md](ROUTE.md).
 | `$018A` | [sid/frequency-table.md](sid/frequency-table.md) |  |
 | `$0192` | [sid/ntsc-frequency-table.md](sid/ntsc-frequency-table.md) |  |
 | `$01A1` | [sid/frequency-table.md](sid/frequency-table.md) |  |
+| `$01AA` | [sid/ntsc-frequency-table.md](sid/ntsc-frequency-table.md) |  |
 | `$01BA` | [sid/frequency-table.md](sid/frequency-table.md) |  |
 | `$01C3` | [sid/ntsc-frequency-table.md](sid/ntsc-frequency-table.md) |  |
 | `$01D4` | [sid/frequency-table.md](sid/frequency-table.md) |  |
@@ -90,7 +91,6 @@ deliberately excluded; reach those through [ROUTE.md](ROUTE.md).
 | `$01F0` | [sid/frequency-table.md](sid/frequency-table.md) |  |
 | `$01FA` | [sid/ntsc-frequency-table.md](sid/ntsc-frequency-table.md) |  |
 | `$01FF` | [memory/map.md](memory/map.md) | memory/zero-page.md, cpu/6502/registers-flags.md, irq/cooperative-threads.md, cpu/6502/instruction-set.md |
-| `$01AA` | [sid/ntsc-frequency-table.md](sid/ntsc-frequency-table.md) |  |
 | `$D000` | [io/vic-ii.md](io/vic-ii.md) | io/processor-port.md, memory/io-area.md, memory/map.md, asm/64tass.md |
 | `$D001` | [io/vic-ii.md](io/vic-ii.md) | effects/dysp.md, effects/2nd-line-fli.md, examples/kickassembler-sprite.md, display-modes/ufli.md |
 | `$D002` | [io/vic-ii.md](io/vic-ii.md) | effects/starfield.md, effects/scrolltext.md, display-modes/ufli.md |
@@ -522,9 +522,9 @@ deliberately excluded; reach those through [ROUTE.md](ROUTE.md).
 | `WAIT` | [basic/keywords.md](basic/keywords.md) |  |
 | `WDC` | [cpu/detect-cpu.md](cpu/detect-cpu.md) |  |
 | `WORD` | [asm/mads.md](asm/mads.md) |  |
+| `XAA` | [cpu/6502/illegal-opcodes.md](cpu/6502/illegal-opcodes.md) |  |
 | `XFLI` | [graphics/unofficial-modes.md](graphics/unofficial-modes.md) | concepts/color-mixing.md |
 | `XIFLI` | [graphics/unofficial-modes.md](graphics/unofficial-modes.md) |  |
 | `XSCROLL` | [display-modes/shfli.md](display-modes/shfli.md) |  |
-| `XAA` | [cpu/6502/illegal-opcodes.md](cpu/6502/illegal-opcodes.md) |  |
 | `YSCROLL` | [concepts/vic-bad-lines.md](concepts/vic-bad-lines.md) |  |
 | `ZEROPAGE` | [asm/ca65.md](asm/ca65.md) |  |

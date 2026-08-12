@@ -141,7 +141,7 @@ foreach ($file in (Get-CorpusMarkdownFiles $repoRoot)) {
     })
 }
 
-$pages = @($pages | Sort-Object Path)
+$pages = @(Get-SortedOrdinal $pages { param($p) $p.Path })
 
 # --------------------------------------------------------------- ROUTE.md ----
 
@@ -219,8 +219,8 @@ $symbolLines.Add('## symbols')
 $symbolLines.Add('| symbol | authoritative page | also in |')
 $symbolLines.Add('|---|---|---|')
 
-foreach ($symbol in ($symbolOwners.Keys | Sort-Object)) {
-    $owners = @($symbolOwners[$symbol] | Sort-Object -Property @{ Expression = { Get-SymbolRank $_ $symbol } })
+foreach ($symbol in (Get-SortedOrdinal @($symbolOwners.Keys) { param($k) $k })) {
+    $owners = @(Get-SortedOrdinal @($symbolOwners[$symbol]) { param($p) Get-SymbolRank $p $symbol })
     $primary = $owners[0]
     # Bare paths, not links: SYMBOLS.md must not manufacture inbound links that
     # would make the audit's orphan check vacuous.
@@ -253,7 +253,7 @@ foreach ($group in ($pages | Group-Object Domain)) {
     $curatedPattern = '(?s)' + [regex]::Escape($startMarker) + '.*?' + [regex]::Escape($endMarker)
     $curated = [regex]::Replace($curated, $curatedPattern, '')
 
-    $uncovered = @($group.Group | Sort-Object Path | Where-Object {
+    $uncovered = @(Get-SortedOrdinal @($group.Group) { param($p) $p.Path } | Where-Object {
         $leaf = [IO.Path]::GetFileName($_.Path)
         $curated -notmatch ('\(' + [regex]::Escape($leaf) + '\)')
     })
