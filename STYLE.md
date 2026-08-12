@@ -91,7 +91,7 @@ keywords: [serial input, byte read, IEC receive]
 | section | use |
 |---|---|
 | `routes` | Curated directory `INDEX.md` navigation, including cross-domain routes. |
-| `pages` | Generated exhaustive page list in a directory `INDEX.md`. Never hand-edited. |
+| `pages` | Generated complement in a directory `INDEX.md`: the domain's pages that `## routes` does not already reach. Never hand-edited. |
 | `facts` | Short cited truths. |
 | `lookup` | Compact tables for addresses, symbols, calls, opcodes, codes, or bits. |
 | `constraints` | `MUST`, `SHOULD`, `MUST NOT`, `MAY` rules. |
@@ -108,7 +108,7 @@ keywords: [serial input, byte read, IEC receive]
 |---|---|
 | [ROUTE.md](ROUTE.md) | One row per reference page: path, `summary`, and terms. Grep target. |
 | [SYMBOLS.md](SYMBOLS.md) | `$`-address and KERNAL/register symbol to its authoritative page. Grep target. |
-| `*/INDEX.md` `## pages` | Exhaustive per-domain page list between `<!-- GENERATED:routes -->` markers. |
+| `*/INDEX.md` `## pages` | The domain's pages not already reached from its curated `## routes`, between `<!-- GENERATED:routes -->` markers. Guarantees every page is reachable without restating rows that already exist. |
 
 - These are derived from leaf front matter by `scripts/generate-routes.ps1`. Editing them by hand MUST NOT happen; the change is overwritten on the next run and fails the audit's drift check in the meantime.
 - Regenerate after adding, removing, or re-describing any page: `./scripts/generate-routes.ps1`.

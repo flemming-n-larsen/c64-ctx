@@ -16,14 +16,7 @@ source: tool-docs
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| Build a prg with 64tass and run it in VICE. | [64tass-workflow.md](64tass-workflow.md) | 64tass workflow, build and run, command line, prg header |
-| Build a prg with ACME and run it in VICE. | [acme-workflow.md](acme-workflow.md) | ACME workflow, build and run, command line, cbm output |
-| Build a prg with the two-stage ca65 and ld65 flow, then run it in VICE. | [ca65-workflow.md](ca65-workflow.md) | ca65 workflow, ld65, two-stage build, build and run |
-| CBM prg Studio project shape and workflow assumptions. | [cbm-studio.md](cbm-studio.md) | CBM prg Studio, Windows IDE, project setup |
-| Build a prg with KickAssembler on the JVM and run it in VICE. | [kickassembler-workflow.md](kickassembler-workflow.md) | KickAssembler workflow, java jar, build and run |
-| Run and debug a prg in VICE: autostart, monitor, command-line flags. | [vice.md](vice.md) | VICE, emulator workflow, autostart, monitor, debugging |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->
 
 ## related

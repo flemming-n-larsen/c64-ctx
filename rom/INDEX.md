@@ -14,10 +14,7 @@ source: c64ref
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| Where BASIC ROM routines live, as a route to the upstream disassemblies. | [basic-disassembly.md](basic-disassembly.md) | BASIC ROM, interpreter routines, disassembly, ROM listing |
-| Where KERNAL ROM routines live, as a route to the upstream disassemblies. | [kernal-disassembly.md](kernal-disassembly.md) | KERNAL ROM, disassembly, ROM listing, implementation detail |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->
 
 ## related

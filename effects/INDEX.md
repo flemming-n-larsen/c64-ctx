@@ -37,30 +37,7 @@ For FLI, IFLI, NUFLI, UFLI, ECI and all other display mode technique specs → s
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| Forcing a bad line every second raster line, freeing cycles for twisters and rotators. | [2nd-line-fli.md](2nd-line-fli.md) | 2nd line FLI, twister, X-rotator, waving carpet, Bresenham segments |
-| Fade one charset into another pixel by pixel, plus color RAM palette fades. | [blending.md](blending.md) | blending, fade in, fade out, charset blend, palette cycle |
-| How a demo is structured: IRQ chain, frame anatomy, and the prerequisite techniques. | [demo-intro.md](demo-intro.md) | demo coding, demo structure, IRQ chain, frame anatomy, intro |
-| Warp a logo with independent per-row vertical and horizontal sine displacement. | [distortion.md](distortion.md) | distortion, DYPP, tech-tech, sine warp, logo distortion |
-| A field of dots flying toward the viewer from a precomputed perspective table. | [dot-scroll.md](dot-scroll.md) | dot scroll, 3D dots, perspective table, speedcode generation |
-| Give each character column its own color by writing color RAM once per raster line. | [dycp.md](dycp.md) | DYCP, dynamic color per char, color scroller, per-column color |
-| Reposition sprites mid-frame for extra vertical positions, and stretch them. | [dysp.md](dysp.md) | DYSP, sprite stretching, sprite repositioning, mid-frame update |
-| Fire effect using a 4x4 intensity charset and a neighbour-average algorithm. | [fire.md](fire.md) | fire effect, flame, neighbour average, intensity charset |
-| Scroll vertically by inserting blank raster lines through bad-line suppression. | [fld.md](fld.md) | FLD, flexible line distance, vertical scroll, bad line suppression |
-| Per-line horizontal warp of a graphic by driving the memory pointers from a sine table. | [fpp.md](fpp.md) | FPP, stretcher, flexible pixel position, horizontal warp |
-| Render Julia and Mandelbrot sets with fixed-point iteration and lookup tables. | [fractals.md](fractals.md) | fractals, Julia set, Mandelbrot, fixed point iteration |
-| Colour flashing via background register cycling, and charset page-flip animation. | [misc.md](misc.md) | colour flashing, notewriter, cracktro, frame animation, page flipping |
-| Remove the top, bottom or side borders, and put sprites out there. | [open-borders.md](open-borders.md) | open borders, border removal, side border, sprites in border |
-| Flowing color patterns from summed sine waves, in character mode or as rasterbars. | [plasma.md](plasma.md) | plasma, sine sum, color cycling, FLI plasma |
-| Colored bars drawn by rewriting the border and background color each raster line. | [rasterbars.md](rasterbars.md) | rasterbars, color bars, raster splits, border color |
-| The X-ABC pseudo-random generator: 38 cycles, 28 bytes, 8- or 16-bit output. | [rng.md](rng.md) | RNG, PRNG, X-ABC, random numbers, fast random |
-| Horizontal, vertical and sine scrollers built on hardware fine-scroll plus char shifting. | [scrolltext.md](scrolltext.md) | scroller, scrolltext, fine scroll, sine scroller, greetings |
-| Show more than 8 sprites by recycling the hardware sprites down the raster. | [sprite-multiplexer.md](sprite-multiplexer.md) | sprite multiplexer, more than 8 sprites, sprite recycling, Y sort |
-| Redirect stub with effect-side notes; stable timing lives in the irq domain. | [stable-raster.md](stable-raster.md) | stable raster, redirect, effect timing |
-| Depth illusion from dots moving at tiered speeds, character- or sprite-based. | [starfield.md](starfield.md) | starfield, stars, parallax, depth illusion, ROL starfield |
-| Move a graphic in a horizontal sine wider than the 8-pixel hardware scroll limit. | [swing.md](swing.md) | swing, tech-tech, techtech, horizontal sine, wide scroll |
-| 3D wireframe and filled polygons: projection, depth sort, scanline fill. | [vectors.md](vectors.md) | vectors, 3D polygons, wireframe, painter's algorithm, scanline fill |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->
 
 ## related

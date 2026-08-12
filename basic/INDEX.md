@@ -22,20 +22,7 @@ source: c64ref
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| All 29 numbered BASIC V2 errors and the conditions that raise each. | [errors.md](errors.md) | BASIC errors, error messages, SYNTAX ERROR, ILLEGAL QUANTITY |
-| Complete short runnable BASIC V2 listings, as typed. | [examples.md](examples.md) | BASIC examples, runnable listings, sample programs |
-| BASIC V2 built-in functions with return types and argument constraints. | [functions.md](functions.md) | BASIC functions, string functions, numeric functions, return types |
-| Graphics and sound from BASIC via POKE and PEEK; BASIC V2 has no native commands. | [graphics-sound.md](graphics-sound.md) | POKE graphics, POKE sound, BASIC graphics, BASIC sound |
-| BASIC-level screen, keyboard and file I/O and the KERNAL calls beneath them. | [io.md](io.md) | PRINT, INPUT, GET, OPEN, file handling, BASIC I/O |
-| All 76 BASIC V2 keywords and operators with token byte, syntax and example. | [keywords.md](keywords.md) | BASIC keywords, statements, commands, reserved words |
-| Call machine code from BASIC with SYS, USR, and DATA/READ loaders. | [machine-code-bridge.md](machine-code-bridge.md) | SYS, USR, DATA loader, BASIC to ML, register passing |
-| How tokenized BASIC lines are stored as a linked list, and where the program starts. | [program-structure.md](program-structure.md) | program structure, line links, TXTTAB, tokenized storage |
-| Route to BASIC ROM routine addresses rather than copied listings. | [routines.md](routines.md) | BASIC routines, ROM entry points, interpreter routines |
-| The BASIC V2 token byte table and how tokenized text is encoded. | [tokens.md](tokens.md) | BASIC tokens, token table, tokenization, detokenize |
-| BASIC V2 variable types, naming rules, arrays, and the usual pitfalls. | [variables.md](variables.md) | BASIC variables, arrays, DIM, type suffix, naming rules |
-| BASIC interpreter vectors and zero-page workspace pointers. | [vectors.md](vectors.md) | BASIC vectors, interpreter hooks, workspace pointers, wedge |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->
 
 ## related

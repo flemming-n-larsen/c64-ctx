@@ -243,18 +243,36 @@ foreach ($group in ($pages | Group-Object Domain)) {
     $indexFull = Join-Path $repoRoot $indexRelative
     if (-not (Test-Path -LiteralPath $indexFull)) { continue }
 
+    $existing = (Get-Content -LiteralPath $indexFull -Raw) -replace "`r`n", "`n"
+
+    # The curated ## routes table is hand-written and carries cross-domain
+    # routes the generator cannot produce. This block is its complement: only
+    # the own-domain pages ## routes does not already reach, so the index is
+    # exhaustive without restating rows that already exist.
+    $curated = $existing
+    $curatedPattern = '(?s)' + [regex]::Escape($startMarker) + '.*?' + [regex]::Escape($endMarker)
+    $curated = [regex]::Replace($curated, $curatedPattern, '')
+
+    $uncovered = @($group.Group | Sort-Object Path | Where-Object {
+        $leaf = [IO.Path]::GetFileName($_.Path)
+        $curated -notmatch ('\(' + [regex]::Escape($leaf) + '\)')
+    })
+
     $block = [System.Collections.Generic.List[string]]::new()
     $block.Add($startMarker)
-    $block.Add('| answers | read | terms |')
-    $block.Add('|---|---|---|')
-    foreach ($page in ($group.Group | Sort-Object Path)) {
-        $leaf = [IO.Path]::GetFileName($page.Path)
-        $block.Add("| $(Format-Cell $page.Summary) | [$leaf]($leaf) | $(Format-Cell ($page.Keywords -join ', ')) |")
+    if ($uncovered.Count -eq 0) {
+        $block.Add('_Every page in this domain is reached from `## routes` above._')
+    }
+    else {
+        $block.Add('| answers | read | terms |')
+        $block.Add('|---|---|---|')
+        foreach ($page in $uncovered) {
+            $leaf = [IO.Path]::GetFileName($page.Path)
+            $block.Add("| $(Format-Cell $page.Summary) | [$leaf]($leaf) | $(Format-Cell ($page.Keywords -join ', ')) |")
+        }
     }
     $block.Add($endMarker)
     $blockText = $block -join "`n"
-
-    $existing = (Get-Content -LiteralPath $indexFull -Raw) -replace "`r`n", "`n"
     # (?s) is required: -match and Replace both default to '.' not spanning
     # newlines, and without it a second run appends a duplicate block.
     $pattern = '(?s)' + [regex]::Escape($startMarker) + '.*?' + [regex]::Escape($endMarker)

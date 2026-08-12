@@ -16,10 +16,7 @@ source: c64ref
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| All eight ECM/BMM/MCM bit combinations: enable bits, memory layout, color source per mode. | [screen-modes.md](screen-modes.md) | screen modes, bitmap mode, multicolor, hires, extended color mode |
-| Names and abbreviations for 31 software display techniques that exploit VIC-II timing. | [unofficial-modes.md](unofficial-modes.md) | unofficial modes, FLI family, technique names, mode abbreviations |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->
 
 ## related

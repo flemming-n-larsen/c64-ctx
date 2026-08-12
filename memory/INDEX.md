@@ -17,15 +17,7 @@ source: c64ref
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| The BASIC ROM window and what it hides when banked in. | [basic-rom.md](basic-rom.md) | BASIC ROM, banking, LORAM, RAM under ROM |
-| Reach the RAM cells beneath the processor port: read via VIC sprite, write via bus residue. | [hidden-ram.md](hidden-ram.md) | hidden RAM, RAM under I/O, bus residue, sprite read trick |
-| The I/O and character ROM window, and how CHAREN/HIRAM/LORAM decide what appears there. | [io-area.md](io-area.md) | I/O area, CHAREN, character ROM, banking window |
-| The KERNAL ROM window and the hardware vectors near the top of memory. | [kernal-rom.md](kernal-rom.md) | KERNAL ROM, hardware vectors, HIRAM, RAM under ROM |
-| Whole-machine address map; start here when an address is unknown. | [map.md](map.md) | memory map, address ranges, ROM RAM overlay, unknown address |
-| Named addresses and their aliases: processor port, BASIC and KERNAL workspace, vectors. | [symbols.md](symbols.md) | symbols, aliases, labels, workspace, vector table |
-| Who owns which zero-page bytes and which are safe for user code. | [zero-page.md](zero-page.md) | zero page, free bytes, KERNAL workspace, BASIC workspace |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->
 
 ## related

@@ -20,14 +20,7 @@ source: c64ref
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| What the VIC-II can see: 16 KB bank select, screen matrix and charset placement. | [memory-and-banking.md](memory-and-banking.md) | VIC bank, bank select, screen base, charset base, ROM holes |
-| Compute the bank and memory-pointer register values from one screen-address constant. | [quick-screen-setup.md](quick-screen-setup.md) | screen setup, bank calculation, bit arithmetic, alignment |
-| VIC-first route through the register block: control, raster IRQ, sprites, colors. | [registers.md](registers.md) | VIC registers, register block, mirroring, control registers |
-| Which ECM/BMM/MCM bit combination selects each hardware display mode. | [screen-modes.md](screen-modes.md) | screen modes, mode bits, bitmap mode, multicolor, hires |
-| The 9-bit raster counter, cycles per line, and the display-window timing model. | [timing.md](timing.md) | raster timing, raster counter, cycles per line, display window |
-| NTSC and PAL VIC-II revisions: raster lines, cycles, frame rate, palette differences. | [variants.md](variants.md) | chip variants, NTSC vs PAL, 6567, 6569, 8565, revision |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->
 
 ## related

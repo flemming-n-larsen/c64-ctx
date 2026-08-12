@@ -19,16 +19,7 @@ source: codebase64.net
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| Clean ADSR retrigger for fast notes by scheduling a two-frame hard restart. | [hard-restart.md](hard-restart.md) | hard restart, ADSR retrigger, envelope reset, LFSR prescaler |
-| Call a tune's init once and its play once per frame from a stable IRQ. | [irq-music-player.md](irq-music-player.md) | music player, IRQ playback, play routine, frame rate call |
-| Place tune code and data safely around the I/O window and ROM banking. | [music-memory-banking.md](music-memory-banking.md) | music banking, ghost registers, load address, I/O window clash |
-| Per-frame tune effects: arpeggio, vibrato and portamento over SID frequency writes. | [music-patterns.md](music-patterns.md) | arpeggio, vibrato, portamento, pitch glide, tune effects |
-| Keep a tune at the right tempo on both PAL and NTSC machines. | [pal-ntsc-playback.md](pal-ntsc-playback.md) | PAL NTSC, playback speed, timer values, tempo correction |
-| How tracker output packs patterns, instruments and sequences, using JCH as the worked case. | [player-file-formats.md](player-file-formats.md) | tracker format, JCH, pattern data, sequence bytes, player layout |
-| The PSID and RSID container format: header fields, byte order, payload loading. | [sid-file-format.md](sid-file-format.md) | SID file, PSID, RSID, HVSC, container header |
-| Wire a compiled tune into your program: init and play entry points, banking, payload. | [tune-integration.md](tune-integration.md) | tune integration, init routine, embedded tune, player entry points |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->
 
 ## related

@@ -15,11 +15,7 @@ source: c64ref
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| Runtime sprite techniques combining raster IRQ timing with per-line register updates. | [advanced.md](advanced.md) | DYSP, multiplexer, sprite stretching, sprite underlay, border sprites |
-| Getting a sprite on screen: 64-byte alignment, pointer, position, color, enable order. | [display.md](display.md) | sprite setup, sprite pointer, visible range, multicolor sprite |
-| Sprite register families: position, enable, color, expand, priority, collision. | [registers.md](registers.md) | sprite registers, collision, priority, expansion, X MSB |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->
 
 ## related

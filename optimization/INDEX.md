@@ -21,11 +21,5 @@ source: codebase64.net
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| Advanced cycle savers: branch cost, illegal opcodes, carry reuse, page alignment. | [advanced.md](advanced.md) | advanced optimization, cycle saving, page crossing, register conservation |
-| When unrolling a loop pays for itself, and when it does not. | [loop-unrolling.md](loop-unrolling.md) | loop unrolling, unrolled loop, loop overhead, size vs speed |
-| Save bytes by reusing KERNAL routines for their side effects. | [sizecoding.md](sizecoding.md) | sizecoding, byte saving, small binary, KERNAL side effects |
-| Reduce rastertime: opcode cycle costs, KERNAL avoidance, call overhead. | [speed.md](speed.md) | speed optimization, rastertime, cycle counting, KERNAL avoidance |
-| Generate unrolled code at runtime, and when a generator beats pre-generated code. | [speedcode.md](speedcode.md) | speedcode, runtime code generation, code generator, self-modifying |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->

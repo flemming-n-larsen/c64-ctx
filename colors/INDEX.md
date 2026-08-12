@@ -14,10 +14,7 @@ source: c64ref
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| Which VIC-II color pairs share a luma step and therefore mix without visible banding. | [luma-clusters.md](luma-clusters.md) | luma clusters, banding, dithering, ALM, DCM, color mixing |
-| The 16 C64 color indices with names, luma level, and RGB approximation. | [palette.md](palette.md) | color numbers, palette, RGB values, color RAM nibble |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->
 
 ## related

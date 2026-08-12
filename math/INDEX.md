@@ -20,18 +20,7 @@ source: codebase64.net
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| Multi-byte addition and subtraction chained from ADC and SBC. | [add-sub.md](add-sub.md) | 16-bit add, 16-bit subtract, multi-byte arithmetic, carry chain |
-| Compare 8- and 16-bit values, signed and unsigned, and read the flags right. | [compare.md](compare.md) | compare, signed comparison, 16-bit compare, flag results |
-| Software division on 6502: shift-and-subtract, and divide by a constant. | [divide.md](divide.md) | divide, division routine, shift and subtract, divide by constant |
-| Integer powers by repeated multiplication or table-assisted methods. | [exponentiation.md](exponentiation.md) | exponentiation, power function, raise to power |
-| Fixed-point arithmetic, two's complement, and signed versus unsigned representation. | [fixed-point.md](fixed-point.md) | fixed point, two's complement, fractional arithmetic, signed values |
-| The 5-byte KERNAL/BASIC floating-point library and its ROM entry points. | [float.md](float.md) | floating point, FAC, ROM float routines, Rankin library |
-| Generate and use an 8-bit logarithm table, or call the ROM LOG entry. | [logarithm.md](logarithm.md) | logarithm, log table, table generator |
-| Software multiplication: shift-add, and the fast square-table identity. | [multiply.md](multiply.md) | multiply, multiplication routine, square table, shift and add |
-| Integer square root by iteration or table lookup, 16- and 24-bit. | [sqrt.md](sqrt.md) | square root, sqrt, Newton-Raphson, table lookup |
-| Sine and cosine tables, 8-bit atan2, CORDIC, and distance approximation. | [trig.md](trig.md) | sine table, cosine, atan2, CORDIC, distance approximation |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->
 
 ## related

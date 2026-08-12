@@ -18,11 +18,7 @@ source: c64ref
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| How the C64's 6510 differs from a plain 6502: the on-chip I/O port and clock speed. | [6510.md](6510.md) | 6510, processor port, CPU identity, clock speed |
-| Identify NMOS 6502, 65C02, or 65816 at runtime from opcode behavior differences. | [detect-cpu.md](detect-cpu.md) | CPU detection, 65C02, 65816, NMOS, runtime probe |
-| Silent 6502 coding mistakes: missing #, DOKE byte order, self-modifying label offsets. | [pitfalls.md](pitfalls.md) | pitfalls, DOKE, self-modifying code, silent bug, immediate mode |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->
 
 ## related

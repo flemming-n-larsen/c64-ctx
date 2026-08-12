@@ -18,16 +18,7 @@ source: assembler-docs
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| 64tass directives, output options and label scoping. | [64tass.md](64tass.md) | 64tass, directives, output options, label scoping |
-| ACME directives, expressions and output formats. | [acme.md](acme.md) | ACME, directives, pseudo opcodes, output formats |
-| Buddy, a resident C64 assembler: directives and its label and macro limits. | [buddy.md](buddy.md) | Buddy assembler, resident assembler, native assembler, label limit |
-| CA65 directives, segments and the ld65 linker configuration. | [ca65.md](ca65.md) | ca65, cc65, ld65, segments, linker config |
-| Assembler-agnostic patterns: prg load address, BASIC SYS stub, KERNAL calls. | [common-patterns.md](common-patterns.md) | common patterns, SYS stub, prg header, boilerplate |
-| KickAssembler directives, macros and its scripting language. | [kickassembler.md](kickassembler.md) | KickAssembler, KickAss, scripting, macros, pseudo commands |
-| MADS cross-assembler directives, macros and invocation. | [mads.md](mads.md) | MADS, cross-assembler, directives, invocation |
-| Side-by-side equivalence of the same construct across four assemblers. | [rosetta.md](rosetta.md) | rosetta, syntax translation, assembler comparison, porting source |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->
 
 ## related

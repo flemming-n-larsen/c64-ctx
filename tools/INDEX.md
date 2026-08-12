@@ -20,15 +20,7 @@ source: codebase64.net
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| Compressors that pack a prg and decrunch it at load time, cross and native. | [crunchers.md](crunchers.md) | crunchers, Exomizer, Pucrunch, ByteBoozer, packer |
-| Tools for disassembling and analysing a C64 binary. | [disassemblers.md](disassemblers.md) | disassemblers, IDA Pro, Regenerator, binary analysis |
-| C64 emulators for PC and which build is cycle-exact. | [emulators.md](emulators.md) | emulators, VICE, x64sc, HOXS64, CCS64 |
-| Editors for charsets, tiles, sprites and bitmap graphics. | [graphics-editors.md](graphics-editors.md) | graphics editors, CharPad, SpritePad, Pixcen, pixel editor |
-| SID trackers and composition tools, cross-platform and native. | [music-editors.md](music-editors.md) | music editors, GoatTracker, CheeseCutter, trackers, SID composer |
-| Assemblers, packers and linkers that run on the C64 itself. | [native-tools.md](native-tools.md) | native tools, Turbo Assembler, TMPx, on-machine development |
-| Moving files between a PC and real C64 hardware. | [transfer.md](transfer.md) | file transfer, Final Replay, Codenet, RR-net, real hardware |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->
 
 ## related

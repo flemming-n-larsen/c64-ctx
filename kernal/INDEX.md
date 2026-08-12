@@ -16,14 +16,7 @@ source: c64ref
 
 ## pages
 <!-- GENERATED:routes -->
-| answers | read | terms |
-|---|---|---|
-| Load, save, open, close and channel I/O through the KERNAL, in call order. | [file-io.md](file-io.md) | file I/O, SETLFS, SETNAM, LOAD, SAVE, channels |
-| Every KERNAL jump table entry with address and category; a route table, not contracts. | [jump-table.md](jump-table.md) | jump table, KERNAL API, entry points, call addresses |
-| KERNAL character I/O calls for keyboard and screen, versus direct screen writes. | [keyboard-screen.md](keyboard-screen.md) | GETIN, CHRIN, CHROUT, screen editor, character I/O |
-| KERNAL calls that report or move the memory boundaries used by BASIC and the OS. | [memory.md](memory.md) | MEMBOT, MEMTOP, memory boundaries, KERNAL memory calls |
-| Low-level IEC serial bus calls for talking to drives and printers directly. | [serial-bus.md](serial-bus.md) | serial bus, IEC, LISTEN, TALK, ACPTR, CIOUT |
-| KERNAL jiffy clock, timer, IRQ restoration and stop-key services. | [time-irq.md](time-irq.md) | jiffy clock, RDTIM, SETTIM, stop key, IRQ restore |
+_Every page in this domain is reached from `## routes` above._
 <!-- /GENERATED:routes -->
 
 ## related

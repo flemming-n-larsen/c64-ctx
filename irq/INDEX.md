@@ -18,10 +18,7 @@ source: codebase64.net
 <!-- GENERATED:routes -->
 | answers | read | terms |
 |---|---|---|
-| Stack-slice context switching to run several bounded tasks from one interrupt. | [cooperative-threads.md](cooperative-threads.md) | cooperative threads, scheduler, context switch, stack slice |
-| IRQ and NMI sources, the I flag, and the KERNAL and page-3 interrupt vectors. | [overview.md](overview.md) | interrupts, NMI, IRQ vectors, I flag, page 3 vectors |
 | Install a VIC-II raster IRQ: vectors, enable bits, acknowledge, KERNAL coexistence. | [raster-interrupt.md](raster-interrupt.md) | raster interrupt, raster IRQ, acknowledge, KERNAL coexistence |
-| Remove IRQ entry jitter for cycle-exact raster effects using double-IRQ sync. | [stable-timing.md](stable-timing.md) | stable raster, jitter, double IRQ, cycle exact, raster sync |
 <!-- /GENERATED:routes -->
 
 ## related
