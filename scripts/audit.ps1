@@ -64,7 +64,7 @@ foreach ($file in $markdownFiles) {
     if ($null -eq $content) { $content = '' }
     $scanContent = Get-ContentWithoutFences $content
 
-    if ($relative -notin @('README.md', 'ATTRIBUTION.md')) {
+    if ($relative -notin @('README.md', 'ATTRIBUTION.md', 'PLAN.md')) {
         $metadata = Get-FrontMatter $content
         if (-not $metadata.ContainsKey('type')) { Add-AuditError "${relative}: missing front-matter type" }
         if (-not $metadata.ContainsKey('domain')) { Add-AuditError "${relative}: missing front-matter domain" }
@@ -115,7 +115,7 @@ foreach ($file in $markdownFiles) {
 
 foreach ($file in $markdownFiles) {
     $relative = [IO.Path]::GetRelativePath($repoRoot, $file.FullName).Replace('\', '/')
-    if ($file.Name -in @('INDEX.md', 'README.md', 'AGENTS.md', 'STYLE.md', 'ATTRIBUTION.md')) { continue }
+    if ($file.Name -in @('INDEX.md', 'README.md', 'AGENTS.md', 'STYLE.md', 'ATTRIBUTION.md', 'PLAN.md')) { continue }
     if ($relative -in $orphanAllowList) { continue }
     if (-not $linkedFiles.Contains($file.FullName)) {
         Add-AuditError "${relative}: factual page has no inbound local link"
