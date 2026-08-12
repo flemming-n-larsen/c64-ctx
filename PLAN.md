@@ -25,7 +25,7 @@ One hop instead of three; 6–8 KB instead of 26 KB; jargon resolves without gue
 | `INDEX.md` | hand-written, ~6.7 KB | whole-read entry for agents without text search |
 | `ROUTE.md` | generated, ~38 KB | grep entry: page, summary, keywords |
 | `SYMBOLS.md` | generated, ~18 KB | grep entry: `$`-address / KERNAL symbol → page |
-| `*/INDEX.md` | `## routes` generated between markers, `## related` hand-written | domain fallback, now exhaustive |
+| `*/INDEX.md` | `## routes` and `## related` hand-written; `## pages` generated between markers | domain fallback; the generated block covers whatever `## routes` misses, so the index is exhaustive |
 
 `ROUTE.md` is a grep target and MUST NOT be read whole — 210 rows is larger than today's root index. Slimming `INDEX.md` is what keeps the no-search path fast.
 
