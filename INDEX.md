@@ -7,91 +7,64 @@ source: c64ref
 ## quick-route
 | need | read first | then read | notes |
 |---|---|---|---|
-| Memory map, zero page, ROM/RAM areas | [memory/INDEX.md](memory/INDEX.md) | [concepts/memory-banking.md](concepts/memory-banking.md) | Agents MUST prefer focused memory pages over broad source files. |
-| KERNAL calls, jump table, file I/O | [kernal/INDEX.md](kernal/INDEX.md) | [tasks/load-save-file.md](tasks/load-save-file.md) | Agents SHOULD cite local KERNAL pages and route upstream provenance through [sources/INDEX.md](sources/INDEX.md). |
-| CPU registers, flags, opcodes | [cpu/6502/INDEX.md](cpu/6502/INDEX.md) | [cpu/6502/instruction-set.md](cpu/6502/instruction-set.md) | `6502` data SHOULD be treated as CPU-family scoped, not C64-only. |
-| VIC-II overview: registers, banks, timing, modes | [vic/INDEX.md](vic/INDEX.md) | [io/vic-ii.md](io/vic-ii.md) | VIC discovery hub that routes to hardware, timing, memory, color, and mode pages. |
-| VIC-II chip variant (NTSC vs PAL, 6567/6569/8562/8565 etc.) | [vic/variants.md](vic/variants.md) | [vic/timing.md](vic/timing.md) | Raster line counts, cycles/line, fps, and palette differences by chip revision. |
-| Interrupts, raster timing, stable sync, IRQ-driven flow | [irq/INDEX.md](irq/INDEX.md) | [io/INDEX.md](io/INDEX.md) | Canonical route for interrupt-generic guidance; consumer pages in music/effects/kernal link here. |
-| Sprite setup, sprite registers, DYSP, multiplexers | [sprites/INDEX.md](sprites/INDEX.md) | [tasks/sprite-display.md](tasks/sprite-display.md) | Sprite discovery hub that routes to setup, behavior, effects, and examples. |
-| VIC-II, CIA, I/O registers | [io/INDEX.md](io/INDEX.md) | [memory/io-area.md](memory/io-area.md) | Agents MUST account for banking at `$D000-$DFFF`. |
-| D64/D71/D81 disk image format (track/sector layout, BAM, directory) | [io/disk-formats.md](io/disk-formats.md) | [kernal/file-io.md](kernal/file-io.md) | On-disk format for 1541/1571/1581 disk images; needed for image tools and custom DOS. |
-| SID chip programming | [sid/INDEX.md](sid/INDEX.md) | [io/INDEX.md](io/INDEX.md) | Registers, waveforms, note recipes, freq tables, filter, chip detection. |
-| Music players, tune integration, tracker formats | [music/INDEX.md](music/INDEX.md) | [sid/INDEX.md](sid/INDEX.md) | IRQ players, banking/load-address concerns, PAL/NTSC playback, music-layer formats. |
-| BASIC or KERNAL ROM routine locations | [rom/INDEX.md](rom/INDEX.md) | [basic/INDEX.md](basic/INDEX.md) | ROM pages are compact routing aids, not full disassemblies. |
-| PETSCII, screen codes, keyboard matrix | [charset/INDEX.md](charset/INDEX.md) | [concepts/character-sets.md](concepts/character-sets.md) | Agents MUST distinguish PETSCII from screen codes. |
-| C64 color numbers and palette | [colors/INDEX.md](colors/INDEX.md) | [io/vic-ii.md](io/vic-ii.md) | Color references SHOULD cite both charset palette and colors UI sources when applicable. |
-| Practical programming recipe | [tasks/INDEX.md](tasks/INDEX.md) | Matching domain pages | Task pages MUST link to supporting facts rather than duplicate long tables. |
-| VIC-II screen/graphics modes, enable bits, color sources | [graphics/INDEX.md](graphics/INDEX.md) | [io/vic-ii.md](io/vic-ii.md) | All 8 ECM/BMM/MCM mode combinations; memory layout and color sources per mode. |
-| Display mode technique spec (ECM, FLI, IFLI, NUFLI, ECI, PRS, etc.) | [display-modes/INDEX.md](display-modes/INDEX.md) | [vic/screen-modes.md](vic/screen-modes.md) | Per-mode specs for unofficial picture formats plus a standalone ECM deep dive. |
-| Demo/game effect technique | [effects/INDEX.md](effects/INDEX.md) | [tasks/INDEX.md](tasks/INDEX.md) | Effect pages combine task recipes and I/O facts into named effect patterns. |
-| Game development (tile maps, scrolling, frameskip, high scores, scoring) | [game/INDEX.md](game/INDEX.md) | [tasks/game-loop.md](tasks/game-loop.md) | Game hub routes to both new game/ pages and existing effects/, sprites/, tasks/ pages. |
-| 6502 math: multiply, divide, trig, fixed-point, float | [math/INDEX.md](math/INDEX.md) | [math/multiply.md](math/multiply.md) | Arithmetic operations — no native multiply/divide on 6502. |
-| Algorithms: sort, RNG, number conversion, compression, 3D | [algorithms/INDEX.md](algorithms/INDEX.md) | Matching algorithm page | PRNG, sorting, hex/decimal conversion, LZ/RLE compression, 3D math. |
-| Assembler syntax, directives, build patterns | [asm/INDEX.md](asm/INDEX.md) | [asm/rosetta.md](asm/rosetta.md) | Covers ACME, KickAssembler, CA65 (cc65), 64tass, Buddy, MADS. |
-| Speed optimization: rastertime, cycle counting, loop unrolling, illegal opcodes | [optimization/INDEX.md](optimization/INDEX.md) | [optimization/speed.md](optimization/speed.md) | KERNAL avoidance, opcode cycle table, advanced tricks, speedcode, sizecoding. |
-| Common 6502 coding pitfalls | [cpu/pitfalls.md](cpu/pitfalls.md) | — | DOKE byte order, addressing mode `#` omission, self-mod label offsets. |
-| Detect CPU type at runtime (NMOS 6502 / 65C02 / 65816) | [cpu/detect-cpu.md](cpu/detect-cpu.md) | — | Uses `$1A`/`XBA`/`$3A` opcode behavior differences. |
-| Hidden RAM beneath `$00`/`$01` | [memory/hidden-ram.md](memory/hidden-ram.md) | — | Read via VIC sprite; write via bus residue timing. |
-| Build/run `.prg` on PC (VICE, assembler workflows) | [toolchains/INDEX.md](toolchains/INDEX.md) | [toolchains/vice.md](toolchains/vice.md) | Editor-neutral workflows for ACME, KickAssembler, CA65, 64tass, CBM prg Studio. |
-| Tools: crunchers, graphics editors, music editors, emulators, transfer | [tools/INDEX.md](tools/INDEX.md) | Matching tool page | Cross-platform and native C64 development tools; most-used list from codebase64.net. |
-| Complete runnable program examples | [examples/INDEX.md](examples/INDEX.md) | Matching `basic/`, `asm/`, `toolchains/` pages | BASIC listings + per-assembler buildable `.prg` examples; each cites its reference pages. |
-
-## domains
-| domain | read | contains | provenance route |
-|---|---|---|---|
-| `concepts` | [concepts/INDEX.md](concepts/INDEX.md) | Cross-domain constraints: banking, screen memory, zero page, character sets, bad lines, optimization | [sources/INDEX.md](sources/INDEX.md) |
-| `irq` | [irq/INDEX.md](irq/INDEX.md) | Canonical interrupt domain: IRQ/NMI overview, raster setup, stable timing, cooperative IRQ-driven flow | [sources/INDEX.md](sources/INDEX.md) |
-| `cpu` | [cpu/INDEX.md](cpu/INDEX.md) | CPU-family route plus `6502` subdomain | [sources/INDEX.md](sources/INDEX.md) |
-| `memory` | [memory/INDEX.md](memory/INDEX.md) | C64 address map, symbols, zero page, ROM/RAM/I/O regions | [sources/INDEX.md](sources/INDEX.md) |
-| `io` | [io/INDEX.md](io/INDEX.md) | Processor port, VIC-II, CIA1, CIA2, color RAM | [sources/INDEX.md](sources/INDEX.md) |
-| `vic` | [vic/INDEX.md](vic/INDEX.md) | Curated VIC-II discovery hub: hardware, banking, timing, modes, color context, sprite handoff | [sources/INDEX.md](sources/INDEX.md) |
-| `sprites` | [sprites/INDEX.md](sprites/INDEX.md) | Curated sprite hub: registers, display setup, collisions, border usage, advanced effects, examples | [sources/INDEX.md](sources/INDEX.md) |
-| `sid` | [sid/INDEX.md](sid/INDEX.md) | SID registers, waveforms, frequency calculation/tables, filter, chip detection, digi samples, hardware issues | codebase64.net — CC BY-NC-SA 4.0 |
-| `music` | [music/INDEX.md](music/INDEX.md) | IRQ players, tune integration, banking/load-address constraints, playback timing, music patterns, tracker/player formats | codebase64.net — CC BY-NC-SA 4.0 |
-| `kernal` | [kernal/INDEX.md](kernal/INDEX.md) | KERNAL jump table and API families | [sources/INDEX.md](sources/INDEX.md) |
-| `basic` | [basic/INDEX.md](basic/INDEX.md) | BASIC tokens, vectors, routine routes | [sources/INDEX.md](sources/INDEX.md) |
-| `rom` | [rom/INDEX.md](rom/INDEX.md) | BASIC/KERNAL ROM disassembly routes | [sources/INDEX.md](sources/INDEX.md) |
-| `charset` | [charset/INDEX.md](charset/INDEX.md) | PETSCII, screen codes, controls, keyboard matrix | [sources/INDEX.md](sources/INDEX.md) |
-| `colors` | [colors/INDEX.md](colors/INDEX.md) | C64 color lookup and palette routes | [sources/INDEX.md](sources/INDEX.md) |
-| `tasks` | [tasks/INDEX.md](tasks/INDEX.md) | Agent recipes for common programming goals | Cross-domain derived pages |
-| `asm` | [asm/INDEX.md](asm/INDEX.md) | Assembler-specific syntax for ACME, KickAssembler, CA65, 64tass, Buddy, MADS; cross-assembler rosetta; common patterns | Assembler-specific upstream docs |
-| `toolchains` | [toolchains/INDEX.md](toolchains/INDEX.md) | VICE emulator workflow and per-assembler source-to-`.prg` build workflows; CBM prg Studio | Tool-specific upstream docs |
-| `graphics` | [graphics/INDEX.md](graphics/INDEX.md) | VIC-II screen mode reference: all 8 ECM/BMM/MCM combinations, memory layout, color sources | c64-wiki.com |
-| `display-modes` | [display-modes/INDEX.md](display-modes/INDEX.md) | Display mode technique specs plus standalone ECM routing: FLI, IFLI, NUFLI, UFLI, ECI, HCB, PRS, and more | c64-wiki.com (GFDL) + codebase64.net (CC BY-NC-SA 4.0) + kodiak64.co.uk |
-| `effects` | [effects/INDEX.md](effects/INDEX.md) | Demo/game effect technique recipes: border tricks, rasterbars, scrollers, FLD, DYCP, DYSP, sprite multiplexer, fire, starfield, plasma, RNG | codebase64.net — CC BY-NC-SA 4.0 |
-| `game` | [game/INDEX.md](game/INDEX.md) | Tile maps, multidirectional scrolling, frameskipping, high scores, scoring mechanics; routes to effects/, sprites/, tasks/ for already-covered sub-topics | codebase64.net — CC BY-NC-SA 4.0 |
-| `math` | [math/INDEX.md](math/INDEX.md) | 6502 arithmetic: compare, add/sub, multiply, divide, sqrt, trig, fixed-point, float, logarithm, exponentiation | codebase64.net — CC BY-NC-SA 4.0 |
-| `algorithms` | [algorithms/INDEX.md](algorithms/INDEX.md) | General-purpose algorithms: sorting, PRNG, number conversion, compression, 3D math | codebase64.net — CC BY-NC-SA 4.0 |
-| `optimization` | [optimization/INDEX.md](optimization/INDEX.md) | Speed and size optimization: cycle reduction, loop unrolling, runtime code generation, KERNAL sizecoding tricks | codebase64.net — CC BY-NC-SA 4.0 |
-| `examples` | [examples/INDEX.md](examples/INDEX.md) | Complete runnable BASIC and per-assembler programs with build/run invocations | Cross-domain derived pages |
-| `sources` | [sources/INDEX.md](sources/INDEX.md) | Source corpus map and provenance policy | Upstream GitHub fallback links |
-| `tools` | [tools/INDEX.md](tools/INDEX.md) | Most-used C64 development tools: crunchers, graphics editors, music editors, emulators, native tools, transfer | codebase64.net — CC BY-NC-SA 4.0 |
-
-## source-map
-| coverage route | local domains | status | notes |
-|---|---|---|---|
-| [cpu/6502/INDEX.md](cpu/6502/INDEX.md) | `cpu/6502` | used | Local CPU pages cover registers, flags, mnemonics, operations, and undocumented caveats. |
-| [memory/INDEX.md](memory/INDEX.md) | `memory`, `concepts`, `basic`, `rom`, `io` | used | Local memory pages cover address ranges, symbols, aliases, and ROM/RAM constraints. |
-| [io/INDEX.md](io/INDEX.md) | `io`, `tasks`, `irq` | used | Local I/O pages cover register ranges and bit-level hardware fields. |
-| [irq/INDEX.md](irq/INDEX.md) | `irq`, `effects`, `music`, `kernal`, `tasks` | used | Local interrupt pages centralize generic IRQ/NMI concepts, timing, and flow before consumer-specific routes. |
-| [vic/INDEX.md](vic/INDEX.md) | `vic`, `io`, `graphics`, `concepts`, `tasks`, `colors`, `display-modes` | used | Local VIC routing gathers the main hardware, timing, banking, and screen-mode entry points. |
-| [sprites/INDEX.md](sprites/INDEX.md) | `sprites`, `io`, `tasks`, `effects`, `display-modes`, `examples` | used | Local sprite routing gathers hardware setup, placement, advanced runtime techniques, and runnable examples. |
-| [kernal/INDEX.md](kernal/INDEX.md) | `kernal`, `tasks` | used | Local KERNAL pages cover jump addresses, call preparation, returns, and affected registers. |
-| [rom/INDEX.md](rom/INDEX.md) | `rom`, `basic`, `kernal` | used | Local ROM pages provide route/provenance material, not full copied listings. |
-| [charset/INDEX.md](charset/INDEX.md) | `charset`, `colors`, `tasks` | used | Local charset pages cover keyboard, PETSCII/control, chargen, and palette facts. |
-| [colors/INDEX.md](colors/INDEX.md) | `colors` | used | Local color pages cover color names, indices, and palette intent. |
-| [sources/INDEX.md](sources/INDEX.md) | all domains | provenance | Central upstream fallback route for `mist64/c64ref`. |
+| C64 address map, ROM/RAM areas | [memory/map.md](memory/map.md) | [concepts/memory-banking.md](concepts/memory-banking.md) | Prefer focused memory pages over broad source files. |
+| Zero page usage and free bytes | [memory/zero-page.md](memory/zero-page.md) | [concepts/zero-page.md](concepts/zero-page.md) | KERNAL/BASIC ownership decides what is safe to use. |
+| Hidden RAM beneath `$00`/`$01` | [memory/hidden-ram.md](memory/hidden-ram.md) | [io/processor-port.md](io/processor-port.md) | Read via VIC sprite; write via bus residue timing. |
+| KERNAL calls, jump table, file I/O | [kernal/jump-table.md](kernal/jump-table.md) | [kernal/file-io.md](kernal/file-io.md) | Call contracts include inputs, outputs, errors, clobbers. |
+| Load or save a file from machine code | [tasks/load-save-file.md](tasks/load-save-file.md) | [kernal/file-io.md](kernal/file-io.md) | `SETLFS`/`SETNAM`/`LOAD`/`SAVE` sequence. |
+| CPU registers, flags, opcodes | [cpu/6502/instruction-set.md](cpu/6502/instruction-set.md) | [cpu/6502/registers-flags.md](cpu/6502/registers-flags.md) | `6502` data is CPU-family scoped, not C64-only. |
+| Undocumented / illegal opcodes | [cpu/6502/illegal-opcodes.md](cpu/6502/illegal-opcodes.md) | [optimization/advanced.md](optimization/advanced.md) | NMOS-only; unstable on 65C02/65816. |
+| Common 6502 coding pitfalls | [cpu/pitfalls.md](cpu/pitfalls.md) | — | DOKE byte order, `#` omission, self-mod label offsets. |
+| Detect CPU type at runtime | [cpu/detect-cpu.md](cpu/detect-cpu.md) | — | Uses `$1A`/`XBA`/`$3A` opcode behavior differences. |
+| VIC-II registers and bit fields | [io/vic-ii.md](io/vic-ii.md) | [vic/INDEX.md](vic/INDEX.md) | Account for banking at `$D000-$DFFF`. |
+| VIC-II bank select, screen/charset placement | [vic/memory-and-banking.md](vic/memory-and-banking.md) | [io/cia2.md](io/cia2.md) | Bank via `$DD00`; layout via `$D018`. |
+| Raster timing, cycles per line, bad lines | [vic/timing.md](vic/timing.md) | [concepts/vic-bad-lines.md](concepts/vic-bad-lines.md) | Bad lines steal 40-43 cycles from the CPU. |
+| VIC-II chip variant (NTSC vs PAL, 6567/6569/8562/8565) | [vic/variants.md](vic/variants.md) | [vic/timing.md](vic/timing.md) | Raster counts, cycles/line, fps, palette by revision. |
+| Interrupts, IRQ/NMI vectors | [irq/overview.md](irq/overview.md) | [irq/raster-interrupt.md](irq/raster-interrupt.md) | Canonical route for interrupt-generic guidance. |
+| Install a raster interrupt | [irq/raster-interrupt.md](irq/raster-interrupt.md) | [irq/stable-timing.md](irq/stable-timing.md) | Setup, acknowledge rules, KERNAL coexistence. |
+| Stable raster / remove jitter | [irq/stable-timing.md](irq/stable-timing.md) | [effects/stable-raster.md](effects/stable-raster.md) | Double-IRQ sync and cycle-budget constraints. |
+| Sprite setup, positioning, color | [tasks/sprite-display.md](tasks/sprite-display.md) | [sprites/registers.md](sprites/registers.md) | 9-bit X; data MUST be 64-byte aligned. |
+| More than 8 sprites (multiplexer) | [effects/sprite-multiplexer.md](effects/sprite-multiplexer.md) | [sprites/advanced.md](sprites/advanced.md) | Reuse sprite slots down the raster. |
+| CIA timers, keyboard scan, joystick | [io/cia1.md](io/cia1.md) | [io/joystick.md](io/joystick.md) | CIA1 IRQ; CIA2 NMI and VIC bank. |
+| Read the keyboard | [tasks/read-keyboard.md](tasks/read-keyboard.md) | [charset/keyboard-matrix.md](charset/keyboard-matrix.md) | KERNAL `GETIN` vs direct matrix scan. |
+| Mouse, paddles, light pen | [io/pointing-devices.md](io/pointing-devices.md) | [io/mouse-1351.md](io/mouse-1351.md) | 1351 proportional mode vs joystick mode. |
+| D64/D71/D81 disk image format | [io/disk-formats.md](io/disk-formats.md) | [kernal/file-io.md](kernal/file-io.md) | Track/sector layout, BAM, directory. |
+| Serial bus, fast loaders, tape | [io/disk-tape-io.md](io/disk-tape-io.md) | [io/fast-loaders.md](io/fast-loaders.md) | IEC protocol and custom transfer routines. |
+| SID registers, waveforms, envelope | [sid/registers.md](sid/registers.md) | [sid/waveforms.md](sid/waveforms.md) | ADSR, gate, ring modulation, sync. |
+| Play a note / build a frequency table | [sid/play-note.md](sid/play-note.md) | [sid/frequency-table.md](sid/frequency-table.md) | PAL and NTSC tables differ. |
+| Music player integration, hard restart | [music/irq-music-player.md](music/irq-music-player.md) | [music/hard-restart.md](music/hard-restart.md) | IRQ players, banking and load-address concerns. |
+| BASIC or KERNAL ROM routine locations | [rom/basic-disassembly.md](rom/basic-disassembly.md) | [rom/kernal-disassembly.md](rom/kernal-disassembly.md) | Compact routing aids, not full disassemblies. |
+| BASIC V2 keywords, functions, tokens | [basic/keywords.md](basic/keywords.md) | [basic/tokens.md](basic/tokens.md) | Distinguish token bytes from PETSCII. |
+| Call machine code from BASIC (`SYS`) | [basic/machine-code-bridge.md](basic/machine-code-bridge.md) | [tasks/program-entrypoints.md](tasks/program-entrypoints.md) | Load address, `SYS` stub, parameter passing. |
+| PETSCII, screen codes, control codes | [charset/petscii.md](charset/petscii.md) | [charset/screen-codes.md](charset/screen-codes.md) | PETSCII and screen codes are different code spaces. |
+| Custom character set | [tasks/custom-charset.md](tasks/custom-charset.md) | [concepts/character-sets.md](concepts/character-sets.md) | Charset base via `$D018`; avoid the ROM holes. |
+| C64 color numbers and palette | [colors/palette.md](colors/palette.md) | [colors/luma-clusters.md](colors/luma-clusters.md) | Luma clusters govern which pairs mix cleanly. |
+| VIC-II screen modes, enable bits, color sources | [graphics/screen-modes.md](graphics/screen-modes.md) | [vic/screen-modes.md](vic/screen-modes.md) | All 8 ECM/BMM/MCM combinations. |
+| Unofficial picture mode spec (FLI, IFLI, NUFLI, ECI, PRS…) | [display-modes/INDEX.md](display-modes/INDEX.md) | [graphics/unofficial-modes.md](graphics/unofficial-modes.md) | Per-mode specs for unofficial picture formats. |
+| Demo/game effect technique | [effects/INDEX.md](effects/INDEX.md) | [tasks/INDEX.md](tasks/INDEX.md) | Named effect patterns built on task and I/O facts. |
+| Open the borders | [effects/open-borders.md](effects/open-borders.md) | [irq/stable-timing.md](irq/stable-timing.md) | Top/bottom and side border removal. |
+| Scrolling text and character scrollers | [effects/scrolltext.md](effects/scrolltext.md) | [effects/dycp.md](effects/dycp.md) | Smooth scroll via `$D016`/`$D011`. |
+| Game loop, tile maps, scrolling, score | [game/INDEX.md](game/INDEX.md) | [tasks/game-loop.md](tasks/game-loop.md) | Routes to game/, effects/, sprites/, tasks/. |
+| 6502 math: multiply, divide, trig, fixed-point | [math/multiply.md](math/multiply.md) | [math/INDEX.md](math/INDEX.md) | No native multiply/divide on 6502. |
+| Algorithms: sort, RNG, conversion, compression, 3D | [algorithms/INDEX.md](algorithms/INDEX.md) | Matching algorithm page | PRNG, sorting, hex/decimal, LZ/RLE, 3D math. |
+| Speed optimization, cycle counting, unrolling | [optimization/speed.md](optimization/speed.md) | [optimization/advanced.md](optimization/advanced.md) | KERNAL avoidance, cycle table, speedcode. |
+| Size optimization / sizecoding | [optimization/sizecoding.md](optimization/sizecoding.md) | [optimization/speedcode.md](optimization/speedcode.md) | ROM routine reuse and byte-saving tricks. |
+| Assembler syntax and directives | [asm/rosetta.md](asm/rosetta.md) | [asm/common-patterns.md](asm/common-patterns.md) | ACME, KickAssembler, CA65, 64tass, Buddy, MADS. |
+| Build/run a `.prg` on PC | [toolchains/vice.md](toolchains/vice.md) | [toolchains/INDEX.md](toolchains/INDEX.md) | Editor-neutral per-assembler build workflows. |
+| Tools: crunchers, editors, emulators, transfer | [tools/INDEX.md](tools/INDEX.md) | Matching tool page | Cross-platform and native C64 development tools. |
+| Complete runnable program examples | [examples/INDEX.md](examples/INDEX.md) | Matching `basic/`, `asm/`, `toolchains/` pages | BASIC listings plus per-assembler buildable `.prg`. |
+| Cartridge modes and `$8000`/`$A000` mapping | [concepts/cartridge-modes.md](concepts/cartridge-modes.md) | [tasks/bank-switch-rom-ram.md](tasks/bank-switch-rom-ram.md) | `EXROM`/`GAME` lines select the memory config. |
 
 ## rules
 - Agents MUST start here when no narrower entry point is supplied.
 - Agents MUST prefer the smallest topical file that answers the question before reading broad indexes or original source files.
-- Agents SHOULD follow `sources` links when facts conflict, are surprising, or require exact wording.
 - Agents MUST NOT assume undocumented behavior without a cited source.
 - Agents MUST distinguish `facts`, `constraints`, `aliases`, and unresolved source differences.
-- Generated or derived pages MUST preserve local Markdown provenance and route upstream fallback through [sources/INDEX.md](sources/INDEX.md).
+- Agents SHOULD consult [sources/INDEX.md](sources/INDEX.md) only when provenance, exact upstream wording, or a conflict between local pages is at stake.
+- A directory `INDEX.md` is the fallback when no row above matches, or when a question spans a whole domain.
 
 ## links
 - agent rules: [AGENTS.md](AGENTS.md)
 - style rules: [STYLE.md](STYLE.md)
+- domain list: [README.md](README.md)
 - source coverage: [sources/INDEX.md](sources/INDEX.md)

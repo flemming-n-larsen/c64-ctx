@@ -8,23 +8,9 @@ source: c64ref
 - Agents MUST read [INDEX.md](INDEX.md) first unless the user names a narrower file or domain.
 - Agents MUST load the most specific referenced local Markdown file before loading a broader directory `INDEX.md` or upstream provenance route.
 - Agents SHOULD answer from compact local Markdown files when they contain a cited fact.
-- Agents SHOULD inspect [sources/INDEX.md](sources/INDEX.md) when upstream provenance, ambiguity, or conflict resolution matters.
-- Agents MUST NOT treat generated HTML output as more authoritative than local Markdown pages or the upstream source corpus linked from [sources/INDEX.md](sources/INDEX.md).
+- Agents MUST NOT read [sources/INDEX.md](sources/INDEX.md) to answer a question. It is a provenance and maintenance artifact; consult it only when a user asks where a fact came from, when two local pages conflict, or when exact upstream wording is required.
 - Agents MUST NOT invent C64 addresses, symbols, register bits, KERNAL entry points, or opcode behavior without a citation.
 - Agents MAY combine task recipes with domain pages when a user asks for code sequences or practical workflows.
-
-## source-preference
-| question type | preferred local route | provenance route | notes |
-|---|---|---|---|
-| CPU register, flag, opcode semantics | [cpu/6502/INDEX.md](cpu/6502/INDEX.md) | [sources/INDEX.md](sources/INDEX.md) | CPU facts MUST keep 6502-family scope clear. |
-| C64 address or symbol | [memory/INDEX.md](memory/INDEX.md) | [sources/INDEX.md](sources/INDEX.md) | Symbols SHOULD preserve aliases where local pages show them. |
-| Hardware register or bit field | [io/INDEX.md](io/INDEX.md) | [sources/INDEX.md](sources/INDEX.md) | I/O facts MUST consider `$0001` banking when relevant. |
-| KERNAL API call | [kernal/INDEX.md](kernal/INDEX.md) | [sources/INDEX.md](sources/INDEX.md) | Call contracts SHOULD include inputs, outputs, errors, and clobbers when known. |
-| ROM routine location | [rom/INDEX.md](rom/INDEX.md) | [sources/INDEX.md](sources/INDEX.md) | ROM pages MUST route to local Markdown summaries rather than reproduce full listings. |
-| PETSCII, screen code, keyboard | [charset/INDEX.md](charset/INDEX.md) | [sources/INDEX.md](sources/INDEX.md) | Character facts MUST distinguish code spaces. |
-| Color value or palette | [colors/INDEX.md](colors/INDEX.md) | [sources/INDEX.md](sources/INDEX.md) | Palette facts SHOULD cite local source-difference notes if visible. |
-| 6502 arithmetic operation (multiply, divide, trig, float) | [math/INDEX.md](math/INDEX.md) | [sources/INDEX.md](sources/INDEX.md) | All math is software-implemented; no native multiply/divide on 6502. |
-| Algorithm pattern (sort, RNG, compression, 3D, conversion) | [algorithms/INDEX.md](algorithms/INDEX.md) | [sources/INDEX.md](sources/INDEX.md) | Route to specific algorithm file; cross-reference effects/ for RNG/3D usage. |
 
 ## normative-language
 | term | agent interpretation |
