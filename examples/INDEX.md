@@ -16,6 +16,19 @@ source: cross-domain
 | Minimal `ca65`/`ld65` C64 `.prg` | [ca65-minimal-prg.md](ca65-minimal-prg.md) | Cites [../asm/ca65.md](../asm/ca65.md), [../asm/common-patterns.md](../asm/common-patterns.md), [../toolchains/ca65-workflow.md](../toolchains/ca65-workflow.md). |
 | Minimal `64tass` `.prg` with SYS stub | [64tass-hello.md](64tass-hello.md) | Cites [../asm/64tass.md](../asm/64tass.md), [../asm/common-patterns.md](../asm/common-patterns.md), [../toolchains/64tass-workflow.md](../toolchains/64tass-workflow.md). |
 
+## pages
+<!-- GENERATED:routes -->
+| answers | read | terms |
+|---|---|---|
+| Minimal buildable 64tass program that prints HELLO and returns to BASIC. | [64tass-hello.md](64tass-hello.md) | 64tass example, hello world, minimal prg, buildable |
+| Minimal buildable ACME program that prints HELLO and returns to BASIC. | [acme-hello.md](acme-hello.md) | ACME example, hello world, minimal prg, buildable |
+| Complete BASIC program that changes the border and background colors. | [basic-border-background.md](basic-border-background.md) | BASIC example, border color, background color, POKE colors |
+| Complete BASIC program that polls the keyboard and acts on the keypress. | [basic-read-key.md](basic-read-key.md) | BASIC example, GET keypress, keyboard polling |
+| Complete BASIC loader that POKEs machine code from DATA and SYSes it. | [basic-sys-loader.md](basic-sys-loader.md) | BASIC example, DATA loader, SYS loader, machine code from BASIC |
+| Minimal buildable cc65 program assembled with ca65 and linked with ld65. | [ca65-minimal-prg.md](ca65-minimal-prg.md) | ca65 example, cc65 example, minimal prg, buildable |
+| Minimal buildable KickAssembler program that displays one sprite. | [kickassembler-sprite.md](kickassembler-sprite.md) | KickAssembler example, sprite example, minimal prg, buildable |
+<!-- /GENERATED:routes -->
+
 ## related
 | domain | read | why |
 |---|---|---|

@@ -12,6 +12,14 @@ source: c64ref
 | KERNAL API addresses | [../kernal/jump-table.md](../kernal/jump-table.md) | Use before implementation details. |
 | ROM/RAM banking | [../concepts/memory-banking.md](../concepts/memory-banking.md) | ROM visibility depends on processor-port bits. |
 
+## pages
+<!-- GENERATED:routes -->
+| answers | read | terms |
+|---|---|---|
+| Where BASIC ROM routines live, as a route to the upstream disassemblies. | [basic-disassembly.md](basic-disassembly.md) | BASIC ROM, interpreter routines, disassembly, ROM listing |
+| Where KERNAL ROM routines live, as a route to the upstream disassemblies. | [kernal-disassembly.md](kernal-disassembly.md) | KERNAL ROM, disassembly, ROM listing, implementation detail |
+<!-- /GENERATED:routes -->
+
 ## related
 | domain | read | why |
 |---|---|---|

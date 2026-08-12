@@ -6,6 +6,8 @@ A structured Markdown knowledge base for Commodore 64 development, organized for
 
 | goal | start here |
 |---|---|
+| Find a page by topic or jargon (search, do not read whole) | [ROUTE.md](ROUTE.md) |
+| Find the page owning a `$`-address or KERNAL symbol | [SYMBOLS.md](SYMBOLS.md) |
 | Any C64 question (no narrower entry known) | [INDEX.md](INDEX.md) |
 | Agent consumption rules | [AGENTS.md](AGENTS.md) |
 | File style and naming rules | [STYLE.md](STYLE.md) |

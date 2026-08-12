@@ -13,6 +13,15 @@ source: c64ref
 | DYSP, multiplexers, sprite starfields, border usage, underlay | [advanced.md](advanced.md) | Curated route into the main sprite-heavy `effects/` and `display-modes/` pages. |
 | Runnable example | [../examples/kickassembler-sprite.md](../examples/kickassembler-sprite.md) | Minimal buildable KickAssembler sprite program. |
 
+## pages
+<!-- GENERATED:routes -->
+| answers | read | terms |
+|---|---|---|
+| Runtime sprite techniques combining raster IRQ timing with per-line register updates. | [advanced.md](advanced.md) | DYSP, multiplexer, sprite stretching, sprite underlay, border sprites |
+| Getting a sprite on screen: 64-byte alignment, pointer, position, color, enable order. | [display.md](display.md) | sprite setup, sprite pointer, visible range, multicolor sprite |
+| Sprite register families: position, enable, color, expand, priority, collision. | [registers.md](registers.md) | sprite registers, collision, priority, expansion, X MSB |
+<!-- /GENERATED:routes -->
+
 ## related
 | domain | read | why |
 |---|---|---|

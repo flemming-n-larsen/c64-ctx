@@ -4,6 +4,10 @@ domain: root
 source: c64ref
 ---
 
+## entry-points
+- Agents with text search SHOULD search [ROUTE.md](ROUTE.md) for a topic or term, or [SYMBOLS.md](SYMBOLS.md) for a `$`-address or KERNAL symbol, then read the matched page. Both are grep targets and MUST NOT be read whole.
+- Without text search, use `## quick-route` below, then read the matched page.
+
 ## quick-route
 | need | read first | then read | notes |
 |---|---|---|---|

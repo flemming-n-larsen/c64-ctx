@@ -18,6 +18,17 @@ source: codebase64.net
 | PRNG / pseudo-random number generator | [../effects/rng.md](../effects/rng.md) | X-ABC PRNG; 38 cycles; 8/16-bit output. |
 | Speed optimization (cycle budget, loop unrolling, speedcode) | [../optimization/INDEX.md](../optimization/INDEX.md) | Critical for game engines within rastertime budgets. |
 
+## pages
+<!-- GENERATED:routes -->
+| answers | read | terms |
+|---|---|---|
+| Split IRQ work from frame logic so the game degrades gracefully under load. | [frameskip.md](frameskip.md) | frameskip, frame update, IRQ split, variable frame rate |
+| Compare and store a high score with multi-byte comparison. | [hiscore.md](hiscore.md) | high score, score table, multi-byte compare, score entry |
+| Three ways to keep score: BCD, hex with conversion, or ASCII digits. | [scoring.md](scoring.md) | scoring, BCD, decimal mode, score display, points |
+| Multidirectional scrolling built on the VIC-II fine-scroll registers. | [scrolling.md](scrolling.md) | scrolling, fine scroll, smooth scroll, multidirectional, map scroll |
+| Tile map data layout using 8-bit block indices, and how to draw it. | [tilemaps.md](tilemaps.md) | tile maps, tiles, block indices, level data, map drawing |
+<!-- /GENERATED:routes -->
+
 ## related
 | domain | read | why |
 |---|---|---|

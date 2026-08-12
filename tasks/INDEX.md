@@ -26,6 +26,27 @@ source: c64ref
 | Dispatch to handler based on a byte value | [dispatch.md](dispatch.md) | Jump table, stack dispatch, self-mod variants; cycle comparison table. |
 | Decode variable-length bitfields from a byte stream | [bitstream.md](bitstream.md) | Sentinel shifter pattern; decision-tree decoder for Huffman/LZ. |
 
+## pages
+<!-- GENERATED:routes -->
+| answers | read | terms |
+|---|---|---|
+| Switch ROM, RAM and I/O in and out safely, including the IRQ hazard. | [bank-switch-rom-ram.md](bank-switch-rom-ram.md) | bank switching, ROM to RAM, banking recipe, IRQ hazard |
+| Decode variable-length bitfields from a byte stream with a sentinel shifter. | [bitstream.md](bitstream.md) | bitstream, getbit, sentinel shifter, Huffman, bit reader |
+| Redirect stub: cooperative threading now lives in the irq domain. | [cooperative-threads.md](cooperative-threads.md) | cooperative threads, redirect, moved page |
+| A decimal digit counter with carry propagation and on-screen display. | [counter.md](counter.md) | score counter, digit table, carry propagation, decimal display |
+| Install a custom character set: copy from ROM, edit, and repoint the VIC-II. | [custom-charset.md](custom-charset.md) | custom charset, character set, charset base, 2KB alignment |
+| Route a byte value to one of N handlers: jump table, stack dispatch, self-mod. | [dispatch.md](dispatch.md) | dispatch, jump table, stack dispatch, handler table, indirect jump |
+| Game loop skeleton: init, input, update, draw, frame sync. | [game-loop.md](game-loop.md) | game loop, main loop, frame sync, update draw |
+| Load or save a file from machine code using the KERNAL call sequence. | [load-save-file.md](load-save-file.md) | load file, save file, SETLFS, SETNAM, device number |
+| Clear or fill a memory region, from three stores up to optimized index loops. | [memory-clear.md](memory-clear.md) | memory clear, fill memory, zero fill, clear screen |
+| Copy a memory block, choosing forward or reverse order for overlapping regions. | [memory-move.md](memory-move.md) | memory move, block copy, overlap, MOVEUP, MOVEDOWN |
+| Print characters via KERNAL output or by writing screen memory directly. | [print-to-screen.md](print-to-screen.md) | print text, CHROUT, screen writes, cursor position |
+| Pick a delivery shape: BASIC stub, SYS loader, standalone prg, or cartridge. | [program-entrypoints.md](program-entrypoints.md) | entry point, load address, SYS stub, prg layout, autostart |
+| Redirect stub: the raster interrupt recipe now lives in the irq domain. | [raster-interrupt.md](raster-interrupt.md) | raster interrupt, redirect, moved page |
+| Read the keyboard by KERNAL polling or by scanning the matrix directly. | [read-keyboard.md](read-keyboard.md) | read keyboard, GETIN, key polling, matrix scan, keypress |
+| Six-step sprite setup: data alignment, pointer, position, color, enable last. | [sprite-display.md](sprite-display.md) | sprite setup, sprite pointer, 64-byte alignment, enable sprite |
+<!-- /GENERATED:routes -->
+
 ## related
 | domain | read | why |
 |---|---|---|

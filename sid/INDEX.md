@@ -19,6 +19,22 @@ source: codebase64.net
 | Reduce external-input noise | [noise-reduction.md](noise-reduction.md) | Hardware and software mitigation routes for `AIN` noise |
 | Player-level music workflows | [../music/INDEX.md](../music/INDEX.md) | IRQ playback, music patterns, hard restart, and tune integration |
 
+## pages
+<!-- GENERATED:routes -->
+| answers | read | terms |
+|---|---|---|
+| Play 4-bit PCM by hammering the master volume register; a 6581 side effect. | [digi-samples.md](digi-samples.md) | digi samples, PCM playback, sample player, volume trick, 8-bit PWM |
+| Sweep the 11-bit filter cutoff and choose low, band or high pass. | [filter-sweep.md](filter-sweep.md) | filter sweep, cutoff, resonance, low pass, band pass |
+| Convert a note to a SID frequency register value using equal temperament. | [frequency-calculation.md](frequency-calculation.md) | frequency calculation, equal temperament, pitch formula, clock constants |
+| PAL A440 note-to-register values for 96 notes across eight octaves. | [frequency-table.md](frequency-table.md) | frequency table, PAL notes, note values, A440 |
+| Tell a 6581 from an 8580 at runtime using oscillator 3 readback. | [model-detect.md](model-detect.md) | SID detection, 6581, 8580, chip revision, OSC3 readback |
+| Hardware and software mitigations for noise picked up on the SID audio input. | [noise-reduction.md](noise-reduction.md) | noise reduction, audio input, AIN, hum, interference |
+| NTSC A440 note-to-register values, calibrated for the common 6567R8. | [ntsc-frequency-table.md](ntsc-frequency-table.md) | NTSC frequency table, NTSC notes, 6567R8, A440 |
+| Make a single note sound: volume, frequency, pulse width, envelope, gate. | [play-note.md](play-note.md) | play note, gate, ADSR, envelope, pulse width |
+| All 29 SID registers with bit fields, control-register breakdown and envelope rates. | [registers.md](registers.md) | SID registers, 6581, 8580, control register, ADSR rates |
+| The four SID waveforms, their quirks, and the combined-waveform cautions. | [waveforms.md](waveforms.md) | waveforms, triangle, sawtooth, pulse, noise, ring modulation |
+<!-- /GENERATED:routes -->
+
 ## related
 | domain | read | why |
 |---|---|---|

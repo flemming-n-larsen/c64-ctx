@@ -28,6 +28,32 @@ source: c64ref
 | Megatext — oversized bitmap text | [megatext.md](megatext.md) | Large glyphs rendered into bitmap; no special VIC trick |
 | Software screen modes (16×16 char matrix) | [software-screen-modes.md](software-screen-modes.md) | Custom pixel grid via charset design; no VIC register trick; includes scroll variant |
 
+## pages
+<!-- GENERATED:routes -->
+| answers | read | terms |
+|---|---|---|
+| Advanced FLI: smarter color cell assignment to reduce errors at FLI block boundaries. | [afli.md](afli.md) | AFLI, advanced FLI, IAFLI, AIFLI, color cell assignment |
+| Alternating sprite sieve interlace: a sprite grid toggled between frames to mix colors. | [asslace.md](asslace.md) | ASSLACE, sprite sieve, alternating frames, interlace |
+| Extended colors with interlace: ECM plus frame alternation for doubled background colors. | [eci.md](eci.md) | ECI, extended color interlace, frame alternation |
+| Extended Color Mode: four background registers, 64 usable glyphs, and its game uses. | [ecm.md](ecm.md) | ECM, extended color mode, extended background, 64 glyphs |
+| Flexible Line Interpretation: re-read color data every raster line instead of every eight. | [fli.md](fli.md) | FLI, flexible line interpretation, FLI bug, forced bad line |
+| Half Char Bitmap: split each cell into independent top and bottom 8x4 halves. | [hcb.md](hcb.md) | HCB, half char bitmap, half cell, custom charset trick |
+| Interlaced FLI: two alternating FLI frames blending to roughly 128 perceived colors. | [ifli.md](ifli.md) | IFLI, interlaced FLI, flicker, perceived colors |
+| Oversized text drawn straight into a bitmap; no VIC trick involved. | [megatext.md](megatext.md) | megatext, big text, oversized glyphs, logo text |
+| Multi Resolution FLI: toggle multicolor per raster line to mix hires and multicolor regions. | [mrfli.md](mrfli.md) | MRFLI, multi resolution, mixed resolution, per-line MCM |
+| Multicolor sprite underlay behind any standard mode, plus the MCI interlace variant. | [mucsu.md](mucsu.md) | MUCSU, MCI, multicolor interlace, sprite underlay |
+| Multicolor sprite underlay beneath an FLI bitmap, with the simpler MUCSUH base. | [mucsufli.md](mucsufli.md) | MUCSUFLI, MUCSUH, sprite underlay FLI, shared sprite colors |
+| Multicolor Underlayed FLI: multicolor sprites give three pixel colors each under FLI. | [mufli.md](mufli.md) | MUFLI, MUIFLI, multicolor underlay, sprite underlay |
+| New Underlayed FLI: six double-wide hires sprites give flicker-free color mixing. | [nufli.md](nufli.md) | NUFLI, NUIFLI, flicker free, double-wide sprites |
+| Permanent Raster Split: a stable per-frame split showing two independent display regions. | [prs.md](prs.md) | PRS, raster split, screen split, status bar, split screen |
+| Super, Advanced and Interlaced HiRes: beat 320x200 without an FLI layer. | [sh.md](sh.md) | SH, AH, IH, super hires, advanced hires, interlaced hires |
+| Super HiRes FLI family: sub-pixel and multi-frame tricks on the FLI base. | [shfli.md](shfli.md) | SHFLI, SHI, SHIFLI, SHIFXL, super hires FLI, sub-pixel |
+| Custom pixel grids built purely from charset design, with no undocumented VIC trick. | [software-screen-modes.md](software-screen-modes.md) | software screen mode, 16x16 matrix, pixel plotting, custom resolution |
+| Tri-Interlaced FLI: three rotating frames for roughly 200-300 perceived colors. | [trifli.md](trifli.md) | TRIFLI, tri interlace, three frame rotation |
+| Underlayed FLI: hires sprites behind the FLI bitmap add independent colors. | [ufli.md](ufli.md) | UFLI, UIFLI, underlayed FLI, sprite underlay, sprite stretch |
+| Extended FLI: FLI plus per-line background register writes for a wider per-line palette. | [xfli.md](xfli.md) | XFLI, XIFLI, extended FLI, per-line background |
+<!-- /GENERATED:routes -->
+
 ## related
 | domain | read | why |
 |---|---|---|

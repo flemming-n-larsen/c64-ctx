@@ -14,6 +14,14 @@ source: c64ref
 | Sprite-underlay display techniques | [../sprites/advanced.md](../sprites/advanced.md) | Routes to UFLI/NUFLI/MUFLI and other sprite-heavy techniques. |
 | How to create more than 16 colors (FLI, interlacing, sprites, dithering) | [../concepts/color-mixing.md](../concepts/color-mixing.md) | The 5 fundamental color-expansion techniques |
 
+## pages
+<!-- GENERATED:routes -->
+| answers | read | terms |
+|---|---|---|
+| All eight ECM/BMM/MCM bit combinations: enable bits, memory layout, color source per mode. | [screen-modes.md](screen-modes.md) | screen modes, bitmap mode, multicolor, hires, extended color mode |
+| Names and abbreviations for 31 software display techniques that exploit VIC-II timing. | [unofficial-modes.md](unofficial-modes.md) | unofficial modes, FLI family, technique names, mode abbreviations |
+<!-- /GENERATED:routes -->
+
 ## related
 | domain | read | why |
 |---|---|---|
