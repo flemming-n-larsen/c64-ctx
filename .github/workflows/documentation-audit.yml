@@ -15,7 +15,7 @@ jobs:
   repository:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Validate Markdown structure and local links
         shell: pwsh
         run: ./scripts/audit.ps1
@@ -24,7 +24,7 @@ jobs:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Validate external source URLs
         shell: pwsh
         run: ./scripts/audit.ps1 -CheckExternal
