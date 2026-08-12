@@ -35,35 +35,6 @@ source: codebase64.net
 
 For FLI, IFLI, NUFLI, UFLI, ECI and all other display mode technique specs → see [../display-modes/INDEX.md](../display-modes/INDEX.md).
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [open-borders.md](open-borders.md) | used | Double-IRQ border removal + sprites in border |
-| [stable-raster.md](stable-raster.md) | used | Cycle-level raster sync |
-| [../music/INDEX.md](../music/INDEX.md) | used | Music-layer playback/integration route for demos and games. |
-| [../sid/INDEX.md](../sid/INDEX.md) | used | SID hardware route for raw chip control and filter work. |
-| [rasterbars.md](rasterbars.md) | used | Color bar raster effect |
-| [scrolltext.md](scrolltext.md) | used | Fine-scroll and char-copy patterns |
-| [fld.md](fld.md) | used | FLD vertical scroll trick |
-| [dycp.md](dycp.md) | used | Per-char dynamic color |
-| [dysp.md](dysp.md) | used | Dynamic sprite Y positioning |
-| [sprite-multiplexer.md](sprite-multiplexer.md) | used | IRQ sprite multiplexing |
-| [fire.md](fire.md) | used | Charset fire algorithm |
-| [starfield.md](starfield.md) | used | Starfield rendering |
-| [plasma.md](plasma.md) | used | Sine-based plasma |
-| [rng.md](rng.md) | used | X-ABC pseudo-random number generator |
-| [demo-intro.md](demo-intro.md) | used | Demo structure, IRQ chain anatomy, prerequisites |
-| [swing.md](swing.md) | used | Wide sine horizontal oscillation (tech-tech) |
-| [dot-scroll.md](dot-scroll.md) | used | Perspective 3D dot field with trajectory table |
-| [fpp.md](fpp.md) | used | Per-line FPP stretcher via `$D018` chartab |
-| [distortion.md](distortion.md) | used | DYPP + tech-tech combined FLI logo distortion |
-| [fractals.md](fractals.md) | used | Julia/Mandelbrot iterative fractal renderer |
-| [vectors.md](vectors.md) | used | 3D polygon wireframe/filled rendering |
-| [blending.md](blending.md) | used | Randomized charset pixel blend-in |
-| [2nd-line-fli.md](2nd-line-fli.md) | used | Twisters, rotators, waving carpets via 2nd-line FLI |
-| [misc.md](misc.md) | used | EBC colour flashing, frame animation |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | codebase64.net upstream route |
-
 ## related
 | domain | read | why |
 |---|---|---|

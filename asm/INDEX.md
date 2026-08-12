@@ -16,19 +16,6 @@ source: assembler-docs
 | Translate between assemblers | [rosetta.md](rosetta.md) | Side-by-side equivalence table. |
 | BASIC SYS stub, `.prg` layout, KERNAL calls | [common-patterns.md](common-patterns.md) | Assembler-agnostic minimal patterns. |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [acme.md](acme.md) | used | Cites ACME user manual (Marco Baye). |
-| [kickassembler.md](kickassembler.md) | used | Cites KickAssembler reference manual (Mads Nielsen). |
-| [ca65.md](ca65.md) | used | Cites cc65 docs (`ca65`, `ld65`). |
-| [64tass.md](64tass.md) | used | Cites 64tass manual (Soci/Singular). |
-| [buddy.md](buddy.md) | used | Cites c64-wiki.com Buddy Assembler article. |
-| [mads.md](mads.md) | used | Cites MADS documentation (Tomasz Biela / github.com/tebe6502/Mad-Assembler). |
-| [rosetta.md](rosetta.md) | used | Cross-assembler equivalence; cites the four assembler pages. |
-| [common-patterns.md](common-patterns.md) | used | Assembler-neutral patterns; cites BASIC, memory, tasks. |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | No mist64/c64ref upstream — each page cites its own assembler docs. |
-
 ## related
 | domain | read | why |
 |---|---|---|

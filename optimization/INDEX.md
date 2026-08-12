@@ -13,16 +13,6 @@ source: codebase64.net
 | Runtime code generation | [speedcode.md](speedcode.md) | Generate speedcode at runtime; generator vs. pre-generated tradeoffs. |
 | Reduce binary size (sizecoding) | [sizecoding.md](sizecoding.md) | KERNAL routines for byte-saving: clears, copies, scrolls, 16-bit ops. |
 
-## source-coverage
-| local page | status | notes |
-|---|---|---|
-| [speed.md](speed.md) | used | Kernal avoidance, opcode cycles, unrolling, subroutine overhead. |
-| [loop-unrolling.md](loop-unrolling.md) | used | Self-modifying loop vs. fully unrolled; cycle comparison. |
-| [advanced.md](advanced.md) | used | Branch, carry, addressing, illegal opcodes, page alignment. |
-| [speedcode.md](speedcode.md) | used | Runtime code gen algorithm, generator loop unrolling, memory management. |
-| [sizecoding.md](sizecoding.md) | used | KERNAL routine table for size-saving operations. |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Upstream fallback route. |
-
 ## links
 - root: [../INDEX.md](../INDEX.md)
 - related effects: [../effects/INDEX.md](../effects/INDEX.md)

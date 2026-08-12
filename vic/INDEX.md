@@ -18,18 +18,6 @@ source: c64ref
 | Color values and palette naming | [../colors/palette.md](../colors/palette.md) | Pair with `io/vic-ii.md` when a register stores a color index. |
 | Sprite setup and sprite-specific behavior | [../sprites/INDEX.md](../sprites/INDEX.md) | Dedicated sprite hub for setup, visibility, collisions, and advanced techniques. |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [registers.md](registers.md), [../io/vic-ii.md](../io/vic-ii.md) | used | Compact register route plus authoritative raw register table. |
-| [memory-and-banking.md](memory-and-banking.md), [../io/cia2.md](../io/cia2.md), [../concepts/screen-memory.md](../concepts/screen-memory.md) | used | Bank selection, screen matrix placement, and `$D018` routing. |
-| [quick-screen-setup.md](quick-screen-setup.md) | used | Address-derived `$DD00` and `$D018` setup formula and constraints. |
-| [timing.md](timing.md), [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md), [../irq/raster-interrupt.md](../irq/raster-interrupt.md) | used | Timing constraints, geometry, and raster IRQ practice. |
-| [screen-modes.md](screen-modes.md), [../graphics/screen-modes.md](../graphics/screen-modes.md), [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md), [../display-modes/INDEX.md](../display-modes/INDEX.md) | used | Mode and technique routing. |
-| [variants.md](variants.md) | used | VIC-II chip variant hardware reference: NTSC/PAL timing, raster geometry, palette differences. |
-| [../colors/palette.md](../colors/palette.md), [../sprites/INDEX.md](../sprites/INDEX.md), [../tasks/sprite-display.md](../tasks/sprite-display.md) | used | Color and sprite-adjacent context. |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
-
 ## related
 | domain | read | why |
 |---|---|---|

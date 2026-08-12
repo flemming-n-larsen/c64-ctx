@@ -26,28 +26,6 @@ source: c64ref
 | Dispatch to handler based on a byte value | [dispatch.md](dispatch.md) | Jump table, stack dispatch, self-mod variants; cycle comparison table. |
 | Decode variable-length bitfields from a byte stream | [bitstream.md](bitstream.md) | Sentinel shifter pattern; decision-tree decoder for Huffman/LZ. |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [sprite-display.md](sprite-display.md) | used | 6-step sprite setup: pointer, data, position, color, enable. |
-| [../sid/INDEX.md](../sid/INDEX.md) | used | SID domain: hardware registers, waveform/tuning references, filter, digis. |
-| [../music/INDEX.md](../music/INDEX.md) | used | Music domain: player/update-loop integration, banking, timing, formats. |
-| [custom-charset.md](custom-charset.md) | used | 6-step charset relocation: bank, copy, modify, point `$D018`. |
-| [game-loop.md](game-loop.md) | used | Init/input/update/draw/sync pattern with raster sync. |
-| [program-entrypoints.md](program-entrypoints.md) | used | Five delivery shapes: BASIC, SYS loader, `.prg`, absolute-load ML, cartridge. |
-| [load-save-file.md](load-save-file.md) | used | KERNAL file call sequences and contracts. |
-| [print-to-screen.md](print-to-screen.md) | used | Screen-RAM, color-RAM, and KERNAL `CHROUT` routes. |
-| [read-keyboard.md](read-keyboard.md) | used | KERNAL and direct-matrix keyboard input. |
-| [../irq/raster-interrupt.md](../irq/raster-interrupt.md) | routed | Canonical VIC-II raster + IRQ vector workflow now lives in `/irq`. |
-| [bank-switch-rom-ram.md](bank-switch-rom-ram.md) | used | `$0001` banking via processor port. |
-| [memory-move.md](memory-move.md) | used | MOVEDOWN/MOVEUP routines for overlapping and non-overlapping block copies. |
-| [memory-clear.md](memory-clear.md) | used | Zero-fill up to 256 bytes per call; two variants (X counter, Y countdown). |
-| [counter.md](counter.md) | used | 6-digit decimal counter with PETSCII screen output; carry cascade. |
-| [../irq/cooperative-threads.md](../irq/cooperative-threads.md) | routed | Canonical stack-split threading and IRQ-driven context-switch route. |
-| [dispatch.md](dispatch.md) | used | Five dispatch techniques; cycle and constraint table. |
-| [bitstream.md](bitstream.md) | used | Sentinel-based bit/field extractor; decision-tree variant. |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
-
 ## related
 | domain | read | why |
 |---|---|---|

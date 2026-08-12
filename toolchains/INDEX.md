@@ -14,17 +14,6 @@ source: tool-docs
 | 64tass source → `.prg` → VICE | [64tass-workflow.md](64tass-workflow.md) | Single invocation; `--cbm-prg` for header. |
 | CBM Studio project shape | [cbm-studio.md](cbm-studio.md) | Project/workflow assumptions; routes to assembler reference. |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [vice.md](vice.md) | used | Cites VICE manual. |
-| [acme-workflow.md](acme-workflow.md) | used | Cites ACME user manual. |
-| [kickassembler-workflow.md](kickassembler-workflow.md) | used | Cites KickAssembler manual. |
-| [ca65-workflow.md](ca65-workflow.md) | used | Cites cc65 docs (`ca65`, `ld65`). |
-| [64tass-workflow.md](64tass-workflow.md) | used | Cites 64tass manual. |
-| [cbm-studio.md](cbm-studio.md) | used | Cites CBM prg Studio docs. |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Tool-specific upstream docs; no mist64/c64ref route. |
-
 ## related
 | domain | read | why |
 |---|---|---|

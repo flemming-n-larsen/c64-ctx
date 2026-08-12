@@ -19,22 +19,6 @@ source: codebase64.net
 | Reduce external-input noise | [noise-reduction.md](noise-reduction.md) | Hardware and software mitigation routes for `AIN` noise |
 | Player-level music workflows | [../music/INDEX.md](../music/INDEX.md) | IRQ playback, music patterns, hard restart, and tune integration |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [registers.md](registers.md) | used | Complete SID register map: addresses, bits, ATDCY rate table |
-| [waveforms.md](waveforms.md) | used | Triangle/noise behavior and waveform-selection caveats |
-| [play-note.md](play-note.md) | used | 7-step SID note recipe |
-| [frequency-calculation.md](frequency-calculation.md) | used | Formulas and machine constants for generating SID tables |
-| [frequency-table.md](frequency-table.md) | used | PAL A440 note-to-register table, 8 octaves |
-| [ntsc-frequency-table.md](ntsc-frequency-table.md) | used | NTSC A440 note-to-register table and VIC caveat |
-| [model-detect.md](model-detect.md) | used | OSC3-based 6581/8580 runtime detection |
-| [digi-samples.md](digi-samples.md) | used | 4-bit CIA-timer digi playback via $D418 |
-| [filter-sweep.md](filter-sweep.md) | used | 11-bit cutoff sweep; filter mode selection |
-| [noise-reduction.md](noise-reduction.md) | used | External-input noise mitigation options |
-| [../music/INDEX.md](../music/INDEX.md) | routed | Music-player, scheduling, and tracker-facing topics moved to `/music` |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | codebase64.net upstream route |
-
 ## related
 | domain | read | why |
 |---|---|---|

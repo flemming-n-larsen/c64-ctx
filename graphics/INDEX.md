@@ -14,13 +14,6 @@ source: c64ref
 | Sprite-underlay display techniques | [../sprites/advanced.md](../sprites/advanced.md) | Routes to UFLI/NUFLI/MUFLI and other sprite-heavy techniques. |
 | How to create more than 16 colors (FLI, interlacing, sprites, dithering) | [../concepts/color-mixing.md](../concepts/color-mixing.md) | The 5 fundamental color-expansion techniques |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [screen-modes.md](screen-modes.md) | used | All 8 ECM/BMM/MCM combinations |
-| [unofficial-modes.md](unofficial-modes.md) | used | All 31 unofficial technique names and abbreviations |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Upstream fallback route |
-
 ## related
 | domain | read | why |
 |---|---|---|

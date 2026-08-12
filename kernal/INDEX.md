@@ -14,15 +14,6 @@ source: c64ref
 | Memory calls | [memory.md](memory.md) | Use for `MEMBOT`, `MEMTOP`, `SETNAM`, `SETLFS` context. |
 | Time, IRQ, stop-key calls | [time-irq.md](time-irq.md) | Use for timers, IRQ restoration, and `STOP`. |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [jump-table.md](jump-table.md) | used | KERNAL jump addresses and categories. |
-| [file-io.md](file-io.md), [serial-bus.md](serial-bus.md), [keyboard-screen.md](keyboard-screen.md) | used | API family contracts and call setup. |
-| [memory.md](memory.md), [time-irq.md](time-irq.md) | used | Memory, timer, IRQ, and stop-key API coverage. |
-| [../rom/kernal-disassembly.md](../rom/kernal-disassembly.md) | optional | ROM implementation routing when API summaries are insufficient. |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
-
 ## related
 | domain | read | why |
 |---|---|---|

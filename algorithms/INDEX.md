@@ -13,16 +13,6 @@ source: codebase64.net
 | Compress or decompress data | [compression.md](compression.md) | RLE, LZW, LZ77/LZMPI, dictionary; benchmark summary |
 | 3D rotation, perspective, backface culling | [3d-math.md](3d-math.md) | Matrix math; cross-reference [../effects/vectors.md](../effects/vectors.md) for rendering |
 
-## source-coverage
-| local file | status | notes |
-|---|---|---|
-| [sort.md](sort.md) | used | codebase64.net sorting sub-pages |
-| [rng.md](rng.md) | used | codebase64.net RNG sub-pages; X-ABC detail in [../effects/rng.md](../effects/rng.md) |
-| [number-conversion.md](number-conversion.md) | used | codebase64.net number conversion sub-pages |
-| [compression.md](compression.md) | used | codebase64.net packing/crunching sub-pages |
-| [3d-math.md](3d-math.md) | used | codebase64.net 3D art sub-pages |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | codebase64.net upstream route |
-
 ## related
 | domain | read | why |
 |---|---|---|
