@@ -3,6 +3,8 @@ type: reference
 domain: optimization
 source: codebase64.net
 granularity: atomic
+summary: "Advanced cycle savers: branch cost, illegal opcodes, carry reuse, page alignment."
+keywords: [advanced optimization, cycle saving, page crossing, register conservation]
 ---
 
 ## facts

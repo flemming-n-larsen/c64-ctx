@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: atomic
+summary: "Hardware and software mitigations for noise picked up on the SID audio input."
+keywords: [noise reduction, audio input, AIN, hum, interference]
 ---
 
 ## facts

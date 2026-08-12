@@ -2,6 +2,8 @@
 type: reference
 domain: music
 granularity: atomic
+summary: "Call a tune's init once and its play once per frame from a stable IRQ."
+keywords: [music player, IRQ playback, play routine, frame rate call]
 ---
 
 ## facts

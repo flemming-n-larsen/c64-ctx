@@ -2,6 +2,8 @@
 type: reference
 domain: examples
 granularity: example
+summary: "Minimal buildable KickAssembler program that displays one sprite."
+keywords: [KickAssembler example, sprite example, minimal prg, buildable]
 ---
 
 ## facts

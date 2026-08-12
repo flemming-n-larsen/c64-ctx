@@ -2,6 +2,8 @@
 type: reference
 domain: tools
 granularity: emulators
+summary: "C64 emulators for PC and which build is cycle-exact."
+keywords: [emulators, VICE, x64sc, HOXS64, CCS64]
 ---
 
 ## facts

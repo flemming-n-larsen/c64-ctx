@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: family
+summary: "BASIC-level screen, keyboard and file I/O and the KERNAL calls beneath them."
+keywords: [PRINT, INPUT, GET, OPEN, file handling, BASIC I/O]
 ---
 
 ## facts

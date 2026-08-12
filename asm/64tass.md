@@ -2,6 +2,8 @@
 type: reference
 domain: asm
 granularity: assembler
+summary: "64tass directives, output options and label scoping."
+keywords: [64tass, directives, output options, label scoping]
 ---
 
 ## facts

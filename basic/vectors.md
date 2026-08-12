@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: lookup
+summary: "BASIC interpreter vectors and zero-page workspace pointers."
+keywords: [BASIC vectors, interpreter hooks, workspace pointers, wedge]
 ---
 
 ## lookup

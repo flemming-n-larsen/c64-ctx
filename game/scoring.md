@@ -2,6 +2,8 @@
 type: reference
 domain: game
 granularity: atomic
+summary: "Three ways to keep score: BCD, hex with conversion, or ASCII digits."
+keywords: [scoring, BCD, decimal mode, score display, points]
 ---
 
 ## facts

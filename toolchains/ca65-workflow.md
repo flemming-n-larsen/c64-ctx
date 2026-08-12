@@ -2,6 +2,8 @@
 type: reference
 domain: toolchains
 granularity: workflow
+summary: "Build a prg with the two-stage ca65 and ld65 flow, then run it in VICE."
+keywords: [ca65 workflow, ld65, two-stage build, build and run]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: recipe
+summary: "Tell a 6581 from an 8580 at runtime using oscillator 3 readback."
+keywords: [SID detection, 6581, 8580, chip revision, OSC3 readback]
 ---
 
 ## facts

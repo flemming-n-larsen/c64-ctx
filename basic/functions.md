@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: family
+summary: "BASIC V2 built-in functions with return types and argument constraints."
+keywords: [BASIC functions, string functions, numeric functions, return types]
 ---
 
 ## facts

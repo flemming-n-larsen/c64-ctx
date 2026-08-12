@@ -2,6 +2,8 @@
 type: reference
 domain: game
 granularity: atomic
+summary: "Compare and store a high score with multi-byte comparison."
+keywords: [high score, score table, multi-byte compare, score entry]
 ---
 
 ## facts

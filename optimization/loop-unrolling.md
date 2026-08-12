@@ -3,6 +3,8 @@ type: reference
 domain: optimization
 source: codebase64.net
 granularity: atomic
+summary: "When unrolling a loop pays for itself, and when it does not."
+keywords: [loop unrolling, unrolled loop, loop overhead, size vs speed]
 ---
 
 ## facts

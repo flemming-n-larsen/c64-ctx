@@ -2,6 +2,8 @@
 type: reference
 domain: toolchains
 granularity: workflow
+summary: "Build a prg with KickAssembler on the JVM and run it in VICE."
+keywords: [KickAssembler workflow, java jar, build and run]
 ---
 
 ## facts

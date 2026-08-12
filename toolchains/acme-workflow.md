@@ -2,6 +2,8 @@
 type: reference
 domain: toolchains
 granularity: workflow
+summary: "Build a prg with ACME and run it in VICE."
+keywords: [ACME workflow, build and run, command line, cbm output]
 ---
 
 ## facts

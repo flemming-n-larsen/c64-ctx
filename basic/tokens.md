@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: lookup
+summary: "The BASIC V2 token byte table and how tokenized text is encoded."
+keywords: [BASIC tokens, token table, tokenization, detokenize]
 ---
 
 ## facts

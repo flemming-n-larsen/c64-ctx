@@ -3,6 +3,8 @@ type: reference
 domain: optimization
 source: codebase64.net
 granularity: atomic
+summary: "Reduce rastertime: opcode cycle costs, KERNAL avoidance, call overhead."
+keywords: [speed optimization, rastertime, cycle counting, KERNAL avoidance]
 ---
 
 ## facts

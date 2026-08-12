@@ -2,6 +2,8 @@
 type: reference
 domain: asm
 granularity: assembler
+summary: "ACME directives, expressions and output formats."
+keywords: [ACME, directives, pseudo opcodes, output formats]
 ---
 
 ## facts

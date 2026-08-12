@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "Software multiplication: shift-add, and the fast square-table identity."
+keywords: [multiply, multiplication routine, square table, shift and add]
 ---
 
 ## facts

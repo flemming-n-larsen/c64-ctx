@@ -2,6 +2,8 @@
 type: reference
 domain: examples
 granularity: example
+summary: "Complete BASIC program that polls the keyboard and acts on the keypress."
+keywords: [BASIC example, GET keypress, keyboard polling]
 ---
 
 ## facts

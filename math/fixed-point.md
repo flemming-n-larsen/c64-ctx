@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "Fixed-point arithmetic, two's complement, and signed versus unsigned representation."
+keywords: [fixed point, two's complement, fractional arithmetic, signed values]
 ---
 
 ## facts

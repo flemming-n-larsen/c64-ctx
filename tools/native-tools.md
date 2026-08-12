@@ -2,6 +2,8 @@
 type: reference
 domain: tools
 granularity: native-tools
+summary: "Assemblers, packers and linkers that run on the C64 itself."
+keywords: [native tools, Turbo Assembler, TMPx, on-machine development]
 ---
 
 ## facts

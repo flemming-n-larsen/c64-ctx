@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: atomic
+summary: "Convert a note to a SID frequency register value using equal temperament."
+keywords: [frequency calculation, equal temperament, pitch formula, clock constants]
 ---
 
 ## facts

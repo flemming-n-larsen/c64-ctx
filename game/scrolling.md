@@ -2,6 +2,8 @@
 type: reference
 domain: game
 granularity: recipe
+summary: "Multidirectional scrolling built on the VIC-II fine-scroll registers."
+keywords: [scrolling, fine scroll, smooth scroll, multidirectional, map scroll]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: music
 granularity: atomic
+summary: "Keep a tune at the right tempo on both PAL and NTSC machines."
+keywords: [PAL NTSC, playback speed, timer values, tempo correction]
 ---
 
 ## facts

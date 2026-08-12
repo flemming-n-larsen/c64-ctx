@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "Compare 8- and 16-bit values, signed and unsigned, and read the flags right."
+keywords: [compare, signed comparison, 16-bit compare, flag results]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: bridge
+summary: "Call machine code from BASIC with SYS, USR, and DATA/READ loaders."
+keywords: [SYS, USR, DATA loader, BASIC to ML, register passing]
 ---
 
 ## facts

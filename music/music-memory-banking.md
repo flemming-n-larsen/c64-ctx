@@ -2,6 +2,8 @@
 type: reference
 domain: music
 granularity: atomic
+summary: "Place tune code and data safely around the I/O window and ROM banking."
+keywords: [music banking, ghost registers, load address, I/O window clash]
 ---
 
 ## facts

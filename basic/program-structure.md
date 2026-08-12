@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: concept
+summary: "How tokenized BASIC lines are stored as a linked list, and where the program starts."
+keywords: [program structure, line links, TXTTAB, tokenized storage]
 ---
 
 ## facts

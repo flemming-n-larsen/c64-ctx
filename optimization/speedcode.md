@@ -3,6 +3,8 @@ type: reference
 domain: optimization
 source: codebase64.net
 granularity: atomic
+summary: "Generate unrolled code at runtime, and when a generator beats pre-generated code."
+keywords: [speedcode, runtime code generation, code generator, self-modifying]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: music
 granularity: atomic
+summary: "Per-frame tune effects: arpeggio, vibrato and portamento over SID frequency writes."
+keywords: [arpeggio, vibrato, portamento, pitch glide, tune effects]
 ---
 
 ## facts

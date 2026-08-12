@@ -3,6 +3,8 @@ type: reference
 domain: music
 granularity: atomic
 source: hvsc
+summary: "The PSID and RSID container format: header fields, byte order, payload loading."
+keywords: [SID file, PSID, RSID, HVSC, container header]
 ---
 
 ## facts

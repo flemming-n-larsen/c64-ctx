@@ -3,6 +3,8 @@ type: reference
 domain: optimization
 source: codebase64.net
 granularity: atomic
+summary: "Save bytes by reusing KERNAL routines for their side effects."
+keywords: [sizecoding, byte saving, small binary, KERNAL side effects]
 ---
 
 ## facts

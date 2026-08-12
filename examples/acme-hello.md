@@ -2,6 +2,8 @@
 type: reference
 domain: examples
 granularity: example
+summary: "Minimal buildable ACME program that prints HELLO and returns to BASIC."
+keywords: [ACME example, hello world, minimal prg, buildable]
 ---
 
 ## facts

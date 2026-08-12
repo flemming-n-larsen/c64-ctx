@@ -2,6 +2,8 @@
 type: reference
 domain: asm
 granularity: assembler
+summary: "Buddy, a resident C64 assembler: directives and its label and macro limits."
+keywords: [Buddy assembler, resident assembler, native assembler, label limit]
 ---
 
 ## facts

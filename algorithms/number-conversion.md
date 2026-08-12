@@ -2,6 +2,8 @@
 type: reference
 domain: algorithms
 granularity: atomic
+summary: "Convert between hex, decimal and strings, plus sign extension and bit reversal."
+keywords: [number conversion, hex to decimal, int to string, bit reversal]
 ---
 
 ## facts

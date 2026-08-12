@@ -2,6 +2,8 @@
 type: reference
 domain: algorithms
 granularity: atomic
+summary: "Bubble, shell and quicksort for 8- and 16-bit arrays in RAM."
+keywords: [sorting, bubble sort, shell sort, quicksort, sprite Y sort]
 ---
 
 ## facts

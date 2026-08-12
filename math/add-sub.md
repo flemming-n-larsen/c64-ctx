@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "Multi-byte addition and subtraction chained from ADC and SBC."
+keywords: [16-bit add, 16-bit subtract, multi-byte arithmetic, carry chain]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: tools
 granularity: transfer
+summary: "Moving files between a PC and real C64 hardware."
+keywords: [file transfer, Final Replay, Codenet, RR-net, real hardware]
 ---
 
 ## facts

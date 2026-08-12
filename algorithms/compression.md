@@ -2,6 +2,8 @@
 type: reference
 domain: algorithms
 granularity: atomic
+summary: "RLE, LZ and dictionary compression for prg files and in-memory data."
+keywords: [compression, RLE, LZ77, LZW, decompression, packing]
 ---
 
 ## facts

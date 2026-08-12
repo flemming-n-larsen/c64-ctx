@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: route
+summary: "Route to BASIC ROM routine addresses rather than copied listings."
+keywords: [BASIC routines, ROM entry points, interpreter routines]
 ---
 
 ## lookup

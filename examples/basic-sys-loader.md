@@ -2,6 +2,8 @@
 type: reference
 domain: examples
 granularity: example
+summary: "Complete BASIC loader that POKEs machine code from DATA and SYSes it."
+keywords: [BASIC example, DATA loader, SYS loader, machine code from BASIC]
 ---
 
 ## facts

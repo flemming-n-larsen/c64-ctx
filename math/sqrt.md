@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "Integer square root by iteration or table lookup, 16- and 24-bit."
+keywords: [square root, sqrt, Newton-Raphson, table lookup]
 ---
 
 ## facts

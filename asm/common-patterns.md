@@ -2,6 +2,8 @@
 type: reference
 domain: asm
 granularity: patterns
+summary: "Assembler-agnostic patterns: prg load address, BASIC SYS stub, KERNAL calls."
+keywords: [common patterns, SYS stub, prg header, boilerplate]
 ---
 
 ## facts

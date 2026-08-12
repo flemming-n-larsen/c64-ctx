@@ -2,6 +2,8 @@
 type: reference
 domain: tools
 granularity: music-editors
+summary: "SID trackers and composition tools, cross-platform and native."
+keywords: [music editors, GoatTracker, CheeseCutter, trackers, SID composer]
 ---
 
 ## facts

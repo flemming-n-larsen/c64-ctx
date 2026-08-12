@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: family
+summary: "All 76 BASIC V2 keywords and operators with token byte, syntax and example."
+keywords: [BASIC keywords, statements, commands, reserved words]
 ---
 
 ## facts

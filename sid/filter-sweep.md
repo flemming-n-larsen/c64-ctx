@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: atomic
+summary: "Sweep the 11-bit filter cutoff and choose low, band or high pass."
+keywords: [filter sweep, cutoff, resonance, low pass, band pass]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: game
 granularity: atomic
+summary: "Split IRQ work from frame logic so the game degrades gracefully under load."
+keywords: [frameskip, frame update, IRQ split, variable frame rate]
 ---
 
 ## facts

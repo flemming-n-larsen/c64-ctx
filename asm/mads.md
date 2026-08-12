@@ -2,6 +2,8 @@
 type: reference
 domain: asm
 granularity: assembler
+summary: "MADS cross-assembler directives, macros and invocation."
+keywords: [MADS, cross-assembler, directives, invocation]
 ---
 
 ## facts

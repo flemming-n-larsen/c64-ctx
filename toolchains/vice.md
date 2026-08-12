@@ -2,6 +2,8 @@
 type: reference
 domain: toolchains
 granularity: emulator
+summary: "Run and debug a prg in VICE: autostart, monitor, command-line flags."
+keywords: [VICE, emulator workflow, autostart, monitor, debugging]
 ---
 
 ## facts

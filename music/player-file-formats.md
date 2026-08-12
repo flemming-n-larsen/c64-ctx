@@ -2,6 +2,8 @@
 type: reference
 domain: music
 granularity: atomic
+summary: "How tracker output packs patterns, instruments and sequences, using JCH as the worked case."
+keywords: [tracker format, JCH, pattern data, sequence bytes, player layout]
 ---
 
 ## facts

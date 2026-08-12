@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: recipe
+summary: "Play 4-bit PCM by hammering the master volume register; a 6581 side effect."
+keywords: [digi samples, PCM playback, sample player, volume trick, 8-bit PWM]
 ---
 
 ## facts

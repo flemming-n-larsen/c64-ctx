@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: atomic
+summary: "The four SID waveforms, their quirks, and the combined-waveform cautions."
+keywords: [waveforms, triangle, sawtooth, pulse, noise, ring modulation]
 ---
 
 ## facts

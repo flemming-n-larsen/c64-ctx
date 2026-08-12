@@ -2,6 +2,8 @@
 type: reference
 domain: examples
 granularity: example
+summary: "Minimal buildable cc65 program assembled with ca65 and linked with ld65."
+keywords: [ca65 example, cc65 example, minimal prg, buildable]
 ---
 
 ## facts

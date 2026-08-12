@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "Integer powers by repeated multiplication or table-assisted methods."
+keywords: [exponentiation, power function, raise to power]
 ---
 
 ## facts

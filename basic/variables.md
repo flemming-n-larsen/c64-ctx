@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: concept
+summary: "BASIC V2 variable types, naming rules, arrays, and the usual pitfalls."
+keywords: [BASIC variables, arrays, DIM, type suffix, naming rules]
 ---
 
 ## facts

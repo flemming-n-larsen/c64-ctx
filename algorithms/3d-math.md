@@ -2,6 +2,8 @@
 type: reference
 domain: algorithms
 granularity: atomic
+summary: "3D rotation, perspective projection and backface culling in fixed point."
+keywords: [3D math, rotation matrix, perspective, backface culling, Q8.8]
 ---
 
 ## facts

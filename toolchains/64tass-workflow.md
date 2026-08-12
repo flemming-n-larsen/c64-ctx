@@ -2,6 +2,8 @@
 type: reference
 domain: toolchains
 granularity: workflow
+summary: "Build a prg with 64tass and run it in VICE."
+keywords: [64tass workflow, build and run, command line, prg header]
 ---
 
 ## facts

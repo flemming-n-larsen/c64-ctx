@@ -2,6 +2,8 @@
 type: reference
 domain: examples
 granularity: example
+summary: "Complete BASIC program that changes the border and background colors."
+keywords: [BASIC example, border color, background color, POKE colors]
 ---
 
 ## facts

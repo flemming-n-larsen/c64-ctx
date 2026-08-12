@@ -2,6 +2,8 @@
 type: reference
 domain: music
 granularity: recipe
+summary: "Clean ADSR retrigger for fast notes by scheduling a two-frame hard restart."
+keywords: [hard restart, ADSR retrigger, envelope reset, LFSR prescaler]
 ---
 
 ## facts

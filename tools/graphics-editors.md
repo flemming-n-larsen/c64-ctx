@@ -2,6 +2,8 @@
 type: reference
 domain: tools
 granularity: graphics-editors
+summary: "Editors for charsets, tiles, sprites and bitmap graphics."
+keywords: [graphics editors, CharPad, SpritePad, Pixcen, pixel editor]
 ---
 
 ## facts

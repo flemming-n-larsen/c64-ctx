@@ -2,6 +2,8 @@
 type: reference
 domain: algorithms
 granularity: atomic
+summary: "Pseudo-random generators for 6502: LFSR, xorshift and tinyrand."
+keywords: [RNG, PRNG, LFSR, xorshift, random seed]
 ---
 
 ## facts

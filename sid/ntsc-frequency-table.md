@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: reference
+summary: "NTSC A440 note-to-register values, calibrated for the common 6567R8."
+keywords: [NTSC frequency table, NTSC notes, 6567R8, A440]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: chip
+summary: "All 29 SID registers with bit fields, control-register breakdown and envelope rates."
+keywords: [SID registers, 6581, 8580, control register, ADSR rates]
 ---
 
 ## facts

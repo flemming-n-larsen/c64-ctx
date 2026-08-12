@@ -2,6 +2,8 @@
 type: reference
 domain: toolchains
 granularity: ide
+summary: "CBM prg Studio project shape and workflow assumptions."
+keywords: [CBM prg Studio, Windows IDE, project setup]
 ---
 
 ## facts

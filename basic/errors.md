@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: lookup
+summary: "All 29 numbered BASIC V2 errors and the conditions that raise each."
+keywords: [BASIC errors, error messages, SYNTAX ERROR, ILLEGAL QUANTITY]
 ---
 
 ## facts

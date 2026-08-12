@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: route
+summary: "Graphics and sound from BASIC via POKE and PEEK; BASIC V2 has no native commands."
+keywords: [POKE graphics, POKE sound, BASIC graphics, BASIC sound]
 ---
 
 ## facts

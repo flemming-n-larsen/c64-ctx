@@ -2,6 +2,8 @@
 type: reference
 domain: tools
 granularity: crunchers
+summary: "Compressors that pack a prg and decrunch it at load time, cross and native."
+keywords: [crunchers, Exomizer, Pucrunch, ByteBoozer, packer]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: asm
 granularity: assembler
+summary: "KickAssembler directives, macros and its scripting language."
+keywords: [KickAssembler, KickAss, scripting, macros, pseudo commands]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: music
 granularity: atomic
+summary: "Wire a compiled tune into your program: init and play entry points, banking, payload."
+keywords: [tune integration, init routine, embedded tune, player entry points]
 ---
 
 ## facts

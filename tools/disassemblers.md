@@ -2,6 +2,8 @@
 type: reference
 domain: tools
 granularity: disassemblers
+summary: "Tools for disassembling and analysing a C64 binary."
+keywords: [disassemblers, IDA Pro, Regenerator, binary analysis]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: examples
+summary: "Complete short runnable BASIC V2 listings, as typed."
+keywords: [BASIC examples, runnable listings, sample programs]
 ---
 
 ## facts

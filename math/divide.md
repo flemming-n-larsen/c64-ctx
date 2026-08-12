@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "Software division on 6502: shift-and-subtract, and divide by a constant."
+keywords: [divide, division routine, shift and subtract, divide by constant]
 ---
 
 ## facts

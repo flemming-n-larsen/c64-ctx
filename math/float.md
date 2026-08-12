@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "The 5-byte KERNAL/BASIC floating-point library and its ROM entry points."
+keywords: [floating point, FAC, ROM float routines, Rankin library]
 ---
 
 ## facts

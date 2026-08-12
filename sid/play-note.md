@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: recipe
+summary: "Make a single note sound: volume, frequency, pulse width, envelope, gate."
+keywords: [play note, gate, ADSR, envelope, pulse width]
 ---
 
 ## sequence

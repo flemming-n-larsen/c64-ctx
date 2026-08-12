@@ -2,6 +2,8 @@
 type: reference
 domain: examples
 granularity: example
+summary: "Minimal buildable 64tass program that prints HELLO and returns to BASIC."
+keywords: [64tass example, hello world, minimal prg, buildable]
 ---
 
 ## facts

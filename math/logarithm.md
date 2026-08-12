@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "Generate and use an 8-bit logarithm table, or call the ROM LOG entry."
+keywords: [logarithm, log table, table generator]
 ---
 
 ## facts

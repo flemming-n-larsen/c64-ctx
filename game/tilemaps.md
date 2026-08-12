@@ -2,6 +2,8 @@
 type: reference
 domain: game
 granularity: recipe
+summary: "Tile map data layout using 8-bit block indices, and how to draw it."
+keywords: [tile maps, tiles, block indices, level data, map drawing]
 ---
 
 ## facts

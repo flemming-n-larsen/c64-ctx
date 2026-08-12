@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "Sine and cosine tables, 8-bit atan2, CORDIC, and distance approximation."
+keywords: [sine table, cosine, atan2, CORDIC, distance approximation]
 ---
 
 ## facts

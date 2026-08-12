@@ -2,6 +2,8 @@
 type: reference
 domain: asm
 granularity: cross-reference
+summary: "Side-by-side equivalence of the same construct across four assemblers."
+keywords: [rosetta, syntax translation, assembler comparison, porting source]
 ---
 
 ## facts
