@@ -61,12 +61,10 @@ keywords: [filter sweep, cutoff, resonance, low pass, band pass]
 - Bypassed voices (not in `$D417` FILT bits) are unaffected by the filter and pass directly to the output mixer.
 - `$D418` bit 7 (3OFF) silences voice 3 from the output while still allowing filter routing — useful for filter-modulated noise without an audible oscillator.
 
-## links
+## sources
+
+- codebase64.net: [SID Programming](https://codebase64.net/doku.php?id=base:sid_programming) — CC BY-NC-SA 4.0
 - SID registers: [registers.md](registers.md)
 - music patterns: [../music/music-patterns.md](../music/music-patterns.md)
 - IRQ music player: [../music/irq-music-player.md](../music/irq-music-player.md)
 - SID index: [INDEX.md](INDEX.md)
-
-## sources
-- codebase64.net: [SID Programming](https://codebase64.net/doku.php?id=base:sid_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

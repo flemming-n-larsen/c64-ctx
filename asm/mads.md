@@ -44,12 +44,10 @@ keywords: [MADS, cross-assembler, directives, invocation]
 - `ORG` does not emit a load-address header; to produce a `.prg`, prepend `WORD <load_addr>` before the first `ORG` or use a linker script.
 - Primarily tested against Atari targets; verify that any MADS-specific pseudo-ops not listed here behave as expected on 6510 output.
 
-## links
+## sources
+
+- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
+- upstream: MADS documentation (Tomasz Biela / github.com/tebe6502/Mad-Assembler).
 - assembler hub: [INDEX.md](INDEX.md)
 - cross-assembler equivalence: [rosetta.md](rosetta.md)
 - toolchain workflows: [../toolchains/INDEX.md](../toolchains/INDEX.md)
-
-## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
-- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
-- upstream: MADS documentation (Tomasz Biela / github.com/tebe6502/Mad-Assembler).

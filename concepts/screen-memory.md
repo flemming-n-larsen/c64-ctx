@@ -24,15 +24,12 @@ keywords: [screen memory, screen matrix, color RAM, cell layout]
 - Code that writes directly to screen RAM SHOULD write matching color RAM when foreground color matters.
 - Explanations of custom screen or charset locations MUST include VIC-II `$D018` and VIC bank context.
 
-## links
+## sources
+
+- memory map: [../memory/map.md](../memory/map.md)
+- color RAM: [../io/color-ram.md](../io/color-ram.md)
 - VIC hub: [../vic/INDEX.md](../vic/INDEX.md)
 - VIC memory and banking: [../vic/memory-and-banking.md](../vic/memory-and-banking.md)
 - VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
-- color RAM: [../io/color-ram.md](../io/color-ram.md)
 - screen codes: [../charset/screen-codes.md](../charset/screen-codes.md)
 - print task: [../tasks/print-to-screen.md](../tasks/print-to-screen.md)
-
-## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
-- memory map: [../memory/map.md](../memory/map.md)
-- color RAM: [../io/color-ram.md](../io/color-ram.md)

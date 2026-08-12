@@ -46,12 +46,10 @@ The first revision offers larger clusters (up to 6 colors per step), yielding mo
 - DCM (frame-swapped chequerboard) can mix across cluster boundaries because temporal blending partially masks luma mismatches, but same-cluster pairs still produce cleaner results.
 - Cluster membership varies by chip revision; SHOULD verify on the target revision or emulate with Pepto/Colodore palette settings.
 
-## links
+## sources
+
+- Pepto colorvic model: https://www.pepto.de/projects/colorvic/
+- Kodiak64 luma-driven graphics: https://kodiak64.co.uk/blog/luma-driven-graphics-on-c64
 - palette: [palette.md](palette.md)
 - color mixing techniques: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
-
-## sources
-- Pepto colorvic model: https://www.pepto.de/projects/colorvic/
-- Kodiak64 luma-driven graphics: https://kodiak64.co.uk/blog/luma-driven-graphics-on-c64
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

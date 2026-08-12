@@ -50,14 +50,10 @@ keywords: [zero page, free bytes, KERNAL workspace, BASIC workspace]
 - Code that calls KERNAL routines SHOULD assume any KERNAL workspace zero-page field may be read or modified during the call.
 - Code that disables the KERNAL IRQ scan or takes over `CINV` (`$0314`) MAY reuse keyboard/screen workspace at the cost of losing those services.
 
-## links
-- symbols: [symbols.md](symbols.md)
-- map: [map.md](map.md)
-- concept: [../concepts/zero-page.md](../concepts/zero-page.md)
-- CPU registers: [../cpu/6502/registers-flags.md](../cpu/6502/registers-flags.md)
-- processor port: [../io/processor-port.md](../io/processor-port.md)
-
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - memory symbols: [symbols.md](symbols.md)
 - concept: [../concepts/zero-page.md](../concepts/zero-page.md)
+- map: [map.md](map.md)
+- CPU registers: [../cpu/6502/registers-flags.md](../cpu/6502/registers-flags.md)
+- processor port: [../io/processor-port.md](../io/processor-port.md)

@@ -51,7 +51,9 @@ keywords: [music player, IRQ playback, play routine, frame rate call]
 - CIA1 timer IRQs MUST be disabled if the player does not rely on them, to prevent interference.
 - This pattern calls the player at raster line 0; players that expect 50/60 Hz calls work correctly on PAL/NTSC respectively.
 
-## links
+## sources
+
+- codebase64.net: [Simple IRQ Music Player](https://codebase64.net/doku.php?id=sid:simple_irq_music_player) — Richard Bayliss — CC BY-NC-SA 4.0
 - music index: [INDEX.md](INDEX.md)
 - SID index: [../sid/INDEX.md](../sid/INDEX.md)
 - tune integration: [tune-integration.md](tune-integration.md)
@@ -64,7 +66,3 @@ keywords: [music player, IRQ playback, play routine, frame rate call]
 - SID registers: [../sid/registers.md](../sid/registers.md)
 - VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
 - memory symbols: [../memory/symbols.md](../memory/symbols.md)
-
-## sources
-- codebase64.net: [Simple IRQ Music Player](https://codebase64.net/doku.php?id=sid:simple_irq_music_player) — Richard Bayliss — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

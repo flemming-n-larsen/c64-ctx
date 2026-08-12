@@ -53,7 +53,9 @@ keywords: [DYSP, sprite stretching, sprite repositioning, mid-frame update]
 - Sprite Y-expand (`$D017`) doubles vertical size using the hardware, complementing software stretch.
 - For more than 8 simultaneous sprites, combine with [sprite-multiplexer.md](sprite-multiplexer.md).
 
-## links
+## sources
+
+- codebase64.net: [Demo Programming — DYSP](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
 - sprite techniques: [../sprites/advanced.md](../sprites/advanced.md)
 - sprite setup: [../sprites/display.md](../sprites/display.md)
@@ -63,7 +65,3 @@ keywords: [DYSP, sprite stretching, sprite repositioning, mid-frame update]
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
-
-## sources
-- codebase64.net: [Demo Programming — DYSP](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

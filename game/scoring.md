@@ -56,12 +56,10 @@ keywords: [scoring, BCD, decimal mode, score display, points]
 - Score buffer MUST be cleared (set to `$30` for ASCII mode, `$00` for BCD) at game start.
 - BCD `ADC` MUST be preceded by `CLC` each update; stale carry from a previous operation will corrupt the result.
 
-## links
+## sources
+
+- [https://codebase64.net/doku.php?id=base:scoring_points](https://codebase64.net/doku.php?id=base:scoring_points) — codebase64.net — CC BY-NC-SA 4.0
 - game: [hiscore.md](hiscore.md)
 - tasks: [../tasks/counter.md](../tasks/counter.md)
 - charset: [../charset/petscii.md](../charset/petscii.md)
 - charset: [../charset/screen-codes.md](../charset/screen-codes.md)
-
-## sources
-- [https://codebase64.net/doku.php?id=base:scoring_points](https://codebase64.net/doku.php?id=base:scoring_points) — codebase64.net — CC BY-NC-SA 4.0
-- [../sources/INDEX.md](../sources/INDEX.md)

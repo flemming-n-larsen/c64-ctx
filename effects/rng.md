@@ -58,12 +58,10 @@ b1: LDA #0          ; (used as scratch above)
 - Seed the state variables (x1, a1, b1, c1) with non-zero values before first call for best sequence quality; all-zero seed produces a degenerate sequence.
 - For fire ([fire.md](fire.md)) or starfield ([starfield.md](starfield.md)) seeding, call once per cell where randomness is needed.
 
-## links
+## sources
+
+- codebase64.net: [X ABC Random Number Generator (8/16-bit)](https://codebase64.net/doku.php?id=6502_6510_maths:x_abc_random_number_generator_8_16_bit) — EternityForest (algorithm), Wil (C64 implementation) — CC BY-NC-SA 4.0
 - effects: [fire.md](fire.md)
 - effects: [starfield.md](starfield.md)
 - effects: [plasma.md](plasma.md)
 - memory: [../memory/zero-page.md](../memory/zero-page.md)
-
-## sources
-- codebase64.net: [X ABC Random Number Generator (8/16-bit)](https://codebase64.net/doku.php?id=6502_6510_maths:x_abc_random_number_generator_8_16_bit) — EternityForest (algorithm), Wil (C64 implementation) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

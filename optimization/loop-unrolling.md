@@ -54,11 +54,9 @@ Patch `pix+1`, `dst1+1`/`dst1+2`, `dst2+1`/`dst2+2`, `dx+1` before use.
 - Full unrolling trades code size for speed — profile memory impact before unrolling large loops.
 - Copying loop to zero page requires the loop fit within the available zero-page window.
 
-## links
+## sources
+
+- https://codebase64.net/doku.php?id=base:loops_vs_unrolled — CC BY-NC-SA 4.0
 - general speed optimization: [speed.md](speed.md)
 - advanced tricks including SBX and other illegal opcodes: [advanced.md](advanced.md)
 - illegal opcode reference: [../cpu/6502/illegal-opcodes.md](../cpu/6502/illegal-opcodes.md)
-
-## sources
-- https://codebase64.net/doku.php?id=base:loops_vs_unrolled — CC BY-NC-SA 4.0
-- [../sources/INDEX.md](../sources/INDEX.md)

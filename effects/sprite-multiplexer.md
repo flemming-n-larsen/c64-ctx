@@ -46,7 +46,9 @@ keywords: [sprite multiplexer, more than 8 sprites, sprite recycling, Y sort]
 - Two logical sprites on the same Y line can share a hardware slot only if they have the same X and glyph — otherwise use adjacent Y offsets.
 - Combine with [dysp.md](dysp.md) for moving sprites between frames.
 
-## links
+## sources
+
+- codebase64.net: [Demo Programming — Sprite Multiplexer](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
 - sprite techniques: [../sprites/advanced.md](../sprites/advanced.md)
 - sprite setup: [../sprites/display.md](../sprites/display.md)
@@ -56,7 +58,3 @@ keywords: [sprite multiplexer, more than 8 sprites, sprite recycling, Y sort]
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - memory: [../memory/map.md](../memory/map.md)
-
-## sources
-- codebase64.net: [Demo Programming — Sprite Multiplexer](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

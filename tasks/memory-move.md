@@ -80,11 +80,9 @@ MU5 RTS
 - Self-modifying variants cannot be placed in ROM.
 - Routine clobbers A, X, Y, and modifies FROM/TO ZP pointers in place.
 
-## links
+## sources
+
+- https://codebase64.net/doku.php?id=base:practical_memory_move_routines — CC BY-NC-SA 4.0 (author: Bruce Clark / 6502.org)
 - memory clear: [memory-clear.md](memory-clear.md)
 - bank switch (ROM/RAM): [bank-switch-rom-ram.md](bank-switch-rom-ram.md)
 - sizecoding copy routines: [../optimization/sizecoding.md](../optimization/sizecoding.md)
-
-## sources
-- https://codebase64.net/doku.php?id=base:practical_memory_move_routines — CC BY-NC-SA 4.0 (author: Bruce Clark / 6502.org)
-- [../sources/INDEX.md](../sources/INDEX.md)

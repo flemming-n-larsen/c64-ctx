@@ -36,13 +36,8 @@ keywords: [native tools, Turbo Assembler, TMPx, on-machine development]
 - Native source files use PETSCII encoding; conversion to ASCII is needed before use in a cross-assembler (see TMPView in [transfer.md](transfer.md)).
 - TMPx accepts TMP-dialect source directly on PC without encoding conversion.
 
-## links
-- cross-assembler syntax: [../asm/INDEX.md](../asm/INDEX.md)
-- transfer tools (TASM → PC): [transfer.md](transfer.md)
-- crunchers (native): [crunchers.md](crunchers.md)
-
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - Turbo Assembler (Style64): http://turbo.style64.org/
 - Ass Blaster V3.2: https://csdb.dk/release/?id=99889
 - TMPx: http://style64.org/release/tmpx-v1.0-style
@@ -52,3 +47,6 @@ keywords: [native tools, Turbo Assembler, TMPx, on-machine development]
 - Zipper V5.0: https://csdb.dk/release/?id=97926
 - BYG Compactor V1.0: https://csdb.dk/release/?id=10712
 - codebase64.net tools page: https://codebase64.net/doku.php?id=tools:start (CC BY-NC-SA 4.0)
+- cross-assembler syntax: [../asm/INDEX.md](../asm/INDEX.md)
+- transfer tools (TASM → PC): [transfer.md](transfer.md)
+- crunchers (native): [crunchers.md](crunchers.md)

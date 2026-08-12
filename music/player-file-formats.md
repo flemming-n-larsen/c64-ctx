@@ -36,14 +36,11 @@ keywords: [tracker format, JCH, pattern data, sequence bytes, player layout]
 | `BB` | `$01-...` | Note value using current instrument |
 | `BB` | `$7E` | Gate-on hold (`+++`) |
 
-## links
+## sources
+
+- codebase64.net: [JCH 20.G4 Player File Format](https://codebase64.net/doku.php?id=base:jch_20.g4_player_file_format) — CC BY-NC-SA 4.0
+- PSID/RSID container: [sid-file-format.md](sid-file-format.md)
 - music patterns: [music-patterns.md](music-patterns.md)
 - hard restart: [hard-restart.md](hard-restart.md)
 - SID registers: [../sid/registers.md](../sid/registers.md)
 - music index: [INDEX.md](INDEX.md)
-- PSID/RSID container: [sid-file-format.md](sid-file-format.md)
-
-## sources
-- codebase64.net: [JCH 20.G4 Player File Format](https://codebase64.net/doku.php?id=base:jch_20.g4_player_file_format) — CC BY-NC-SA 4.0
-- PSID/RSID container: [sid-file-format.md](sid-file-format.md)
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

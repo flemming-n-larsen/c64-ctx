@@ -55,16 +55,12 @@ A standard raster IRQ does not land at a known cycle within the line. The **doub
 4. NOP padding after the second entry point aligns execution to the exact cycle.
 Without a stable raster, YSCROLL writes may land after VIC-II has already evaluated the bad line condition, making suppression unreliable.
 
-## links
+## sources
 
+- upstream: [mist64/c64ref src/c64io](https://github.com/mist64/c64ref/tree/master/src/c64io)
 - VIC hub: [../vic/INDEX.md](../vic/INDEX.md)
 - VIC timing: [../vic/timing.md](../vic/timing.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - raster interrupt: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - CPU instruction cycles: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
 - concepts index: [INDEX.md](INDEX.md)
-
-## sources
-
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
-- upstream: [mist64/c64ref src/c64io](https://github.com/mist64/c64ref/tree/master/src/c64io)

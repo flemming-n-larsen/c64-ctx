@@ -28,15 +28,12 @@ keywords: [cooperative threads, scheduler, context switch, stack slice]
 - IRQ-driven schedulers SHOULD keep per-frame work bounded so raster, music, and timer consumers are not starved.
 - NMI-based switchers MUST still account for RESTORE/NMI interactions on the C64.
 
-## links
-- interrupt hub: [INDEX.md](INDEX.md)
-- raster interrupt recipe: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
-- KERNAL time/IRQ: [../kernal/time-irq.md](../kernal/time-irq.md)
-- memory symbols: [../memory/symbols.md](../memory/symbols.md)
-- task/game-loop context: [../tasks/game-loop.md](../tasks/game-loop.md)
-
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - legacy task route: [../tasks/cooperative-threads.md](../tasks/cooperative-threads.md)
 - KERNAL coexistence: [../kernal/time-irq.md](../kernal/time-irq.md)
 - provenance note: [../sources/INDEX.md](../sources/INDEX.md) — Codebase64 interrupt coverage groups cooperative threading with advanced IRQ-driven program-flow material.
+- interrupt hub: [INDEX.md](INDEX.md)
+- raster interrupt recipe: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
+- memory symbols: [../memory/symbols.md](../memory/symbols.md)
+- task/game-loop context: [../tasks/game-loop.md](../tasks/game-loop.md)

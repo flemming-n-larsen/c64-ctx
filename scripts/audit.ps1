@@ -72,6 +72,12 @@ foreach ($file in $markdownFiles) {
                 Add-AuditError "${relative}: summary MUST NOT contain a Markdown link"
             }
 
+            # One tail, one meaning. Discovery links belong in the generated
+            # routing layer; ## sources carries provenance and support.
+            if ($content -match '(?m)^## links\s*$') {
+                Add-AuditError "${relative}: ## links is retired on reference pages; merge it into ## sources"
+            }
+
             if (-not $metadata.ContainsKey('keywords')) {
                 Add-AuditError "${relative}: reference is missing front-matter keywords"
             }

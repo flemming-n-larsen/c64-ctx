@@ -16,12 +16,10 @@ keywords: [disassemblers, IDA Pro, Regenerator, binary analysis]
 | IDA Pro | Commercial | Industry standard; 6502 module available; powerful cross-reference and analysis. |
 | Regenerator | Free | C64-specific; outputs labeled, re-assemblable source; CSDB release 247992. |
 
-## links
-- illegal opcodes: [../cpu/6502/illegal-opcodes.md](../cpu/6502/illegal-opcodes.md)
-- CPU instruction set: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
-
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - IDA Pro: https://hex-rays.com/ida-pro/
 - Regenerator: https://csdb.dk/release/?id=247992
 - codebase64.net tools page: https://codebase64.net/doku.php?id=tools:start (CC BY-NC-SA 4.0)
+- illegal opcodes: [../cpu/6502/illegal-opcodes.md](../cpu/6502/illegal-opcodes.md)
+- CPU instruction set: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)

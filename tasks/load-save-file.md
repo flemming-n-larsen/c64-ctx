@@ -27,13 +27,10 @@ keywords: [load file, save file, SETLFS, SETNAM, device number]
 - Recipes SHOULD prefer KERNAL file I/O over direct serial/CIA manipulation unless direct hardware access is requested.
 - Code SHOULD restore default channels with `CLRCHN` after redirected I/O.
 
-## links
+## sources
+
+- task index: [INDEX.md](INDEX.md)
 - KERNAL file I/O: [../kernal/file-io.md](../kernal/file-io.md)
 - KERNAL serial bus: [../kernal/serial-bus.md](../kernal/serial-bus.md)
 - memory map: [../memory/map.md](../memory/map.md)
 - CPU flags/registers: [../cpu/6502/registers-flags.md](../cpu/6502/registers-flags.md)
-
-## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
-- task index: [INDEX.md](INDEX.md)
-- KERNAL file I/O: [../kernal/file-io.md](../kernal/file-io.md)

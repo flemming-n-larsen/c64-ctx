@@ -50,14 +50,12 @@ keywords: [MUFLI, MUIFLI, multicolor underlay, sprite underlay]
 - `$D025` and `$D026` are shared across ALL multicolor sprites; per-sprite differentiation comes only from `$D027+n`.
 - Same 23-cycle-per-line CPU budget applies as FLI.
 
-## links
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - effects: [fli.md](fli.md)
 - effects: [ufli.md](ufli.md)
 - effects: [nufli.md](nufli.md)
 - effects: [mucsufli.md](mucsufli.md)
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
-
-## sources
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

@@ -27,20 +27,11 @@ keywords: [keyboard I/O, text I/O, input layers, screen editor]
 - Treat joystick port 2 interference as a CIA1 hardware constraint when reading the keyboard matrix directly.
 - Use [../sources/INDEX.md](../sources/INDEX.md) when the local route intentionally summarizes Codebase64 topic grouping rather than reproducing full upstream detail.
 
-## links
-- I/O programming hub: [io-programming.md](io-programming.md)
-- CIA1 registers: [cia1.md](cia1.md)
-- Keyboard matrix: [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md)
-- PETSCII: [../charset/petscii.md](../charset/petscii.md)
-- KERNAL keyboard/screen: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
-- Read keyboard task: [../tasks/read-keyboard.md](../tasks/read-keyboard.md)
-- Provenance: [../sources/INDEX.md](../sources/INDEX.md)
-
 ## sources
+
 - I/O programming hub: [io-programming.md](io-programming.md)
 - CIA1 registers: [cia1.md](cia1.md)
 - Keyboard matrix: [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md)
 - KERNAL keyboard/screen: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
 - Read keyboard task: [../tasks/read-keyboard.md](../tasks/read-keyboard.md)
 - PETSCII: [../charset/petscii.md](../charset/petscii.md)
-- Provenance: [../sources/INDEX.md](../sources/INDEX.md)

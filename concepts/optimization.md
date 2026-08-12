@@ -92,7 +92,11 @@ Use zero-page indirect `(ptr),Y` to address arbitrary memory. Store the destinat
 - Self-modifying code is invisible to the instruction cache — not a concern on the 6510, which has no cache.
 - Speedcode generation pauses visible effects for ~0.3–1 frame; schedule it during a part transition or loading screen.
 
-## links
+## sources
+
+- codebase64.net: [Speedcode](https://codebase64.net/doku.php?id=base:speedcode) — CC BY-NC-SA 4.0
+- codebase64.net: [Speeding Up and Optimising Demo Routines](https://codebase64.net/doku.php?id=base:speeding_up_and_optimising_demo_routines) — CC BY-NC-SA 4.0
+- codebase64.net: [Advanced Optimizing](https://codebase64.net/doku.php?id=base:advanced_optimizing) — CC BY-NC-SA 4.0
 - concepts: [interrupts.md](interrupts.md)
 - concepts: [vic-bad-lines.md](vic-bad-lines.md)
 - concepts: [memory-banking.md](memory-banking.md)
@@ -101,9 +105,3 @@ Use zero-page indirect `(ptr),Y` to address arbitrary memory. Store the destinat
 - effects: [../effects/plasma.md](../effects/plasma.md)
 - effects: [../effects/vectors.md](../effects/vectors.md)
 - asm: [../asm/INDEX.md](../asm/INDEX.md)
-
-## sources
-- codebase64.net: [Speedcode](https://codebase64.net/doku.php?id=base:speedcode) — CC BY-NC-SA 4.0
-- codebase64.net: [Speeding Up and Optimising Demo Routines](https://codebase64.net/doku.php?id=base:speeding_up_and_optimising_demo_routines) — CC BY-NC-SA 4.0
-- codebase64.net: [Advanced Optimizing](https://codebase64.net/doku.php?id=base:advanced_optimizing) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

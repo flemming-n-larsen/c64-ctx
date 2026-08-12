@@ -72,7 +72,11 @@ keywords: [unofficial modes, FLI family, technique names, mode abbreviations]
 - Sprite X positions beyond 255 MUST set the corresponding bit in `$D010`; see `tasks/sprite-display.md`.
 - FLI bug region (leftmost ~3 character columns) SHOULD be treated as a design constraint, not an error to suppress.
 
-## links
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
+- c64-wiki.com: [NUFLI](https://www.c64-wiki.com/wiki/NUFLI) — GFDL
+- codebase64.net: [FLI](https://codebase64.net/doku.php?id=base:fli) — CC BY-NC-SA 4.0
 - VIC hub: [../vic/INDEX.md](../vic/INDEX.md)
 - VIC screen modes: [../vic/screen-modes.md](../vic/screen-modes.md)
 - display-modes index: [../display-modes/INDEX.md](../display-modes/INDEX.md)
@@ -84,9 +88,3 @@ keywords: [unofficial modes, FLI family, technique names, mode abbreviations]
 - stable raster: [../effects/stable-raster.md](../effects/stable-raster.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - VIC bad lines: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
-
-## sources
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- c64-wiki.com: [NUFLI](https://www.c64-wiki.com/wiki/NUFLI) — GFDL
-- codebase64.net: [FLI](https://codebase64.net/doku.php?id=base:fli) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

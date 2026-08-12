@@ -68,19 +68,13 @@ Build with `ca65 hello.s -o hello.o` and `ld65 -C custom.cfg -o hello.prg hello.
 - A custom-config build MUST emit its own BASIC SYS stub at `$0801`, otherwise `RUN` jumps into garbage.
 - The cc65 runtime saves/restores the stack pointer; aggressive zero-page use (`$02-$1A`) MAY clobber the runtime's scratch — see the `ZEROPAGE` segment in `c64.cfg`.
 
-## links
+## sources
+
 - CA65 reference: [../asm/ca65.md](../asm/ca65.md)
 - common ASM patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - CA65 workflow: [../toolchains/ca65-workflow.md](../toolchains/ca65-workflow.md)
-- VICE: [../toolchains/vice.md](../toolchains/vice.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
+- VICE: [../toolchains/vice.md](../toolchains/vice.md)
 - memory map: [../memory/map.md](../memory/map.md)
 - CPU instruction set: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
 - example index: [INDEX.md](INDEX.md)
-
-## sources
-- CA65 reference: [../asm/ca65.md](../asm/ca65.md)
-- common ASM patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
-- CA65 workflow: [../toolchains/ca65-workflow.md](../toolchains/ca65-workflow.md)
-- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- local route: [../sources/INDEX.md](../sources/INDEX.md)

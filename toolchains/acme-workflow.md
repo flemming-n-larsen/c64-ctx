@@ -63,13 +63,11 @@ acme --vicelabels hello.vs -o hello.prg hello.a
 x64sc -moncommands hello.vs hello.prg
 ```
 
-## links
+## sources
+
+- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
+- upstream: ACME user manual (Marco Baye), distributed with the ACME release archive.
 - ACME reference: [../asm/acme.md](../asm/acme.md)
 - common patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - VICE: [vice.md](vice.md)
 - toolchain index: [INDEX.md](INDEX.md)
-
-## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
-- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
-- upstream: ACME user manual (Marco Baye), distributed with the ACME release archive.

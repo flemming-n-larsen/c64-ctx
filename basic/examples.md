@@ -82,29 +82,23 @@ Notes: `49152` = `$C000`, a 4 KiB RAM block outside BASIC's working area, safe a
 - The `DATA` loader writes to `$C000` — outside BASIC's working RAM — so the machine code survives `NEW` and BASIC variable growth, but is overwritten by any later cartridge or program that uses `$C000-$CFFF`.
 - Programs MUST be entered as BASIC V2 only; no extended (BASIC 3.5/7.0) commands are used or assumed.
 
-## links
-- [program-structure.md](program-structure.md)
-- [io.md](io.md)
-- [graphics-sound.md](graphics-sound.md)
-- [machine-code-bridge.md](machine-code-bridge.md)
-- [keywords.md](keywords.md)
-- [functions.md](functions.md)
-- [variables.md](variables.md)
-- [errors.md](errors.md)
-- [../io/vic-ii.md](../io/vic-ii.md)
-- [../sid/registers.md](../sid/registers.md)
-- [../colors/palette.md](../colors/palette.md)
-- [../charset/petscii.md](../charset/petscii.md)
-- [../charset/screen-codes.md](../charset/screen-codes.md)
-- [../tasks/read-keyboard.md](../tasks/read-keyboard.md)
-- [../tasks/sprite-display.md](../tasks/sprite-display.md)
-- [../memory/map.md](../memory/map.md)
-
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - BASIC index: [INDEX.md](INDEX.md)
 - program structure: [program-structure.md](program-structure.md)
 - machine-code bridge: [machine-code-bridge.md](machine-code-bridge.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - SID registers: [../sid/registers.md](../sid/registers.md)
 - Upstream: C64 Programmer's Reference Guide (Commodore Business Machines, 1982) — adapted, not copied; register addresses cross-checked against mist64/c64ref `src/c64io`. AI-summarized; each example is an original short program.
+- [io.md](io.md)
+- [graphics-sound.md](graphics-sound.md)
+- [keywords.md](keywords.md)
+- [functions.md](functions.md)
+- [variables.md](variables.md)
+- [errors.md](errors.md)
+- [../colors/palette.md](../colors/palette.md)
+- [../charset/petscii.md](../charset/petscii.md)
+- [../charset/screen-codes.md](../charset/screen-codes.md)
+- [../tasks/read-keyboard.md](../tasks/read-keyboard.md)
+- [../tasks/sprite-display.md](../tasks/sprite-display.md)
+- [../memory/map.md](../memory/map.md)

@@ -37,20 +37,13 @@ keywords: [sprite setup, sprite pointer, 64-byte alignment, enable sprite]
 - Multicolor sprites require bit `n` of `$D01C` set; effective resolution halves to 12×21; pixel pairs use `$D027+n` (color 1), `$D025` (color 2, shared), `$D026` (color 3, shared), and transparent for `%00`.
 - Sprite-background priority is controlled per sprite by `$D01B`; collision detection registers `$D01E` and `$D01F` clear on read.
 
-## links
-
-- sprite hub: [../sprites/INDEX.md](../sprites/INDEX.md)
-- sprite registers: [../sprites/registers.md](../sprites/registers.md)
-- sprite display summary: [../sprites/display.md](../sprites/display.md)
-- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- CIA2 / VIC bank: [../io/cia2.md](../io/cia2.md)
-- memory map: [../memory/map.md](../memory/map.md)
-- raster interrupt: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
-- task index: [INDEX.md](INDEX.md)
-
 ## sources
 
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
 - task index: [INDEX.md](INDEX.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - CIA2 bank select: [../io/cia2.md](../io/cia2.md)
+- sprite hub: [../sprites/INDEX.md](../sprites/INDEX.md)
+- sprite registers: [../sprites/registers.md](../sprites/registers.md)
+- sprite display summary: [../sprites/display.md](../sprites/display.md)
+- memory map: [../memory/map.md](../memory/map.md)
+- raster interrupt: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)

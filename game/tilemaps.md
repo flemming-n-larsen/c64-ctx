@@ -35,13 +35,11 @@ keywords: [tile maps, tiles, block indices, level data, map drawing]
 - Color memory SHOULD use per-block color lookup rather than full-screen shifting; during horizontal scroll only 1 in 4 columns changes, reducing color-RAM writes by ~75%. Cadaver/Covert Bitops (Rant 4).
 - Objects SHOULD use world-coords v2 encoding when background collision speed is critical; screen-coord objects exhibit erratic boundary behavior and require hardcoded off-screen responses.
 
-## links
+## sources
+
+- [https://codebase64.net/doku.php?id=base:rant4](https://codebase64.net/doku.php?id=base:rant4) — Cadaver/Covert Bitops, "Rant 4: Multidirectional Scrolling and Game World" — CC BY-NC-SA 4.0
 - game: [scrolling.md](scrolling.md)
 - memory: [../memory/map.md](../memory/map.md)
 - vic: [../vic/INDEX.md](../vic/INDEX.md)
 - io: [../io/color-ram.md](../io/color-ram.md)
 - concepts: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
-
-## sources
-- [https://codebase64.net/doku.php?id=base:rant4](https://codebase64.net/doku.php?id=base:rant4) — Cadaver/Covert Bitops, "Rant 4: Multidirectional Scrolling and Game World" — CC BY-NC-SA 4.0
-- [../sources/INDEX.md](../sources/INDEX.md)

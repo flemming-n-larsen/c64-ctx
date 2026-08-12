@@ -38,12 +38,10 @@ STA $D417
 - `$D417 = $08` only suppresses the external input path; it does not remove oscillator noise or chip-revision differences.
 - Software mitigation helps most in quiet passages and digi-heavy setups, but does not replace proper audio hardware cleanup.
 
-## links
+## sources
+
+- codebase64.net: [Reduce noise](https://codebase64.net/doku.php?id=base:reduce_noise) — CC BY-NC-SA 4.0
 - SID registers: [registers.md](registers.md)
 - waveforms: [waveforms.md](waveforms.md)
 - digi samples: [digi-samples.md](digi-samples.md)
 - SID index: [INDEX.md](INDEX.md)
-
-## sources
-- codebase64.net: [Reduce noise](https://codebase64.net/doku.php?id=base:reduce_noise) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

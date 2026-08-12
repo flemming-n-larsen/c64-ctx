@@ -69,15 +69,13 @@ literal:
 - Decompressor MUST be placed in RAM before execution; if compressed data overwrites the decompressor itself, decompress backwards or use a two-pass approach.
 - In-place decompression (compressed data expands into the same region) requires that the compressed data is placed at the end of the target area and decompression runs backwards.
 
-## links
-- algorithms: [rng.md](rng.md)
-- memory: [../memory/INDEX.md](../memory/INDEX.md)
-
 ## sources
+
 - codebase64.net: [RLE pack/unpack](https://codebase64.net/doku.php?id=base:rle_pack_unpack) — CC BY-NC-SA 4.0
 - codebase64.net: [The secret of fast LZW crunching](https://codebase64.net/doku.php?id=base:the_secret_of_fast_lzw_crunching) — CC BY-NC-SA 4.0
 - codebase64.net: [LZMPI compression](https://codebase64.net/doku.php?id=base:lzmpi_compression) — CC BY-NC-SA 4.0
 - codebase64.net: [MDG Bytesmasher 0.04](https://codebase64.net/doku.php?id=base:mdg_bytesmasher_0.04) — CC BY-NC-SA 4.0
 - codebase64.net: [Dictionary compression](https://codebase64.net/doku.php?id=base:dictionary_compression) — CC BY-NC-SA 4.0
 - codebase64.net: [Compression benchmarks](https://codebase64.net/doku.php?id=base:compression_benchmarks) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)
+- algorithms: [rng.md](rng.md)
+- memory: [../memory/INDEX.md](../memory/INDEX.md)

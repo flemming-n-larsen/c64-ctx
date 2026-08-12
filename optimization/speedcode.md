@@ -86,11 +86,9 @@ Patch RTS at end of generated block
 - Unrolling the generator's own inner loop (X-loop for plasma) gives the highest speedup since it runs 1000 times vs. 25 for the Y-loop.
 - Keep a memory map at the top of source to track allocations, especially zero-page variables.
 
-## links
+## sources
+
+- https://codebase64.net/doku.php?id=base:speedcode — CC BY-NC-SA 4.0
 - loop unrolling fundamentals: [loop-unrolling.md](loop-unrolling.md)
 - general speed optimization: [speed.md](speed.md)
 - advanced cycle tricks: [advanced.md](advanced.md)
-
-## sources
-- https://codebase64.net/doku.php?id=base:speedcode — CC BY-NC-SA 4.0
-- [../sources/INDEX.md](../sources/INDEX.md)

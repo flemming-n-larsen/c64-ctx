@@ -32,13 +32,10 @@ keywords: [color numbers, palette, RGB values, color RAM nibble]
 - Luma values are from the Pepto color model (most common VIC-II revision); first-revision chips used 5 coarser luma steps — see [luma-clusters.md](luma-clusters.md).
 - Color control-code examples SHOULD cite [../charset/control-codes.md](../charset/control-codes.md).
 
-## links
+## sources
+
+- colors index: [INDEX.md](INDEX.md)
+- charset controls: [../charset/control-codes.md](../charset/control-codes.md)
 - luma clusters: [luma-clusters.md](luma-clusters.md)
 - color RAM: [../io/color-ram.md](../io/color-ram.md)
 - VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
-- control codes: [../charset/control-codes.md](../charset/control-codes.md)
-
-## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
-- colors index: [INDEX.md](INDEX.md)
-- charset controls: [../charset/control-codes.md](../charset/control-codes.md)

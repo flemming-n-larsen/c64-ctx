@@ -47,12 +47,10 @@ not_equal:
 - For 16-bit signed comparison, subtract the full 16-bit value with `SEC`/`SBC` across both bytes and then test `N XOR V`.
 - Ranged comparison with `SBC` assumes carry is set before the first `SBC`; MUST precede with `SEC`.
 
-## links
-- math: [add-sub.md](add-sub.md)
-- cpu: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
-
 ## sources
+
 - codebase64.net: [8-bit ranged comparison](https://codebase64.net/doku.php?id=base:8-bit_ranged_comparison) — CC BY-NC-SA 4.0
 - codebase64.net: [16-bit absolute comparison](https://codebase64.net/doku.php?id=base:16-bit_absolute_comparison) — CC BY-NC-SA 4.0
 - codebase64.net: [16-bit comparison](https://codebase64.net/doku.php?id=base:16-bit_comparison) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)
+- math: [add-sub.md](add-sub.md)
+- cpu: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)

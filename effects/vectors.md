@@ -52,7 +52,12 @@ keywords: [vectors, 3D polygons, wireframe, painter's algorithm, scanline fill]
 - Sprite-based vectors avoid bitmap writes but are limited to sprite resolution (24×21 pixels per hardware sprite); visual quality is lower.
 - Bitmap must be in the current VIC bank and not overlapping I/O or ROM; see [../concepts/memory-banking.md](../concepts/memory-banking.md).
 
-## links
+## sources
+
+- codebase64.net: [Filling the Vectors](https://codebase64.net/doku.php?id=base:filling_the_vectors) — CC BY-NC-SA 4.0
+- codebase64.net: [Drivecalc Vectors](https://codebase64.net/doku.php?id=base:drivecalc_vectors) — CC BY-NC-SA 4.0
+- codebase64.net: [Sprite Vectors](https://codebase64.net/doku.php?id=base:spritevectors) — CC BY-NC-SA 4.0
+- codebase64.net: [Demo Programming — Vectors](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - effects: [sprite-multiplexer.md](sprite-multiplexer.md)
 - effects: [stable-raster.md](stable-raster.md)
 - concepts: [../concepts/optimization.md](../concepts/optimization.md)
@@ -60,10 +65,3 @@ keywords: [vectors, 3D polygons, wireframe, painter's algorithm, scanline fill]
 - tasks: [../tasks/sprite-display.md](../tasks/sprite-display.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
-
-## sources
-- codebase64.net: [Filling the Vectors](https://codebase64.net/doku.php?id=base:filling_the_vectors) — CC BY-NC-SA 4.0
-- codebase64.net: [Drivecalc Vectors](https://codebase64.net/doku.php?id=base:drivecalc_vectors) — CC BY-NC-SA 4.0
-- codebase64.net: [Sprite Vectors](https://codebase64.net/doku.php?id=base:spritevectors) — CC BY-NC-SA 4.0
-- codebase64.net: [Demo Programming — Vectors](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

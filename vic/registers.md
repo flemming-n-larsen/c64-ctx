@@ -30,17 +30,13 @@ keywords: [VIC registers, register block, mirroring, control registers]
 - Sprite X positions beyond `255` require both the low byte in `$D000+$2*n` and the matching `$D010` bit.
 - Any address derived from `$D018` MUST include the active CIA2 VIC bank from `$DD00`.
 
-## links
+## sources
+
 - VIC hub: [INDEX.md](INDEX.md)
-- authoritative register table: [../io/vic-ii.md](../io/vic-ii.md)
+- local register reference: [../io/vic-ii.md](../io/vic-ii.md)
+- CIA2 bank select: [../io/cia2.md](../io/cia2.md)
 - memory and banking: [memory-and-banking.md](memory-and-banking.md)
 - timing: [timing.md](timing.md)
 - screen modes: [screen-modes.md](screen-modes.md)
 - raster IRQ recipe: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - sprite setup: [../tasks/sprite-display.md](../tasks/sprite-display.md)
-
-## sources
-- VIC hub: [INDEX.md](INDEX.md)
-- local register reference: [../io/vic-ii.md](../io/vic-ii.md)
-- CIA2 bank select: [../io/cia2.md](../io/cia2.md)
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

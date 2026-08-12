@@ -26,16 +26,9 @@ keywords: [pointing devices, paddles, light pen, trackball, POT lines]
 - Keep analog SID reads separate from CIA digital port reads; they are different hardware interfaces.
 - Use provenance rather than copied prose when Codebase64 acts as a catalog of device-specific articles.
 
-## links
-- I/O programming hub: [io-programming.md](io-programming.md)
-- SID registers: [../sid/registers.md](../sid/registers.md)
-- CIA1 registers: [cia1.md](cia1.md)
-- Commodore 1351 mouse: [mouse-1351.md](mouse-1351.md)
-- Provenance: [../sources/INDEX.md](../sources/INDEX.md)
-
 ## sources
+
 - SID registers: [../sid/registers.md](../sid/registers.md)
 - CIA1 registers: [cia1.md](cia1.md)
 - Commodore 1351 mouse: [mouse-1351.md](mouse-1351.md)
 - I/O programming hub: [io-programming.md](io-programming.md)
-- Provenance: [../sources/INDEX.md](../sources/INDEX.md)

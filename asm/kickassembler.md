@@ -74,13 +74,11 @@ end_of_basic: .word 0
     rts
 ```
 
-## links
+## sources
+
+- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
+- upstream: KickAssembler reference manual (Mads Nielsen), distributed with the KickAssembler release archive.
 - common patterns: [common-patterns.md](common-patterns.md)
 - rosetta: [rosetta.md](rosetta.md)
 - CPU mnemonics: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
 - toolchain workflow: [../toolchains/kickassembler-workflow.md](../toolchains/kickassembler-workflow.md)
-
-## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
-- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
-- upstream: KickAssembler reference manual (Mads Nielsen), distributed with the KickAssembler release archive.

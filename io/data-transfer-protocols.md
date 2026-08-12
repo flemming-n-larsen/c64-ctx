@@ -25,18 +25,10 @@ keywords: [transfer protocols, handshaking, serial transfer, link protocols]
 - Distinguish KERNAL-managed IEC/file calls from any protocol that bypasses or extends them.
 - Protocol-specific timing and framing MUST remain on implementation pages with direct citations.
 
-## links
-- I/O programming hub: [io-programming.md](io-programming.md)
-- KERNAL serial bus: [../kernal/serial-bus.md](../kernal/serial-bus.md)
-- KERNAL file I/O: [../kernal/file-io.md](../kernal/file-io.md)
-- Load/save task: [../tasks/load-save-file.md](../tasks/load-save-file.md)
-- Fast loaders: [fast-loaders.md](fast-loaders.md)
-- Provenance: [../sources/INDEX.md](../sources/INDEX.md)
-
 ## sources
+
 - KERNAL serial bus: [../kernal/serial-bus.md](../kernal/serial-bus.md)
 - KERNAL file I/O: [../kernal/file-io.md](../kernal/file-io.md)
 - Load/save task: [../tasks/load-save-file.md](../tasks/load-save-file.md)
 - Fast loaders: [fast-loaders.md](fast-loaders.md)
 - I/O programming hub: [io-programming.md](io-programming.md)
-- Provenance: [../sources/INDEX.md](../sources/INDEX.md)

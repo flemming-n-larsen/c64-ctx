@@ -29,11 +29,10 @@ keywords: [addressing modes, indirect indexed, zero page, operand syntax]
 - Addressing examples SHOULD be cross-checked against opcode availability in [instruction-set.md](instruction-set.md).
 - Page-crossing penalty rule: read instructions using `abs,X`, `abs,Y`, or `(ind),Y` take 1 extra cycle when the computed effective address crosses a 256-byte page boundary (high byte changes). Write (store) instructions and read-modify-write instructions (`ASL`, `LSR`, `ROL`, `ROR`, `INC`, `DEC`) in `abs,X` always take the maximum cycle count — no conditional penalty.
 
-## links
+## sources
+
+- local route: [../../sources/INDEX.md](../../sources/INDEX.md)
+- CPU index: [INDEX.md](INDEX.md)
 - registers and flags: [registers-flags.md](registers-flags.md)
 - zero page concept: [../../concepts/zero-page.md](../../concepts/zero-page.md)
 - memory map: [../../memory/map.md](../../memory/map.md)
-
-## sources
-- local route: [../../sources/INDEX.md](../../sources/INDEX.md)
-- CPU index: [INDEX.md](INDEX.md)

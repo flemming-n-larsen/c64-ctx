@@ -120,15 +120,12 @@ line-link  line#  GO  space  TO   space 1  0   end
 $NN $NN    $14 00 $CB $20    $A4  $20  $31 $30 $00
 ```
 
-## links
-- BASIC workspace and text pointers: [vectors.md](vectors.md)
-- Keyword semantics and dispatch: [keywords.md](keywords.md)
-- Built-in functions: [functions.md](functions.md)
-- BASIC ROM tokenizer and `CHRGET`: [../rom/basic-disassembly.md](../rom/basic-disassembly.md)
-- PETSCII vs token distinction: [../charset/petscii.md](../charset/petscii.md)
-
 ## sources
+
 - local route: [../sources/INDEX.md](../sources/INDEX.md) (upstream mist64/c64ref `src/c64disasm` for token byte values)
 - BASIC index: [INDEX.md](INDEX.md)
 - BASIC vectors: [vectors.md](vectors.md)
 - character distinction: [../charset/petscii.md](../charset/petscii.md)
+- Keyword semantics and dispatch: [keywords.md](keywords.md)
+- Built-in functions: [functions.md](functions.md)
+- BASIC ROM tokenizer and `CHRGET`: [../rom/basic-disassembly.md](../rom/basic-disassembly.md)

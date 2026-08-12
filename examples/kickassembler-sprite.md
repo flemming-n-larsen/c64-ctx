@@ -78,22 +78,16 @@ Type `RUN`; a solid white sprite appears near the top-left of the screen and sta
 - `JMP forever` MUST run with interrupts left enabled — the BASIC IRQ handler at `$EA31` keeps the keyboard/cursor live; do not `SEI` in this example.
 - `java -jar KickAss.jar` requires a Java runtime (JRE 8+) on PATH; substitute `KickAss5.jar` or local install path as needed.
 
-## links
-- sprite hub: [../sprites/INDEX.md](../sprites/INDEX.md)
-- sprite display summary: [../sprites/display.md](../sprites/display.md)
+## sources
+
 - KickAssembler reference: [../asm/kickassembler.md](../asm/kickassembler.md)
-- common ASM patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - KickAssembler workflow: [../toolchains/kickassembler-workflow.md](../toolchains/kickassembler-workflow.md)
 - sprite display task: [../tasks/sprite-display.md](../tasks/sprite-display.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
+- sprite hub: [../sprites/INDEX.md](../sprites/INDEX.md)
+- sprite display summary: [../sprites/display.md](../sprites/display.md)
+- common ASM patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - CIA2 / VIC bank: [../io/cia2.md](../io/cia2.md)
 - memory map: [../memory/map.md](../memory/map.md)
 - VICE: [../toolchains/vice.md](../toolchains/vice.md)
 - example index: [INDEX.md](INDEX.md)
-
-## sources
-- KickAssembler reference: [../asm/kickassembler.md](../asm/kickassembler.md)
-- KickAssembler workflow: [../toolchains/kickassembler-workflow.md](../toolchains/kickassembler-workflow.md)
-- sprite display task: [../tasks/sprite-display.md](../tasks/sprite-display.md)
-- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- local route: [../sources/INDEX.md](../sources/INDEX.md)

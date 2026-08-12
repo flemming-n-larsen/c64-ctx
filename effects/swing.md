@@ -43,15 +43,13 @@ keywords: [swing, tech-tech, techtech, horizontal sine, wide scroll]
 - `$D018` changes take effect at the following bad line; writing it exactly at the start of each bad line (YSCROLL manipulation) is required.
 - The FLI bug (first column artifact at the left side of the screen) applies; mask it with sprites or keep the logo away from column 0.
 
-## links
+## sources
+
+- codebase64.net: [Demo Programming — Swinging and Tech-Tech](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
+- codebase64.net: [TechTech (using FLI routine)](https://codebase64.net/doku.php?id=base:techtech_fli) — CC BY-NC-SA 4.0
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [fld.md](fld.md)
 - effects: [dycp.md](dycp.md)
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
-
-## sources
-- codebase64.net: [Demo Programming — Swinging and Tech-Tech](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- codebase64.net: [TechTech (using FLI routine)](https://codebase64.net/doku.php?id=base:techtech_fli) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

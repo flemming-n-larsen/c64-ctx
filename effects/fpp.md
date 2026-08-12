@@ -40,7 +40,10 @@ keywords: [FPP, stretcher, flexible pixel position, horizontal warp]
 - Modifying `chartab` while it is being consumed produces visible tearing; use double-buffering or restrict updates to the blanked portion.
 - See FLI bad-line cycle impact: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md).
 
-## links
+## sources
+
+- codebase64.net: [FLI-FPP Scroller](https://codebase64.net/doku.php?id=base:fli-fpp-scroller) — CC BY-NC-SA 4.0
+- codebase64.net: [Demo Programming — FPP (Stretcher)](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - effects: [swing.md](swing.md)
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [fld.md](fld.md)
@@ -48,8 +51,3 @@ keywords: [FPP, stretcher, flexible pixel position, horizontal warp]
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
-
-## sources
-- codebase64.net: [FLI-FPP Scroller](https://codebase64.net/doku.php?id=base:fli-fpp-scroller) — CC BY-NC-SA 4.0
-- codebase64.net: [Demo Programming — FPP (Stretcher)](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

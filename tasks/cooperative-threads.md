@@ -19,12 +19,9 @@ keywords: [cooperative threads, redirect, moved page]
 - Thread count and stack depth still need explicit budgeting because the 6502 hardware stack is only 256 bytes.
 - Shared zero-page and I/O ownership remain local design constraints even when the generic switching recipe is centralized under `/irq`.
 
-## links
+## sources
+
 - canonical route: [../irq/cooperative-threads.md](../irq/cooperative-threads.md)
 - raster interrupt setup: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - game loop pattern: [game-loop.md](game-loop.md)
 - bank switch (KERNAL on/off): [bank-switch-rom-ram.md](bank-switch-rom-ram.md)
-
-## sources
-- [../sources/INDEX.md](../sources/INDEX.md)
-- canonical route: [../irq/cooperative-threads.md](../irq/cooperative-threads.md)

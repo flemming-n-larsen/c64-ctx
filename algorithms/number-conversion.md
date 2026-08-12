@@ -88,12 +88,8 @@ rev_loop:
 - Hex-string-to-binary MUST handle both uppercase (A–F = $41–$46) and lowercase (a–f = $61–$66) input if parsing user strings.
 - 32-bit decimal conversion requires 10 result bytes and may take 200–500 cycles; not suitable for per-frame conversion.
 
-## links
-- math: [../math/fixed-point.md](../math/fixed-point.md)
-- math: [../math/add-sub.md](../math/add-sub.md)
-- charset: [../charset/INDEX.md](../charset/INDEX.md)
-
 ## sources
+
 - codebase64.net: [Hexadecimal to decimal conversion](https://codebase64.net/doku.php?id=base:hexadecimal_to_decimal_conversion) — CC BY-NC-SA 4.0
 - codebase64.net: [Decimal to hexadecimal conversion](https://codebase64.net/doku.php?id=base:decimal_to_hexadecimal_conversion) — CC BY-NC-SA 4.0
 - codebase64.net: [8-bit to hexadecimal conversion](https://codebase64.net/doku.php?id=base:8_bit_to_hexadecimal_conversion) — CC BY-NC-SA 4.0
@@ -101,4 +97,6 @@ rev_loop:
 - codebase64.net: [int16 and uint16 conversion to string](https://codebase64.net/doku.php?id=base:int16_and_uint16_conversion_to_string) — CC BY-NC-SA 4.0
 - codebase64.net: [Sign extension](https://codebase64.net/doku.php?id=base:sign_extension) — CC BY-NC-SA 4.0
 - codebase64.net: [Reversing bits in a byte](https://codebase64.net/doku.php?id=base:reversing_bits_in_a_byte) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)
+- math: [../math/fixed-point.md](../math/fixed-point.md)
+- math: [../math/add-sub.md](../math/add-sub.md)
+- charset: [../charset/INDEX.md](../charset/INDEX.md)

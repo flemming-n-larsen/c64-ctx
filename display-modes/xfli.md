@@ -48,13 +48,11 @@ keywords: [XFLI, XIFLI, extended FLI, per-line background]
 - `$D021` write can be placed anywhere in the visible portion of the raster line as it takes effect on the current line's background.
 - XIFLI requires two `$D021` tables (frame A and B), doubling the artwork color data.
 
-## links
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - effects: [fli.md](fli.md)
 - effects: [ifli.md](ifli.md)
 - effects: [nufli.md](nufli.md)
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
-
-## sources
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

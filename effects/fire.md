@@ -37,14 +37,12 @@ keywords: [fire effect, flame, neighbour average, intensity charset]
 - Custom charset MUST be in the same VIC bank as screen RAM; see [../tasks/custom-charset.md](../tasks/custom-charset.md).
 - The neighbor-average MUST wrap at screen edges or clamp to avoid reading garbage values.
 
-## links
+## sources
+
+- codebase64.net: [Demo Programming — Fire Effects](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - effects: [rng.md](rng.md)
 - tasks: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - tasks: [../tasks/game-loop.md](../tasks/game-loop.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - colors: [../colors/INDEX.md](../colors/INDEX.md)
 - memory: [../memory/map.md](../memory/map.md)
-
-## sources
-- codebase64.net: [Demo Programming — Fire Effects](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

@@ -28,12 +28,9 @@ keywords: [BASIC vectors, interpreter hooks, workspace pointers, wedge]
 - Agents SHOULD verify aliases in the local symbol pages before claiming a symbol is unique.
 - Machine-language programs MUST NOT overwrite BASIC vectors/workspace unless intentionally controlling BASIC state.
 
-## links
+## sources
+
+- BASIC index: [INDEX.md](INDEX.md)
 - memory symbols: [../memory/symbols.md](../memory/symbols.md)
 - zero page: [../memory/zero-page.md](../memory/zero-page.md)
 - BASIC ROM route: [../rom/basic-disassembly.md](../rom/basic-disassembly.md)
-
-## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
-- BASIC index: [INDEX.md](INDEX.md)
-- memory symbols: [../memory/symbols.md](../memory/symbols.md)

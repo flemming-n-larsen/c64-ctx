@@ -55,17 +55,14 @@ Two-statement input loop using `IF`/`THEN`:
 20 PRINT "GOT ";A$
 ```
 
-## links
-- variables: [variables.md](variables.md)
-- keywords: [keywords.md](keywords.md)
-- I/O statements: [io.md](io.md)
-- example programs: [examples.md](examples.md)
-- BASIC workspace vectors: [vectors.md](vectors.md)
-- memory map: [../memory/map.md](../memory/map.md)
-- zero page: [../memory/zero-page.md](../memory/zero-page.md)
-
 ## sources
+
 - local route: [../sources/INDEX.md](../sources/INDEX.md) (PRG 1982 — program structure)
 - BASIC workspace vectors: [vectors.md](vectors.md)
 - memory map: [../memory/map.md](../memory/map.md)
 - BASIC index: [INDEX.md](INDEX.md)
+- variables: [variables.md](variables.md)
+- keywords: [keywords.md](keywords.md)
+- I/O statements: [io.md](io.md)
+- example programs: [examples.md](examples.md)
+- zero page: [../memory/zero-page.md](../memory/zero-page.md)

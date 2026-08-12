@@ -61,7 +61,9 @@ The C64 16-color palette has uneven luminance steps; blending produces best resu
 - Same per-line CPU budget applies as FLI: 23 free cycles per bad line (PAL).
 - Encoding two-frame color pairs for artwork requires specialized conversion tools; direct viewing of single frames looks incorrect.
 
-## links
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - effects: [fli.md](fli.md)
 - effects: [nufli.md](nufli.md)
 - effects: [ufli.md](ufli.md)
@@ -70,7 +72,3 @@ The C64 16-color palette has uneven luminance steps; blending produces best resu
 - graphics: [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
-
-## sources
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

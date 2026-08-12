@@ -33,14 +33,12 @@ LDA $4000,X
 - Tune data that overlaps `$D400-$D418` is especially dangerous because hidden-I/O writes can corrupt both music data and intended SID output behavior.
 - Newer trackers/editors may support ghost-register output directly; older players often require manual patching.
 
-## links
+## sources
+
+- codebase64.net: [Avoiding the `$D000-$DFFF` issue for playing music](https://codebase64.net/doku.php?id=base:avoiding_the_d000-_dfff_issue_for_playing_music) — CC BY-NC-SA 4.0
 - tune integration: [tune-integration.md](tune-integration.md)
 - IRQ music player: [irq-music-player.md](irq-music-player.md)
 - SID registers: [../sid/registers.md](../sid/registers.md)
 - processor port / `$01`: [../io/processor-port.md](../io/processor-port.md)
 - I/O area memory: [../memory/io-area.md](../memory/io-area.md)
 - music index: [INDEX.md](INDEX.md)
-
-## sources
-- codebase64.net: [Avoiding the `$D000-$DFFF` issue for playing music](https://codebase64.net/doku.php?id=base:avoiding_the_d000-_dfff_issue_for_playing_music) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

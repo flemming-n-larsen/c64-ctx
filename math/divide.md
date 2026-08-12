@@ -67,15 +67,13 @@ no_sub:
 - `LSR` for unsigned ÷ 2 sets carry to the shifted-out bit (usable as the remainder bit).
 - `ROR` for signed ASR MUST be preceded by `CMP #$80` to set carry correctly from the sign bit.
 
-## links
-- math: [multiply.md](multiply.md)
-- math: [fixed-point.md](fixed-point.md)
-- cpu: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
-
 ## sources
+
 - codebase64.net: [8-bit divide 8-bit product](https://codebase64.net/doku.php?id=base:8bit_divide_8bit_product) — CC BY-NC-SA 4.0
 - codebase64.net: [8-bit divide by constant 8-bit result](https://codebase64.net/doku.php?id=base:8bit_divide_by_constant_8bit_result) — CC BY-NC-SA 4.0
 - codebase64.net: [16-bit division 16-bit result](https://codebase64.net/doku.php?id=base:16bit_division_16-bit_result) — CC BY-NC-SA 4.0
 - codebase64.net: [24-bit division 24-bit result](https://codebase64.net/doku.php?id=base:24bit_division_24-bit_result) — CC BY-NC-SA 4.0
 - codebase64.net: [Signed 8-bit divide by 2 (ASR)](https://codebase64.net/doku.php?id=base:signed_8bit_divide_by_2_arithmetic_shift_right) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)
+- math: [multiply.md](multiply.md)
+- math: [fixed-point.md](fixed-point.md)
+- cpu: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)

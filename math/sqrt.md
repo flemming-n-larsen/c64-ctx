@@ -61,11 +61,9 @@ pow2: .byte 1,2,4,8,16,32,64,128
 - If the square table from [multiply.md](multiply.md) is available, an inverse-table lookup gives the result in ~10 cycles for inputs ≤ 255.
 - 24-bit sqrt requires intermediate 48-bit partial products; implementation complexity increases significantly.
 
-## links
-- math: [multiply.md](multiply.md)
-- math: [fixed-point.md](fixed-point.md)
-
 ## sources
+
 - codebase64.net: [Fast sqrt](https://codebase64.net/doku.php?id=base:fast_sqrt) — CC BY-NC-SA 4.0
 - codebase64.net: [16-bit and 24-bit sqrt](https://codebase64.net/doku.php?id=base:16bit_and_24bit_sqrt) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)
+- math: [multiply.md](multiply.md)
+- math: [fixed-point.md](fixed-point.md)

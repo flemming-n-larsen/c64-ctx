@@ -63,13 +63,10 @@ keywords: [control codes, cursor control, color codes, reverse mode, editor stat
 - Cursor/control examples SHOULD route to KERNAL `CHROUT` (`$FFD2`), not direct screen memory, unless explicitly converted.
 - Code MUST NOT confuse function-key input bytes (`$85-$8C`) with color codes occupying the same numeric range used as output; direction context resolves the meaning.
 
-## links
-- PETSCII: [petscii.md](petscii.md)
-- screen codes: [screen-codes.md](screen-codes.md)
-- colors: [../colors/palette.md](../colors/palette.md)
-- KERNAL screen I/O: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
-
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - charset index: [INDEX.md](INDEX.md)
 - palette: [../colors/palette.md](../colors/palette.md)
+- PETSCII: [petscii.md](petscii.md)
+- screen codes: [screen-codes.md](screen-codes.md)
+- KERNAL screen I/O: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)

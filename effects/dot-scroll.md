@@ -44,14 +44,12 @@ keywords: [dot scroll, 3D dots, perspective table, speedcode generation]
 - Bitmap addressing: Y-position → byte offset by `LSR A` (÷8) for row; X-position masked with `AND #$F8` for byte, `AND #$07` for bit.
 - The 8-frame scroll cycle before advancing the character position is a common pacing choice; adjust for speed.
 
-## links
+## sources
+
+- codebase64.net: [3D Dot Scroll](https://codebase64.net/doku.php?id=base:3d_dot_scroll) — CC BY-NC-SA 4.0
+- codebase64.net: [Demo Programming — 3D Dot Scroll](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - effects: [stable-raster.md](stable-raster.md)
 - concepts: [../concepts/optimization.md](../concepts/optimization.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
-
-## sources
-- codebase64.net: [3D Dot Scroll](https://codebase64.net/doku.php?id=base:3d_dot_scroll) — CC BY-NC-SA 4.0
-- codebase64.net: [Demo Programming — 3D Dot Scroll](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

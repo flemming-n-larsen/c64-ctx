@@ -139,7 +139,11 @@ All color registers share the same bit layout:
 - `$D01E` and `$D01F` collision registers are cleared on read; code MUST save the value immediately after reading.
 - Sprite X coordinate > 255 requires setting the corresponding bit in `$D010` AND writing the low byte to `$D000+n×2`.
 
-## links
+## sources
+
+- upstream: [mist64/c64ref src/c64io](https://github.com/mist64/c64ref/tree/master/src/c64io)
+- I/O index: [INDEX.md](INDEX.md)
+- memory I/O area: [../memory/io-area.md](../memory/io-area.md)
 - VIC hub: [../vic/INDEX.md](../vic/INDEX.md)
 - VIC register summary: [../vic/registers.md](../vic/registers.md)
 - VIC memory and banking: [../vic/memory-and-banking.md](../vic/memory-and-banking.md)
@@ -151,15 +155,8 @@ All color registers share the same bit layout:
 - sprite techniques: [../sprites/advanced.md](../sprites/advanced.md)
 - screen modes: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 - VIC bank select: [cia2.md](cia2.md)
-- I/O area: [../memory/io-area.md](../memory/io-area.md)
 - interrupts: [../irq/overview.md](../irq/overview.md)
 - screen memory: [../concepts/screen-memory.md](../concepts/screen-memory.md)
 - colors: [../colors/palette.md](../colors/palette.md)
 - sprite task: [../tasks/sprite-display.md](../tasks/sprite-display.md)
 - raster IRQ task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
-
-## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
-- upstream: [mist64/c64ref src/c64io](https://github.com/mist64/c64ref/tree/master/src/c64io)
-- I/O index: [INDEX.md](INDEX.md)
-- memory I/O area: [../memory/io-area.md](../memory/io-area.md)

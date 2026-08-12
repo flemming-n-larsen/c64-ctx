@@ -48,14 +48,11 @@ keywords: [screen geometry, border extents, raster ranges, visible area, display
 - The 402 × 292 visible-area and border measurements above are PAL-specific; NTSC code MUST use the variant timing table instead of reusing PAL border limits.
 - Raster IRQs at line 263 or above are PAL-only on the common 6567R8/8562 NTSC chips.
 
-## links
-- io: [../io/vic-ii.md](../io/vic-ii.md)
-- concepts: [vic-bad-lines.md](vic-bad-lines.md)
-- effects: [../effects/open-borders.md](../effects/open-borders.md)
-- VIC-II variants: [../vic/variants.md](../vic/variants.md)
-
 ## sources
+
 - codebase64.net: [Visible Area](https://codebase64.net/doku.php?id=vic:visible_area) — CC BY-NC-SA 4.0
 - VIC-II variant timing: [../vic/variants.md](../vic/variants.md)
 - original manual: [Commodore 64 Programmer's Reference Guide — Programming Graphics](https://www.commodore.ca/manuals/c64_programmers_reference/c64-programmers_reference_guide-03-programming_graphics.pdf)
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)
+- io: [../io/vic-ii.md](../io/vic-ii.md)
+- concepts: [vic-bad-lines.md](vic-bad-lines.md)
+- effects: [../effects/open-borders.md](../effects/open-borders.md)

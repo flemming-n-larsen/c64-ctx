@@ -25,14 +25,10 @@ keywords: [read keyboard, GETIN, key polling, matrix scan, keypress]
 - KERNAL input SHOULD be preferred for ordinary text/key reads.
 - Direct matrix-scanning examples MUST include CIA1 direction/output/input behavior or cite source rows.
 
-## links
+## sources
+
+- task index: [INDEX.md](INDEX.md)
 - KERNAL keyboard/screen: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
 - keyboard matrix: [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md)
 - CIA1: [../io/cia1.md](../io/cia1.md)
 - character-set concept: [../concepts/character-sets.md](../concepts/character-sets.md)
-
-## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
-- task index: [INDEX.md](INDEX.md)
-- KERNAL keyboard/screen: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
-- keyboard matrix: [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md)

@@ -62,11 +62,9 @@ Real exponentiation via BASIC ROM (x^y):
 - BASIC ROM `EXP`/`LOG` require BASIC ROM banked in — see [float.md](float.md) for constraints.
 - Exponentiation by squaring MUST handle the case where exponent = 0 (result = 1) and exponent = 1 (result = base).
 
-## links
+## sources
+
+- codebase64.net: [Exponentiation](https://codebase64.net/doku.php?id=base:exponentiation) — CC BY-NC-SA 4.0
 - math: [multiply.md](multiply.md)
 - math: [float.md](float.md)
 - math: [logarithm.md](logarithm.md)
-
-## sources
-- codebase64.net: [Exponentiation](https://codebase64.net/doku.php?id=base:exponentiation) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

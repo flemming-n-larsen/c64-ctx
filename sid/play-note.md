@@ -63,21 +63,14 @@ BASIC `POKE` form of the same first writes:
 50 POKE 54276,17        : REM TRI + GATE ON
 ```
 
-## links
+## sources
 
 - SID registers: [registers.md](registers.md)
+- BASIC graphics/sound: [../basic/graphics-sound.md](../basic/graphics-sound.md)
+- SID index: [INDEX.md](INDEX.md)
 - waveforms: [waveforms.md](waveforms.md)
 - frequency table (PAL A440): [frequency-table.md](frequency-table.md)
 - frequency calculation: [frequency-calculation.md](frequency-calculation.md)
 - hard restart: [../music/hard-restart.md](../music/hard-restart.md)
-- BASIC graphics/sound bridge: [../basic/graphics-sound.md](../basic/graphics-sound.md)
 - I/O area memory: [../memory/io-area.md](../memory/io-area.md)
 - raster interrupt: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
-- SID index: [INDEX.md](INDEX.md)
-
-## sources
-
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
-- SID registers: [registers.md](registers.md)
-- BASIC graphics/sound: [../basic/graphics-sound.md](../basic/graphics-sound.md)
-- SID index: [INDEX.md](INDEX.md)

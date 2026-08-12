@@ -41,7 +41,9 @@ keywords: [DYCP, dynamic color per char, color scroller, per-column color]
 - Color RAM only stores the lower 4 bits (color 0–15); upper nibble is ignored.
 - Combining with [scrolltext.md](scrolltext.md) sine scroll requires careful cycle-budget planning.
 
-## links
+## sources
+
+- codebase64.net: [Demo Programming — DYCP](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [scrolltext.md](scrolltext.md)
 - effects: [rasterbars.md](rasterbars.md)
@@ -49,7 +51,3 @@ keywords: [DYCP, dynamic color per char, color scroller, per-column color]
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 - colors: [../colors/INDEX.md](../colors/INDEX.md)
-
-## sources
-- codebase64.net: [Demo Programming — DYCP](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

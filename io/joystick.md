@@ -25,16 +25,9 @@ keywords: [joystick, control port, direction bits, fire button, port conflict]
 - When reading joystick port 2, avoid leaving CIA1 Port A configured for keyboard column output unless that interaction is intentional.
 - Keep port 1 and port 2 separate in reasoning: they live on different CIA1 ports even though the bit layout matches.
 
-## links
-- I/O programming hub: [io-programming.md](io-programming.md)
-- CIA1 registers: [cia1.md](cia1.md)
-- Keyboard matrix: [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md)
-- Read keyboard task: [../tasks/read-keyboard.md](../tasks/read-keyboard.md)
-- Provenance: [../sources/INDEX.md](../sources/INDEX.md)
-
 ## sources
+
 - CIA1 registers: [cia1.md](cia1.md)
 - Keyboard matrix: [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md)
 - Read keyboard task: [../tasks/read-keyboard.md](../tasks/read-keyboard.md)
 - I/O programming hub: [io-programming.md](io-programming.md)
-- Provenance: [../sources/INDEX.md](../sources/INDEX.md)

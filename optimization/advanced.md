@@ -126,11 +126,9 @@ table
 - Loop must not cross a page boundary or BNE/BCC incurs an extra cycle.
 - Stack pointer reuse requires careful bookkeeping; any interrupt must not corrupt the data region.
 
-## links
+## sources
+
+- https://codebase64.net/doku.php?id=base:advanced_optimizing — CC BY-NC-SA 4.0 (author: Bitbreaker/Performers^Nuance)
 - illegal opcode stability reference: [../cpu/6502/illegal-opcodes.md](../cpu/6502/illegal-opcodes.md)
 - loop unrolling detail: [loop-unrolling.md](loop-unrolling.md)
 - general speed overview: [speed.md](speed.md)
-
-## sources
-- https://codebase64.net/doku.php?id=base:advanced_optimizing — CC BY-NC-SA 4.0 (author: Bitbreaker/Performers^Nuance)
-- [../sources/INDEX.md](../sources/INDEX.md)

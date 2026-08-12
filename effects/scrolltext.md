@@ -49,14 +49,12 @@ keywords: [scroller, scrolltext, fine scroll, sine scroller, greetings]
 - Sine scroller with sprites requires custom char data in a VIC-accessible RAM bank; see [../tasks/custom-charset.md](../tasks/custom-charset.md).
 - For stable scroll on every raster line, combine with [stable-raster.md](stable-raster.md).
 
-## links
+## sources
+
+- codebase64.net: [Demo Programming — Scrolling Text](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - tasks: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - tasks: [../tasks/sprite-display.md](../tasks/sprite-display.md)
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [fld.md](fld.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
-
-## sources
-- codebase64.net: [Demo Programming — Scrolling Text](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

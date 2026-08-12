@@ -28,14 +28,10 @@ keywords: [bank switching, ROM to RAM, banking recipe, IRQ hazard]
 - Agents MUST explain banking state when naming `$A000`, `$D000`, or `$E000` targets.
 - Interrupt-sensitive code SHOULD use `SEI`/`CLI` and vector safety rules from [../irq/raster-interrupt.md](../irq/raster-interrupt.md) and [../irq/overview.md](../irq/overview.md).
 
-## links
-- processor port: [../io/processor-port.md](../io/processor-port.md)
-- memory banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
-- memory map: [../memory/map.md](../memory/map.md)
-- KERNAL ROM: [../memory/kernal-rom.md](../memory/kernal-rom.md)
-
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - task index: [INDEX.md](INDEX.md)
 - banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
 - processor port: [../io/processor-port.md](../io/processor-port.md)
+- memory map: [../memory/map.md](../memory/map.md)
+- KERNAL ROM: [../memory/kernal-rom.md](../memory/kernal-rom.md)

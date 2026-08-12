@@ -36,21 +36,15 @@ keywords: [screen modes, mode bits, bitmap mode, multicolor, hires]
 - FLI-family techniques MUST budget for bad lines and per-line `$D018` updates.
 - Sprite underlay techniques MUST also consider sprite priority, sprite colors, and shared multicolor sprite registers.
 
-## links
-- VIC hub: [INDEX.md](INDEX.md)
-- register summary: [registers.md](registers.md)
-- memory and banking: [memory-and-banking.md](memory-and-banking.md)
-- timing: [timing.md](timing.md)
-- official mode table: [../graphics/screen-modes.md](../graphics/screen-modes.md)
-- ECM route: [../display-modes/ecm.md](../display-modes/ecm.md)
-- unofficial modes: [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md)
-- display-modes index: [../display-modes/INDEX.md](../display-modes/INDEX.md)
-
 ## sources
+
 - VIC hub: [INDEX.md](INDEX.md)
 - official screen modes: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 - ECM route: [../display-modes/ecm.md](../display-modes/ecm.md)
 - unofficial modes: [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md)
 - color mixing: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - VIC-II register reference: [../io/vic-ii.md](../io/vic-ii.md)
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)
+- register summary: [registers.md](registers.md)
+- memory and banking: [memory-and-banking.md](memory-and-banking.md)
+- timing: [timing.md](timing.md)
+- display-modes index: [../display-modes/INDEX.md](../display-modes/INDEX.md)

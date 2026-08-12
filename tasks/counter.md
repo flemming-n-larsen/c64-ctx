@@ -64,11 +64,9 @@ tellertabel              ; 256 bytes reserved
 - `teller` does not handle overflow past `numdigits` digits — the most-significant digit silently resets.
 - PETSCII offset `$30` maps 0→`0`, 1→`1`, …, 9→`9`; applies only to character display, not score math.
 
-## links
+## sources
+
+- https://codebase64.net/doku.php?id=base:making_a_counter — CC BY-NC-SA 4.0 (author: Scout/Silicon Ltd.)
 - print to screen: [print-to-screen.md](print-to-screen.md)
 - PETSCII reference: [../charset/INDEX.md](../charset/INDEX.md)
 - game loop integration: [game-loop.md](game-loop.md)
-
-## sources
-- https://codebase64.net/doku.php?id=base:making_a_counter — CC BY-NC-SA 4.0 (author: Scout/Silicon Ltd.)
-- [../sources/INDEX.md](../sources/INDEX.md)

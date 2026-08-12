@@ -52,10 +52,8 @@ Use `!byte` (ACME) or `.byte` (other assemblers) to emit opcodes the assembler d
 - 65C02 extended opcodes (`INA`, `DEC A`, branch-always) are not available on the 6510; do not use in C64-only code.
 - `XBA` is a 65816-only instruction; on 65C02 it executes as a two-cycle NOP (`$EB`).
 
-## links
+## sources
+
+- https://codebase64.net/doku.php?id=base:detect_cpu_type — CC BY-NC-SA 4.0 (author: Ullrich von Bassewitz)
 - CPU identity and 6510 specifics: [6510.md](6510.md)
 - illegal opcodes (NMOS-only): [6502/illegal-opcodes.md](6502/illegal-opcodes.md)
-
-## sources
-- https://codebase64.net/doku.php?id=base:detect_cpu_type — CC BY-NC-SA 4.0 (author: Ullrich von Bassewitz)
-- [../sources/INDEX.md](../sources/INDEX.md)

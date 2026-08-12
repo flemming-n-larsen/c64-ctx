@@ -28,12 +28,9 @@ keywords: [processor port, banking bits, direction register, cassette lines]
 - Code SHOULD preserve unrelated port bits when changing banking: read-modify-write instead of blind stores when cassette lines matter.
 - Agents MUST distinguish `$0000` direction bits from `$0001` data/output bits.
 
-## links
-- memory banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
-- memory map: [../memory/map.md](../memory/map.md)
-- bank-switch task: [../tasks/bank-switch-rom-ram.md](../tasks/bank-switch-rom-ram.md)
-
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - I/O index: [INDEX.md](INDEX.md)
 - banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
+- memory map: [../memory/map.md](../memory/map.md)
+- bank-switch task: [../tasks/bank-switch-rom-ram.md](../tasks/bank-switch-rom-ram.md)

@@ -142,12 +142,11 @@ Common uses of illegal opcodes in C64 demo and game programming.
 - `unstable` opcodes MUST NOT be used in code targeting multiple revisions or emulators without a compatibility note.
 - `JAM` MUST only be used as a deliberate crash sentinel, never in a code path that should return.
 
-## links
-- instruction set: [instruction-set.md](instruction-set.md)
-- addressing modes: [addressing-modes.md](addressing-modes.md)
-- CPU index: [INDEX.md](INDEX.md)
-
 ## sources
+
 - local route: [../../sources/INDEX.md](../../sources/INDEX.md)
 - opcode bytes and operations: mist64/c64ref src/6502/cpu_6502.txt (VICE mnemonic convention)
 - stability and behavior: "NMOS 6510 Unintended Opcodes" (No More Secrets, 2010); "64doc" by John West and Marko Makela
+- instruction set: [instruction-set.md](instruction-set.md)
+- addressing modes: [addressing-modes.md](addressing-modes.md)
+- CPU index: [INDEX.md](INDEX.md)

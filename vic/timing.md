@@ -29,19 +29,13 @@ keywords: [raster timing, raster counter, cycles per line, display window]
 - Code that relies on KERNAL IRQ behavior SHOULD state whether it chains to the normal IRQ handler or fully replaces it.
 - When line numbers appear to differ between local geometry and timing pages, treat them as separate views of the frame: visible-area placement vs. fetch-scheduling constraints.
 
-## links
-- VIC hub: [INDEX.md](INDEX.md)
-- register summary: [registers.md](registers.md)
-- memory and banking: [memory-and-banking.md](memory-and-banking.md)
-- screen modes: [screen-modes.md](screen-modes.md)
-- bad lines: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
-- screen geometry: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
-- raster IRQ task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
-
 ## sources
+
 - VIC hub: [INDEX.md](INDEX.md)
 - VIC bad lines: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 - screen geometry: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
 - raster IRQ task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - VIC-II register reference: [../io/vic-ii.md](../io/vic-ii.md)
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)
+- register summary: [registers.md](registers.md)
+- memory and banking: [memory-and-banking.md](memory-and-banking.md)
+- screen modes: [screen-modes.md](screen-modes.md)

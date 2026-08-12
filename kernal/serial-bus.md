@@ -24,12 +24,9 @@ keywords: [serial bus, IEC, LISTEN, TALK, ACPTR, CIOUT]
 - `ACPTR` callers SHOULD prepare the device with `TALK` and `TKSA` when applicable.
 - Serial routines SHOULD check `READST` when error handling matters.
 
-## links
+## sources
+
+- KERNAL index: [INDEX.md](INDEX.md)
 - jump table: [jump-table.md](jump-table.md)
 - file I/O: [file-io.md](file-io.md)
 - CIA2 hardware: [../io/cia2.md](../io/cia2.md)
-
-## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
-- KERNAL index: [INDEX.md](INDEX.md)
-- jump table: [jump-table.md](jump-table.md)

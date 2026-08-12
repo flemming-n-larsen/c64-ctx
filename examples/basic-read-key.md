@@ -42,18 +42,13 @@ keywords: [BASIC example, GET keypress, keyboard polling]
 - `GET A$` does NOT echo the key; the program is responsible for any display.
 - `GET` returns at most one PETSCII byte per call even if the buffer holds more — call `GET` in a loop to drain.
 
-## links
+## sources
+
 - BASIC I/O: [../basic/io.md](../basic/io.md)
-- BASIC functions: [../basic/functions.md](../basic/functions.md)
-- BASIC examples reference: [../basic/examples.md](../basic/examples.md)
 - read-keyboard task: [../tasks/read-keyboard.md](../tasks/read-keyboard.md)
 - PETSCII: [../charset/petscii.md](../charset/petscii.md)
+- BASIC functions: [../basic/functions.md](../basic/functions.md)
+- BASIC examples reference: [../basic/examples.md](../basic/examples.md)
 - keyboard matrix: [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md)
 - control codes: [../charset/control-codes.md](../charset/control-codes.md)
 - example index: [INDEX.md](INDEX.md)
-
-## sources
-- BASIC I/O: [../basic/io.md](../basic/io.md)
-- read-keyboard task: [../tasks/read-keyboard.md](../tasks/read-keyboard.md)
-- PETSCII: [../charset/petscii.md](../charset/petscii.md)
-- local route: [../sources/INDEX.md](../sources/INDEX.md)

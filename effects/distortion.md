@@ -43,7 +43,10 @@ keywords: [distortion, DYPP, tech-tech, sine warp, logo distortion]
 - 26 character segments × 3 displacement variants = 78 pre-rendered data sets; memory cost is significant.
 - Sprites may be needed to mask the FLI bug artifact at column 0.
 
-## links
+## sources
+
+- codebase64.net: [FLI Floffy](https://codebase64.net/doku.php?id=base:fli_floffy) — CC BY-NC-SA 4.0
+- codebase64.net: [Demo Programming — Graphics Distortion](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - effects: [swing.md](swing.md)
 - effects: [fpp.md](fpp.md)
 - effects: [stable-raster.md](stable-raster.md)
@@ -51,8 +54,3 @@ keywords: [distortion, DYPP, tech-tech, sine warp, logo distortion]
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
-
-## sources
-- codebase64.net: [FLI Floffy](https://codebase64.net/doku.php?id=base:fli_floffy) — CC BY-NC-SA 4.0
-- codebase64.net: [Demo Programming — Graphics Distortion](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

@@ -42,13 +42,11 @@ keywords: [MRFLI, multi resolution, mixed resolution, per-line MCM]
 - Same 23-cycle-per-line budget (PAL bad line); one extra `$D016` write reduces available cycles by ~6.
 - Bitmap pixel patterns must be designed for the intended mode of each row; a multicolor bit pattern displayed in hires mode (or vice versa) produces incorrect colors.
 
-## links
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - effects: [fli.md](fli.md)
 - effects: [ifli.md](ifli.md)
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
-
-## sources
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

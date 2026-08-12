@@ -64,20 +64,12 @@ CLI
 RTS
 ```
 
-## links
-
-- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- processor port: [../io/processor-port.md](../io/processor-port.md)
-- CIA2 / VIC bank: [../io/cia2.md](../io/cia2.md)
-- screen codes: [../charset/screen-codes.md](../charset/screen-codes.md)
-- memory banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
-- bank switch task: [bank-switch-rom-ram.md](bank-switch-rom-ram.md)
-- task index: [INDEX.md](INDEX.md)
-
 ## sources
 
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - processor port: [../io/processor-port.md](../io/processor-port.md)
 - screen codes: [../charset/screen-codes.md](../charset/screen-codes.md)
 - task index: [INDEX.md](INDEX.md)
+- CIA2 / VIC bank: [../io/cia2.md](../io/cia2.md)
+- memory banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
+- bank switch task: [bank-switch-rom-ram.md](bank-switch-rom-ram.md)

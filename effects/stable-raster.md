@@ -34,15 +34,12 @@ keywords: [stable raster, redirect, effect timing]
 - Bad lines steal 40 cycles from the CPU on lines where `YSCROLL == raster & 7`; avoid placing critical writes on bad lines or use [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md) to plan around them.
 - NTSC routines MUST use 65 cycles/line in cycle tables, not 63.
 
-## links
-- stable timing: [../irq/stable-timing.md](../irq/stable-timing.md)
+## sources
+
+- canonical route: [../irq/stable-timing.md](../irq/stable-timing.md)
 - raster setup: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - effects: [open-borders.md](open-borders.md)
 - effects: [rasterbars.md](rasterbars.md)
 - effects: [dysp.md](dysp.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
-
-## sources
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)
-- canonical route: [../irq/stable-timing.md](../irq/stable-timing.md)

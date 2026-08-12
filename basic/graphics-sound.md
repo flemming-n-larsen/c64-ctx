@@ -66,21 +66,18 @@ Beep voice 1 (triangle, gate on, then off):
 30 FOR T=1 TO 500 : NEXT : POKE 54276,16
 ```
 
-## links
+## sources
+
+- local route: [../sources/INDEX.md](../sources/INDEX.md) (PRG 1982 for BASIC `POKE` recipes; mist64/c64ref `src/c64io` for register addresses)
+- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
+- SID registers: [../sid/registers.md](../sid/registers.md)
+- BASIC index: [INDEX.md](INDEX.md)
 - keywords: [keywords.md](keywords.md)
 - functions: [functions.md](functions.md)
 - examples: [examples.md](examples.md)
-- VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
-- SID: [../sid/registers.md](../sid/registers.md)
 - color RAM: [../io/color-ram.md](../io/color-ram.md)
 - palette: [../colors/palette.md](../colors/palette.md)
 - screen codes: [../charset/screen-codes.md](../charset/screen-codes.md)
 - sprite task: [../tasks/sprite-display.md](../tasks/sprite-display.md)
 - raster IRQ task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - memory map: [../memory/map.md](../memory/map.md)
-
-## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md) (PRG 1982 for BASIC `POKE` recipes; mist64/c64ref `src/c64io` for register addresses)
-- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- SID registers: [../sid/registers.md](../sid/registers.md)
-- BASIC index: [INDEX.md](INDEX.md)

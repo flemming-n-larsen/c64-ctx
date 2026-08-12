@@ -89,13 +89,11 @@ loop
 - `$EA7E` is the KERNAL IRQ exit; only valid when KERNAL is enabled.
 - Absolute indexed `STA` always takes 5 cycles regardless of page crossing.
 
-## links
+## sources
+
+- https://codebase64.net/doku.php?id=base:speeding_up_and_optimising_demo_routines — CC BY-NC-SA 4.0
 - loop-unrolling detail: [loop-unrolling.md](loop-unrolling.md)
 - runtime code generation: [speedcode.md](speedcode.md)
 - advanced tricks: [advanced.md](advanced.md)
 - raster interrupt setup: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - ROM/RAM banking: [../tasks/bank-switch-rom-ram.md](../tasks/bank-switch-rom-ram.md)
-
-## sources
-- https://codebase64.net/doku.php?id=base:speeding_up_and_optimising_demo_routines — CC BY-NC-SA 4.0
-- [../sources/INDEX.md](../sources/INDEX.md)

@@ -101,21 +101,18 @@ Screen code bits 7-6 → BG register: `00`=`$D021`, `01`=`$D022`, `10`=`$D023`, 
 - VIC bank base from CIA2 `$DD00` MUST be applied to all `$D018`-derived addresses.
 - Screen RAM and bitmap data MUST NOT overlap; plan VIC bank layout to avoid collisions.
 
-## links
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes)
+- local VIC-II register reference: [../io/vic-ii.md](../io/vic-ii.md)
 - VIC hub: [../vic/INDEX.md](../vic/INDEX.md)
 - VIC screen modes: [../vic/screen-modes.md](../vic/screen-modes.md)
 - standalone ECM route: [../display-modes/ecm.md](../display-modes/ecm.md)
 - unofficial modes: [unofficial-modes.md](unofficial-modes.md)
 - color mixing concept: [../concepts/color-mixing.md](../concepts/color-mixing.md)
-- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - Screen RAM layout: [../concepts/screen-memory.md](../concepts/screen-memory.md)
 - Screen geometry: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
 - VIC bank select: [../io/cia2.md](../io/cia2.md)
 - Color palette: [../colors/palette.md](../colors/palette.md)
 - Custom charset task: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - Sprite display: [../tasks/sprite-display.md](../tasks/sprite-display.md)
-
-## sources
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes)
-- local VIC-II register reference: [../io/vic-ii.md](../io/vic-ii.md)
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

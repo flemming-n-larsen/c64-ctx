@@ -41,14 +41,12 @@ keywords: [memory map, address ranges, ROM RAM overlay, unknown address]
 - Code MUST NOT assume VIC-II sees the same banked memory view as the CPU; VIC bank is selected by CIA2 `$DD00` bits 0-1 (inverted).
 - CPU hardware vectors at `$FFFA-$FFFF` are only visible when KERNAL ROM is banked in; with KERNAL ROM banked out, the underlying RAM values are used by the 6510 for NMI/RESET/IRQ.
 
-## links
+## sources
+
+- memory index: [INDEX.md](INDEX.md)
+- I/O context: [../io/INDEX.md](../io/INDEX.md)
+- symbols: [symbols.md](symbols.md)
 - banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
 - processor port: [../io/processor-port.md](../io/processor-port.md)
 - ROM routes: [../rom/INDEX.md](../rom/INDEX.md)
 - VIC-II bank selection: [../io/cia2.md](../io/cia2.md)
-
-## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
-- memory index: [INDEX.md](INDEX.md)
-- I/O context: [../io/INDEX.md](../io/INDEX.md)
-- symbols: [symbols.md](symbols.md)

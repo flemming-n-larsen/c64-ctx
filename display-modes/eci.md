@@ -50,12 +50,10 @@ keywords: [ECI, extended color interlace, frame alternation]
 - `$D021`–`$D024` writes for frame B MUST happen before raster line `$33` (first display line); writing mid-frame produces partial-frame color switch.
 - ECM cannot be combined with BMM (`$D011` bit 5); ECM+BMM = illegal mode (blank screen).
 
-## links
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - effects: [ifli.md](ifli.md)
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
-
-## sources
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

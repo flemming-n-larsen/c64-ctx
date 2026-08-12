@@ -33,11 +33,10 @@ keywords: [registers, status flags, carry, overflow, decimal mode]
 - Interrupt code SHOULD reason about the `I` flag before changing IRQ vectors or device interrupt masks.
 - Arithmetic explanations MUST distinguish `C` carry/borrow from `V` signed overflow.
 
-## links
+## sources
+
+- local route: [../../sources/INDEX.md](../../sources/INDEX.md)
+- CPU index: [INDEX.md](INDEX.md)
 - instruction set: [instruction-set.md](instruction-set.md)
 - addressing modes: [addressing-modes.md](addressing-modes.md)
 - interrupts: [../../irq/overview.md](../../irq/overview.md)
-
-## sources
-- local route: [../../sources/INDEX.md](../../sources/INDEX.md)
-- CPU index: [INDEX.md](INDEX.md)

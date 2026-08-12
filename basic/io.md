@@ -57,17 +57,15 @@ keywords: [PRINT, INPUT, GET, OPEN, file handling, BASIC I/O]
   20 PRINT "HELLO, ";N$
   ```
 
-## links
+## sources
+
+- local route: [../sources/INDEX.md](../sources/INDEX.md) — PRG 1982 for BASIC I/O semantics; mist64/c64ref kernal for device/file mechanics
+- KERNAL file I/O: [../kernal/file-io.md](../kernal/file-io.md)
+- BASIC index: [INDEX.md](INDEX.md)
 - BASIC keywords: [keywords.md](keywords.md)
 - BASIC errors: [errors.md](errors.md)
 - BASIC examples: [examples.md](examples.md)
-- KERNAL file I/O: [../kernal/file-io.md](../kernal/file-io.md)
 - KERNAL keyboard/screen: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
 - load/save task: [../tasks/load-save-file.md](../tasks/load-save-file.md)
 - read keyboard task: [../tasks/read-keyboard.md](../tasks/read-keyboard.md)
 - print to screen task: [../tasks/print-to-screen.md](../tasks/print-to-screen.md)
-
-## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md) — PRG 1982 for BASIC I/O semantics; mist64/c64ref kernal for device/file mechanics
-- KERNAL file I/O: [../kernal/file-io.md](../kernal/file-io.md)
-- BASIC index: [INDEX.md](INDEX.md)
