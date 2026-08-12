@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Advanced FLI: smarter color cell assignment to reduce errors at FLI block boundaries."
+keywords: [AFLI, advanced FLI, IAFLI, AIFLI, color cell assignment]
 ---
 
 ## facts

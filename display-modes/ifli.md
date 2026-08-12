@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Interlaced FLI: two alternating FLI frames blending to roughly 128 perceived colors."
+keywords: [IFLI, interlaced FLI, flicker, perceived colors]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Flowing color patterns from summed sine waves, in character mode or as rasterbars."
+keywords: [plasma, sine sum, color cycling, FLI plasma]
 ---
 
 ## facts

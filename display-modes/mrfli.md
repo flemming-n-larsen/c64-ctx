@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Multi Resolution FLI: toggle multicolor per raster line to mix hires and multicolor regions."
+keywords: [MRFLI, multi resolution, mixed resolution, per-line MCM]
 ---
 
 ## facts

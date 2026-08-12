@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Horizontal, vertical and sine scrollers built on hardware fine-scroll plus char shifting."
+keywords: [scroller, scrolltext, fine scroll, sine scroller, greetings]
 ---
 
 ## facts

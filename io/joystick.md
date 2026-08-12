@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: atomic
+summary: "Reading joysticks as direct CIA1 port reads, including the keyboard-conflict problem."
+keywords: [joystick, control port, direction bits, fire button, port conflict]
 ---
 
 ## facts

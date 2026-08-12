@@ -2,6 +2,8 @@
 type: reference
 domain: tasks
 granularity: recipe
+summary: "Print characters via KERNAL output or by writing screen memory directly."
+keywords: [print text, CHROUT, screen writes, cursor position]
 ---
 
 ## sequence

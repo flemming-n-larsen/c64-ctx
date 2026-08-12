@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: atomic
+summary: "Reaching disk and tape through KERNAL channels, and the hardware underneath."
+keywords: [disk I/O, tape, datassette, IEC signaling, channel calls]
 ---
 
 ## facts

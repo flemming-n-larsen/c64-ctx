@@ -3,6 +3,8 @@ type: reference
 domain: tasks
 source: codebase64.net
 granularity: recipe
+summary: "Redirect stub: cooperative threading now lives in the irq domain."
+keywords: [cooperative threads, redirect, moved page]
 ---
 
 ## route

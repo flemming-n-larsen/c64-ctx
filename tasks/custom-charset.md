@@ -2,6 +2,8 @@
 type: reference
 domain: tasks
 granularity: recipe
+summary: "Install a custom character set: copy from ROM, edit, and repoint the VIC-II."
+keywords: [custom charset, character set, charset base, 2KB alignment]
 ---
 
 ## sequence

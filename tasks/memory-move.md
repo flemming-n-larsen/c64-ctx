@@ -3,6 +3,8 @@ type: reference
 domain: tasks
 source: 6502.org
 granularity: recipe
+summary: "Copy a memory block, choosing forward or reverse order for overlapping regions."
+keywords: [memory move, block copy, overlap, MOVEUP, MOVEDOWN]
 ---
 
 ## facts

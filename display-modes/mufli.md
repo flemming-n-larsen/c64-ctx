@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Multicolor Underlayed FLI: multicolor sprites give three pixel colors each under FLI."
+keywords: [MUFLI, MUIFLI, multicolor underlay, sprite underlay]
 ---
 
 ## facts

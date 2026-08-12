@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: atomic
+summary: "Route hub for practical device access spanning CIA, KERNAL, encodings and protocols."
+keywords: [I/O programming, device access, topic hub, peripherals]
 ---
 
 ## facts

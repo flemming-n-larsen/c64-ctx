@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: chip
+summary: "CIA1 registers: keyboard matrix scan, joystick ports, timers, and the system IRQ."
+keywords: [CIA1, 6526, timers, keyboard scan, joystick port, TOD clock]
 ---
 
 ## facts

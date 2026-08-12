@@ -2,6 +2,8 @@
 type: reference
 domain: tasks
 granularity: recipe
+summary: "Redirect stub: the raster interrupt recipe now lives in the irq domain."
+keywords: [raster interrupt, redirect, moved page]
 ---
 
 ## route

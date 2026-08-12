@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "A field of dots flying toward the viewer from a precomputed perspective table."
+keywords: [dot scroll, 3D dots, perspective table, speedcode generation]
 ---
 
 ## facts

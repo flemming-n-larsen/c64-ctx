@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Super, Advanced and Interlaced HiRes: beat 320x200 without an FLI layer."
+keywords: [SH, AH, IH, super hires, advanced hires, interlaced hires]
 ---
 
 ## facts

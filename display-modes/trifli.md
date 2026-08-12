@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Tri-Interlaced FLI: three rotating frames for roughly 200-300 perceived colors."
+keywords: [TRIFLI, tri interlace, three frame rotation]
 ---
 
 ## facts

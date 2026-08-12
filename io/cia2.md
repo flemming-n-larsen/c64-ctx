@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: chip
+summary: "CIA2 registers: VIC bank select, serial bus lines, user port, and NMI."
+keywords: [CIA2, 6526, VIC bank select, serial bus, user port, NMI]
 ---
 
 ## facts

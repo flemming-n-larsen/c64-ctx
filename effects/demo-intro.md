@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "How a demo is structured: IRQ chain, frame anatomy, and the prerequisite techniques."
+keywords: [demo coding, demo structure, IRQ chain, frame anatomy, intro]
 ---
 
 ## facts

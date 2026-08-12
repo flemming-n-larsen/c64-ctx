@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "New Underlayed FLI: six double-wide hires sprites give flicker-free color mixing."
+keywords: [NUFLI, NUIFLI, flicker free, double-wide sprites]
 ---
 
 ## facts

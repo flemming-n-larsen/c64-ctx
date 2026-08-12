@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Oversized text drawn straight into a bitmap; no VIC trick involved."
+keywords: [megatext, big text, oversized glyphs, logo text]
 ---
 
 ## facts

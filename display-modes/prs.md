@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Permanent Raster Split: a stable per-frame split showing two independent display regions."
+keywords: [PRS, raster split, screen split, status bar, split screen]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Multicolor sprite underlay beneath an FLI bitmap, with the simpler MUCSUH base."
+keywords: [MUCSUFLI, MUCSUH, sprite underlay FLI, shared sprite colors]
 ---
 
 ## facts

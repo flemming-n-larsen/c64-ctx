@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: chip
+summary: "Every VIC-II register with its bit fields: raster, screen, sprites, interrupts, color."
+keywords: [VIC-II registers, bit fields, raster register, memory pointers, 6569]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Fire effect using a 4x4 intensity charset and a neighbour-average algorithm."
+keywords: [fire effect, flame, neighbour average, intensity charset]
 ---
 
 ## facts

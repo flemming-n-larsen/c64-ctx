@@ -3,6 +3,8 @@ type: reference
 domain: tasks
 source: codebase64.net
 granularity: recipe
+summary: "Decode variable-length bitfields from a byte stream with a sentinel shifter."
+keywords: [bitstream, getbit, sentinel shifter, Huffman, bit reader]
 ---
 
 ## facts

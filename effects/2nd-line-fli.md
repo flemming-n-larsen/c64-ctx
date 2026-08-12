@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Forcing a bad line every second raster line, freeing cycles for twisters and rotators."
+keywords: [2nd line FLI, twister, X-rotator, waving carpet, Bresenham segments]
 ---
 
 ## facts

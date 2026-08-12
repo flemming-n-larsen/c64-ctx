@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Super HiRes FLI family: sub-pixel and multi-frame tricks on the FLI base."
+keywords: [SHFLI, SHI, SHIFLI, SHIFXL, super hires FLI, sub-pixel]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: tasks
 granularity: recipe
+summary: "Read the keyboard by KERNAL polling or by scanning the matrix directly."
+keywords: [read keyboard, GETIN, key polling, matrix scan, keypress]
 ---
 
 ## sequence

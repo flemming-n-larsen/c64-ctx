@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Multicolor sprite underlay behind any standard mode, plus the MCI interlace variant."
+keywords: [MUCSU, MCI, multicolor interlace, sprite underlay]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: tasks
 granularity: recipe
+summary: "Six-step sprite setup: data alignment, pointer, position, color, enable last."
+keywords: [sprite setup, sprite pointer, 64-byte alignment, enable sprite]
 ---
 
 ## sequence

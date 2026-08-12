@@ -3,6 +3,8 @@ type: reference
 domain: tasks
 source: codebase64.net
 granularity: recipe
+summary: "Route a byte value to one of N handlers: jump table, stack dispatch, self-mod."
+keywords: [dispatch, jump table, stack dispatch, handler table, indirect jump]
 ---
 
 ## facts

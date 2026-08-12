@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Colored bars drawn by rewriting the border and background color each raster line."
+keywords: [rasterbars, color bars, raster splits, border color]
 ---
 
 ## facts

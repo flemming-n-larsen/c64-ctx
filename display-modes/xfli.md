@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Extended FLI: FLI plus per-line background register writes for a wider per-line palette."
+keywords: [XFLI, XIFLI, extended FLI, per-line background]
 ---
 
 ## facts

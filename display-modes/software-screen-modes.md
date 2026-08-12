@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Custom pixel grids built purely from charset design, with no undocumented VIC trick."
+keywords: [software screen mode, 16x16 matrix, pixel plotting, custom resolution]
 ---
 
 ## facts

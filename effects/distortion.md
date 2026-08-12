@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Warp a logo with independent per-row vertical and horizontal sine displacement."
+keywords: [distortion, DYPP, tech-tech, sine warp, logo distortion]
 ---
 
 ## facts

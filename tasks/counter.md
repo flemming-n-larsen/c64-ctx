@@ -3,6 +3,8 @@ type: reference
 domain: tasks
 source: codebase64.net
 granularity: recipe
+summary: "A decimal digit counter with carry propagation and on-screen display."
+keywords: [score counter, digit table, carry propagation, decimal display]
 ---
 
 ## facts

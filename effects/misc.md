@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Colour flashing via background register cycling, and charset page-flip animation."
+keywords: [colour flashing, notewriter, cracktro, frame animation, page flipping]
 ---
 
 ## facts

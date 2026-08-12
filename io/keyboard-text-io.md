@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: atomic
+summary: "The three layers of keyboard and text I/O: matrix wiring, KERNAL calls, code spaces."
+keywords: [keyboard I/O, text I/O, input layers, screen editor]
 ---
 
 ## facts

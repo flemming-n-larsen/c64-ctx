@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Half Char Bitmap: split each cell into independent top and bottom 8x4 halves."
+keywords: [HCB, half char bitmap, half cell, custom charset trick]
 ---
 
 ## facts

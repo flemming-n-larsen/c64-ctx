@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: atomic
+summary: "Communication patterns layered above raw bus or controller hardware."
+keywords: [transfer protocols, handshaking, serial transfer, link protocols]
 ---
 
 ## facts

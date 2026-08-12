@@ -2,6 +2,8 @@
 type: reference
 domain: tasks
 granularity: recipe
+summary: "Load or save a file from machine code using the KERNAL call sequence."
+keywords: [load file, save file, SETLFS, SETNAM, device number]
 ---
 
 ## sequence

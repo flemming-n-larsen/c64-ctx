@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Fade one charset into another pixel by pixel, plus color RAM palette fades."
+keywords: [blending, fade in, fade out, charset blend, palette cycle]
 ---
 
 ## facts

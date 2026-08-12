@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: atomic
+summary: "MIDI on the C64 requires a cartridge; the ACIA register map and interface families."
+keywords: [MIDI, ACIA, Passport, Syntech, cartridge interface]
 ---
 
 ## facts

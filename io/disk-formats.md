@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: reference
+summary: "D64, D71 and D81 image layout: tracks, sectors, BAM, and directory entries."
+keywords: [D64, D71, D81, disk image, BAM, directory entry, track sector]
 ---
 
 ## facts

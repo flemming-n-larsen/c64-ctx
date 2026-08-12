@@ -2,6 +2,8 @@
 type: reference
 domain: tasks
 granularity: recipe
+summary: "Game loop skeleton: init, input, update, draw, frame sync."
+keywords: [game loop, main loop, frame sync, update draw]
 ---
 
 ## sequence

@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Redirect stub with effect-side notes; stable timing lives in the irq domain."
+keywords: [stable raster, redirect, effect timing]
 ---
 
 ## route

@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Show more than 8 sprites by recycling the hardware sprites down the raster."
+keywords: [sprite multiplexer, more than 8 sprites, sprite recycling, Y sort]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Render Julia and Mandelbrot sets with fixed-point iteration and lookup tables."
+keywords: [fractals, Julia set, Mandelbrot, fixed point iteration]
 ---
 
 ## facts

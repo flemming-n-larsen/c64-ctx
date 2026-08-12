@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Remove the top, bottom or side borders, and put sprites out there."
+keywords: [open borders, border removal, side border, sprites in border]
 ---
 
 ## facts

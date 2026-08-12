@@ -3,6 +3,8 @@ type: reference
 domain: tasks
 source: codebase64.net
 granularity: recipe
+summary: "Clear or fill a memory region, from three stores up to optimized index loops."
+keywords: [memory clear, fill memory, zero fill, clear screen]
 ---
 
 ## facts

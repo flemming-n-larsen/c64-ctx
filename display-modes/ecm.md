@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Extended Color Mode: four background registers, 64 usable glyphs, and its game uses."
+keywords: [ECM, extended color mode, extended background, 64 glyphs]
 ---
 
 ## facts

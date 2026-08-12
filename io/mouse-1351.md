@@ -3,6 +3,8 @@ type: reference
 domain: io
 granularity: device
 source: commodore-manual
+summary: "The 1351 proportional mouse: POT register decoding, buttons, sampling constraints."
+keywords: [1351 mouse, proportional mode, POT registers, mouse buttons]
 ---
 
 ## facts

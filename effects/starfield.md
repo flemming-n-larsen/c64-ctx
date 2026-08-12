@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Depth illusion from dots moving at tiered speeds, character- or sprite-based."
+keywords: [starfield, stars, parallax, depth illusion, ROL starfield]
 ---
 
 ## facts

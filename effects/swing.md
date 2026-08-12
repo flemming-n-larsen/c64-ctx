@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Move a graphic in a horizontal sine wider than the 8-pixel hardware scroll limit."
+keywords: [swing, tech-tech, techtech, horizontal sine, wide scroll]
 ---
 
 ## facts

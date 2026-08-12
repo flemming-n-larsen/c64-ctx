@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Per-line horizontal warp of a graphic by driving the memory pointers from a sine table."
+keywords: [FPP, stretcher, flexible pixel position, horizontal warp]
 ---
 
 ## facts

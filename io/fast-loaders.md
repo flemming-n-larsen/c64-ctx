@@ -3,6 +3,8 @@ type: reference
 domain: io
 granularity: atomic
 source: mixed
+summary: "How fast loaders replace the stock transfer protocol, and their compatibility rules."
+keywords: [fast loader, drive code, transfer protocol, compatibility]
 ---
 
 ## facts

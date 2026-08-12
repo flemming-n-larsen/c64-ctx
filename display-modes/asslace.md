@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Alternating sprite sieve interlace: a sprite grid toggled between frames to mix colors."
+keywords: [ASSLACE, sprite sieve, alternating frames, interlace]
 ---
 
 ## facts

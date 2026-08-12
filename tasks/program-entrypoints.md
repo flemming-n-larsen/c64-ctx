@@ -2,6 +2,8 @@
 type: reference
 domain: tasks
 granularity: recipe
+summary: "Pick a delivery shape: BASIC stub, SYS loader, standalone prg, or cartridge."
+keywords: [entry point, load address, SYS stub, prg layout, autostart]
 ---
 
 ## sequence

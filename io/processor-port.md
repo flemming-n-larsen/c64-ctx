@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: register-pair
+summary: "The 6510 port at $0000/$0001: banking bits, direction register, cassette lines."
+keywords: [processor port, banking bits, direction register, cassette lines]
 ---
 
 ## lookup

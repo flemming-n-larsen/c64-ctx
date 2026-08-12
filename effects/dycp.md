@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Give each character column its own color by writing color RAM once per raster line."
+keywords: [DYCP, dynamic color per char, color scroller, per-column color]
 ---
 
 ## facts

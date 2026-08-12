@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Reposition sprites mid-frame for extra vertical positions, and stretch them."
+keywords: [DYSP, sprite stretching, sprite repositioning, mid-frame update]
 ---
 
 ## facts

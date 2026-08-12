@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Flexible Line Interpretation: re-read color data every raster line instead of every eight."
+keywords: [FLI, flexible line interpretation, FLI bug, forced bad line]
 ---
 
 ## facts

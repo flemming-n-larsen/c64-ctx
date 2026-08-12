@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: address-range
+summary: "The 4-bit-per-cell color RAM: where it lives and what the upper nibble does."
+keywords: [color RAM, nibble, cell color, upper nibble garbage]
 ---
 
 ## facts

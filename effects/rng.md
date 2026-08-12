@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "The X-ABC pseudo-random generator: 38 cycles, 28 bytes, 8- or 16-bit output."
+keywords: [RNG, PRNG, X-ABC, random numbers, fast random]
 ---
 
 ## facts

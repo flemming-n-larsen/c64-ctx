@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Scroll vertically by inserting blank raster lines through bad-line suppression."
+keywords: [FLD, flexible line distance, vertical scroll, bad line suppression]
 ---
 
 ## facts

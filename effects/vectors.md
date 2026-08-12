@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "3D wireframe and filled polygons: projection, depth sort, scanline fill."
+keywords: [vectors, 3D polygons, wireframe, painter's algorithm, scanline fill]
 ---
 
 ## facts

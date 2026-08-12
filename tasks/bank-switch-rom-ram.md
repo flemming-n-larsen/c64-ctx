@@ -2,6 +2,8 @@
 type: reference
 domain: tasks
 granularity: recipe
+summary: "Switch ROM, RAM and I/O in and out safely, including the IRQ hazard."
+keywords: [bank switching, ROM to RAM, banking recipe, IRQ hazard]
 ---
 
 ## sequence

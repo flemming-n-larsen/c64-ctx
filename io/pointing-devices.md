@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: atomic
+summary: "Mice, paddles, light pens and trackballs, and which hardware path each uses."
+keywords: [pointing devices, paddles, light pen, trackball, POT lines]
 ---
 
 ## facts

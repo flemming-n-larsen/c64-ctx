@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Underlayed FLI: hires sprites behind the FLI bitmap add independent colors."
+keywords: [UFLI, UIFLI, underlayed FLI, sprite underlay, sprite stretch]
 ---
 
 ## facts

@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Extended colors with interlace: ECM plus frame alternation for doubled background colors."
+keywords: [ECI, extended color interlace, frame alternation]
 ---
 
 ## facts
