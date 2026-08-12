@@ -1,6 +1,6 @@
 # c64-ctx
 
-A structured Markdown knowledge base for Commodore 64 development, organized for AI agent consumption. Every file is compact and citation-backed; agents read the smallest page that answers the question and route upstream through `sources/INDEX.md` for provenance.
+A structured Markdown knowledge base for Commodore 64 development, organized for AI agent consumption. Every file is compact and citation-backed. Agents resolve a question in one hop — search `ROUTE.md` for a topic or `SYMBOLS.md` for a `$`-address, then read the single page that answers it. `ROUTE.md`, `SYMBOLS.md`, and each directory index's `## pages` block are generated from page front matter by `scripts/generate-routes.ps1`, so the routing layer cannot drift from the content.
 
 ## Entry points
 

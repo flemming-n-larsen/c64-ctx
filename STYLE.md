@@ -21,17 +21,21 @@ source: c64ref
 | C64 symbols in content | MAY preserve source uppercase | `ACPTR`, `CHRIN`, `D6510`, `VIC-II` |
 | Addresses | MUST use `$`-prefixed hexadecimal | `$0001`, `$D000-$DFFF` |
 | Internal links | MUST use relative Markdown links | `../memory/map.md` |
-| Source citations | MUST include local provenance; MAY include a direct upstream URL for directly derived pages | `../sources/INDEX.md` plus the specific upstream article |
+| Source citations | MUST cite the specific upstream article for directly derived pages | the upstream URL in `## sources` |
 
 ## front-matter
 | page type | required fields | notes |
 |---|---|---|
 | Root contract/style | `type`, `domain`, `source` | `domain` is `root`. |
-| Directory index | `type: index`, `domain`, `source` | `domain` MUST match its directory (`cpu/6502` for that nested domain). |
-| Factual reference | `type: reference`, `domain`, `granularity` | `granularity` SHOULD be `atomic`, `chip`, `device`, or `recipe`. |
+| Directory index | `type: index`, `domain`, `source` | `domain` MUST match its directory (`cpu/6502` for that nested domain). Indexes MUST NOT declare `summary` or `keywords`. |
+| Factual reference | `type: reference`, `domain`, `granularity`, `summary`, `keywords` | `granularity` SHOULD be `atomic`, `chip`, `device`, or `recipe`. |
 
 - `source` MAY be omitted from factual references when the `## sources` section is the more accurate mixed-source authority.
 - When present, `source` MUST use the canonical identifier already used by the repository: `c64ref`, `codebase64.net`, `commodore-manual`, `hvsc`, `6502.org`, `assembler-docs`, `tool-docs`, `cross-domain`, or `mixed`.
+- `summary` MUST state what the page **answers**, not what it contains: `Six-step sprite setup: data alignment, pointer, position, color, enable last.`, not `Covers sprite display.` A summary that restates the heading list is dead weight; a summary that states the answer shape lets an agent reject the page from its first few lines.
+- `summary` MUST be one line, at most 100 characters, and MUST NOT contain a Markdown link.
+- `keywords` MUST use YAML flow style (`[a, b, c]`). A block list parses as empty, because the front-matter reader in `scripts/lib/markdown.ps1` works line by line.
+- `keywords` MUST hold 2-8 entries of at most 30 characters, and SHOULD declare only terms a regex cannot recover from the page: jargon, synonyms, and alternative names (`tech-tech`, `twister`, `screen split`, `hard restart`). Addresses and `## lookup` symbols are extracted automatically and MUST NOT be repeated here.
 
 ## index-template
 ```md
@@ -46,11 +50,10 @@ source: c64ref
 |---|---|---|
 | Zero page symbols | ./zero-page.md | Fast variable/register lookup |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [symbols.md](symbols.md) | used | Symbol coverage |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Upstream fallback route |
+## pages
+<!-- GENERATED:routes -->
+Regenerate with scripts/generate-routes.ps1; edits here are overwritten.
+<!-- /GENERATED:routes -->
 
 ## related
 | domain | read | why |
@@ -64,6 +67,8 @@ source: c64ref
 type: reference
 domain: kernal
 granularity: atomic
+summary: "Call ACPTR to read one byte from a device already set to talk."
+keywords: [serial input, byte read, IEC receive]
 ---
 
 ## facts
@@ -77,26 +82,37 @@ granularity: atomic
 ## constraints
 - Code MUST preserve registers unless the routine contract says they are affected.
 
-## links
-- memory: [memory/map.md](memory/map.md)
-
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
 - supporting page: [jump-table.md](jump-table.md)
+- memory map: [../memory/map.md](../memory/map.md)
 ```
 
 ## allowed-sections
 | section | use |
 |---|---|
-| `routes` | Directory `INDEX.md` navigation. |
-| `source-coverage` | Directory-level provenance and source usage status. |
+| `routes` | Curated directory `INDEX.md` navigation, including cross-domain routes. |
+| `pages` | Generated exhaustive page list in a directory `INDEX.md`. Never hand-edited. |
 | `facts` | Short cited truths. |
 | `lookup` | Compact tables for addresses, symbols, calls, opcodes, codes, or bits. |
 | `constraints` | `MUST`, `SHOULD`, `MUST NOT`, `MAY` rules. |
 | `sequence` | Ordered operational steps for calls or tasks. |
 | `examples` | Minimal code or data examples only. |
-| `links` | Internal cross-domain references. |
-| `sources` | Local Markdown pages and centralized provenance routes used. |
+| `sources` | Upstream citations plus the local Markdown pages that support the facts. The single tail section on a reference page. |
+| `links` | Navigation footer on a root or directory index only. MUST NOT appear on a reference page. |
+
+- `source-coverage` is retired; it restated the sibling `routes` and `related` rows. `links` is retired on reference pages, where it duplicated `sources`. Both are rejected by `scripts/audit.ps1`.
+- `sources` MUST NOT carry a bare pointer to [sources/INDEX.md](sources/INDEX.md). When to consult it is a consumption rule in [AGENTS.md](AGENTS.md), not per-page boilerplate.
+
+## generated-artifacts
+| artifact | contents |
+|---|---|
+| [ROUTE.md](ROUTE.md) | One row per reference page: path, `summary`, and terms. Grep target. |
+| [SYMBOLS.md](SYMBOLS.md) | `$`-address and KERNAL/register symbol to its authoritative page. Grep target. |
+| `*/INDEX.md` `## pages` | Exhaustive per-domain page list between `<!-- GENERATED:routes -->` markers. |
+
+- These are derived from leaf front matter by `scripts/generate-routes.ps1`. Editing them by hand MUST NOT happen; the change is overwritten on the next run and fails the audit's drift check in the meantime.
+- Regenerate after adding, removing, or re-describing any page: `./scripts/generate-routes.ps1`.
+- Neither grep target is meant to be read whole. `ROUTE.md` is larger than [INDEX.md](INDEX.md); the curated `## quick-route` table remains the whole-file entry point.
 
 ## section-naming
 - The table above defines common base sections, not an exclusive vocabulary.
