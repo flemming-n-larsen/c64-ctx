@@ -2,6 +2,8 @@
 type: reference
 domain: concepts
 granularity: atomic
+summary: "Cycle-exact technique reference: unrolling, tables, zero page, self-modifying code."
+keywords: [speedcoding, loop unrolling, self-modifying code, page alignment, tables]
 ---
 
 ## facts
@@ -91,6 +93,7 @@ Use zero-page indirect `(ptr),Y` to address arbitrary memory. Store the destinat
 - Speedcode generation pauses visible effects for ~0.3–1 frame; schedule it during a part transition or loading screen.
 
 ## links
+
 - concepts: [interrupts.md](interrupts.md)
 - concepts: [vic-bad-lines.md](vic-bad-lines.md)
 - concepts: [memory-banking.md](memory-banking.md)
@@ -101,7 +104,7 @@ Use zero-page indirect `(ptr),Y` to address arbitrary memory. Store the destinat
 - asm: [../asm/INDEX.md](../asm/INDEX.md)
 
 ## sources
+
 - codebase64.net: [Speedcode](https://codebase64.net/doku.php?id=base:speedcode) — CC BY-NC-SA 4.0
 - codebase64.net: [Speeding Up and Optimising Demo Routines](https://codebase64.net/doku.php?id=base:speeding_up_and_optimising_demo_routines) — CC BY-NC-SA 4.0
 - codebase64.net: [Advanced Optimizing](https://codebase64.net/doku.php?id=base:advanced_optimizing) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

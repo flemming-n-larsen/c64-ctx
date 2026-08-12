@@ -3,6 +3,8 @@ type: reference
 domain: cpu
 source: codebase64.net
 granularity: atomic
+summary: "Silent 6502 coding mistakes: missing #, DOKE byte order, self-modifying label offsets."
+keywords: [pitfalls, DOKE, self-modifying code, silent bug, immediate mode]
 ---
 
 ## facts
@@ -75,10 +77,11 @@ irq                      ; label 'irq' = $1100
 - Modifying the opcode byte itself (offset 0) changes the instruction type — intentional in some techniques, a bug otherwise.
 
 ## links
+
 - self-modifying code in optimization: [../optimization/advanced.md](../optimization/advanced.md)
 - illegal opcodes (another source of subtle behavior): [6502/illegal-opcodes.md](6502/illegal-opcodes.md)
 - addressing modes reference: [6502/addressing-modes.md](6502/addressing-modes.md)
 
 ## sources
+
 - https://codebase64.net/doku.php?id=base:common_pitfalls — CC BY-NC-SA 4.0
-- [../sources/INDEX.md](../sources/INDEX.md)

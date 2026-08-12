@@ -2,6 +2,8 @@
 type: reference
 domain: kernal
 granularity: api-family
+summary: "KERNAL calls that report or move the memory boundaries used by BASIC and the OS."
+keywords: [MEMBOT, MEMTOP, memory boundaries, KERNAL memory calls]
 ---
 
 ## lookup
@@ -20,11 +22,11 @@ granularity: api-family
 - Exact register contracts MUST be verified in the local KERNAL API pages before use.
 
 ## links
-- memory map: [../memory/map.md](../memory/map.md)
+
 - interrupts: [../irq/overview.md](../irq/overview.md)
 - jump table: [jump-table.md](jump-table.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - KERNAL index: [INDEX.md](INDEX.md)
 - memory map: [../memory/map.md](../memory/map.md)

@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Colored bars drawn by rewriting the border and background color each raster line."
+keywords: [rasterbars, color bars, raster splits, border color]
 ---
 
 ## facts
@@ -40,6 +42,7 @@ granularity: atomic
 - Color values are 0–15; upper nibble is ignored.
 
 ## links
+
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [open-borders.md](open-borders.md)
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
@@ -49,5 +52,5 @@ granularity: atomic
 - concepts: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
 
 ## sources
+
 - codebase64.net: [Demo Programming — Rasterbars](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

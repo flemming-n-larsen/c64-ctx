@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "Generate and use an 8-bit logarithm table, or call the ROM LOG entry."
+keywords: [logarithm, log table, table generator]
 ---
 
 ## facts
@@ -56,10 +58,11 @@ zero_entry:
 - Log-multiply approximation is not exact; use only where ±1 LSB error is acceptable (e.g., volume attenuation, audio synthesis, non-critical scaling).
 
 ## links
+
 - math: [float.md](float.md)
 - math: [multiply.md](multiply.md)
 - math: [exponentiation.md](exponentiation.md)
 
 ## sources
+
 - codebase64.net: [8-bit logarithm table generator routine](https://codebase64.net/doku.php?id=base:8bit_logarithm_table_generator_routine) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

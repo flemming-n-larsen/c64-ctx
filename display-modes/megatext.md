@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Oversized text drawn straight into a bitmap; no VIC trick involved."
+keywords: [megatext, big text, oversized glyphs, logo text]
 ---
 
 ## facts
@@ -32,10 +34,11 @@ granularity: atomic
 - No VIC-II trick limits apply; this is purely a software rendering / data layout technique.
 
 ## links
+
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 - tasks: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - effects: [prs.md](prs.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

@@ -2,6 +2,8 @@
 type: reference
 domain: kernal
 granularity: lookup
+summary: "Every KERNAL jump table entry with address and category; a route table, not contracts."
+keywords: [jump table, KERNAL API, entry points, call addresses]
 ---
 
 ## lookup
@@ -53,6 +55,7 @@ granularity: lookup
 - Agents MUST NOT infer clobbers from the compact purpose column.
 
 ## links
+
 - file I/O: [file-io.md](file-io.md)
 - serial bus: [serial-bus.md](serial-bus.md)
 - keyboard/screen: [keyboard-screen.md](keyboard-screen.md)
@@ -60,5 +63,5 @@ granularity: lookup
 - time/IRQ: [time-irq.md](time-irq.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - KERNAL index: [INDEX.md](INDEX.md)

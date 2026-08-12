@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "The 5-byte KERNAL/BASIC floating-point library and its ROM entry points."
+keywords: [floating point, FAC, ROM float routines, Rankin library]
 ---
 
 ## facts
@@ -42,6 +44,7 @@ BASIC float format (5 bytes at `$61`):
 - Floating-point is slow (~100–1000 cycles per operation); prefer fixed-point (see [fixed-point.md](fixed-point.md)) or table lookups for real-time code.
 
 ## links
+
 - math: [fixed-point.md](fixed-point.md)
 - math: [trig.md](trig.md)
 - math: [logarithm.md](logarithm.md)
@@ -49,7 +52,7 @@ BASIC float format (5 bytes at `$61`):
 - memory: [../memory/INDEX.md](../memory/INDEX.md)
 
 ## sources
+
 - codebase64.net: [Floating point routines for the 6502](https://codebase64.net/doku.php?id=base:floating_point_routines_for_the_6502) — Rankin — CC BY-NC-SA 4.0
 - codebase64.net: [Errata for Rankin's 6502 floating point routines](https://codebase64.net/doku.php?id=base:errata_for_rankin_s_6502_floating_point_routines) — CC BY-NC-SA 4.0
 - codebase64.net: [KERNAL floating point mathematics](https://codebase64.net/doku.php?id=base:kernal_floating_point_mathematics) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

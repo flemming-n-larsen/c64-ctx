@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: lookup
+summary: "All 29 numbered BASIC V2 errors and the conditions that raise each."
+keywords: [BASIC errors, error messages, SYNTAX ERROR, ILLEGAL QUANTITY]
 ---
 
 ## facts
@@ -50,13 +52,13 @@ granularity: lookup
 - `SYNTAX ERROR` (code 11) MAY surface during tokenization in direct mode and during execution when an expression is malformed.
 
 ## links
+
 - BASIC keywords: [keywords.md](keywords.md)
 - BASIC functions: [functions.md](functions.md)
 - BASIC I/O: [io.md](io.md)
-- BASIC vectors: [vectors.md](vectors.md)
 - memory symbols: [../memory/symbols.md](../memory/symbols.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - BASIC vectors: [vectors.md](vectors.md)
 - BASIC index: [INDEX.md](INDEX.md)

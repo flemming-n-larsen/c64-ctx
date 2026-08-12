@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Interlaced FLI: two alternating FLI frames blending to roughly 128 perceived colors."
+keywords: [IFLI, interlaced FLI, flicker, perceived colors]
 ---
 
 ## facts
@@ -60,6 +62,7 @@ The C64 16-color palette has uneven luminance steps; blending produces best resu
 - Encoding two-frame color pairs for artwork requires specialized conversion tools; direct viewing of single frames looks incorrect.
 
 ## links
+
 - effects: [fli.md](fli.md)
 - effects: [nufli.md](nufli.md)
 - effects: [ufli.md](ufli.md)
@@ -70,5 +73,5 @@ The C64 16-color palette has uneven luminance steps; blending produces best resu
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

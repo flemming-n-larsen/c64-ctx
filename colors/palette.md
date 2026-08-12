@@ -2,6 +2,8 @@
 type: reference
 domain: colors
 granularity: lookup
+summary: "The 16 C64 color indices with names, luma level, and RGB approximation."
+keywords: [color numbers, palette, RGB values, color RAM nibble]
 ---
 
 ## lookup
@@ -31,12 +33,12 @@ granularity: lookup
 - Color control-code examples SHOULD cite [../charset/control-codes.md](../charset/control-codes.md).
 
 ## links
+
 - luma clusters: [luma-clusters.md](luma-clusters.md)
 - color RAM: [../io/color-ram.md](../io/color-ram.md)
 - VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
-- control codes: [../charset/control-codes.md](../charset/control-codes.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - colors index: [INDEX.md](INDEX.md)
 - charset controls: [../charset/control-codes.md](../charset/control-codes.md)

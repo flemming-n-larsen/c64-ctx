@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Flowing color patterns from summed sine waves, in character mode or as rasterbars."
+keywords: [plasma, sine sum, color cycling, FLI plasma]
 ---
 
 ## facts
@@ -49,6 +51,7 @@ granularity: atomic
 - For rasterbar plasma, use [stable-raster.md](stable-raster.md) to keep color transitions from jittering.
 
 ## links
+
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [rasterbars.md](rasterbars.md)
 - effects: [fld.md](fld.md)
@@ -59,5 +62,5 @@ granularity: atomic
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 
 ## sources
+
 - codebase64.net: [Demo Programming — Plasma](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

@@ -2,6 +2,8 @@
 type: reference
 domain: asm
 granularity: cross-reference
+summary: "Side-by-side equivalence of the same construct across four assemblers."
+keywords: [rosetta, syntax translation, assembler comparison, porting source]
 ---
 
 ## facts
@@ -47,14 +49,11 @@ granularity: cross-reference
 - Byte-extract operators (`<expr`, `>expr`) work identically in all four — they MUST follow an operator slot, not lead an expression line.
 
 ## links
-- ACME: [acme.md](acme.md)
-- KickAssembler: [kickassembler.md](kickassembler.md)
-- CA65: [ca65.md](ca65.md)
-- 64tass: [64tass.md](64tass.md)
+
 - common patterns: [common-patterns.md](common-patterns.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - ACME page: [acme.md](acme.md)
 - KickAssembler page: [kickassembler.md](kickassembler.md)
 - CA65 page: [ca65.md](ca65.md)

@@ -2,6 +2,8 @@
 type: reference
 domain: concepts
 granularity: concept
+summary: "The four distinct character code spaces and why they must never be conflated."
+keywords: [code spaces, PETSCII vs screen code, character sets, conflation]
 ---
 
 ## facts
@@ -24,11 +26,11 @@ granularity: concept
 - Keyboard-scanning answers SHOULD link CIA1 hardware and keyboard matrix data.
 
 ## links
-- charset index: [../charset/INDEX.md](../charset/INDEX.md)
+
 - screen memory: [screen-memory.md](screen-memory.md)
 - CIA1: [../io/cia1.md](../io/cia1.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - charset index: [../charset/INDEX.md](../charset/INDEX.md)
 - keyboard matrix: [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md)

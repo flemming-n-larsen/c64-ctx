@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: concept
+summary: "BASIC V2 variable types, naming rules, arrays, and the usual pitfalls."
+keywords: [BASIC variables, arrays, DIM, type suffix, naming rules]
 ---
 
 ## facts
@@ -50,14 +52,14 @@ granularity: concept
   ```
 
 ## links
+
 - BASIC tokens and keyword set: [keywords.md](keywords.md)
 - BASIC built-in functions: [functions.md](functions.md)
 - BASIC error codes: [errors.md](errors.md)
-- BASIC workspace pointers: [vectors.md](vectors.md)
-- Zero-page pointer addresses: [../memory/zero-page.md](../memory/zero-page.md)
 - Memory layout context: [../memory/map.md](../memory/map.md)
 
 ## sources
+
 - local route: [../sources/INDEX.md](../sources/INDEX.md) (C64 Programmer's Reference Guide, Commodore Business Machines, 1982 — AI-summarized, no verbatim copy)
 - BASIC workspace pointers: [vectors.md](vectors.md)
 - zero page pointers: [../memory/zero-page.md](../memory/zero-page.md)

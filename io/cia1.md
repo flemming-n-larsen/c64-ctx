@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: chip
+summary: "CIA1 registers: keyboard matrix scan, joystick ports, timers, and the system IRQ."
+keywords: [CIA1, 6526, timers, keyboard scan, joystick port, TOD clock]
 ---
 
 ## facts
@@ -92,14 +94,14 @@ Joystick port 2 shares `$DC00` bits 0-4 with keyboard column outputs; DDRA bits 
 - Joystick port 2 (PRA bits 0-4) and keyboard column output share Port A; simultaneous use requires DDR management.
 
 ## links
+
 - keyboard matrix: [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md)
 - read-key task: [../tasks/read-keyboard.md](../tasks/read-keyboard.md)
 - CIA2: [cia2.md](cia2.md)
 - interrupts: [../irq/overview.md](../irq/overview.md)
-- I/O index: [INDEX.md](INDEX.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - upstream: [mist64/c64ref src/c64io](https://github.com/mist64/c64ref/tree/master/src/c64io)
 - I/O index: [INDEX.md](INDEX.md)
 - memory I/O area: [../memory/io-area.md](../memory/io-area.md)

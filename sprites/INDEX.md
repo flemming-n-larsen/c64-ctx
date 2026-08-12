@@ -13,15 +13,10 @@ source: c64ref
 | DYSP, multiplexers, sprite starfields, border usage, underlay | [advanced.md](advanced.md) | Curated route into the main sprite-heavy `effects/` and `display-modes/` pages. |
 | Runnable example | [../examples/kickassembler-sprite.md](../examples/kickassembler-sprite.md) | Minimal buildable KickAssembler sprite program. |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [registers.md](registers.md), [../io/vic-ii.md](../io/vic-ii.md) | used | Sprite-specific register grouping and the authoritative raw register table. |
-| [display.md](display.md), [../tasks/sprite-display.md](../tasks/sprite-display.md), [../concepts/screen-geometry.md](../concepts/screen-geometry.md) | used | Setup flow, pointer math, visible-area placement, and border positioning. |
-| [advanced.md](advanced.md), [../effects/dysp.md](../effects/dysp.md), [../effects/sprite-multiplexer.md](../effects/sprite-multiplexer.md), [../effects/open-borders.md](../effects/open-borders.md), [../effects/starfield.md](../effects/starfield.md) | used | Advanced sprite runtime techniques. |
-| [../display-modes/ufli.md](../display-modes/ufli.md), [../display-modes/nufli.md](../display-modes/nufli.md), [../display-modes/mufli.md](../display-modes/mufli.md) | used | Sprite-underlay mode routes. |
-| [../examples/kickassembler-sprite.md](../examples/kickassembler-sprite.md) | used | Runnable reference example. |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
+## pages
+<!-- GENERATED:routes -->
+_Every page in this domain is reached from `## routes` above._
+<!-- /GENERATED:routes -->
 
 ## related
 | domain | read | why |

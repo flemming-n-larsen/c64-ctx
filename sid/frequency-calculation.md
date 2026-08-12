@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: atomic
+summary: "Convert a note to a SID frequency register value using equal temperament."
+keywords: [frequency calculation, equal temperament, pitch formula, clock constants]
 ---
 
 ## facts
@@ -39,6 +41,7 @@ SID_FREQ = FREQ_HZ * 256^3 / PHI
 - When memory matters, precompute one octave and derive the rest by shifts only if your note layout preserves the same tuning basis.
 
 ## links
+
 - PAL frequency table: [frequency-table.md](frequency-table.md)
 - NTSC frequency table: [ntsc-frequency-table.md](ntsc-frequency-table.md)
 - SID registers: [registers.md](registers.md)
@@ -46,5 +49,5 @@ SID_FREQ = FREQ_HZ * 256^3 / PHI
 - SID index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - codebase64.net: [How to calculate your own SID frequency table](https://codebase64.net/doku.php?id=base:how_to_calculate_your_own_sid_frequency_table) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

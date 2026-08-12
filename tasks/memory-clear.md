@@ -3,6 +3,8 @@ type: reference
 domain: tasks
 source: codebase64.net
 granularity: recipe
+summary: "Clear or fill a memory region, from three stores up to optimized index loops."
+keywords: [memory clear, fill memory, zero fill, clear screen]
 ---
 
 ## facts
@@ -53,10 +55,11 @@ Setup: load Y with count before `JSR CLRMEM`. Starts from `TOPNT + count − 1` 
 - Routine clobbers A and the counter register (X or Y).
 
 ## links
+
 - memory move: [memory-move.md](memory-move.md)
 - sizecoding fill via KERNAL: [../optimization/sizecoding.md](../optimization/sizecoding.md)
 
 ## sources
+
 - https://codebase64.net/doku.php?id=base:clearing_a_section_of_memory — CC BY-NC-SA 4.0
 - *6502 Software Gourmet Guide & Cookbook* (cited by source)
-- [../sources/INDEX.md](../sources/INDEX.md)

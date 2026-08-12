@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "A field of dots flying toward the viewer from a precomputed perspective table."
+keywords: [dot scroll, 3D dots, perspective table, speedcode generation]
 ---
 
 ## facts
@@ -43,6 +45,7 @@ granularity: atomic
 - The 8-frame scroll cycle before advancing the character position is a common pacing choice; adjust for speed.
 
 ## links
+
 - effects: [stable-raster.md](stable-raster.md)
 - concepts: [../concepts/optimization.md](../concepts/optimization.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
@@ -50,6 +53,6 @@ granularity: atomic
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 
 ## sources
+
 - codebase64.net: [3D Dot Scroll](https://codebase64.net/doku.php?id=base:3d_dot_scroll) — CC BY-NC-SA 4.0
 - codebase64.net: [Demo Programming — 3D Dot Scroll](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

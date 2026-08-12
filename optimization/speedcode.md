@@ -3,6 +3,8 @@ type: reference
 domain: optimization
 source: codebase64.net
 granularity: atomic
+summary: "Generate unrolled code at runtime, and when a generator beats pre-generated code."
+keywords: [speedcode, runtime code generation, code generator, self-modifying]
 ---
 
 ## facts
@@ -85,10 +87,11 @@ Patch RTS at end of generated block
 - Keep a memory map at the top of source to track allocations, especially zero-page variables.
 
 ## links
+
 - loop unrolling fundamentals: [loop-unrolling.md](loop-unrolling.md)
 - general speed optimization: [speed.md](speed.md)
 - advanced cycle tricks: [advanced.md](advanced.md)
 
 ## sources
+
 - https://codebase64.net/doku.php?id=base:speedcode — CC BY-NC-SA 4.0
-- [../sources/INDEX.md](../sources/INDEX.md)

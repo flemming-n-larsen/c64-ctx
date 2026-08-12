@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Extended colors with interlace: ECM plus frame alternation for doubled background colors."
+keywords: [ECI, extended color interlace, frame alternation]
 ---
 
 ## facts
@@ -49,11 +51,12 @@ granularity: atomic
 - ECM cannot be combined with BMM (`$D011` bit 5); ECM+BMM = illegal mode (blank screen).
 
 ## links
+
 - effects: [ifli.md](ifli.md)
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

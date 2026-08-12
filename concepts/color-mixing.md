@@ -2,6 +2,8 @@
 type: reference
 domain: concepts
 granularity: atomic
+summary: "Five techniques for appearing to exceed the fixed 16-color palette."
+keywords: [color mixing, color expansion, interlacing, dithering, sprite underlay]
 ---
 
 ## facts
@@ -115,6 +117,7 @@ granularity: atomic
 - Spatial dithering effectiveness degrades at close viewing distance; intended for artwork viewed at ~0.5–1 m on CRT.
 
 ## links
+
 - luma clusters: [../colors/luma-clusters.md](../colors/luma-clusters.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - official modes: [../graphics/screen-modes.md](../graphics/screen-modes.md)
@@ -127,9 +130,9 @@ granularity: atomic
 - screen geometry: [screen-geometry.md](screen-geometry.md)
 
 ## sources
+
 - codebase64.net: [FLI](https://codebase64.net/doku.php?id=base:fli) — CC BY-NC-SA 4.0
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - c64-wiki.com: [NUFLI](https://www.c64-wiki.com/wiki/NUFLI) — GFDL
 - kodiak64.co.uk: [Luma-driven graphics on C64](https://kodiak64.co.uk/blog/luma-driven-graphics-on-c64) — ALM and DCM techniques
 - aaronbell.com: [Secret colours of the Commodore 64](https://www.aaronbell.com/secret-colours-of-the-commodore-64/) — equal-brightness constraint for frame-alternation mixing
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

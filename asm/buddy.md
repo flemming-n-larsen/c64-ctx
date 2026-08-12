@@ -2,6 +2,8 @@
 type: reference
 domain: asm
 granularity: assembler
+summary: "Buddy, a resident C64 assembler: directives and its label and macro limits."
+keywords: [Buddy assembler, resident assembler, native assembler, label limit]
 ---
 
 ## facts
@@ -29,11 +31,12 @@ granularity: assembler
 - The assembler passes (typically two-pass) run entirely in the C64's memory; very large sources may exhaust available RAM for both source text and symbol table.
 
 ## links
+
 - assembler hub: [INDEX.md](INDEX.md)
 - cross-assembler equivalence: [rosetta.md](rosetta.md)
 - common patterns: [common-patterns.md](common-patterns.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
 - upstream: c64-wiki.com — Buddy Assembler article (GFDL).

@@ -2,6 +2,8 @@
 type: reference
 domain: sprites
 granularity: atomic
+summary: "Runtime sprite techniques combining raster IRQ timing with per-line register updates."
+keywords: [DYSP, multiplexer, sprite stretching, sprite underlay, border sprites]
 ---
 
 ## facts
@@ -26,21 +28,17 @@ granularity: atomic
 - Underlay techniques MUST also track sprite priority (`$D01B`) and any per-line sprite-stretch updates.
 
 ## links
-- sprite hub: [INDEX.md](INDEX.md)
+
 - sprite registers: [registers.md](registers.md)
 - sprite display basics: [display.md](display.md)
 - VIC timing: [../vic/timing.md](../vic/timing.md)
-- DYSP: [../effects/dysp.md](../effects/dysp.md)
-- sprite multiplexer: [../effects/sprite-multiplexer.md](../effects/sprite-multiplexer.md)
-- open borders: [../effects/open-borders.md](../effects/open-borders.md)
-- starfield: [../effects/starfield.md](../effects/starfield.md)
 - display-modes index: [../display-modes/INDEX.md](../display-modes/INDEX.md)
 
 ## sources
+
 - sprite hub: [INDEX.md](INDEX.md)
 - DYSP: [../effects/dysp.md](../effects/dysp.md)
 - sprite multiplexer: [../effects/sprite-multiplexer.md](../effects/sprite-multiplexer.md)
 - open borders: [../effects/open-borders.md](../effects/open-borders.md)
 - starfield: [../effects/starfield.md](../effects/starfield.md)
 - sprite underlay modes: [../display-modes/ufli.md](../display-modes/ufli.md), [../display-modes/nufli.md](../display-modes/nufli.md), [../display-modes/mufli.md](../display-modes/mufli.md)
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

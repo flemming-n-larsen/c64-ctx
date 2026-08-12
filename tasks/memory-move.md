@@ -3,6 +3,8 @@ type: reference
 domain: tasks
 source: 6502.org
 granularity: recipe
+summary: "Copy a memory block, choosing forward or reverse order for overlapping regions."
+keywords: [memory move, block copy, overlap, MOVEUP, MOVEDOWN]
 ---
 
 ## facts
@@ -79,10 +81,11 @@ MU5 RTS
 - Routine clobbers A, X, Y, and modifies FROM/TO ZP pointers in place.
 
 ## links
+
 - memory clear: [memory-clear.md](memory-clear.md)
 - bank switch (ROM/RAM): [bank-switch-rom-ram.md](bank-switch-rom-ram.md)
 - sizecoding copy routines: [../optimization/sizecoding.md](../optimization/sizecoding.md)
 
 ## sources
+
 - https://codebase64.net/doku.php?id=base:practical_memory_move_routines — CC BY-NC-SA 4.0 (author: Bruce Clark / 6502.org)
-- [../sources/INDEX.md](../sources/INDEX.md)

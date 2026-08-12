@@ -3,6 +3,8 @@ type: reference
 domain: memory
 source: codebase64.net
 granularity: atomic
+summary: "Reach the RAM cells beneath the processor port: read via VIC sprite, write via bus residue."
+keywords: [hidden RAM, RAM under I/O, bus residue, sprite read trick]
 ---
 
 ## facts
@@ -32,11 +34,12 @@ This is indirect and slow; practical only for diagnostics or copy-protection pur
 - This technique is hardware-dependent and may not work on all C64 board revisions or FPGA clones.
 
 ## links
+
 - processor port and banking: [../tasks/bank-switch-rom-ram.md](../tasks/bank-switch-rom-ram.md)
 - memory map overview: [INDEX.md](INDEX.md)
 - I/O port register: [../io/INDEX.md](../io/INDEX.md)
 
 ## sources
+
 - https://codebase64.net/doku.php?id=base:ram_beneath_00_and_01 — CC BY-NC-SA 4.0
 - *c64doc* by John West and Marko Mäkelä (cited by source)
-- [../sources/INDEX.md](../sources/INDEX.md)

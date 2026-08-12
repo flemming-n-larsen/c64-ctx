@@ -2,6 +2,8 @@
 type: reference
 domain: memory
 granularity: address-range
+summary: "The BASIC ROM window and what it hides when banked in."
+keywords: [BASIC ROM, banking, LORAM, RAM under ROM]
 ---
 
 ## facts
@@ -21,11 +23,12 @@ granularity: address-range
 - Agents SHOULD use ROM disassembly pages for routine routing instead of copying source listings.
 
 ## links
+
 - banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
 - processor port: [../io/processor-port.md](../io/processor-port.md)
 - BASIC domain: [../basic/INDEX.md](../basic/INDEX.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - memory index: [INDEX.md](INDEX.md)
 - ROM route: [../rom/basic-disassembly.md](../rom/basic-disassembly.md)

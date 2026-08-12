@@ -14,18 +14,12 @@ source: codebase64.net
 | KERNAL timer IRQ behavior | [../kernal/time-irq.md](../kernal/time-irq.md) | Jiffy clock, stop-key handling, ROM coexistence. |
 | IRQ-driven music playback | [../music/irq-music-player.md](../music/irq-music-player.md) | Music-player-specific consumer route. |
 
-## source-coverage
-| local coverage | status | notes |
+## pages
+<!-- GENERATED:routes -->
+| answers | read | terms |
 |---|---|---|
-| [overview.md](overview.md) | used | Canonical interrupt-generic concept page. |
-| [../irq/raster-interrupt.md](../irq/raster-interrupt.md) | used | Canonical raster IRQ setup recipe. |
-| [stable-timing.md](stable-timing.md) | used | Stable timing/stable raster technique route derived from Codebase64 interrupt material. |
-| [cooperative-threads.md](cooperative-threads.md) | used | Advanced interrupt-driven flow route for cooperative threading/scheduling patterns. |
-| [../effects/stable-raster.md](../effects/stable-raster.md) | related | Effect-focused consumer route that now points into `/irq`. |
-| [../tasks/cooperative-threads.md](../tasks/cooperative-threads.md) | related | Legacy task backlink route that now points into `/irq`. |
-| [../kernal/time-irq.md](../kernal/time-irq.md) | related | KERNAL-owned timer/IRQ behavior remains in `kernal/`. |
-| [../music/irq-music-player.md](../music/irq-music-player.md) | related | Music-player IRQ consumer route remains in `music/`. |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Local provenance route for `c64ref` and Codebase64-backed interrupt material. |
+| Install a VIC-II raster IRQ: vectors, enable bits, acknowledge, KERNAL coexistence. | [raster-interrupt.md](raster-interrupt.md) | raster interrupt, raster IRQ, acknowledge, KERNAL coexistence |
+<!-- /GENERATED:routes -->
 
 ## related
 | domain | read | why |

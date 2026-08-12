@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Move a graphic in a horizontal sine wider than the 8-pixel hardware scroll limit."
+keywords: [swing, tech-tech, techtech, horizontal sine, wide scroll]
 ---
 
 ## facts
@@ -42,6 +44,7 @@ granularity: atomic
 - The FLI bug (first column artifact at the left side of the screen) applies; mask it with sprites or keep the logo away from column 0.
 
 ## links
+
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [fld.md](fld.md)
 - effects: [dycp.md](dycp.md)
@@ -50,6 +53,6 @@ granularity: atomic
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 
 ## sources
+
 - codebase64.net: [Demo Programming — Swinging and Tech-Tech](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - codebase64.net: [TechTech (using FLI routine)](https://codebase64.net/doku.php?id=base:techtech_fli) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

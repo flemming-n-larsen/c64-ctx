@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "Multi-byte addition and subtraction chained from ADC and SBC."
+keywords: [16-bit add, 16-bit subtract, multi-byte arithmetic, carry chain]
 ---
 
 ## facts
@@ -55,12 +57,13 @@ Inverse subtraction (result = mem − A):
 - The sign-extension pattern MUST be applied before the high byte is used; any intermediate use of A or X will corrupt it.
 
 ## links
+
 - math: [compare.md](compare.md)
 - math: [multiply.md](multiply.md)
 - cpu: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
 
 ## sources
+
 - codebase64.net: [16-bit addition and subtraction](https://codebase64.net/doku.php?id=base:16bit_addition_and_subtraction) — CC BY-NC-SA 4.0
 - codebase64.net: [Inverse subtraction](https://codebase64.net/doku.php?id=base:inverse_subtraction) — CC BY-NC-SA 4.0
 - codebase64.net: [Signed 8-bit to 16-bit addition](https://codebase64.net/doku.php?id=base:signed_8bit_16bit_addition) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

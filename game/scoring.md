@@ -2,6 +2,8 @@
 type: reference
 domain: game
 granularity: atomic
+summary: "Three ways to keep score: BCD, hex with conversion, or ASCII digits."
+keywords: [scoring, BCD, decimal mode, score display, points]
 ---
 
 ## facts
@@ -55,11 +57,12 @@ granularity: atomic
 - BCD `ADC` MUST be preceded by `CLC` each update; stale carry from a previous operation will corrupt the result.
 
 ## links
+
 - game: [hiscore.md](hiscore.md)
 - tasks: [../tasks/counter.md](../tasks/counter.md)
 - charset: [../charset/petscii.md](../charset/petscii.md)
 - charset: [../charset/screen-codes.md](../charset/screen-codes.md)
 
 ## sources
+
 - [https://codebase64.net/doku.php?id=base:scoring_points](https://codebase64.net/doku.php?id=base:scoring_points) — codebase64.net — CC BY-NC-SA 4.0
-- [../sources/INDEX.md](../sources/INDEX.md)

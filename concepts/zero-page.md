@@ -2,6 +2,8 @@
 type: reference
 domain: concepts
 granularity: concept
+summary: "Why zero page matters: shorter, faster addressing and who already owns it."
+keywords: [zero page, fast addressing, byte savings, ownership]
 ---
 
 ## facts
@@ -15,11 +17,10 @@ granularity: concept
 - KERNAL task recipes SHOULD mention zero-page side effects only when source call contracts or symbols justify them.
 
 ## links
-- memory zero page: [../memory/zero-page.md](../memory/zero-page.md)
-- symbols: [../memory/symbols.md](../memory/symbols.md)
+
 - CPU addressing: [../cpu/6502/addressing-modes.md](../cpu/6502/addressing-modes.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - memory zero page: [../memory/zero-page.md](../memory/zero-page.md)
 - memory symbols: [../memory/symbols.md](../memory/symbols.md)

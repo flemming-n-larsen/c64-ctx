@@ -4,6 +4,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path $PSScriptRoot -Parent
+. (Join-Path $PSScriptRoot 'lib/markdown.ps1')
 $allowedSources = @(
     '6502.org',
     'assembler-docs',
@@ -16,6 +17,10 @@ $allowedSources = @(
     'tool-docs'
 )
 $orphanAllowList = @('tasks/raster-interrupt.md')
+# Generated routing artifacts link every page by construction. Their links MUST
+# NOT count toward reachability, or the orphan check below becomes vacuous: it
+# has to keep measuring hand-authored and domain-index reachability.
+$generatedRoutingFiles = @('ROUTE.md', 'SYMBOLS.md')
 $errors = [System.Collections.Generic.List[string]]::new()
 $warnings = [System.Collections.Generic.List[string]]::new()
 $linkedFiles = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
@@ -25,38 +30,8 @@ function Add-AuditError([string]$message) {
     $errors.Add($message)
 }
 
-function Get-ContentWithoutFences([string]$content) {
-    $insideFence = $false
-    $kept = foreach ($line in ($content -split "`r?`n")) {
-        if ($line -match '^\s*(```|~~~)') {
-            $insideFence = -not $insideFence
-            continue
-        }
-        if (-not $insideFence) { $line }
-    }
-    return $kept -join "`n"
-}
 
-function Get-FrontMatter([string]$content) {
-    $metadata = @{}
-    $lines = $content -split "`r?`n"
-    if ($lines.Count -eq 0 -or $lines[0] -ne '---') { return $metadata }
-    for ($i = 1; $i -lt $lines.Count -and $lines[$i] -ne '---'; $i++) {
-        if ($lines[$i] -match '^([A-Za-z0-9_-]+):\s*(.*)$') {
-            $metadata[$matches[1]] = $matches[2].Trim()
-        }
-    }
-    return $metadata
-}
-
-function Get-CanonicalDomain([string]$relativePath) {
-    $directory = [IO.Path]::GetDirectoryName($relativePath).Replace('\', '/')
-    if ([string]::IsNullOrWhiteSpace($directory)) { return 'root' }
-    return $directory
-}
-
-$markdownFiles = Get-ChildItem -LiteralPath $repoRoot -Recurse -Filter '*.md' -File |
-    Where-Object { $_.FullName -notmatch '[\\/](\.git|\.junie|\.idea)[\\/]' }
+$markdownFiles = Get-CorpusMarkdownFiles $repoRoot
 
 foreach ($file in $markdownFiles) {
     $relative = [IO.Path]::GetRelativePath($repoRoot, $file.FullName).Replace('\', '/')
@@ -64,7 +39,7 @@ foreach ($file in $markdownFiles) {
     if ($null -eq $content) { $content = '' }
     $scanContent = Get-ContentWithoutFences $content
 
-    if ($relative -notin @('README.md', 'ATTRIBUTION.md')) {
+    if ($relative -notin @('README.md', 'ATTRIBUTION.md', 'PLAN.md')) {
         $metadata = Get-FrontMatter $content
         if (-not $metadata.ContainsKey('type')) { Add-AuditError "${relative}: missing front-matter type" }
         if (-not $metadata.ContainsKey('domain')) { Add-AuditError "${relative}: missing front-matter domain" }
@@ -83,6 +58,78 @@ foreach ($file in $markdownFiles) {
             if ($content -notmatch '(?m)^## sources\s*$') {
                 Add-AuditError "${relative}: reference is missing ## sources"
             }
+
+            # summary and keywords drive the generated routing layer, so a page
+            # missing either is unreachable by the one-hop search path.
+            $summary = Get-FrontMatterString $metadata 'summary'
+            if ([string]::IsNullOrWhiteSpace($summary)) {
+                Add-AuditError "${relative}: reference is missing front-matter summary"
+            }
+            elseif ($summary.Length -gt 100) {
+                Add-AuditError "${relative}: summary is $($summary.Length) chars, limit is 100"
+            }
+            elseif ($summary -match '\]\(') {
+                Add-AuditError "${relative}: summary MUST NOT contain a Markdown link"
+            }
+
+            # ## sources means provenance. A page carrying a `source` identifier
+            # or citing an upstream article MUST show at least one upstream URL
+            # there, so attribution stays checkable rather than merely present.
+            if ($metadata.ContainsKey('source') -and $metadata['source'] -notin @('cross-domain', 'mixed')) {
+                $sourcesBody = ''
+                if ($content -match '(?ms)^## sources\s*$(.*?)(?=^## |\z)') { $sourcesBody = $matches[1] }
+                if ($sourcesBody -notmatch 'https?://') {
+                    Add-AuditError "${relative}: declares source '$($metadata['source'])' but ## sources cites no upstream URL"
+                }
+            }
+
+            # A target already cited in ## sources MUST NOT be repeated in
+            # ## links; the two sections answer different questions.
+            $linksBody = ''
+            if ($content -match '(?ms)^## links\s*$(.*?)(?=^## |\z)') { $linksBody = $matches[1] }
+            $sourcesBody2 = ''
+            if ($content -match '(?ms)^## sources\s*$(.*?)(?=^## |\z)') { $sourcesBody2 = $matches[1] }
+            if ($linksBody -and $sourcesBody2) {
+                $sourceTargets = @([regex]::Matches($sourcesBody2, '\]\(([^)]+)\)') | ForEach-Object { $_.Groups[1].Value })
+                foreach ($m in [regex]::Matches($linksBody, '\]\(([^)]+)\)')) {
+                    if ($sourceTargets -contains $m.Groups[1].Value) {
+                        Add-AuditError "${relative}: '$($m.Groups[1].Value)' appears in both ## links and ## sources"
+                    }
+                }
+            }
+
+            # The generic pointer to this repo's own source index is routing
+            # boilerplate, not attribution; AGENTS.md says when to consult it.
+            if ($content -match '(?m)^-\s*(local route|provenance|Provenance|source route|attribution)?\s*:?\s*\[[^\]]*\]\(\.\./sources/INDEX\.md\)\s*$') {
+                Add-AuditError "${relative}: bare sources/INDEX.md pointer is boilerplate; cite the actual upstream instead"
+            }
+
+            if (-not $metadata.ContainsKey('keywords')) {
+                Add-AuditError "${relative}: reference is missing front-matter keywords"
+            }
+            else {
+                $rawKeywords = Get-FrontMatterString $metadata 'keywords'
+                if (-not ($rawKeywords.StartsWith('[') -and $rawKeywords.EndsWith(']'))) {
+                    # The front-matter parser reads line by line, so a YAML block
+                    # list would silently produce zero keywords.
+                    Add-AuditError "${relative}: keywords MUST use flow style [a, b, c]"
+                }
+                else {
+                    $keywords = Get-FrontMatterList $metadata 'keywords'
+                    if ($keywords.Count -lt 2 -or $keywords.Count -gt 8) {
+                        Add-AuditError "${relative}: keywords has $($keywords.Count) entries, allowed range is 2-8"
+                    }
+                    foreach ($keyword in $keywords) {
+                        if ($keyword.Length -gt 30) {
+                            Add-AuditError "${relative}: keyword '$keyword' is over 30 chars"
+                        }
+                    }
+                }
+            }
+        }
+
+        if ($file.Name -eq 'INDEX.md' -and ($metadata.ContainsKey('summary') -or $metadata.ContainsKey('keywords'))) {
+            Add-AuditError "${relative}: index MUST NOT declare summary or keywords; they belong on leaf pages"
         }
 
         if ($metadata.ContainsKey('source') -and $metadata['source'] -notin $allowedSources) {
@@ -94,8 +141,25 @@ foreach ($file in $markdownFiles) {
         Add-AuditError "${relative}: stale planned coverage status"
     }
 
+    # These tables restated their sibling ## routes and ## related rows; the
+    # rule stops them growing back.
+    if ($scanContent -match '(?m)^## source-coverage\s*$') {
+        Add-AuditError "${relative}: ## source-coverage is retired; routing lives in ## routes and the generated ## pages block"
+    }
+
+    # Links inside a generated block are produced from front matter, so they
+    # prove nothing about hand-authored reachability. Their spans are recorded
+    # here and excluded from $linkedFiles below, while still being validated.
+    $generatedSpans = foreach ($block in [regex]::Matches($scanContent, '(?s)<!-- GENERATED:routes -->.*?<!-- /GENERATED:routes -->')) {
+        @{ Start = $block.Index; End = $block.Index + $block.Length }
+    }
+
     foreach ($match in [regex]::Matches($scanContent, '(?<!\!)\[[^\]]+\]\(([^)]+)\)')) {
         $target = $match.Groups[1].Value.Trim()
+        $inGeneratedBlock = $false
+        foreach ($span in $generatedSpans) {
+            if ($match.Index -ge $span.Start -and $match.Index -lt $span.End) { $inGeneratedBlock = $true; break }
+        }
         if ($target -match '^(https?://|mailto:|#)') { continue }
         $pathPart = [uri]::UnescapeDataString(($target -split '#')[0])
         if ([string]::IsNullOrWhiteSpace($pathPart)) { continue }
@@ -104,7 +168,9 @@ foreach ($file in $markdownFiles) {
             Add-AuditError "${relative}: broken local link '$target'"
             continue
         }
-        [void]$linkedFiles.Add($resolved)
+        if ($relative -notin $generatedRoutingFiles -and -not $inGeneratedBlock) {
+            [void]$linkedFiles.Add($resolved)
+        }
     }
 
     foreach ($match in [regex]::Matches($scanContent, 'https?://[^\s)>]+')) {
@@ -115,11 +181,37 @@ foreach ($file in $markdownFiles) {
 
 foreach ($file in $markdownFiles) {
     $relative = [IO.Path]::GetRelativePath($repoRoot, $file.FullName).Replace('\', '/')
-    if ($file.Name -in @('INDEX.md', 'README.md', 'AGENTS.md', 'STYLE.md', 'ATTRIBUTION.md')) { continue }
+    if ($file.Name -in @('INDEX.md', 'README.md', 'AGENTS.md', 'STYLE.md', 'ATTRIBUTION.md', 'PLAN.md')) { continue }
     if ($relative -in $orphanAllowList) { continue }
     if (-not $linkedFiles.Contains($file.FullName)) {
         Add-AuditError "${relative}: factual page has no inbound local link"
     }
+}
+
+# Every reference page MUST appear exactly once in ROUTE.md. This catches
+# generator bugs that would silently drop a page out of the search path.
+$routePath = Join-Path $repoRoot 'ROUTE.md'
+if (Test-Path -LiteralPath $routePath) {
+    $routeContent = Get-Content -LiteralPath $routePath -Raw
+    foreach ($file in $markdownFiles) {
+        $relative = [IO.Path]::GetRelativePath($repoRoot, $file.FullName).Replace('\', '/')
+        if ($file.Name -eq 'INDEX.md' -or $relative -in @('README.md', 'AGENTS.md', 'STYLE.md', 'ATTRIBUTION.md', 'PLAN.md', 'ROUTE.md', 'SYMBOLS.md')) { continue }
+        $occurrences = ([regex]::Matches($routeContent, '\(' + [regex]::Escape($relative) + '\)')).Count
+        if ($occurrences -ne 1) {
+            Add-AuditError "${relative}: appears $occurrences times in ROUTE.md, expected exactly 1"
+        }
+    }
+}
+else {
+    Add-AuditError 'ROUTE.md: missing; run scripts/generate-routes.ps1'
+}
+
+# The drift check is what makes the generated layer trustworthy: if the
+# committed artifacts do not match what the current front matter produces,
+# the build fails rather than serving a stale index.
+& (Join-Path $PSScriptRoot 'generate-routes.ps1') -Check *> $null
+if ($LASTEXITCODE -ne 0) {
+    Add-AuditError 'generated routing layer is stale; run scripts/generate-routes.ps1'
 }
 
 if ($CheckExternal) {

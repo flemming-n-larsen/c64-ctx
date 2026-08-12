@@ -2,6 +2,8 @@
 type: reference
 domain: examples
 granularity: example
+summary: "Minimal buildable KickAssembler program that displays one sprite."
+keywords: [KickAssembler example, sprite example, minimal prg, buildable]
 ---
 
 ## facts
@@ -77,21 +79,18 @@ Type `RUN`; a solid white sprite appears near the top-left of the screen and sta
 - `java -jar KickAss.jar` requires a Java runtime (JRE 8+) on PATH; substitute `KickAss5.jar` or local install path as needed.
 
 ## links
+
 - sprite hub: [../sprites/INDEX.md](../sprites/INDEX.md)
 - sprite display summary: [../sprites/display.md](../sprites/display.md)
-- KickAssembler reference: [../asm/kickassembler.md](../asm/kickassembler.md)
 - common ASM patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
-- KickAssembler workflow: [../toolchains/kickassembler-workflow.md](../toolchains/kickassembler-workflow.md)
-- sprite display task: [../tasks/sprite-display.md](../tasks/sprite-display.md)
-- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - CIA2 / VIC bank: [../io/cia2.md](../io/cia2.md)
 - memory map: [../memory/map.md](../memory/map.md)
 - VICE: [../toolchains/vice.md](../toolchains/vice.md)
 - example index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - KickAssembler reference: [../asm/kickassembler.md](../asm/kickassembler.md)
 - KickAssembler workflow: [../toolchains/kickassembler-workflow.md](../toolchains/kickassembler-workflow.md)
 - sprite display task: [../tasks/sprite-display.md](../tasks/sprite-display.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- local route: [../sources/INDEX.md](../sources/INDEX.md)

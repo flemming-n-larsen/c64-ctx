@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: atomic
+summary: "Sweep the 11-bit filter cutoff and choose low, band or high pass."
+keywords: [filter sweep, cutoff, resonance, low pass, band pass]
 ---
 
 ## facts
@@ -60,11 +62,12 @@ granularity: atomic
 - `$D418` bit 7 (3OFF) silences voice 3 from the output while still allowing filter routing — useful for filter-modulated noise without an audible oscillator.
 
 ## links
+
 - SID registers: [registers.md](registers.md)
 - music patterns: [../music/music-patterns.md](../music/music-patterns.md)
 - IRQ music player: [../music/irq-music-player.md](../music/irq-music-player.md)
 - SID index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - codebase64.net: [SID Programming](https://codebase64.net/doku.php?id=base:sid_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

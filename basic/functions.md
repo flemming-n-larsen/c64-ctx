@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: family
+summary: "BASIC V2 built-in functions with return types and argument constraints."
+keywords: [BASIC functions, string functions, numeric functions, return types]
 ---
 
 ## facts
@@ -60,7 +62,7 @@ granularity: family
 - `TAB(X)` and `SPC(X)` MUST appear only inside `PRINT` or `PRINT#` argument lists; use outside these statements raises `?SYNTAX ERROR`.
 
 ## links
-- tokens: [tokens.md](tokens.md)
+
 - keywords: [keywords.md](keywords.md)
 - variables and types: [variables.md](variables.md)
 - machine-code bridge: [machine-code-bridge.md](machine-code-bridge.md)
@@ -69,6 +71,6 @@ granularity: family
 - PETSCII code space (`CHR$` / `ASC`): [../charset/petscii.md](../charset/petscii.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - BASIC index: [INDEX.md](INDEX.md)
 - token bytes: [tokens.md](tokens.md)

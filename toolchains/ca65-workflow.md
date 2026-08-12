@@ -2,6 +2,8 @@
 type: reference
 domain: toolchains
 granularity: workflow
+summary: "Build a prg with the two-stage ca65 and ld65 flow, then run it in VICE."
+keywords: [ca65 workflow, ld65, two-stage build, build and run]
 ---
 
 ## facts
@@ -73,12 +75,13 @@ x64sc -moncommands hello.vs hello.prg
 ```
 
 ## links
+
 - CA65 reference: [../asm/ca65.md](../asm/ca65.md)
 - common patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - VICE: [vice.md](vice.md)
 - toolchain index: [INDEX.md](INDEX.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
 - upstream: cc65 documentation (https://cc65.github.io/), `ca65.html` and `ld65.html`.

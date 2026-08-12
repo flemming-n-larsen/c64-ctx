@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Reposition sprites mid-frame for extra vertical positions, and stretch them."
+keywords: [DYSP, sprite stretching, sprite repositioning, mid-frame update]
 ---
 
 ## facts
@@ -52,6 +54,7 @@ granularity: atomic
 - For more than 8 simultaneous sprites, combine with [sprite-multiplexer.md](sprite-multiplexer.md).
 
 ## links
+
 - sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
 - sprite techniques: [../sprites/advanced.md](../sprites/advanced.md)
 - sprite setup: [../sprites/display.md](../sprites/display.md)
@@ -63,5 +66,5 @@ granularity: atomic
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
+
 - codebase64.net: [Demo Programming — DYSP](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

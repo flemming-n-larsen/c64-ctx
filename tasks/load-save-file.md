@@ -2,6 +2,8 @@
 type: reference
 domain: tasks
 granularity: recipe
+summary: "Load or save a file from machine code using the KERNAL call sequence."
+keywords: [load file, save file, SETLFS, SETNAM, device number]
 ---
 
 ## sequence
@@ -26,12 +28,12 @@ granularity: recipe
 - Code SHOULD restore default channels with `CLRCHN` after redirected I/O.
 
 ## links
-- KERNAL file I/O: [../kernal/file-io.md](../kernal/file-io.md)
+
 - KERNAL serial bus: [../kernal/serial-bus.md](../kernal/serial-bus.md)
 - memory map: [../memory/map.md](../memory/map.md)
 - CPU flags/registers: [../cpu/6502/registers-flags.md](../cpu/6502/registers-flags.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - task index: [INDEX.md](INDEX.md)
 - KERNAL file I/O: [../kernal/file-io.md](../kernal/file-io.md)

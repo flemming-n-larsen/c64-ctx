@@ -17,18 +17,13 @@ source: c64ref
 | Color mixing — raster tricks, FLI, interlacing, sprite underlay, dithering | [color-mixing.md](color-mixing.md) | The 5 fundamental techniques for expanding beyond 16 hardware colors. |
 | Optimization — speedcoding, tables, zero-page, self-modifying code | [optimization.md](optimization.md) | Cycle-exact technique reference; loop unrolling, runtime speedcode generation, page alignment. |
 
-## source-coverage
-| local coverage | status | notes |
+## pages
+<!-- GENERATED:routes -->
+| answers | read | terms |
 |---|---|---|
-| [memory-banking.md](memory-banking.md) | used | Banking, ROM/RAM/I/O visibility, and processor-port context. |
-| [zero-page.md](zero-page.md), [screen-memory.md](screen-memory.md) | used | Workspace, vectors, screen matrix, and color RAM context. |
-| [../irq/overview.md](../irq/overview.md) | routed | Canonical interrupt context now lives in `/irq`. |
-| [character-sets.md](character-sets.md) | used | PETSCII, screen-code, and keyboard-matrix distinctions. |
-| [screen-geometry.md](screen-geometry.md) | used | PAL visible area, raster ranges, border heights, sprite Y offset. |
-| [vic-bad-lines.md](vic-bad-lines.md) | used | Bad line condition, cycle cost, YSCROLL trick, frame budget. |
-| [color-mixing.md](color-mixing.md) | used | Raster color tricks, FLI, interlacing, sprite underlay, dithering. |
-| [optimization.md](optimization.md) | used | Speedcoding, loop unrolling, runtime code generation, table lookups. |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
+| How the EXROM and GAME expansion-port lines combine with $0001 to pick a memory map. | [cartridge-modes.md](cartridge-modes.md) | cartridge, EXROM, GAME, PLA, expansion port, memory config |
+| Redirect stub: interrupt material now lives in the irq domain. | [interrupts.md](interrupts.md) | interrupts, redirect, moved page |
+<!-- /GENERATED:routes -->
 
 ## related
 | domain | read | why |

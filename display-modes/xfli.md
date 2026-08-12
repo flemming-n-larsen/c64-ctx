@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Extended FLI: FLI plus per-line background register writes for a wider per-line palette."
+keywords: [XFLI, XIFLI, extended FLI, per-line background]
 ---
 
 ## facts
@@ -47,6 +49,7 @@ granularity: atomic
 - XIFLI requires two `$D021` tables (frame A and B), doubling the artwork color data.
 
 ## links
+
 - effects: [fli.md](fli.md)
 - effects: [ifli.md](ifli.md)
 - effects: [nufli.md](nufli.md)
@@ -54,5 +57,5 @@ granularity: atomic
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

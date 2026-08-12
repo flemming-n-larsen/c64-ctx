@@ -3,6 +3,8 @@ type: reference
 domain: cpu
 source: codebase64.net
 granularity: atomic
+summary: "Identify NMOS 6502, 65C02, or 65816 at runtime from opcode behavior differences."
+keywords: [CPU detection, 65C02, 65816, NMOS, runtime probe]
 ---
 
 ## facts
@@ -51,9 +53,10 @@ Use `!byte` (ACME) or `.byte` (other assemblers) to emit opcodes the assembler d
 - `XBA` is a 65816-only instruction; on 65C02 it executes as a two-cycle NOP (`$EB`).
 
 ## links
+
 - CPU identity and 6510 specifics: [6510.md](6510.md)
 - illegal opcodes (NMOS-only): [6502/illegal-opcodes.md](6502/illegal-opcodes.md)
 
 ## sources
+
 - https://codebase64.net/doku.php?id=base:detect_cpu_type — CC BY-NC-SA 4.0 (author: Ullrich von Bassewitz)
-- [../sources/INDEX.md](../sources/INDEX.md)

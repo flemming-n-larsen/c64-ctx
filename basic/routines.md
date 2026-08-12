@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: route
+summary: "Route to BASIC ROM routine addresses rather than copied listings."
+keywords: [BASIC routines, ROM entry points, interpreter routines]
 ---
 
 ## lookup
@@ -18,11 +20,11 @@ granularity: route
 - Routine address claims MUST be checked against the local ROM route pages before use.
 
 ## links
+
 - BASIC vectors: [vectors.md](vectors.md)
 - BASIC tokens: [tokens.md](tokens.md)
-- ROM route: [../rom/basic-disassembly.md](../rom/basic-disassembly.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - BASIC index: [INDEX.md](INDEX.md)
 - ROM route: [../rom/basic-disassembly.md](../rom/basic-disassembly.md)

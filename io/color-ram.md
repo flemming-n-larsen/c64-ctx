@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: address-range
+summary: "The 4-bit-per-cell color RAM: where it lives and what the upper nibble does."
+keywords: [color RAM, nibble, cell color, upper nibble garbage]
 ---
 
 ## facts
@@ -21,11 +23,11 @@ granularity: address-range
 - Screen-memory explanations SHOULD link both color RAM and VIC-II memory-control facts.
 
 ## links
+
 - screen memory: [../concepts/screen-memory.md](../concepts/screen-memory.md)
 - VIC-II: [vic-ii.md](vic-ii.md)
-- palette: [../colors/palette.md](../colors/palette.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - I/O index: [INDEX.md](INDEX.md)
 - palette: [../colors/palette.md](../colors/palette.md)

@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Remove the top, bottom or side borders, and put sprites out there."
+keywords: [open borders, border removal, side border, sprites in border]
 ---
 
 ## facts
@@ -59,6 +61,7 @@ NUFLI and UFLI use sprite underlay across the full display width; the 6 NUFLI un
 - These are PAL-measured values; verify on NTSC hardware or emulator with correct chip model.
 
 ## links
+
 - sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
 - sprite display: [../sprites/display.md](../sprites/display.md)
 - sprite techniques: [../sprites/advanced.md](../sprites/advanced.md)
@@ -70,6 +73,6 @@ NUFLI and UFLI use sprite underlay across the full display width; the 6 NUFLI un
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 
 ## sources
+
 - codebase64.net: [Opening the Top and Bottom Borders](https://codebase64.net/doku.php?id=vic:opening_the_top_bottom_borders) — CC BY-NC-SA 4.0
 - codebase64.net: [Opening Up the Borders — A Further Explanation](https://codebase64.net/doku.php?id=vic:opening_up_the_borders_-_a_further_explanation) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

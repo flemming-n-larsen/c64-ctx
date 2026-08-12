@@ -2,6 +2,8 @@
 type: reference
 domain: memory
 granularity: address-range
+summary: "The KERNAL ROM window and the hardware vectors near the top of memory."
+keywords: [KERNAL ROM, hardware vectors, HIRAM, RAM under ROM]
 ---
 
 ## facts
@@ -22,11 +24,11 @@ granularity: address-range
 - KERNAL API facts SHOULD be taken from [../kernal/INDEX.md](../kernal/INDEX.md) before implementation disassembly pages.
 
 ## links
+
 - banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
 - KERNAL API: [../kernal/INDEX.md](../kernal/INDEX.md)
-- ROM route: [../rom/kernal-disassembly.md](../rom/kernal-disassembly.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - memory index: [INDEX.md](INDEX.md)
 - ROM route: [../rom/kernal-disassembly.md](../rom/kernal-disassembly.md)

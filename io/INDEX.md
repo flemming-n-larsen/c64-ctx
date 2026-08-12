@@ -21,20 +21,16 @@ source: c64ref
 | Color RAM | [color-ram.md](color-ram.md) | `$D800-$DBFF`; 4-bit color storage. |
 | D64/D71/D81 disk image format structure | [disk-formats.md](disk-formats.md) | Track/sector layout, BAM, directory entries; 1541/1571/1581. |
 
-## source-coverage
-| local coverage | status | notes |
+## pages
+<!-- GENERATED:routes -->
+| answers | read | terms |
 |---|---|---|
-| [io-programming.md](io-programming.md) | used | Codebase64-derived topical hub for practical I/O routes across existing local domains. |
-| [processor-port.md](processor-port.md) | used | 6510 port and memory-configuration bits. |
-| [vic-ii.md](vic-ii.md) | used | Video register coverage. |
-| [../sid/registers.md](../sid/registers.md) | used | Sound register coverage — SID domain. |
-| [cia1.md](cia1.md), [cia2.md](cia2.md) | used | CIA timers, keyboard/joystick, serial bus, IRQ/NMI coverage. |
-| [mouse-1351.md](mouse-1351.md) | used | Original-manual-backed 1351 proportional and joystick-mode interface. |
-| [midi.md](midi.md) | used | Device-specific MIDI interface routing grounded in the Passport manual and VICE modes. |
-| [fast-loaders.md](fast-loaders.md) | used | Fast-loader layering and compatibility grounded in original drive and implementation documentation. |
-| [color-ram.md](color-ram.md), [../memory/io-area.md](../memory/io-area.md) | used | Color RAM plus `$D000-$DFFF` banking context. |
-| [disk-formats.md](disk-formats.md) | used | D64/D71/D81 disk image format structure (track/sector layout, BAM, directory). |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
+| Communication patterns layered above raw bus or controller hardware. | [data-transfer-protocols.md](data-transfer-protocols.md) | transfer protocols, handshaking, serial transfer, link protocols |
+| Reaching disk and tape through KERNAL channels, and the hardware underneath. | [disk-tape-io.md](disk-tape-io.md) | disk I/O, tape, datassette, IEC signaling, channel calls |
+| Reading joysticks as direct CIA1 port reads, including the keyboard-conflict problem. | [joystick.md](joystick.md) | joystick, control port, direction bits, fire button, port conflict |
+| The three layers of keyboard and text I/O: matrix wiring, KERNAL calls, code spaces. | [keyboard-text-io.md](keyboard-text-io.md) | keyboard I/O, text I/O, input layers, screen editor |
+| Mice, paddles, light pens and trackballs, and which hardware path each uses. | [pointing-devices.md](pointing-devices.md) | pointing devices, paddles, light pen, trackball, POT lines |
+<!-- /GENERATED:routes -->
 
 ## related
 | domain | read | why |

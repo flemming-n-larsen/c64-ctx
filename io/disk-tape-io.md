@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: atomic
+summary: "Reaching disk and tape through KERNAL channels, and the hardware underneath."
+keywords: [disk I/O, tape, datassette, IEC signaling, channel calls]
 ---
 
 ## facts
@@ -25,18 +27,10 @@ granularity: atomic
 - When emitting code, verify exact register and status semantics in the cited KERNAL pages before relying on device-specific behavior.
 - Use [../sources/INDEX.md](../sources/INDEX.md) for upstream provenance when the local route is intentionally compact or when Codebase64 is acting as a topic catalog.
 
-## links
-- I/O programming hub: [io-programming.md](io-programming.md)
-- KERNAL file I/O: [../kernal/file-io.md](../kernal/file-io.md)
-- KERNAL serial bus: [../kernal/serial-bus.md](../kernal/serial-bus.md)
-- Load/save task: [../tasks/load-save-file.md](../tasks/load-save-file.md)
-- CIA2 registers: [cia2.md](cia2.md)
-- Provenance: [../sources/INDEX.md](../sources/INDEX.md)
-
 ## sources
+
 - I/O programming hub: [io-programming.md](io-programming.md)
 - KERNAL file I/O: [../kernal/file-io.md](../kernal/file-io.md)
 - KERNAL serial bus: [../kernal/serial-bus.md](../kernal/serial-bus.md)
 - Load/save task: [../tasks/load-save-file.md](../tasks/load-save-file.md)
 - CIA2 registers: [cia2.md](cia2.md)
-- Provenance: [../sources/INDEX.md](../sources/INDEX.md)

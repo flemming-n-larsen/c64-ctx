@@ -2,6 +2,8 @@
 type: reference
 domain: tasks
 granularity: recipe
+summary: "Redirect stub: the raster interrupt recipe now lives in the irq domain."
+keywords: [raster interrupt, redirect, moved page]
 ---
 
 ## route
@@ -14,10 +16,10 @@ granularity: recipe
 - The authoritative setup sequence now lives in `irq/` so interrupt-generic guidance is no longer split across domains.
 
 ## links
-- canonical recipe: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
+
 - interrupt hub: [../irq/INDEX.md](../irq/INDEX.md)
 - VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - canonical route: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)

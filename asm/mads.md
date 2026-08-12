@@ -2,6 +2,8 @@
 type: reference
 domain: asm
 granularity: assembler
+summary: "MADS cross-assembler directives, macros and invocation."
+keywords: [MADS, cross-assembler, directives, invocation]
 ---
 
 ## facts
@@ -43,11 +45,12 @@ granularity: assembler
 - Primarily tested against Atari targets; verify that any MADS-specific pseudo-ops not listed here behave as expected on 6510 output.
 
 ## links
+
 - assembler hub: [INDEX.md](INDEX.md)
 - cross-assembler equivalence: [rosetta.md](rosetta.md)
 - toolchain workflows: [../toolchains/INDEX.md](../toolchains/INDEX.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
 - upstream: MADS documentation (Tomasz Biela / github.com/tebe6502/Mad-Assembler).

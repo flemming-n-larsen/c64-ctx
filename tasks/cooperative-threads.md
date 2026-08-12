@@ -1,8 +1,9 @@
 ---
 type: reference
 domain: tasks
-source: codebase64.net
 granularity: recipe
+summary: "Redirect stub: cooperative threading now lives in the irq domain."
+keywords: [cooperative threads, redirect, moved page]
 ---
 
 ## route
@@ -18,11 +19,11 @@ granularity: recipe
 - Shared zero-page and I/O ownership remain local design constraints even when the generic switching recipe is centralized under `/irq`.
 
 ## links
-- canonical route: [../irq/cooperative-threads.md](../irq/cooperative-threads.md)
+
 - raster interrupt setup: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - game loop pattern: [game-loop.md](game-loop.md)
 - bank switch (KERNAL on/off): [bank-switch-rom-ram.md](bank-switch-rom-ram.md)
 
 ## sources
-- [../sources/INDEX.md](../sources/INDEX.md)
+
 - canonical route: [../irq/cooperative-threads.md](../irq/cooperative-threads.md)

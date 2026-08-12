@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "New Underlayed FLI: six double-wide hires sprites give flicker-free color mixing."
+keywords: [NUFLI, NUIFLI, flicker free, double-wide sprites]
 ---
 
 ## facts
@@ -75,6 +77,7 @@ granularity: atomic
 - NUIFLI adds IFLI frame alternation on top; requires two complete NUFLI datasets and doubles the artwork complexity.
 
 ## links
+
 - effects: [fli.md](fli.md)
 - effects: [ifli.md](ifli.md)
 - effects: [ufli.md](ufli.md)
@@ -86,6 +89,6 @@ granularity: atomic
 - graphics: [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md)
 
 ## sources
+
 - c64-wiki.com: [NUFLI](https://www.c64-wiki.com/wiki/NUFLI) — GFDL
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

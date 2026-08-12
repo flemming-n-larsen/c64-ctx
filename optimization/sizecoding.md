@@ -3,6 +3,8 @@ type: reference
 domain: optimization
 source: codebase64.net
 granularity: atomic
+summary: "Save bytes by reusing KERNAL routines for their side effects."
+keywords: [sizecoding, byte saving, small binary, KERNAL side effects]
 ---
 
 ## facts
@@ -85,10 +87,11 @@ Sprite
 - Scroll-left / scroll-right routines require copying KERNAL to zero page and disabling ROM.
 
 ## links
+
 - ROM/RAM banking (disable/enable KERNAL): [../tasks/bank-switch-rom-ram.md](../tasks/bank-switch-rom-ram.md)
 - speed optimization: [speed.md](speed.md)
 - memory move task: [../tasks/memory-move.md](../tasks/memory-move.md)
 
 ## sources
+
 - https://codebase64.net/doku.php?id=base:sizecoding — CC BY-NC-SA 4.0
-- [../sources/INDEX.md](../sources/INDEX.md)

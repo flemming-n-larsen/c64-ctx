@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: route
+summary: "Graphics and sound from BASIC via POKE and PEEK; BASIC V2 has no native commands."
+keywords: [POKE graphics, POKE sound, BASIC graphics, BASIC sound]
 ---
 
 ## facts
@@ -65,11 +67,10 @@ Beep voice 1 (triangle, gate on, then off):
 ```
 
 ## links
+
 - keywords: [keywords.md](keywords.md)
 - functions: [functions.md](functions.md)
 - examples: [examples.md](examples.md)
-- VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
-- SID: [../sid/registers.md](../sid/registers.md)
 - color RAM: [../io/color-ram.md](../io/color-ram.md)
 - palette: [../colors/palette.md](../colors/palette.md)
 - screen codes: [../charset/screen-codes.md](../charset/screen-codes.md)
@@ -78,6 +79,7 @@ Beep voice 1 (triangle, gate on, then off):
 - memory map: [../memory/map.md](../memory/map.md)
 
 ## sources
+
 - local route: [../sources/INDEX.md](../sources/INDEX.md) (PRG 1982 for BASIC `POKE` recipes; mist64/c64ref `src/c64io` for register addresses)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - SID registers: [../sid/registers.md](../sid/registers.md)

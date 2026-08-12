@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Multi Resolution FLI: toggle multicolor per raster line to mix hires and multicolor regions."
+keywords: [MRFLI, multi resolution, mixed resolution, per-line MCM]
 ---
 
 ## facts
@@ -41,6 +43,7 @@ granularity: atomic
 - Bitmap pixel patterns must be designed for the intended mode of each row; a multicolor bit pattern displayed in hires mode (or vice versa) produces incorrect colors.
 
 ## links
+
 - effects: [fli.md](fli.md)
 - effects: [ifli.md](ifli.md)
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
@@ -48,5 +51,5 @@ granularity: atomic
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

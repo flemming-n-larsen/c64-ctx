@@ -2,6 +2,8 @@
 type: reference
 domain: charset
 granularity: lookup
+summary: "The 8x8 keyboard matrix as scanned through CIA1, with modifiers and delivered PETSCII."
+keywords: [keyboard matrix, key scan, modifiers, SHIFT, matrix position]
 ---
 
 ## facts
@@ -60,13 +62,13 @@ granularity: lookup
 - Joystick port 2 input MUST be considered when reading keyboard rows; a pressed joystick direction reads as a key in the same matrix position.
 
 ## links
-- CIA1: [../io/cia1.md](../io/cia1.md)
+
 - read keyboard task: [../tasks/read-keyboard.md](../tasks/read-keyboard.md)
 - PETSCII: [petscii.md](petscii.md)
 - control codes: [control-codes.md](control-codes.md)
 - KERNAL keyboard/screen: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - charset index: [INDEX.md](INDEX.md)
 - CIA1: [../io/cia1.md](../io/cia1.md)

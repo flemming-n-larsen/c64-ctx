@@ -16,17 +16,10 @@ source: cross-domain
 | Minimal `ca65`/`ld65` C64 `.prg` | [ca65-minimal-prg.md](ca65-minimal-prg.md) | Cites [../asm/ca65.md](../asm/ca65.md), [../asm/common-patterns.md](../asm/common-patterns.md), [../toolchains/ca65-workflow.md](../toolchains/ca65-workflow.md). |
 | Minimal `64tass` `.prg` with SYS stub | [64tass-hello.md](64tass-hello.md) | Cites [../asm/64tass.md](../asm/64tass.md), [../asm/common-patterns.md](../asm/common-patterns.md), [../toolchains/64tass-workflow.md](../toolchains/64tass-workflow.md). |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [basic-border-background.md](basic-border-background.md) | used | Complete BASIC V2 listing. |
-| [basic-read-key.md](basic-read-key.md) | used | Complete BASIC V2 listing. |
-| [basic-sys-loader.md](basic-sys-loader.md) | used | BASIC + machine code via `DATA`/`SYS`. |
-| [acme-hello.md](acme-hello.md) | used | Buildable ACME source + invocation. |
-| [kickassembler-sprite.md](kickassembler-sprite.md) | used | Buildable KickAssembler source + invocation. |
-| [ca65-minimal-prg.md](ca65-minimal-prg.md) | used | Buildable `ca65`/`ld65` source + invocation. |
-| [64tass-hello.md](64tass-hello.md) | used | Buildable `64tass` source + invocation. |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Examples cite local reference pages; upstream provenance routes through cited domains. |
+## pages
+<!-- GENERATED:routes -->
+_Every page in this domain is reached from `## routes` above._
+<!-- /GENERATED:routes -->
 
 ## related
 | domain | read | why |

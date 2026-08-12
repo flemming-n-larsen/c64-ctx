@@ -2,6 +2,8 @@
 type: reference
 domain: rom
 granularity: route
+summary: "Where BASIC ROM routines live, as a route to the upstream disassemblies."
+keywords: [BASIC ROM, interpreter routines, disassembly, ROM listing]
 ---
 
 ## lookup
@@ -18,11 +20,12 @@ granularity: route
 - Agents MUST account for banking before saying `$A000-$BFFF` reads return BASIC ROM.
 
 ## links
+
 - BASIC domain: [../basic/INDEX.md](../basic/INDEX.md)
 - BASIC ROM memory: [../memory/basic-rom.md](../memory/basic-rom.md)
 - banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - ROM index: [INDEX.md](INDEX.md)
 - BASIC routines: [../basic/routines.md](../basic/routines.md)

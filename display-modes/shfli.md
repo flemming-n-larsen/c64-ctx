@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Super HiRes FLI family: sub-pixel and multi-frame tricks on the FLI base."
+keywords: [SHFLI, SHI, SHIFLI, SHIFXL, super hires FLI, sub-pixel]
 ---
 
 ## facts
@@ -50,6 +52,7 @@ granularity: atomic
 - All SH/SHIFLI/SHIFXL modes are best-effort documented; implementation details vary by release and are not uniformly covered in public sources.
 
 ## links
+
 - effects: [fli.md](fli.md)
 - effects: [ifli.md](ifli.md)
 - effects: [sh.md](sh.md)
@@ -59,5 +62,5 @@ granularity: atomic
 - graphics: [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

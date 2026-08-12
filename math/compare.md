@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "Compare 8- and 16-bit values, signed and unsigned, and read the flags right."
+keywords: [compare, signed comparison, 16-bit compare, flag results]
 ---
 
 ## facts
@@ -46,11 +48,12 @@ not_equal:
 - Ranged comparison with `SBC` assumes carry is set before the first `SBC`; MUST precede with `SEC`.
 
 ## links
+
 - math: [add-sub.md](add-sub.md)
 - cpu: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
 
 ## sources
+
 - codebase64.net: [8-bit ranged comparison](https://codebase64.net/doku.php?id=base:8-bit_ranged_comparison) — CC BY-NC-SA 4.0
 - codebase64.net: [16-bit absolute comparison](https://codebase64.net/doku.php?id=base:16-bit_absolute_comparison) — CC BY-NC-SA 4.0
 - codebase64.net: [16-bit comparison](https://codebase64.net/doku.php?id=base:16-bit_comparison) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

@@ -2,6 +2,8 @@
 type: reference
 domain: music
 granularity: atomic
+summary: "Keep a tune at the right tempo on both PAL and NTSC machines."
+keywords: [PAL NTSC, playback speed, timer values, tempo correction]
 ---
 
 ## facts
@@ -23,6 +25,7 @@ granularity: atomic
 - PAL-N / Drean machines need their own timer ratio and should not be treated as either plain PAL or plain NTSC.
 
 ## links
+
 - tune integration: [tune-integration.md](tune-integration.md)
 - IRQ music player: [irq-music-player.md](irq-music-player.md)
 - SID frequency calculation: [../sid/frequency-calculation.md](../sid/frequency-calculation.md)
@@ -32,5 +35,5 @@ granularity: atomic
 - music index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - codebase64.net: [Playing music on PAL and NTSC](https://codebase64.net/doku.php?id=base:playing_music_on_pal_and_ntsc) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

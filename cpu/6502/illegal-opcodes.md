@@ -2,6 +2,8 @@
 type: reference
 domain: cpu/6502
 granularity: atomic
+summary: "The 105 undocumented NMOS opcodes: bytes, stability, demo use, quirks."
+keywords: [illegal opcodes, undocumented, LAX, SAX, NOP variants, unstable]
 ---
 
 ## facts
@@ -141,11 +143,13 @@ Common uses of illegal opcodes in C64 demo and game programming.
 - `JAM` MUST only be used as a deliberate crash sentinel, never in a code path that should return.
 
 ## links
+
 - instruction set: [instruction-set.md](instruction-set.md)
 - addressing modes: [addressing-modes.md](addressing-modes.md)
 - CPU index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - local route: [../../sources/INDEX.md](../../sources/INDEX.md)
 - opcode bytes and operations: mist64/c64ref src/6502/cpu_6502.txt (VICE mnemonic convention)
 - stability and behavior: "NMOS 6510 Unintended Opcodes" (No More Secrets, 2010); "64doc" by John West and Marko Makela

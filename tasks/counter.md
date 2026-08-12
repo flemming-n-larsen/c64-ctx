@@ -3,6 +3,8 @@ type: reference
 domain: tasks
 source: codebase64.net
 granularity: recipe
+summary: "A decimal digit counter with carry propagation and on-screen display."
+keywords: [score counter, digit table, carry propagation, decimal display]
 ---
 
 ## facts
@@ -63,10 +65,11 @@ tellertabel              ; 256 bytes reserved
 - PETSCII offset `$30` maps 0→`0`, 1→`1`, …, 9→`9`; applies only to character display, not score math.
 
 ## links
+
 - print to screen: [print-to-screen.md](print-to-screen.md)
 - PETSCII reference: [../charset/INDEX.md](../charset/INDEX.md)
 - game loop integration: [game-loop.md](game-loop.md)
 
 ## sources
+
 - https://codebase64.net/doku.php?id=base:making_a_counter — CC BY-NC-SA 4.0 (author: Scout/Silicon Ltd.)
-- [../sources/INDEX.md](../sources/INDEX.md)

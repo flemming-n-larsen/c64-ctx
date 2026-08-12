@@ -3,6 +3,8 @@ type: reference
 domain: vic
 granularity: atomic
 source: codebase64.net
+summary: "Compute the bank and memory-pointer register values from one screen-address constant."
+keywords: [screen setup, bank calculation, bit arithmetic, alignment]
 ---
 
 ## facts
@@ -34,10 +36,11 @@ source: codebase64.net
 - Bitmap modes ignore `$D018` bits `2-1`; only bit `3` matters for bitmap base selection.
 
 ## links
+
 - VIC memory and banking: [memory-and-banking.md](memory-and-banking.md)
 - VIC registers: [registers.md](registers.md)
 - VIC hub: [INDEX.md](INDEX.md)
 
 ## sources
+
 - codebase64.net: [Quick VIC-II Screen Setup](https://codebase64.net/doku.php?id=base:quick_vicii_screen_setup) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

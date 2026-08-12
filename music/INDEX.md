@@ -17,18 +17,10 @@ source: codebase64.net
 | PSID/RSID `.sid` container format | [sid-file-format.md](sid-file-format.md) | Header fields, byte order, payload loading, flags, and strict RSID constraints |
 | Raw SID chip registers and waveform/filter setup | [../sid/INDEX.md](../sid/INDEX.md) | Hardware-facing route for direct SID programming |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [irq-music-player.md](irq-music-player.md) | used | Stable raster IRQ wrapper for music-player init/play calls |
-| [tune-integration.md](tune-integration.md) | used | ROM-banked init/play integration pattern |
-| [music-memory-banking.md](music-memory-banking.md) | used | `$D000-$DFFF` placement hazards and ghost-register workaround |
-| [pal-ntsc-playback.md](pal-ntsc-playback.md) | used | Cross-video-standard timer values and timing caveats |
-| [music-patterns.md](music-patterns.md) | used | Common per-frame music modulation patterns |
-| [hard-restart.md](hard-restart.md) | used | Player-scheduled ADSR retrigger technique |
-| [player-file-formats.md](player-file-formats.md) | used | Compact tracker/player file-format notes |
-| [sid-file-format.md](sid-file-format.md) | used | HVSC-specified PSID/RSID container structure and parsing constraints |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | codebase64.net upstream route |
+## pages
+<!-- GENERATED:routes -->
+_Every page in this domain is reached from `## routes` above._
+<!-- /GENERATED:routes -->
 
 ## related
 | domain | read | why |

@@ -2,6 +2,8 @@
 type: reference
 domain: toolchains
 granularity: emulator
+summary: "Run and debug a prg in VICE: autostart, monitor, command-line flags."
+keywords: [VICE, emulator workflow, autostart, monitor, debugging]
 ---
 
 ## facts
@@ -67,6 +69,7 @@ g
 ```
 
 ## links
+
 - common patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - program entrypoints: [../tasks/program-entrypoints.md](../tasks/program-entrypoints.md)
 - ACME workflow: [acme-workflow.md](acme-workflow.md)
@@ -75,6 +78,6 @@ g
 - 64tass workflow: [64tass-workflow.md](64tass-workflow.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
 - upstream: VICE manual (https://vice-emu.sourceforge.io/), `vice.pdf` distributed with each release.

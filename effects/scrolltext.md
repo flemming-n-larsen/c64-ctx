@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Horizontal, vertical and sine scrollers built on hardware fine-scroll plus char shifting."
+keywords: [scroller, scrolltext, fine scroll, sine scroller, greetings]
 ---
 
 ## facts
@@ -48,6 +50,7 @@ granularity: atomic
 - For stable scroll on every raster line, combine with [stable-raster.md](stable-raster.md).
 
 ## links
+
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - tasks: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - tasks: [../tasks/sprite-display.md](../tasks/sprite-display.md)
@@ -56,5 +59,5 @@ granularity: atomic
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
+
 - codebase64.net: [Demo Programming — Scrolling Text](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

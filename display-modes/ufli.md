@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Underlayed FLI: hires sprites behind the FLI bitmap add independent colors."
+keywords: [UFLI, UIFLI, underlayed FLI, sprite underlay, sprite stretch]
 ---
 
 ## facts
@@ -65,6 +67,7 @@ Full 320 px coverage needs 14 sprites (not possible with 8); typical UFLI covers
 - UIFLI requires two full UFLI datasets: 2 × (8000 screen + 8000 sprite) bytes; plan VIC bank layout carefully.
 
 ## links
+
 - effects: [fli.md](fli.md)
 - effects: [ifli.md](ifli.md)
 - effects: [nufli.md](nufli.md)
@@ -74,5 +77,5 @@ Full 320 px coverage needs 14 sprites (not possible with 8); typical UFLI covers
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

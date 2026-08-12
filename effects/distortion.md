@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Warp a logo with independent per-row vertical and horizontal sine displacement."
+keywords: [distortion, DYPP, tech-tech, sine warp, logo distortion]
 ---
 
 ## facts
@@ -42,6 +44,7 @@ granularity: atomic
 - Sprites may be needed to mask the FLI bug artifact at column 0.
 
 ## links
+
 - effects: [swing.md](swing.md)
 - effects: [fpp.md](fpp.md)
 - effects: [stable-raster.md](stable-raster.md)
@@ -51,6 +54,6 @@ granularity: atomic
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 
 ## sources
+
 - codebase64.net: [FLI Floffy](https://codebase64.net/doku.php?id=base:fli_floffy) — CC BY-NC-SA 4.0
 - codebase64.net: [Demo Programming — Graphics Distortion](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

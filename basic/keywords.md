@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: family
+summary: "All 76 BASIC V2 keywords and operators with token byte, syntax and example."
+keywords: [BASIC keywords, statements, commands, reserved words]
 ---
 
 ## facts
@@ -81,7 +83,7 @@ granularity: family
 - Token `$FF` denotes the function `π` (PI) and is documented in [functions.md](functions.md).
 
 ## links
-- token bytes and tokenizer: [tokens.md](tokens.md)
+
 - function keywords (`$B4-$CA`): [functions.md](functions.md)
 - line layout and listing format: [program-structure.md](program-structure.md)
 - runtime error codes: [errors.md](errors.md)
@@ -90,6 +92,6 @@ granularity: family
 - variable typing rules for `LET`/`DIM`/`READ`/`INPUT`: [variables.md](variables.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - token byte assignments: [tokens.md](tokens.md)
 - BASIC index: [INDEX.md](INDEX.md)

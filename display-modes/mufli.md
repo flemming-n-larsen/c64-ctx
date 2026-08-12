@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Multicolor Underlayed FLI: multicolor sprites give three pixel colors each under FLI."
+keywords: [MUFLI, MUIFLI, multicolor underlay, sprite underlay]
 ---
 
 ## facts
@@ -49,6 +51,7 @@ granularity: atomic
 - Same 23-cycle-per-line CPU budget applies as FLI.
 
 ## links
+
 - effects: [fli.md](fli.md)
 - effects: [ufli.md](ufli.md)
 - effects: [nufli.md](nufli.md)
@@ -57,5 +60,5 @@ granularity: atomic
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

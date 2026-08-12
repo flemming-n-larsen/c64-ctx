@@ -2,6 +2,8 @@
 type: reference
 domain: tasks
 granularity: recipe
+summary: "Six-step sprite setup: data alignment, pointer, position, color, enable last."
+keywords: [sprite setup, sprite pointer, 64-byte alignment, enable sprite]
 ---
 
 ## sequence
@@ -40,15 +42,11 @@ granularity: recipe
 - sprite hub: [../sprites/INDEX.md](../sprites/INDEX.md)
 - sprite registers: [../sprites/registers.md](../sprites/registers.md)
 - sprite display summary: [../sprites/display.md](../sprites/display.md)
-- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- CIA2 / VIC bank: [../io/cia2.md](../io/cia2.md)
 - memory map: [../memory/map.md](../memory/map.md)
 - raster interrupt: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
-- task index: [INDEX.md](INDEX.md)
 
 ## sources
 
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
 - task index: [INDEX.md](INDEX.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - CIA2 bank select: [../io/cia2.md](../io/cia2.md)

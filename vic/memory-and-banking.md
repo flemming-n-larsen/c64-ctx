@@ -2,6 +2,8 @@
 type: reference
 domain: vic
 granularity: atomic
+summary: "What the VIC-II can see: 16 KB bank select, screen matrix and charset placement."
+keywords: [VIC bank, bank select, screen base, charset base, ROM holes]
 ---
 
 ## facts
@@ -43,17 +45,14 @@ granularity: atomic
 - Screen matrix, bitmap data, character data, and other assets inside a bank SHOULD be planned to avoid overlap.
 
 ## links
-- VIC hub: [INDEX.md](INDEX.md)
+
 - register summary: [registers.md](registers.md)
 - timing: [timing.md](timing.md)
 - screen modes: [screen-modes.md](screen-modes.md)
-- screen-memory concept: [../concepts/screen-memory.md](../concepts/screen-memory.md)
-- CIA2 bank select: [../io/cia2.md](../io/cia2.md)
-- authoritative register table: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
+
 - VIC hub: [INDEX.md](INDEX.md)
 - screen-memory concept: [../concepts/screen-memory.md](../concepts/screen-memory.md)
 - CIA2 register reference: [../io/cia2.md](../io/cia2.md)
 - VIC-II register reference: [../io/vic-ii.md](../io/vic-ii.md)
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

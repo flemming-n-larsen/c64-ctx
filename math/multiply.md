@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "Software multiplication: shift-add, and the fast square-table identity."
+keywords: [multiply, multiplication routine, square table, shift and add]
 ---
 
 ## facts
@@ -75,16 +77,17 @@ Multiply by constant (example: A × 5 = A×4 + A):
 - See [../concepts/optimization.md](../concepts/optimization.md) for the square-table layout used in this project's optimization reference.
 
 ## links
+
 - math: [add-sub.md](add-sub.md)
 - math: [divide.md](divide.md)
 - math: [fixed-point.md](fixed-point.md)
 - concepts: [../concepts/optimization.md](../concepts/optimization.md)
 
 ## sources
+
 - codebase64.net: [8-bit multiplication 16-bit product](https://codebase64.net/doku.php?id=base:8bit_multiplication_16bit_product) — CC BY-NC-SA 4.0
 - codebase64.net: [Seriously fast multiplication](https://codebase64.net/doku.php?id=base:seriously_fast_multiplication) — CC BY-NC-SA 4.0
 - codebase64.net: [Fastest multiplication (2023)](https://codebase64.net/doku.php?id=base:fastest_multiplication_2023) — CC BY-NC-SA 4.0
 - codebase64.net: [16-bit multiplication 32-bit product](https://codebase64.net/doku.php?id=base:16bit_multiplication_32-bit_product) — CC BY-NC-SA 4.0
 - codebase64.net: [Multiplication with a constant](https://codebase64.net/doku.php?id=base:multiplication_with_a_constant) — CC BY-NC-SA 4.0
 - codebase64.net: [Table generator for fast 8-bit mul table](https://codebase64.net/doku.php?id=base:table_generator_routine_for_fast_8_bit_mul_table) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

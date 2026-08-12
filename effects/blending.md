@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Fade one charset into another pixel by pixel, plus color RAM palette fades."
+keywords: [blending, fade in, fade out, charset blend, palette cycle]
 ---
 
 ## facts
@@ -51,6 +53,7 @@ granularity: atomic
 - For color RAM fading, writes must occur outside the display area or use raster IRQ to avoid tearing; see [../irq/raster-interrupt.md](../irq/raster-interrupt.md).
 
 ## links
+
 - effects: [rng.md](rng.md)
 - effects: [plasma.md](plasma.md)
 - tasks: [../tasks/custom-charset.md](../tasks/custom-charset.md)
@@ -59,6 +62,6 @@ granularity: atomic
 - colors: [../colors/INDEX.md](../colors/INDEX.md)
 
 ## sources
+
 - codebase64.net: [Blend Charsets](https://codebase64.net/doku.php?id=base:8x8_charset_pixel-blend-in) — CC BY-NC-SA 4.0
 - codebase64.net: [Demo Programming — Blending and Fading](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: bridge
+summary: "Call machine code from BASIC with SYS, USR, and DATA/READ loaders."
+keywords: [SYS, USR, DATA loader, BASIC to ML, register passing]
 ---
 
 ## facts
@@ -63,12 +65,11 @@ Auto-start BASIC stub (the canonical `SYS 2061` one-liner stored in tokenized fo
 ```
 
 ## links
+
 - BASIC keywords: [keywords.md](keywords.md)
 - BASIC functions: [functions.md](functions.md)
 - BASIC variables: [variables.md](variables.md)
-- BASIC vectors and workspace: [vectors.md](vectors.md)
 - BASIC examples: [examples.md](examples.md)
-- Memory map: [../memory/map.md](../memory/map.md)
 - Zero page: [../memory/zero-page.md](../memory/zero-page.md)
 - Memory symbols: [../memory/symbols.md](../memory/symbols.md)
 - 6502 CPU index: [../cpu/6502/INDEX.md](../cpu/6502/INDEX.md)
@@ -76,6 +77,7 @@ Auto-start BASIC stub (the canonical `SYS 2061` one-liner stored in tokenized fo
 - Bank switch task: [../tasks/bank-switch-rom-ram.md](../tasks/bank-switch-rom-ram.md)
 
 ## sources
+
 - local route: [../sources/INDEX.md](../sources/INDEX.md) — C64 Programmer's Reference Guide (Commodore Business Machines, 1982) for `SYS`/`USR`/`PEEK`/`POKE`/`DATA` semantics; mist64/c64ref `src/c64disasm` for BASIC ROM routine routing.
 - BASIC vectors: [vectors.md](vectors.md)
 - memory map: [../memory/map.md](../memory/map.md)

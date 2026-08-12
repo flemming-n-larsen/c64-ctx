@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Depth illusion from dots moving at tiered speeds, character- or sprite-based."
+keywords: [starfield, stars, parallax, depth illusion, ROL starfield]
 ---
 
 ## facts
@@ -45,6 +47,7 @@ granularity: atomic
 - For sprite X ≥ 256, bit in `$D010` MUST be set; clear it when X < 256.
 
 ## links
+
 - sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
 - sprite techniques: [../sprites/advanced.md](../sprites/advanced.md)
 - sprite display: [../sprites/display.md](../sprites/display.md)
@@ -55,5 +58,5 @@ granularity: atomic
 - concepts: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
 
 ## sources
+
 - codebase64.net: [Demo Programming — Starfields](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

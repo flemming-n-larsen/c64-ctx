@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: atomic
+summary: "Hardware and software mitigations for noise picked up on the SID audio input."
+keywords: [noise reduction, audio input, AIN, hum, interference]
 ---
 
 ## facts
@@ -37,11 +39,12 @@ STA $D417
 - Software mitigation helps most in quiet passages and digi-heavy setups, but does not replace proper audio hardware cleanup.
 
 ## links
+
 - SID registers: [registers.md](registers.md)
 - waveforms: [waveforms.md](waveforms.md)
 - digi samples: [digi-samples.md](digi-samples.md)
 - SID index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - codebase64.net: [Reduce noise](https://codebase64.net/doku.php?id=base:reduce_noise) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

@@ -2,6 +2,8 @@
 type: reference
 domain: cpu/6502
 granularity: atomic
+summary: "Documented 6502 opcode semantics: operation class, flag effects, cycle counts."
+keywords: [instruction set, mnemonics, opcodes, flag effects, cycle counts]
 ---
 
 ## operation-classes
@@ -200,10 +202,12 @@ CLI
 - `LSR` always clears `N` (shifts 0 into bit 7); `ROR` sets `N` from the old `C` bit rotated in.
 
 ## links
+
 - registers and flags: [registers-flags.md](registers-flags.md)
 - addressing modes: [addressing-modes.md](addressing-modes.md)
 - illegal opcodes: [illegal-opcodes.md](illegal-opcodes.md)
 
 ## sources
+
 - local route: [../../sources/INDEX.md](../../sources/INDEX.md)
 - CPU index: [INDEX.md](INDEX.md)

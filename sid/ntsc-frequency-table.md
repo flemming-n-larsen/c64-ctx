@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: reference
+summary: "NTSC A440 note-to-register values, calibrated for the common 6567R8."
+keywords: [NTSC frequency table, NTSC notes, 6567R8, A440]
 ---
 
 ## facts
@@ -36,11 +38,12 @@ For voices 2/3 add offset `+7` / `+14`.
 - The highest `B` in octave 7 stays within 16 bits on NTSC (`$FD2F`), unlike the PAL A440 table where octave-7 `B` overflows.
 
 ## links
+
 - PAL frequency table: [frequency-table.md](frequency-table.md)
 - frequency calculation: [frequency-calculation.md](frequency-calculation.md)
 - SID registers: [registers.md](registers.md)
 - SID index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - codebase64.net: [NTSC Frequency Table](https://codebase64.net/doku.php?id=base:ntsc_frequency_table) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

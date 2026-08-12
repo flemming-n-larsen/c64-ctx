@@ -3,6 +3,8 @@ type: reference
 domain: io
 granularity: device
 source: commodore-manual
+summary: "The 1351 proportional mouse: POT register decoding, buttons, sampling constraints."
+keywords: [1351 mouse, proportional mode, POT registers, mouse buttons]
 ---
 
 ## facts
@@ -30,13 +32,12 @@ source: commodore-manual
 - Joystick mode reports timed direction pulses rather than proportional deltas and MUST be handled as a joystick.
 
 ## links
+
 - pointing-device route: [pointing-devices.md](pointing-devices.md)
-- SID POT registers: [../sid/registers.md](../sid/registers.md)
-- CIA1 controller ports: [cia1.md](cia1.md)
 - I/O index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - SID registers: [../sid/registers.md](../sid/registers.md)
 - CIA1 registers: [cia1.md](cia1.md)
 - original device manual: [Commodore 1351 Mouse User's Manual](https://www.vincenzoscarpa.it/biblioteca/manuali/eng/c64/Commodore64-1351-Mouse-Users-Guide.pdf)
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

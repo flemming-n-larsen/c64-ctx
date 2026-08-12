@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Permanent Raster Split: a stable per-frame split showing two independent display regions."
+keywords: [PRS, raster split, screen split, status bar, split screen]
 ---
 
 ## facts
@@ -47,6 +49,7 @@ granularity: atomic
 - Changing mode mid-frame (e.g., bitmap to text) is valid; changing to an illegal mode (ECM+BMM) blanks that region.
 
 ## links
+
 - effects: [stable-raster.md](../effects/stable-raster.md)
 - effects: [rasterbars.md](../effects/rasterbars.md)
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
@@ -54,5 +57,5 @@ granularity: atomic
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

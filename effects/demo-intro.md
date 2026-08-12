@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "How a demo is structured: IRQ chain, frame anatomy, and the prerequisite techniques."
+keywords: [demo coding, demo structure, IRQ chain, frame anatomy, intro]
 ---
 
 ## facts
@@ -43,6 +45,7 @@ A standard demo part follows this flow:
 - Optimization is mandatory for complex effects; see [../concepts/optimization.md](../concepts/optimization.md).
 
 ## links
+
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [open-borders.md](open-borders.md)
 - effects: [rasterbars.md](rasterbars.md)
@@ -57,5 +60,5 @@ A standard demo part follows this flow:
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
+
 - codebase64.net: [An Introduction to Programming C-64 Demos](https://codebase64.net/doku.php?id=vic:demo:demo_coding_introduction) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

@@ -3,6 +3,8 @@ type: reference
 domain: io
 granularity: atomic
 source: mixed
+summary: "How fast loaders replace the stock transfer protocol, and their compatibility rules."
+keywords: [fast loader, drive code, transfer protocol, compatibility]
 ---
 
 ## facts
@@ -29,16 +31,14 @@ source: mixed
 - Exact cycle timing MUST come from the selected loader implementation, not from this routing page.
 
 ## links
+
 - transfer-protocol route: [data-transfer-protocols.md](data-transfer-protocols.md)
-- CIA2 registers: [cia2.md](cia2.md)
-- KERNAL serial bus: [../kernal/serial-bus.md](../kernal/serial-bus.md)
-- disk formats: [disk-formats.md](disk-formats.md)
 - I/O index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - CIA2 registers: [cia2.md](cia2.md)
 - KERNAL serial bus: [../kernal/serial-bus.md](../kernal/serial-bus.md)
 - disk formats: [disk-formats.md](disk-formats.md)
 - original drive manual: [Commodore VIC-1541 Floppy Drive User's Manual](https://www.commodore.ca/wp-content/uploads/2018/11/commodore_vic_1541_floppy_drive_users_manual.pdf)
 - implementation reference: [Covert Bitops tools and LoaderSystem](https://cadaver.github.io/tools.html)
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

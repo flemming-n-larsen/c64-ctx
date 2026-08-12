@@ -2,6 +2,8 @@
 type: reference
 domain: asm
 granularity: assembler
+summary: "ACME directives, expressions and output formats."
+keywords: [ACME, directives, pseudo opcodes, output formats]
 ---
 
 ## facts
@@ -68,12 +70,13 @@ eob: !word 0
 ```
 
 ## links
+
 - common patterns: [common-patterns.md](common-patterns.md)
 - rosetta: [rosetta.md](rosetta.md)
 - CPU mnemonics: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
 - toolchain workflow: [../toolchains/acme-workflow.md](../toolchains/acme-workflow.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
 - upstream: ACME user manual (Marco Baye), distributed with the ACME release archive.

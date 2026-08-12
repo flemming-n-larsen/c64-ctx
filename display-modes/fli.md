@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Flexible Line Interpretation: re-read color data every raster line instead of every eight."
+keywords: [FLI, flexible line interpretation, FLI bug, forced bad line]
 ---
 
 ## facts
@@ -27,7 +29,7 @@ granularity: atomic
    - Set `$D012` = `current_line + 1` for the next IRQ, or use a polling-loop variant.
 6. At line `$FB` (below display area): restore `$D011` to normal YSCROLL value.
 
-**Tight polling alternative (preferred for cycle accuracy):**  
+**Tight polling alternative (preferred for cycle accuracy):**
 Enter a tight loop at line `$33`; poll `$D012`; on each new line write `$D018` and `$D011` directly, then spin until the next line. This avoids IRQ entry/exit overhead on lines where every CPU cycle counts (23 free cycles per bad line on PAL).
 
 ## lookup
@@ -71,6 +73,7 @@ Enter a tight loop at line `$33`; poll `$D012`; on each new line write `$D018` a
 - 8 FLI blocks × 1000 bytes = exactly 8000 bytes — same size as the bitmap; both fit in a 16 KB bank with careful placement.
 
 ## links
+
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - effects: [ifli.md](ifli.md)
 - effects: [ufli.md](ufli.md)
@@ -83,5 +86,5 @@ Enter a tight loop at line `$33`; poll `$D012`; on each new line write `$D018` a
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 
 ## sources
+
 - codebase64.net: [FLI](https://codebase64.net/doku.php?id=base:fli) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

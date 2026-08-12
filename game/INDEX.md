@@ -18,15 +18,10 @@ source: codebase64.net
 | PRNG / pseudo-random number generator | [../effects/rng.md](../effects/rng.md) | X-ABC PRNG; 38 cycles; 8/16-bit output. |
 | Speed optimization (cycle budget, loop unrolling, speedcode) | [../optimization/INDEX.md](../optimization/INDEX.md) | Critical for game engines within rastertime budgets. |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [tilemaps.md](tilemaps.md) | used | Block structure, map addressing, world-coordinate methods. |
-| [scrolling.md](scrolling.md) | used | Fine/coarse scroll pipeline, IRQ stage split, color-RAM updates, doublebuffering. |
-| [frameskip.md](frameskip.md) | used | Frameskip/interpolation techniques and re-entrant IRQ guard pattern. |
-| [hiscore.md](hiscore.md) | used | High score compare, zero-page persistence, KERNAL disk save/load. |
-| [scoring.md](scoring.md) | used | BCD and ASCII digit score methods with display conversion. |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | codebase64.net upstream route. |
+## pages
+<!-- GENERATED:routes -->
+_Every page in this domain is reached from `## routes` above._
+<!-- /GENERATED:routes -->
 
 ## related
 | domain | read | why |

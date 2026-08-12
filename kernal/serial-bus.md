@@ -2,6 +2,8 @@
 type: reference
 domain: kernal
 granularity: api-family
+summary: "Low-level IEC serial bus calls for talking to drives and printers directly."
+keywords: [serial bus, IEC, LISTEN, TALK, ACPTR, CIOUT]
 ---
 
 ## lookup
@@ -23,11 +25,11 @@ granularity: api-family
 - Serial routines SHOULD check `READST` when error handling matters.
 
 ## links
-- jump table: [jump-table.md](jump-table.md)
+
 - file I/O: [file-io.md](file-io.md)
 - CIA2 hardware: [../io/cia2.md](../io/cia2.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - KERNAL index: [INDEX.md](INDEX.md)
 - jump table: [jump-table.md](jump-table.md)

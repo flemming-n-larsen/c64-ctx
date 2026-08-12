@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: chip
+summary: "All 29 SID registers with bit fields, control-register breakdown and envelope rates."
+keywords: [SID registers, 6581, 8580, control register, ADSR rates]
 ---
 
 ## facts
@@ -124,6 +126,7 @@ granularity: chip
 - Frequency formula (PAL): Hz = FREQ_reg × 985248 ÷ 16777216 ≈ FREQ_reg × 0.0587.
 
 ## links
+
 - play-SID task: [play-note.md](play-note.md)
 - waveforms: [waveforms.md](waveforms.md)
 - frequency table (PAL A440): [frequency-table.md](frequency-table.md)
@@ -134,11 +137,10 @@ granularity: chip
 - digi samples: [digi-samples.md](digi-samples.md)
 - noise reduction: [noise-reduction.md](noise-reduction.md)
 - filter sweep effect: [filter-sweep.md](filter-sweep.md)
-- I/O area: [../memory/io-area.md](../memory/io-area.md)
 - processor port: [../io/processor-port.md](../io/processor-port.md)
 - SID index: [INDEX.md](INDEX.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - upstream: [mist64/c64ref src/c64io](https://github.com/mist64/c64ref/tree/master/src/c64io)
 - memory I/O area: [../memory/io-area.md](../memory/io-area.md)

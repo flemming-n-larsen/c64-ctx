@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Fire effect using a 4x4 intensity charset and a neighbour-average algorithm."
+keywords: [fire effect, flame, neighbour average, intensity charset]
 ---
 
 ## facts
@@ -36,6 +38,7 @@ granularity: atomic
 - The neighbor-average MUST wrap at screen edges or clamp to avoid reading garbage values.
 
 ## links
+
 - effects: [rng.md](rng.md)
 - tasks: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - tasks: [../tasks/game-loop.md](../tasks/game-loop.md)
@@ -44,5 +47,5 @@ granularity: atomic
 - memory: [../memory/map.md](../memory/map.md)
 
 ## sources
+
 - codebase64.net: [Demo Programming — Fire Effects](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

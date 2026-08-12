@@ -2,6 +2,8 @@
 type: reference
 domain: game
 granularity: recipe
+summary: "Multidirectional scrolling built on the VIC-II fine-scroll registers."
+keywords: [scrolling, fine scroll, smooth scroll, multidirectional, map scroll]
 ---
 
 ## facts
@@ -44,6 +46,7 @@ granularity: recipe
 - Doublebuffer swap MUST occur before the raster reaches the top of the visible area to avoid tearing.
 
 ## links
+
 - game: [tilemaps.md](tilemaps.md)
 - game: [frameskip.md](frameskip.md)
 - effects: [../effects/fld.md](../effects/fld.md)
@@ -53,6 +56,6 @@ granularity: recipe
 - concepts: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
 
 ## sources
+
 - [https://codebase64.net/doku.php?id=base:rant4](https://codebase64.net/doku.php?id=base:rant4) — Cadaver/Covert Bitops, "Rant 4: Multidirectional Scrolling and Game World" — CC BY-NC-SA 4.0
 - [https://codebase64.net/doku.php?id=base:4_ways_scroll](https://codebase64.net/doku.php?id=base:4_ways_scroll) — Malcolm Bamber, "4 Ways Scroll" — CC BY-NC-SA 4.0
-- [../sources/INDEX.md](../sources/INDEX.md)

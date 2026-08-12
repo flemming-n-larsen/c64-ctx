@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "The X-ABC pseudo-random generator: 38 cycles, 28 bytes, 8- or 16-bit output."
+keywords: [RNG, PRNG, X-ABC, random numbers, fast random]
 ---
 
 ## facts
@@ -57,11 +59,12 @@ b1: LDA #0          ; (used as scratch above)
 - For fire ([fire.md](fire.md)) or starfield ([starfield.md](starfield.md)) seeding, call once per cell where randomness is needed.
 
 ## links
+
 - effects: [fire.md](fire.md)
 - effects: [starfield.md](starfield.md)
 - effects: [plasma.md](plasma.md)
 - memory: [../memory/zero-page.md](../memory/zero-page.md)
 
 ## sources
+
 - codebase64.net: [X ABC Random Number Generator (8/16-bit)](https://codebase64.net/doku.php?id=6502_6510_maths:x_abc_random_number_generator_8_16_bit) — EternityForest (algorithm), Wil (C64 implementation) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

@@ -3,6 +3,8 @@ type: reference
 domain: concepts
 granularity: concept
 source: codebase64.net
+summary: "How the EXROM and GAME expansion-port lines combine with $0001 to pick a memory map."
+keywords: [cartridge, EXROM, GAME, PLA, expansion port, memory config]
 ---
 
 ## facts
@@ -27,10 +29,11 @@ source: codebase64.net
 - The CPU MUST NOT rely on KERNAL ROM in Ultimax mode unless the cartridge re-maps equivalent routines at `$E000-$FFFF`.
 
 ## links
+
 - memory banking ($0001): [memory-banking.md](memory-banking.md)
 - memory map: [../memory/map.md](../memory/map.md)
 - KERNAL ROM: [../memory/kernal-rom.md](../memory/kernal-rom.md)
 
 ## sources
+
 - codebase64.net: [Memory Management in Commodore 64](https://codebase64.net/doku.php?id=base:memory_management) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

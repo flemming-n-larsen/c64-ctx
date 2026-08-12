@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "Integer powers by repeated multiplication or table-assisted methods."
+keywords: [exponentiation, power function, raise to power]
 ---
 
 ## facts
@@ -61,10 +63,11 @@ Real exponentiation via BASIC ROM (x^y):
 - Exponentiation by squaring MUST handle the case where exponent = 0 (result = 1) and exponent = 1 (result = base).
 
 ## links
+
 - math: [multiply.md](multiply.md)
 - math: [float.md](float.md)
 - math: [logarithm.md](logarithm.md)
 
 ## sources
+
 - codebase64.net: [Exponentiation](https://codebase64.net/doku.php?id=base:exponentiation) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

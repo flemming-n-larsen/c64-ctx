@@ -2,6 +2,8 @@
 type: reference
 domain: toolchains
 granularity: workflow
+summary: "Build a prg with KickAssembler on the JVM and run it in VICE."
+keywords: [KickAssembler workflow, java jar, build and run]
 ---
 
 ## facts
@@ -66,12 +68,13 @@ start:
 ```
 
 ## links
+
 - KickAssembler reference: [../asm/kickassembler.md](../asm/kickassembler.md)
 - common patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - VICE: [vice.md](vice.md)
 - toolchain index: [INDEX.md](INDEX.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
 - upstream: KickAssembler reference manual (Mads Nielsen), distributed with the KickAssembler release archive.

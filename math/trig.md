@@ -2,6 +2,8 @@
 type: reference
 domain: math
 granularity: atomic
+summary: "Sine and cosine tables, 8-bit atan2, CORDIC, and distance approximation."
+keywords: [sine table, cosine, atan2, CORDIC, distance approximation]
 ---
 
 ## facts
@@ -83,15 +85,16 @@ dx_larger:
 - See [../effects/plasma.md](../effects/plasma.md) for a sine-sum color cycling usage example; see [../sid/frequency-table.md](../sid/frequency-table.md) for SID note frequency derivation (also uses sin).
 
 ## links
+
 - math: [sqrt.md](sqrt.md)
 - math: [fixed-point.md](fixed-point.md)
 - effects: [../effects/plasma.md](../effects/plasma.md)
 - algorithms: [../algorithms/3d-math.md](../algorithms/3d-math.md)
 
 ## sources
+
 - codebase64.net: [Generating sines with BASIC](https://codebase64.net/doku.php?id=base:generating_sines_with_basic) — CC BY-NC-SA 4.0
 - codebase64.net: [Generating approximate sines in assembly](https://codebase64.net/doku.php?id=base:generating_approximate_sines_in_assembly) — CC BY-NC-SA 4.0
 - codebase64.net: [8-bit atan2 8-bit angle](https://codebase64.net/doku.php?id=base:8bit_atan2_8-bit_angle) — CC BY-NC-SA 4.0
 - codebase64.net: [8-bit atan2 using CORDIC](https://codebase64.net/doku.php?id=base:8bit_atan2_using_the_cordic_algorithm) — CC BY-NC-SA 4.0
 - codebase64.net: [Approximation to distance](https://codebase64.net/doku.php?id=base:approximation_to_distance) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

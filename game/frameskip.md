@@ -2,6 +2,8 @@
 type: reference
 domain: game
 granularity: atomic
+summary: "Split IRQ work from frame logic so the game degrades gracefully under load."
+keywords: [frameskip, frame update, IRQ split, variable frame rate]
 ---
 
 ## facts
@@ -58,6 +60,7 @@ skip:
 - `exec_count` MUST be in zero page for the compare to stay within the timing budget.
 
 ## links
+
 - irq: [../irq/INDEX.md](../irq/INDEX.md)
 - irq: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - tasks: [../tasks/game-loop.md](../tasks/game-loop.md)
@@ -65,5 +68,5 @@ skip:
 - sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
 
 ## sources
+
 - [https://codebase64.net/doku.php?id=base:rant9](https://codebase64.net/doku.php?id=base:rant9) — Lasse Öörni/Cadaver, "Rant 9: Frameskipping, Interpolation and Re-entrant IRQ Code" — CC BY-NC-SA 4.0
-- [../sources/INDEX.md](../sources/INDEX.md)

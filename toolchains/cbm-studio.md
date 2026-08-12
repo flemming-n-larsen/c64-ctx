@@ -2,6 +2,8 @@
 type: reference
 domain: toolchains
 granularity: ide
+summary: "CBM prg Studio project shape and workflow assumptions."
+keywords: [CBM prg Studio, Windows IDE, project setup]
 ---
 
 ## facts
@@ -43,6 +45,7 @@ granularity: ide
 - Exact CBM prg Studio behavior is outside the local source corpus and MUST be cited from CBM prg Studio's own documentation when contested.
 
 ## links
+
 - assembler reference: [../asm/INDEX.md](../asm/INDEX.md)
 - common patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - VICE: [vice.md](vice.md)
@@ -50,6 +53,6 @@ granularity: ide
 - toolchain index: [INDEX.md](INDEX.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
 - upstream: CBM prg Studio documentation (Arthur Jordison), distributed with the CBM prg Studio installer.

@@ -2,6 +2,8 @@
 type: reference
 domain: tools
 granularity: music-editors
+summary: "SID trackers and composition tools, cross-platform and native."
+keywords: [music editors, GoatTracker, CheeseCutter, trackers, SID composer]
 ---
 
 ## facts
@@ -36,12 +38,13 @@ granularity: music-editors
 - GoatTracker exports use a specific player routine; its size and relocation constraints apply.
 
 ## links
+
 - music integration: [../music/INDEX.md](../music/INDEX.md)
 - SID registers and waveforms: [../sid/INDEX.md](../sid/INDEX.md)
 - IRQ players: [../irq/INDEX.md](../irq/INDEX.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - GoatTracker: [Covert Bitops tools page](https://cadaver.github.io/tools.html)
 - GoatTracker (Mac): http://www.sidmusic.org/goattracker/mac/
 - CheeseCutter: [official GitHub repository](https://github.com/theyamo/CheeseCutter)

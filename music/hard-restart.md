@@ -2,6 +2,8 @@
 type: reference
 domain: music
 granularity: recipe
+summary: "Clean ADSR retrigger for fast notes by scheduling a two-frame hard restart."
+keywords: [hard restart, ADSR retrigger, envelope reset, LFSR prescaler]
 ---
 
 ## facts
@@ -43,6 +45,7 @@ For 1-frame implementations: omit frame N+1 and accept a slightly elevated risk 
 - Voice 3: `$D413`/`$D414` for ATDCY/SUREL; apply same pattern with offset +14.
 
 ## links
+
 - music index: [INDEX.md](INDEX.md)
 - SID index: [../sid/INDEX.md](../sid/INDEX.md)
 - SID registers: [../sid/registers.md](../sid/registers.md)
@@ -50,5 +53,5 @@ For 1-frame implementations: omit frame N+1 and accept a slightly elevated risk 
 - frequency table: [../sid/frequency-table.md](../sid/frequency-table.md)
 
 ## sources
+
 - codebase64.net: [Classic Hard-Restart and About ADSR in Generally](https://codebase64.net/doku.php?id=base:classic_hard-restart_and_about_adsr_in_generally) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

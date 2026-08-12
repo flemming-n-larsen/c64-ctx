@@ -2,6 +2,8 @@
 type: reference
 domain: tools
 granularity: graphics-editors
+summary: "Editors for charsets, tiles, sprites and bitmap graphics."
+keywords: [graphics editors, CharPad, SpritePad, Pixcen, pixel editor]
 ---
 
 ## facts
@@ -26,13 +28,14 @@ granularity: graphics-editors
 - CharPad tile maps encode attributes separately from char data; loading order matters for display.
 
 ## links
+
 - display modes: [../display-modes/INDEX.md](../display-modes/INDEX.md)
 - sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
 - graphics modes reference: [../graphics/INDEX.md](../graphics/INDEX.md)
 - VIC-II overview: [../vic/INDEX.md](../vic/INDEX.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - CharPad: https://subchristsoftware.itch.io/charpad-c64-free
 - SpritePad Pro: https://subchristsoftware.itch.io/spritepad-c64-pro
 - Pixcen: http://hammarberg.github.io/pixcen/

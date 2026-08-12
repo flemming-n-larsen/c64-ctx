@@ -3,6 +3,8 @@ type: reference
 domain: optimization
 source: codebase64.net
 granularity: atomic
+summary: "Reduce rastertime: opcode cycle costs, KERNAL avoidance, call overhead."
+keywords: [speed optimization, rastertime, cycle counting, KERNAL avoidance]
 ---
 
 ## facts
@@ -88,6 +90,7 @@ loop
 - Absolute indexed `STA` always takes 5 cycles regardless of page crossing.
 
 ## links
+
 - loop-unrolling detail: [loop-unrolling.md](loop-unrolling.md)
 - runtime code generation: [speedcode.md](speedcode.md)
 - advanced tricks: [advanced.md](advanced.md)
@@ -95,5 +98,5 @@ loop
 - ROM/RAM banking: [../tasks/bank-switch-rom-ram.md](../tasks/bank-switch-rom-ram.md)
 
 ## sources
+
 - https://codebase64.net/doku.php?id=base:speeding_up_and_optimising_demo_routines — CC BY-NC-SA 4.0
-- [../sources/INDEX.md](../sources/INDEX.md)

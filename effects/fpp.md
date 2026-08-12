@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Per-line horizontal warp of a graphic by driving the memory pointers from a sine table."
+keywords: [FPP, stretcher, flexible pixel position, horizontal warp]
 ---
 
 ## facts
@@ -39,6 +41,7 @@ granularity: atomic
 - See FLI bad-line cycle impact: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md).
 
 ## links
+
 - effects: [swing.md](swing.md)
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [fld.md](fld.md)
@@ -48,6 +51,6 @@ granularity: atomic
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 
 ## sources
+
 - codebase64.net: [FLI-FPP Scroller](https://codebase64.net/doku.php?id=base:fli-fpp-scroller) — CC BY-NC-SA 4.0
 - codebase64.net: [Demo Programming — FPP (Stretcher)](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

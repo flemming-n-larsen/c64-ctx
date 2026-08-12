@@ -2,6 +2,8 @@
 type: reference
 domain: asm
 granularity: assembler
+summary: "KickAssembler directives, macros and its scripting language."
+keywords: [KickAssembler, KickAss, scripting, macros, pseudo commands]
 ---
 
 ## facts
@@ -73,12 +75,13 @@ end_of_basic: .word 0
 ```
 
 ## links
+
 - common patterns: [common-patterns.md](common-patterns.md)
 - rosetta: [rosetta.md](rosetta.md)
 - CPU mnemonics: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
 - toolchain workflow: [../toolchains/kickassembler-workflow.md](../toolchains/kickassembler-workflow.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
 - upstream: KickAssembler reference manual (Mads Nielsen), distributed with the KickAssembler release archive.

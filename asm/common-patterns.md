@@ -2,6 +2,8 @@
 type: reference
 domain: asm
 granularity: patterns
+summary: "Assembler-agnostic patterns: prg load address, BASIC SYS stub, KERNAL calls."
+keywords: [common patterns, SYS stub, prg header, boilerplate]
 ---
 
 ## facts
@@ -118,18 +120,16 @@ KERNAL `CHROUT` call (assembler-neutral mnemonics):
 ```
 
 ## links
+
 - ACME: [acme.md](acme.md)
 - KickAssembler: [kickassembler.md](kickassembler.md)
 - CA65: [ca65.md](ca65.md)
 - 64tass: [64tass.md](64tass.md)
 - rosetta: [rosetta.md](rosetta.md)
-- program entrypoints: [../tasks/program-entrypoints.md](../tasks/program-entrypoints.md)
 - BASIC machine-code bridge: [../basic/machine-code-bridge.md](../basic/machine-code-bridge.md)
-- memory map: [../memory/map.md](../memory/map.md)
-- KERNAL: [../kernal/INDEX.md](../kernal/INDEX.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - program entrypoints: [../tasks/program-entrypoints.md](../tasks/program-entrypoints.md)
 - memory map: [../memory/map.md](../memory/map.md)
 - zero-page: [../memory/zero-page.md](../memory/zero-page.md)

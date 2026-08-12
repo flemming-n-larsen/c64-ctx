@@ -2,6 +2,8 @@
 type: reference
 domain: irq
 granularity: recipe
+summary: "Install a VIC-II raster IRQ: vectors, enable bits, acknowledge, KERNAL coexistence."
+keywords: [raster interrupt, raster IRQ, acknowledge, KERNAL coexistence]
 ---
 
 ## sequence
@@ -29,14 +31,11 @@ granularity: recipe
 - If KERNAL ROM is banked out, code MUST NOT assume the usual ROM IRQ handler remains callable.
 
 ## links
-- interrupt overview: [overview.md](overview.md)
-- KERNAL time/IRQ: [../kernal/time-irq.md](../kernal/time-irq.md)
-- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- memory symbols: [../memory/symbols.md](../memory/symbols.md)
+
 - stable raster timing: [../effects/stable-raster.md](../effects/stable-raster.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - interrupt overview: [overview.md](overview.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - vectors and symbols: [../memory/symbols.md](../memory/symbols.md)

@@ -2,6 +2,8 @@
 type: reference
 domain: basic
 granularity: examples
+summary: "Complete short runnable BASIC V2 listings, as typed."
+keywords: [BASIC examples, runnable listings, sample programs]
 ---
 
 ## facts
@@ -81,16 +83,13 @@ Notes: `49152` = `$C000`, a 4 KiB RAM block outside BASIC's working area, safe a
 - Programs MUST be entered as BASIC V2 only; no extended (BASIC 3.5/7.0) commands are used or assumed.
 
 ## links
-- [program-structure.md](program-structure.md)
+
 - [io.md](io.md)
 - [graphics-sound.md](graphics-sound.md)
-- [machine-code-bridge.md](machine-code-bridge.md)
 - [keywords.md](keywords.md)
 - [functions.md](functions.md)
 - [variables.md](variables.md)
 - [errors.md](errors.md)
-- [../io/vic-ii.md](../io/vic-ii.md)
-- [../sid/registers.md](../sid/registers.md)
 - [../colors/palette.md](../colors/palette.md)
 - [../charset/petscii.md](../charset/petscii.md)
 - [../charset/screen-codes.md](../charset/screen-codes.md)
@@ -99,7 +98,7 @@ Notes: `49152` = `$C000`, a 4 KiB RAM block outside BASIC's working area, safe a
 - [../memory/map.md](../memory/map.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - BASIC index: [INDEX.md](INDEX.md)
 - program structure: [program-structure.md](program-structure.md)
 - machine-code bridge: [machine-code-bridge.md](machine-code-bridge.md)

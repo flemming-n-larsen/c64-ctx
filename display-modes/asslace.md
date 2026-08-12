@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Alternating sprite sieve interlace: a sprite grid toggled between frames to mix colors."
+keywords: [ASSLACE, sprite sieve, alternating frames, interlace]
 ---
 
 ## facts
@@ -32,6 +34,7 @@ granularity: atomic
 - This technique is primarily artistic / used for specific visual effects; not a general-purpose high-color mode.
 
 ## links
+
 - effects: [ifli.md](ifli.md)
 - effects: [mucsu.md](mucsu.md)
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
@@ -39,5 +42,5 @@ granularity: atomic
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

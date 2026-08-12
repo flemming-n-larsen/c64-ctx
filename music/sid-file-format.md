@@ -3,6 +3,8 @@ type: reference
 domain: music
 granularity: atomic
 source: hvsc
+summary: "The PSID and RSID container format: header fields, byte order, payload loading."
+keywords: [SID file, PSID, RSID, HVSC, container header]
 ---
 
 ## facts
@@ -41,14 +43,13 @@ source: hvsc
 - The complete version-specific bit encoding MUST be taken from the HVSC specification when implementing a writer or validator.
 
 ## links
+
 - tracker/player layout notes: [player-file-formats.md](player-file-formats.md)
-- tune integration: [tune-integration.md](tune-integration.md)
-- PAL/NTSC playback: [pal-ntsc-playback.md](pal-ntsc-playback.md)
 - SID model detection: [../sid/model-detect.md](../sid/model-detect.md)
 - music index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - tune integration: [tune-integration.md](tune-integration.md)
 - PAL/NTSC playback: [pal-ntsc-playback.md](pal-ntsc-playback.md)
 - authoritative format specification: [HVSC `SID_file_format.txt`](https://www.hvsc.c64.org/download/C64Music/DOCUMENTS/SID_file_format.txt)
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

@@ -2,6 +2,8 @@
 type: reference
 domain: game
 granularity: recipe
+summary: "Tile map data layout using 8-bit block indices, and how to draw it."
+keywords: [tile maps, tiles, block indices, level data, map drawing]
 ---
 
 ## facts
@@ -34,6 +36,7 @@ granularity: recipe
 - Objects SHOULD use world-coords v2 encoding when background collision speed is critical; screen-coord objects exhibit erratic boundary behavior and require hardcoded off-screen responses.
 
 ## links
+
 - game: [scrolling.md](scrolling.md)
 - memory: [../memory/map.md](../memory/map.md)
 - vic: [../vic/INDEX.md](../vic/INDEX.md)
@@ -41,5 +44,5 @@ granularity: recipe
 - concepts: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
 
 ## sources
+
 - [https://codebase64.net/doku.php?id=base:rant4](https://codebase64.net/doku.php?id=base:rant4) — Cadaver/Covert Bitops, "Rant 4: Multidirectional Scrolling and Game World" — CC BY-NC-SA 4.0
-- [../sources/INDEX.md](../sources/INDEX.md)

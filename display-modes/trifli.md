@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Tri-Interlaced FLI: three rotating frames for roughly 200-300 perceived colors."
+keywords: [TRIFLI, tri interlace, three frame rotation]
 ---
 
 ## facts
@@ -43,11 +45,12 @@ granularity: atomic
 - All FLI per-line constraints apply; see [fli.md](fli.md).
 
 ## links
+
 - effects: [fli.md](fli.md)
 - effects: [ifli.md](ifli.md)
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - graphics: [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

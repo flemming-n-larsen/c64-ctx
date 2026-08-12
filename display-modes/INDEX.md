@@ -28,30 +28,10 @@ source: c64ref
 | Megatext — oversized bitmap text | [megatext.md](megatext.md) | Large glyphs rendered into bitmap; no special VIC trick |
 | Software screen modes (16×16 char matrix) | [software-screen-modes.md](software-screen-modes.md) | Custom pixel grid via charset design; no VIC register trick; includes scroll variant |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [ecm.md](ecm.md) | used | Standalone ECM route bridging official VIC mode facts and modern usage context. |
-| [fli.md](fli.md) | used | FLI per-line `$D018` technique |
-| [ifli.md](ifli.md) | used | Interlaced FLI |
-| [ufli.md](ufli.md) | used | Sprite underlay FLI |
-| [nufli.md](nufli.md) | used | New underlayed FLI (flicker-free) |
-| [mufli.md](mufli.md) | used | Multicolor sprite underlay FLI |
-| [mucsufli.md](mucsufli.md) | used | Multicolor sprite underlay + FLI variants |
-| [eci.md](eci.md) | used | Extended colors with interlace |
-| [mucsu.md](mucsu.md) | used | Multicolor sprite underlay / MCI |
-| [hcb.md](hcb.md) | used | Half char bitmap |
-| [prs.md](prs.md) | used | Permanent raster split |
-| [xfli.md](xfli.md) | used | Extended FLI |
-| [shfli.md](shfli.md) | used | Super hires FLI family |
-| [sh.md](sh.md) | used | Super/advanced/interlaced hires |
-| [afli.md](afli.md) | used | Advanced FLI |
-| [mrfli.md](mrfli.md) | used | Multi-resolution FLI |
-| [trifli.md](trifli.md) | used | Tri-interlaced FLI |
-| [asslace.md](asslace.md) | used | Alternating sprite sieve interlace |
-| [megatext.md](megatext.md) | used | Oversized bitmap text |
-| [software-screen-modes.md](software-screen-modes.md) | used | 16×16 char matrix software screen mode |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Upstream fallback route |
+## pages
+<!-- GENERATED:routes -->
+_Every page in this domain is reached from `## routes` above._
+<!-- /GENERATED:routes -->
 
 ## related
 | domain | read | why |

@@ -2,6 +2,8 @@
 type: reference
 domain: vic
 granularity: atomic
+summary: "NTSC and PAL VIC-II revisions: raster lines, cycles, frame rate, palette differences."
+keywords: [chip variants, NTSC vs PAL, 6567, 6569, 8565, revision]
 ---
 
 ## facts
@@ -31,13 +33,12 @@ granularity: atomic
 - Chip detection at runtime is possible by reading `$D012` at a known stable point and comparing raster-line counts — see [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md) for cycle geometry.
 
 ## links
-- VIC-II register table: [../io/vic-ii.md](../io/vic-ii.md)
-- VIC hub: [INDEX.md](INDEX.md)
+
 - raster geometry and bad lines: [timing.md](timing.md)
 - raster interrupt setup: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - music player PAL/NTSC concerns: [../music/INDEX.md](../music/INDEX.md)
 
 ## sources
+
 - local VIC hub: [INDEX.md](INDEX.md)
 - VIC-II register reference: [../io/vic-ii.md](../io/vic-ii.md)
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

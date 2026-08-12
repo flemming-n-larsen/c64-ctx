@@ -2,6 +2,8 @@
 type: reference
 domain: music
 granularity: atomic
+summary: "Wire a compiled tune into your program: init and play entry points, banking, payload."
+keywords: [tune integration, init routine, embedded tune, player entry points]
 ---
 
 ## facts
@@ -40,6 +42,7 @@ STA $01
 - The actual init/play addresses depend on the tune/player; `$A000/$A003` is only the example layout from Codebase64.
 
 ## links
+
 - IRQ music player: [irq-music-player.md](irq-music-player.md)
 - memory banking for music: [music-memory-banking.md](music-memory-banking.md)
 - PAL/NTSC playback: [pal-ntsc-playback.md](pal-ntsc-playback.md)
@@ -48,5 +51,5 @@ STA $01
 - music index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - codebase64.net: [Playing music `$A000-$FFFF`](https://codebase64.net/doku.php?id=base:playing_music_a000-_ffff) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

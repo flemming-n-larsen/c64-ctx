@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: recipe
+summary: "Play 4-bit PCM by hammering the master volume register; a 6581 side effect."
+keywords: [digi samples, PCM playback, sample player, volume trick, 8-bit PWM]
 ---
 
 ## facts
@@ -55,12 +57,13 @@ Alternative using voice 3 pulse width for higher resolution:
 - Packing: two 4-bit samples per byte (hi nybble first) is standard; loop pointer advancement must match.
 
 ## links
+
 - SID registers: [registers.md](registers.md)
 - noise reduction: [noise-reduction.md](noise-reduction.md)
 - SID model detection: [model-detect.md](model-detect.md)
 - SID index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - c64-wiki.com: [SID — Sample Playback](https://www.c64-wiki.com/wiki/SID) — CC BY-SA 3.0
 - codebase64.net: [SID Programming — Samples aka Digis](https://codebase64.net/doku.php?id=base:sid_programming#samples_aka_digis) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

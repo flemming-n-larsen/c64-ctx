@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Give each character column its own color by writing color RAM once per raster line."
+keywords: [DYCP, dynamic color per char, color scroller, per-column color]
 ---
 
 ## facts
@@ -40,6 +42,7 @@ granularity: atomic
 - Combining with [scrolltext.md](scrolltext.md) sine scroll requires careful cycle-budget planning.
 
 ## links
+
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [scrolltext.md](scrolltext.md)
 - effects: [rasterbars.md](rasterbars.md)
@@ -49,5 +52,5 @@ granularity: atomic
 - colors: [../colors/INDEX.md](../colors/INDEX.md)
 
 ## sources
+
 - codebase64.net: [Demo Programming — DYCP](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

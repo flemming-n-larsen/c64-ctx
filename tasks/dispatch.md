@@ -3,6 +3,8 @@ type: reference
 domain: tasks
 source: codebase64.net
 granularity: recipe
+summary: "Route a byte value to one of N handlers: jump table, stack dispatch, self-mod."
+keywords: [dispatch, jump table, stack dispatch, handler table, indirect jump]
 ---
 
 ## facts
@@ -83,10 +85,11 @@ dispatch
 - General table: value must be pre-scaled (×2) to index the word table; the self-mod approach handles this when value ≤ 127.
 
 ## links
+
 - bitstream decoding (common dispatch consumer): [bitstream.md](bitstream.md)
 - advanced optimization: [../optimization/advanced.md](../optimization/advanced.md)
 - illegal opcodes (ASR, LAX useful in dispatch prep): [../cpu/6502/illegal-opcodes.md](../cpu/6502/illegal-opcodes.md)
 
 ## sources
+
 - https://codebase64.net/doku.php?id=base:dispatch_on_a_byte — CC BY-NC-SA 4.0
-- [../sources/INDEX.md](../sources/INDEX.md)

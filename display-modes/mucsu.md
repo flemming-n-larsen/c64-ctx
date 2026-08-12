@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Multicolor sprite underlay behind any standard mode, plus the MCI interlace variant."
+keywords: [MUCSU, MCI, multicolor interlace, sprite underlay]
 ---
 
 ## facts
@@ -41,6 +43,7 @@ granularity: atomic
 - Per-sprite color `$D027+n` is the `11`-pixel color; `$D025`/`$D026` are shared across all MCM sprites.
 
 ## links
+
 - effects: [fli.md](fli.md)
 - effects: [mufli.md](mufli.md)
 - effects: [ifli.md](ifli.md)
@@ -49,5 +52,5 @@ granularity: atomic
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

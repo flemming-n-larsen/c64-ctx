@@ -2,6 +2,8 @@
 type: reference
 domain: music
 granularity: atomic
+summary: "Call a tune's init once and its play once per frame from a stable IRQ."
+keywords: [music player, IRQ playback, play routine, frame rate call]
 ---
 
 ## facts
@@ -50,6 +52,7 @@ granularity: atomic
 - This pattern calls the player at raster line 0; players that expect 50/60 Hz calls work correctly on PAL/NTSC respectively.
 
 ## links
+
 - music index: [INDEX.md](INDEX.md)
 - SID index: [../sid/INDEX.md](../sid/INDEX.md)
 - tune integration: [tune-integration.md](tune-integration.md)
@@ -64,5 +67,5 @@ granularity: atomic
 - memory symbols: [../memory/symbols.md](../memory/symbols.md)
 
 ## sources
+
 - codebase64.net: [Simple IRQ Music Player](https://codebase64.net/doku.php?id=sid:simple_irq_music_player) — Richard Bayliss — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

@@ -2,6 +2,8 @@
 type: reference
 domain: algorithms
 granularity: atomic
+summary: "Bubble, shell and quicksort for 8- and 16-bit arrays in RAM."
+keywords: [sorting, bubble sort, shell sort, quicksort, sprite Y sort]
 ---
 
 ## facts
@@ -60,10 +62,12 @@ gaps: .byte 121, 40, 13, 4, 1
 - For sprite Y sorting specifically, insertion sort is preferred for counts ≤ 8 — see [../effects/sprite-multiplexer.md](../effects/sprite-multiplexer.md).
 
 ## links
+
 - effects: [../effects/sprite-multiplexer.md](../effects/sprite-multiplexer.md)
 - algorithms: [rng.md](rng.md)
 
 ## sources
+
 - codebase64.net: [Bubble sort 8-bit elements](https://codebase64.net/doku.php?id=base:bubble_sort_8-bit_elements) — CC BY-NC-SA 4.0
 - codebase64.net: [Bubble sort 16-bit elements](https://codebase64.net/doku.php?id=base:bubble_sort_16-bit_elements) — CC BY-NC-SA 4.0
 - codebase64.net: [Combination sort 8-bit elements](https://codebase64.net/doku.php?id=base:combination_sort_8-bit_elements) — CC BY-NC-SA 4.0
@@ -71,4 +75,3 @@ gaps: .byte 121, 40, 13, 4, 1
 - codebase64.net: [Optimal sort 16-bit elements](https://codebase64.net/doku.php?id=base:optimal_sort_16-bit_elements) — CC BY-NC-SA 4.0
 - codebase64.net: [Shell sort 16-bit elements](https://codebase64.net/doku.php?id=base:shell_sort_16-bit_elements) — CC BY-NC-SA 4.0
 - codebase64.net: [Quicksort 16-bit elements](https://codebase64.net/doku.php?id=base:quicksort_16-bit_elements) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

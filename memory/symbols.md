@@ -2,6 +2,8 @@
 type: reference
 domain: memory
 granularity: lookup
+summary: "Named addresses and their aliases: processor port, BASIC and KERNAL workspace, vectors."
+keywords: [symbols, aliases, labels, workspace, vector table]
 ---
 
 ## lookup — processor port and BASIC workspace
@@ -87,13 +89,13 @@ granularity: lookup
 - Custom IRQ handlers SHOULD write `CINV` (`$0314`) atomically with interrupts disabled (`SEI`/`CLI`).
 
 ## links
-- zero page: [zero-page.md](zero-page.md)
+
 - map: [map.md](map.md)
 - KERNAL file I/O: [../kernal/file-io.md](../kernal/file-io.md)
 - BASIC vectors: [../basic/vectors.md](../basic/vectors.md)
 - IRQ task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - memory index: [INDEX.md](INDEX.md)
 - zero page: [zero-page.md](zero-page.md)

@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Multicolor sprite underlay beneath an FLI bitmap, with the simpler MUCSUH base."
+keywords: [MUCSUFLI, MUCSUH, sprite underlay FLI, shared sprite colors]
 ---
 
 ## facts
@@ -40,6 +42,7 @@ Steps 1–4 as MUCSUH, then:
 - All constraints from [mufli.md](mufli.md) and [fli.md](fli.md) apply to their respective components.
 
 ## links
+
 - effects: [fli.md](fli.md)
 - effects: [mufli.md](mufli.md)
 - effects: [nufli.md](nufli.md)
@@ -47,5 +50,5 @@ Steps 1–4 as MUCSUH, then:
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

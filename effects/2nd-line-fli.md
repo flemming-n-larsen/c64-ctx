@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Forcing a bad line every second raster line, freeing cycles for twisters and rotators."
+keywords: [2nd line FLI, twister, X-rotator, waving carpet, Bresenham segments]
 ---
 
 ## facts
@@ -51,6 +53,7 @@ The freed even-line cycles allow real-time calculation of which charset segment 
 - Bank size is 16 KB (`$0000`–`$3FFF`); charsets and screen pages must fit within one bank.
 
 ## links
+
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [swing.md](swing.md)
 - effects: [fpp.md](fpp.md)
@@ -60,6 +63,6 @@ The freed even-line cycles allow real-time calculation of which charset segment 
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 
 ## sources
+
 - codebase64.net: [Twisters, X-Rotators and Waving Carpets](https://codebase64.net/doku.php?id=base:twisters_x-rotators_and_waving_carpets) — CC BY-NC-SA 4.0
 - codebase64.net: [Demo Programming — 2nd Line FLI](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

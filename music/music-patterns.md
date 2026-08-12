@@ -2,6 +2,8 @@
 type: reference
 domain: music
 granularity: atomic
+summary: "Per-frame tune effects: arpeggio, vibrato and portamento over SID frequency writes."
+keywords: [arpeggio, vibrato, portamento, pitch glide, tune effects]
 ---
 
 ## facts
@@ -107,6 +109,7 @@ write:
 - Call these routines only from inside the raster IRQ (once per frame) to maintain consistent timing.
 
 ## links
+
 - SID registers: [../sid/registers.md](../sid/registers.md)
 - frequency table: [../sid/frequency-table.md](../sid/frequency-table.md)
 - IRQ music player: [irq-music-player.md](irq-music-player.md)
@@ -115,5 +118,5 @@ write:
 - SID index: [../sid/INDEX.md](../sid/INDEX.md)
 
 ## sources
+
 - codebase64.net: [SID Programming](https://codebase64.net/doku.php?id=base:sid_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

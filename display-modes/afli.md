@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Advanced FLI: smarter color cell assignment to reduce errors at FLI block boundaries."
+keywords: [AFLI, advanced FLI, IAFLI, AIFLI, color cell assignment]
 ---
 
 ## facts
@@ -33,11 +35,12 @@ Register sequence is identical to [fli.md](fli.md) `$D018` table and [ifli.md](i
 - IAFLI and AIFLI are functionally equivalent at the register level; differences may be in specific converter implementations.
 
 ## links
+
 - effects: [fli.md](fli.md)
 - effects: [ifli.md](ifli.md)
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - graphics: [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

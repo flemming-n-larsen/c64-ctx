@@ -2,6 +2,8 @@
 type: reference
 domain: tools
 granularity: emulators
+summary: "C64 emulators for PC and which build is cycle-exact."
+keywords: [emulators, VICE, x64sc, HOXS64, CCS64]
 ---
 
 ## facts
@@ -22,11 +24,12 @@ granularity: emulators
 - VICE workflow details (autostart, monitor commands, flags) are in [../toolchains/vice.md](../toolchains/vice.md).
 
 ## links
+
 - VICE workflow: [../toolchains/vice.md](../toolchains/vice.md)
 - toolchains index: [../toolchains/INDEX.md](../toolchains/INDEX.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - VICE: https://vice-emu.sourceforge.io/
 - HOXS64: http://www.hoxs64.net/
 - CCS64: http://www.ccs64.com/

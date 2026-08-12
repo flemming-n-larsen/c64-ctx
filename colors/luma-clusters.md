@@ -2,6 +2,8 @@
 type: reference
 domain: colors
 granularity: lookup
+summary: "Which VIC-II color pairs share a luma step and therefore mix without visible banding."
+keywords: [luma clusters, banding, dithering, ALM, DCM, color mixing]
 ---
 
 ## facts
@@ -45,11 +47,12 @@ The first revision offers larger clusters (up to 6 colors per step), yielding mo
 - Cluster membership varies by chip revision; SHOULD verify on the target revision or emulate with Pepto/Colodore palette settings.
 
 ## links
+
 - palette: [palette.md](palette.md)
 - color mixing techniques: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
+
 - Pepto colorvic model: https://www.pepto.de/projects/colorvic/
 - Kodiak64 luma-driven graphics: https://kodiak64.co.uk/blog/luma-driven-graphics-on-c64
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

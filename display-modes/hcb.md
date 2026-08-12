@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Half Char Bitmap: split each cell into independent top and bottom 8x4 halves."
+keywords: [HCB, half char bitmap, half cell, custom charset trick]
 ---
 
 ## facts
@@ -33,11 +35,12 @@ granularity: atomic
 - For true per-line color independence, FLI ([fli.md](fli.md)) is required.
 
 ## links
+
 - effects: [fli.md](fli.md)
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - tasks: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

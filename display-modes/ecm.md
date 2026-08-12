@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Extended Color Mode: four background registers, 64 usable glyphs, and its game uses."
+keywords: [ECM, extended color mode, extended background, 64 glyphs]
 ---
 
 ## facts
@@ -59,18 +61,13 @@ granularity: atomic
 - Treat modern-game examples as design inspiration only; exact hardware behavior should come from the cited local graphics and I/O pages.
 
 ## links
+
 - display-modes index: [INDEX.md](INDEX.md)
-- official mode table: [../graphics/screen-modes.md](../graphics/screen-modes.md)
-- VIC mode route: [../vic/screen-modes.md](../vic/screen-modes.md)
-- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- custom charset task: [../tasks/custom-charset.md](../tasks/custom-charset.md)
-- ECI: [eci.md](eci.md)
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)
 
 ## sources
+
 - official mode table: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 - VIC mode route: [../vic/screen-modes.md](../vic/screen-modes.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - custom charset task: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - ECI: [eci.md](eci.md)
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

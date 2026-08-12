@@ -2,6 +2,8 @@
 type: reference
 domain: charset
 granularity: atomic
+summary: "Glyph bytes for the alternate (lowercase) character ROM set, 8 bytes per screen code."
+keywords: [chargen ROM, lowercase set, glyph bytes, character bitmaps]
 ---
 
 ## facts
@@ -277,11 +279,12 @@ granularity: atomic
 - Reverse-video entries (`$80-$FF`) are the ROM bytes verbatim, not derived at runtime.
 
 ## links
+
 - primary set: [chargen-primary.md](chargen-primary.md)
 - screen codes: [screen-codes.md](screen-codes.md)
 - VIC-II character base: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - chargen ROM binary: mist64/c64ref src/charset/chargen (SHA 191ac46)
 - interchange map: mist64/c64ref src/charset/C64IALT.TXT (Rebecca Bettencourt, 2018-10-11)

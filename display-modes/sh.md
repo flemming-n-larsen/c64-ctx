@@ -2,6 +2,8 @@
 type: reference
 domain: display-modes
 granularity: atomic
+summary: "Super, Advanced and Interlaced HiRes: beat 320x200 without an FLI layer."
+keywords: [SH, AH, IH, super hires, advanced hires, interlaced hires]
 ---
 
 ## facts
@@ -38,6 +40,7 @@ granularity: atomic
 - For SH/AH with FLI, see [shfli.md](shfli.md).
 
 ## links
+
 - effects: [shfli.md](shfli.md)
 - effects: [ifli.md](ifli.md)
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
@@ -45,5 +48,5 @@ granularity: atomic
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

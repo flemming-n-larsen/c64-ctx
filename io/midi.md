@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: atomic
+summary: "MIDI on the C64 requires a cartridge; the ACIA register map and interface families."
+keywords: [MIDI, ACIA, Passport, Syntech, cartridge interface]
 ---
 
 ## facts
@@ -35,14 +37,9 @@ granularity: atomic
 - MIDI electrical signaling MUST go through a compliant interface; do not connect a MIDI current-loop signal directly to C64 TTL pins.
 - Expansion-register access depends on I/O visibility and may conflict with other cartridges using `$DE00-$DEFF`.
 
-## links
-- I/O programming hub: [io-programming.md](io-programming.md)
-- I/O banking: [../memory/io-area.md](../memory/io-area.md)
-- Provenance: [../sources/INDEX.md](../sources/INDEX.md)
-
 ## sources
+
 - I/O programming hub: [io-programming.md](io-programming.md)
 - I/O banking: [../memory/io-area.md](../memory/io-area.md)
 - original hardware manual: [Passport MIDI Interface User's Manual](https://mirrors.apple2.org.za/ftp.apple.asimov.net/documentation/hardware/misc/passport_midi.pdf)
 - emulator implementation modes: [VICE manual](https://vice-emu.sourceforge.io/manual/vice.pdf)
-- Provenance: [../sources/INDEX.md](../sources/INDEX.md)

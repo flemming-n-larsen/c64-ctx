@@ -2,6 +2,8 @@
 type: reference
 domain: asm
 granularity: assembler
+summary: "64tass directives, output options and label scoping."
+keywords: [64tass, directives, output options, label scoping]
 ---
 
 ## facts
@@ -81,12 +83,13 @@ eob: .word 0
 Build with: `64tass --cbm-prg -o hello.prg hello.asm`.
 
 ## links
+
 - common patterns: [common-patterns.md](common-patterns.md)
 - rosetta: [rosetta.md](rosetta.md)
 - CPU mnemonics: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
 - toolchain workflow: [../toolchains/64tass-workflow.md](../toolchains/64tass-workflow.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
 - upstream: 64tass manual (Soci/Singular), distributed with the 64tass release archive.

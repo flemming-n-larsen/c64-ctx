@@ -2,6 +2,8 @@
 type: reference
 domain: memory
 granularity: overview
+summary: "Whole-machine address map; start here when an address is unknown."
+keywords: [memory map, address ranges, ROM RAM overlay, unknown address]
 ---
 
 ## lookup
@@ -40,13 +42,14 @@ granularity: overview
 - CPU hardware vectors at `$FFFA-$FFFF` are only visible when KERNAL ROM is banked in; with KERNAL ROM banked out, the underlying RAM values are used by the 6510 for NMI/RESET/IRQ.
 
 ## links
+
 - banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
 - processor port: [../io/processor-port.md](../io/processor-port.md)
 - ROM routes: [../rom/INDEX.md](../rom/INDEX.md)
 - VIC-II bank selection: [../io/cia2.md](../io/cia2.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - memory index: [INDEX.md](INDEX.md)
 - I/O context: [../io/INDEX.md](../io/INDEX.md)
 - symbols: [symbols.md](symbols.md)

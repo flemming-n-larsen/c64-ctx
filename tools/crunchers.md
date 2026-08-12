@@ -2,6 +2,8 @@
 type: reference
 domain: tools
 granularity: crunchers
+summary: "Compressors that pack a prg and decrunch it at load time, cross and native."
+keywords: [crunchers, Exomizer, Pucrunch, ByteBoozer, packer]
 ---
 
 ## facts
@@ -31,12 +33,13 @@ granularity: crunchers
 - Some crunchers alter load address or introduce a self-decompressing header; verify final load address before linking.
 
 ## links
+
 - memory map: [../memory/INDEX.md](../memory/INDEX.md)
 - optimization context: [../optimization/INDEX.md](../optimization/INDEX.md)
 - transfer to hardware: [transfer.md](transfer.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - Exomizer: https://bitbucket.org/magli143/exomizer/wiki/Home
 - Pucrunch: [Pasi Ojala's current project page](https://a1bert.kapsi.fi/Dev/pucrunch/)
 - ByteBoozer (cross): https://csdb.dk/release/?id=33093

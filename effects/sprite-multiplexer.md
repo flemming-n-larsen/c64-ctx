@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Show more than 8 sprites by recycling the hardware sprites down the raster."
+keywords: [sprite multiplexer, more than 8 sprites, sprite recycling, Y sort]
 ---
 
 ## facts
@@ -45,6 +47,7 @@ granularity: atomic
 - Combine with [dysp.md](dysp.md) for moving sprites between frames.
 
 ## links
+
 - sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
 - sprite techniques: [../sprites/advanced.md](../sprites/advanced.md)
 - sprite setup: [../sprites/display.md](../sprites/display.md)
@@ -56,5 +59,5 @@ granularity: atomic
 - memory: [../memory/map.md](../memory/map.md)
 
 ## sources
+
 - codebase64.net: [Demo Programming — Sprite Multiplexer](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

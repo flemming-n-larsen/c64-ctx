@@ -2,6 +2,8 @@
 type: reference
 domain: rom
 granularity: route
+summary: "Where KERNAL ROM routines live, as a route to the upstream disassemblies."
+keywords: [KERNAL ROM, disassembly, ROM listing, implementation detail]
 ---
 
 ## lookup
@@ -18,11 +20,12 @@ granularity: route
 - Agents MUST account for banking before saying `$E000-$FFFF` reads return KERNAL ROM.
 
 ## links
+
 - KERNAL domain: [../kernal/INDEX.md](../kernal/INDEX.md)
 - KERNAL ROM memory: [../memory/kernal-rom.md](../memory/kernal-rom.md)
 - interrupts: [../irq/overview.md](../irq/overview.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - ROM index: [INDEX.md](INDEX.md)
 - KERNAL jump table: [../kernal/jump-table.md](../kernal/jump-table.md)

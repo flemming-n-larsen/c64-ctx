@@ -2,6 +2,8 @@
 type: reference
 domain: cpu/6502
 granularity: atomic
+summary: "The A, X, Y, S, P, PC registers and every status flag bit in P."
+keywords: [registers, status flags, carry, overflow, decimal mode]
 ---
 
 ## registers
@@ -32,10 +34,12 @@ granularity: atomic
 - Arithmetic explanations MUST distinguish `C` carry/borrow from `V` signed overflow.
 
 ## links
+
 - instruction set: [instruction-set.md](instruction-set.md)
 - addressing modes: [addressing-modes.md](addressing-modes.md)
 - interrupts: [../../irq/overview.md](../../irq/overview.md)
 
 ## sources
+
 - local route: [../../sources/INDEX.md](../../sources/INDEX.md)
 - CPU index: [INDEX.md](INDEX.md)

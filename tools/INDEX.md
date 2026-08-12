@@ -18,17 +18,10 @@ source: codebase64.net
 | Cross-assembler build workflows | [../toolchains/INDEX.md](../toolchains/INDEX.md) | Source → `.prg` → VICE per assembler. |
 | Run/debug on VICE emulator | [../toolchains/vice.md](../toolchains/vice.md) | Autostart, monitor, command-line flags. |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [crunchers.md](crunchers.md) | used | Cites codebase64.net tools page (CC BY-NC-SA 4.0). |
-| [graphics-editors.md](graphics-editors.md) | used | Cites codebase64.net tools page (CC BY-NC-SA 4.0). |
-| [music-editors.md](music-editors.md) | used | Cites codebase64.net tools page (CC BY-NC-SA 4.0). |
-| [disassemblers.md](disassemblers.md) | used | Cites codebase64.net tools page (CC BY-NC-SA 4.0). |
-| [transfer.md](transfer.md) | used | Cites codebase64.net tools page (CC BY-NC-SA 4.0). |
-| [emulators.md](emulators.md) | used | Cites codebase64.net tools page; VICE detail in toolchains. |
-| [native-tools.md](native-tools.md) | used | Cites codebase64.net tools page (CC BY-NC-SA 4.0). |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Tool-specific upstream docs and CSDB release pages. |
+## pages
+<!-- GENERATED:routes -->
+_Every page in this domain is reached from `## routes` above._
+<!-- /GENERATED:routes -->
 
 ## related
 | domain | read | why |

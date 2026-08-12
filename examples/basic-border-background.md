@@ -2,6 +2,8 @@
 type: reference
 domain: examples
 granularity: example
+summary: "Complete BASIC program that changes the border and background colors."
+keywords: [BASIC example, border color, background color, POKE colors]
 ---
 
 ## facts
@@ -41,15 +43,13 @@ granularity: example
 - `GET` returns immediately with `A$=""` when no key is pending; line 40 polls until a key arrives.
 
 ## links
-- BASIC graphics/sound: [../basic/graphics-sound.md](../basic/graphics-sound.md)
+
 - BASIC examples reference: [../basic/examples.md](../basic/examples.md)
-- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- Colors palette: [../colors/palette.md](../colors/palette.md)
 - PETSCII control codes: [../charset/control-codes.md](../charset/control-codes.md)
 - example index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - BASIC graphics/sound: [../basic/graphics-sound.md](../basic/graphics-sound.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - Colors palette: [../colors/palette.md](../colors/palette.md)
-- local route: [../sources/INDEX.md](../sources/INDEX.md)

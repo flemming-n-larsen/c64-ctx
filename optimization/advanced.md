@@ -3,6 +3,8 @@ type: reference
 domain: optimization
 source: codebase64.net
 granularity: atomic
+summary: "Advanced cycle savers: branch cost, illegal opcodes, carry reuse, page alignment."
+keywords: [advanced optimization, cycle saving, page crossing, register conservation]
 ---
 
 ## facts
@@ -125,10 +127,11 @@ table
 - Stack pointer reuse requires careful bookkeeping; any interrupt must not corrupt the data region.
 
 ## links
+
 - illegal opcode stability reference: [../cpu/6502/illegal-opcodes.md](../cpu/6502/illegal-opcodes.md)
 - loop unrolling detail: [loop-unrolling.md](loop-unrolling.md)
 - general speed overview: [speed.md](speed.md)
 
 ## sources
+
 - https://codebase64.net/doku.php?id=base:advanced_optimizing — CC BY-NC-SA 4.0 (author: Bitbreaker/Performers^Nuance)
-- [../sources/INDEX.md](../sources/INDEX.md)

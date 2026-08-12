@@ -20,23 +20,10 @@ source: c64ref
 | BASIC vectors and workspace pointers | [vectors.md](vectors.md) | Interpreter hooks and zero-page pointers. |
 | BASIC ROM routines | [routines.md](routines.md) | Used with ROM disassembly route pages. |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [program-structure.md](program-structure.md) | used | Line-numbered program shape, immediate vs program mode. |
-| [examples.md](examples.md) | used | Tiny complete runnable BASIC V2 programs. |
-| [keywords.md](keywords.md) | used | All BASIC V2 statements, commands, operators, clauses. |
-| [functions.md](functions.md) | used | All built-in numeric and string functions. |
-| [variables.md](variables.md) | used | Types, suffixes, arrays, naming limits, pitfalls. |
-| [io.md](io.md) | used | BASIC-level screen, keyboard, and file I/O. |
-| [graphics-sound.md](graphics-sound.md) | used | Practical `POKE`/`PEEK` route map. |
-| [machine-code-bridge.md](machine-code-bridge.md) | used | `SYS`, `USR`, loader patterns. |
-| [errors.md](errors.md) | used | All 29 numbered errors. |
-| [tokens.md](tokens.md) | used | Full BASIC V2 token table. |
-| [vectors.md](vectors.md) | used | BASIC workspace labels, pointers, and aliases. |
-| [routines.md](routines.md) | used | BASIC ROM routine route coverage. |
-| [../rom/basic-disassembly.md](../rom/basic-disassembly.md) | used | BASIC ROM route companion. |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
+## pages
+<!-- GENERATED:routes -->
+_Every page in this domain is reached from `## routes` above._
+<!-- /GENERATED:routes -->
 
 ## related
 | domain | read | why |

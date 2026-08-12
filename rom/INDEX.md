@@ -12,14 +12,10 @@ source: c64ref
 | KERNAL API addresses | [../kernal/jump-table.md](../kernal/jump-table.md) | Use before implementation details. |
 | ROM/RAM banking | [../concepts/memory-banking.md](../concepts/memory-banking.md) | ROM visibility depends on processor-port bits. |
 
-## source-coverage
-| local coverage | status | notes |
-|---|---|---|
-| [basic-disassembly.md](basic-disassembly.md) | used | BASIC ROM route coverage. |
-| [kernal-disassembly.md](kernal-disassembly.md) | used | KERNAL ROM route coverage. |
-| [../basic/routines.md](../basic/routines.md) | used | BASIC routine routing companion. |
-| [../kernal/jump-table.md](../kernal/jump-table.md) | used | Public KERNAL API route companion. |
-| [../sources/INDEX.md](../sources/INDEX.md) | provenance | Central upstream fallback route. |
+## pages
+<!-- GENERATED:routes -->
+_Every page in this domain is reached from `## routes` above._
+<!-- /GENERATED:routes -->
 
 ## related
 | domain | read | why |

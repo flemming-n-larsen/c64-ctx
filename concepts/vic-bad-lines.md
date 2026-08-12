@@ -2,6 +2,8 @@
 type: reference
 domain: concepts
 granularity: atomic
+summary: "What makes a raster line bad, the cycles it steals, and how to work around it."
+keywords: [bad lines, badline, cycle theft, DMA steal, YSCROLL]
 ---
 
 ## facts
@@ -64,5 +66,4 @@ Without a stable raster, YSCROLL writes may land after VIC-II has already evalua
 
 ## sources
 
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
 - upstream: [mist64/c64ref src/c64io](https://github.com/mist64/c64ref/tree/master/src/c64io)

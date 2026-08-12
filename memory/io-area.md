@@ -2,6 +2,8 @@
 type: reference
 domain: memory
 granularity: address-range
+summary: "The I/O and character ROM window, and how CHAREN/HIRAM/LORAM decide what appears there."
+keywords: [I/O area, CHAREN, character ROM, banking window]
 ---
 
 ## lookup
@@ -20,11 +22,11 @@ granularity: address-range
 - Color RAM at `$D800-$DBFF` SHOULD be treated as nybble-wide storage, not normal 8-bit RAM.
 
 ## links
+
 - processor port: [../io/processor-port.md](../io/processor-port.md)
 - banking concept: [../concepts/memory-banking.md](../concepts/memory-banking.md)
-- I/O index: [../io/INDEX.md](../io/INDEX.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - memory index: [INDEX.md](INDEX.md)
 - I/O index: [../io/INDEX.md](../io/INDEX.md)

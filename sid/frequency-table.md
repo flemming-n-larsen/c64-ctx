@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: reference
+summary: "PAL A440 note-to-register values for 96 notes across eight octaves."
+keywords: [frequency table, PAL notes, note values, A440]
 ---
 
 ## facts
@@ -47,6 +49,7 @@ NTSC formula: `freq_reg = Hz × 16777216 ÷ 1022727`. Multiply PAL values by `�
 - Values have < 0.1 semitone pitch error vs ideal A440 across all octaves.
 
 ## links
+
 - SID registers: [registers.md](registers.md)
 - frequency calculation: [frequency-calculation.md](frequency-calculation.md)
 - NTSC frequency table: [ntsc-frequency-table.md](ntsc-frequency-table.md)
@@ -55,5 +58,5 @@ NTSC formula: `freq_reg = Hz × 16777216 ÷ 1022727`. Multiply PAL values by `�
 - SID index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - codebase64.net: [PAL Frequency Table](https://codebase64.net/doku.php?id=base:pal_frequency_table) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

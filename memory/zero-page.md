@@ -2,6 +2,8 @@
 type: reference
 domain: memory
 granularity: address-range
+summary: "Who owns which zero-page bytes and which are safe for user code."
+keywords: [zero page, free bytes, KERNAL workspace, BASIC workspace]
 ---
 
 ## facts
@@ -49,13 +51,12 @@ granularity: address-range
 - Code that disables the KERNAL IRQ scan or takes over `CINV` (`$0314`) MAY reuse keyboard/screen workspace at the cost of losing those services.
 
 ## links
-- symbols: [symbols.md](symbols.md)
+
 - map: [map.md](map.md)
-- concept: [../concepts/zero-page.md](../concepts/zero-page.md)
 - CPU registers: [../cpu/6502/registers-flags.md](../cpu/6502/registers-flags.md)
 - processor port: [../io/processor-port.md](../io/processor-port.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - memory symbols: [symbols.md](symbols.md)
 - concept: [../concepts/zero-page.md](../concepts/zero-page.md)

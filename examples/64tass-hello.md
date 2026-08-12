@@ -2,6 +2,8 @@
 type: reference
 domain: examples
 granularity: example
+summary: "Minimal buildable 64tass program that prints HELLO and returns to BASIC."
+keywords: [64tass example, hello world, minimal prg, buildable]
 ---
 
 ## facts
@@ -58,18 +60,15 @@ Type `RUN`; `HELLO` prints on the next line and control returns to BASIC's `READ
 - KERNAL ROM MUST be banked in (`$0001` bit 1 = `HIRAM` = 1, default after reset) for `JSR $FFD2` to call `CHROUT`.
 
 ## links
-- 64tass reference: [../asm/64tass.md](../asm/64tass.md)
-- common ASM patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
-- 64tass workflow: [../toolchains/64tass-workflow.md](../toolchains/64tass-workflow.md)
+
 - VICE: [../toolchains/vice.md](../toolchains/vice.md)
-- KERNAL screen: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
 - memory map: [../memory/map.md](../memory/map.md)
 - CPU instruction set: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
 - example index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - 64tass reference: [../asm/64tass.md](../asm/64tass.md)
 - common ASM patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - 64tass workflow: [../toolchains/64tass-workflow.md](../toolchains/64tass-workflow.md)
 - KERNAL CHROUT: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
-- local route: [../sources/INDEX.md](../sources/INDEX.md)

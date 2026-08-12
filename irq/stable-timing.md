@@ -3,6 +3,8 @@ type: reference
 domain: irq
 granularity: concept
 source: codebase64.net
+summary: "Remove IRQ entry jitter for cycle-exact raster effects using double-IRQ sync."
+keywords: [stable raster, jitter, double IRQ, cycle exact, raster sync]
 ---
 
 ## facts
@@ -27,14 +29,13 @@ source: codebase64.net
 - PAL and NTSC cycle tables MUST stay separate when documenting stable routines.
 
 ## links
+
 - interrupt hub: [INDEX.md](INDEX.md)
-- raster interrupt recipe: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
-- stable raster effect route: [../effects/stable-raster.md](../effects/stable-raster.md)
 - VIC timing: [../vic/timing.md](../vic/timing.md)
 - bad lines: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - raster setup: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - stable raster consumer route: [../effects/stable-raster.md](../effects/stable-raster.md)
-- provenance note: [../sources/INDEX.md](../sources/INDEX.md) — Codebase64 interrupt coverage includes `base:interrupts` and stable-raster material summarized here.
+- codebase64.net: [Interrupts](https://codebase64.net/doku.php?id=base%3Ainterrupts) — CC BY-NC-SA 4.0; includes the stable-raster material summarized here.

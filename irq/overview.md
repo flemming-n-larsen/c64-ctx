@@ -2,6 +2,8 @@
 type: reference
 domain: irq
 granularity: concept
+summary: "IRQ and NMI sources, the I flag, and the KERNAL and page-3 interrupt vectors."
+keywords: [interrupts, NMI, IRQ vectors, I flag, page 3 vectors]
 ---
 
 ## facts
@@ -30,15 +32,11 @@ granularity: concept
 - Code that replaces the standard IRQ path SHOULD state whether KERNAL timekeeping and stop-key handling are preserved.
 
 ## links
+
 - raster interrupt recipe: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
-- KERNAL IRQ timing: [../kernal/time-irq.md](../kernal/time-irq.md)
-- memory symbols: [../memory/symbols.md](../memory/symbols.md)
-- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- CIA1: [../io/cia1.md](../io/cia1.md)
-- CIA2: [../io/cia2.md](../io/cia2.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - CPU flags: [../cpu/6502/registers-flags.md](../cpu/6502/registers-flags.md)
 - vectors and symbols: [../memory/symbols.md](../memory/symbols.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)

@@ -2,6 +2,8 @@
 type: reference
 domain: graphics
 granularity: atomic
+summary: "Names and abbreviations for 31 software display techniques that exploit VIC-II timing."
+keywords: [unofficial modes, FLI family, technique names, mode abbreviations]
 ---
 
 ## facts
@@ -71,6 +73,7 @@ granularity: atomic
 - FLI bug region (leftmost ~3 character columns) SHOULD be treated as a design constraint, not an error to suppress.
 
 ## links
+
 - VIC hub: [../vic/INDEX.md](../vic/INDEX.md)
 - VIC screen modes: [../vic/screen-modes.md](../vic/screen-modes.md)
 - display-modes index: [../display-modes/INDEX.md](../display-modes/INDEX.md)
@@ -84,7 +87,7 @@ granularity: atomic
 - VIC bad lines: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 
 ## sources
+
 - c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - c64-wiki.com: [NUFLI](https://www.c64-wiki.com/wiki/NUFLI) — GFDL
 - codebase64.net: [FLI](https://codebase64.net/doku.php?id=base:fli) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

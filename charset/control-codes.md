@@ -2,6 +2,8 @@
 type: reference
 domain: charset
 granularity: lookup
+summary: "PETSCII control bytes that move the cursor, change color, or toggle reverse and editor state."
+keywords: [control codes, cursor control, color codes, reverse mode, editor state]
 ---
 
 ## facts
@@ -62,12 +64,12 @@ granularity: lookup
 - Code MUST NOT confuse function-key input bytes (`$85-$8C`) with color codes occupying the same numeric range used as output; direction context resolves the meaning.
 
 ## links
+
 - PETSCII: [petscii.md](petscii.md)
 - screen codes: [screen-codes.md](screen-codes.md)
-- colors: [../colors/palette.md](../colors/palette.md)
 - KERNAL screen I/O: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - charset index: [INDEX.md](INDEX.md)
 - palette: [../colors/palette.md](../colors/palette.md)

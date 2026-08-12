@@ -2,6 +2,8 @@
 type: reference
 domain: algorithms
 granularity: atomic
+summary: "3D rotation, perspective projection and backface culling in fixed point."
+keywords: [3D math, rotation matrix, perspective, backface culling, Q8.8]
 ---
 
 ## facts
@@ -79,6 +81,7 @@ Full dot product backface cull (view_vec = [vx, vy, vz]):
 - See [../effects/vectors.md](../effects/vectors.md) for the complete polygon fill and rendering pipeline on C64.
 
 ## links
+
 - math: [../math/multiply.md](../math/multiply.md)
 - math: [../math/trig.md](../math/trig.md)
 - math: [../math/fixed-point.md](../math/fixed-point.md)
@@ -86,8 +89,8 @@ Full dot product backface cull (view_vec = [vx, vy, vz]):
 - effects: [../effects/vectors.md](../effects/vectors.md)
 
 ## sources
+
 - codebase64.net: [3D rotation](https://codebase64.net/doku.php?id=base:3d_rotation) — CC BY-NC-SA 4.0
 - codebase64.net: [Perspective](https://codebase64.net/doku.php?id=base:perspective) — CC BY-NC-SA 4.0
 - codebase64.net: [Backface culling](https://codebase64.net/doku.php?id=base:backface_culling) — CC BY-NC-SA 4.0
 - codebase64.net: [Filling the vectors](https://codebase64.net/doku.php?id=base:filling_the_vectors) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

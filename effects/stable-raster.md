@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Redirect stub with effect-side notes; stable timing lives in the irq domain."
+keywords: [stable raster, redirect, effect timing]
 ---
 
 ## route
@@ -33,7 +35,7 @@ granularity: atomic
 - NTSC routines MUST use 65 cycles/line in cycle tables, not 63.
 
 ## links
-- stable timing: [../irq/stable-timing.md](../irq/stable-timing.md)
+
 - raster setup: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - effects: [open-borders.md](open-borders.md)
 - effects: [rasterbars.md](rasterbars.md)
@@ -42,5 +44,5 @@ granularity: atomic
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)
+
 - canonical route: [../irq/stable-timing.md](../irq/stable-timing.md)

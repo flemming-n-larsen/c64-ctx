@@ -2,6 +2,8 @@
 type: reference
 domain: game
 granularity: atomic
+summary: "Compare and store a high score with multi-byte comparison."
+keywords: [high score, score table, multi-byte compare, score entry]
 ---
 
 ## facts
@@ -32,11 +34,12 @@ granularity: atomic
 - Hiscore buffer MUST be initialized on first run (cold start) — check a sentinel byte; if not set, initialize to `$00`/`$30` and set sentinel.
 
 ## links
+
 - game: [scoring.md](scoring.md)
 - kernal: [../kernal/INDEX.md](../kernal/INDEX.md)
 - tasks: [../tasks/load-save-file.md](../tasks/load-save-file.md)
 - charset: [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md)
 
 ## sources
+
 - [https://codebase64.net/doku.php?id=base:game_programming](https://codebase64.net/doku.php?id=base:game_programming) — codebase64.net (hub reference; dedicated hiscore article not yet published) — CC BY-NC-SA 4.0
-- [../sources/INDEX.md](../sources/INDEX.md)

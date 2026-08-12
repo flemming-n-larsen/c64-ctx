@@ -2,6 +2,8 @@
 type: reference
 domain: io
 granularity: reference
+summary: "D64, D71 and D81 image layout: tracks, sectors, BAM, and directory entries."
+keywords: [D64, D71, D81, disk image, BAM, directory entry, track sector]
 ---
 
 ## facts
@@ -66,11 +68,12 @@ granularity: reference
 - KERNAL file I/O does not expose format structure; format knowledge is needed only for disk image tools, copiers, or custom DOS replacements.
 
 ## links
+
 - disk and tape I/O overview: [disk-tape-io.md](disk-tape-io.md)
 - KERNAL file I/O calls: [../kernal/file-io.md](../kernal/file-io.md)
 - load/save recipe: [../tasks/load-save-file.md](../tasks/load-save-file.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
 - upstream: VICE emulator source (src/diskimage/), D64 format spec (Peter Schepers / www.unusedino.de/ec64/), c64-wiki.com (GFDL).

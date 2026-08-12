@@ -3,6 +3,8 @@ type: reference
 domain: irq
 granularity: concept
 source: codebase64.net
+summary: "Stack-slice context switching to run several bounded tasks from one interrupt."
+keywords: [cooperative threads, scheduler, context switch, stack slice]
 ---
 
 ## facts
@@ -27,14 +29,14 @@ source: codebase64.net
 - NMI-based switchers MUST still account for RESTORE/NMI interactions on the C64.
 
 ## links
+
 - interrupt hub: [INDEX.md](INDEX.md)
 - raster interrupt recipe: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
-- KERNAL time/IRQ: [../kernal/time-irq.md](../kernal/time-irq.md)
 - memory symbols: [../memory/symbols.md](../memory/symbols.md)
 - task/game-loop context: [../tasks/game-loop.md](../tasks/game-loop.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - legacy task route: [../tasks/cooperative-threads.md](../tasks/cooperative-threads.md)
 - KERNAL coexistence: [../kernal/time-irq.md](../kernal/time-irq.md)
-- provenance note: [../sources/INDEX.md](../sources/INDEX.md) — Codebase64 interrupt coverage groups cooperative threading with advanced IRQ-driven program-flow material.
+- codebase64.net: [Interrupts](https://codebase64.net/doku.php?id=base%3Ainterrupts) — CC BY-NC-SA 4.0; Codebase64 interrupt coverage groups cooperative threading with advanced IRQ-driven program-flow material.

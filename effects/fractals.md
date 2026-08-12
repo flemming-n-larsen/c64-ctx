@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Render Julia and Mandelbrot sets with fixed-point iteration and lookup tables."
+keywords: [fractals, Julia set, Mandelbrot, fixed point iteration]
 ---
 
 ## facts
@@ -46,12 +48,13 @@ granularity: atomic
 - All arithmetic must be integer; 16-bit fixed-point (8.8 or 4.12) is the practical range for C64 Julia/Mandelbrot.
 
 ## links
+
 - effects: [rng.md](rng.md)
 - concepts: [../concepts/optimization.md](../concepts/optimization.md)
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 
 ## sources
+
 - codebase64.net: [Julia Fractal Morpher](https://codebase64.net/doku.php?id=base:julia_fractal_morpher) — CC BY-NC-SA 4.0
 - codebase64.net: [Demo Programming — Fractals](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

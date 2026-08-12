@@ -2,6 +2,8 @@
 type: reference
 domain: effects
 granularity: atomic
+summary: "Colour flashing via background register cycling, and charset page-flip animation."
+keywords: [colour flashing, notewriter, cracktro, frame animation, page flipping]
 ---
 
 ## facts
@@ -51,6 +53,7 @@ EBC mode (`$D011` bit 6 set) provides four background registers (`$D021`–`$D02
 - Frame animation page stride: each charset page is 2 KB; `$D018` bits 3–1 select 8 possible pages within the VIC bank.
 
 ## links
+
 - effects: [plasma.md](plasma.md)
 - effects: [blending.md](blending.md)
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
@@ -59,6 +62,6 @@ EBC mode (`$D011` bit 6 set) provides four background registers (`$D021`–`$D02
 - colors: [../colors/INDEX.md](../colors/INDEX.md)
 
 ## sources
+
 - codebase64.net: [Colour Flashing Notewriter Style](https://codebase64.net/doku.php?id=base:colour_flashing_notewriter_style) — CC BY-NC-SA 4.0
 - codebase64.net: [Demo Programming — Misc](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

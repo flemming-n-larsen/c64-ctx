@@ -2,6 +2,8 @@
 type: reference
 domain: concepts
 granularity: concept
+summary: "How $0001 processor-port bits decide which ROM, RAM, I/O or character ROM the CPU sees."
+keywords: [banking, LORAM, HIRAM, CHAREN, memory configuration]
 ---
 
 ## facts
@@ -38,13 +40,12 @@ granularity: concept
 - Code MUST NOT use `INC $01` to transition from `%111` to `%000`; that path activates the cassette tape write head and can damage tapes or cause unexpected hardware behavior. Use explicit `LDA`/`STA` with the exact target value instead.
 
 ## links
-- processor port: [../io/processor-port.md](../io/processor-port.md)
-- memory map: [../memory/map.md](../memory/map.md)
+
 - bank-switch task: [../tasks/bank-switch-rom-ram.md](../tasks/bank-switch-rom-ram.md)
 - cartridge modes: [cartridge-modes.md](cartridge-modes.md)
 
 ## sources
+
 - codebase64.net: [Memory Management in Commodore 64](https://codebase64.net/doku.php?id=base:memory_management) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)
 - memory map: [../memory/map.md](../memory/map.md)
 - processor port: [../io/processor-port.md](../io/processor-port.md)

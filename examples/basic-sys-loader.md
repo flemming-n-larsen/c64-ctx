@@ -2,6 +2,8 @@
 type: reference
 domain: examples
 granularity: example
+summary: "Complete BASIC loader that POKEs machine code from DATA and SYSes it."
+keywords: [BASIC example, DATA loader, SYS loader, machine code from BASIC]
 ---
 
 ## facts
@@ -57,17 +59,14 @@ granularity: example
 - KERNAL ROM MUST remain banked in (`$0001` bit 1 = `HIRAM` = 1, the default) for `SYS` and `RTS` to return correctly.
 
 ## links
-- BASIC machine-code bridge: [../basic/machine-code-bridge.md](../basic/machine-code-bridge.md)
+
 - BASIC examples reference: [../basic/examples.md](../basic/examples.md)
-- program entrypoints: [../tasks/program-entrypoints.md](../tasks/program-entrypoints.md)
-- memory map: [../memory/map.md](../memory/map.md)
-- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - CPU instruction set: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
 - example index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - BASIC machine-code bridge: [../basic/machine-code-bridge.md](../basic/machine-code-bridge.md)
 - program entrypoints: [../tasks/program-entrypoints.md](../tasks/program-entrypoints.md)
 - memory map: [../memory/map.md](../memory/map.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- local route: [../sources/INDEX.md](../sources/INDEX.md)

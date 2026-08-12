@@ -2,6 +2,8 @@
 type: reference
 domain: tools
 granularity: native-tools
+summary: "Assemblers, packers and linkers that run on the C64 itself."
+keywords: [native tools, Turbo Assembler, TMPx, on-machine development]
 ---
 
 ## facts
@@ -35,12 +37,13 @@ granularity: native-tools
 - TMPx accepts TMP-dialect source directly on PC without encoding conversion.
 
 ## links
+
 - cross-assembler syntax: [../asm/INDEX.md](../asm/INDEX.md)
 - transfer tools (TASM → PC): [transfer.md](transfer.md)
 - crunchers (native): [crunchers.md](crunchers.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - Turbo Assembler (Style64): http://turbo.style64.org/
 - Ass Blaster V3.2: https://csdb.dk/release/?id=99889
 - TMPx: http://style64.org/release/tmpx-v1.0-style

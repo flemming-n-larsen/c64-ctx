@@ -2,6 +2,8 @@
 type: reference
 domain: sprites
 granularity: atomic
+summary: "Getting a sprite on screen: 64-byte alignment, pointer, position, color, enable order."
+keywords: [sprite setup, sprite pointer, visible range, multicolor sprite]
 ---
 
 ## facts
@@ -44,19 +46,15 @@ granularity: atomic
 - Border placement and visible-area coordinates in this page are PAL-oriented; NTSC users SHOULD re-check geometry and timing locally.
 
 ## links
-- sprite hub: [INDEX.md](INDEX.md)
+
 - sprite registers: [registers.md](registers.md)
 - sprite techniques: [advanced.md](advanced.md)
-- sprite setup task: [../tasks/sprite-display.md](../tasks/sprite-display.md)
-- screen geometry: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
-- VIC banking: [../vic/memory-and-banking.md](../vic/memory-and-banking.md)
-- border usage: [../effects/open-borders.md](../effects/open-borders.md)
 - runnable example: [../examples/kickassembler-sprite.md](../examples/kickassembler-sprite.md)
 
 ## sources
+
 - sprite hub: [INDEX.md](INDEX.md)
 - sprite display task: [../tasks/sprite-display.md](../tasks/sprite-display.md)
 - screen geometry: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
 - VIC memory and banking: [../vic/memory-and-banking.md](../vic/memory-and-banking.md)
 - open borders: [../effects/open-borders.md](../effects/open-borders.md)
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

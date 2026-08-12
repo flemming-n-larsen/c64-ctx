@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: recipe
+summary: "Tell a 6581 from an 8580 at runtime using oscillator 3 readback."
+keywords: [SID detection, 6581, 8580, chip revision, OSC3 readback]
 ---
 
 ## facts
@@ -52,9 +54,10 @@ granularity: recipe
 - Voice 3 should be routed off the output during detection (`$D418` bit 7 set, or `$D417` bit 2 clear) to avoid an audible click.
 
 ## links
+
 - SID registers: [registers.md](registers.md)
 - SID index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - codebase64.net: [Detecting SID Type — Safe Method](https://codebase64.net/doku.php?id=base:detecting_sid_type_-_safe_method) — SounDemon / Dag Lem — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)

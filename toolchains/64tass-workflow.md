@@ -2,6 +2,8 @@
 type: reference
 domain: toolchains
 granularity: workflow
+summary: "Build a prg with 64tass and run it in VICE."
+keywords: [64tass workflow, build and run, command line, prg header]
 ---
 
 ## facts
@@ -68,12 +70,13 @@ Flat binary (cartridge body):
 ```
 
 ## links
+
 - 64tass reference: [../asm/64tass.md](../asm/64tass.md)
 - common patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - VICE: [vice.md](vice.md)
 - toolchain index: [INDEX.md](INDEX.md)
 
 ## sources
-- local route: [../sources/INDEX.md](../sources/INDEX.md)
+
 - attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
 - upstream: 64tass manual (Soci/Singular), distributed with the 64tass release archive.

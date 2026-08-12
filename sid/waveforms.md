@@ -2,6 +2,8 @@
 type: reference
 domain: sid
 granularity: atomic
+summary: "The four SID waveforms, their quirks, and the combined-waveform cautions."
+keywords: [waveforms, triangle, sawtooth, pulse, noise, ring modulation]
 ---
 
 ## facts
@@ -33,14 +35,14 @@ granularity: atomic
 - Combined waveform bits can sound useful, but they are explicitly revision-dependent; validate on both 6581 and 8580 if you depend on a specific timbre.
 
 ## links
-- SID registers: [registers.md](registers.md)
+
 - play-SID task: [play-note.md](play-note.md)
 - SID model detection: [model-detect.md](model-detect.md)
 - noise reduction: [noise-reduction.md](noise-reduction.md)
 - SID index: [INDEX.md](INDEX.md)
 
 ## sources
+
 - local companion: [registers.md](registers.md)
 - codebase64.net: [Triangle Waveform](https://codebase64.net/doku.php?id=base:triangle_waveform) — CC BY-NC-SA 4.0
 - codebase64.net: [Noise Waveform](https://codebase64.net/doku.php?id=base:noise_waveform) — CC BY-NC-SA 4.0
-- provenance: [../sources/INDEX.md](../sources/INDEX.md)
