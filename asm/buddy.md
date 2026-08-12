@@ -30,10 +30,13 @@ keywords: [Buddy assembler, resident assembler, native assembler, label limit]
 - No local labels; all labels share a single global scope.
 - The assembler passes (typically two-pass) run entirely in the C64's memory; very large sources may exhaust available RAM for both source text and symbol table.
 
+## links
+
+- assembler hub: [INDEX.md](INDEX.md)
+- cross-assembler equivalence: [rosetta.md](rosetta.md)
+- common patterns: [common-patterns.md](common-patterns.md)
+
 ## sources
 
 - attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
 - upstream: c64-wiki.com — Buddy Assembler article (GFDL).
-- assembler hub: [INDEX.md](INDEX.md)
-- cross-assembler equivalence: [rosetta.md](rosetta.md)
-- common patterns: [common-patterns.md](common-patterns.md)

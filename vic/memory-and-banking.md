@@ -44,12 +44,15 @@ keywords: [VIC bank, bank select, screen base, charset base, ROM holes]
 - In bitmap modes, `$D018` bits `2-1` are ignored; only bit `3` selects bitmap base.
 - Screen matrix, bitmap data, character data, and other assets inside a bank SHOULD be planned to avoid overlap.
 
+## links
+
+- register summary: [registers.md](registers.md)
+- timing: [timing.md](timing.md)
+- screen modes: [screen-modes.md](screen-modes.md)
+
 ## sources
 
 - VIC hub: [INDEX.md](INDEX.md)
 - screen-memory concept: [../concepts/screen-memory.md](../concepts/screen-memory.md)
 - CIA2 register reference: [../io/cia2.md](../io/cia2.md)
 - VIC-II register reference: [../io/vic-ii.md](../io/vic-ii.md)
-- register summary: [registers.md](registers.md)
-- timing: [timing.md](timing.md)
-- screen modes: [screen-modes.md](screen-modes.md)

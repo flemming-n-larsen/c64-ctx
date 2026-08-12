@@ -69,11 +69,14 @@ Flat binary (cartridge body):
 64tass --flat -o cart.bin cart.asm
 ```
 
-## sources
+## links
 
-- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
-- upstream: 64tass manual (Soci/Singular), distributed with the 64tass release archive.
 - 64tass reference: [../asm/64tass.md](../asm/64tass.md)
 - common patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - VICE: [vice.md](vice.md)
 - toolchain index: [INDEX.md](INDEX.md)
+
+## sources
+
+- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
+- upstream: 64tass manual (Soci/Singular), distributed with the 64tass release archive.

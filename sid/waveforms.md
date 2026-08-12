@@ -34,12 +34,15 @@ keywords: [waveforms, triangle, sawtooth, pulse, noise, ring modulation]
 - `TEST` resets the oscillator state, but Codebase64 notes the reset is not instantaneous for noise; sample/restart experiments must allow settling time.
 - Combined waveform bits can sound useful, but they are explicitly revision-dependent; validate on both 6581 and 8580 if you depend on a specific timbre.
 
+## links
+
+- play-SID task: [play-note.md](play-note.md)
+- SID model detection: [model-detect.md](model-detect.md)
+- noise reduction: [noise-reduction.md](noise-reduction.md)
+- SID index: [INDEX.md](INDEX.md)
+
 ## sources
 
 - local companion: [registers.md](registers.md)
 - codebase64.net: [Triangle Waveform](https://codebase64.net/doku.php?id=base:triangle_waveform) — CC BY-NC-SA 4.0
 - codebase64.net: [Noise Waveform](https://codebase64.net/doku.php?id=base:noise_waveform) — CC BY-NC-SA 4.0
-- play-SID task: [play-note.md](play-note.md)
-- SID model detection: [model-detect.md](model-detect.md)
-- noise reduction: [noise-reduction.md](noise-reduction.md)
-- SID index: [INDEX.md](INDEX.md)

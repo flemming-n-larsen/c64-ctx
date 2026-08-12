@@ -84,9 +84,12 @@ dispatch
 - Stack dispatch handlers must not push/pop without adjusting SP back; the stack "base" is the vector table.
 - General table: value must be pre-scaled (×2) to index the word table; the self-mod approach handles this when value ≤ 127.
 
-## sources
+## links
 
-- https://codebase64.net/doku.php?id=base:dispatch_on_a_byte — CC BY-NC-SA 4.0
 - bitstream decoding (common dispatch consumer): [bitstream.md](bitstream.md)
 - advanced optimization: [../optimization/advanced.md](../optimization/advanced.md)
 - illegal opcodes (ASR, LAX useful in dispatch prep): [../cpu/6502/illegal-opcodes.md](../cpu/6502/illegal-opcodes.md)
+
+## sources
+
+- https://codebase64.net/doku.php?id=base:dispatch_on_a_byte — CC BY-NC-SA 4.0

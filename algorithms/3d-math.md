@@ -80,14 +80,17 @@ Full dot product backface cull (view_vec = [vx, vy, vz]):
 - Backface culling normal convention (inward vs. outward) MUST be consistent with the face winding order used during model definition.
 - See [../effects/vectors.md](../effects/vectors.md) for the complete polygon fill and rendering pipeline on C64.
 
+## links
+
+- math: [../math/multiply.md](../math/multiply.md)
+- math: [../math/trig.md](../math/trig.md)
+- math: [../math/fixed-point.md](../math/fixed-point.md)
+- math: [../math/divide.md](../math/divide.md)
+- effects: [../effects/vectors.md](../effects/vectors.md)
+
 ## sources
 
 - codebase64.net: [3D rotation](https://codebase64.net/doku.php?id=base:3d_rotation) — CC BY-NC-SA 4.0
 - codebase64.net: [Perspective](https://codebase64.net/doku.php?id=base:perspective) — CC BY-NC-SA 4.0
 - codebase64.net: [Backface culling](https://codebase64.net/doku.php?id=base:backface_culling) — CC BY-NC-SA 4.0
 - codebase64.net: [Filling the vectors](https://codebase64.net/doku.php?id=base:filling_the_vectors) — CC BY-NC-SA 4.0
-- math: [../math/multiply.md](../math/multiply.md)
-- math: [../math/trig.md](../math/trig.md)
-- math: [../math/fixed-point.md](../math/fixed-point.md)
-- math: [../math/divide.md](../math/divide.md)
-- effects: [../effects/vectors.md](../effects/vectors.md)

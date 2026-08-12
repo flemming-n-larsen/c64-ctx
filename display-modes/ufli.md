@@ -66,9 +66,8 @@ Full 320 px coverage needs 14 sprites (not possible with 8); typical UFLI covers
 - Sprites with `$D01B` bit set are behind the display area but still in front of the border; see [open-borders.md](../effects/open-borders.md) for border extension.
 - UIFLI requires two full UFLI datasets: 2 × (8000 screen + 8000 sprite) bytes; plan VIC bank layout carefully.
 
-## sources
+## links
 
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - effects: [fli.md](fli.md)
 - effects: [ifli.md](ifli.md)
 - effects: [nufli.md](nufli.md)
@@ -76,3 +75,7 @@ Full 320 px coverage needs 14 sprites (not possible with 8); typical UFLI covers
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - tasks: [../tasks/sprite-display.md](../tasks/sprite-display.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
+
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL

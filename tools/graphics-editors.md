@@ -27,6 +27,13 @@ keywords: [graphics editors, CharPad, SpritePad, Pixcen, pixel editor]
 - SpritePad Pro exports raw sprite data; caller must place data at a VIC-accessible address aligned to the sprite pointer block.
 - CharPad tile maps encode attributes separately from char data; loading order matters for display.
 
+## links
+
+- display modes: [../display-modes/INDEX.md](../display-modes/INDEX.md)
+- sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
+- graphics modes reference: [../graphics/INDEX.md](../graphics/INDEX.md)
+- VIC-II overview: [../vic/INDEX.md](../vic/INDEX.md)
+
 ## sources
 
 - CharPad: https://subchristsoftware.itch.io/charpad-c64-free
@@ -38,7 +45,3 @@ keywords: [graphics editors, CharPad, SpritePad, Pixcen, pixel editor]
 - HermIRES: https://csdb.dk/release/?id=128693
 - native GFX editors (codebase64.net): https://codebase64.net/doku.php?id=vic:gfx_editors_and_converters
 - codebase64.net tools page: https://codebase64.net/doku.php?id=tools:start (CC BY-NC-SA 4.0)
-- display modes: [../display-modes/INDEX.md](../display-modes/INDEX.md)
-- sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
-- graphics modes reference: [../graphics/INDEX.md](../graphics/INDEX.md)
-- VIC-II overview: [../vic/INDEX.md](../vic/INDEX.md)

@@ -33,10 +33,13 @@ keywords: [high score, score table, multi-byte compare, score entry]
 - KERNAL LOAD with secondary address 0 loads to `$0801` regardless of stored address; use secondary address 1 to load to the original address.
 - Hiscore buffer MUST be initialized on first run (cold start) — check a sentinel byte; if not set, initialize to `$00`/`$30` and set sentinel.
 
-## sources
+## links
 
-- [https://codebase64.net/doku.php?id=base:game_programming](https://codebase64.net/doku.php?id=base:game_programming) — codebase64.net (hub reference; dedicated hiscore article not yet published) — CC BY-NC-SA 4.0
 - game: [scoring.md](scoring.md)
 - kernal: [../kernal/INDEX.md](../kernal/INDEX.md)
 - tasks: [../tasks/load-save-file.md](../tasks/load-save-file.md)
 - charset: [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md)
+
+## sources
+
+- [https://codebase64.net/doku.php?id=base:game_programming](https://codebase64.net/doku.php?id=base:game_programming) — codebase64.net (hub reference; dedicated hiscore article not yet published) — CC BY-NC-SA 4.0

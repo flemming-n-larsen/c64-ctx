@@ -108,12 +108,15 @@ write:
 - Vibrato depth table values are in SID frequency units, not Hz; the same depth sounds wider at lower notes.
 - Call these routines only from inside the raster IRQ (once per frame) to maintain consistent timing.
 
-## sources
+## links
 
-- codebase64.net: [SID Programming](https://codebase64.net/doku.php?id=base:sid_programming) — CC BY-NC-SA 4.0
 - SID registers: [../sid/registers.md](../sid/registers.md)
 - frequency table: [../sid/frequency-table.md](../sid/frequency-table.md)
 - IRQ music player: [irq-music-player.md](irq-music-player.md)
 - filter sweep: [../sid/filter-sweep.md](../sid/filter-sweep.md)
 - music index: [INDEX.md](INDEX.md)
 - SID index: [../sid/INDEX.md](../sid/INDEX.md)
+
+## sources
+
+- codebase64.net: [SID Programming](https://codebase64.net/doku.php?id=base:sid_programming) — CC BY-NC-SA 4.0

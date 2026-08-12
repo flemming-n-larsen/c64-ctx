@@ -278,10 +278,13 @@ keywords: [chargen ROM, lowercase set, glyph bytes, character bitmaps]
 - Pixel row 0 is the topmost row; row 7 is the bottommost.
 - Reverse-video entries (`$80-$FF`) are the ROM bytes verbatim, not derived at runtime.
 
+## links
+
+- primary set: [chargen-primary.md](chargen-primary.md)
+- screen codes: [screen-codes.md](screen-codes.md)
+- VIC-II character base: [../io/vic-ii.md](../io/vic-ii.md)
+
 ## sources
 
 - chargen ROM binary: mist64/c64ref src/charset/chargen (SHA 191ac46)
 - interchange map: mist64/c64ref src/charset/C64IALT.TXT (Rebecca Bettencourt, 2018-10-11)
-- primary set: [chargen-primary.md](chargen-primary.md)
-- screen codes: [screen-codes.md](screen-codes.md)
-- VIC-II character base: [../io/vic-ii.md](../io/vic-ii.md)

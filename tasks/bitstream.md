@@ -87,9 +87,12 @@ done
 - `getfield` result in A is right-justified (bits at low end); unused high bits are 0.
 - The sentinel scheme limits field width to 7 bits per call (initial A must have at least one `0` below the `1`).
 
-## sources
+## links
 
-- https://codebase64.net/doku.php?id=base:decoding_bitstreams — CC BY-NC-SA 4.0
 - dispatch techniques (common consumer of decoded values): [dispatch.md](dispatch.md)
 - algorithms/compression: [../algorithms/INDEX.md](../algorithms/INDEX.md)
 - advanced optimization (self-modifying code patterns): [../optimization/advanced.md](../optimization/advanced.md)
+
+## sources
+
+- https://codebase64.net/doku.php?id=base:decoding_bitstreams — CC BY-NC-SA 4.0

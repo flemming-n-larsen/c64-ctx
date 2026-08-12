@@ -21,9 +21,12 @@ keywords: [I/O area, CHAREN, character ROM, banking window]
 - Agents MUST NOT assume `$D000-$DFFF` always means I/O registers.
 - Color RAM at `$D800-$DBFF` SHOULD be treated as nybble-wide storage, not normal 8-bit RAM.
 
+## links
+
+- processor port: [../io/processor-port.md](../io/processor-port.md)
+- banking concept: [../concepts/memory-banking.md](../concepts/memory-banking.md)
+
 ## sources
 
 - memory index: [INDEX.md](INDEX.md)
 - I/O index: [../io/INDEX.md](../io/INDEX.md)
-- processor port: [../io/processor-port.md](../io/processor-port.md)
-- banking concept: [../concepts/memory-banking.md](../concepts/memory-banking.md)

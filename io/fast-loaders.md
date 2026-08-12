@@ -30,6 +30,11 @@ keywords: [fast loader, drive code, transfer protocol, compatibility]
 - Direct CIA2 access MUST preserve unrelated `$DD00` bits, including VIC-II bank selection.
 - Exact cycle timing MUST come from the selected loader implementation, not from this routing page.
 
+## links
+
+- transfer-protocol route: [data-transfer-protocols.md](data-transfer-protocols.md)
+- I/O index: [INDEX.md](INDEX.md)
+
 ## sources
 
 - CIA2 registers: [cia2.md](cia2.md)
@@ -37,5 +42,3 @@ keywords: [fast loader, drive code, transfer protocol, compatibility]
 - disk formats: [disk-formats.md](disk-formats.md)
 - original drive manual: [Commodore VIC-1541 Floppy Drive User's Manual](https://www.commodore.ca/wp-content/uploads/2018/11/commodore_vic_1541_floppy_drive_users_manual.pdf)
 - implementation reference: [Covert Bitops tools and LoaderSystem](https://cadaver.github.io/tools.html)
-- transfer-protocol route: [data-transfer-protocols.md](data-transfer-protocols.md)
-- I/O index: [INDEX.md](INDEX.md)

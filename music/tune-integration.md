@@ -41,12 +41,15 @@ STA $01
 - Restore `$01` before normal KERNAL IRQ exit paths such as `JMP $EA31`, or ROM calls and vectors will misbehave.
 - The actual init/play addresses depend on the tune/player; `$A000/$A003` is only the example layout from Codebase64.
 
-## sources
+## links
 
-- codebase64.net: [Playing music `$A000-$FFFF`](https://codebase64.net/doku.php?id=base:playing_music_a000-_ffff) — CC BY-NC-SA 4.0
 - IRQ music player: [irq-music-player.md](irq-music-player.md)
 - memory banking for music: [music-memory-banking.md](music-memory-banking.md)
 - PAL/NTSC playback: [pal-ntsc-playback.md](pal-ntsc-playback.md)
 - processor port / `$01`: [../io/processor-port.md](../io/processor-port.md)
 - bank-switch task: [../tasks/bank-switch-rom-ram.md](../tasks/bank-switch-rom-ram.md)
 - music index: [INDEX.md](INDEX.md)
+
+## sources
+
+- codebase64.net: [Playing music `$A000-$FFFF`](https://codebase64.net/doku.php?id=base:playing_music_a000-_ffff) — CC BY-NC-SA 4.0

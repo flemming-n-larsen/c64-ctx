@@ -60,6 +60,10 @@ keywords: [ECM, extended color mode, extended background, 64 glyphs]
 - Keep `PETSCII`, screen codes, and charset glyph indices separate when building content pipelines for ECM screens.
 - Treat modern-game examples as design inspiration only; exact hardware behavior should come from the cited local graphics and I/O pages.
 
+## links
+
+- display-modes index: [INDEX.md](INDEX.md)
+
 ## sources
 
 - official mode table: [../graphics/screen-modes.md](../graphics/screen-modes.md)
@@ -67,4 +71,3 @@ keywords: [ECM, extended color mode, extended background, 64 glyphs]
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - custom charset task: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - ECI: [eci.md](eci.md)
-- display-modes index: [INDEX.md](INDEX.md)

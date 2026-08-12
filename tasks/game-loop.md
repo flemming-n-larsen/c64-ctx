@@ -60,13 +60,16 @@ wait_vbl_out:
   JMP frame
 ```
 
+## links
+
+- KERNAL keyboard/screen: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
+- sprite display: [sprite-display.md](sprite-display.md)
+- read keyboard: [read-keyboard.md](read-keyboard.md)
+- play SID: [../sid/play-note.md](../sid/play-note.md)
+
 ## sources
 
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - CIA1: [../io/cia1.md](../io/cia1.md)
 - raster interrupt task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - task index: [INDEX.md](INDEX.md)
-- KERNAL keyboard/screen: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
-- sprite display: [sprite-display.md](sprite-display.md)
-- read keyboard: [read-keyboard.md](read-keyboard.md)
-- play SID: [../sid/play-note.md](../sid/play-note.md)

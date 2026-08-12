@@ -62,12 +62,15 @@ end_of_basic: .word 0
     rts
 ```
 
+## links
+
+- BASIC program structure: [../basic/program-structure.md](../basic/program-structure.md)
+- load/save: [load-save-file.md](load-save-file.md)
+- bank switch: [bank-switch-rom-ram.md](bank-switch-rom-ram.md)
+
 ## sources
 
 - BASIC machine-code bridge: [../basic/machine-code-bridge.md](../basic/machine-code-bridge.md)
 - memory map: [../memory/map.md](../memory/map.md)
 - memory symbols: [../memory/symbols.md](../memory/symbols.md)
 - task index: [INDEX.md](INDEX.md)
-- BASIC program structure: [../basic/program-structure.md](../basic/program-structure.md)
-- load/save: [load-save-file.md](load-save-file.md)
-- bank switch: [bank-switch-rom-ram.md](bank-switch-rom-ram.md)

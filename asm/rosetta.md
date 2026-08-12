@@ -48,10 +48,13 @@ keywords: [rosetta, syntax translation, assembler comparison, porting source]
 - 64tass text encoding is selected by `.enc "<name>"` and persists until changed.
 - Byte-extract operators (`<expr`, `>expr`) work identically in all four — they MUST follow an operator slot, not lead an expression line.
 
+## links
+
+- common patterns: [common-patterns.md](common-patterns.md)
+
 ## sources
 
 - ACME page: [acme.md](acme.md)
 - KickAssembler page: [kickassembler.md](kickassembler.md)
 - CA65 page: [ca65.md](ca65.md)
 - 64tass page: [64tass.md](64tass.md)
-- common patterns: [common-patterns.md](common-patterns.md)

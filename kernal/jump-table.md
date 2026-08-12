@@ -54,11 +54,14 @@ keywords: [jump table, KERNAL API, entry points, call addresses]
 - Agents SHOULD use category labels from `kernal/generate.py` for grouping.
 - Agents MUST NOT infer clobbers from the compact purpose column.
 
-## sources
+## links
 
-- KERNAL index: [INDEX.md](INDEX.md)
 - file I/O: [file-io.md](file-io.md)
 - serial bus: [serial-bus.md](serial-bus.md)
 - keyboard/screen: [keyboard-screen.md](keyboard-screen.md)
 - memory calls: [memory.md](memory.md)
 - time/IRQ: [time-irq.md](time-irq.md)
+
+## sources
+
+- KERNAL index: [INDEX.md](INDEX.md)

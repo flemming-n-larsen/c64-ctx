@@ -42,11 +42,14 @@ keywords: [BASIC example, border color, background color, POKE colors]
 - Only the low nybble of `$D020`/`$D021` is used; values `16-255` wrap (e.g. `POKE 53280,16` displays as color `0`).
 - `GET` returns immediately with `A$=""` when no key is pending; line 40 polls until a key arrives.
 
+## links
+
+- BASIC examples reference: [../basic/examples.md](../basic/examples.md)
+- PETSCII control codes: [../charset/control-codes.md](../charset/control-codes.md)
+- example index: [INDEX.md](INDEX.md)
+
 ## sources
 
 - BASIC graphics/sound: [../basic/graphics-sound.md](../basic/graphics-sound.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - Colors palette: [../colors/palette.md](../colors/palette.md)
-- BASIC examples reference: [../basic/examples.md](../basic/examples.md)
-- PETSCII control codes: [../charset/control-codes.md](../charset/control-codes.md)
-- example index: [INDEX.md](INDEX.md)

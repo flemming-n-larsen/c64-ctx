@@ -31,11 +31,14 @@ keywords: [sprite registers, collision, priority, expansion, X MSB]
 - Multicolor sprites require the sprite's `$D01C` bit plus the shared colors in `$D025/$D026`.
 - Enable bits in `$D015` SHOULD be written after pointer, position, and color setup to avoid one-frame garbage.
 
+## links
+
+- sprite display: [display.md](display.md)
+- sprite techniques: [advanced.md](advanced.md)
+- VIC hub: [../vic/INDEX.md](../vic/INDEX.md)
+
 ## sources
 
 - sprite hub: [INDEX.md](INDEX.md)
 - VIC-II register reference: [../io/vic-ii.md](../io/vic-ii.md)
 - sprite display task: [../tasks/sprite-display.md](../tasks/sprite-display.md)
-- sprite display: [display.md](display.md)
-- sprite techniques: [advanced.md](advanced.md)
-- VIC hub: [../vic/INDEX.md](../vic/INDEX.md)

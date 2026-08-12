@@ -59,13 +59,16 @@ Type `RUN`; `HELLO` prints on the next line and control returns to BASIC's `READ
 - `.text` encoding defaults to PETSCII; if `.enc` has been switched, restore it before emitting CBM-targeted strings.
 - KERNAL ROM MUST be banked in (`$0001` bit 1 = `HIRAM` = 1, default after reset) for `JSR $FFD2` to call `CHROUT`.
 
+## links
+
+- VICE: [../toolchains/vice.md](../toolchains/vice.md)
+- memory map: [../memory/map.md](../memory/map.md)
+- CPU instruction set: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
+- example index: [INDEX.md](INDEX.md)
+
 ## sources
 
 - 64tass reference: [../asm/64tass.md](../asm/64tass.md)
 - common ASM patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - 64tass workflow: [../toolchains/64tass-workflow.md](../toolchains/64tass-workflow.md)
 - KERNAL CHROUT: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
-- VICE: [../toolchains/vice.md](../toolchains/vice.md)
-- memory map: [../memory/map.md](../memory/map.md)
-- CPU instruction set: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
-- example index: [INDEX.md](INDEX.md)

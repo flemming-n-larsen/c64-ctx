@@ -21,9 +21,12 @@ keywords: [MEMBOT, MEMTOP, memory boundaries, KERNAL memory calls]
 - Code that changes vectors MUST understand whether it is changing CPU vectors, KERNAL RAM vectors, or device interrupt state.
 - Exact register contracts MUST be verified in the local KERNAL API pages before use.
 
+## links
+
+- interrupts: [../irq/overview.md](../irq/overview.md)
+- jump table: [jump-table.md](jump-table.md)
+
 ## sources
 
 - KERNAL index: [INDEX.md](INDEX.md)
 - memory map: [../memory/map.md](../memory/map.md)
-- interrupts: [../irq/overview.md](../irq/overview.md)
-- jump table: [jump-table.md](jump-table.md)

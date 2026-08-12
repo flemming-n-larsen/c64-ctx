@@ -23,11 +23,14 @@ keywords: [GETIN, CHRIN, CHROUT, screen editor, character I/O]
 - `CHROUT` examples SHOULD use PETSCII/control codes, not screen codes, unless direct screen memory is used.
 - Keyboard matrix questions SHOULD route to [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md) and [../io/cia1.md](../io/cia1.md).
 
-## sources
+## links
 
-- KERNAL index: [INDEX.md](INDEX.md)
-- charset controls: [../charset/control-codes.md](../charset/control-codes.md)
 - charset: [../charset/INDEX.md](../charset/INDEX.md)
 - print task: [../tasks/print-to-screen.md](../tasks/print-to-screen.md)
 - read keyboard task: [../tasks/read-keyboard.md](../tasks/read-keyboard.md)
 - screen memory: [../concepts/screen-memory.md](../concepts/screen-memory.md)
+
+## sources
+
+- KERNAL index: [INDEX.md](INDEX.md)
+- charset controls: [../charset/control-codes.md](../charset/control-codes.md)

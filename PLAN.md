@@ -72,10 +72,14 @@ Add to `audit.ps1`, warning-level during Phase 2 and error-level here: `summary`
 
 `.github/workflows/documentation-audit.yml` needs no change.
 
-### ✓ Phase 5 — Consolidate leaf tails
-Merge `## links` into a single deduped `## sources`; **do not delete the cross-references**. Across the 210 pages holding both, `## links` has 1,106 distinct targets against `## sources`' 658, overlapping on only 205 and a strict subset on 7 — those ~900 unique targets are the real cross-reference graph.
+### ✓ Phase 5 — Deduplicate leaf tails, keeping the sections separate
+Across the 210 pages holding both, `## links` had 1,106 distinct targets against `## sources`' 658, overlapping on only 205 — so they were never near-duplicates, and deleting `## links` would have cost ~900 real cross-references.
 
-What is safe and large: strip the repeated `sources/INDEX.md` pointer from the 200 pages carrying it, and merge the two headings. ~825 lines, ~26 KB, no information loss. The 10 pages currently reachable only via a tail link are covered by the Phase 3 generated routes, so `$orphanAllowList` stays at one entry.
+This phase first **merged** the two sections, then reversed it. The merge was wrong: decomposing the saving showed it uniquely bought only the 2,100 bytes of `## links` headings, because the two large wins — 13,890 B of boilerplate `sources/INDEX.md` pointers and 10,510 B of bullets duplicated across the sections — were both achievable with the sections intact. For 0.3% of the leaf layer it destroyed the distinction between *where a fact came from* and *what to read next*, leaving `## sources` at a 5.1:1 ratio of navigation links to actual citations, in a CC BY-NC-SA corpus where that section carries the attribution.
+
+Final shape: both sections kept; the boilerplate pointer stripped; any target cited in `## sources` removed from `## links`. **−23,330 bytes**, against −25,574 for the merge, and the `## sources` ratio is now 1.26:1.
+
+Keeping the sections distinct made three provenance rules enforceable that the merged version could not express — and enabling them immediately found three pages declaring `source: codebase64.net` with no upstream URL at all (`irq/cooperative-threads.md`, `irq/stable-timing.md`, and a redirect stub that should never have declared a source).
 
 ### ✓ Phase 6 — Rewrite the contracts
 `AGENTS.md` `## consumption-rules` becomes two-path and one-hop: search `ROUTE.md`/`SYMBOLS.md` then read the page; without search, `INDEX.md` `## quick-route` then the page; domain index only as fallback; read a page's `summary` before its body when several candidates match; and **MUST NOT read `sources/INDEX.md` to answer a question** — 11,822 B that today's vague "when ambiguity matters" trigger invites onto the hot path.
@@ -108,12 +112,12 @@ Eight queries resolved on this branch and on `main`, counting the bytes actually
 | root `INDEX.md` | 13,327 | 9,532 |
 | `AGENTS.md` | 4,195 | 3,146 |
 | index layer (29 files) | 106,585 | 80,963 |
-| leaf layer (210 pages) | 703,104 | 708,307 |
+| leaf layer (210 pages) | 703,104 | 710.549 |
 | generated layer | — | 87,004 |
 
 The search path beat the −70% estimate; the no-search path missed its −36% estimate at −32%, because `## quick-route` grew to 48 rows (9,532 B against a 6,700 B target) to name 60 leaf pages instead of 20. That is a deliberate trade: the extra rows remove a domain-index hop for those topics, which is worth more than the bytes it costs.
 
-Leaf pages grew slightly overall (−25,574 B of merged tails against +30,777 B of front matter). The win is on the read path, not repo size.
+Leaf pages grew slightly overall (−23,330 B of deduplicated tails against +30,777 B of front matter). The win is on the read path, not repo size.
 
 ## Out of scope
 

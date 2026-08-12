@@ -33,10 +33,13 @@ This is indirect and slow; practical only for diagnostics or copy-protection pur
 - Timing for the write technique is cycle-exact; incorrect timing writes to the wrong address or does nothing.
 - This technique is hardware-dependent and may not work on all C64 board revisions or FPGA clones.
 
+## links
+
+- processor port and banking: [../tasks/bank-switch-rom-ram.md](../tasks/bank-switch-rom-ram.md)
+- memory map overview: [INDEX.md](INDEX.md)
+- I/O port register: [../io/INDEX.md](../io/INDEX.md)
+
 ## sources
 
 - https://codebase64.net/doku.php?id=base:ram_beneath_00_and_01 — CC BY-NC-SA 4.0
 - *c64doc* by John West and Marko Mäkelä (cited by source)
-- processor port and banking: [../tasks/bank-switch-rom-ram.md](../tasks/bank-switch-rom-ram.md)
-- memory map overview: [INDEX.md](INDEX.md)
-- I/O port register: [../io/INDEX.md](../io/INDEX.md)

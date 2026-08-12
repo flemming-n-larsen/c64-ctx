@@ -82,9 +82,12 @@ keywords: [serial input, byte read, IEC receive]
 ## constraints
 - Code MUST preserve registers unless the routine contract says they are affected.
 
+## links
+- serial bus calls: [serial-bus.md](serial-bus.md)
+
 ## sources
 - supporting page: [jump-table.md](jump-table.md)
-- memory map: [../memory/map.md](../memory/map.md)
+- c64ref: [KERNAL category](https://github.com/mist64/c64ref/tree/master/src/kernal)
 ```
 
 ## allowed-sections
@@ -97,11 +100,13 @@ keywords: [serial input, byte read, IEC receive]
 | `constraints` | `MUST`, `SHOULD`, `MUST NOT`, `MAY` rules. |
 | `sequence` | Ordered operational steps for calls or tasks. |
 | `examples` | Minimal code or data examples only. |
-| `sources` | Upstream citations plus the local Markdown pages that support the facts. The single tail section on a reference page. |
-| `links` | Navigation footer on a root or directory index only. MUST NOT appear on a reference page. |
+| `links` | Where to read next. Related pages that do **not** support any fact on this page. |
+| `sources` | Where the facts came from: the upstream citation, plus the local pages this page's facts rest on. |
 
-- `source-coverage` is retired; it restated the sibling `routes` and `related` rows. `links` is retired on reference pages, where it duplicated `sources`. Both are rejected by `scripts/audit.ps1`.
+- `links` and `sources` answer different questions and MUST stay separate. A target cited in `sources` MUST NOT be repeated in `links`; `scripts/audit.ps1` rejects the overlap.
+- A page declaring a `source` identifier other than `cross-domain` or `mixed` MUST cite at least one upstream URL in `sources`. Attribution has to be checkable, not merely present.
 - `sources` MUST NOT carry a bare pointer to [sources/INDEX.md](sources/INDEX.md). When to consult it is a consumption rule in [AGENTS.md](AGENTS.md), not per-page boilerplate.
+- `source-coverage` is retired; it restated the sibling `routes` and `related` rows, and is rejected by the audit.
 
 ## generated-artifacts
 | artifact | contents |

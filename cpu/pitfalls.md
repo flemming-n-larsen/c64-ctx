@@ -76,9 +76,12 @@ irq                      ; label 'irq' = $1100
 - The `smod = * + 1` pattern is instruction-specific: a 2-byte instruction has a 1-byte operand at `+1`; a 3-byte instruction has a 2-byte operand at `+1` (low) and `+2` (high).
 - Modifying the opcode byte itself (offset 0) changes the instruction type — intentional in some techniques, a bug otherwise.
 
-## sources
+## links
 
-- https://codebase64.net/doku.php?id=base:common_pitfalls — CC BY-NC-SA 4.0
 - self-modifying code in optimization: [../optimization/advanced.md](../optimization/advanced.md)
 - illegal opcodes (another source of subtle behavior): [6502/illegal-opcodes.md](6502/illegal-opcodes.md)
 - addressing modes reference: [6502/addressing-modes.md](6502/addressing-modes.md)
+
+## sources
+
+- https://codebase64.net/doku.php?id=base:common_pitfalls — CC BY-NC-SA 4.0

@@ -119,15 +119,18 @@ KERNAL `CHROUT` call (assembler-neutral mnemonics):
     rts
 ```
 
-## sources
+## links
 
-- program entrypoints: [../tasks/program-entrypoints.md](../tasks/program-entrypoints.md)
-- memory map: [../memory/map.md](../memory/map.md)
-- zero-page: [../memory/zero-page.md](../memory/zero-page.md)
-- KERNAL index: [../kernal/INDEX.md](../kernal/INDEX.md)
 - ACME: [acme.md](acme.md)
 - KickAssembler: [kickassembler.md](kickassembler.md)
 - CA65: [ca65.md](ca65.md)
 - 64tass: [64tass.md](64tass.md)
 - rosetta: [rosetta.md](rosetta.md)
 - BASIC machine-code bridge: [../basic/machine-code-bridge.md](../basic/machine-code-bridge.md)
+
+## sources
+
+- program entrypoints: [../tasks/program-entrypoints.md](../tasks/program-entrypoints.md)
+- memory map: [../memory/map.md](../memory/map.md)
+- zero-page: [../memory/zero-page.md](../memory/zero-page.md)
+- KERNAL index: [../kernal/INDEX.md](../kernal/INDEX.md)

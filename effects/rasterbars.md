@@ -41,9 +41,8 @@ keywords: [rasterbars, color bars, raster splits, border color]
 - For stable bar position, use [stable-raster.md](stable-raster.md) to eliminate ±1-line jitter.
 - Color values are 0–15; upper nibble is ignored.
 
-## sources
+## links
 
-- codebase64.net: [Demo Programming — Rasterbars](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [open-borders.md](open-borders.md)
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
@@ -51,3 +50,7 @@ keywords: [rasterbars, color bars, raster splits, border color]
 - colors: [../colors/INDEX.md](../colors/INDEX.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 - concepts: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
+
+## sources
+
+- codebase64.net: [Demo Programming — Rasterbars](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0

@@ -41,11 +41,14 @@ Steps 1–4 as MUCSUH, then:
 - MUCSUH has lower per-line CPU overhead than MUCSUFLI (no FLI loop required).
 - All constraints from [mufli.md](mufli.md) and [fli.md](fli.md) apply to their respective components.
 
-## sources
+## links
 
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - effects: [fli.md](fli.md)
 - effects: [mufli.md](mufli.md)
 - effects: [nufli.md](nufli.md)
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
+
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL

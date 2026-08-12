@@ -64,13 +64,16 @@ Type `RUN` after the C64 boots; `HELLO` prints on the next line and control retu
 - The message MUST be NUL-terminated (`!byte 0`) because the loop branches on `BEQ`.
 - `x64sc` is the VICE PAL-C64 emulator binary; substitute `x64` if `x64sc` is not present.
 
+## links
+
+- VICE: [../toolchains/vice.md](../toolchains/vice.md)
+- memory map: [../memory/map.md](../memory/map.md)
+- CPU instruction set: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
+- example index: [INDEX.md](INDEX.md)
+
 ## sources
 
 - ACME reference: [../asm/acme.md](../asm/acme.md)
 - common ASM patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - ACME workflow: [../toolchains/acme-workflow.md](../toolchains/acme-workflow.md)
 - KERNAL CHROUT: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
-- VICE: [../toolchains/vice.md](../toolchains/vice.md)
-- memory map: [../memory/map.md](../memory/map.md)
-- CPU instruction set: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
-- example index: [INDEX.md](INDEX.md)

@@ -33,11 +33,14 @@ keywords: [ASSLACE, sprite sieve, alternating frames, interlace]
 - Only 8 hardware sprites; achieving a fine-grained sieve pattern requires careful sprite positioning and pixel design.
 - This technique is primarily artistic / used for specific visual effects; not a general-purpose high-color mode.
 
-## sources
+## links
 
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - effects: [ifli.md](ifli.md)
 - effects: [mucsu.md](mucsu.md)
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - tasks: [../tasks/sprite-display.md](../tasks/sprite-display.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
+
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL

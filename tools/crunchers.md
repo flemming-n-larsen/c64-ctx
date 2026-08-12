@@ -32,6 +32,12 @@ keywords: [crunchers, Exomizer, Pucrunch, ByteBoozer, packer]
 - Crunched data is not executable; a stub or BASIC loader must decompress to the target address before `SYS`.
 - Some crunchers alter load address or introduce a self-decompressing header; verify final load address before linking.
 
+## links
+
+- memory map: [../memory/INDEX.md](../memory/INDEX.md)
+- optimization context: [../optimization/INDEX.md](../optimization/INDEX.md)
+- transfer to hardware: [transfer.md](transfer.md)
+
 ## sources
 
 - Exomizer: https://bitbucket.org/magli143/exomizer/wiki/Home
@@ -42,6 +48,3 @@ keywords: [crunchers, Exomizer, Pucrunch, ByteBoozer, packer]
 - The Cruncher AB V1.0: https://csdb.dk/release/?id=48475
 - Byte Boiler V1.0: https://csdb.dk/release/?id=51249
 - codebase64.net tools page: https://codebase64.net/doku.php?id=tools:start (CC BY-NC-SA 4.0)
-- memory map: [../memory/INDEX.md](../memory/INDEX.md)
-- optimization context: [../optimization/INDEX.md](../optimization/INDEX.md)
-- transfer to hardware: [transfer.md](transfer.md)

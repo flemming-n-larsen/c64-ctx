@@ -37,6 +37,12 @@ keywords: [music editors, GoatTracker, CheeseCutter, trackers, SID composer]
 - PAL/NTSC playback speed differences must be handled in the IRQ player or music init code.
 - GoatTracker exports use a specific player routine; its size and relocation constraints apply.
 
+## links
+
+- music integration: [../music/INDEX.md](../music/INDEX.md)
+- SID registers and waveforms: [../sid/INDEX.md](../sid/INDEX.md)
+- IRQ players: [../irq/INDEX.md](../irq/INDEX.md)
+
 ## sources
 
 - GoatTracker: [Covert Bitops tools page](https://cadaver.github.io/tools.html)
@@ -50,6 +56,3 @@ keywords: [music editors, GoatTracker, CheeseCutter, trackers, SID composer]
 - ATMDS v3.2: https://csdb.dk/release/?id=7159
 - NinjaTracker: https://cadaver.github.io/tools.html
 - codebase64.net tools page: https://codebase64.net/doku.php?id=tools:start (CC BY-NC-SA 4.0)
-- music integration: [../music/INDEX.md](../music/INDEX.md)
-- SID registers and waveforms: [../sid/INDEX.md](../sid/INDEX.md)
-- IRQ players: [../irq/INDEX.md](../irq/INDEX.md)

@@ -27,6 +27,13 @@ keywords: [DYSP, multiplexer, sprite stretching, sprite underlay, border sprites
 - Border techniques that combine sprite motion with open borders MUST keep sprite placement and border-switch timing separate in reasoning.
 - Underlay techniques MUST also track sprite priority (`$D01B`) and any per-line sprite-stretch updates.
 
+## links
+
+- sprite registers: [registers.md](registers.md)
+- sprite display basics: [display.md](display.md)
+- VIC timing: [../vic/timing.md](../vic/timing.md)
+- display-modes index: [../display-modes/INDEX.md](../display-modes/INDEX.md)
+
 ## sources
 
 - sprite hub: [INDEX.md](INDEX.md)
@@ -35,7 +42,3 @@ keywords: [DYSP, multiplexer, sprite stretching, sprite underlay, border sprites
 - open borders: [../effects/open-borders.md](../effects/open-borders.md)
 - starfield: [../effects/starfield.md](../effects/starfield.md)
 - sprite underlay modes: [../display-modes/ufli.md](../display-modes/ufli.md), [../display-modes/nufli.md](../display-modes/nufli.md), [../display-modes/mufli.md](../display-modes/mufli.md)
-- sprite registers: [registers.md](registers.md)
-- sprite display basics: [display.md](display.md)
-- VIC timing: [../vic/timing.md](../vic/timing.md)
-- display-modes index: [../display-modes/INDEX.md](../display-modes/INDEX.md)

@@ -61,11 +61,14 @@ keywords: [keyboard matrix, key scan, modifiers, SHIFT, matrix position]
 - Code that calls `GETIN` SHOULD NOT also reprogram CIA1 DDR/ports unless the KERNAL IRQ scan is disabled.
 - Joystick port 2 input MUST be considered when reading keyboard rows; a pressed joystick direction reads as a key in the same matrix position.
 
-## sources
+## links
 
-- charset index: [INDEX.md](INDEX.md)
-- CIA1: [../io/cia1.md](../io/cia1.md)
 - read keyboard task: [../tasks/read-keyboard.md](../tasks/read-keyboard.md)
 - PETSCII: [petscii.md](petscii.md)
 - control codes: [control-codes.md](control-codes.md)
 - KERNAL keyboard/screen: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
+
+## sources
+
+- charset index: [INDEX.md](INDEX.md)
+- CIA1: [../io/cia1.md](../io/cia1.md)

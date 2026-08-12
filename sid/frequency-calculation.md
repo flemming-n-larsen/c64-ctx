@@ -40,11 +40,14 @@ SID_FREQ = FREQ_HZ * 256^3 / PHI
 - Fine-tuning tables and micro-steps should be generated from the formula, not by interpolating hex values by eye.
 - When memory matters, precompute one octave and derive the rest by shifts only if your note layout preserves the same tuning basis.
 
-## sources
+## links
 
-- codebase64.net: [How to calculate your own SID frequency table](https://codebase64.net/doku.php?id=base:how_to_calculate_your_own_sid_frequency_table) — CC BY-NC-SA 4.0
 - PAL frequency table: [frequency-table.md](frequency-table.md)
 - NTSC frequency table: [ntsc-frequency-table.md](ntsc-frequency-table.md)
 - SID registers: [registers.md](registers.md)
 - play-SID task: [play-note.md](play-note.md)
 - SID index: [INDEX.md](INDEX.md)
+
+## sources
+
+- codebase64.net: [How to calculate your own SID frequency table](https://codebase64.net/doku.php?id=base:how_to_calculate_your_own_sid_frequency_table) — CC BY-NC-SA 4.0

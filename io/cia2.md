@@ -85,13 +85,16 @@ Same bit layout as CIA1 ICR (`$DC0D`); CIA2 generates **NMI**, not IRQ.
 - Serial IEC bus operations SHOULD use KERNAL routines (`LISTEN`, `TALK`, `ACPTR`, etc.) unless direct register-level bus programming is required.
 - TOD read/write latch rules identical to CIA1: read `$DD0B` first to latch all TOD registers; read `$DD08` to release. Write `$DD0B` to halt clock; write `$DD08` to restart.
 
-## sources
+## links
 
-- upstream: [mist64/c64ref src/c64io](https://github.com/mist64/c64ref/tree/master/src/c64io)
-- I/O index: [INDEX.md](INDEX.md)
-- memory I/O area: [../memory/io-area.md](../memory/io-area.md)
 - VIC-II: [vic-ii.md](vic-ii.md)
 - CIA1: [cia1.md](cia1.md)
 - serial KERNAL: [../kernal/serial-bus.md](../kernal/serial-bus.md)
 - screen memory: [../concepts/screen-memory.md](../concepts/screen-memory.md)
 - interrupts: [../irq/overview.md](../irq/overview.md)
+
+## sources
+
+- upstream: [mist64/c64ref src/c64io](https://github.com/mist64/c64ref/tree/master/src/c64io)
+- I/O index: [INDEX.md](INDEX.md)
+- memory I/O area: [../memory/io-area.md](../memory/io-area.md)

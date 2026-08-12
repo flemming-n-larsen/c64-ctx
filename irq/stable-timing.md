@@ -28,11 +28,14 @@ keywords: [stable raster, jitter, double IRQ, cycle exact, raster sync]
 - Bad lines still steal CPU cycles even when the IRQ entry point is stabilized.
 - PAL and NTSC cycle tables MUST stay separate when documenting stable routines.
 
+## links
+
+- interrupt hub: [INDEX.md](INDEX.md)
+- VIC timing: [../vic/timing.md](../vic/timing.md)
+- bad lines: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
+
 ## sources
 
 - raster setup: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - stable raster consumer route: [../effects/stable-raster.md](../effects/stable-raster.md)
-- provenance note: [../sources/INDEX.md](../sources/INDEX.md) — Codebase64 interrupt coverage includes `base:interrupts` and stable-raster material summarized here.
-- interrupt hub: [INDEX.md](INDEX.md)
-- VIC timing: [../vic/timing.md](../vic/timing.md)
-- bad lines: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
+- codebase64.net: [Interrupts](https://codebase64.net/doku.php?id=base%3Ainterrupts) — CC BY-NC-SA 4.0; includes the stable-raster material summarized here.

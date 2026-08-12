@@ -41,13 +41,16 @@ keywords: [screen codes, screen matrix, reverse range, glyph index]
 - Custom character-set explanations MUST include VIC-II `$D018` character base configuration and bank-relative addressing.
 - Code MUST NOT assume the same glyph for a given screen code across both character sets; the set is selected by `$D018` bit 1.
 
-## sources
+## links
 
-- charset index: [INDEX.md](INDEX.md)
-- character-set concept: [../concepts/character-sets.md](../concepts/character-sets.md)
-- primary chargen: [chargen-primary.md](chargen-primary.md)
 - screen memory concept: [../concepts/screen-memory.md](../concepts/screen-memory.md)
 - PETSCII: [petscii.md](petscii.md)
 - alternate charset bytes: [chargen-alternate.md](chargen-alternate.md)
 - VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
 - color RAM: [../io/color-ram.md](../io/color-ram.md)
+
+## sources
+
+- charset index: [INDEX.md](INDEX.md)
+- character-set concept: [../concepts/character-sets.md](../concepts/character-sets.md)
+- primary chargen: [chargen-primary.md](chargen-primary.md)

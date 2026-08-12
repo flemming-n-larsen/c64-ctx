@@ -201,10 +201,13 @@ CLI
 - `BIT` sets `N` from bit 7 of the memory operand, `V` from bit 6, and `Z` from the result of `A AND operand` — without modifying `A`.
 - `LSR` always clears `N` (shifts 0 into bit 7); `ROR` sets `N` from the old `C` bit rotated in.
 
+## links
+
+- registers and flags: [registers-flags.md](registers-flags.md)
+- addressing modes: [addressing-modes.md](addressing-modes.md)
+- illegal opcodes: [illegal-opcodes.md](illegal-opcodes.md)
+
 ## sources
 
 - local route: [../../sources/INDEX.md](../../sources/INDEX.md)
 - CPU index: [INDEX.md](INDEX.md)
-- registers and flags: [registers-flags.md](registers-flags.md)
-- addressing modes: [addressing-modes.md](addressing-modes.md)
-- illegal opcodes: [illegal-opcodes.md](illegal-opcodes.md)

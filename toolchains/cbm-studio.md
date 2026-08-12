@@ -44,12 +44,15 @@ keywords: [CBM prg Studio, Windows IDE, project setup]
 - Sprite/char editor output is binary — version-control plain-text source alongside binary assets explicitly.
 - Exact CBM prg Studio behavior is outside the local source corpus and MUST be cited from CBM prg Studio's own documentation when contested.
 
-## sources
+## links
 
-- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
-- upstream: CBM prg Studio documentation (Arthur Jordison), distributed with the CBM prg Studio installer.
 - assembler reference: [../asm/INDEX.md](../asm/INDEX.md)
 - common patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - VICE: [vice.md](vice.md)
 - program entrypoints: [../tasks/program-entrypoints.md](../tasks/program-entrypoints.md)
 - toolchain index: [INDEX.md](INDEX.md)
+
+## sources
+
+- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
+- upstream: CBM prg Studio documentation (Arthur Jordison), distributed with the CBM prg Studio installer.

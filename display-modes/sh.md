@@ -39,11 +39,14 @@ keywords: [SH, AH, IH, super hires, advanced hires, interlaced hires]
 - SH/AH are artistic/algorithmic techniques; no special register sequence beyond standard SBM setup.
 - For SH/AH with FLI, see [shfli.md](shfli.md).
 
-## sources
+## links
 
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - effects: [shfli.md](shfli.md)
 - effects: [ifli.md](ifli.md)
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
+
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL

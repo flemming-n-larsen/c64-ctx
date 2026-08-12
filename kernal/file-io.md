@@ -36,9 +36,12 @@ keywords: [file I/O, SETLFS, SETNAM, LOAD, SAVE, channels]
 - Keyboard/screen default I/O MAY use `CHRIN`, `GETIN`, and `CHROUT` without `OPEN` when the default channels are active.
 - File recipes SHOULD link to [../tasks/load-save-file.md](../tasks/load-save-file.md) instead of duplicating full examples here.
 
+## links
+
+- serial bus: [serial-bus.md](serial-bus.md)
+- load/save task: [../tasks/load-save-file.md](../tasks/load-save-file.md)
+
 ## sources
 
 - KERNAL index: [INDEX.md](INDEX.md)
 - jump table: [jump-table.md](jump-table.md)
-- serial bus: [serial-bus.md](serial-bus.md)
-- load/save task: [../tasks/load-save-file.md](../tasks/load-save-file.md)

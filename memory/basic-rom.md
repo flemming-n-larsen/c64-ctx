@@ -22,10 +22,13 @@ keywords: [BASIC ROM, banking, LORAM, RAM under ROM]
 - Code that switches BASIC ROM out MUST ensure it does not return to BASIC expecting ROM routines to remain visible.
 - Agents SHOULD use ROM disassembly pages for routine routing instead of copying source listings.
 
+## links
+
+- banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
+- processor port: [../io/processor-port.md](../io/processor-port.md)
+- BASIC domain: [../basic/INDEX.md](../basic/INDEX.md)
+
 ## sources
 
 - memory index: [INDEX.md](INDEX.md)
 - ROM route: [../rom/basic-disassembly.md](../rom/basic-disassembly.md)
-- banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
-- processor port: [../io/processor-port.md](../io/processor-port.md)
-- BASIC domain: [../basic/INDEX.md](../basic/INDEX.md)

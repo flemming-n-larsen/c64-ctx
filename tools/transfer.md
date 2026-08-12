@@ -21,10 +21,13 @@ keywords: [file transfer, Final Replay, Codenet, RR-net, real hardware]
 |---|---|---|
 | TMPView 1.3 | Style | Converts TASM source to PC text; CSDB/Style64 release. |
 
+## links
+
+- native assemblers: [native-tools.md](native-tools.md)
+- toolchains: [../toolchains/INDEX.md](../toolchains/INDEX.md)
+
 ## sources
 
 - Final Replay / Codenet: http://www.oxyron.de/html/freplay.html
 - TMPView 1.3: http://style64.org/release/tmpview-v1.3-style
 - codebase64.net tools page: https://codebase64.net/doku.php?id=tools:start (CC BY-NC-SA 4.0)
-- native assemblers: [native-tools.md](native-tools.md)
-- toolchains: [../toolchains/INDEX.md](../toolchains/INDEX.md)

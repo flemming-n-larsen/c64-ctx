@@ -30,10 +30,13 @@ keywords: [raster interrupt, raster IRQ, acknowledge, KERNAL coexistence]
 - Code MUST state whether it chains to the normal KERNAL IRQ path or replaces it.
 - If KERNAL ROM is banked out, code MUST NOT assume the usual ROM IRQ handler remains callable.
 
+## links
+
+- stable raster timing: [../effects/stable-raster.md](../effects/stable-raster.md)
+
 ## sources
 
 - interrupt overview: [overview.md](overview.md)
 - VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
 - vectors and symbols: [../memory/symbols.md](../memory/symbols.md)
 - KERNAL IRQ services: [../kernal/time-irq.md](../kernal/time-irq.md)
-- stable raster timing: [../effects/stable-raster.md](../effects/stable-raster.md)

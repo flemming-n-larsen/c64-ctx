@@ -72,9 +72,8 @@ Enter a tight loop at line `$33`; poll `$D012`; on each new line write `$D018` a
 - `$D011` bit 3 (DEN) MUST remain 1 during FLI; writing `$00` to `$D011` blanks the display.
 - 8 FLI blocks × 1000 bytes = exactly 8000 bytes — same size as the bitmap; both fit in a 16 KB bank with careful placement.
 
-## sources
+## links
 
-- codebase64.net: [FLI](https://codebase64.net/doku.php?id=base:fli) — CC BY-NC-SA 4.0
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - effects: [ifli.md](ifli.md)
 - effects: [ufli.md](ufli.md)
@@ -85,3 +84,7 @@ Enter a tight loop at line `$33`; poll `$D012`; on each new line write `$D018` a
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
+
+## sources
+
+- codebase64.net: [FLI](https://codebase64.net/doku.php?id=base:fli) — CC BY-NC-SA 4.0

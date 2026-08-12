@@ -125,10 +125,8 @@ keywords: [SID registers, 6581, 8580, control register, ADSR rates]
 - 6581 and 8580 chip revisions differ in filter characteristics and combined-waveform output; music tuned for one may not sound identical on the other.
 - Frequency formula (PAL): Hz = FREQ_reg × 985248 ÷ 16777216 ≈ FREQ_reg × 0.0587.
 
-## sources
+## links
 
-- upstream: [mist64/c64ref src/c64io](https://github.com/mist64/c64ref/tree/master/src/c64io)
-- memory I/O area: [../memory/io-area.md](../memory/io-area.md)
 - play-SID task: [play-note.md](play-note.md)
 - waveforms: [waveforms.md](waveforms.md)
 - frequency table (PAL A440): [frequency-table.md](frequency-table.md)
@@ -141,3 +139,8 @@ keywords: [SID registers, 6581, 8580, control register, ADSR rates]
 - filter sweep effect: [filter-sweep.md](filter-sweep.md)
 - processor port: [../io/processor-port.md](../io/processor-port.md)
 - SID index: [INDEX.md](INDEX.md)
+
+## sources
+
+- upstream: [mist64/c64ref src/c64io](https://github.com/mist64/c64ref/tree/master/src/c64io)
+- memory I/O area: [../memory/io-area.md](../memory/io-area.md)

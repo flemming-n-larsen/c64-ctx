@@ -48,11 +48,14 @@ keywords: [PRS, raster split, screen split, status bar, split screen]
 - `$D018` changes take effect at the next bad line; a mid-row split may show a partial transition in the first character row below the split.
 - Changing mode mid-frame (e.g., bitmap to text) is valid; changing to an illegal mode (ECM+BMM) blanks that region.
 
-## sources
+## links
 
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - effects: [stable-raster.md](../effects/stable-raster.md)
 - effects: [rasterbars.md](../effects/rasterbars.md)
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
+
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL

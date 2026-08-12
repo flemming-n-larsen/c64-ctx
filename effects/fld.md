@@ -42,12 +42,15 @@ keywords: [FLD, flexible line distance, vertical scroll, bad line suppression]
 - FLD below the display area (in the bottom border) requires the open-borders trick; see [open-borders.md](open-borders.md).
 - The effect is CPU-intensive on the IRQ side; plan cycle budget accordingly.
 
-## sources
+## links
 
-- codebase64.net: [Demo Programming — FLD](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [scrolltext.md](scrolltext.md)
 - effects: [open-borders.md](open-borders.md)
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
+
+## sources
+
+- codebase64.net: [Demo Programming — FLD](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0

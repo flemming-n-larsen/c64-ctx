@@ -26,11 +26,14 @@ keywords: [print text, CHROUT, screen writes, cursor position]
 - Direct screen writes SHOULD update color RAM when color matters.
 - KERNAL `CHROUT` examples SHOULD cite `CHROUT` and the relevant control-code source.
 
+## links
+
+- screen memory: [../concepts/screen-memory.md](../concepts/screen-memory.md)
+- PETSCII: [../charset/petscii.md](../charset/petscii.md)
+- palette: [../colors/palette.md](../colors/palette.md)
+
 ## sources
 
 - task index: [INDEX.md](INDEX.md)
 - KERNAL screen I/O: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
 - charset controls: [../charset/control-codes.md](../charset/control-codes.md)
-- screen memory: [../concepts/screen-memory.md](../concepts/screen-memory.md)
-- PETSCII: [../charset/petscii.md](../charset/petscii.md)
-- palette: [../colors/palette.md](../colors/palette.md)

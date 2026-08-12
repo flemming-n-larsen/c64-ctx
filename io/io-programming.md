@@ -27,6 +27,10 @@ keywords: [I/O programming, device access, topic hub, peripherals]
 - Keep `PETSCII`, screen codes, and keyboard matrix positions separate; use the dedicated charset and KERNAL routes instead of assuming they are interchangeable.
 - When local coverage remains routing-only, use [../sources/INDEX.md](../sources/INDEX.md) to expose upstream provenance and any remaining uncertainty.
 
+## links
+
+- Source provenance: [../sources/INDEX.md](../sources/INDEX.md)
+
 ## sources
 
 - I/O index: [INDEX.md](INDEX.md)
@@ -36,4 +40,3 @@ keywords: [I/O programming, device access, topic hub, peripherals]
 - KERNAL keyboard and screen: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
 - KERNAL serial bus: [../kernal/serial-bus.md](../kernal/serial-bus.md)
 - Keyboard task: [../tasks/read-keyboard.md](../tasks/read-keyboard.md)
-- Source provenance: [../sources/INDEX.md](../sources/INDEX.md)

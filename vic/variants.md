@@ -32,10 +32,13 @@ keywords: [chip variants, NTSC vs PAL, 6567, 6569, 8565, revision]
 - Palette values stored as fixed constants MAY produce visually different output on 8562/8565 vs 6567/6569 due to DAC revision; treat color output as approximate unless the chip is detected.
 - Chip detection at runtime is possible by reading `$D012` at a known stable point and comparing raster-line counts — see [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md) for cycle geometry.
 
+## links
+
+- raster geometry and bad lines: [timing.md](timing.md)
+- raster interrupt setup: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
+- music player PAL/NTSC concerns: [../music/INDEX.md](../music/INDEX.md)
+
 ## sources
 
 - local VIC hub: [INDEX.md](INDEX.md)
 - VIC-II register reference: [../io/vic-ii.md](../io/vic-ii.md)
-- raster geometry and bad lines: [timing.md](timing.md)
-- raster interrupt setup: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
-- music player PAL/NTSC concerns: [../music/INDEX.md](../music/INDEX.md)

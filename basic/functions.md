@@ -61,13 +61,16 @@ keywords: [BASIC functions, string functions, numeric functions, return types]
 - `USR(X)` MUST first have the vector at `$0311-$0312` (low/high) pointing to a valid machine-code entry; the argument arrives in `FAC1` at `$61-$66`, and the routine SHOULD leave the return value in `FAC1` before `RTS`.
 - `TAB(X)` and `SPC(X)` MUST appear only inside `PRINT` or `PRINT#` argument lists; use outside these statements raises `?SYNTAX ERROR`.
 
-## sources
+## links
 
-- BASIC index: [INDEX.md](INDEX.md)
-- token bytes: [tokens.md](tokens.md)
 - keywords: [keywords.md](keywords.md)
 - variables and types: [variables.md](variables.md)
 - machine-code bridge: [machine-code-bridge.md](machine-code-bridge.md)
 - BASIC errors: [errors.md](errors.md)
 - zero page (FAC and USR vector): [../memory/zero-page.md](../memory/zero-page.md)
 - PETSCII code space (`CHR$` / `ASC`): [../charset/petscii.md](../charset/petscii.md)
+
+## sources
+
+- BASIC index: [INDEX.md](INDEX.md)
+- token bytes: [tokens.md](tokens.md)

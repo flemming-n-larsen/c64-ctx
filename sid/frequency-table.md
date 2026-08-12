@@ -48,12 +48,15 @@ NTSC formula: `freq_reg = Hz × 16777216 ÷ 1022727`. Multiply PAL values by `�
 - Write FREQLO before FREQHI to avoid a transient glitch on some SID revisions.
 - Values have < 0.1 semitone pitch error vs ideal A440 across all octaves.
 
-## sources
+## links
 
-- codebase64.net: [PAL Frequency Table](https://codebase64.net/doku.php?id=base:pal_frequency_table) — CC BY-NC-SA 4.0
 - SID registers: [registers.md](registers.md)
 - frequency calculation: [frequency-calculation.md](frequency-calculation.md)
 - NTSC frequency table: [ntsc-frequency-table.md](ntsc-frequency-table.md)
 - play-SID task: [play-note.md](play-note.md)
 - hard restart: [../music/hard-restart.md](../music/hard-restart.md)
 - SID index: [INDEX.md](INDEX.md)
+
+## sources
+
+- codebase64.net: [PAL Frequency Table](https://codebase64.net/doku.php?id=base:pal_frequency_table) — CC BY-NC-SA 4.0

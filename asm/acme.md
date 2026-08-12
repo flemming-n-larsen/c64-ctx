@@ -69,11 +69,14 @@ eob: !word 0
     rts
 ```
 
-## sources
+## links
 
-- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
-- upstream: ACME user manual (Marco Baye), distributed with the ACME release archive.
 - common patterns: [common-patterns.md](common-patterns.md)
 - rosetta: [rosetta.md](rosetta.md)
 - CPU mnemonics: [../cpu/6502/instruction-set.md](../cpu/6502/instruction-set.md)
 - toolchain workflow: [../toolchains/acme-workflow.md](../toolchains/acme-workflow.md)
+
+## sources
+
+- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
+- upstream: ACME user manual (Marco Baye), distributed with the ACME release archive.

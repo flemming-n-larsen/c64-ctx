@@ -34,10 +34,13 @@ keywords: [HCB, half char bitmap, half cell, custom charset trick]
 - Custom charset limits usable characters; a 256-entry charset can encode ~128 unique top/bottom combinations.
 - For true per-line color independence, FLI ([fli.md](fli.md)) is required.
 
-## sources
+## links
 
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - effects: [fli.md](fli.md)
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - tasks: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
+
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL

@@ -15,8 +15,11 @@ keywords: [raster interrupt, redirect, moved page]
 - This legacy task path remains as a backlink target for older recipe links.
 - The authoritative setup sequence now lives in `irq/` so interrupt-generic guidance is no longer split across domains.
 
+## links
+
+- interrupt hub: [../irq/INDEX.md](../irq/INDEX.md)
+- VIC-II: [../io/vic-ii.md](../io/vic-ii.md)
+
 ## sources
 
 - canonical route: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
-- interrupt hub: [../irq/INDEX.md](../irq/INDEX.md)
-- VIC-II: [../io/vic-ii.md](../io/vic-ii.md)

@@ -25,9 +25,12 @@ keywords: [code spaces, PETSCII vs screen code, character sets, conflation]
 - Direct screen writes MUST use screen codes; KERNAL `CHROUT` examples SHOULD use PETSCII/control codes.
 - Keyboard-scanning answers SHOULD link CIA1 hardware and keyboard matrix data.
 
+## links
+
+- screen memory: [screen-memory.md](screen-memory.md)
+- CIA1: [../io/cia1.md](../io/cia1.md)
+
 ## sources
 
 - charset index: [../charset/INDEX.md](../charset/INDEX.md)
 - keyboard matrix: [../charset/keyboard-matrix.md](../charset/keyboard-matrix.md)
-- screen memory: [screen-memory.md](screen-memory.md)
-- CIA1: [../io/cia1.md](../io/cia1.md)

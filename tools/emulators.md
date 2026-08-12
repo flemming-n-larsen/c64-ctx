@@ -23,11 +23,14 @@ keywords: [emulators, VICE, x64sc, HOXS64, CCS64]
 - Raster-effect and sprite/badline-sensitive code SHOULD be tested under `x64sc` (cycle-exact), not `x64` (fast).
 - VICE workflow details (autostart, monitor commands, flags) are in [../toolchains/vice.md](../toolchains/vice.md).
 
+## links
+
+- VICE workflow: [../toolchains/vice.md](../toolchains/vice.md)
+- toolchains index: [../toolchains/INDEX.md](../toolchains/INDEX.md)
+
 ## sources
 
 - VICE: https://vice-emu.sourceforge.io/
 - HOXS64: http://www.hoxs64.net/
 - CCS64: http://www.ccs64.com/
 - codebase64.net tools page: https://codebase64.net/doku.php?id=tools:start (CC BY-NC-SA 4.0)
-- VICE workflow: [../toolchains/vice.md](../toolchains/vice.md)
-- toolchains index: [../toolchains/INDEX.md](../toolchains/INDEX.md)

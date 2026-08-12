@@ -68,13 +68,16 @@ bk $080d
 g
 ```
 
-## sources
+## links
 
-- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
-- upstream: VICE manual (https://vice-emu.sourceforge.io/), `vice.pdf` distributed with each release.
 - common patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - program entrypoints: [../tasks/program-entrypoints.md](../tasks/program-entrypoints.md)
 - ACME workflow: [acme-workflow.md](acme-workflow.md)
 - KickAssembler workflow: [kickassembler-workflow.md](kickassembler-workflow.md)
 - CA65 workflow: [ca65-workflow.md](ca65-workflow.md)
 - 64tass workflow: [64tass-workflow.md](64tass-workflow.md)
+
+## sources
+
+- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
+- upstream: VICE manual (https://vice-emu.sourceforge.io/), `vice.pdf` distributed with each release.

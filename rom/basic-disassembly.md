@@ -19,10 +19,13 @@ keywords: [BASIC ROM, interpreter routines, disassembly, ROM listing]
 - Agents SHOULD prefer KERNAL jump-table pages for public KERNAL calls even when BASIC calls into KERNAL ROM.
 - Agents MUST account for banking before saying `$A000-$BFFF` reads return BASIC ROM.
 
+## links
+
+- BASIC domain: [../basic/INDEX.md](../basic/INDEX.md)
+- BASIC ROM memory: [../memory/basic-rom.md](../memory/basic-rom.md)
+- banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
+
 ## sources
 
 - ROM index: [INDEX.md](INDEX.md)
 - BASIC routines: [../basic/routines.md](../basic/routines.md)
-- BASIC domain: [../basic/INDEX.md](../basic/INDEX.md)
-- BASIC ROM memory: [../memory/basic-rom.md](../memory/basic-rom.md)
-- banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)

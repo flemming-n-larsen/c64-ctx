@@ -67,13 +67,16 @@ Q8.8 × Q8.8 fixed-point multiply (keep middle 16 bits):
 - Two's complement sign extension when widening from 8-bit to 16-bit MUST propagate sign via `BPL`/`DEX` pattern — see [add-sub.md](add-sub.md).
 - Multiplying two Q8.8 values shifts the binary point; discarding the low byte (`result_lo`) introduces a rounding error of up to 1 LSB of the fractional part.
 
+## links
+
+- math: [multiply.md](multiply.md)
+- math: [divide.md](divide.md)
+- math: [add-sub.md](add-sub.md)
+- algorithms: [../algorithms/3d-math.md](../algorithms/3d-math.md)
+
 ## sources
 
 - codebase64.net: [Fixed-point arithmetic](https://codebase64.net/doku.php?id=base:fixed_point_arithmethic) — CC BY-NC-SA 4.0
 - codebase64.net: [Two's complement system](https://codebase64.net/doku.php?id=base:two_s_complement_system) — CC BY-NC-SA 4.0
 - codebase64.net: [Numerical systems](https://codebase64.net/doku.php?id=base:numerical_systems) — CC BY-NC-SA 4.0
 - codebase64.net: [Basic math operations](https://codebase64.net/doku.php?id=base:basic_math_operations) — CC BY-NC-SA 4.0
-- math: [multiply.md](multiply.md)
-- math: [divide.md](divide.md)
-- math: [add-sub.md](add-sub.md)
-- algorithms: [../algorithms/3d-math.md](../algorithms/3d-math.md)

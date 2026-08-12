@@ -33,9 +33,12 @@ keywords: [megatext, big text, oversized glyphs, logo text]
 - Color changes within a glyph are limited by the bitmap mode's per-cell color constraints; large single-color glyphs are straightforward, multi-color large glyphs require careful cell color assignment.
 - No VIC-II trick limits apply; this is purely a software rendering / data layout technique.
 
-## sources
+## links
 
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 - tasks: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - effects: [prs.md](prs.md)
+
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL

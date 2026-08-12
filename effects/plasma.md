@@ -50,9 +50,8 @@ keywords: [plasma, sine sum, color cycling, FLI plasma]
 - FLI plasma requires per-line `$D018` bank switching and is significantly more complex; see [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md) for bad-line cycle impact.
 - For rasterbar plasma, use [stable-raster.md](stable-raster.md) to keep color transitions from jittering.
 
-## sources
+## links
 
-- codebase64.net: [Demo Programming — Plasma](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [rasterbars.md](rasterbars.md)
 - effects: [fld.md](fld.md)
@@ -61,3 +60,7 @@ keywords: [plasma, sine sum, color cycling, FLI plasma]
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - colors: [../colors/INDEX.md](../colors/INDEX.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
+
+## sources
+
+- codebase64.net: [Demo Programming — Plasma](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0

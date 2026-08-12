@@ -46,9 +46,8 @@ keywords: [starfield, stars, parallax, depth illusion, ROL starfield]
 - X position wrapping MUST account for the border region: sprite X=0 is in the left border; display area starts at X≈24.
 - For sprite X ≥ 256, bit in `$D010` MUST be set; clear it when X < 256.
 
-## sources
+## links
 
-- codebase64.net: [Demo Programming — Starfields](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
 - sprite techniques: [../sprites/advanced.md](../sprites/advanced.md)
 - sprite display: [../sprites/display.md](../sprites/display.md)
@@ -57,3 +56,7 @@ keywords: [starfield, stars, parallax, depth illusion, ROL starfield]
 - tasks: [../tasks/sprite-display.md](../tasks/sprite-display.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - concepts: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
+
+## sources
+
+- codebase64.net: [Demo Programming — Starfields](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0

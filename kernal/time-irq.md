@@ -21,10 +21,13 @@ keywords: [jiffy clock, RDTIM, SETTIM, stop key, IRQ restore]
 - IRQ examples SHOULD link to [../irq/overview.md](../irq/overview.md) and device pages for acknowledge rules.
 - Code that replaces IRQ handling SHOULD preserve or deliberately replace KERNAL time/keyboard behavior.
 
+## links
+
+- raster task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
+- CIA1: [../io/cia1.md](../io/cia1.md)
+- CIA2: [../io/cia2.md](../io/cia2.md)
+
 ## sources
 
 - KERNAL index: [INDEX.md](INDEX.md)
 - interrupts: [../irq/overview.md](../irq/overview.md)
-- raster task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
-- CIA1: [../io/cia1.md](../io/cia1.md)
-- CIA2: [../io/cia2.md](../io/cia2.md)

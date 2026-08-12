@@ -51,9 +51,8 @@ keywords: [SHFLI, SHI, SHIFLI, SHIFXL, super hires FLI, sub-pixel]
 - Artwork must be prepared as two interlaced-pixel frames; standard graphics tools do not produce this format natively.
 - All SH/SHIFLI/SHIFXL modes are best-effort documented; implementation details vary by release and are not uniformly covered in public sources.
 
-## sources
+## links
 
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - effects: [fli.md](fli.md)
 - effects: [ifli.md](ifli.md)
 - effects: [sh.md](sh.md)
@@ -61,3 +60,7 @@ keywords: [SHFLI, SHI, SHIFLI, SHIFXL, super hires FLI, sub-pixel]
 - effects: [stable-raster.md](../effects/stable-raster.md)
 - concepts: [../concepts/color-mixing.md](../concepts/color-mixing.md)
 - graphics: [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md)
+
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL

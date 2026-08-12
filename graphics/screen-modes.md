@@ -101,10 +101,8 @@ Screen code bits 7-6 → BG register: `00`=`$D021`, `01`=`$D022`, `10`=`$D023`, 
 - VIC bank base from CIA2 `$DD00` MUST be applied to all `$D018`-derived addresses.
 - Screen RAM and bitmap data MUST NOT overlap; plan VIC bank layout to avoid collisions.
 
-## sources
+## links
 
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes)
-- local VIC-II register reference: [../io/vic-ii.md](../io/vic-ii.md)
 - VIC hub: [../vic/INDEX.md](../vic/INDEX.md)
 - VIC screen modes: [../vic/screen-modes.md](../vic/screen-modes.md)
 - standalone ECM route: [../display-modes/ecm.md](../display-modes/ecm.md)
@@ -116,3 +114,8 @@ Screen code bits 7-6 → BG register: `00`=`$D021`, `01`=`$D022`, `10`=`$D023`, 
 - Color palette: [../colors/palette.md](../colors/palette.md)
 - Custom charset task: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - Sprite display: [../tasks/sprite-display.md](../tasks/sprite-display.md)
+
+## sources
+
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes)
+- local VIC-II register reference: [../io/vic-ii.md](../io/vic-ii.md)

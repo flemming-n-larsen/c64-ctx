@@ -87,12 +87,15 @@ keywords: [PETSCII, character encoding, printable range, code space]
 - Code SHOULD route glyph/Unicode questions to [screen-codes.md](screen-codes.md) and [chargen-primary.md](chargen-primary.md).
 - Code MUST NOT assume a PETSCII letter byte maps to the same glyph in both case modes; mode is selected by `$0E`/`$8E` controls or `$D018`.
 
+## links
+
+- screen codes: [screen-codes.md](screen-codes.md)
+- keyboard matrix: [keyboard-matrix.md](keyboard-matrix.md)
+- KERNAL screen I/O: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
+- colors: [../colors/palette.md](../colors/palette.md)
+
 ## sources
 
 - charset index: [INDEX.md](INDEX.md)
 - control codes: [control-codes.md](control-codes.md)
 - primary chargen: [chargen-primary.md](chargen-primary.md)
-- screen codes: [screen-codes.md](screen-codes.md)
-- keyboard matrix: [keyboard-matrix.md](keyboard-matrix.md)
-- KERNAL screen I/O: [../kernal/keyboard-screen.md](../kernal/keyboard-screen.md)
-- colors: [../colors/palette.md](../colors/palette.md)

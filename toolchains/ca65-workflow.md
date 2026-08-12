@@ -74,11 +74,14 @@ ld65 -t c64 -Ln hello.vs -o hello.prg hello.o c64.lib
 x64sc -moncommands hello.vs hello.prg
 ```
 
-## sources
+## links
 
-- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
-- upstream: cc65 documentation (https://cc65.github.io/), `ca65.html` and `ld65.html`.
 - CA65 reference: [../asm/ca65.md](../asm/ca65.md)
 - common patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - VICE: [vice.md](vice.md)
 - toolchain index: [INDEX.md](INDEX.md)
+
+## sources
+
+- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
+- upstream: cc65 documentation (https://cc65.github.io/), `ca65.html` and `ld65.html`.

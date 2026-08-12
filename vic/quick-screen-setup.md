@@ -35,9 +35,12 @@ keywords: [screen setup, bank calculation, bit arithmetic, alignment]
 - `pixelData` pointing into a character ROM window (`$1000-$1FFF` in bank 0, `$9000-$9FFF` in bank 2) selects the ROM, not RAM — this is valid for standard text mode.
 - Bitmap modes ignore `$D018` bits `2-1`; only bit `3` matters for bitmap base selection.
 
-## sources
+## links
 
-- codebase64.net: [Quick VIC-II Screen Setup](https://codebase64.net/doku.php?id=base:quick_vicii_screen_setup) — CC BY-NC-SA 4.0
 - VIC memory and banking: [memory-and-banking.md](memory-and-banking.md)
 - VIC registers: [registers.md](registers.md)
 - VIC hub: [INDEX.md](INDEX.md)
+
+## sources
+
+- codebase64.net: [Quick VIC-II Screen Setup](https://codebase64.net/doku.php?id=base:quick_vicii_screen_setup) — CC BY-NC-SA 4.0

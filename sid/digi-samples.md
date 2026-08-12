@@ -56,11 +56,14 @@ Alternative using voice 3 pulse width for higher resolution:
 - Sample rate accuracy depends on PAL/NTSC clock; CIA timer values must be recalculated for NTSC.
 - Packing: two 4-bit samples per byte (hi nybble first) is standard; loop pointer advancement must match.
 
-## sources
+## links
 
-- c64-wiki.com: [SID — Sample Playback](https://www.c64-wiki.com/wiki/SID) — CC BY-SA 3.0
-- codebase64.net: [SID Programming — Samples aka Digis](https://codebase64.net/doku.php?id=base:sid_programming#samples_aka_digis) — CC BY-NC-SA 4.0
 - SID registers: [registers.md](registers.md)
 - noise reduction: [noise-reduction.md](noise-reduction.md)
 - SID model detection: [model-detect.md](model-detect.md)
 - SID index: [INDEX.md](INDEX.md)
+
+## sources
+
+- c64-wiki.com: [SID — Sample Playback](https://www.c64-wiki.com/wiki/SID) — CC BY-SA 3.0
+- codebase64.net: [SID Programming — Samples aka Digis](https://codebase64.net/doku.php?id=base:sid_programming#samples_aka_digis) — CC BY-NC-SA 4.0

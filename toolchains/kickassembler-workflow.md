@@ -67,11 +67,14 @@ start:
     rts
 ```
 
-## sources
+## links
 
-- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
-- upstream: KickAssembler reference manual (Mads Nielsen), distributed with the KickAssembler release archive.
 - KickAssembler reference: [../asm/kickassembler.md](../asm/kickassembler.md)
 - common patterns: [../asm/common-patterns.md](../asm/common-patterns.md)
 - VICE: [vice.md](vice.md)
 - toolchain index: [INDEX.md](INDEX.md)
+
+## sources
+
+- attribution: [../ATTRIBUTION.md](../ATTRIBUTION.md)
+- upstream: KickAssembler reference manual (Mads Nielsen), distributed with the KickAssembler release archive.

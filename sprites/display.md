@@ -45,6 +45,12 @@ keywords: [sprite setup, sprite pointer, visible range, multicolor sprite]
 - Collision checks MUST account for the read-to-clear behavior of `$D01E/$D01F`.
 - Border placement and visible-area coordinates in this page are PAL-oriented; NTSC users SHOULD re-check geometry and timing locally.
 
+## links
+
+- sprite registers: [registers.md](registers.md)
+- sprite techniques: [advanced.md](advanced.md)
+- runnable example: [../examples/kickassembler-sprite.md](../examples/kickassembler-sprite.md)
+
 ## sources
 
 - sprite hub: [INDEX.md](INDEX.md)
@@ -52,6 +58,3 @@ keywords: [sprite setup, sprite pointer, visible range, multicolor sprite]
 - screen geometry: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
 - VIC memory and banking: [../vic/memory-and-banking.md](../vic/memory-and-banking.md)
 - open borders: [../effects/open-borders.md](../effects/open-borders.md)
-- sprite registers: [registers.md](registers.md)
-- sprite techniques: [advanced.md](advanced.md)
-- runnable example: [../examples/kickassembler-sprite.md](../examples/kickassembler-sprite.md)

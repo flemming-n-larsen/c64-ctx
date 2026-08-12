@@ -24,9 +24,8 @@ keywords: [PAL NTSC, playback speed, timer values, tempo correction]
 - Raster-IRQ calling once per display frame is fine when you accept native PAL/NTSC speed differences; use CIA timers only when you need cross-standard timing.
 - PAL-N / Drean machines need their own timer ratio and should not be treated as either plain PAL or plain NTSC.
 
-## sources
+## links
 
-- codebase64.net: [Playing music on PAL and NTSC](https://codebase64.net/doku.php?id=base:playing_music_on_pal_and_ntsc) — CC BY-NC-SA 4.0
 - tune integration: [tune-integration.md](tune-integration.md)
 - IRQ music player: [irq-music-player.md](irq-music-player.md)
 - SID frequency calculation: [../sid/frequency-calculation.md](../sid/frequency-calculation.md)
@@ -34,3 +33,7 @@ keywords: [PAL NTSC, playback speed, timer values, tempo correction]
 - NTSC frequency table: [../sid/ntsc-frequency-table.md](../sid/ntsc-frequency-table.md)
 - raster interrupt task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - music index: [INDEX.md](INDEX.md)
+
+## sources
+
+- codebase64.net: [Playing music on PAL and NTSC](https://codebase64.net/doku.php?id=base:playing_music_on_pal_and_ntsc) — CC BY-NC-SA 4.0

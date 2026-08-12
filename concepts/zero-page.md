@@ -16,8 +16,11 @@ keywords: [zero page, fast addressing, byte savings, ownership]
 - Machine-language routines SHOULD reserve their own zero-page bytes only with knowledge of BASIC/KERNAL ownership.
 - KERNAL task recipes SHOULD mention zero-page side effects only when source call contracts or symbols justify them.
 
+## links
+
+- CPU addressing: [../cpu/6502/addressing-modes.md](../cpu/6502/addressing-modes.md)
+
 ## sources
 
 - memory zero page: [../memory/zero-page.md](../memory/zero-page.md)
 - memory symbols: [../memory/symbols.md](../memory/symbols.md)
-- CPU addressing: [../cpu/6502/addressing-modes.md](../cpu/6502/addressing-modes.md)

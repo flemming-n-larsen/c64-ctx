@@ -44,9 +44,8 @@ A standard demo part follows this flow:
 - PAL frame budget: ~19656 cycles total; a simple 40×25 effect loop costs ~10 000 cycles leaving ~50% for other work.
 - Optimization is mandatory for complex effects; see [../concepts/optimization.md](../concepts/optimization.md).
 
-## sources
+## links
 
-- codebase64.net: [An Introduction to Programming C-64 Demos](https://codebase64.net/doku.php?id=vic:demo:demo_coding_introduction) — CC BY-NC-SA 4.0
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [open-borders.md](open-borders.md)
 - effects: [rasterbars.md](rasterbars.md)
@@ -59,3 +58,7 @@ A standard demo part follows this flow:
 - concepts: [../concepts/optimization.md](../concepts/optimization.md)
 - concepts: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
+
+## sources
+
+- codebase64.net: [An Introduction to Programming C-64 Demos](https://codebase64.net/doku.php?id=vic:demo:demo_coding_introduction) — CC BY-NC-SA 4.0

@@ -31,10 +31,13 @@ keywords: [1351 mouse, proportional mode, POT registers, mouse buttons]
 - Keyboard scanning and controller-port reads share CIA1 lines, so button handling MUST follow the same interference rules as joystick input.
 - Joystick mode reports timed direction pulses rather than proportional deltas and MUST be handled as a joystick.
 
+## links
+
+- pointing-device route: [pointing-devices.md](pointing-devices.md)
+- I/O index: [INDEX.md](INDEX.md)
+
 ## sources
 
 - SID registers: [../sid/registers.md](../sid/registers.md)
 - CIA1 registers: [cia1.md](cia1.md)
 - original device manual: [Commodore 1351 Mouse User's Manual](https://www.vincenzoscarpa.it/biblioteca/manuali/eng/c64/Commodore64-1351-Mouse-Users-Guide.pdf)
-- pointing-device route: [pointing-devices.md](pointing-devices.md)
-- I/O index: [INDEX.md](INDEX.md)

@@ -72,10 +72,36 @@ foreach ($file in $markdownFiles) {
                 Add-AuditError "${relative}: summary MUST NOT contain a Markdown link"
             }
 
-            # One tail, one meaning. Discovery links belong in the generated
-            # routing layer; ## sources carries provenance and support.
-            if ($content -match '(?m)^## links\s*$') {
-                Add-AuditError "${relative}: ## links is retired on reference pages; merge it into ## sources"
+            # ## sources means provenance. A page carrying a `source` identifier
+            # or citing an upstream article MUST show at least one upstream URL
+            # there, so attribution stays checkable rather than merely present.
+            if ($metadata.ContainsKey('source') -and $metadata['source'] -notin @('cross-domain', 'mixed')) {
+                $sourcesBody = ''
+                if ($content -match '(?ms)^## sources\s*$(.*?)(?=^## |\z)') { $sourcesBody = $matches[1] }
+                if ($sourcesBody -notmatch 'https?://') {
+                    Add-AuditError "${relative}: declares source '$($metadata['source'])' but ## sources cites no upstream URL"
+                }
+            }
+
+            # A target already cited in ## sources MUST NOT be repeated in
+            # ## links; the two sections answer different questions.
+            $linksBody = ''
+            if ($content -match '(?ms)^## links\s*$(.*?)(?=^## |\z)') { $linksBody = $matches[1] }
+            $sourcesBody2 = ''
+            if ($content -match '(?ms)^## sources\s*$(.*?)(?=^## |\z)') { $sourcesBody2 = $matches[1] }
+            if ($linksBody -and $sourcesBody2) {
+                $sourceTargets = @([regex]::Matches($sourcesBody2, '\]\(([^)]+)\)') | ForEach-Object { $_.Groups[1].Value })
+                foreach ($m in [regex]::Matches($linksBody, '\]\(([^)]+)\)')) {
+                    if ($sourceTargets -contains $m.Groups[1].Value) {
+                        Add-AuditError "${relative}: '$($m.Groups[1].Value)' appears in both ## links and ## sources"
+                    }
+                }
+            }
+
+            # The generic pointer to this repo's own source index is routing
+            # boilerplate, not attribution; AGENTS.md says when to consult it.
+            if ($content -match '(?m)^-\s*(local route|provenance|Provenance|source route|attribution)?\s*:?\s*\[[^\]]*\]\(\.\./sources/INDEX\.md\)\s*$') {
+                Add-AuditError "${relative}: bare sources/INDEX.md pointer is boilerplate; cite the actual upstream instead"
             }
 
             if (-not $metadata.ContainsKey('keywords')) {

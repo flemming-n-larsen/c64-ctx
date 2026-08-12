@@ -86,9 +86,12 @@ Sprite
 - `$E9F0` row pointer routine destroys A and Y; preserve if needed.
 - Scroll-left / scroll-right routines require copying KERNAL to zero page and disabling ROM.
 
-## sources
+## links
 
-- https://codebase64.net/doku.php?id=base:sizecoding — CC BY-NC-SA 4.0
 - ROM/RAM banking (disable/enable KERNAL): [../tasks/bank-switch-rom-ram.md](../tasks/bank-switch-rom-ram.md)
 - speed optimization: [speed.md](speed.md)
 - memory move task: [../tasks/memory-move.md](../tasks/memory-move.md)
+
+## sources
+
+- https://codebase64.net/doku.php?id=base:sizecoding — CC BY-NC-SA 4.0

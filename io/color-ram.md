@@ -22,9 +22,12 @@ keywords: [color RAM, nibble, cell color, upper nibble garbage]
 - Code SHOULD mask color values to `$0F` before storing when upper bits are not meaningful.
 - Screen-memory explanations SHOULD link both color RAM and VIC-II memory-control facts.
 
+## links
+
+- screen memory: [../concepts/screen-memory.md](../concepts/screen-memory.md)
+- VIC-II: [vic-ii.md](vic-ii.md)
+
 ## sources
 
 - I/O index: [INDEX.md](INDEX.md)
 - palette: [../colors/palette.md](../colors/palette.md)
-- screen memory: [../concepts/screen-memory.md](../concepts/screen-memory.md)
-- VIC-II: [vic-ii.md](vic-ii.md)

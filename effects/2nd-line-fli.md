@@ -52,10 +52,8 @@ The freed even-line cycles allow real-time calculation of which charset segment 
 - Sprite register updates (outline, shadow, multicolor) must fit within the ~63 free cycles on even lines.
 - Bank size is 16 KB (`$0000`–`$3FFF`); charsets and screen pages must fit within one bank.
 
-## sources
+## links
 
-- codebase64.net: [Twisters, X-Rotators and Waving Carpets](https://codebase64.net/doku.php?id=base:twisters_x-rotators_and_waving_carpets) — CC BY-NC-SA 4.0
-- codebase64.net: [Demo Programming — 2nd Line FLI](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - effects: [stable-raster.md](stable-raster.md)
 - effects: [swing.md](swing.md)
 - effects: [fpp.md](fpp.md)
@@ -63,3 +61,8 @@ The freed even-line cycles allow real-time calculation of which charset segment 
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
+
+## sources
+
+- codebase64.net: [Twisters, X-Rotators and Waving Carpets](https://codebase64.net/doku.php?id=base:twisters_x-rotators_and_waving_carpets) — CC BY-NC-SA 4.0
+- codebase64.net: [Demo Programming — 2nd Line FLI](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0

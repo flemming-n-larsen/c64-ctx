@@ -76,10 +76,8 @@ keywords: [NUFLI, NUIFLI, flicker free, double-wide sprites]
 - Sprite data requires 200 ÷ 2 = 100 "rows" of 6 × 3 bytes each per 8-px-wide sprite block — approximately 1800 bytes of sprite data total.
 - NUIFLI adds IFLI frame alternation on top; requires two complete NUFLI datasets and doubles the artwork complexity.
 
-## sources
+## links
 
-- c64-wiki.com: [NUFLI](https://www.c64-wiki.com/wiki/NUFLI) — GFDL
-- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL
 - effects: [fli.md](fli.md)
 - effects: [ifli.md](ifli.md)
 - effects: [ufli.md](ufli.md)
@@ -89,3 +87,8 @@ keywords: [NUFLI, NUIFLI, flicker free, double-wide sprites]
 - tasks: [../tasks/sprite-display.md](../tasks/sprite-display.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - graphics: [../graphics/unofficial-modes.md](../graphics/unofficial-modes.md)
+
+## sources
+
+- c64-wiki.com: [NUFLI](https://www.c64-wiki.com/wiki/NUFLI) — GFDL
+- c64-wiki.com: [Graphics Modes](https://www.c64-wiki.com/wiki/Graphics_Modes) — GFDL

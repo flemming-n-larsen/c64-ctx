@@ -82,13 +82,16 @@ keywords: [BASIC keywords, statements, commands, reserved words]
 - Keywords MUST match longest-prefix at tokenization (e.g., `INPUT#` is matched before `INPUT`).
 - Token `$FF` denotes the function `π` (PI) and is documented in [functions.md](functions.md).
 
-## sources
+## links
 
-- token byte assignments: [tokens.md](tokens.md)
-- BASIC index: [INDEX.md](INDEX.md)
 - function keywords (`$B4-$CA`): [functions.md](functions.md)
 - line layout and listing format: [program-structure.md](program-structure.md)
 - runtime error codes: [errors.md](errors.md)
 - `OPEN`/`CLOSE`/`PRINT#`/`INPUT#`/`GET`/`CMD` device I/O: [io.md](io.md)
 - `SYS` and `POKE` for machine code: [machine-code-bridge.md](machine-code-bridge.md)
 - variable typing rules for `LET`/`DIM`/`READ`/`INPUT`: [variables.md](variables.md)
+
+## sources
+
+- token byte assignments: [tokens.md](tokens.md)
+- BASIC index: [INDEX.md](INDEX.md)

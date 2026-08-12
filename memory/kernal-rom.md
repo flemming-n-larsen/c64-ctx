@@ -23,9 +23,12 @@ keywords: [KERNAL ROM, hardware vectors, HIRAM, RAM under ROM]
 - Code that switches KERNAL ROM out MUST provide valid interrupt handling or prevent interrupts as appropriate.
 - KERNAL API facts SHOULD be taken from [../kernal/INDEX.md](../kernal/INDEX.md) before implementation disassembly pages.
 
+## links
+
+- banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
+- KERNAL API: [../kernal/INDEX.md](../kernal/INDEX.md)
+
 ## sources
 
 - memory index: [INDEX.md](INDEX.md)
 - ROM route: [../rom/kernal-disassembly.md](../rom/kernal-disassembly.md)
-- banking: [../concepts/memory-banking.md](../concepts/memory-banking.md)
-- KERNAL API: [../kernal/INDEX.md](../kernal/INDEX.md)

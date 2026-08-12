@@ -28,9 +28,12 @@ keywords: [cartridge, EXROM, GAME, PLA, expansion port, memory config]
 - Ultimax mode MUST NOT be entered unexpectedly; code at `$0000-$0FFF` must be self-sufficient as stack, zero-page, and entry point, because no other internal RAM is reachable.
 - The CPU MUST NOT rely on KERNAL ROM in Ultimax mode unless the cartridge re-maps equivalent routines at `$E000-$FFFF`.
 
-## sources
+## links
 
-- codebase64.net: [Memory Management in Commodore 64](https://codebase64.net/doku.php?id=base:memory_management) — CC BY-NC-SA 4.0
 - memory banking ($0001): [memory-banking.md](memory-banking.md)
 - memory map: [../memory/map.md](../memory/map.md)
 - KERNAL ROM: [../memory/kernal-rom.md](../memory/kernal-rom.md)
+
+## sources
+
+- codebase64.net: [Memory Management in Commodore 64](https://codebase64.net/doku.php?id=base:memory_management) — CC BY-NC-SA 4.0

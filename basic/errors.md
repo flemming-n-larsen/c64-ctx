@@ -51,11 +51,14 @@ keywords: [BASIC errors, error messages, SYNTAX ERROR, ILLEGAL QUANTITY]
 - An error MUST halt program execution; `CONT` MAY resume execution only when no program text was edited between the halt and the resume.
 - `SYNTAX ERROR` (code 11) MAY surface during tokenization in direct mode and during execution when an expression is malformed.
 
-## sources
+## links
 
-- BASIC vectors: [vectors.md](vectors.md)
-- BASIC index: [INDEX.md](INDEX.md)
 - BASIC keywords: [keywords.md](keywords.md)
 - BASIC functions: [functions.md](functions.md)
 - BASIC I/O: [io.md](io.md)
 - memory symbols: [../memory/symbols.md](../memory/symbols.md)
+
+## sources
+
+- BASIC vectors: [vectors.md](vectors.md)
+- BASIC index: [INDEX.md](INDEX.md)

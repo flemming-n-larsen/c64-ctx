@@ -60,10 +60,8 @@ NUFLI and UFLI use sprite underlay across the full display width; the 6 NUFLI un
 - NTSC timing differs (65 cycles/line vs PAL 63); side border cycle positions must be adjusted.
 - These are PAL-measured values; verify on NTSC hardware or emulator with correct chip model.
 
-## sources
+## links
 
-- codebase64.net: [Opening the Top and Bottom Borders](https://codebase64.net/doku.php?id=vic:opening_the_top_bottom_borders) — CC BY-NC-SA 4.0
-- codebase64.net: [Opening Up the Borders — A Further Explanation](https://codebase64.net/doku.php?id=vic:opening_up_the_borders_-_a_further_explanation) — CC BY-NC-SA 4.0
 - sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
 - sprite display: [../sprites/display.md](../sprites/display.md)
 - sprite techniques: [../sprites/advanced.md](../sprites/advanced.md)
@@ -73,3 +71,8 @@ NUFLI and UFLI use sprite underlay across the full display width; the 6 NUFLI un
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - concepts: [../concepts/screen-geometry.md](../concepts/screen-geometry.md)
 - concepts: [../concepts/vic-bad-lines.md](../concepts/vic-bad-lines.md)
+
+## sources
+
+- codebase64.net: [Opening the Top and Bottom Borders](https://codebase64.net/doku.php?id=vic:opening_the_top_bottom_borders) — CC BY-NC-SA 4.0
+- codebase64.net: [Opening Up the Borders — A Further Explanation](https://codebase64.net/doku.php?id=vic:opening_up_the_borders_-_a_further_explanation) — CC BY-NC-SA 4.0

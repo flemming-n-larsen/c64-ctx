@@ -62,13 +62,16 @@ Key register usage: `$FB`/`$FC` = indirect pointer to charset base; X = horizont
 - The 16×16 matrix requires ca65 or equivalent assembler for structured data setup; any assembler supporting byte-data definitions works.
 - For scroll extensions: a 16×16 matrix scroll builds on the same charset scheme, advancing the screen pointer each frame.
 
-## sources
+## links
 
-- codebase64.net: [16×16 Char Matrix](https://codebase64.net/doku.php?id=base:16x16_char_matrix) — CC BY-NC-SA 4.0
-- codebase64.net: [16×16 Matrix Scroll](https://codebase64.net/doku.php?id=base:16x16_matrix_scroll) — CC BY-NC-SA 4.0
-- codebase64.net: [Demo Programming — Software Screen Modes](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - tasks: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - graphics: [../graphics/screen-modes.md](../graphics/screen-modes.md)
 - concepts: [../concepts/memory-banking.md](../concepts/memory-banking.md)
 - display-modes: [fli.md](fli.md)
+
+## sources
+
+- codebase64.net: [16×16 Char Matrix](https://codebase64.net/doku.php?id=base:16x16_char_matrix) — CC BY-NC-SA 4.0
+- codebase64.net: [16×16 Matrix Scroll](https://codebase64.net/doku.php?id=base:16x16_matrix_scroll) — CC BY-NC-SA 4.0
+- codebase64.net: [Demo Programming — Software Screen Modes](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0

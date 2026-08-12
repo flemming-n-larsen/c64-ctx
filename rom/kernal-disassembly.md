@@ -19,10 +19,13 @@ keywords: [KERNAL ROM, disassembly, ROM listing, implementation detail]
 - This file SHOULD be used to locate implementation material, not as a complete disassembly.
 - Agents MUST account for banking before saying `$E000-$FFFF` reads return KERNAL ROM.
 
+## links
+
+- KERNAL domain: [../kernal/INDEX.md](../kernal/INDEX.md)
+- KERNAL ROM memory: [../memory/kernal-rom.md](../memory/kernal-rom.md)
+- interrupts: [../irq/overview.md](../irq/overview.md)
+
 ## sources
 
 - ROM index: [INDEX.md](INDEX.md)
 - KERNAL jump table: [../kernal/jump-table.md](../kernal/jump-table.md)
-- KERNAL domain: [../kernal/INDEX.md](../kernal/INDEX.md)
-- KERNAL ROM memory: [../memory/kernal-rom.md](../memory/kernal-rom.md)
-- interrupts: [../irq/overview.md](../irq/overview.md)

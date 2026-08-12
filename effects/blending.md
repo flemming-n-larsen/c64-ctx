@@ -52,13 +52,16 @@ keywords: [blending, fade in, fade out, charset blend, palette cycle]
 - VIC-II must point to the destination charset in RAM throughout the effect (`$D018` charset bits); ensure VIC bank alignment.
 - For color RAM fading, writes must occur outside the display area or use raster IRQ to avoid tearing; see [../irq/raster-interrupt.md](../irq/raster-interrupt.md).
 
-## sources
+## links
 
-- codebase64.net: [Blend Charsets](https://codebase64.net/doku.php?id=base:8x8_charset_pixel-blend-in) — CC BY-NC-SA 4.0
-- codebase64.net: [Demo Programming — Blending and Fading](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0
 - effects: [rng.md](rng.md)
 - effects: [plasma.md](plasma.md)
 - tasks: [../tasks/custom-charset.md](../tasks/custom-charset.md)
 - tasks: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - io: [../io/vic-ii.md](../io/vic-ii.md)
 - colors: [../colors/INDEX.md](../colors/INDEX.md)
+
+## sources
+
+- codebase64.net: [Blend Charsets](https://codebase64.net/doku.php?id=base:8x8_charset_pixel-blend-in) — CC BY-NC-SA 4.0
+- codebase64.net: [Demo Programming — Blending and Fading](https://codebase64.net/doku.php?id=vic:demo_programming) — CC BY-NC-SA 4.0

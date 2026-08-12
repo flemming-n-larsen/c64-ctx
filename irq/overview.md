@@ -31,6 +31,10 @@ keywords: [interrupts, NMI, IRQ vectors, I flag, page 3 vectors]
 - Agents MUST distinguish CPU hardware vectors from KERNAL RAM indirection vectors; they are related but not interchangeable.
 - Code that replaces the standard IRQ path SHOULD state whether KERNAL timekeeping and stop-key handling are preserved.
 
+## links
+
+- raster interrupt recipe: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
+
 ## sources
 
 - CPU flags: [../cpu/6502/registers-flags.md](../cpu/6502/registers-flags.md)
@@ -39,4 +43,3 @@ keywords: [interrupts, NMI, IRQ vectors, I flag, page 3 vectors]
 - CIA1: [../io/cia1.md](../io/cia1.md)
 - CIA2: [../io/cia2.md](../io/cia2.md)
 - KERNAL IRQ services: [../kernal/time-irq.md](../kernal/time-irq.md)
-- raster interrupt recipe: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)

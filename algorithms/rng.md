@@ -96,6 +96,12 @@ ranged:
 - LFSR period is exactly `2^n − 1` (never produces the all-zero state); if zero output is required, handle separately.
 - CIA timer seeding works only when a timer is running; if the timer is stopped, `$DC04`/`$DC05` hold their last latched value.
 
+## links
+
+- effects: [../effects/rng.md](../effects/rng.md)
+- io: [../io/INDEX.md](../io/INDEX.md)
+- algorithms: [sort.md](sort.md)
+
 ## sources
 
 - codebase64.net: [16-bit xorshift random generator](https://codebase64.net/doku.php?id=base:16bit_xorshift_random_generator) — CC BY-NC-SA 4.0
@@ -107,6 +113,3 @@ ranged:
 - codebase64.net: [AX tinyrand8](https://codebase64.net/doku.php?id=base:ax_tinyrand8) — CC BY-NC-SA 4.0
 - codebase64.net: [Ranged random numbers with even distribution](https://codebase64.net/doku.php?id=base:ranged_random_numbers_with_even_distribution) — CC BY-NC-SA 4.0
 - codebase64.net: [Comparison of 6502 random generators](https://codebase64.net/doku.php?id=base:comparison_of_6502_random_generators) — CC BY-NC-SA 4.0
-- effects: [../effects/rng.md](../effects/rng.md)
-- io: [../io/INDEX.md](../io/INDEX.md)
-- algorithms: [sort.md](sort.md)

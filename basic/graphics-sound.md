@@ -66,12 +66,8 @@ Beep voice 1 (triangle, gate on, then off):
 30 FOR T=1 TO 500 : NEXT : POKE 54276,16
 ```
 
-## sources
+## links
 
-- local route: [../sources/INDEX.md](../sources/INDEX.md) (PRG 1982 for BASIC `POKE` recipes; mist64/c64ref `src/c64io` for register addresses)
-- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
-- SID registers: [../sid/registers.md](../sid/registers.md)
-- BASIC index: [INDEX.md](INDEX.md)
 - keywords: [keywords.md](keywords.md)
 - functions: [functions.md](functions.md)
 - examples: [examples.md](examples.md)
@@ -81,3 +77,10 @@ Beep voice 1 (triangle, gate on, then off):
 - sprite task: [../tasks/sprite-display.md](../tasks/sprite-display.md)
 - raster IRQ task: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - memory map: [../memory/map.md](../memory/map.md)
+
+## sources
+
+- local route: [../sources/INDEX.md](../sources/INDEX.md) (PRG 1982 for BASIC `POKE` recipes; mist64/c64ref `src/c64io` for register addresses)
+- VIC-II registers: [../io/vic-ii.md](../io/vic-ii.md)
+- SID registers: [../sid/registers.md](../sid/registers.md)
+- BASIC index: [INDEX.md](INDEX.md)

@@ -59,11 +59,14 @@ skip:
 - 4-frame interpolation produces large per-frame motion steps; verify gameplay feel is acceptable before committing to this interval.
 - `exec_count` MUST be in zero page for the compare to stay within the timing budget.
 
-## sources
+## links
 
-- [https://codebase64.net/doku.php?id=base:rant9](https://codebase64.net/doku.php?id=base:rant9) — Lasse Öörni/Cadaver, "Rant 9: Frameskipping, Interpolation and Re-entrant IRQ Code" — CC BY-NC-SA 4.0
 - irq: [../irq/INDEX.md](../irq/INDEX.md)
 - irq: [../irq/raster-interrupt.md](../irq/raster-interrupt.md)
 - tasks: [../tasks/game-loop.md](../tasks/game-loop.md)
 - game: [scrolling.md](scrolling.md)
 - sprites: [../sprites/INDEX.md](../sprites/INDEX.md)
+
+## sources
+
+- [https://codebase64.net/doku.php?id=base:rant9](https://codebase64.net/doku.php?id=base:rant9) — Lasse Öörni/Cadaver, "Rant 9: Frameskipping, Interpolation and Re-entrant IRQ Code" — CC BY-NC-SA 4.0
